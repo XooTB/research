@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.python-version
+*.egg-info/
+.DS_Store
+.ipynb_checkpoints/
+
+# BEGIN github-pack (generated — do not edit)
+# Unpacked originals stay on disk for work; git tracks the zip/parts.
+datasets/ovarian-cancer-prognosis-ml/gse32062-gpl6480-ovarian-expression-series-matrix/GSE32062-GPL6480_series_matrix.txt
+datasets/ovarian-cancer-prognosis-ml/gse32062-gpl6480-ovarian-expression-series-matrix/csv/expression.csv
+datasets/ovarian-cancer-prognosis-ml/gse9891-ovarian-expression-series-matrix/GSE9891_series_matrix.txt
+datasets/ovarian-cancer-prognosis-ml/gse9891-ovarian-expression-series-matrix/csv/expression.csv
+# END github-pack

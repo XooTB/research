@@ -1,0 +1,48 @@
+# Research agent configuration.
+# Paths are relative to the workspace root unless absolute.
+
+paths:
+  papers_dir: papers
+  datasets_dir: datasets
+  db_path: .research/library.db
+  bib_path: .research/references.bib
+
+papers:
+  # Sources queried by papers_search.py. Order is used for display grouping.
+  sources: [pubmed, semantic_scholar, arxiv, openalex]
+  default_limit: 15            # results per source
+  criteria_depth: abstract     # abstract | fulltext (fulltext not yet implemented)
+
+datasets:
+  sources: [huggingface, kaggle, zenodo, direct]
+  default_limit: 15
+  free_only: true              # never surface paywalled datasets
+  verify_sample_rows: 1000     # rows to sample when profiling large files
+
+colab:
+  # How a Google Colab runtime gets this workspace. git | drive
+  mode: git
+  repo_url: github.com/XooTB/research.git
+  branch: main
+  # Name of the Colab Secret holding a GitHub PAT (needed only if repo is
+  # private). Set it in Colab: key icon in the left sidebar -> Add new secret.
+  token_secret: GITHUB_TOKEN
+  # Where the workspace is materialized on the runtime (ephemeral disk).
+  runtime_dir: /content/research
+  # Cloned up front via sparse-checkout; datasets are added on demand so the
+  # runtime never pulls the full 1.4 GB datasets/ tree.
+  sparse_paths: [agent, .research, docs, notebooks]
+  # Drive mode only: workspace bundle unpacked from here, relative to the
+  # Drive mount root (/content/drive).
+  drive_dir: MyDrive/research-colab
+  requirements: agent/requirements-colab.txt
+  default_topic: ovarian-cancer-prognosis-ml
+
+credentials:
+  # Optional. Left blank = anonymous access (rate-limited but functional).
+  semantic_scholar_api_key: ""
+  # PubMed/NCBI Entrez politeness: identify yourself to raise rate limits.
+  ncbi_email: ""
+  ncbi_api_key: ""
+  # Kaggle reads ~/.kaggle/kaggle.json by default; nothing needed here.
+  # Hugging Face reads HF_TOKEN env / ~/.cache/huggingface for gated datasets.

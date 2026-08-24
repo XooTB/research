@@ -1,0 +1,11 @@
+# Core (required)
+requests>=2.31
+
+# Optional enhancements — the agent works without these, but they improve
+# dataset verification and downloads. Install what your environment supports.
+# On very new Python versions some may lack prebuilt wheels; that's fine,
+# the scripts fall back to stdlib when a library is missing.
+pandas>=2.0        # richer dataset profiling (dtypes, missing values)
+pyarrow>=15.0      # read .parquet datasets
+huggingface_hub>=0.20   # nicer Hugging Face dataset downloads
+kaggle>=1.6        # Kaggle CLI/API (or configure ~/.kaggle/kaggle.json)

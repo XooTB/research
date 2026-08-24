@@ -1,0 +1,34 @@
+{
+  "threshold_bytes": 104857600,
+  "part_bytes": 94371840,
+  "items": [
+    {
+      "original": "datasets/ovarian-cancer-prognosis-ml/gse32062-gpl6480-ovarian-expression-series-matrix/GSE32062-GPL6480_series_matrix.txt",
+      "zip": "datasets/ovarian-cancer-prognosis-ml/gse32062-gpl6480-ovarian-expression-series-matrix/GSE32062-GPL6480_series_matrix.txt.zip",
+      "parts": [],
+      "original_bytes": 113403326,
+      "zip_bytes": 49704952
+    },
+    {
+      "original": "datasets/ovarian-cancer-prognosis-ml/gse32062-gpl6480-ovarian-expression-series-matrix/csv/expression.csv",
+      "zip": "datasets/ovarian-cancer-prognosis-ml/gse32062-gpl6480-ovarian-expression-series-matrix/csv/expression.csv.zip",
+      "parts": [],
+      "original_bytes": 112941013,
+      "zip_bytes": 49618817
+    },
+    {
+      "original": "datasets/ovarian-cancer-prognosis-ml/gse9891-ovarian-expression-series-matrix/GSE9891_series_matrix.txt",
+      "zip": "datasets/ovarian-cancer-prognosis-ml/gse9891-ovarian-expression-series-matrix/GSE9891_series_matrix.txt.zip",
+      "parts": [],
+      "original_bytes": 124422871,
+      "zip_bytes": 52412441
+    },
+    {
+      "original": "datasets/ovarian-cancer-prognosis-ml/gse9891-ovarian-expression-series-matrix/csv/expression.csv",
+      "zip": "datasets/ovarian-cancer-prognosis-ml/gse9891-ovarian-expression-series-matrix/csv/expression.csv.zip",
+      "parts": [],
+      "original_bytes": 123952184,
+      "zip_bytes": 52390416
+    }
+  ]
+}
