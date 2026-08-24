@@ -15,14 +15,24 @@ Usage:
     colab_runs.py --name <substr>       # filter by run name
     colab_runs.py --compare             # metric table across runs
     colab_runs.py --compare --name <s>  # ... restricted to matching runs
+    colab_runs.py --import-notebook <f> # harvest records from saved cell output
 """
 from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
-from common import emit, eprint, ws_path
+from common import WORKSPACE, emit, eprint, slugify, ws_path
+
+# The notebook prints its record between these markers. Cell output is saved
+# into the local .ipynb, which makes it the one channel off an ephemeral
+# runtime that needs no auth, no Drive and no working google.colab helpers.
+RECORD_BEGIN = "===RUN-RECORD-BEGIN==="
+RECORD_END = "===RUN-RECORD-END==="
+RECORD_BLOCK = re.compile(
+    re.escape(RECORD_BEGIN) + r"(.*?)" + re.escape(RECORD_END), re.DOTALL)
 
 
 def runs_dir() -> Path:
@@ -50,6 +60,62 @@ def load_runs(name: str | None = None) -> list[dict]:
         data["_files"] = sorted(p.name for p in d.iterdir() if p.name != "run.json")
         out.append(data)
     return out
+
+
+def _output_text(cell: dict) -> str:
+    """All textual output of a cell, stream and rich alike."""
+    parts = []
+    for out in cell.get("outputs") or []:
+        if out.get("output_type") == "stream":
+            parts.append("".join(out.get("text") or []))
+        else:
+            parts.append("".join((out.get("data") or {}).get("text/plain") or []))
+    return "\n".join(parts)
+
+
+def import_notebook(path: Path) -> dict:
+    """Write run records found in a notebook's saved output into runs/.
+
+    Requires the notebook to have been *saved* after running — unsaved output
+    lives only in the editor, not in the file.
+    """
+    try:
+        nb = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        return {"error": f"cannot read {path}: {exc}"}
+
+    blocks = [m for cell in nb.get("cells") or []
+              for m in RECORD_BLOCK.findall(_output_text(cell))]
+
+    imported, skipped, errors = [], [], []
+    for raw in blocks:
+        try:
+            record = json.loads(raw.strip())
+        except ValueError as exc:
+            errors.append(f"unparseable record block: {exc}")
+            continue
+
+        stamp = record.get("saved_at") or "unknown"
+        dest = runs_dir() / f"{stamp}-{slugify(str(record.get('name', 'run')))}"
+        target = dest / "run.json"
+        if target.exists():
+            skipped.append({"dir": str(dest), "reason": "already imported"})
+            continue
+        dest.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
+        imported.append({"dir": str(dest), "name": record.get("name"),
+                         "metrics": flatten_metrics(record.get("result"))})
+
+    return {
+        "notebook": str(path),
+        "blocks_found": len(blocks),
+        "imported": imported,
+        "skipped": skipped,
+        "errors": errors,
+        "hint": None if blocks else
+                "no record blocks in saved output — run the notebook's final "
+                "cells on a Colab kernel, then save the notebook before importing",
+    }
 
 
 def flatten_metrics(obj, prefix: str = "") -> dict:
@@ -100,7 +166,14 @@ def main() -> None:
     ap.add_argument("--last", action="store_true", help="full record of the newest run")
     ap.add_argument("--name", help="filter by substring of the run name")
     ap.add_argument("--compare", action="store_true", help="metric table across runs")
+    ap.add_argument("--import-notebook", type=Path, metavar="FILE",
+                    help="harvest run records from a notebook's saved cell output")
     args = ap.parse_args()
+
+    if args.import_notebook:
+        path = args.import_notebook
+        emit(import_notebook(path if path.is_absolute() else WORKSPACE / path))
+        return
 
     runs = load_runs(args.name)
     if not runs:

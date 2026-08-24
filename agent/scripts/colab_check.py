@@ -10,6 +10,7 @@ halfway through a notebook.
 Usage:
     colab_check.py                          # config + sync state
     colab_check.py --dataset <slug>         # also check one dataset is on the remote
+    colab_check.py --dataset <slug> --dataset <slug2>
     colab_check.py --topic <t> --dataset <slug>
 """
 from __future__ import annotations
@@ -177,14 +178,15 @@ def check_archives(rel: str, remote: set[str], branch: str, github_pack) -> list
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dataset", help="dataset slug to verify is reachable from Colab")
+    ap.add_argument("--dataset", action="append", dest="datasets",
+                    help="dataset slug to verify is reachable from Colab; repeatable")
     ap.add_argument("--topic", default=cfg("colab.default_topic", ""))
     args = ap.parse_args()
 
     checks, branch = check_config()
     checks += check_sync(branch)
-    if args.dataset:
-        checks += check_dataset(args.dataset, args.topic, branch)
+    for slug in args.datasets or []:
+        checks += check_dataset(slug, args.topic, branch)
 
     failures = [c for c in checks if not c["ok"]]
     emit({

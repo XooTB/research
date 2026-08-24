@@ -320,6 +320,139 @@ def geo_xy(slug: str, label: str, topic: str | None = None, *,
     return X, y, meta
 
 
+def load_xena(slug: str, name: str, topic: str | None = None, *, index_col: int = 0):
+    """Load a converted Xena/TSV matrix from a dataset's csv/ folder."""
+    require("pandas")
+    pd = import_module("pandas")
+    ensure_dataset(slug, topic)
+    return pd.read_csv(dataset_csv(slug, name, topic), index_col=index_col)
+
+
+def tcga_os(topic: str | None = None, *, primary_only: bool = True, min_time: float = 1.0):
+    """TCGA-OV HiSeqV2 expression joined to overall survival.
+
+    Returns ``(X, time, event, clin, meta)``. ``X`` is samples × genes, ``time``
+    is days, ``event`` is 1 for DECEASED and 0 for censored (living).
+    """
+    require("pandas")
+    pd = import_module("pandas")
+
+    expr_slug = "tcga-ov-xena-rna-seq-hiseqv2"
+    clin_slug = "tcga-ov-xena-clinical-matrix"
+    expr = load_xena(expr_slug, "HiSeqV2.csv", topic)
+    ensure_dataset(clin_slug, topic)
+    clin = pd.read_csv(dataset_csv(clin_slug, "OV_clinicalMatrix.csv", topic))
+    if "sampleID" not in clin.columns:
+        raise KeyError("OV_clinicalMatrix.csv has no sampleID column")
+    clin = clin.drop_duplicates("sampleID").set_index("sampleID")
+
+    X = expr.T
+    X.index = X.index.astype(str)
+    X.index.name = "sampleID"
+
+    common = X.index.intersection(clin.index)
+    if common.empty:
+        raise ValueError("no overlapping sample IDs between HiSeqV2 and clinical matrix")
+    X, clin = X.loc[common].copy(), clin.loc[common].copy()
+
+    if primary_only:
+        keep = X.index.to_series().str.split("-").str[-1].eq("01")
+        X, clin = X.loc[keep].copy(), clin.loc[keep].copy()
+
+    vital = clin["vital_status"].astype(str).str.strip().str.upper()
+    event = vital.eq("DECEASED").astype(int)
+    death = pd.to_numeric(clin.get("days_to_death"), errors="coerce")
+    followup = pd.to_numeric(clin.get("days_to_last_followup"), errors="coerce")
+    time = death.where(event.eq(1), followup)
+    time = time.fillna(death).fillna(followup)
+
+    ok = time.notna() & (time >= min_time) & vital.isin(["DECEASED", "LIVING"])
+    X, time, event, clin = X.loc[ok], time.loc[ok], event.loc[ok], clin.loc[ok]
+    X = X.apply(pd.to_numeric, errors="coerce").dropna(axis=1, how="all")
+
+    meta = {
+        "dataset": expr_slug,
+        "clinical": clin_slug,
+        "n_samples": int(len(X)),
+        "n_features": int(X.shape[1]),
+        "n_events": int(event.sum()),
+        "n_censored": int((event == 0).sum()),
+        "median_followup_days": float(time.median()),
+        "dropped_nonprimary": int((~keep).sum()) if primary_only else 0,
+    }
+    return X, time, event, clin, meta
+
+
+def gpl_gene_map(platform: str = "GPL96"):
+    """Probe ID → gene symbol from NCBI GEO platform annotation.
+
+    Downloads and caches the ``.annot.gz`` table under ``.research/cache/``.
+    Multi-mapped probes (``GENE1 /// GENE2``) keep the first symbol.
+    """
+    require("pandas")
+    pd = import_module("pandas")
+    acc = platform.upper()
+    cache = workspace() / ".research" / "cache" / f"{acc}.annot.tsv"
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    if not cache.exists() or cache.stat().st_size == 0:
+        _download_gpl_annot(acc, cache)
+
+    table = _read_geo_annot_table(cache)
+    id_col = "ID" if "ID" in table.columns else table.columns[0]
+    sym_col = next((c for c in table.columns if c.lower().replace(" ", "")
+                    in {"genesymbol", "gene_symbol"}), None)
+    if sym_col is None:
+        raise KeyError(f"no gene-symbol column in {acc} annotation: {list(table.columns)}")
+    series = table.set_index(id_col)[sym_col].dropna().astype(str)
+    series = series.str.split(r"\s*///\s*").str[0].str.strip()
+    return series[series.ne("") & ~series.str.lower().isin({"null", "nan", "---", "--"})]
+
+
+def collapse_to_genes(X, probe_to_gene):
+    """Average probes that map to the same gene. ``X`` is samples × probes."""
+    mapped = probe_to_gene.reindex(X.columns).dropna()
+    mapped = mapped.astype(str).str.split(r"\s*///\s*").str[0].str.strip()
+    mapped = mapped[mapped.ne("") & ~mapped.str.lower().isin({"null", "nan", "---"})]
+    if mapped.empty:
+        raise ValueError("no probes mapped to gene symbols")
+    Xg = X.loc[:, mapped.index].copy()
+    Xg.columns = mapped.values
+    return Xg.T.groupby(level=0).mean().T
+
+
+def _gpl_bucket(acc: str) -> str:
+    n = int(acc.upper().replace("GPL", ""))
+    return "GPLnnn" if n < 1000 else f"GPL{n // 1000}nnn"
+
+
+def _read_geo_annot_table(path: Path):
+    """Parse a GEO .annot table, skipping SOFT metadata above the ID header."""
+    import io
+
+    pd = import_module("pandas")
+    lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    start = next((i for i, line in enumerate(lines)
+                  if line.startswith("ID\t") or line.startswith("ID,")), None)
+    if start is None:
+        raise ValueError(f"no ID header in {path}")
+    body = "\n".join(line for line in lines[start:] if not line.startswith("!"))
+    return pd.read_csv(io.StringIO(body), sep="\t", dtype=str)
+
+
+def _download_gpl_annot(acc: str, dest: Path) -> None:
+    import gzip
+    from urllib.request import urlopen
+
+    url = (f"https://ftp.ncbi.nlm.nih.gov/geo/platforms/{_gpl_bucket(acc)}"
+           f"/{acc}/annot/{acc}.annot.gz")
+    try:
+        with urlopen(url, timeout=120) as resp:
+            raw = gzip.decompress(resp.read())
+    except Exception as exc:
+        raise RuntimeError(f"failed to download {acc} annotation from {url}: {exc}") from exc
+    dest.write_bytes(raw)
+
+
 # ---------------------------------------------------------------------------
 # Getting results back off the runtime
 # ---------------------------------------------------------------------------
@@ -348,6 +481,41 @@ def save_run(name: str, payload: dict, *, files: list[str] | None = None) -> Pat
         else:
             eprint(f"save_run: skipping missing file {src}")
     return out
+
+
+def push_runs(token: str | None = None, branch: str | None = None) -> dict:
+    """Commit and push run records from the runtime.
+
+    Needs a GitHub PAT in the runtime environment: the Colab VS Code extension
+    cannot read Colab Secrets (`userdata.get` is unsupported there), so there
+    is no way to pick one up implicitly. Without a token this is a no-op, and
+    the notebook-output import path is used instead — see colab_runs.py
+    --import-notebook, which needs no credentials at all.
+    """
+    token = token or os.environ.get(cfg("colab.token_secret", "GITHUB_TOKEN"), "")
+    if not token:
+        return {"pushed": False, "reason": "no token in the runtime environment"}
+
+    ws, repo = str(workspace()), cfg("colab.repo_url", "")
+    branch = branch or cfg("colab.branch", "main")
+    ident = ["-c", "user.name=colab", "-c", "user.email=colab@local"]
+    steps = [
+        ("add", ["git", "-C", ws, "add", ".research/colab/runs"]),
+        ("commit", ["git", "-C", ws, *ident, "commit", "-m", "colab: run records"]),
+        ("push", ["git", "-C", ws, "push", f"https://{token}@{repo}", f"HEAD:{branch}"]),
+    ]
+
+    log = []
+    for label, cmd in steps:
+        proc = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        log.append({
+            "step": label,
+            "ok": proc.returncode == 0,
+            "out": (proc.stdout or proc.stderr).strip().replace(token, "***"),
+        })
+        if proc.returncode != 0:
+            break
+    return {"pushed": all(s["ok"] for s in log) and len(log) == len(steps), "steps": log}
 
 
 def mount_drive(path: str = "/content/drive"):

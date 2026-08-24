@@ -27,9 +27,14 @@ Agents cannot run cells on a Colab kernel — there is no tool for it and no
 terminal on the runtime. So the loop is:
 
 1. Agent edits code/notebook, runs the pre-flight, commits and pushes
-2. Agent tells the user exactly which notebook to run and what to expect
-3. Notebook's last cell pushes its run record back to the remote
-4. Agent runs `git pull` and `colab_runs.py` to read results, verify, and iterate
+2. Agent tells the user exactly which notebook to run and what to expect,
+   and to **save it** afterwards so cell output is written to disk
+3. Agent reads results back with
+   `colab_runs.py --import-notebook <nb>` then `--last` / `--compare`
+4. Agent verifies against expectations and iterates
+
+Saved cell output is the reliable channel: the extension does not support
+Colab Secrets, so the runtime has no credentials and cannot push on its own.
 
 Never claim a notebook's results were verified unless you read them back from a
 `run.json` via step 4. Do not silently wait for cells to be run.

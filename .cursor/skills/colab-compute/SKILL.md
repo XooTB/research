@@ -23,7 +23,8 @@ split drives every rule below.
 | Runtime filesystem is empty and ephemeral | The repo must be cloned in every session; results must be pushed or copied out before it dies |
 | The runtime clones the **GitHub remote**, not the local disk | Uncommitted or unpushed work is invisible to the runtime. Always push first |
 | Free-tier sessions get reclaimed (idle in minutes, ~12h ceiling) and usually give a T4 | Checkpoint long runs to Drive; don't plan multi-hour uninterrupted training |
-| Local Python is 3.14 with almost nothing installed; Colab is 3.12 with the full ML stack | Don't try to reproduce the runtime env locally — use the notebook for anything needing pandas/torch |
+| Local Python is 3.14 with almost nothing installed; the runtime is 3.13 with the full ML stack (torch 2.11+cu128, pandas, sklearn) | Don't try to reproduce the runtime env locally — use the notebook for anything needing pandas/torch |
+| Several `google.colab` helpers don't work in the extension (see below) | No Colab Secrets, so no implicit credentials on the runtime |
 | Files over 100 MB are gitignored; git tracks a zip instead, split into `.zip.partNN` if the zip is also over the limit (github-file-size rule) | A fresh runtime clone has the archive, not the CSV. `ensure_dataset` unpacks automatically; anything reading paths directly must call `ce.restore_packed()` first |
 
 Notebook-kernel use is within Colab's terms. SSH/tunnel workarounds are not, on
@@ -65,10 +66,8 @@ finish the turn at step 4 with a clear handoff.
 
 ### Reading results back — `colab_runs.py`
 
-The last cell of a notebook pushes its `save_run` record, which makes results
-readable from the terminal:
-
 ```bash
+.venv/bin/python agent/scripts/colab_runs.py --import-notebook notebooks/<nb>.ipynb
 .venv/bin/python agent/scripts/colab_runs.py             # list, newest first
 .venv/bin/python agent/scripts/colab_runs.py --last      # full newest record
 .venv/bin/python agent/scripts/colab_runs.py --compare   # metric deltas across runs
@@ -119,6 +118,10 @@ import colab_env as ce
 | `ce.restore_packed()` | Rebuilds >100 MB originals from their committed zips |
 | `ce.load_geo(slug)` | `(expression, phenotype)` DataFrames; phenotype indexed by `geo_accession` |
 | `ce.geo_xy(slug, label="...")` | `(X, y, meta)` — X is samples x probes, y aligned and 0/1 |
+| `ce.load_xena(slug, "HiSeqV2.csv")` | Xena/TSV matrix from `csv/` |
+| `ce.tcga_os()` | `(X, time, event, clin, meta)` — TCGA-OV HiSeqV2 joined to overall survival (days) |
+| `ce.gpl_gene_map("GPL96")` | Affymetrix probe → gene symbol (cached under `.research/cache/`) |
+| `ce.collapse_to_genes(X, probe_to_gene)` | Average probes to gene symbols; `X` is samples × probes |
 | `ce.save_run(name, payload, files=[...])` | Writes `.research/colab/runs/<utc>-<name>/run.json` with an env snapshot |
 | `ce.mount_drive()` | Mounts Drive, returns the `colab.drive_dir` path |
 
@@ -170,15 +173,36 @@ ce.restore_packed()          # or, in a shell cell:
 
 ### 5. Getting results out
 
-Ordered by what to reach for first:
+The extension does not implement every `google.colab` helper, which rules out
+the obvious routes — verified against Google's known-issues wiki:
 
-| Artifact | Method |
+| Helper | State in the extension |
 |---|---|
-| Run records, metrics, small CSVs | `git add .research/colab/runs && commit && push` from a cell — the bootstrap already set a credentialed remote |
-| Model weights, checkpoints, anything large | `ce.mount_drive()` then `shutil.copytree` |
-| One file, right now | `from google.colab import files; files.download(path)` |
+| `userdata.get()` (Colab Secrets) | **Unsupported**, raises a timeout. There are no implicit credentials on the runtime, so an unattended `git push` cannot authenticate |
+| `files.download()` | **Unsupported**; needs an ipywidget |
+| `drive.mount()` | Works (extension v0.2.1+), via `ce.mount_drive()` |
 
-Long training runs should checkpoint to Drive *during* training, not at the end.
+So the default channel is **saved cell output**. The notebook file is local, so
+anything printed and then saved lands on your disk with no credentials
+involved. The final cell prints its record between `===RUN-RECORD-BEGIN===`
+and `===RUN-RECORD-END===`, and this harvests it:
+
+```bash
+.venv/bin/python agent/scripts/colab_runs.py --import-notebook notebooks/<nb>.ipynb
+```
+
+Records land in `.research/colab/runs/`, after which `--last` and `--compare`
+behave normally. The notebook must be **saved** first — unsaved output exists
+only in the editor, not in the file. Re-importing is idempotent.
+
+Two alternatives when that isn't enough:
+
+- `ce.push_runs()` commits and pushes the records, but only if a PAT is already
+  in the runtime environment as `GITHUB_TOKEN`. Set it with the ipywidget
+  recipe from Google's wiki; do not put a token in a cell, it would be
+  committed. Returns `{"pushed": False, ...}` rather than failing when absent.
+- `ce.mount_drive()` plus `shutil.copytree` for model weights and anything
+  large. Long training runs should checkpoint to Drive *during* training.
 
 ## Troubleshooting
 
@@ -197,6 +221,7 @@ Long training runs should checkpoint to Drive *during* training, not at the end.
 
 ## Related
 
-- Reference notebook: `notebooks/colab-smoke-test.ipynb`
+- Training notebook: `notebooks/ovarian-os-lasso-cox.ipynb`
+- Bootstrap cell template: `notebooks/colab-smoke-test.ipynb`
 - Convert datasets so the runtime can load them: [datasets-to-csv](../datasets-to-csv/SKILL.md)
 - Find and download datasets: [research-datasets](../research-datasets/SKILL.md)
