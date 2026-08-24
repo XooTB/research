@@ -232,12 +232,18 @@ def ensure_dataset(slug: str, topic: str | None = None, *, csv_only: bool = True
 
 
 def restore_packed() -> list[dict]:
-    """Rebuild files that git tracks only as zips.
+    """Rebuild files that git tracks only as archives.
 
     Anything over GitHub's 100 MB blob limit is gitignored and committed as
-    `<name>.zip` (or `.zip.partNN`) per the github-file-size rule, so a fresh
-    clone has the archive but not the file itself. Large expression matrices
-    land in that bucket, so a runtime checkout has to unpack before loading.
+    `<name>.zip`, or as `<name>.zip.partNN` when the zip is itself over the
+    limit (see the github-file-size rule). A fresh clone therefore has the
+    archive but not the file, and large expression matrices land in that
+    bucket — so a runtime checkout must unpack before anything can read them.
+
+    Items whose archives were never fetched are skipped quietly; that is the
+    normal state for datasets this session didn't ask for. An archive that is
+    present but incomplete is reported, since a half-pushed split archive is a
+    real problem that unpacking cannot fix.
     """
     ws = workspace()
     if not (ws / ".research" / "github-pack.json").exists():
@@ -252,6 +258,8 @@ def restore_packed() -> list[dict]:
     for r in results:
         if r.get("status") == "unpacked":
             eprint(f"restored {r['path']} from its archive")
+        elif r.get("status") == "error" and (ws / r["path"]).parent.exists():
+            eprint(f"! {r['path']}: {r['error']}")
     return results
 
 

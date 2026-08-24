@@ -15,6 +15,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import json
 import subprocess
 
 from common import WORKSPACE, cfg, emit
@@ -64,6 +65,19 @@ def check_sync(branch: str) -> list[dict]:
         "fix": None if not changed else "commit and push, or the runtime won't see these",
     })
 
+    # The runtime reads this manifest to learn which files it has to unpack.
+    # If it isn't committed, unpacking silently does nothing there.
+    manifest = WORKSPACE / ".research" / "github-pack.json"
+    if manifest.exists():
+        _, tracked = git("ls-files", ".research/github-pack.json")
+        checks.append({
+            "check": "github-pack manifest tracked in git",
+            "ok": bool(tracked.strip()),
+            "detail": tracked.strip() or "untracked",
+            "fix": None if tracked.strip() else
+                   "git add .research/github-pack.json — the runtime needs it to unpack",
+        })
+
     code, _ = git("rev-parse", "--verify", f"refs/remotes/origin/{branch}")
     if code != 0:
         checks.append({"check": f"origin/{branch} known locally", "ok": False,
@@ -100,8 +114,9 @@ def check_dataset(slug: str, topic: str, branch: str) -> list[dict]:
                "run datasets_to_csv.py, then git add the csv/ folder",
     })
 
-    code, listing = git("ls-tree", "-r", "--name-only", f"origin/{branch}", f"{rel}/csv")
-    on_remote = [l for l in listing.splitlines() if l.strip()] if code == 0 else []
+    code, listing = git("ls-tree", "-r", "--name-only", f"origin/{branch}", rel)
+    remote = {l for l in listing.splitlines() if l.strip()} if code == 0 else set()
+    on_remote = [p for p in remote if p.startswith(f"{rel}/csv/")]
     checks.append({
         "check": f"{rel}/csv present on origin/{branch}",
         "ok": bool(on_remote),
@@ -128,7 +143,36 @@ def check_dataset(slug: str, topic: str, branch: str) -> list[dict]:
         "fix": None if not pushable else
                f"python agent/scripts/github_pack.py pack --path {rel}",
     })
-    return checks
+    return checks + check_archives(rel, remote, branch, github_pack)
+
+
+def check_archives(rel: str, remote: set[str], branch: str, github_pack) -> list[dict]:
+    """A packed file is only reachable if its whole archive reached the remote.
+
+    Split archives are the sharp edge: pushing part01 but not part02 leaves the
+    runtime with something that looks fetchable and fails at unpack time.
+    """
+    try:
+        items = json.loads(github_pack.MANIFEST_PATH.read_text(encoding="utf-8"))["items"]
+    except (OSError, ValueError, KeyError):
+        return []
+
+    packed = [i for i in items if i["original"].startswith(f"{rel}/")]
+    if not packed:
+        return []
+
+    missing = [required for item in packed
+               for required in (item["parts"] or [item["zip"]])
+               if required not in remote]
+    return [{
+        "check": f"complete archives on origin/{branch} for {len(packed)} packed file(s)",
+        "ok": not missing,
+        "detail": f"{len(missing)} missing"
+                  + (f": {[p.rsplit('/', 1)[-1] for p in missing]}" if missing else ""),
+        "fix": None if not missing else
+               "push the .zip / .zip.partNN files; the runtime unpacks from "
+               "them and a partial split archive cannot be restored",
+    }]
 
 
 def main() -> None:

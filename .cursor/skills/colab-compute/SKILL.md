@@ -24,7 +24,7 @@ split drives every rule below.
 | The runtime clones the **GitHub remote**, not the local disk | Uncommitted or unpushed work is invisible to the runtime. Always push first |
 | Free-tier sessions get reclaimed (idle in minutes, ~12h ceiling) and usually give a T4 | Checkpoint long runs to Drive; don't plan multi-hour uninterrupted training |
 | Local Python is 3.14 with almost nothing installed; Colab is 3.12 with the full ML stack | Don't try to reproduce the runtime env locally — use the notebook for anything needing pandas/torch |
-| Files over 100 MB are gitignored; git tracks only their zips (see the github-file-size rule) | A fresh runtime clone has the archive, not the CSV. `ensure_dataset` unpacks automatically; anything reading paths directly must call `ce.restore_packed()` first |
+| Files over 100 MB are gitignored; git tracks a zip instead, split into `.zip.partNN` if the zip is also over the limit (github-file-size rule) | A fresh runtime clone has the archive, not the CSV. `ensure_dataset` unpacks automatically; anything reading paths directly must call `ce.restore_packed()` first |
 
 Notebook-kernel use is within Colab's terms. SSH/tunnel workarounds are not, on
 the free tier — don't suggest them.
@@ -46,14 +46,38 @@ One-time user setup, in this order:
 
 ## Workflow
 
+Agents cannot execute cells on a Colab kernel — there is no tool for it. Running
+the notebook is the user's single manual step; everything either side of it is
+automatable, so drive it like this:
+
 ```
-- [ ] 1. Pre-flight locally (colab_check.py) and push anything it flags
-- [ ] 2. Attach a GPU Colab kernel to the notebook
-- [ ] 3. Run the bootstrap cell; confirm the summary shows a GPU
-- [ ] 4. Pull the dataset on demand, train, evaluate
-- [ ] 5. Persist the run (push or copy to Drive) before the session ends
-- [ ] 6. Report results to the user with the run.json path
+- [ ] 1. Write / edit the notebook and any module it imports
+- [ ] 2. Pre-flight: colab_check.py exits 0
+- [ ] 3. Commit and push (the runtime clones the remote, not the disk)
+- [ ] 4. Hand off: name the notebook, say "Run All", say what to expect
+- [ ] 5. git pull, then colab_runs.py --last to read the actual results
+- [ ] 6. Verify against expectations; if optimizing, change one thing and loop to 2
 ```
+
+Never report a notebook's results as verified without step 5 — that record is
+the only evidence an agent has. Do not idle waiting for the user to run cells;
+finish the turn at step 4 with a clear handoff.
+
+### Reading results back — `colab_runs.py`
+
+The last cell of a notebook pushes its `save_run` record, which makes results
+readable from the terminal:
+
+```bash
+.venv/bin/python agent/scripts/colab_runs.py             # list, newest first
+.venv/bin/python agent/scripts/colab_runs.py --last      # full newest record
+.venv/bin/python agent/scripts/colab_runs.py --compare   # metric deltas across runs
+```
+
+`--compare` flattens every numeric metric to a dotted key with `first`, `last`
+and `delta`, which is what answers "did that change help". Each record also
+carries the environment snapshot, so a suspicious speedup can be checked against
+which GPU the run actually got.
 
 ### 1. Pre-flight (always do this first)
 
@@ -115,7 +139,34 @@ git add datasets/<topic>/<slug> && git commit -m "convert <slug> to csv" && git 
 
 The pack step matters: several expression matrices exceed 100 MB, and GitHub
 rejects those blobs outright. `colab_check.py` flags any that are still
-unpacked.
+pushable at that size.
+
+### Packed data on the runtime
+
+Large files reach the runtime as archives, so the raw CSV does not exist until
+something unpacks it:
+
+| Local disk | What git tracks | On the runtime after `ensure_dataset` |
+|---|---|---|
+| `csv/expression.csv` (< 100 MB) | the CSV | the CSV |
+| `csv/expression.csv` (> 100 MB) | `csv/expression.csv.zip` | unpacked back to `csv/expression.csv` |
+| zip also > 100 MB | `csv/expression.csv.zip.part01`, `.part02`, … | parts reassembled, then unpacked |
+
+`ce.geo_xy` and `ce.load_geo` handle this for you. Two things to know:
+
+- `.research` must stay in `colab.sparse_paths` — `.research/github-pack.json`
+  is the manifest that tells the runtime what to unpack, and it is committed.
+- A split archive is all-or-nothing. If some `.part` files never reached the
+  remote, unpack refuses and leaves nothing behind rather than writing a
+  truncated CSV. `colab_check.py --dataset <slug>` verifies every part of every
+  packed file for that dataset is on the remote branch.
+
+Reading a path directly, without going through the dataset helpers:
+
+```python
+ce.restore_packed()          # or, in a shell cell:
+# !python /content/research/agent/scripts/github_pack.py unpack
+```
 
 ### 5. Getting results out
 
@@ -139,6 +190,8 @@ Long training runs should checkpoint to Drive *during* training, not at the end.
 | `ModuleNotFoundError: colab_env` | Bootstrap cell not run this session, or `agent` missing from `colab.sparse_paths` |
 | `FileNotFoundError: dataset not found` | The dataset isn't on the remote branch. Run `colab_check.py --dataset <slug>` locally |
 | Dataset folder has `expression.csv.zip` but no `expression.csv` | Over the 100 MB limit, so only the zip is tracked. `ce.restore_packed()`, or `!python agent/scripts/github_pack.py unpack` |
+| `missing parts: [...]` when unpacking | A split archive is incomplete on the remote. Push every `.zip.partNN`; re-run `colab_check.py --dataset <slug>` |
+| Unpack does nothing and the CSV stays missing | `.research/github-pack.json` wasn't fetched (check `colab.sparse_paths`) or wasn't committed |
 | Everything vanished mid-session | Session was reclaimed. Re-run from the bootstrap cell; results not pushed are gone |
 | Kernel dies loading a big matrix | Runtime RAM (~13 GB on free tier). Load with `usecols`/`chunksize`, or subset probes before transposing |
 

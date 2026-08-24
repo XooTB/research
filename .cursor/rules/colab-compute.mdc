@@ -1,0 +1,35 @@
+---
+description: Route GPU/ML work to Google Colab; this machine has no GPU
+alwaysApply: true
+---
+
+# GPU work goes to Colab
+
+This machine has **no GPU**, and the local `.venv` is Python 3.14 with only
+`requests` and `pymupdf`. Do not try to fix that.
+
+- Never `pip install` torch / pandas / scikit-learn into `.venv`. Most have no
+  3.14 wheels, and the local env is deliberately minimal.
+- Anything needing an accelerator, the ML stack, or more RAM than ~14 GB runs on
+  a Colab runtime attached to a notebook in `notebooks/`.
+- Read `.cursor/skills/colab-compute/SKILL.md` before writing or changing any
+  notebook, `agent/scripts/colab_env.py`, or `colab_check.py`.
+
+## The one thing that always breaks
+
+The runtime clones the **GitHub remote**. Uncommitted or unpushed work does not
+exist as far as a notebook is concerned. Before handing a notebook to the user
+to run: commit, push, then `colab_check.py --dataset <slug>` must exit 0.
+
+## Executing cells is the user's step
+
+Agents cannot run cells on a Colab kernel — there is no tool for it and no
+terminal on the runtime. So the loop is:
+
+1. Agent edits code/notebook, runs the pre-flight, commits and pushes
+2. Agent tells the user exactly which notebook to run and what to expect
+3. Notebook's last cell pushes its run record back to the remote
+4. Agent runs `git pull` and `colab_runs.py` to read results, verify, and iterate
+
+Never claim a notebook's results were verified unless you read them back from a
+`run.json` via step 4. Do not silently wait for cells to be run.

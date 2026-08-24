@@ -45,6 +45,7 @@ All scripts print JSON to stdout and progress/errors to stderr.
 | `ingest_csv.py --csv FILE` | Import an existing dataset shortlist CSV as candidates |
 | `library.py [--papers\|--datasets] [--topic ...] [--status ...]` | List / summarize the library |
 | `colab_check.py [--dataset <slug>]` | Pre-flight before a Colab session: config sanity, unpushed commits, dataset reachable from the remote |
+| `colab_runs.py [--last\|--compare] [--name ...]` | Read back results pushed by Colab notebooks; `--compare` shows metric deltas across runs |
 
 ## Sources & credentials
 
@@ -70,7 +71,13 @@ same `datasets/<topic>/<slug>/` paths as the local scripts. Settings live under
 in the `colab-compute` skill.
 
 The runtime clones the **GitHub remote**, so anything not pushed does not exist
-as far as a notebook is concerned.
+as far as a notebook is concerned. Datasets over 100 MB arrive as the zips that
+`github_pack.py` tracks; `ensure_dataset` unpacks them on the runtime.
+
+Running cells is the one manual step — no tool can drive a Colab kernel. The
+notebook's last cell pushes its run record, so afterwards `git pull` plus
+`colab_runs.py --last` (or `--compare`) gives the agent the actual numbers to
+verify against and iterate on.
 
 ## Usage
 
