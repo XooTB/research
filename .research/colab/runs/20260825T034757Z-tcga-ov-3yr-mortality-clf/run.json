@@ -1,0 +1,109 @@
+{
+  "name": "tcga-ov-3yr-mortality-clf",
+  "saved_at": "20260825T034757Z",
+  "env": {
+    "colab": true,
+    "python": "3.13.15",
+    "workspace": "/content/research",
+    "workspace_present": true,
+    "cpu_count": 2,
+    "ram_gb": 13.6,
+    "disk_free_gb": 93.8,
+    "gpu": {
+      "available": false,
+      "name": null,
+      "memory_mb": null,
+      "driver": null,
+      "torch_cuda": false,
+      "torch_version": "2.11.0+cpu"
+    }
+  },
+  "result": {
+    "task": "tcga-ov 3-year mortality classifier",
+    "horizon_days": 1095.75,
+    "train": {
+      "dataset": "tcga-ov-xena-rna-seq-hiseqv2",
+      "clinical": "tcga-ov-xena-clinical-matrix",
+      "n_samples": 303,
+      "n_features": 20530,
+      "n_events": 182,
+      "n_censored": 121,
+      "median_followup_days": 951.0,
+      "dropped_nonprimary": 4
+    },
+    "n_evaluable": 223,
+    "n_dropped_censored": 80,
+    "prevalence_3y": 0.4260089686098655,
+    "models": {
+      "clinical LR (baseline)": {
+        "oof_auc": 0.6460937499999999,
+        "oof_avg_precision": 0.5742830801347336
+      },
+      "expr ENET": {
+        "oof_auc": 0.6814967105263157,
+        "oof_avg_precision": 0.6069550651557385
+      },
+      "expr+clin ENET": {
+        "oof_auc": 0.6949013157894737,
+        "oof_avg_precision": 0.6321800921883223
+      },
+      "expr+clin HGB": {
+        "oof_auc": 0.6378289473684211,
+        "oof_avg_precision": 0.587450334199823
+      }
+    },
+    "best_model": "expr+clin ENET",
+    "threshold_youden": 0.4170454545552233,
+    "sensitivity": 0.7157894736842105,
+    "specificity": 0.640625,
+    "confusion": [
+      [
+        82,
+        46
+      ],
+      [
+        27,
+        68
+      ]
+    ],
+    "km_logrank_p": 2.3162017041752688e-07,
+    "signature_top": {
+      "OVGP1": -0.32096699835443837,
+      "SOSTDC1": -0.2760097445180193,
+      "PI3": 0.2739238802658789,
+      "CLDN10": -0.25952553710840454,
+      "HLA-DRB6": -0.25656821634895244,
+      "MMP1": -0.2273070023415879,
+      "OBP2B": 0.20406293501996922,
+      "BCHE": 0.1962725967843985,
+      "TOX3": -0.1790319435012544,
+      "ACCN1": 0.17530677575990095,
+      "KRT5": -0.17389206834237836,
+      "NCCRP1": 0.16913077414193434,
+      "RELN": 0.16055464208963074,
+      "CTAG1B": 0.1537230339989475,
+      "NPY": 0.1502394263213407,
+      "CDH22": 0.1447487466667103,
+      "ATP1A2": 0.13435450347356473,
+      "GATA5": 0.13374762749640487,
+      "CPA1": 0.1335877395181735,
+      "KRT14": -0.1318350449974034
+    },
+    "external": {
+      "gse26712": {
+        "dataset": "gse26712-ovarian-expression-series-matrix",
+        "n_evaluable": 169,
+        "n_dead_3y": 74,
+        "n_genes_present": 321,
+        "auc_3y": 0.614651493598862
+      },
+      "gse14764": {
+        "dataset": "gse14764-ovarian-expression-series-matrix",
+        "n_evaluable": 48,
+        "n_dead_3y": 13,
+        "n_genes_present": 321,
+        "auc_3y": 0.5054945054945055
+      }
+    }
+  }
+}
