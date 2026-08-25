@@ -212,6 +212,7 @@ Two alternatives when that isn't enough:
 | nvidia-smi sees a GPU but `torch_cuda: false` | Something reinstalled a CPU-only torch. Never pin torch/numpy in `requirements-colab.txt`; restart the runtime |
 | `clone failed` / auth error in bootstrap | Private repo without a token. Add the `GITHUB_TOKEN` Colab secret and enable notebook access for it |
 | `ModuleNotFoundError: colab_env` | Bootstrap cell not run this session, or `agent` missing from `colab.sparse_paths` |
+| `AttributeError: module 'colab_env' has no attribute '...'` | Runtime clone is stale and Python cached the old import. Re-run the bootstrap cell — it fetches `origin`, hard-resets, and `importlib.reload`s |
 | `FileNotFoundError: dataset not found` | The dataset isn't on the remote branch. Run `colab_check.py --dataset <slug>` locally |
 | Dataset folder has `expression.csv.zip` but no `expression.csv` | Over the 100 MB limit, so only the zip is tracked. `ce.restore_packed()`, or `!python agent/scripts/github_pack.py unpack` |
 | `missing parts: [...]` when unpacking | A split archive is incomplete on the remote. Push every `.zip.partNN`; re-run `colab_check.py --dataset <slug>` |

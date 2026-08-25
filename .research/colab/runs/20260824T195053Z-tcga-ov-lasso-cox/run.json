@@ -1,0 +1,82 @@
+{
+  "name": "tcga-ov-lasso-cox",
+  "saved_at": "20260824T195053Z",
+  "env": {
+    "colab": true,
+    "python": "3.13.15",
+    "workspace": "/content/research",
+    "workspace_present": true,
+    "cpu_count": 2,
+    "ram_gb": 13.6,
+    "disk_free_gb": 69.9,
+    "gpu": {
+      "available": true,
+      "name": "Tesla T4",
+      "memory_mb": 15360,
+      "driver": "580.82.07",
+      "torch_cuda": true,
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "result": {
+    "task": "tcga-ov lasso-cox overall survival",
+    "train": {
+      "dataset": "tcga-ov-xena-rna-seq-hiseqv2",
+      "clinical": "tcga-ov-xena-clinical-matrix",
+      "n_samples": 303,
+      "n_features": 20530,
+      "n_events": 182,
+      "n_censored": 121,
+      "median_followup_days": 951.0,
+      "dropped_nonprimary": 4
+    },
+    "clinical_oof_cindex": 0.6147105948327659,
+    "clinical_n": 266,
+    "expression_oof_cindex": 0.6053060274610194,
+    "penalizer": 0.05,
+    "n_genes_considered": 500,
+    "signature_size": 178,
+    "signature_top": {
+      "STAC2": 0.2249787029772237,
+      "OVGP1": -0.2013651881742138,
+      "MMP1": -0.19231871959944136,
+      "CXCL13": -0.15444851265236084,
+      "SOSTDC1": -0.1358351498351187,
+      "PI3": 0.12461074021268684,
+      "HLA-DRB6": -0.11392099084508289,
+      "FAM83F": -0.11156043560841766,
+      "CALB1": 0.11050267884247034,
+      "LOC84740": 0.10247726831115751,
+      "NPY": 0.09998634425052018,
+      "MS4A8B": -0.0948537083472285,
+      "GSTA1": -0.08848254022532978,
+      "OBP2B": 0.08490894498076745,
+      "PPP2R2B": -0.08385062652992958,
+      "SLC44A5": -0.07909983074047394,
+      "GSTT1": -0.07565605738367757,
+      "HPN": 0.0729406785781433,
+      "PKHD1": -0.06926572387543309,
+      "SCEL": 0.05702675750001099
+    },
+    "os3y_oof_auc": 0.6286184210526317,
+    "tcga_logrank_p": 1.1983705422510585e-05,
+    "external": {
+      "gse26712": {
+        "dataset": "gse26712-ovarian-expression-series-matrix",
+        "n_samples": 185,
+        "n_events": 129,
+        "n_signature_genes_present": 124,
+        "cindex": 0.5597882809005517,
+        "logrank_p": 0.6772810253238479
+      },
+      "gse14764": {
+        "dataset": "gse14764-ovarian-expression-series-matrix",
+        "n_samples": 80,
+        "n_events": 21,
+        "n_signature_genes_present": 124,
+        "cindex": 0.5298885511651469,
+        "logrank_p": 0.8811430216036636
+      }
+    }
+  }
+}
