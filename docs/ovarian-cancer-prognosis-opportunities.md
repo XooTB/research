@@ -29,17 +29,21 @@ The rest of this document is the evidence for that re-evaluation, then an endpoi
 
 ---
 
+
+
 ## 2. Sequence vs expression (this is not a wording issue)
 
-| What someone might mean | What we have locally | Consequence |
-|---|---|---|
-| DNA sequence of the tumor (WGS/WES/gene panel) | **No** FASTQ, BAM, VCF, or MAF | Cannot take “a tumor’s gene sequence” as input |
-| Somatic mutations (TP53, BRCA1/2, CDK12, NF1, RB1, …) | Clinical matrix has **IDs** pointing at TCGA mutation tracks for 316/630 samples (186 of the 304 HiSeq primaries). The mutation tables themselves are **not** on disk | Doable after a GDC MAF download; not doable now |
-| Copy-number / CCNE1 amplification / HRD genomic scar | GISTIC IDs for 579/630 samples; no GISTIC matrix downloaded | Same: pointer, not data |
-| Germline BRCA | Only **GSE63885** (`brca1 mutation`, 98/101 samples; 28 mutation carriers, mostly 5382insC). TCGA clinical matrix has **no** BRCA field. `_PANCAN_CNA_PANCAN_K8 = BRCA-LUAD+` is a pan-cancer copy-number *cluster name*, not a BRCA mutation | Expression-BRCAness is possible on one small cohort unless we fetch TCGA BRCA annotations |
-| Transcriptome (which genes are on, and how much) | **Yes:** TCGA HiSeqV2 (20,530 genes × 308 samples) plus 20 GEO microarray series | This is the actual feature modality |
-| Proteome / phospho | RPPA IDs for 436/630 TCGA samples; no RPPA table. CPTAC HGSOC (Cell 2023) not downloaded | Not available |
-| Single-cell | GSE154600 is 5 omental tumors (matrix only). Olbrecht scRNA is EGA-controlled | Not a modelling resource |
+
+| What someone might mean                               | What we have locally                                                                                                                                                                                                                          | Consequence                                                                               |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| DNA sequence of the tumor (WGS/WES/gene panel)        | **No** FASTQ, BAM, VCF, or MAF                                                                                                                                                                                                                | Cannot take “a tumor’s gene sequence” as input                                            |
+| Somatic mutations (TP53, BRCA1/2, CDK12, NF1, RB1, …) | Clinical matrix has **IDs** pointing at TCGA mutation tracks for 316/630 samples (186 of the 304 HiSeq primaries). The mutation tables themselves are **not** on disk                                                                         | Doable after a GDC MAF download; not doable now                                           |
+| Copy-number / CCNE1 amplification / HRD genomic scar  | GISTIC IDs for 579/630 samples; no GISTIC matrix downloaded                                                                                                                                                                                   | Same: pointer, not data                                                                   |
+| Germline BRCA                                         | Only **GSE63885** (`brca1 mutation`, 98/101 samples; 28 mutation carriers, mostly 5382insC). TCGA clinical matrix has **no** BRCA field. `_PANCAN_CNA_PANCAN_K8 = BRCA-LUAD+` is a pan-cancer copy-number *cluster name*, not a BRCA mutation | Expression-BRCAness is possible on one small cohort unless we fetch TCGA BRCA annotations |
+| Transcriptome (which genes are on, and how much)      | **Yes:** TCGA HiSeqV2 (20,530 genes × 308 samples) plus 20 GEO microarray series                                                                                                                                                              | This is the actual feature modality                                                       |
+| Proteome / phospho                                    | RPPA IDs for 436/630 TCGA samples; no RPPA table. CPTAC HGSOC (Cell 2023) not downloaded                                                                                                                                                      | Not available                                                                             |
+| Single-cell                                           | GSE154600 is 5 omental tumors (matrix only). Olbrecht scRNA is EGA-controlled                                                                                                                                                                 | Not a modelling resource                                                                  |
+
 
 A transcriptome model answers: *given how this tumor is behaving now (proliferation, stroma, interferon, angiogenesis), how will the patient do?*  
 A sequence model answers: *given which DNA lesions this tumor carries, how will it respond to DNA-damaging or homologous-recombination-targeted therapy?*
@@ -50,31 +54,37 @@ RNA-seq and microarray also do **not** give a future clinical “risk factor” 
 
 ---
 
+
+
 ## 3. What “prognosis” can mean in ovarian cancer
 
 Clinically, “prognosis” is not one variable. The endpoints below are the ones the field actually uses. Later sections map each to our files.
 
 **Time-to-event (need time + censoring indicator)**
 
-| Endpoint | Meaning | Why it matters |
-|---|---|---|
-| Overall survival (OS) | Time from diagnosis/surgery to death, any cause | Regulatory / literature default. Diluted by post-progression therapy, non-cancer death, and short follow-up |
-| Disease-specific survival (DSS) | Death from ovarian cancer only | Cleaner than OS; almost never in GEO |
-| Progression-free survival (PFS) | Time to recurrence, progression, or death | More events, closer to the tumor’s biology, still standard |
-| Platinum-free interval (PFI) | Time from last platinum to progression | Defines “platinum resistant” (<6 months) vs sensitive. Actionable |
-| Disease-free survival (DFS) | Time to relapse after complete resection | Relevant after optimal debulking / early stage |
+
+| Endpoint                        | Meaning                                         | Why it matters                                                                                              |
+| ------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Overall survival (OS)           | Time from diagnosis/surgery to death, any cause | Regulatory / literature default. Diluted by post-progression therapy, non-cancer death, and short follow-up |
+| Disease-specific survival (DSS) | Death from ovarian cancer only                  | Cleaner than OS; almost never in GEO                                                                        |
+| Progression-free survival (PFS) | Time to recurrence, progression, or death       | More events, closer to the tumor’s biology, still standard                                                  |
+| Platinum-free interval (PFI)    | Time from last platinum to progression          | Defines “platinum resistant” (<6 months) vs sensitive. Actionable                                           |
+| Disease-free survival (DFS)     | Time to relapse after complete resection        | Relevant after optimal debulking / early stage                                                              |
+
 
 **Binary / ordinal (need a label; time optional)**
 
-| Endpoint | Meaning |
-|---|---|
-| Horizon mortality | Dead vs alive at 1 / 3 / 5 / 10 years. Patients censored before the horizon **must be dropped** |
-| Long- vs short-term survivor | e.g. OS <2 years vs >8–10 years, excluding the middle |
-| Primary therapy outcome | RECIST-style CR / PR / SD / PD after first-line chemo |
-| Platinum sensitivity class | Resistant / partially sensitive / sensitive (GCIG, usually by PFI) |
-| Residual disease | Optimal vs suboptimal debulking (or R0 / 1–10 mm / >20 mm) |
-| Relapse (yes/no) | Especially in early-stage disease, where OS events are rare |
-| Treatment *benefit* (predictive, not prognostic) | Does this patient gain from adding drug X? Needs a treated and a control arm |
+
+| Endpoint                                         | Meaning                                                                                         |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Horizon mortality                                | Dead vs alive at 1 / 3 / 5 / 10 years. Patients censored before the horizon **must be dropped** |
+| Long- vs short-term survivor                     | e.g. OS <2 years vs >8–10 years, excluding the middle                                           |
+| Primary therapy outcome                          | RECIST-style CR / PR / SD / PD after first-line chemo                                           |
+| Platinum sensitivity class                       | Resistant / partially sensitive / sensitive (GCIG, usually by PFI)                              |
+| Residual disease                                 | Optimal vs suboptimal debulking (or R0 / 1–10 mm / >20 mm)                                      |
+| Relapse (yes/no)                                 | Especially in early-stage disease, where OS events are rare                                     |
+| Treatment *benefit* (predictive, not prognostic) | Does this patient gain from adding drug X? Needs a treated and a control arm                    |
+
 
 **Not prognosis, but often confused with it**
 
@@ -86,16 +96,20 @@ Clinically, “prognosis” is not one variable. The endpoints below are the one
 
 ---
 
+
+
 ## 4. Library at a glance
 
 **23 dataset folders** under `datasets/ovarian-cancer-prognosis-ml/` (~2 GB). One empty shell (`gse131978-ovarian-expression-series-matrix`). One expression-only matrix (`tcga-ov-xena-rna-seq-hiseqv2`). One clinical-only matrix (`tcga-ov-xena-clinical-matrix`). Twenty GEO series with expression + sample metadata.
 
 **What has already been modelled**
 
-| Run | Task | Train | Internal | External |
-|---|---|---|---|---|
-| `20260824T195053Z-tcga-ov-lasso-cox` | OS, LASSO-Cox | TCGA HiSeq 303 pts, 182 deaths, median follow-up 951 days | Expression C-index **0.605**; clinical-only **0.615**; 3-year OS AUC 0.629; KM log-rank p = 1.2×10⁻⁵ (optimistic: same cohort used to pick the signature) | GSE26712 185 pts: C-index **0.560**, log-rank p = 0.68 (no separation). GSE14764 80 pts: C-index **0.530**, log-rank p = 0.88 |
-| `20260825T034757Z-tcga-ov-3yr-mortality-clf` | Dead within 3 years, elastic-net | Same 303; 80 censored-before-3y dropped → 223 evaluable, 42.6% dead | Best = expression + clinical ENET, OOF AUC **0.695** (clinical LR 0.646; expression-only 0.681) | GSE26712 169 evaluable: AUC **0.615**. GSE14764 48 evaluable: AUC **0.505** |
+
+| Run                                          | Task                             | Train                                                               | Internal                                                                                                                                                  | External                                                                                                                      |
+| -------------------------------------------- | -------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `20260824T195053Z-tcga-ov-lasso-cox`         | OS, LASSO-Cox                    | TCGA HiSeq 303 pts, 182 deaths, median follow-up 951 days           | Expression C-index **0.605**; clinical-only **0.615**; 3-year OS AUC 0.629; KM log-rank p = 1.2×10⁻⁵ (optimistic: same cohort used to pick the signature) | GSE26712 185 pts: C-index **0.560**, log-rank p = 0.68 (no separation). GSE14764 80 pts: C-index **0.530**, log-rank p = 0.88 |
+| `20260825T034757Z-tcga-ov-3yr-mortality-clf` | Dead within 3 years, elastic-net | Same 303; 80 censored-before-3y dropped → 223 evaluable, 42.6% dead | Best = expression + clinical ENET, OOF AUC **0.695** (clinical LR 0.646; expression-only 0.681)                                                           | GSE26712 169 evaluable: AUC **0.615**. GSE14764 48 evaluable: AUC **0.505**                                                   |
+
 
 Interpretation, which should drive the rest of the project:
 
@@ -113,32 +127,38 @@ Interpretation, which should drive the rest of the project:
 
 ---
 
+
+
 ## 5. Cohort catalog
 
 Counts below are from the series matrices / phenotype CSVs / Xena clinical matrix on disk (August 2026). “Usable n” means samples that have the stated endpoint **and** are tumors (normals excluded). Histotype-restricted numbers are given when the column exists.
 
 ### 5.1 Training-scale resources
 
+
+
 #### TCGA-OV (Xena HiSeqV2 + clinical matrix)
 
-| Item | Value |
-|---|---|
-| Expression | 20,530 genes × **308** samples (`HiSeqV2`) |
-| Clinical | **630** samples × 102 fields (`OV_clinicalMatrix`) |
-| Overlap | all 308 expression samples match clinical IDs |
-| Barcode primary (`-01`) | 304 |
-| `sample_type = Primary Tumor` | 303 (plus 5 recurrent; 12 normals live in the clinical file only) |
+
+| Item                                                   | Value                                                                                                                                                                                                                                        |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Expression                                             | 20,530 genes × **308** samples (`HiSeqV2`)                                                                                                                                                                                                   |
+| Clinical                                               | **630** samples × 102 fields (`OV_clinicalMatrix`)                                                                                                                                                                                           |
+| Overlap                                                | all 308 expression samples match clinical IDs                                                                                                                                                                                                |
+| Barcode primary (`-01`)                                | 304                                                                                                                                                                                                                                          |
+| `sample_type = Primary Tumor`                          | 303 (plus 5 recurrent; 12 normals live in the clinical file only)                                                                                                                                                                            |
 | Usable OS (time ≥ 1 day, vital status LIVING/DECEASED) | **303** primaries (182 deaths, 121 censored). Median time 951 days (range 8–5481). Dropped primary: `TCGA-04-1357-01` (LIVING, both day fields empty). Including the 4 recurrent `-02` samples, 307/308 HiSeq barcodes have constructible OS |
-| Histology | ovarian serous cystadenocarcinoma (HGSOC by construction) |
-| Stage (HiSeq primary) | IIIC 221, IV 38, IIIA–B 21, II 21, IC 1, missing 2 |
-| Grade | G3 261, G2 33, other/missing 10 |
-| Residual disease (`tumor_residual_disease`) | 267/304: 1–10 mm 134, no macroscopic 58, >20 mm 52, 11–20 mm 23 |
-| Primary therapy outcome | 223/304: CR 150, PR 33, SD 18, PD 22, missing 81 |
-| Days to new tumor event | 175/304 have a time; the binary `new_tumor_event_after_initial_treatment` is filled for only 32/304 (YES 23, NO 9). A strict YES/NO+time proxy is ~183 samples with almost no true censoring — **not** a proper PFI |
-| 3-year mortality evaluable | 223 (95 dead by 3 years; 80 dropped because censored earlier) — matches the classifier notebook |
-| Age | 304/304 |
-| BRCA / HRD / mutations **as data** | not in this file; mutation *IDs* for 186/304 |
-| Other omics **as data** | not downloaded. IDs exist: Affy U133A 593/630, GISTIC 579, methyl27 616, miRNA 485, RPPA 436 |
+| Histology                                              | ovarian serous cystadenocarcinoma (HGSOC by construction)                                                                                                                                                                                    |
+| Stage (HiSeq primary)                                  | IIIC 221, IV 38, IIIA–B 21, II 21, IC 1, missing 2                                                                                                                                                                                           |
+| Grade                                                  | G3 261, G2 33, other/missing 10                                                                                                                                                                                                              |
+| Residual disease (`tumor_residual_disease`)            | 267/304: 1–10 mm 134, no macroscopic 58, >20 mm 52, 11–20 mm 23                                                                                                                                                                              |
+| Primary therapy outcome                                | 223/304: CR 150, PR 33, SD 18, PD 22, missing 81                                                                                                                                                                                             |
+| Days to new tumor event                                | 175/304 have a time; the binary `new_tumor_event_after_initial_treatment` is filled for only 32/304 (YES 23, NO 9). A strict YES/NO+time proxy is ~183 samples with almost no true censoring — **not** a proper PFI                          |
+| 3-year mortality evaluable                             | 223 (95 dead by 3 years; 80 dropped because censored earlier) — matches the classifier notebook                                                                                                                                              |
+| Age                                                    | 304/304                                                                                                                                                                                                                                      |
+| BRCA / HRD / mutations **as data**                     | not in this file; mutation *IDs* for 186/304                                                                                                                                                                                                 |
+| Other omics **as data**                                | not downloaded. IDs exist: Affy U133A 593/630, GISTIC 579, methyl27 616, miRNA 485, RPPA 436                                                                                                                                                 |
+
 
 **Missing relative to a modern TCGA survival analysis:** the PanCanAtlas CDR table (Liu et al., standardized OS / DSS / DFI / PFI) was not downloaded. PFI constructed from `days_to_new_tumor_event_after_initial_treatment` will under-count early progressors (only 7 of 175 new-tumor times are <180 days — that is not biologically plausible as a complete platinum-resistance rate).
 
@@ -148,20 +168,22 @@ Counts below are from the series matrices / phenotype CSVs / Xena clinical matri
 
 Largest GEO cohort, and the only one with a **randomized treatment arm**.
 
-| Field | n |
-|---|---|
-| Samples | 380 FFPE ovarian cancers |
-| OS time + event (`final_ostm`, `final_osid`) | 380 (96 deaths). Time range 1–1326, median 770 — **days**, immature OS |
-| PFS time + event (`final_pfstm`, `final_pfsid`) | 380 (235 progressions). Median 552 days |
-| Treatment | bevacizumab 199, standard 181 |
-| Debulking | optimal 290, sub-optimal 88, inoperable 2 |
-| FIGO | I 20, II 31, III 266, IV 63 |
-| Histology | serous 277, other 103 |
-| Grade | high 281, low 74, NA 25 |
-| Serous + high-grade subset | **212** (56 OS events, 138 PFS events; bev 109 / standard 103) |
-| TCGA-style subtype (`t1_cluster_name`) | immunoreactive 124, proliferative 97, differentiated 86, mesenchymal 73 |
-| Age | 380/380 |
-| Manuscript analysis subset (`manuscript_analysis359`) | 359 of 380 |
+
+| Field                                                 | n                                                                       |
+| ----------------------------------------------------- | ----------------------------------------------------------------------- |
+| Samples                                               | 380 FFPE ovarian cancers                                                |
+| OS time + event (`final_ostm`, `final_osid`)          | 380 (96 deaths). Time range 1–1326, median 770 — **days**, immature OS  |
+| PFS time + event (`final_pfstm`, `final_pfsid`)       | 380 (235 progressions). Median 552 days                                 |
+| Treatment                                             | bevacizumab 199, standard 181                                           |
+| Debulking                                             | optimal 290, sub-optimal 88, inoperable 2                               |
+| FIGO                                                  | I 20, II 31, III 266, IV 63                                             |
+| Histology                                             | serous 277, other 103                                                   |
+| Grade                                                 | high 281, low 74, NA 25                                                 |
+| Serous + high-grade subset                            | **212** (56 OS events, 138 PFS events; bev 109 / standard 103)          |
+| TCGA-style subtype (`t1_cluster_name`)                | immunoreactive 124, proliferative 97, differentiated 86, mesenchymal 73 |
+| Age                                                   | 380/380                                                                 |
+| Manuscript analysis subset (`manuscript_analysis359`) | 359 of 380                                                              |
+
 
 PFS<180 days with event: only **11/380**. This cohort is excellent for PFS and for **bevacizumab interaction**. It is a poor platinum-resistance set. FFPE Illumina DASL (GPL14951) — another platform family, not Affy/Agilent.
 
@@ -169,48 +191,58 @@ PFS<180 days with event: only **11/380**. This cohort is excellent for PFS and f
 
 Cleanest dedicated HGSOC survival series after TCGA.
 
-| Field | n |
-|---|---|
-| Samples | **260**, all labelled high-grade serous |
-| OS months + death | 260 (121 deaths). Time 1–128 months |
-| PFS months + recurrence | 260 (193 recurrences). Time 1–119 months |
-| Surgery | suboptimal 157, optimal 103 |
-| All received platinum **and** taxane | 260/260 |
-| Grade | 2: 131, 3: 129 |
-| Stage | IIIa 4, IIIb 20, IIIc 180, IV 56 |
-| PFS<6 months (platinum-resistant proxy) | **24** |
-| PFS≥12 months and no recurrence (sensitive-ish) | **66** |
+
+| Field                                           | n                                        |
+| ----------------------------------------------- | ---------------------------------------- |
+| Samples                                         | **260**, all labelled high-grade serous  |
+| OS months + death                               | 260 (121 deaths). Time 1–128 months      |
+| PFS months + recurrence                         | 260 (193 recurrences). Time 1–119 months |
+| Surgery                                         | suboptimal 157, optimal 103              |
+| All received platinum **and** taxane            | 260/260                                  |
+| Grade                                           | 2: 131, 3: 129                           |
+| Stage                                           | IIIa 4, IIIb 20, IIIc 180, IV 56         |
+| PFS<6 months (platinum-resistant proxy)         | **24**                                   |
+| PFS≥12 months and no recurrence (sensitive-ish) | **66**                                   |
+
+
+
 
 #### GSE9891 (Tothill / AOCS, Affymetrix GPL570)
 
 The cohort every ovarian signature paper wants as a validator. **Expression is here; survival is not.**
 
-| Field | n |
-|---|---|
-| Samples | 285 |
-| Primary site | ovary 243, peritoneum 34, fallopian tube 8 |
-| Type | malignant 267, LMP 18 (exclude LMP from HGSOC models) |
-| Subtype | serous/papillary serous 264, endometrioid 20, adeno 1 |
-| Stage / grade | present (IIIC 187, grade 3: 161) |
-| OS / PFS / residual / age | **absent from the GEO series matrix** |
+
+| Field                     | n                                                     |
+| ------------------------- | ----------------------------------------------------- |
+| Samples                   | 285                                                   |
+| Primary site              | ovary 243, peritoneum 34, fallopian tube 8            |
+| Type                      | malignant 267, LMP 18 (exclude LMP from HGSOC models) |
+| Subtype                   | serous/papillary serous 264, endometrioid 20, adeno 1 |
+| Stage / grade             | present (IIIC 187, grade 3: 161)                      |
+| OS / PFS / residual / age | **absent from the GEO series matrix**                 |
+
 
 The existing OS notebook already recorded this gap. Survival for these patients lives in the Tothill paper supplements and in Bioconductor **curatedOvarianData**. Until that is attached, GSE9891 is a histotype/stage/grade expression set, not a prognosis set.
 
 ### 5.2 Solid OS + PFS GEO cohorts
 
-| Cohort | Platform | Tumors | OS | PFS / DFS | Residual | Notes |
-|---|---|---|---|---|---|---|
-| **GSE26712** Bonome | GPL96 U133A | 185 tumors (+10 HOSE normals) | 185 times in years; status DOD 129 / AWD 24 / NED 32 | no | optimal 90, suboptimal 95 | Late-stage high-grade by description. Already used as OS validator. Treat DOD as event, AWD+NED as censored |
-| **GSE17260** Yoshihara | GPL6480 Agilent | 110 serous | 110 months, 46 deaths | 110 months, 76 recurrences | optimal 57, not optimal 53 | Same platform family as GSE32062 — natural paired validator |
-| **GSE26193** Mateescu | GPL570 | 107 mixed histotype; **79 serous** | 107 (76 deaths); serous 60 deaths | 107 (80 events); serous 63 | no | Times in years (up to 20). Restrict to serous for HGSOC models |
-| **GSE49997** Pils | GPL2986 ABI | 204 (10 marked `excluded=yes`); **194 usable**, 171 serous | 194 months, 57 deaths (48 in serous) | 194, 124 events (108 in serous) | residual tumor Yes 57 / No 137 | Also: age, peritoneal carcinomatosis, molecular subclass 1/2. Short OS follow-up (max 49 months) |
-| **GSE14764** Denkert | GPL96 | 80 mixed; **68 serous** | 80 months (7–73), **21 deaths** (19 serous) | no | 0: 50, 1: 26 (4 missing) | Underpowered OS validator — our 3-year AUC 0.50 is expected |
-| **GSE30161** Ferriss | GPL570 FFPE | 58 mixed; **47 serous** | 58 days, 36 deaths | PFI days 58; relapse 48 yes / 6 no / 4 unknown | optimal 26, sub-optimal 30 (2 missing) | **Best small chemo-annotated set:** agent, CR/PR/SD/PD, PFI, OS. FFPE |
-| **GSE63885** Lisowska | GPL570 | 101 mixed; **73 serous** | 75 with OS days (70 serous); last status DOD 66 / AWD 4 / NED 5 / NA 26 | DFS days for 75 | R0 15, R1 38, R2 22 (26 NA) | **Best platinum-class labels** (see §5.3). Also BRCA1 + TP53 |
-| **GSE19161** | GPL9717 | 61 | 61 months, 32 events / 29 censored | no | no | **Only 658 probes** — skip as a gene-signature validator |
-| **GSE18520** Mok/Bonome | GPL570 | 53 late high-grade serous (+10 OSE) | `surv data` 5–150, 12 marked `(A)` = alive, 41 unmarked | no | no | Usable only after adopting the paper’s coding (unmarked = dead, units almost certainly months). Messy |
-| **GSE53963** | GPL6480 two-color | 174 serous | `time_fu_months` + `vital_status` on **channel 2**: 153 dead, 21 alive | no | optimal 123, sub-optimal 48, unknown 3 | Phenotype is on ch2 (easy to miss). 14 samples carry a TCGA barcode — drop those if used beside TCGA |
-| **GSE51088** | GPL7264 two-color | 172 mixed (15 normal, 5 benign, 12 borderline, 140 malignant) | ch2 `follow up months` + `patient status`. Serous **primary malignant 100** (80 dead, 19 alive, 1 unknown) | disease status Free/Not Free (not a proper PFS) | no | Must subset malignant primary. Mixed histotype. Two-color. **23 samples carry a TCGA id** — drop beside TCGA |
+
+| Cohort                  | Platform          | Tumors                                                        | OS                                                                                                         | PFS / DFS                                       | Residual                               | Notes                                                                                                        |
+| ----------------------- | ----------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **GSE26712** Bonome     | GPL96 U133A       | 185 tumors (+10 HOSE normals)                                 | 185 times in years; status DOD 129 / AWD 24 / NED 32                                                       | no                                              | optimal 90, suboptimal 95              | Late-stage high-grade by description. Already used as OS validator. Treat DOD as event, AWD+NED as censored  |
+| **GSE17260** Yoshihara  | GPL6480 Agilent   | 110 serous                                                    | 110 months, 46 deaths                                                                                      | 110 months, 76 recurrences                      | optimal 57, not optimal 53             | Same platform family as GSE32062 — natural paired validator                                                  |
+| **GSE26193** Mateescu   | GPL570            | 107 mixed histotype; **79 serous**                            | 107 (76 deaths); serous 60 deaths                                                                          | 107 (80 events); serous 63                      | no                                     | Times in years (up to 20). Restrict to serous for HGSOC models                                               |
+| **GSE49997** Pils       | GPL2986 ABI       | 204 (10 marked `excluded=yes`); **194 usable**, 171 serous    | 194 months, 57 deaths (48 in serous)                                                                       | 194, 124 events (108 in serous)                 | residual tumor Yes 57 / No 137         | Also: age, peritoneal carcinomatosis, molecular subclass 1/2. Short OS follow-up (max 49 months)             |
+| **GSE14764** Denkert    | GPL96             | 80 mixed; **68 serous**                                       | 80 months (7–73), **21 deaths** (19 serous)                                                                | no                                              | 0: 50, 1: 26 (4 missing)               | Underpowered OS validator — our 3-year AUC 0.50 is expected                                                  |
+| **GSE30161** Ferriss    | GPL570 FFPE       | 58 mixed; **47 serous**                                       | 58 days, 36 deaths                                                                                         | PFI days 58; relapse 48 yes / 6 no / 4 unknown  | optimal 26, sub-optimal 30 (2 missing) | **Best small chemo-annotated set:** agent, CR/PR/SD/PD, PFI, OS. FFPE                                        |
+| **GSE63885** Lisowska   | GPL570            | 101 mixed; **73 serous**                                      | 75 with OS days (70 serous); last status DOD 66 / AWD 4 / NED 5 / NA 26                                    | DFS days for 75                                 | R0 15, R1 38, R2 22 (26 NA)            | **Best platinum-class labels** (see §5.3). Also BRCA1 + TP53                                                 |
+| **GSE19161**            | GPL9717           | 61                                                            | 61 months, 32 events / 29 censored                                                                         | no                                              | no                                     | **Only 658 probes** — skip as a gene-signature validator                                                     |
+| **GSE18520** Mok/Bonome | GPL570            | 53 late high-grade serous (+10 OSE)                           | `surv data` 5–150, 12 marked `(A)` = alive, 41 unmarked                                                    | no                                              | no                                     | Usable only after adopting the paper’s coding (unmarked = dead, units almost certainly months). Messy        |
+| **GSE53963**            | GPL6480 two-color | 174 serous                                                    | `time_fu_months` + `vital_status` on **channel 2**: 153 dead, 21 alive                                     | no                                              | optimal 123, sub-optimal 48, unknown 3 | Phenotype is on ch2 (easy to miss). 14 samples carry a TCGA barcode — drop those if used beside TCGA         |
+| **GSE51088**            | GPL7264 two-color | 172 mixed (15 normal, 5 benign, 12 borderline, 140 malignant) | ch2 `follow up months` + `patient status`. Serous **primary malignant 100** (80 dead, 19 alive, 1 unknown) | disease status Free/Not Free (not a proper PFS) | no                                     | Must subset malignant primary. Mixed histotype. Two-color. **23 samples carry a TCGA id** — drop beside TCGA |
+
+
+
 
 #### GSE13876 (Crijns, custom two-color GPL7759)
 
@@ -222,73 +254,87 @@ This is a real survival cohort, but GPL7759 is a custom array. Gene mapping will
 
 ### 5.3 Chemo / platinum-labelled cohorts
 
-| Cohort | Label | n (all / serous where known) | Survival too? |
-|---|---|---|---|
-| **GSE63885** | Platinum: resistant / moderately sensitive / highly sensitive (PFI cut at 180 and 732 days). Serous: 32 / 26 / 12 (3 NA). First-line RECIST: CR 47, PR 13, SD 3, P 7 among serous | 101 / 73 | Yes |
-| **GSE51373** | chemotherapy sensitive 16, resistant 12 | 28 HGSOC | No |
-| **GSE131978** GPL96 + GPL570 | platinum sensitive / partially sensitive / resistant. Combined non-missing: 12 / 6 / 19. Also long- vs short-term survivor in the sample titles | 25 + 14 = 39 HGSOC, **two Affy chips** | No time-to-event |
-| **GSE30161** | CR 32, PR 22, PD 1, unknown 3 (serous CR 26 / PR 18 / PD 1) | 58 / 47 | Yes |
-| **TCGA HiSeq** | primary_therapy_outcome_success: CR 150, PR 33, SD 18, PD 22 | 223 labelled of 304 | Yes |
-| **GSE154600** | chemo response resistant 2 / sensitive 2 / refractory 1 | **5** scRNA | No |
+
+| Cohort                       | Label                                                                                                                                                                             | n (all / serous where known)           | Survival too?    |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------- |
+| **GSE63885**                 | Platinum: resistant / moderately sensitive / highly sensitive (PFI cut at 180 and 732 days). Serous: 32 / 26 / 12 (3 NA). First-line RECIST: CR 47, PR 13, SD 3, P 7 among serous | 101 / 73                               | Yes              |
+| **GSE51373**                 | chemotherapy sensitive 16, resistant 12                                                                                                                                           | 28 HGSOC                               | No               |
+| **GSE131978** GPL96 + GPL570 | platinum sensitive / partially sensitive / resistant. Combined non-missing: 12 / 6 / 19. Also long- vs short-term survivor in the sample titles                                   | 25 + 14 = 39 HGSOC, **two Affy chips** | No time-to-event |
+| **GSE30161**                 | CR 32, PR 22, PD 1, unknown 3 (serous CR 26 / PR 18 / PD 1)                                                                                                                       | 58 / 47                                | Yes              |
+| **TCGA HiSeq**               | primary_therapy_outcome_success: CR 150, PR 33, SD 18, PD 22                                                                                                                      | 223 labelled of 304                    | Yes              |
+| **GSE154600**                | chemo response resistant 2 / sensitive 2 / refractory 1                                                                                                                           | **5** scRNA                            | No               |
+
 
 GSE32062 / GSE17260 / GSE140082 can supply a **PFS-based proxy** (progression by 6 months) but the resistant class is small (24, 15, and 11 respectively). Do not pretend those are equivalent to GSE63885’s curated platinum classes.
 
 ### 5.4 Special-purpose / weak-for-prognosis
 
-| Cohort | n | What it is | Prognosis use |
-|---|---|---|---|
-| **GSE8842** | 83, **all FIGO stage I** | OS days, PFS days, relapsed 21/83, cancer death 13. Histotype mixed; 15 borderline. Invasive 68 (18 relapsed, 13 cancer deaths). Serous invasive 24 | Early-stage **relapse**, not late-stage OS. Underpowered if restricted to serous |
-| **GSE14407** | 24 | 12 OSE vs 12 LCM serous tumor | Diagnostic, zero follow-up |
-| **GSE154600** | 5 | scRNA omental HGSOC | Ignore for supervised prognosis |
-| empty `gse131978-…` folder | 0 | leftover slug | Ignore |
+
+| Cohort                     | n                        | What it is                                                                                                                                          | Prognosis use                                                                    |
+| -------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| **GSE8842**                | 83, **all FIGO stage I** | OS days, PFS days, relapsed 21/83, cancer death 13. Histotype mixed; 15 borderline. Invasive 68 (18 relapsed, 13 cancer deaths). Serous invasive 24 | Early-stage **relapse**, not late-stage OS. Underpowered if restricted to serous |
+| **GSE14407**               | 24                       | 12 OSE vs 12 LCM serous tumor                                                                                                                       | Diagnostic, zero follow-up                                                       |
+| **GSE154600**              | 5                        | scRNA omental HGSOC                                                                                                                                 | Ignore for supervised prognosis                                                  |
+| empty `gse131978-…` folder | 0                        | leftover slug                                                                                                                                       | Ignore                                                                           |
+
+
+
 
 ### 5.5 Platform map (why pooling is hard)
 
-| Platform | Cohorts | Approx. tumor n with some outcome |
-|---|---|---|
-| RNA-seq HiSeqV2 | TCGA-OV | 303 OS |
-| Affymetrix U133A (GPL96) | GSE26712, GSE14764, GSE131978-gpl96 | ~185+80+25 |
-| Affymetrix U133 Plus 2.0 (GPL570) | GSE9891 (no OS yet), GSE18520, GSE26193, GSE30161, GSE63885, GSE14407, GSE51373, GSE131978-gpl570 | largest Affy family |
-| Agilent GPL6480 | GSE32062, GSE17260, GSE53963 | 260+110+174 |
-| Illumina GPL14951 | GSE140082 | 380 |
-| ABI GPL2986 | GSE49997 | 194 |
-| Two-color / custom | GSE13876, GSE51088, GSE8842, GSE19161 | GSE19161 is 658 probes — skip; others need careful mapping |
+
+| Platform                          | Cohorts                                                                                           | Approx. tumor n with some outcome                          |
+| --------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| RNA-seq HiSeqV2                   | TCGA-OV                                                                                           | 303 OS                                                     |
+| Affymetrix U133A (GPL96)          | GSE26712, GSE14764, GSE131978-gpl96                                                               | ~185+80+25                                                 |
+| Affymetrix U133 Plus 2.0 (GPL570) | GSE9891 (no OS yet), GSE18520, GSE26193, GSE30161, GSE63885, GSE14407, GSE51373, GSE131978-gpl570 | largest Affy family                                        |
+| Agilent GPL6480                   | GSE32062, GSE17260, GSE53963                                                                      | 260+110+174                                                |
+| Illumina GPL14951                 | GSE140082                                                                                         | 380                                                        |
+| ABI GPL2986                       | GSE49997                                                                                          | 194                                                        |
+| Two-color / custom                | GSE13876, GSE51088, GSE8842, GSE19161                                                             | GSE19161 is 658 probes — skip; others need careful mapping |
+
 
 A model trained on TCGA RNA-seq and tested on GPL96 (GSE26712) is already a cross-platform test. That is partly why external C-index collapsed. It is also why **within-platform** validation (e.g. train GSE32062, test GSE17260, both Agilent) is a cleaner scientific experiment than another TCGA→Affy leap.
 
 ---
 
+
+
 ## 6. Cross-cohort endpoint matrix
 
 Legend: **Y** = usable time+event or a clean label on disk; **p** = partial / reconstructable / messy; **—** = not present; **n** = too small to be a training set.
 
-| Cohort | n tumors | OS | PFS/PFI | Chemo/platinum | Residual | Stage | Grade | Age | Histotype | Other distinctive labels |
-|---|---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
-| TCGA HiSeq | 303–304 | Y | p | Y (RECIST-like, PD n=22) | Y | Y | Y | Y | serous | new-tumor time 175; omics IDs only |
-| GSE140082 | 380 | Y (immature) | Y | — (trial therapy, not platinum class) | Y | Y | Y | Y | mixed | **bevacizumab vs standard**; TCGA subtypes |
-| GSE32062 | 260 | Y | Y | proxy via PFS | Y | Y | Y | — | HGSOC | all platinum+taxane |
-| GSE9891 | 285 | — | — | — | — | Y | Y | — | mostly serous | **need curated survival**; 18 LMP |
-| GSE26712 | 185 | Y | — | — | Y | — (late-stage stated) | — (high-grade stated) | — | HGSOC stated | DOD/AWD/NED |
-| GSE17260 | 110 | Y | Y | proxy | Y | Y | Y | — | serous | |
-| GSE26193 | 107 | Y | Y | — | — | Y | Y | — | mixed | fibrosis/stress signature tag |
-| GSE49997 | 194 | Y | Y | — | Y | Y | Y | Y | mostly serous | peritoneal carcinomatosis; subclass |
-| GSE14764 | 80 | Y | — | — | Y | Y | Y | — | mixed | few deaths |
-| GSE30161 | 58 | Y | Y (PFI days) | Y | Y | Y | Y | Y | mixed | chemo agent; FFPE |
-| GSE63885 | 75 labelled | Y | Y (DFS) | **Y (best)** | Y | Y | Y | — | mixed | **BRCA1, TP53** |
-| GSE53963 | 174 | Y | — | — | Y | Y | Y | Y | serous | 14 TCGA IDs |
-| GSE51088 | 100 serous primary | Y | p | — | — | Y | Y | Y | mixed | two-color; drop normals |
-| GSE13876 | 157 patients | Y | — | — | — | — | — | Y | serous stated | custom array; technical replicates |
-| GSE19161 | 61 | Y | — | — | — | — | — | — | — | 658-probe custom array — skip |
-| GSE18520 | 53 | p | — | — | — | late | high | — | serous | messy `surv data` |
-| GSE8842 | 83 | Y | Y | — | — | **all I** | Y | Y | mixed | **early-stage relapse** |
-| GSE51373 | 28 | — | — | Y | — | Y | — | — | HGSOC | |
-| GSE131978 | 39 | — | — | Y | — | Y | — | — | HGSOC | two platforms; long/short survivor in titles |
-| GSE14407 | 12 tumors | — | — | — | — | — | — | — | serous vs OSE | diagnostic |
-| GSE154600 | 5 | — | — | n | — | Y | Y | — | HGSOC | scRNA |
+
+| Cohort     | n tumors           | OS           | PFS/PFI      | Chemo/platinum                        | Residual | Stage                 | Grade                 | Age | Histotype     | Other distinctive labels                     |
+| ---------- | ------------------ | ------------ | ------------ | ------------------------------------- | -------- | --------------------- | --------------------- | --- | ------------- | -------------------------------------------- |
+| TCGA HiSeq | 303–304            | Y            | p            | Y (RECIST-like, PD n=22)              | Y        | Y                     | Y                     | Y   | serous        | new-tumor time 175; omics IDs only           |
+| GSE140082  | 380                | Y (immature) | Y            | — (trial therapy, not platinum class) | Y        | Y                     | Y                     | Y   | mixed         | **bevacizumab vs standard**; TCGA subtypes   |
+| GSE32062   | 260                | Y            | Y            | proxy via PFS                         | Y        | Y                     | Y                     | —   | HGSOC         | all platinum+taxane                          |
+| GSE9891    | 285                | —            | —            | —                                     | —        | Y                     | Y                     | —   | mostly serous | **need curated survival**; 18 LMP            |
+| GSE26712   | 185                | Y            | —            | —                                     | Y        | — (late-stage stated) | — (high-grade stated) | —   | HGSOC stated  | DOD/AWD/NED                                  |
+| GSE17260   | 110                | Y            | Y            | proxy                                 | Y        | Y                     | Y                     | —   | serous        |                                              |
+| GSE26193   | 107                | Y            | Y            | —                                     | —        | Y                     | Y                     | —   | mixed         | fibrosis/stress signature tag                |
+| GSE49997   | 194                | Y            | Y            | —                                     | Y        | Y                     | Y                     | Y   | mostly serous | peritoneal carcinomatosis; subclass          |
+| GSE14764   | 80                 | Y            | —            | —                                     | Y        | Y                     | Y                     | —   | mixed         | few deaths                                   |
+| GSE30161   | 58                 | Y            | Y (PFI days) | Y                                     | Y        | Y                     | Y                     | Y   | mixed         | chemo agent; FFPE                            |
+| GSE63885   | 75 labelled        | Y            | Y (DFS)      | **Y (best)**                          | Y        | Y                     | Y                     | —   | mixed         | **BRCA1, TP53**                              |
+| GSE53963   | 174                | Y            | —            | —                                     | Y        | Y                     | Y                     | Y   | serous        | 14 TCGA IDs                                  |
+| GSE51088   | 100 serous primary | Y            | p            | —                                     | —        | Y                     | Y                     | Y   | mixed         | two-color; drop normals                      |
+| GSE13876   | 157 patients       | Y            | —            | —                                     | —        | —                     | —                     | Y   | serous stated | custom array; technical replicates           |
+| GSE19161   | 61                 | Y            | —            | —                                     | —        | —                     | —                     | —   | —             | 658-probe custom array — skip                |
+| GSE18520   | 53                 | p            | —            | —                                     | —        | late                  | high                  | —   | serous        | messy `surv data`                            |
+| GSE8842    | 83                 | Y            | Y            | —                                     | —        | **all I**             | Y                     | Y   | mixed         | **early-stage relapse**                      |
+| GSE51373   | 28                 | —            | —            | Y                                     | —        | Y                     | —                     | —   | HGSOC         |                                              |
+| GSE131978  | 39                 | —            | —            | Y                                     | —        | Y                     | —                     | —   | HGSOC         | two platforms; long/short survivor in titles |
+| GSE14407   | 12 tumors          | —            | —            | —                                     | —        | —                     | —                     | —   | serous vs OSE | diagnostic                                   |
+| GSE154600  | 5                  | —            | —            | n                                     | —        | Y                     | Y                     | —   | HGSOC         | scRNA                                        |
+
 
 Rough ceiling if one naively sums tumor samples that have **some** OS label (ignoring overlap and platform): on the order of **2,000**. After HGSOC-only filters, dropping two-color custom arrays, and removing the 14 GSE53963–TCGA duplicates, a realistic *multi-cohort OS* analysis is about **1,200–1,600** patients across 5–6 incompatible platforms. That is the same scale Riester/Waldron used, and they still found weak, poorly replicating signatures.
 
 ---
+
+
 
 ## 7. Opportunity analyses
 
@@ -314,6 +360,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ### 7.2 Horizon mortality (dead within 1 / 3 / 5 years)
 
 **Clinical question.** Binary: will this patient die within X years? Easier to explain than a hazard, worse statistically (throws away censoring).
@@ -330,6 +378,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ### 7.3 Progression-free survival / platinum-free interval — **highest-value survival task we can do now**
 
 **Clinical question.** When will this disease come back? For HGSOC this is more proximal to the resected tumor’s biology than death (which is years of subsequent lines of therapy later). PFI also defines platinum resistance.
@@ -338,18 +388,20 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 **Have it?**
 
-| Source | PFS/PFI | Notes |
-|---|---|---|
-| GSE32062 | 260, 193 events, all platinum+taxane | Best dedicated set |
-| GSE140082 | 380, 235 events | Trial therapy (half on bevacizumab) — model must include treatment or subset to standard arm (181) |
-| GSE17260 | 110, 76 events | Same Agilent platform as GSE32062 |
-| GSE26193 | 107 (79 serous), 80 events | Mixed histotype |
-| GSE49997 | 194, 124 events | ABI platform |
-| GSE30161 | 58 PFI days | Plus relapse flag |
-| GSE63885 | 75 DFS days | Plus explicit platinum class |
-| GSE8842 | 83 PFS days | Stage I only |
-| TCGA | 175 times-to-new-tumor; PFI incomplete | **Need PanCanAtlas CDR** before treating this as PFI |
-| GSE9891 | missing | Need curatedOvarianData |
+
+| Source    | PFS/PFI                                | Notes                                                                                              |
+| --------- | -------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| GSE32062  | 260, 193 events, all platinum+taxane   | Best dedicated set                                                                                 |
+| GSE140082 | 380, 235 events                        | Trial therapy (half on bevacizumab) — model must include treatment or subset to standard arm (181) |
+| GSE17260  | 110, 76 events                         | Same Agilent platform as GSE32062                                                                  |
+| GSE26193  | 107 (79 serous), 80 events             | Mixed histotype                                                                                    |
+| GSE49997  | 194, 124 events                        | ABI platform                                                                                       |
+| GSE30161  | 58 PFI days                            | Plus relapse flag                                                                                  |
+| GSE63885  | 75 DFS days                            | Plus explicit platinum class                                                                       |
+| GSE8842   | 83 PFS days                            | Stage I only                                                                                       |
+| TCGA      | 175 times-to-new-tumor; PFI incomplete | **Need PanCanAtlas CDR** before treating this as PFI                                               |
+| GSE9891   | missing                                | Need curatedOvarianData                                                                            |
+
 
 **Design.** Train a Cox model for PFS on GSE32062 (HGSOC, uniform treatment), validate on GSE17260 (same platform) and GSE26193 serous (Affy). Separately, try TCGA only after CDR PFI is attached. Always include residual disease: it is the dominant clinical predictor of PFS.
 
@@ -361,6 +413,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ### 7.4 Platinum resistance (actionable binary / three-class)
 
 **Clinical question.** Will this tumor progress within 6 months of platinum (resistant), between 6–12 months (partially sensitive), or later (sensitive)? This is the decision that changes next-line therapy. It is the closest thing in this library to “risk of a clinically defined complication of the disease.”
@@ -369,18 +423,20 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 **Have it?**
 
-| Quality | Source | n (usable) |
-|---|---|---|
-| Curated 3-class | GSE63885 serous | 32 resistant / 26 moderate / 12 highly sensitive |
-| Curated binary | GSE51373 | 16 sensitive / 12 resistant |
-| Curated 3-class, tiny, two chips | GSE131978 | 37 with a class, split 25+14 across GPL96/GPL570 |
-| RECIST after first line | GSE30161 | 54 with CR/PR/PD (PD n=1 — cannot model PD) |
-| RECIST after first line | TCGA HiSeq | 223; **PD only 22** |
-| Proxy PFS<6 mo | GSE32062 | 24 events |
-| Proxy PFS<6 mo | GSE17260 | 15 |
-| Proxy PFS<6 mo | GSE140082 | 11 |
-| Proxy PFS<6 mo | GSE49997 | 7 |
-| scRNA | GSE154600 | 5 — ignore |
+
+| Quality                          | Source          | n (usable)                                       |
+| -------------------------------- | --------------- | ------------------------------------------------ |
+| Curated 3-class                  | GSE63885 serous | 32 resistant / 26 moderate / 12 highly sensitive |
+| Curated binary                   | GSE51373        | 16 sensitive / 12 resistant                      |
+| Curated 3-class, tiny, two chips | GSE131978       | 37 with a class, split 25+14 across GPL96/GPL570 |
+| RECIST after first line          | GSE30161        | 54 with CR/PR/PD (PD n=1 — cannot model PD)      |
+| RECIST after first line          | TCGA HiSeq      | 223; **PD only 22**                              |
+| Proxy PFS<6 mo                   | GSE32062        | 24 events                                        |
+| Proxy PFS<6 mo                   | GSE17260        | 15                                               |
+| Proxy PFS<6 mo                   | GSE140082       | 11                                               |
+| Proxy PFS<6 mo                   | GSE49997        | 7                                                |
+| scRNA                            | GSE154600       | 5 — ignore                                       |
+
 
 **Have it in a form that can train a generalizable classifier?** Only if we **pool** GSE63885 + GSE51373 + GSE131978 + PFS proxies, accept noisy labels, and test leave-one-cohort-out. A model trained on GSE63885 alone (70 serous with a class) will overfit.
 
@@ -393,6 +449,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 **Status:** labels in hand, sample size for a *single* training set is too small; sample size for a **multi-cohort** classifier is borderline but real (~150–200 labelled tumors if proxies are included).
 
 ---
+
+
 
 ### 7.5 Primary therapy outcome (CR vs not)
 
@@ -410,6 +468,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ### 7.6 Residual disease / unresectability
 
 **Clinical question.** From a pre-operative (or diagnostic) biopsy’s expression, will surgery achieve R0 / optimal debulking? This is **not** survival, but it is a major prognostic factor and a surgical decision.
@@ -424,6 +484,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ### 7.7 Long-term vs short-term survivor
 
 **Clinical question.** Extreme phenotypes: death within 2 years vs alive at 8–10 years. Used in GSE131978 titles (“Long-term survivor” / “Short-term Survivor”) and in several classic papers.
@@ -437,6 +499,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 **Status:** possible on TCGA + GSE26712 + GSE32062; GSE131978 is too small to train.
 
 ---
+
+
 
 ### 7.8 Early-stage (FIGO I) relapse — GSE8842
 
@@ -453,6 +517,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 **Status:** one small mixed-histotype cohort. Not trainable as a general model.
 
 ---
+
+
 
 ### 7.9 Bevacizumab benefit (predictive, not prognostic) — unique in this library
 
@@ -472,6 +538,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ### 7.10 Expression subtype as an intermediate phenotype
 
 **Clinical question.** Can we assign TCGA/Tothill subtypes (immunoreactive, differentiated, proliferative, mesenchymal; or Tothill C1–C6) from expression, and use that as a risk stratum?
@@ -485,6 +553,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 **Status:** labels in hand only for GSE140082; reproducible elsewhere if we implement the published classifiers.
 
 ---
+
+
 
 ### 7.11 BRCAness / HRD phenotype from expression
 
@@ -502,6 +572,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ### 7.12 Histotype / tumor-vs-normal (not prognosis)
 
 **Have it?** Mixed-histotype series (GSE26193, GSE14764, GSE63885, GSE8842, GSE51088, GSE30161, GSE49997 non-serous) plus GSE14407 (12 vs 12 OSE). Enough to train a histotype classifier as a **quality-control tool** (flag a “HGSOC” model that is actually detecting mucinous samples).
@@ -511,6 +583,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 **Status:** data in hand; out of scope for the product unless QC is needed.
 
 ---
+
+
 
 ### 7.13 DNA-sequence / multi-omic prognosis (the original product, if taken literally)
 
@@ -526,6 +600,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ### 7.14 Complications, CA125, imaging, toxicity, PARP inhibitors, HIPEC
 
 **Required data.** Per-patient events (obstruction, VTE, fistula, neuropathy, febrile neutropenia, …), longitudinal CA125, CT/MRI, drug exposure, or trial arms for PARPi/HIPEC.
@@ -537,6 +613,8 @@ Performance language: “ceiling” is an informed prior from this library plus 
 **Status:** not in hand.
 
 ---
+
+
 
 ### 7.15 Single-cell immune / microenvironment prognosis
 
@@ -550,25 +628,31 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 ---
 
+
+
 ## 8. What we should still get (only if a task above needs it)
 
 Listed with the task they unlock. None of these are required to start PFS or platinum-proxy work on GEO.
 
-| Acquisition | Unlocks | Difficulty |
-|---|---|---|
+
+| Acquisition                                                  | Unlocks                                                                  | Difficulty                               |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------ | ---------------------------------------- |
 | **curatedOvarianData** (Bioconductor) or Tothill supplements | OS/PFS for **GSE9891**; harmonized OS for several series we already have | Medium (R package, then join on GSM IDs) |
-| **PanCanAtlas CDR** (`TCGA-CDR-SupplementalTableS1.xlsx`) | Standardized OS, DSS, DFI, **PFI** for TCGA-OV | Easy, public |
-| **TCGA-OV Affymetrix U133A** (Xena) | ~565–593 tumors with OS instead of 303 | Easy; large file, pack for GitHub |
-| **TCGA-OV MAF + GISTIC** | Sequence-like features; BRCAness labels; CCNE1 amp | Easy–medium, public |
-| cBioPortal OV clinical (BRCA, HRD if present) | BRCA/HRD without parsing MAF | Easy |
-| CPTAC HGSOC proteogenomics | State-of-the-art chemo-refractory prediction | Mixed public/controlled |
-| A second early-stage series | Stage I relapse validation | Search + download |
-| A second anti-angiogenic trial expression set | Validate §7.9 | May not exist publicly |
-| Institutional data with complications / CA125 | The original “complications” product | Not public |
+| **PanCanAtlas CDR** (`TCGA-CDR-SupplementalTableS1.xlsx`)    | Standardized OS, DSS, DFI, **PFI** for TCGA-OV                           | Easy, public                             |
+| **TCGA-OV Affymetrix U133A** (Xena)                          | ~565–593 tumors with OS instead of 303                                   | Easy; large file, pack for GitHub        |
+| **TCGA-OV MAF + GISTIC**                                     | Sequence-like features; BRCAness labels; CCNE1 amp                       | Easy–medium, public                      |
+| cBioPortal OV clinical (BRCA, HRD if present)                | BRCA/HRD without parsing MAF                                             | Easy                                     |
+| CPTAC HGSOC proteogenomics                                   | State-of-the-art chemo-refractory prediction                             | Mixed public/controlled                  |
+| A second early-stage series                                  | Stage I relapse validation                                               | Search + download                        |
+| A second anti-angiogenic trial expression set                | Validate §7.9                                                            | May not exist publicly                   |
+| Institutional data with complications / CA125                | The original “complications” product                                     | Not public                               |
+
 
 GSE9891 without survival is the most embarrassing gap: we already stored 119 MB of expression for the field’s favorite validator and cannot use it for prognosis.
 
 ---
+
+
 
 ## 9. Recommended program (ordered)
 
@@ -581,20 +665,28 @@ This is a re-scope of the project, not a list of notebooks to write this afterno
 3. **Platinum-response as the primary *actionable* endpoint.** Pool explicit labels (GSE63885, GSE51373, GSE131978) with PFS<6-month proxies. Leave-one-cohort-out. Report against residual disease.
 4. **Stop treating TCGA OS C-index as the scoreboard.** Keep the existing LASSO-Cox / 3-year notebooks as baselines to beat, not as the destination.
 
+
+
 ### Do next (small downloads, large gain)
 
-5. Attach **GSE9891 survival** via curatedOvarianData. Then GSE9891 becomes the OS/PFS validator it was always meant to be.
-6. Attach **PanCanAtlas PFI**. Then TCGA can enter the PFS study honestly.
-7. Optionally download **TCGA U133A** if OS/PFS on TCGA remains a goal — 303 HiSeq samples is the binding constraint, not model class.
+1. Attach **GSE9891 survival** via curatedOvarianData. Then GSE9891 becomes the OS/PFS validator it was always meant to be.
+2. Attach **PanCanAtlas PFI**. Then TCGA can enter the PFS study honestly.
+3. Optionally download **TCGA U133A** if OS/PFS on TCGA remains a goal — 303 HiSeq samples is the binding constraint, not model class.
+
+
 
 ### Do as focused side studies
 
-8. **Bevacizumab × subtype / expression interaction** on GSE140082. Pre-register the hypothesis (mesenchymal/proliferative benefit). No external validator — say so in the write-up.
-9. Recompute **TCGA subtypes** on HiSeq; use them to explain the PFS/platinum models (not as a new product).
+1. **Bevacizumab × subtype / expression interaction** on GSE140082. Pre-register the hypothesis (mesenchymal/proliferative benefit). No external validator — say so in the write-up.
+2. Recompute **TCGA subtypes** on HiSeq; use them to explain the PFS/platinum models (not as a new product).
+
+
 
 ### Do only if the product is truly “sequence”
 
-10. MAF + GISTIC + CDR, then a small model: clinical + CCNE1 amp + BRCA + a *short* expression signature. That is the honest version of “look at the tumor’s genes.”
+1. MAF + GISTIC + CDR, then a small model: clinical + CCNE1 amp + BRCA + a *short* expression signature. That is the honest version of “look at the tumor’s genes.”
+
+
 
 ### Do not do with current files
 
@@ -607,17 +699,21 @@ This is a re-scope of the project, not a list of notebooks to write this afterno
 
 ---
 
+
+
 ## 10. How this maps to the original product sentence
 
 > “A prediction model that can take a look at the gene sequence for the tumor and accurately predict the future risk factor, risk of death, risk of other complications.”
 
-| Phrase | Translation onto this library |
-|---|---|
-| gene sequence | **Not available.** Substitute: bulk expression now; mutations/CNV later if downloaded |
-| accurately | **Not supported** for death. Supported, weakly, for *ranking* PFS/OS risk and maybe platinum class |
-| future risk factor | Must pick **one** endpoint. The least-wrong default is **PFS / PFI**, not a generic risk score |
-| risk of death | Possible as Cox OS; we already know the effect size is small and clinical covariates dominate |
+
+| Phrase                      | Translation onto this library                                                                      |
+| --------------------------- | -------------------------------------------------------------------------------------------------- |
+| gene sequence               | **Not available.** Substitute: bulk expression now; mutations/CNV later if downloaded              |
+| accurately                  | **Not supported** for death. Supported, weakly, for *ranking* PFS/OS risk and maybe platinum class |
+| future risk factor          | Must pick **one** endpoint. The least-wrong default is **PFS / PFI**, not a generic risk score     |
+| risk of death               | Possible as Cox OS; we already know the effect size is small and clinical covariates dominate      |
 | risk of other complications | **No labels.** Closest available: platinum resistance, residual disease, peritoneal carcinomatosis |
+
 
 A defensible project title, given the files:
 
@@ -626,6 +722,8 @@ A defensible project title, given the files:
 That is less than the original vision. It is also something the data can actually test.
 
 ---
+
+
 
 ## Appendix A — Existing model numbers (unedited)
 
@@ -647,22 +745,26 @@ Top genes recurring in both signatures include OVGP1, SOSTDC1, MMP1, HLA-DRB6, P
 
 ---
 
+
+
 ## Appendix B — Notes on messy fields (so we do not mis-code them later)
 
-- **GSE26712 `status_2`** is GEO’s public-on date. The real vital field is `status` (DOD / AWD / NED). The first inventory pass can miss this because `status` collides with GEO metadata.
+- **GSE26712** `status_2` is GEO’s public-on date. The real vital field is `status` (DOD / AWD / NED). The first inventory pass can miss this because `status` collides with GEO metadata.
 - **GSE13876** 415 rows are not 415 patients. Collapse on `assigned unique patient id` (157). `fumnd` = months from surgery; `status` 1 = OC death, 0 = censored *or* non-OC death (DSS-like). Two-color technical replicates.
 - **GSE19161** has OS time+event but only **658 probes**. Do not use it to validate a genome-wide signature.
 - **GSE51088 and GSE53963** put clinical fields on **channel 2**. A parser that only reads `characteristics_ch1` will conclude there is no survival. There is. GSE51088 also has 23 TCGA IDs (GSE53963 has 14).
 - **GSE63885** platinum field contains colons inside the key (`resistant: DFS<180 days; ...`), so naive `key: value` splits truncate the column name. The value is still the class (resistant / moderately sensitive / highly sensitive / NA).
 - **GSE30161 and GSE8842** dump one characteristic per sample in inconsistent order; keys must be parsed from each cell (`chemoresponse: CR ...`), not by column index.
-- **GSE18520 `surv data`:** `150 (A)` vs `21`. `(A)` = alive; unmarked likely dead; units months. Confirm against the Mok/Bonome paper before using.
+- **GSE18520** `surv data`**:** `150 (A)` vs `21`. `(A)` = alive; unmarked likely dead; units months. Confirm against the Mok/Bonome paper before using.
 - **GSE9891** GEO phenotype is site/type/subtype/stage/grade only. Do not invent survival from it.
 - **GSE140082 times** (max 1326, median OS 770, median PFS 552) are days. OS is immature (25% dead). Prefer `manuscript_analysis359 == 1` (359/380) if matching the paper’s analysis set.
-- **TCGA `days_to_new_tumor_event_after_initial_treatment`** is not a complete PFI. Prefer PanCanAtlas.
+- **TCGA** `days_to_new_tumor_event_after_initial_treatment` is not a complete PFI. Prefer PanCanAtlas.
 - **GSE53963** 14 `tcga_sampleid` values — exclude from any analysis that also uses TCGA, or they are not independent.
 - **Histotype:** if a paper says “ovarian cancer” it is not HGSOC. Filter.
 
 ---
+
+
 
 ## Appendix C — Files consulted
 
