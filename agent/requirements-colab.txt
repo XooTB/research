@@ -8,4 +8,5 @@
 #   colab_env.install_requirements()
 
 lifelines>=0.28      # Cox / Kaplan-Meier for the survival endpoints in datasets/
+scikit-survival>=0.23.1  # RandomSurvivalForest; Python 3.13 wheels from 0.23.1
 pymupdf>=1.24        # paper_datasets_extract.py, if PDF work moves to the runtime

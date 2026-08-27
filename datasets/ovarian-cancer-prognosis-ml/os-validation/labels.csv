@@ -1,0 +1,893 @@
+cohort,sample_id,geo_accession,platform,histology,os_time_days,os_event,os_time_original,os_time_unit,event_definition,age_years,figo_stage,grade,residual_disease,notes
+gse32062,GSM794865,GSM794865,GPL6480,high-grade serous ovarian cancer,2404.5625,0,79,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794866,GSM794866,GPL6480,high-grade serous ovarian cancer,2313.25,0,76,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794867,GSM794867,GPL6480,high-grade serous ovarian cancer,2100.1875,1,69,months,all_cause,,IIIb,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794868,GSM794868,GPL6480,high-grade serous ovarian cancer,1552.3125,1,51,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794869,GSM794869,GPL6480,high-grade serous ovarian cancer,1156.625,0,38,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794870,GSM794870,GPL6480,high-grade serous ovarian cancer,1217.5,0,40,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794871,GSM794871,GPL6480,high-grade serous ovarian cancer,730.5,1,24,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794872,GSM794872,GPL6480,high-grade serous ovarian cancer,1582.75,1,52,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794873,GSM794873,GPL6480,high-grade serous ovarian cancer,760.9375,1,25,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794874,GSM794874,GPL6480,high-grade serous ovarian cancer,669.625,1,22,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794875,GSM794875,GPL6480,high-grade serous ovarian cancer,943.5625,1,31,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794876,GSM794876,GPL6480,high-grade serous ovarian cancer,395.6875,1,13,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794877,GSM794877,GPL6480,high-grade serous ovarian cancer,3013.3125,0,99,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794878,GSM794878,GPL6480,high-grade serous ovarian cancer,2830.6875,0,93,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794879,GSM794879,GPL6480,high-grade serous ovarian cancer,1887.125,1,62,months,all_cause,,IIIa,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794880,GSM794880,GPL6480,high-grade serous ovarian cancer,1978.4375,0,65,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794881,GSM794881,GPL6480,high-grade serous ovarian cancer,852.25,1,28,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794882,GSM794882,GPL6480,high-grade serous ovarian cancer,1187.0625,0,39,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794883,GSM794883,GPL6480,high-grade serous ovarian cancer,1582.75,0,52,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794884,GSM794884,GPL6480,high-grade serous ovarian cancer,1491.4375,0,49,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794885,GSM794885,GPL6480,high-grade serous ovarian cancer,1339.25,0,44,months,all_cause,,IIIb,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794886,GSM794886,GPL6480,high-grade serous ovarian cancer,1065.3125,0,35,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794887,GSM794887,GPL6480,high-grade serous ovarian cancer,2161.0625,0,71,months,all_cause,,IIIb,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794888,GSM794888,GPL6480,high-grade serous ovarian cancer,1065.3125,0,35,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794889,GSM794889,GPL6480,high-grade serous ovarian cancer,852.25,0,28,months,all_cause,,IIIb,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794890,GSM794890,GPL6480,high-grade serous ovarian cancer,1278.375,0,42,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794891,GSM794891,GPL6480,high-grade serous ovarian cancer,2161.0625,0,71,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794892,GSM794892,GPL6480,high-grade serous ovarian cancer,1034.875,0,34,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794893,GSM794893,GPL6480,high-grade serous ovarian cancer,2130.625,0,70,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794894,GSM794894,GPL6480,high-grade serous ovarian cancer,456.5625,1,15,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794895,GSM794895,GPL6480,high-grade serous ovarian cancer,791.375,1,26,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794896,GSM794896,GPL6480,high-grade serous ovarian cancer,1247.9375,1,41,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794897,GSM794897,GPL6480,high-grade serous ovarian cancer,1430.5625,1,47,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794898,GSM794898,GPL6480,high-grade serous ovarian cancer,2252.375,0,74,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794899,GSM794899,GPL6480,high-grade serous ovarian cancer,2191.5,0,72,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794900,GSM794900,GPL6480,high-grade serous ovarian cancer,1978.4375,0,65,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794901,GSM794901,GPL6480,high-grade serous ovarian cancer,1004.4375,0,33,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794902,GSM794902,GPL6480,high-grade serous ovarian cancer,882.6875,0,29,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794903,GSM794903,GPL6480,high-grade serous ovarian cancer,1491.4375,1,49,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794904,GSM794904,GPL6480,high-grade serous ovarian cancer,3104.625,0,102,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794905,GSM794905,GPL6480,high-grade serous ovarian cancer,456.5625,0,15,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794906,GSM794906,GPL6480,high-grade serous ovarian cancer,243.5,1,8,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794907,GSM794907,GPL6480,high-grade serous ovarian cancer,1004.4375,0,33,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794908,GSM794908,GPL6480,high-grade serous ovarian cancer,2435,1,80,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794909,GSM794909,GPL6480,high-grade serous ovarian cancer,1095.75,1,36,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794910,GSM794910,GPL6480,high-grade serous ovarian cancer,3104.625,0,102,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794911,GSM794911,GPL6480,high-grade serous ovarian cancer,517.4375,1,17,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794912,GSM794912,GPL6480,high-grade serous ovarian cancer,1552.3125,1,51,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794913,GSM794913,GPL6480,high-grade serous ovarian cancer,1156.625,0,38,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794914,GSM794914,GPL6480,high-grade serous ovarian cancer,1156.625,0,38,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794915,GSM794915,GPL6480,high-grade serous ovarian cancer,1126.1875,0,37,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794916,GSM794916,GPL6480,high-grade serous ovarian cancer,1126.1875,0,37,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794917,GSM794917,GPL6480,high-grade serous ovarian cancer,334.8125,1,11,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794918,GSM794918,GPL6480,high-grade serous ovarian cancer,639.1875,1,21,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794919,GSM794919,GPL6480,high-grade serous ovarian cancer,639.1875,0,21,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794920,GSM794920,GPL6480,high-grade serous ovarian cancer,639.1875,0,21,months,all_cause,,IIIb,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794921,GSM794921,GPL6480,high-grade serous ovarian cancer,547.875,0,18,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794922,GSM794922,GPL6480,high-grade serous ovarian cancer,426.125,0,14,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794923,GSM794923,GPL6480,high-grade serous ovarian cancer,456.5625,0,15,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794924,GSM794924,GPL6480,high-grade serous ovarian cancer,2191.5,0,72,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794925,GSM794925,GPL6480,high-grade serous ovarian cancer,1400.125,0,46,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794926,GSM794926,GPL6480,high-grade serous ovarian cancer,1400.125,0,46,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794927,GSM794927,GPL6480,high-grade serous ovarian cancer,182.625,0,6,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794928,GSM794928,GPL6480,high-grade serous ovarian cancer,395.6875,1,13,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794929,GSM794929,GPL6480,high-grade serous ovarian cancer,1308.8125,0,43,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794930,GSM794930,GPL6480,high-grade serous ovarian cancer,517.4375,1,17,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794931,GSM794931,GPL6480,high-grade serous ovarian cancer,1734.9375,0,57,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794932,GSM794932,GPL6480,high-grade serous ovarian cancer,243.5,1,8,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794933,GSM794933,GPL6480,high-grade serous ovarian cancer,273.9375,1,9,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794934,GSM794934,GPL6480,high-grade serous ovarian cancer,913.125,0,30,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794935,GSM794935,GPL6480,high-grade serous ovarian cancer,882.6875,0,29,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794936,GSM794936,GPL6480,high-grade serous ovarian cancer,487,1,16,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794937,GSM794937,GPL6480,high-grade serous ovarian cancer,1217.5,0,40,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794938,GSM794938,GPL6480,high-grade serous ovarian cancer,60.875,1,2,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794939,GSM794939,GPL6480,high-grade serous ovarian cancer,1339.25,0,44,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794940,GSM794940,GPL6480,high-grade serous ovarian cancer,1095.75,0,36,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794941,GSM794941,GPL6480,high-grade serous ovarian cancer,1461,0,48,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794942,GSM794942,GPL6480,high-grade serous ovarian cancer,1521.875,0,50,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794943,GSM794943,GPL6480,high-grade serous ovarian cancer,730.5,1,24,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794944,GSM794944,GPL6480,high-grade serous ovarian cancer,1095.75,1,36,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794945,GSM794945,GPL6480,high-grade serous ovarian cancer,1095.75,1,36,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794946,GSM794946,GPL6480,high-grade serous ovarian cancer,1247.9375,1,41,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794947,GSM794947,GPL6480,high-grade serous ovarian cancer,1765.375,0,58,months,all_cause,,IV,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794948,GSM794948,GPL6480,high-grade serous ovarian cancer,1521.875,1,50,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794949,GSM794949,GPL6480,high-grade serous ovarian cancer,1582.75,0,52,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794950,GSM794950,GPL6480,high-grade serous ovarian cancer,852.25,1,28,months,all_cause,,IV,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794951,GSM794951,GPL6480,high-grade serous ovarian cancer,1887.125,0,62,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794952,GSM794952,GPL6480,high-grade serous ovarian cancer,760.9375,1,25,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794953,GSM794953,GPL6480,high-grade serous ovarian cancer,2191.5,0,72,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794954,GSM794954,GPL6480,high-grade serous ovarian cancer,1126.1875,1,37,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794955,GSM794955,GPL6480,high-grade serous ovarian cancer,547.875,1,18,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794956,GSM794956,GPL6480,high-grade serous ovarian cancer,1491.4375,1,49,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794957,GSM794957,GPL6480,high-grade serous ovarian cancer,974,1,32,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794958,GSM794958,GPL6480,high-grade serous ovarian cancer,1948,1,64,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794959,GSM794959,GPL6480,high-grade serous ovarian cancer,1247.9375,1,41,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794960,GSM794960,GPL6480,high-grade serous ovarian cancer,3165.5,0,104,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794961,GSM794961,GPL6480,high-grade serous ovarian cancer,1826.25,1,60,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794962,GSM794962,GPL6480,high-grade serous ovarian cancer,1034.875,1,34,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794963,GSM794963,GPL6480,high-grade serous ovarian cancer,517.4375,1,17,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794964,GSM794964,GPL6480,high-grade serous ovarian cancer,2161.0625,0,71,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794965,GSM794965,GPL6480,high-grade serous ovarian cancer,852.25,0,28,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794966,GSM794966,GPL6480,high-grade serous ovarian cancer,60.875,1,2,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794967,GSM794967,GPL6480,high-grade serous ovarian cancer,608.75,0,20,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794968,GSM794968,GPL6480,high-grade serous ovarian cancer,1734.9375,0,57,months,all_cause,,IIIc,2,Optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794969,GSM794969,GPL6480,high-grade serous ovarian cancer,1734.9375,0,57,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794970,GSM794970,GPL6480,high-grade serous ovarian cancer,669.625,1,22,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794971,GSM794971,GPL6480,high-grade serous ovarian cancer,60.875,1,2,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794972,GSM794972,GPL6480,high-grade serous ovarian cancer,2648.0625,0,87,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794973,GSM794973,GPL6480,high-grade serous ovarian cancer,639.1875,1,21,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794974,GSM794974,GPL6480,high-grade serous ovarian cancer,517.4375,1,17,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794975,GSM794975,GPL6480,high-grade serous ovarian cancer,2495.875,0,82,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794976,GSM794976,GPL6480,high-grade serous ovarian cancer,1217.5,1,40,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794977,GSM794977,GPL6480,high-grade serous ovarian cancer,334.8125,1,11,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794978,GSM794978,GPL6480,high-grade serous ovarian cancer,2039.3125,0,67,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794979,GSM794979,GPL6480,high-grade serous ovarian cancer,1369.6875,1,45,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794980,GSM794980,GPL6480,high-grade serous ovarian cancer,1887.125,0,62,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794981,GSM794981,GPL6480,high-grade serous ovarian cancer,1734.9375,0,57,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794982,GSM794982,GPL6480,high-grade serous ovarian cancer,487,1,16,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794983,GSM794983,GPL6480,high-grade serous ovarian cancer,1704.5,0,56,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794984,GSM794984,GPL6480,high-grade serous ovarian cancer,1704.5,0,56,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794985,GSM794985,GPL6480,high-grade serous ovarian cancer,1887.125,0,62,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794986,GSM794986,GPL6480,high-grade serous ovarian cancer,1491.4375,0,49,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794987,GSM794987,GPL6480,high-grade serous ovarian cancer,1369.6875,0,45,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794988,GSM794988,GPL6480,high-grade serous ovarian cancer,1065.3125,1,35,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794989,GSM794989,GPL6480,high-grade serous ovarian cancer,456.5625,1,15,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794990,GSM794990,GPL6480,high-grade serous ovarian cancer,1552.3125,1,51,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794991,GSM794991,GPL6480,high-grade serous ovarian cancer,730.5,1,24,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794992,GSM794992,GPL6480,high-grade serous ovarian cancer,669.625,1,22,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794993,GSM794993,GPL6480,high-grade serous ovarian cancer,1187.0625,1,39,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794994,GSM794994,GPL6480,high-grade serous ovarian cancer,1187.0625,1,39,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794995,GSM794995,GPL6480,high-grade serous ovarian cancer,1156.625,1,38,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794996,GSM794996,GPL6480,high-grade serous ovarian cancer,1278.375,1,42,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794997,GSM794997,GPL6480,high-grade serous ovarian cancer,1582.75,0,52,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794998,GSM794998,GPL6480,high-grade serous ovarian cancer,974,0,32,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM794999,GSM794999,GPL6480,high-grade serous ovarian cancer,395.6875,1,13,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795000,GSM795000,GPL6480,high-grade serous ovarian cancer,1582.75,0,52,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795001,GSM795001,GPL6480,high-grade serous ovarian cancer,3439.4375,1,113,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795002,GSM795002,GPL6480,high-grade serous ovarian cancer,1126.1875,0,37,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795003,GSM795003,GPL6480,high-grade serous ovarian cancer,1369.6875,1,45,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795004,GSM795004,GPL6480,high-grade serous ovarian cancer,1461,0,48,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795005,GSM795005,GPL6480,high-grade serous ovarian cancer,791.375,1,26,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795006,GSM795006,GPL6480,high-grade serous ovarian cancer,760.9375,1,25,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795007,GSM795007,GPL6480,high-grade serous ovarian cancer,3896,0,128,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795008,GSM795008,GPL6480,high-grade serous ovarian cancer,852.25,1,28,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795009,GSM795009,GPL6480,high-grade serous ovarian cancer,1095.75,1,36,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795010,GSM795010,GPL6480,high-grade serous ovarian cancer,3652.5,1,120,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795011,GSM795011,GPL6480,high-grade serous ovarian cancer,1643.625,1,54,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795012,GSM795012,GPL6480,high-grade serous ovarian cancer,365.25,1,12,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795013,GSM795013,GPL6480,high-grade serous ovarian cancer,1095.75,0,36,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795014,GSM795014,GPL6480,high-grade serous ovarian cancer,791.375,1,26,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795015,GSM795015,GPL6480,high-grade serous ovarian cancer,3743.8125,0,123,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795016,GSM795016,GPL6480,high-grade serous ovarian cancer,1765.375,1,58,months,all_cause,,IV,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795017,GSM795017,GPL6480,high-grade serous ovarian cancer,1461,1,48,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795018,GSM795018,GPL6480,high-grade serous ovarian cancer,3682.9375,0,121,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795019,GSM795019,GPL6480,high-grade serous ovarian cancer,3195.9375,1,105,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795020,GSM795020,GPL6480,high-grade serous ovarian cancer,3439.4375,0,113,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795021,GSM795021,GPL6480,high-grade serous ovarian cancer,3409,0,112,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795022,GSM795022,GPL6480,high-grade serous ovarian cancer,730.5,1,24,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795023,GSM795023,GPL6480,high-grade serous ovarian cancer,2374.125,0,78,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795024,GSM795024,GPL6480,high-grade serous ovarian cancer,1187.0625,1,39,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795025,GSM795025,GPL6480,high-grade serous ovarian cancer,365.25,1,12,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795026,GSM795026,GPL6480,high-grade serous ovarian cancer,1948,0,64,months,all_cause,,IIIa,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795027,GSM795027,GPL6480,high-grade serous ovarian cancer,2343.6875,0,77,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795028,GSM795028,GPL6480,high-grade serous ovarian cancer,1674.0625,0,55,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795029,GSM795029,GPL6480,high-grade serous ovarian cancer,1217.5,1,40,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795030,GSM795030,GPL6480,high-grade serous ovarian cancer,700.0625,1,23,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795031,GSM795031,GPL6480,high-grade serous ovarian cancer,1643.625,0,54,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795032,GSM795032,GPL6480,high-grade serous ovarian cancer,1004.4375,1,33,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795033,GSM795033,GPL6480,high-grade serous ovarian cancer,700.0625,1,23,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795034,GSM795034,GPL6480,high-grade serous ovarian cancer,1552.3125,0,51,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795035,GSM795035,GPL6480,high-grade serous ovarian cancer,1856.6875,0,61,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795036,GSM795036,GPL6480,high-grade serous ovarian cancer,1917.5625,0,63,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795037,GSM795037,GPL6480,high-grade serous ovarian cancer,821.8125,1,27,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795038,GSM795038,GPL6480,high-grade serous ovarian cancer,1278.375,1,42,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795039,GSM795039,GPL6480,high-grade serous ovarian cancer,2587.1875,0,85,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795040,GSM795040,GPL6480,high-grade serous ovarian cancer,1674.0625,0,55,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795041,GSM795041,GPL6480,high-grade serous ovarian cancer,1826.25,0,60,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795042,GSM795042,GPL6480,high-grade serous ovarian cancer,760.9375,1,25,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795043,GSM795043,GPL6480,high-grade serous ovarian cancer,456.5625,1,15,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795044,GSM795044,GPL6480,high-grade serous ovarian cancer,913.125,1,30,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795045,GSM795045,GPL6480,high-grade serous ovarian cancer,974,1,32,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795046,GSM795046,GPL6480,high-grade serous ovarian cancer,1856.6875,0,61,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795047,GSM795047,GPL6480,high-grade serous ovarian cancer,1826.25,0,60,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795048,GSM795048,GPL6480,high-grade serous ovarian cancer,2374.125,0,78,months,all_cause,,IV,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795049,GSM795049,GPL6480,high-grade serous ovarian cancer,1856.6875,0,61,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795050,GSM795050,GPL6480,high-grade serous ovarian cancer,1187.0625,1,39,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795051,GSM795051,GPL6480,high-grade serous ovarian cancer,760.9375,1,25,months,all_cause,,IV,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795052,GSM795052,GPL6480,high-grade serous ovarian cancer,2191.5,0,72,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795053,GSM795053,GPL6480,high-grade serous ovarian cancer,943.5625,1,31,months,all_cause,,IV,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795054,GSM795054,GPL6480,high-grade serous ovarian cancer,1461,0,48,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795055,GSM795055,GPL6480,high-grade serous ovarian cancer,1795.8125,0,59,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795056,GSM795056,GPL6480,high-grade serous ovarian cancer,1734.9375,0,57,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795057,GSM795057,GPL6480,high-grade serous ovarian cancer,608.75,1,20,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795058,GSM795058,GPL6480,high-grade serous ovarian cancer,1491.4375,0,49,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795059,GSM795059,GPL6480,high-grade serous ovarian cancer,365.25,1,12,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795060,GSM795060,GPL6480,high-grade serous ovarian cancer,639.1875,1,21,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795061,GSM795061,GPL6480,high-grade serous ovarian cancer,1339.25,0,44,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795062,GSM795062,GPL6480,high-grade serous ovarian cancer,913.125,0,30,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795063,GSM795063,GPL6480,high-grade serous ovarian cancer,913.125,0,30,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795064,GSM795064,GPL6480,high-grade serous ovarian cancer,852.25,0,28,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795065,GSM795065,GPL6480,high-grade serous ovarian cancer,821.8125,0,27,months,all_cause,,IV,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795066,GSM795066,GPL6480,high-grade serous ovarian cancer,1400.125,0,46,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795067,GSM795067,GPL6480,high-grade serous ovarian cancer,882.6875,0,29,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795068,GSM795068,GPL6480,high-grade serous ovarian cancer,1430.5625,0,47,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795069,GSM795069,GPL6480,high-grade serous ovarian cancer,2221.9375,0,73,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795070,GSM795070,GPL6480,high-grade serous ovarian cancer,1278.375,0,42,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795071,GSM795071,GPL6480,high-grade serous ovarian cancer,1339.25,1,44,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795072,GSM795072,GPL6480,high-grade serous ovarian cancer,1065.3125,1,35,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795073,GSM795073,GPL6480,high-grade serous ovarian cancer,821.8125,0,27,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795074,GSM795074,GPL6480,high-grade serous ovarian cancer,1643.625,0,54,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795075,GSM795075,GPL6480,high-grade serous ovarian cancer,1491.4375,0,49,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795076,GSM795076,GPL6480,high-grade serous ovarian cancer,974,0,32,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795077,GSM795077,GPL6480,high-grade serous ovarian cancer,1461,0,48,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795078,GSM795078,GPL6480,high-grade serous ovarian cancer,1308.8125,0,43,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795079,GSM795079,GPL6480,high-grade serous ovarian cancer,1095.75,0,36,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795080,GSM795080,GPL6480,high-grade serous ovarian cancer,974,1,32,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795081,GSM795081,GPL6480,high-grade serous ovarian cancer,3135.0625,0,103,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795082,GSM795082,GPL6480,high-grade serous ovarian cancer,1034.875,0,34,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795083,GSM795083,GPL6480,high-grade serous ovarian cancer,152.1875,1,5,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795084,GSM795084,GPL6480,high-grade serous ovarian cancer,1613.1875,0,53,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795085,GSM795085,GPL6480,high-grade serous ovarian cancer,1430.5625,0,47,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795086,GSM795086,GPL6480,high-grade serous ovarian cancer,2252.375,1,74,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795087,GSM795087,GPL6480,high-grade serous ovarian cancer,2100.1875,0,69,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795088,GSM795088,GPL6480,high-grade serous ovarian cancer,1521.875,0,50,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795089,GSM795089,GPL6480,high-grade serous ovarian cancer,974,1,32,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795090,GSM795090,GPL6480,high-grade serous ovarian cancer,913.125,1,30,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795091,GSM795091,GPL6480,high-grade serous ovarian cancer,1795.8125,0,59,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795092,GSM795092,GPL6480,high-grade serous ovarian cancer,791.375,1,26,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795093,GSM795093,GPL6480,high-grade serous ovarian cancer,1491.4375,1,49,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795094,GSM795094,GPL6480,high-grade serous ovarian cancer,913.125,0,30,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795095,GSM795095,GPL6480,high-grade serous ovarian cancer,669.625,0,22,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795096,GSM795096,GPL6480,high-grade serous ovarian cancer,1308.8125,1,43,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795097,GSM795097,GPL6480,high-grade serous ovarian cancer,1948,1,64,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795098,GSM795098,GPL6480,high-grade serous ovarian cancer,1856.6875,1,61,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795099,GSM795099,GPL6480,high-grade serous ovarian cancer,1461,1,48,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795100,GSM795100,GPL6480,high-grade serous ovarian cancer,1217.5,1,40,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795101,GSM795101,GPL6480,high-grade serous ovarian cancer,365.25,1,12,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795102,GSM795102,GPL6480,high-grade serous ovarian cancer,1521.875,0,50,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795103,GSM795103,GPL6480,high-grade serous ovarian cancer,3622.0625,0,119,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795104,GSM795104,GPL6480,high-grade serous ovarian cancer,365.25,0,12,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795105,GSM795105,GPL6480,high-grade serous ovarian cancer,639.1875,0,21,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795106,GSM795106,GPL6480,high-grade serous ovarian cancer,700.0625,0,23,months,all_cause,,IIIc,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795107,GSM795107,GPL6480,high-grade serous ovarian cancer,943.5625,1,31,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795108,GSM795108,GPL6480,high-grade serous ovarian cancer,1400.125,0,46,months,all_cause,,IIIa,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795109,GSM795109,GPL6480,high-grade serous ovarian cancer,1369.6875,0,45,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795110,GSM795110,GPL6480,high-grade serous ovarian cancer,1278.375,1,42,months,all_cause,,IIIa,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795111,GSM795111,GPL6480,high-grade serous ovarian cancer,791.375,1,26,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795112,GSM795112,GPL6480,high-grade serous ovarian cancer,30.4375,1,1,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795113,GSM795113,GPL6480,high-grade serous ovarian cancer,821.8125,1,27,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795114,GSM795114,GPL6480,high-grade serous ovarian cancer,2404.5625,1,79,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795115,GSM795115,GPL6480,high-grade serous ovarian cancer,1400.125,1,46,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795116,GSM795116,GPL6480,high-grade serous ovarian cancer,2861.125,0,94,months,all_cause,,IIIc,3,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795117,GSM795117,GPL6480,high-grade serous ovarian cancer,2617.625,1,86,months,all_cause,,IV,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795118,GSM795118,GPL6480,high-grade serous ovarian cancer,1004.4375,1,33,months,all_cause,,IV,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795119,GSM795119,GPL6480,high-grade serous ovarian cancer,1552.3125,1,51,months,all_cause,,IIIc,3,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795120,GSM795120,GPL6480,high-grade serous ovarian cancer,1643.625,1,54,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795121,GSM795121,GPL6480,high-grade serous ovarian cancer,2282.8125,0,75,months,all_cause,,IIIb,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795122,GSM795122,GPL6480,high-grade serous ovarian cancer,1734.9375,0,57,months,all_cause,,IV,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795123,GSM795123,GPL6480,high-grade serous ovarian cancer,1278.375,0,42,months,all_cause,,IIIc,2,optimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse32062,GSM795124,GSM795124,GPL6480,high-grade serous ovarian cancer,852.25,0,28,months,all_cause,,IV,2,suboptimal,uniform platinum+taxane; ignored `status` (GEO public-on date)
+gse53963,GSM1304246,GSM1304246,GPL6480,Serous,2917.73875,1,95.86,months,all_cause,59,II,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 0 TCGA duplicates dropped at extraction
+gse53963,GSM1304248,GSM1304248,GPL6480,Serous,34.09,1,1.12,months,all_cause,81,IV,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304249,GSM1304249,GPL6480,Serous,3969.05,1,130.40,months,all_cause,61,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304250,GSM1304250,GPL6480,Serous,2593.275,1,85.20,months,all_cause,56,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304251,GSM1304251,GPL6480,Serous,1436.65,1,47.20,months,all_cause,73,IV,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304252,GSM1304252,GPL6480,Serous,791.070625,1,25.99,months,all_cause,76,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304253,GSM1304253,GPL6480,Serous,490.6525,1,16.12,months,all_cause,75,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304254,GSM1304254,GPL6480,Serous,1734.024375,1,56.97,months,all_cause,75,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304255,GSM1304255,GPL6480,Serous,2032.61625,1,66.78,months,all_cause,81,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304256,GSM1304256,GPL6480,Serous,487.60875,1,16.02,months,all_cause,72,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304257,GSM1304257,GPL6480,Serous,1355.68625,1,44.54,months,all_cause,64,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304258,GSM1304258,GPL6480,Serous,764.894375,1,25.13,months,all_cause,64,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304259,GSM1304259,GPL6480,Serous,988.305625,1,32.47,months,all_cause,73,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304260,GSM1304260,GPL6480,Serous,521.69875,1,17.14,months,all_cause,75,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 1 TCGA duplicates dropped at extraction
+gse53963,GSM1304262,GSM1304262,GPL6480,Serous,5881.13375,0,193.22,months,all_cause,54,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304263,GSM1304263,GPL6480,Serous,101.0525,1,3.32,months,all_cause,69,IV,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304264,GSM1304264,GPL6480,Serous,1600.099375,1,52.57,months,all_cause,43,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304265,GSM1304265,GPL6480,Serous,799.8975,1,26.28,months,all_cause,78,III,3,,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304266,GSM1304266,GPL6480,Serous,519.568125,1,17.07,months,all_cause,68,IV,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304267,GSM1304267,GPL6480,Serous,5758.16625,0,189.18,months,all_cause,42,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304268,GSM1304268,GPL6480,Serous,451.6925,1,14.84,months,all_cause,81,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304269,GSM1304269,GPL6480,Serous,889.079375,1,29.21,months,all_cause,67,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304270,GSM1304270,GPL6480,Serous,1073.22625,1,35.26,months,all_cause,76,IV,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304271,GSM1304271,GPL6480,Serous,1203.49875,1,39.54,months,all_cause,57,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304272,GSM1304272,GPL6480,Serous,97.095625,1,3.19,months,all_cause,52,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304273,GSM1304273,GPL6480,Serous,947.215,1,31.12,months,all_cause,42,IV,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304274,GSM1304274,GPL6480,Serous,171.363125,1,5.63,months,all_cause,87,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304275,GSM1304275,GPL6480,Serous,5564.888125,0,182.83,months,all_cause,60,II,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304276,GSM1304276,GPL6480,Serous,6136.504375,0,201.61,months,all_cause,69,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304277,GSM1304277,GPL6480,Serous,836.118125,1,27.47,months,all_cause,65,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304278,GSM1304278,GPL6480,Serous,2944.52375,1,96.74,months,all_cause,47,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304279,GSM1304279,GPL6480,Serous,674.799375,1,22.17,months,all_cause,79,II,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304280,GSM1304280,GPL6480,Serous,1398.603125,1,45.95,months,all_cause,55,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304281,GSM1304281,GPL6480,Serous,443.474375,1,14.57,months,all_cause,64,IV,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304282,GSM1304282,GPL6480,Serous,1569.96625,1,51.58,months,all_cause,59,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304283,GSM1304283,GPL6480,Serous,1255.546875,1,41.25,months,all_cause,53,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304284,GSM1304284,GPL6480,Serous,462.65,1,15.20,months,all_cause,76,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304285,GSM1304285,GPL6480,Serous,1061.355625,1,34.87,months,all_cause,80,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304286,GSM1304286,GPL6480,Serous,185.364375,1,6.09,months,all_cause,61,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304287,GSM1304287,GPL6480,Serous,616.66375,1,20.26,months,all_cause,46,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304288,GSM1304288,GPL6480,Serous,5936.225625,0,195.03,months,all_cause,53,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304289,GSM1304289,GPL6480,Serous,1655.19125,1,54.38,months,all_cause,60,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304290,GSM1304290,GPL6480,Serous,749.98,1,24.64,months,all_cause,54,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304291,GSM1304291,GPL6480,Serous,5451.660625,0,179.11,months,all_cause,64,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304292,GSM1304292,GPL6480,Serous,481.52125,1,15.82,months,all_cause,74,III,4,,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304293,GSM1304293,GPL6480,Serous,5444.66,0,178.88,months,all_cause,52,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304294,GSM1304294,GPL6480,Serous,3029.74875,1,99.54,months,all_cause,46,III,2,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304295,GSM1304295,GPL6480,Serous,5279.384375,1,173.45,months,all_cause,58,II,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304296,GSM1304296,GPL6480,Serous,1874.34125,1,61.58,months,all_cause,53,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304297,GSM1304297,GPL6480,Serous,1893.2125,1,62.20,months,all_cause,69,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304298,GSM1304298,GPL6480,Serous,654.710625,1,21.51,months,all_cause,58,III/IV,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304299,GSM1304299,GPL6480,Serous,761.850625,1,25.03,months,all_cause,60,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304300,GSM1304300,GPL6480,Serous,677.843125,1,22.27,months,all_cause,67,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304301,GSM1304301,GPL6480,Serous,1097.271875,1,36.05,months,all_cause,70,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304302,GSM1304302,GPL6480,Serous,1405.60375,1,46.18,months,all_cause,68,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304303,GSM1304303,GPL6480,Serous,238.325625,1,7.83,months,all_cause,58,IV,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304304,GSM1304304,GPL6480,Serous,330.55125,1,10.86,months,all_cause,62,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304305,GSM1304305,GPL6480,Serous,592.618125,1,19.47,months,all_cause,44,IV,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304306,GSM1304306,GPL6480,Serous,636.7525,1,20.92,months,all_cause,86,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304307,GSM1304307,GPL6480,Serous,2633.148125,1,86.51,months,all_cause,64,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304308,GSM1304308,GPL6480,Serous,818.16,1,26.88,months,all_cause,73,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304309,GSM1304309,GPL6480,Serous,4266.12,1,140.16,months,all_cause,73,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304310,GSM1304310,GPL6480,Serous,2015.57125,1,66.22,months,all_cause,78,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304311,GSM1304311,GPL6480,Serous,1580.92375,1,51.94,months,all_cause,63,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304312,GSM1304312,GPL6480,Serous,73.963125,1,2.43,months,all_cause,78,IV,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304313,GSM1304313,GPL6480,Serous,1128.318125,1,37.07,months,all_cause,75,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304314,GSM1304314,GPL6480,Serous,885.1225,1,29.08,months,all_cause,72,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304315,GSM1304315,GPL6480,Serous,5440.703125,0,178.75,months,all_cause,65,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304316,GSM1304316,GPL6480,Serous,468.7375,1,15.40,months,all_cause,71,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304317,GSM1304317,GPL6480,Serous,552.745,1,18.16,months,all_cause,48,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304318,GSM1304318,GPL6480,Serous,381.381875,1,12.53,months,all_cause,78,IV,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304319,GSM1304319,GPL6480,Serous,707.97625,1,23.26,months,all_cause,57,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304320,GSM1304320,GPL6480,Serous,2287.6825,1,75.16,months,all_cause,41,IV,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304321,GSM1304321,GPL6480,Serous,458.693125,1,15.07,months,all_cause,56,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304322,GSM1304322,GPL6480,Serous,35.003125,1,1.15,months,all_cause,83,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304323,GSM1304323,GPL6480,Serous,42.00375,1,1.38,months,all_cause,51,IV,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304324,GSM1304324,GPL6480,Serous,1186.45375,1,38.98,months,all_cause,46,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304325,GSM1304325,GPL6480,Serous,419.42875,1,13.78,months,all_cause,62,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304326,GSM1304326,GPL6480,Serous,746.93625,1,24.54,months,all_cause,66,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304327,GSM1304327,GPL6480,Serous,553.658125,1,18.19,months,all_cause,55,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304328,GSM1304328,GPL6480,Serous,5141.198125,0,168.91,months,all_cause,49,II,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304329,GSM1304329,GPL6480,Serous,4946.09375,0,162.50,months,all_cause,66,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304330,GSM1304330,GPL6480,Serous,2160.758125,1,70.99,months,all_cause,54,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304331,GSM1304331,GPL6480,Serous,1601.0125,1,52.60,months,all_cause,71,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304332,GSM1304332,GPL6480,Serous,1673.149375,1,54.97,months,all_cause,61,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304333,GSM1304333,GPL6480,Serous,1990.6125,1,65.40,months,all_cause,68,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304334,GSM1304334,GPL6480,Serous,3644.58625,1,119.74,months,all_cause,56,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304335,GSM1304335,GPL6480,Serous,4927.2225,0,161.88,months,all_cause,49,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304336,GSM1304336,GPL6480,Serous,1727.02375,1,56.74,months,all_cause,56,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304337,GSM1304337,GPL6480,Serous,1283.549375,1,42.17,months,all_cause,53,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304338,GSM1304338,GPL6480,Serous,2235.634375,1,73.45,months,all_cause,64,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304339,GSM1304339,GPL6480,Serous,4889.175625,0,160.63,months,all_cause,72,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304340,GSM1304340,GPL6480,Serous,4448.440625,0,146.15,months,all_cause,68,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304341,GSM1304341,GPL6480,Serous,392.64375,1,12.90,months,all_cause,59,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304342,GSM1304342,GPL6480,Serous,2952.741875,1,97.01,months,all_cause,78,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304343,GSM1304343,GPL6480,Serous,531.743125,1,17.47,months,all_cause,78,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304344,GSM1304344,GPL6480,Serous,393.556875,1,12.93,months,all_cause,73,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304345,GSM1304345,GPL6480,Serous,480.608125,1,15.79,months,all_cause,64,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304346,GSM1304346,GPL6480,Serous,597.7925,1,19.64,months,all_cause,24,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304347,GSM1304347,GPL6480,Serous,4287.42625,0,140.86,months,all_cause,67,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304348,GSM1304348,GPL6480,Serous,35.91625,1,1.18,months,all_cause,65,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304349,GSM1304349,GPL6480,Serous,1059.225,1,34.80,months,all_cause,53,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304350,GSM1304350,GPL6480,Serous,382.599375,1,12.57,months,all_cause,57,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304351,GSM1304351,GPL6480,Serous,299.505,1,9.84,months,all_cause,77,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304352,GSM1304352,GPL6480,Serous,549.70125,1,18.06,months,all_cause,51,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304353,GSM1304353,GPL6480,Serous,568.5725,1,18.68,months,all_cause,70,IV,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304354,GSM1304354,GPL6480,Serous,784.07,1,25.76,months,all_cause,67,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304355,GSM1304355,GPL6480,Serous,1210.499375,1,39.77,months,all_cause,62,IV,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304356,GSM1304356,GPL6480,Serous,1456.73875,1,47.86,months,all_cause,61,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304357,GSM1304357,GPL6480,Serous,974.304375,1,32.01,months,all_cause,65,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304358,GSM1304358,GPL6480,Serous,439.5175,1,14.44,months,all_cause,61,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304359,GSM1304359,GPL6480,Serous,2016.484375,1,66.25,months,all_cause,59,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304360,GSM1304360,GPL6480,Serous,2251.76625,1,73.98,months,all_cause,67,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304361,GSM1304361,GPL6480,Serous,1385.819375,1,45.53,months,all_cause,45,II,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304362,GSM1304362,GPL6480,Serous,411.515,1,13.52,months,all_cause,70,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304363,GSM1304363,GPL6480,Serous,781.939375,1,25.69,months,all_cause,78,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304364,GSM1304364,GPL6480,Serous,2718.373125,1,89.31,months,all_cause,71,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304365,GSM1304365,GPL6480,Serous,305.288125,1,10.03,months,all_cause,45,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304366,GSM1304366,GPL6480,Serous,3434.263125,1,112.83,months,all_cause,89,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304367,GSM1304367,GPL6480,Serous,1594.011875,1,52.37,months,all_cause,62,IV,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304368,GSM1304368,GPL6480,Serous,650.75375,1,21.38,months,all_cause,68,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304369,GSM1304369,GPL6480,Serous,912.211875,0,29.97,months,all_cause,54,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304370,GSM1304370,GPL6480,Serous,1086.314375,1,35.69,months,all_cause,51,IV,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304371,GSM1304371,GPL6480,Serous,487.60875,1,16.02,months,all_cause,50,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304372,GSM1304372,GPL6480,Serous,2094.70875,1,68.82,months,all_cause,68,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304373,GSM1304373,GPL6480,Serous,1639.059375,0,53.85,months,all_cause,49,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304374,GSM1304374,GPL6480,Serous,1094.228125,1,35.95,months,all_cause,61,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304375,GSM1304375,GPL6480,Serous,21.001875,1,0.69,months,all_cause,81,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304376,GSM1304376,GPL6480,Serous,566.74625,1,18.62,months,all_cause,54,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304377,GSM1304377,GPL6480,Serous,2678.195625,1,87.99,months,all_cause,41,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304378,GSM1304378,GPL6480,Serous,445.605,1,14.64,months,all_cause,61,III,4,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304379,GSM1304379,GPL6480,Serous,3865.866875,0,127.01,months,all_cause,71,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304380,GSM1304380,GPL6480,Serous,9.13125,1,0.30,months,all_cause,75,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 2 TCGA duplicates dropped at extraction
+gse53963,GSM1304382,GSM1304382,GPL6480,Serous,3048.62,1,100.16,months,all_cause,48,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 3 TCGA duplicates dropped at extraction
+gse53963,GSM1304383,GSM1304383,GPL6480,Serous,1765.070625,1,57.99,months,all_cause,57,III,2,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 3 TCGA duplicates dropped at extraction
+gse53963,GSM1304385,GSM1304385,GPL6480,Serous,610.880625,1,20.07,months,all_cause,74,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 4 TCGA duplicates dropped at extraction
+gse53963,GSM1304386,GSM1304386,GPL6480,Serous,4060.97125,1,133.42,months,all_cause,73,II,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 4 TCGA duplicates dropped at extraction
+gse53963,GSM1304387,GSM1304387,GPL6480,Serous,598.705625,1,19.67,months,all_cause,86,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 4 TCGA duplicates dropped at extraction
+gse53963,GSM1304388,GSM1304388,GPL6480,Serous,3910.914375,0,128.49,months,all_cause,62,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 4 TCGA duplicates dropped at extraction
+gse53963,GSM1304389,GSM1304389,GPL6480,Serous,1541.050625,1,50.63,months,all_cause,74,IV,2,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 4 TCGA duplicates dropped at extraction
+gse53963,GSM1304391,GSM1304391,GPL6480,Serous,181.103125,1,5.95,months,all_cause,52,IV,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 5 TCGA duplicates dropped at extraction
+gse53963,GSM1304392,GSM1304392,GPL6480,Serous,28.0025,1,0.92,months,all_cause,79,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 5 TCGA duplicates dropped at extraction
+gse53963,GSM1304393,GSM1304393,GPL6480,Serous,2836.470625,1,93.19,months,all_cause,60,IV,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 5 TCGA duplicates dropped at extraction
+gse53963,GSM1304394,GSM1304394,GPL6480,Serous,80.96375,1,2.66,months,all_cause,85,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 5 TCGA duplicates dropped at extraction
+gse53963,GSM1304395,GSM1304395,GPL6480,Serous,1081.444375,1,35.53,months,all_cause,55,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 5 TCGA duplicates dropped at extraction
+gse53963,GSM1304397,GSM1304397,GPL6480,Serous,1144.45,1,37.60,months,all_cause,67,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 6 TCGA duplicates dropped at extraction
+gse53963,GSM1304398,GSM1304398,GPL6480,Serous,3583.406875,0,117.73,months,all_cause,46,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 6 TCGA duplicates dropped at extraction
+gse53963,GSM1304401,GSM1304401,GPL6480,Serous,705.845625,1,23.19,months,all_cause,57,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 8 TCGA duplicates dropped at extraction
+gse53963,GSM1304402,GSM1304402,GPL6480,Serous,1559.921875,1,51.25,months,all_cause,65,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 8 TCGA duplicates dropped at extraction
+gse53963,GSM1304403,GSM1304403,GPL6480,Serous,230.411875,1,7.57,months,all_cause,69,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 8 TCGA duplicates dropped at extraction
+gse53963,GSM1304404,GSM1304404,GPL6480,Serous,416.385,1,13.68,months,all_cause,64,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 8 TCGA duplicates dropped at extraction
+gse53963,GSM1304406,GSM1304406,GPL6480,Serous,2362.863125,1,77.63,months,all_cause,56,IV,4,,reparsed from ch2 series matrix (converter CSV unusable); 9 TCGA duplicates dropped at extraction
+gse53963,GSM1304409,GSM1304409,GPL6480,Serous,1106.403125,1,36.35,months,all_cause,70,IV,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 11 TCGA duplicates dropped at extraction
+gse53963,GSM1304410,GSM1304410,GPL6480,Serous,17.958125,1,0.59,months,all_cause,62,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 11 TCGA duplicates dropped at extraction
+gse53963,GSM1304411,GSM1304411,GPL6480,Serous,2832.51375,1,93.06,months,all_cause,60,III,3,Sub-optimal,reparsed from ch2 series matrix (converter CSV unusable); 11 TCGA duplicates dropped at extraction
+gse53963,GSM1304412,GSM1304412,GPL6480,Serous,3264.1175,0,107.24,months,all_cause,70,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 11 TCGA duplicates dropped at extraction
+gse53963,GSM1304413,GSM1304413,GPL6480,Serous,465.69375,1,15.30,months,all_cause,63,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 11 TCGA duplicates dropped at extraction
+gse53963,GSM1304415,GSM1304415,GPL6480,Serous,3565.44875,0,117.14,months,all_cause,71,III,4,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 12 TCGA duplicates dropped at extraction
+gse53963,GSM1304416,GSM1304416,GPL6480,Serous,467.52,1,15.36,months,all_cause,80,III,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 12 TCGA duplicates dropped at extraction
+gse53963,GSM1304419,GSM1304419,GPL6480,Serous,187.190625,1,6.15,months,all_cause,57,IV,3,Optimal,reparsed from ch2 series matrix (converter CSV unusable); 14 TCGA duplicates dropped at extraction
+gse17260,GSM432220,GSM432220,GPL6480,serous ovarian cancer,1674.0625,0,55,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432221,GSM432221,GPL6480,serous ovarian cancer,30.4375,1,1,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432222,GSM432222,GPL6480,serous ovarian cancer,730.5,0,24,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432223,GSM432223,GPL6480,serous ovarian cancer,791.375,0,26,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432224,GSM432224,GPL6480,serous ovarian cancer,1004.4375,1,33,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432225,GSM432225,GPL6480,serous ovarian cancer,1126.1875,0,37,months,all_cause,,IIIb,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432226,GSM432226,GPL6480,serous ovarian cancer,608.75,1,20,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432227,GSM432227,GPL6480,serous ovarian cancer,1430.5625,0,47,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432228,GSM432228,GPL6480,serous ovarian cancer,1826.25,0,60,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432229,GSM432229,GPL6480,serous ovarian cancer,1734.9375,1,57,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432230,GSM432230,GPL6480,serous ovarian cancer,1461,0,48,months,all_cause,,IIIa,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432231,GSM432231,GPL6480,serous ovarian cancer,2100.1875,0,69,months,all_cause,,IIIc,1,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432232,GSM432232,GPL6480,serous ovarian cancer,821.8125,1,27,months,all_cause,,IIIc,1,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432233,GSM432233,GPL6480,serous ovarian cancer,2100.1875,1,69,months,all_cause,,IIIb,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432234,GSM432234,GPL6480,serous ovarian cancer,1552.3125,1,51,months,all_cause,,IIIc,1,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432235,GSM432235,GPL6480,serous ovarian cancer,517.4375,0,17,months,all_cause,,IIIc,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432236,GSM432236,GPL6480,serous ovarian cancer,517.4375,0,17,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432237,GSM432237,GPL6480,serous ovarian cancer,517.4375,0,17,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432238,GSM432238,GPL6480,serous ovarian cancer,730.5,1,24,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432239,GSM432239,GPL6480,serous ovarian cancer,1582.75,1,52,months,all_cause,,IV,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432240,GSM432240,GPL6480,serous ovarian cancer,760.9375,1,25,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432242,GSM432242,GPL6480,serous ovarian cancer,669.625,1,22,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432243,GSM432243,GPL6480,serous ovarian cancer,1613.1875,1,53,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432244,GSM432244,GPL6480,serous ovarian cancer,395.6875,1,13,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432245,GSM432245,GPL6480,serous ovarian cancer,2404.5625,0,79,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432246,GSM432246,GPL6480,serous ovarian cancer,2252.375,0,74,months,all_cause,,IIIa,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432247,GSM432247,GPL6480,serous ovarian cancer,2282.8125,0,75,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432248,GSM432248,GPL6480,serous ovarian cancer,1887.125,1,62,months,all_cause,,IIIa,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432249,GSM432249,GPL6480,serous ovarian cancer,1948,0,64,months,all_cause,,IIIc,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432250,GSM432250,GPL6480,serous ovarian cancer,1400.125,0,46,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432251,GSM432251,GPL6480,serous ovarian cancer,1339.25,0,44,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432252,GSM432252,GPL6480,serous ovarian cancer,852.25,1,28,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432253,GSM432253,GPL6480,serous ovarian cancer,1004.4375,0,33,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432254,GSM432254,GPL6480,serous ovarian cancer,943.5625,0,31,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432255,GSM432255,GPL6480,serous ovarian cancer,852.25,0,28,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432256,GSM432256,GPL6480,serous ovarian cancer,730.5,0,24,months,all_cause,,IIIb,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432257,GSM432257,GPL6480,serous ovarian cancer,456.5625,0,15,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432258,GSM432258,GPL6480,serous ovarian cancer,456.5625,0,15,months,all_cause,,IIIc,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432259,GSM432259,GPL6480,serous ovarian cancer,1491.4375,0,49,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432260,GSM432260,GPL6480,serous ovarian cancer,426.125,0,14,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432261,GSM432261,GPL6480,serous ovarian cancer,395.6875,0,13,months,all_cause,,IIIc,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432262,GSM432262,GPL6480,serous ovarian cancer,273.9375,0,9,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432263,GSM432263,GPL6480,serous ovarian cancer,882.6875,0,29,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432264,GSM432264,GPL6480,serous ovarian cancer,791.375,0,26,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432265,GSM432265,GPL6480,serous ovarian cancer,1491.4375,0,49,months,all_cause,,IIIc,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432266,GSM432266,GPL6480,serous ovarian cancer,608.75,0,20,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432267,GSM432267,GPL6480,serous ovarian cancer,1430.5625,0,47,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432268,GSM432268,GPL6480,serous ovarian cancer,456.5625,1,15,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432269,GSM432269,GPL6480,serous ovarian cancer,365.25,1,12,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432270,GSM432270,GPL6480,serous ovarian cancer,791.375,1,26,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432271,GSM432271,GPL6480,serous ovarian cancer,1247.9375,1,41,months,all_cause,,IV,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432272,GSM432272,GPL6480,serous ovarian cancer,334.8125,1,11,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432273,GSM432273,GPL6480,serous ovarian cancer,1430.5625,1,47,months,all_cause,,IV,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432274,GSM432274,GPL6480,serous ovarian cancer,1521.875,0,50,months,all_cause,,IIIc,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432275,GSM432275,GPL6480,serous ovarian cancer,30.4375,1,1,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432276,GSM432276,GPL6480,serous ovarian cancer,2191.5,0,72,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432277,GSM432277,GPL6480,serous ovarian cancer,1978.4375,0,65,months,all_cause,,IIIc,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432278,GSM432278,GPL6480,serous ovarian cancer,1004.4375,0,33,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432279,GSM432279,GPL6480,serous ovarian cancer,882.6875,0,29,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432280,GSM432280,GPL6480,serous ovarian cancer,1491.4375,1,49,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432281,GSM432281,GPL6480,serous ovarian cancer,2130.625,0,70,months,all_cause,,IIIc,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432282,GSM432282,GPL6480,serous ovarian cancer,456.5625,0,15,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432283,GSM432283,GPL6480,serous ovarian cancer,243.5,1,8,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432284,GSM432284,GPL6480,serous ovarian cancer,2435,1,80,months,all_cause,,IIIb,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432285,GSM432285,GPL6480,serous ovarian cancer,334.8125,1,11,months,all_cause,,IIIc,1,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432286,GSM432286,GPL6480,serous ovarian cancer,152.1875,1,5,months,all_cause,,IIIb,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432287,GSM432287,GPL6480,serous ovarian cancer,852.25,1,28,months,all_cause,,IV,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432288,GSM432288,GPL6480,serous ovarian cancer,760.9375,1,25,months,all_cause,,IIIc,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432289,GSM432289,GPL6480,serous ovarian cancer,1948,1,64,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432290,GSM432290,GPL6480,serous ovarian cancer,1247.9375,1,41,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432291,GSM432291,GPL6480,serous ovarian cancer,1856.6875,0,61,months,all_cause,,IIIb,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432292,GSM432292,GPL6480,serous ovarian cancer,1400.125,0,46,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432293,GSM432293,GPL6480,serous ovarian cancer,1034.875,1,34,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432294,GSM432294,GPL6480,serous ovarian cancer,517.4375,1,17,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432295,GSM432295,GPL6480,serous ovarian cancer,1187.0625,0,39,months,all_cause,,IIIc,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432296,GSM432296,GPL6480,serous ovarian cancer,1126.1875,0,37,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432297,GSM432297,GPL6480,serous ovarian cancer,1004.4375,1,33,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432298,GSM432298,GPL6480,serous ovarian cancer,760.9375,0,25,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432299,GSM432299,GPL6480,serous ovarian cancer,730.5,0,24,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432300,GSM432300,GPL6480,serous ovarian cancer,700.0625,1,23,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432301,GSM432301,GPL6480,serous ovarian cancer,913.125,0,30,months,all_cause,,IIIb,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432302,GSM432302,GPL6480,serous ovarian cancer,913.125,0,30,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432303,GSM432303,GPL6480,serous ovarian cancer,882.6875,0,29,months,all_cause,,IIIc,1,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432304,GSM432304,GPL6480,serous ovarian cancer,700.0625,0,23,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432305,GSM432305,GPL6480,serous ovarian cancer,608.75,0,20,months,all_cause,,IIIc,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432306,GSM432306,GPL6480,serous ovarian cancer,974,1,32,months,all_cause,,IIIc,3,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432307,GSM432307,GPL6480,serous ovarian cancer,2465.4375,0,81,months,all_cause,,IV,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432308,GSM432308,GPL6480,serous ovarian cancer,2252.375,0,74,months,all_cause,,IIIc,1,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432309,GSM432309,GPL6480,serous ovarian cancer,791.375,1,26,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432310,GSM432310,GPL6480,serous ovarian cancer,791.375,0,26,months,all_cause,,IIIc,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432311,GSM432311,GPL6480,serous ovarian cancer,578.3125,0,19,months,all_cause,,IIIc,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432312,GSM432312,GPL6480,serous ovarian cancer,669.625,0,22,months,all_cause,,IIIb,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432313,GSM432313,GPL6480,serous ovarian cancer,669.625,0,22,months,all_cause,,IIIa,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432314,GSM432314,GPL6480,serous ovarian cancer,639.1875,0,21,months,all_cause,,IIIb,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432315,GSM432315,GPL6480,serous ovarian cancer,1278.375,1,42,months,all_cause,,IIIa,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432316,GSM432316,GPL6480,serous ovarian cancer,791.375,1,26,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432317,GSM432317,GPL6480,serous ovarian cancer,30.4375,1,1,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432318,GSM432318,GPL6480,serous ovarian cancer,821.8125,1,27,months,all_cause,,IIIc,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432319,GSM432319,GPL6480,serous ovarian cancer,2069.75,1,68,months,all_cause,,IIIc,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432320,GSM432320,GPL6480,serous ovarian cancer,1948,0,64,months,all_cause,,IV,2,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432321,GSM432321,GPL6480,serous ovarian cancer,1582.75,0,52,months,all_cause,,IIIa,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432322,GSM432322,GPL6480,serous ovarian cancer,1978.4375,0,65,months,all_cause,,IV,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432323,GSM432323,GPL6480,serous ovarian cancer,1004.4375,1,33,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432324,GSM432324,GPL6480,serous ovarian cancer,1552.3125,1,51,months,all_cause,,IIIc,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432325,GSM432325,GPL6480,serous ovarian cancer,30.4375,1,1,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432326,GSM432326,GPL6480,serous ovarian cancer,1643.625,1,54,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432327,GSM432327,GPL6480,serous ovarian cancer,1552.3125,0,51,months,all_cause,,IIIb,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432328,GSM432328,GPL6480,serous ovarian cancer,1552.3125,0,51,months,all_cause,,IV,1,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432329,GSM432329,GPL6480,serous ovarian cancer,1187.0625,0,39,months,all_cause,,IIIc,2,optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse17260,GSM432330,GSM432330,GPL6480,serous ovarian cancer,852.25,0,28,months,all_cause,,IV,3,not optimal,26 grade-1 serous retained per split-doc target; ignored `status` (GEO public-on date)
+gse140082,GSM4153779,GSM4153779,GPL14951,serous,796,1,796,days,all_cause,65,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153780,GSM4153780,GPL14951,serous,1281,0,1281,days,all_cause,63,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153781,GSM4153781,GPL14951,serous,379,1,379,days,all_cause,80,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153783,GSM4153783,GPL14951,serous,991,0,991,days,all_cause,46,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153787,GSM4153787,GPL14951,serous,1190,0,1190,days,all_cause,68,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153788,GSM4153788,GPL14951,serous,1155,0,1155,days,all_cause,43,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153793,GSM4153793,GPL14951,serous,428,1,428,days,all_cause,66,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153794,GSM4153794,GPL14951,serous,821,0,821,days,all_cause,42,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153795,GSM4153795,GPL14951,serous,754,0,754,days,all_cause,71,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153796,GSM4153796,GPL14951,serous,712,1,712,days,all_cause,57,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153797,GSM4153797,GPL14951,serous,1169,0,1169,days,all_cause,58,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153798,GSM4153798,GPL14951,serous,901,0,901,days,all_cause,72,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153799,GSM4153799,GPL14951,serous,1180,0,1180,days,all_cause,50,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153800,GSM4153800,GPL14951,serous,1230,0,1230,days,all_cause,65,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153801,GSM4153801,GPL14951,serous,1240,0,1240,days,all_cause,53,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153803,GSM4153803,GPL14951,serous,762,1,762,days,all_cause,80,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153804,GSM4153804,GPL14951,serous,381,1,381,days,all_cause,64,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153807,GSM4153807,GPL14951,serous,918,0,918,days,all_cause,55,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153808,GSM4153808,GPL14951,serous,834,0,834,days,all_cause,47,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153811,GSM4153811,GPL14951,serous,675,1,675,days,all_cause,75,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153814,GSM4153814,GPL14951,serous,1255,0,1255,days,all_cause,62,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153815,GSM4153815,GPL14951,serous,806,1,806,days,all_cause,64,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153816,GSM4153816,GPL14951,serous,150,1,150,days,all_cause,64,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153825,GSM4153825,GPL14951,serous,944,0,944,days,all_cause,62,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153826,GSM4153826,GPL14951,serous,903,0,903,days,all_cause,52,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153830,GSM4153830,GPL14951,serous,931,1,931,days,all_cause,64,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153833,GSM4153833,GPL14951,serous,1084,0,1084,days,all_cause,60,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153834,GSM4153834,GPL14951,serous,1239,0,1239,days,all_cause,63,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153835,GSM4153835,GPL14951,serous,1113,1,1113,days,all_cause,53,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153836,GSM4153836,GPL14951,serous,1051,0,1051,days,all_cause,65,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153837,GSM4153837,GPL14951,serous,789,0,789,days,all_cause,48,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153838,GSM4153838,GPL14951,serous,730,1,730,days,all_cause,65,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153839,GSM4153839,GPL14951,serous,621,1,621,days,all_cause,49,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153840,GSM4153840,GPL14951,serous,967,1,967,days,all_cause,53,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153841,GSM4153841,GPL14951,serous,917,0,917,days,all_cause,67,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153842,GSM4153842,GPL14951,serous,841,0,841,days,all_cause,66,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153848,GSM4153848,GPL14951,serous,1218,0,1218,days,all_cause,70,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153850,GSM4153850,GPL14951,serous,1108,0,1108,days,all_cause,58,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153852,GSM4153852,GPL14951,serous,438,0,438,days,all_cause,71,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153855,GSM4153855,GPL14951,serous,1224,0,1224,days,all_cause,59,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153856,GSM4153856,GPL14951,serous,823,1,823,days,all_cause,56,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153862,GSM4153862,GPL14951,serous,461,1,461,days,all_cause,69,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153863,GSM4153863,GPL14951,serous,595,1,595,days,all_cause,68,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153865,GSM4153865,GPL14951,serous,291,0,291,days,all_cause,69,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153866,GSM4153866,GPL14951,serous,899,0,899,days,all_cause,51,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153867,GSM4153867,GPL14951,serous,693,0,693,days,all_cause,39,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153868,GSM4153868,GPL14951,serous,228,0,228,days,all_cause,66,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153869,GSM4153869,GPL14951,serous,206,0,206,days,all_cause,56,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153874,GSM4153874,GPL14951,serous,764,1,764,days,all_cause,58,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153875,GSM4153875,GPL14951,serous,1048,0,1048,days,all_cause,65,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153880,GSM4153880,GPL14951,serous,897,1,897,days,all_cause,66,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153882,GSM4153882,GPL14951,serous,897,0,897,days,all_cause,63,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153883,GSM4153883,GPL14951,serous,678,1,678,days,all_cause,67,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153884,GSM4153884,GPL14951,serous,133,1,133,days,all_cause,79,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153885,GSM4153885,GPL14951,serous,584,1,584,days,all_cause,53,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153886,GSM4153886,GPL14951,serous,643,0,643,days,all_cause,70,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153887,GSM4153887,GPL14951,serous,563,0,563,days,all_cause,76,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153888,GSM4153888,GPL14951,serous,809,0,809,days,all_cause,44,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153890,GSM4153890,GPL14951,serous,351,1,351,days,all_cause,50,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153891,GSM4153891,GPL14951,serous,659,0,659,days,all_cause,57,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153892,GSM4153892,GPL14951,serous,649,0,649,days,all_cause,52,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153894,GSM4153894,GPL14951,serous,1148,0,1148,days,all_cause,56,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153896,GSM4153896,GPL14951,serous,799,1,799,days,all_cause,46,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153897,GSM4153897,GPL14951,serous,748,0,748,days,all_cause,51,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153898,GSM4153898,GPL14951,serous,1130,0,1130,days,all_cause,66,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153902,GSM4153902,GPL14951,serous,141,1,141,days,all_cause,71,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153910,GSM4153910,GPL14951,serous,949,1,949,days,all_cause,68,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153914,GSM4153914,GPL14951,serous,871,0,871,days,all_cause,56,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153923,GSM4153923,GPL14951,serous,1115,0,1115,days,all_cause,57,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153924,GSM4153924,GPL14951,serous,1151,0,1151,days,all_cause,44,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153925,GSM4153925,GPL14951,serous,809,1,809,days,all_cause,50,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153929,GSM4153929,GPL14951,serous,623,1,623,days,all_cause,63,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153930,GSM4153930,GPL14951,serous,519,0,519,days,all_cause,68,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153931,GSM4153931,GPL14951,serous,1054,0,1054,days,all_cause,45,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153932,GSM4153932,GPL14951,serous,175,0,175,days,all_cause,71,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153933,GSM4153933,GPL14951,serous,904,0,904,days,all_cause,57,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153941,GSM4153941,GPL14951,serous,614,1,614,days,all_cause,66,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153942,GSM4153942,GPL14951,serous,722,0,722,days,all_cause,44,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153944,GSM4153944,GPL14951,serous,646,1,646,days,all_cause,68,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153945,GSM4153945,GPL14951,serous,765,0,765,days,all_cause,63,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153946,GSM4153946,GPL14951,serous,576,1,576,days,all_cause,65,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153948,GSM4153948,GPL14951,serous,647,0,647,days,all_cause,72,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153951,GSM4153951,GPL14951,serous,694,0,694,days,all_cause,59,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153953,GSM4153953,GPL14951,serous,781,1,781,days,all_cause,66,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153955,GSM4153955,GPL14951,serous,754,0,754,days,all_cause,69,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153957,GSM4153957,GPL14951,serous,1027,1,1027,days,all_cause,69,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153958,GSM4153958,GPL14951,serous,982,0,982,days,all_cause,61,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153959,GSM4153959,GPL14951,serous,207,0,207,days,all_cause,65,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153961,GSM4153961,GPL14951,serous,651,0,651,days,all_cause,48,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153964,GSM4153964,GPL14951,serous,797,0,797,days,all_cause,48,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153965,GSM4153965,GPL14951,serous,1137,0,1137,days,all_cause,49,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153967,GSM4153967,GPL14951,serous,1136,0,1136,days,all_cause,69,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153968,GSM4153968,GPL14951,serous,925,0,925,days,all_cause,72,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153970,GSM4153970,GPL14951,serous,838,1,838,days,all_cause,66,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153971,GSM4153971,GPL14951,serous,841,0,841,days,all_cause,70,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153973,GSM4153973,GPL14951,serous,1097,0,1097,days,all_cause,60,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153974,GSM4153974,GPL14951,serous,914,0,914,days,all_cause,59,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153979,GSM4153979,GPL14951,serous,1078,0,1078,days,all_cause,53,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153981,GSM4153981,GPL14951,serous,999,0,999,days,all_cause,65,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153985,GSM4153985,GPL14951,serous,724,0,724,days,all_cause,50,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4153988,GSM4153988,GPL14951,serous,662,1,662,days,all_cause,55,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153990,GSM4153990,GPL14951,serous,1117,0,1117,days,all_cause,57,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153996,GSM4153996,GPL14951,serous,772,0,772,days,all_cause,46,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4153998,GSM4153998,GPL14951,serous,503,1,503,days,all_cause,73,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154000,GSM4154000,GPL14951,serous,287,1,287,days,all_cause,64,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154007,GSM4154007,GPL14951,serous,373,1,373,days,all_cause,57,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154009,GSM4154009,GPL14951,serous,793,0,793,days,all_cause,63,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154010,GSM4154010,GPL14951,serous,594,1,594,days,all_cause,35,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154011,GSM4154011,GPL14951,serous,273,1,273,days,all_cause,62,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154012,GSM4154012,GPL14951,serous,626,0,626,days,all_cause,77,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154013,GSM4154013,GPL14951,serous,1009,0,1009,days,all_cause,46,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154017,GSM4154017,GPL14951,serous,338,1,338,days,all_cause,75,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154020,GSM4154020,GPL14951,serous,700,0,700,days,all_cause,58,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154022,GSM4154022,GPL14951,serous,1031,0,1031,days,all_cause,62,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154023,GSM4154023,GPL14951,serous,982,0,982,days,all_cause,60,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154024,GSM4154024,GPL14951,serous,1009,0,1009,days,all_cause,59,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154025,GSM4154025,GPL14951,serous,542,1,542,days,all_cause,67,III,high.grade,Inoperable,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154027,GSM4154027,GPL14951,serous,982,0,982,days,all_cause,55,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154028,GSM4154028,GPL14951,serous,892,0,892,days,all_cause,66,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154030,GSM4154030,GPL14951,serous,837,0,837,days,all_cause,59,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154035,GSM4154035,GPL14951,serous,815,0,815,days,all_cause,60,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154038,GSM4154038,GPL14951,serous,789,0,789,days,all_cause,55,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154039,GSM4154039,GPL14951,serous,778,0,778,days,all_cause,58,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154041,GSM4154041,GPL14951,serous,636,0,636,days,all_cause,38,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154043,GSM4154043,GPL14951,serous,660,0,660,days,all_cause,54,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154044,GSM4154044,GPL14951,serous,576,0,576,days,all_cause,57,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154045,GSM4154045,GPL14951,serous,251,1,251,days,all_cause,61,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154046,GSM4154046,GPL14951,serous,826,0,826,days,all_cause,66,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154049,GSM4154049,GPL14951,serous,815,0,815,days,all_cause,63,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154050,GSM4154050,GPL14951,serous,925,0,925,days,all_cause,61,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154053,GSM4154053,GPL14951,serous,854,0,854,days,all_cause,49,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154054,GSM4154054,GPL14951,serous,524,1,524,days,all_cause,70,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154055,GSM4154055,GPL14951,serous,933,0,933,days,all_cause,54,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154056,GSM4154056,GPL14951,serous,677,0,677,days,all_cause,66,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154059,GSM4154059,GPL14951,serous,247,1,247,days,all_cause,68,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154060,GSM4154060,GPL14951,serous,645,0,645,days,all_cause,55,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154063,GSM4154063,GPL14951,serous,750,0,750,days,all_cause,68,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154064,GSM4154064,GPL14951,serous,844,0,844,days,all_cause,37,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154066,GSM4154066,GPL14951,serous,359,1,359,days,all_cause,48,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154067,GSM4154067,GPL14951,serous,403,1,403,days,all_cause,46,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154068,GSM4154068,GPL14951,serous,962,0,962,days,all_cause,45,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154069,GSM4154069,GPL14951,serous,775,0,775,days,all_cause,65,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154070,GSM4154070,GPL14951,serous,571,0,571,days,all_cause,72,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154071,GSM4154071,GPL14951,serous,571,1,571,days,all_cause,67,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154074,GSM4154074,GPL14951,serous,792,1,792,days,all_cause,49,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154077,GSM4154077,GPL14951,serous,800,0,800,days,all_cause,65,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154079,GSM4154079,GPL14951,serous,942,0,942,days,all_cause,60,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154081,GSM4154081,GPL14951,serous,554,0,554,days,all_cause,45,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154082,GSM4154082,GPL14951,serous,540,0,540,days,all_cause,57,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154083,GSM4154083,GPL14951,serous,347,1,347,days,all_cause,69,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154087,GSM4154087,GPL14951,serous,770,0,770,days,all_cause,68,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154089,GSM4154089,GPL14951,serous,216,1,216,days,all_cause,66,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154096,GSM4154096,GPL14951,serous,742,0,742,days,all_cause,55,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154098,GSM4154098,GPL14951,serous,577,0,577,days,all_cause,45,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154100,GSM4154100,GPL14951,serous,330,0,330,days,all_cause,42,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154105,GSM4154105,GPL14951,serous,641,0,641,days,all_cause,56,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154106,GSM4154106,GPL14951,serous,771,0,771,days,all_cause,62,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154109,GSM4154109,GPL14951,serous,639,0,639,days,all_cause,65,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154111,GSM4154111,GPL14951,serous,775,0,775,days,all_cause,62,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154114,GSM4154114,GPL14951,serous,770,0,770,days,all_cause,69,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154116,GSM4154116,GPL14951,serous,630,1,630,days,all_cause,71,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154117,GSM4154117,GPL14951,serous,740,0,740,days,all_cause,49,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154119,GSM4154119,GPL14951,serous,715,0,715,days,all_cause,46,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154120,GSM4154120,GPL14951,serous,557,0,557,days,all_cause,46,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154121,GSM4154121,GPL14951,serous,504,1,504,days,all_cause,68,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154122,GSM4154122,GPL14951,serous,722,0,722,days,all_cause,67,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154123,GSM4154123,GPL14951,serous,675,0,675,days,all_cause,39,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154124,GSM4154124,GPL14951,serous,692,0,692,days,all_cause,63,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154125,GSM4154125,GPL14951,serous,645,0,645,days,all_cause,46,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154126,GSM4154126,GPL14951,serous,625,0,625,days,all_cause,50,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154127,GSM4154127,GPL14951,serous,829,0,829,days,all_cause,78,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154128,GSM4154128,GPL14951,serous,744,0,744,days,all_cause,53,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154130,GSM4154130,GPL14951,serous,205,0,205,days,all_cause,53,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154131,GSM4154131,GPL14951,serous,672,0,672,days,all_cause,44,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154133,GSM4154133,GPL14951,serous,290,1,290,days,all_cause,71,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154134,GSM4154134,GPL14951,serous,520,1,520,days,all_cause,80,IV,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154135,GSM4154135,GPL14951,serous,765,0,765,days,all_cause,70,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154139,GSM4154139,GPL14951,serous,610,0,610,days,all_cause,70,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154140,GSM4154140,GPL14951,serous,675,0,675,days,all_cause,62,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154141,GSM4154141,GPL14951,serous,696,0,696,days,all_cause,47,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154143,GSM4154143,GPL14951,serous,765,0,765,days,all_cause,61,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154145,GSM4154145,GPL14951,serous,654,0,654,days,all_cause,54,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154146,GSM4154146,GPL14951,serous,678,0,678,days,all_cause,64,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154147,GSM4154147,GPL14951,serous,593,0,593,days,all_cause,66,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154148,GSM4154148,GPL14951,serous,18,0,18,days,all_cause,43,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154149,GSM4154149,GPL14951,serous,625,0,625,days,all_cause,69,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154151,GSM4154151,GPL14951,serous,475,1,475,days,all_cause,54,IV,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=bevacizumab
+gse140082,GSM4154152,GSM4154152,GPL14951,serous,645,0,645,days,all_cause,70,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154153,GSM4154153,GPL14951,serous,638,0,638,days,all_cause,56,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154155,GSM4154155,GPL14951,serous,641,0,641,days,all_cause,60,III,high.grade,SUB-OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse140082,GSM4154157,GSM4154157,GPL14951,serous,570,0,570,days,all_cause,49,III,high.grade,OPTIMAL,immature follow-up (~3.6 y max); flagged secondary validator; treatment=standard
+gse49997,GSM1211536,GSM1211536,GPL2986,Serous,608.75,0,20,months,all_cause,44,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211537,GSM1211537,GPL2986,Serous,943.5625,1,31,months,all_cause,71,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211538,GSM1211538,GPL2986,Serous,1034.875,1,34,months,all_cause,56,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211539,GSM1211539,GPL2986,Serous,1430.5625,0,47,months,all_cause,42,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211540,GSM1211540,GPL2986,Serous,669.625,1,22,months,all_cause,54,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211541,GSM1211541,GPL2986,Serous,1278.375,0,42,months,all_cause,51,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211544,GSM1211544,GPL2986,Serous,1339.25,0,44,months,all_cause,53,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211546,GSM1211546,GPL2986,Serous,1369.6875,0,45,months,all_cause,71,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211547,GSM1211547,GPL2986,Serous,943.5625,0,31,months,all_cause,57,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211549,GSM1211549,GPL2986,Serous,1217.5,0,40,months,all_cause,57,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211550,GSM1211550,GPL2986,Serous,974,0,32,months,all_cause,59,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211551,GSM1211551,GPL2986,Serous,1187.0625,0,39,months,all_cause,48,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211552,GSM1211552,GPL2986,Serous,365.25,1,12,months,all_cause,68,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211553,GSM1211553,GPL2986,Serous,974,0,32,months,all_cause,67,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211555,GSM1211555,GPL2986,Serous,1126.1875,0,37,months,all_cause,66,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211556,GSM1211556,GPL2986,Serous,1217.5,0,40,months,all_cause,56,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211557,GSM1211557,GPL2986,Serous,1126.1875,0,37,months,all_cause,52,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211558,GSM1211558,GPL2986,Serous,517.4375,1,17,months,all_cause,67,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211559,GSM1211559,GPL2986,Serous,1004.4375,1,33,months,all_cause,62,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211561,GSM1211561,GPL2986,Serous,213.0625,0,7,months,all_cause,34,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211563,GSM1211563,GPL2986,Serous,943.5625,0,31,months,all_cause,79,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211565,GSM1211565,GPL2986,Serous,1065.3125,0,35,months,all_cause,45,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211566,GSM1211566,GPL2986,Serous,1004.4375,0,33,months,all_cause,43,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211567,GSM1211567,GPL2986,Serous,974,0,32,months,all_cause,71,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211569,GSM1211569,GPL2986,Serous,243.5,1,8,months,all_cause,27,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211570,GSM1211570,GPL2986,Serous,426.125,0,14,months,all_cause,42,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211571,GSM1211571,GPL2986,Serous,943.5625,0,31,months,all_cause,68,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211572,GSM1211572,GPL2986,Serous,943.5625,0,31,months,all_cause,75,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211573,GSM1211573,GPL2986,Serous,243.5,1,8,months,all_cause,51,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211574,GSM1211574,GPL2986,Serous,913.125,0,30,months,all_cause,46,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211575,GSM1211575,GPL2986,Serous,578.3125,0,19,months,all_cause,47,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211576,GSM1211576,GPL2986,Serous,395.6875,0,13,months,all_cause,57,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211577,GSM1211577,GPL2986,Serous,913.125,0,30,months,all_cause,48,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211578,GSM1211578,GPL2986,Serous,852.25,0,28,months,all_cause,53,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211579,GSM1211579,GPL2986,Serous,821.8125,0,27,months,all_cause,46,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211581,GSM1211581,GPL2986,Serous,821.8125,0,27,months,all_cause,51,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211582,GSM1211582,GPL2986,Serous,517.4375,0,17,months,all_cause,56,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211583,GSM1211583,GPL2986,Serous,852.25,1,28,months,all_cause,65,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211585,GSM1211585,GPL2986,Serous,760.9375,0,25,months,all_cause,56,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211586,GSM1211586,GPL2986,Serous,791.375,0,26,months,all_cause,65,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211589,GSM1211589,GPL2986,Serous,791.375,0,26,months,all_cause,49,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211590,GSM1211590,GPL2986,Serous,760.9375,0,25,months,all_cause,66,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211591,GSM1211591,GPL2986,Serous,730.5,0,24,months,all_cause,46,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211592,GSM1211592,GPL2986,Serous,760.9375,0,25,months,all_cause,61,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211593,GSM1211593,GPL2986,Serous,760.9375,0,25,months,all_cause,38,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211594,GSM1211594,GPL2986,Serous,700.0625,0,23,months,all_cause,56,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211595,GSM1211595,GPL2986,Serous,243.5,1,8,months,all_cause,63,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211596,GSM1211596,GPL2986,Serous,669.625,0,22,months,all_cause,66,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211597,GSM1211597,GPL2986,Serous,365.25,0,12,months,all_cause,51,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211598,GSM1211598,GPL2986,Serous,791.375,0,26,months,all_cause,36,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211599,GSM1211599,GPL2986,Serous,639.1875,0,21,months,all_cause,69,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211601,GSM1211601,GPL2986,Serous,608.75,0,20,months,all_cause,52,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211602,GSM1211602,GPL2986,Serous,517.4375,0,17,months,all_cause,45,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211603,GSM1211603,GPL2986,Serous,152.1875,1,5,months,all_cause,69,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211604,GSM1211604,GPL2986,Serous,547.875,0,18,months,all_cause,76,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211605,GSM1211605,GPL2986,Serous,517.4375,0,17,months,all_cause,35,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211606,GSM1211606,GPL2986,Serous,456.5625,0,15,months,all_cause,79,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211607,GSM1211607,GPL2986,Serous,395.6875,0,13,months,all_cause,53,IV,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211608,GSM1211608,GPL2986,Serous,487,0,16,months,all_cause,55,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211609,GSM1211609,GPL2986,Serous,487,0,16,months,all_cause,62,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211610,GSM1211610,GPL2986,Serous,426.125,0,14,months,all_cause,56,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211611,GSM1211611,GPL2986,Serous,1461,0,48,months,all_cause,64,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211612,GSM1211612,GPL2986,Serous,456.5625,1,15,months,all_cause,83,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211614,GSM1211614,GPL2986,Serous,1430.5625,0,47,months,all_cause,67,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211615,GSM1211615,GPL2986,Serous,1400.125,0,46,months,all_cause,69,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211616,GSM1211616,GPL2986,Serous,1369.6875,0,45,months,all_cause,55,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211617,GSM1211617,GPL2986,Serous,517.4375,1,17,months,all_cause,64,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211619,GSM1211619,GPL2986,Serous,487,1,16,months,all_cause,46,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211620,GSM1211620,GPL2986,Serous,1187.0625,1,39,months,all_cause,67,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211621,GSM1211621,GPL2986,Serous,121.75,1,4,months,all_cause,44,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211622,GSM1211622,GPL2986,Serous,1095.75,0,36,months,all_cause,76,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211623,GSM1211623,GPL2986,Serous,30.4375,1,1,months,all_cause,72,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211624,GSM1211624,GPL2986,Serous,395.6875,0,13,months,all_cause,61,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211625,GSM1211625,GPL2986,Serous,1004.4375,0,33,months,all_cause,34,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211626,GSM1211626,GPL2986,Serous,578.3125,1,19,months,all_cause,58,IV,,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211627,GSM1211627,GPL2986,Serous,821.8125,0,27,months,all_cause,67,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211628,GSM1211628,GPL2986,Serous,852.25,0,28,months,all_cause,64,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211630,GSM1211630,GPL2986,Serous,669.625,0,22,months,all_cause,73,IV,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211631,GSM1211631,GPL2986,Serous,426.125,0,14,months,all_cause,67,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211632,GSM1211632,GPL2986,Serous,700.0625,0,23,months,all_cause,55,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211633,GSM1211633,GPL2986,Serous,639.1875,0,21,months,all_cause,64,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211634,GSM1211634,GPL2986,Serous,365.25,1,12,months,all_cause,65,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211635,GSM1211635,GPL2986,Serous,578.3125,0,19,months,all_cause,69,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211637,GSM1211637,GPL2986,Serous,639.1875,0,21,months,all_cause,43,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211638,GSM1211638,GPL2986,Serous,639.1875,0,21,months,all_cause,70,IV,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211640,GSM1211640,GPL2986,Serous,608.75,0,20,months,all_cause,68,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211641,GSM1211641,GPL2986,Serous,426.125,1,14,months,all_cause,55,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211643,GSM1211643,GPL2986,Serous,487,0,16,months,all_cause,54,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211644,GSM1211644,GPL2986,Serous,304.375,1,10,months,all_cause,49,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211645,GSM1211645,GPL2986,Serous,547.875,0,18,months,all_cause,69,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211646,GSM1211646,GPL2986,Serous,1461,0,48,months,all_cause,65,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211647,GSM1211647,GPL2986,Serous,1369.6875,0,45,months,all_cause,54,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211648,GSM1211648,GPL2986,Serous,1187.0625,0,39,months,all_cause,53,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211650,GSM1211650,GPL2986,Serous,1278.375,0,42,months,all_cause,42,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211651,GSM1211651,GPL2986,Serous,1156.625,0,38,months,all_cause,39,II,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211652,GSM1211652,GPL2986,Serous,121.75,0,4,months,all_cause,57,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211654,GSM1211654,GPL2986,Serous,395.6875,1,13,months,all_cause,80,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211655,GSM1211655,GPL2986,Serous,578.3125,1,19,months,all_cause,59,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211657,GSM1211657,GPL2986,Serous,1461,0,48,months,all_cause,47,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211658,GSM1211658,GPL2986,Serous,1339.25,1,44,months,all_cause,80,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211659,GSM1211659,GPL2986,Serous,1491.4375,0,49,months,all_cause,51,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211660,GSM1211660,GPL2986,Serous,1461,0,48,months,all_cause,64,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211661,GSM1211661,GPL2986,Serous,1095.75,1,36,months,all_cause,66,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211662,GSM1211662,GPL2986,Serous,1461,0,48,months,all_cause,59,II,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211663,GSM1211663,GPL2986,Serous,1461,0,48,months,all_cause,54,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211665,GSM1211665,GPL2986,Serous,456.5625,1,15,months,all_cause,56,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211666,GSM1211666,GPL2986,Serous,1187.0625,1,39,months,all_cause,54,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211667,GSM1211667,GPL2986,Serous,1339.25,0,44,months,all_cause,64,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211669,GSM1211669,GPL2986,Serous,1339.25,0,44,months,all_cause,50,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211670,GSM1211670,GPL2986,Serous,1339.25,0,44,months,all_cause,57,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211671,GSM1211671,GPL2986,Serous,821.8125,1,27,months,all_cause,55,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211672,GSM1211672,GPL2986,Serous,578.3125,1,19,months,all_cause,54,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211673,GSM1211673,GPL2986,Serous,1004.4375,1,33,months,all_cause,36,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211674,GSM1211674,GPL2986,Serous,913.125,1,30,months,all_cause,62,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211675,GSM1211675,GPL2986,Serous,852.25,1,28,months,all_cause,71,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211676,GSM1211676,GPL2986,Serous,426.125,1,14,months,all_cause,81,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211677,GSM1211677,GPL2986,Serous,243.5,1,8,months,all_cause,74,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211678,GSM1211678,GPL2986,Serous,121.75,1,4,months,all_cause,68,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211679,GSM1211679,GPL2986,Serous,760.9375,1,25,months,all_cause,58,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211680,GSM1211680,GPL2986,Serous,1126.1875,0,37,months,all_cause,75,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211681,GSM1211681,GPL2986,Serous,1095.75,0,36,months,all_cause,49,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211683,GSM1211683,GPL2986,Serous,1095.75,0,36,months,all_cause,37,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211684,GSM1211684,GPL2986,Serous,1034.875,0,34,months,all_cause,67,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211686,GSM1211686,GPL2986,Serous,974,0,32,months,all_cause,46,II,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211688,GSM1211688,GPL2986,Serous,60.875,1,2,months,all_cause,77,II,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211689,GSM1211689,GPL2986,Serous,974,0,32,months,all_cause,58,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211690,GSM1211690,GPL2986,Serous,852.25,1,28,months,all_cause,68,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211691,GSM1211691,GPL2986,Serous,974,0,32,months,all_cause,54,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211692,GSM1211692,GPL2986,Serous,578.3125,1,19,months,all_cause,67,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211693,GSM1211693,GPL2986,Serous,852.25,0,28,months,all_cause,50,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211694,GSM1211694,GPL2986,Serous,821.8125,0,27,months,all_cause,68,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211695,GSM1211695,GPL2986,Serous,791.375,1,26,months,all_cause,57,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211696,GSM1211696,GPL2986,Serous,791.375,0,26,months,all_cause,66,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211697,GSM1211697,GPL2986,Serous,669.625,1,22,months,all_cause,42,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211698,GSM1211698,GPL2986,Serous,730.5,1,24,months,all_cause,27,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211699,GSM1211699,GPL2986,Serous,760.9375,0,25,months,all_cause,46,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211700,GSM1211700,GPL2986,Serous,821.8125,0,27,months,all_cause,75,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211701,GSM1211701,GPL2986,Serous,730.5,0,24,months,all_cause,50,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211702,GSM1211702,GPL2986,Serous,608.75,0,20,months,all_cause,56,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211703,GSM1211703,GPL2986,Serous,578.3125,1,19,months,all_cause,69,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211704,GSM1211704,GPL2986,Serous,547.875,0,18,months,all_cause,49,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211705,GSM1211705,GPL2986,Serous,700.0625,0,23,months,all_cause,60,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211706,GSM1211706,GPL2986,Serous,669.625,0,22,months,all_cause,47,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211707,GSM1211707,GPL2986,Serous,487,1,16,months,all_cause,75,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211708,GSM1211708,GPL2986,Serous,578.3125,0,19,months,all_cause,45,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211709,GSM1211709,GPL2986,Serous,426.125,1,14,months,all_cause,73,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211710,GSM1211710,GPL2986,Serous,487,0,16,months,all_cause,72,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211711,GSM1211711,GPL2986,Serous,487,0,16,months,all_cause,48,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211712,GSM1211712,GPL2986,Serous,456.5625,0,15,months,all_cause,54,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211713,GSM1211713,GPL2986,Serous,487,0,16,months,all_cause,61,III,1&2,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211715,GSM1211715,GPL2986,Serous,213.0625,1,7,months,all_cause,85,II,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211716,GSM1211716,GPL2986,Serous,1126.1875,0,37,months,all_cause,73,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211717,GSM1211717,GPL2986,Serous,1369.6875,0,45,months,all_cause,26,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211719,GSM1211719,GPL2986,Serous,669.625,0,22,months,all_cause,77,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211720,GSM1211720,GPL2986,Serous,852.25,0,28,months,all_cause,65,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211721,GSM1211721,GPL2986,Serous,1217.5,0,40,months,all_cause,50,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211722,GSM1211722,GPL2986,Serous,974,0,32,months,all_cause,53,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211723,GSM1211723,GPL2986,Serous,639.1875,0,21,months,all_cause,50,IV,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211724,GSM1211724,GPL2986,Serous,943.5625,0,31,months,all_cause,64,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211726,GSM1211726,GPL2986,Serous,821.8125,0,27,months,all_cause,64,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211727,GSM1211727,GPL2986,Serous,578.3125,1,19,months,all_cause,50,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211728,GSM1211728,GPL2986,Serous,791.375,0,26,months,all_cause,59,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211729,GSM1211729,GPL2986,Serous,730.5,0,24,months,all_cause,57,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211730,GSM1211730,GPL2986,Serous,700.0625,0,23,months,all_cause,49,III,1&2,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211732,GSM1211732,GPL2986,Serous,639.1875,0,21,months,all_cause,64,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211733,GSM1211733,GPL2986,Serous,639.1875,0,21,months,all_cause,64,IV,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211734,GSM1211734,GPL2986,Serous,608.75,0,20,months,all_cause,38,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211735,GSM1211735,GPL2986,Serous,821.8125,1,27,months,all_cause,63,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211736,GSM1211736,GPL2986,Serous,608.75,0,20,months,all_cause,40,III,3,Yes,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211737,GSM1211737,GPL2986,Serous,395.6875,0,13,months,all_cause,46,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"
+gse49997,GSM1211739,GSM1211739,GPL2986,Serous,395.6875,0,13,months,all_cause,55,III,3,No,"short follow-up (max ~49 mo); supportive only; `figo grade` column is FIGO stage, `grade` is histologic grade"

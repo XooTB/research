@@ -105,25 +105,31 @@ def check_dataset(slug: str, topic: str, branch: str) -> list[dict]:
     checks.append({"check": f"{rel} exists locally", "ok": local, "detail": str(local),
                    "fix": None if local else "check the topic/slug spelling"})
 
-    _, tracked = git("ls-files", f"{rel}/csv")
-    csv_files = [l for l in tracked.splitlines() if l.strip()]
+    _, tracked = git("ls-files", rel)
+    tracked_files = [l for l in tracked.splitlines() if l.strip()]
+    csv_files = [l for l in tracked_files if f"{rel}/csv/" in l or l.startswith(f"{rel}/csv/")]
+    compiled_markers = ("labels.csv", "expression_pool.csv", "expression_validation.csv")
+    compiled_files = [l for l in tracked_files if any(l.endswith(m) for m in compiled_markers)]
+    has_data = bool(csv_files) or bool(compiled_files)
     checks.append({
-        "check": f"{rel}/csv tracked in git",
-        "ok": bool(csv_files),
-        "detail": f"{len(csv_files)} file(s)",
-        "fix": None if csv_files else
-               "run datasets_to_csv.py, then git add the csv/ folder",
+        "check": f"{rel} data tracked in git",
+        "ok": has_data,
+        "detail": f"{len(csv_files)} csv/ file(s), {len(compiled_files)} compiled table(s)",
+        "fix": None if has_data else
+               "git add the csv/ folder, or compiled labels.csv + expression matrix",
     })
 
     code, listing = git("ls-tree", "-r", "--name-only", f"origin/{branch}", rel)
     remote = {l for l in listing.splitlines() if l.strip()} if code == 0 else set()
-    on_remote = [p for p in remote if p.startswith(f"{rel}/csv/")]
+    on_remote = [p for p in remote
+                 if p.startswith(f"{rel}/csv/")
+                 or any(p.endswith(m) for m in compiled_markers)]
     checks.append({
-        "check": f"{rel}/csv present on origin/{branch}",
+        "check": f"{rel} present on origin/{branch}",
         "ok": bool(on_remote),
         "detail": f"{len(on_remote)} file(s)",
         "fix": None if on_remote else
-               "push the csv/ folder — the runtime clones the remote, not your disk",
+               "push the dataset — the runtime clones the remote, not your disk",
     })
 
     # Files over GitHub's blob limit have to be zipped before they can be

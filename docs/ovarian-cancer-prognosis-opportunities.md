@@ -356,7 +356,7 @@ Performance language: “ceiling” is an informed prior from this library plus 
 
 **Recommendation.** Keep as a **secondary, literature-comparable** endpoint. Do not make it the product. Before another OS model: attach GSE9891 survival, add GSE32062 and GSE53963 as validators, subset HGSOC, and consider fetching TCGA U133A so n is ~550 rather than 303.
 
-**Status:** data in hand (except GSE9891). First attempt already run; external performance is weak.
+**Status:** **Active workstream** — tracked in `docs/current-focus-overall-survival.md` (since 27 Aug 2026). Data in hand (except GSE9891). First attempt already run; external performance is weak.
 
 ---
 

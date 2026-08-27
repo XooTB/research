@@ -32,10 +32,16 @@ from common import WORKSPACE, cfg, eprint
 _PIP_NAME = {
     "sklearn": "scikit-learn",
     "scikit-learn": "scikit-learn",
+    "sksurv": "scikit-survival",
+    "scikit-survival": "scikit-survival",
     "cv2": "opencv-python-headless",
     "yaml": "pyyaml",
 }
-_IMPORT_NAME = {"scikit-learn": "sklearn", "pyyaml": "yaml"}
+_IMPORT_NAME = {
+    "scikit-learn": "sklearn",
+    "scikit-survival": "sksurv",
+    "pyyaml": "yaml",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -219,6 +225,9 @@ def ensure_dataset(slug: str, topic: str | None = None, *, csv_only: bool = True
     if not target.exists() and (ws / ".git").exists():
         subprocess.run(["git", "-C", str(ws), "sparse-checkout", "add", pattern],
                        check=True, capture_output=True, text=True)
+        # blobless clones only materialize the path after a checkout
+        subprocess.run(["git", "-C", str(ws), "checkout", "HEAD", "--", pattern],
+                       check=False, capture_output=True, text=True)
 
     if not target.exists():
         raise FileNotFoundError(
@@ -229,6 +238,28 @@ def ensure_dataset(slug: str, topic: str | None = None, *, csv_only: bool = True
         )
     restore_packed()
     return target
+
+
+def ensure_os_tables() -> dict:
+    """Fetch the compiled OS train/validation tables (not under csv/).
+
+    ``os-training-pool`` and ``os-validation`` store ``labels.csv`` and the
+    merged expression matrices at the slug root. ``ensure_dataset`` defaults
+    to ``csv/`` which would miss them.
+    """
+    train = ensure_dataset("os-training-pool", csv_only=False)
+    val = ensure_dataset("os-validation", csv_only=False)
+    for slug, root, required in (
+        ("os-training-pool", train, ("labels.csv", "expression_pool.csv")),
+        ("os-validation", val, ("labels.csv", "expression_validation.csv")),
+    ):
+        missing = [n for n in required if not (root / n).is_file()]
+        if missing:
+            raise FileNotFoundError(
+                f"{slug} is missing {missing} under {root}. "
+                "Commit and push the compiled tables, then re-run the bootstrap."
+            )
+    return {"train": train, "val": val}
 
 
 def restore_packed() -> list[dict]:

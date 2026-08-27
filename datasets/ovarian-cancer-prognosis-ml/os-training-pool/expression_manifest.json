@@ -1,0 +1,190 @@
+{
+  "collapse_rule": "Per symbol, among probes that map 1:1 onto that symbol (annotation drops empty/--- symbols, /// multi-mappers, and AFFX- controls), keep the probe with the highest mean expression across the cohort's labels.csv analysis samples. Ties break on lexicographically smaller probe ID (Affy) or earlier file order (RNA-seq duplicate rows). Source numeric strings are copied unchanged — the mean is a selector, not a transform. TCGA HiSeqV2 rows are already gene symbols and use the same max-mean rule if a symbol appears more than once.",
+  "annotation_notes": "GEO GPL96/GPL570 annotations dated Aug 09 2016. Multi-mapping probes (///) are dropped rather than resolved, including 1007_s_at -> MIR4640///DDR1. Reproducibility over maximal probe count. Provenance: platform-annotations/REPORT.md.",
+  "annotation": {
+    "GPL96": {
+      "source": "GPL96.annot.gz",
+      "annotation_date": "Aug 09 2016",
+      "annotation_platform": "GPL96",
+      "probe_rows": 22283,
+      "dropped_affx": 68,
+      "dropped_empty": 1069,
+      "dropped_multi": 1223,
+      "kept_probes": 19923,
+      "unique_symbols": 12502,
+      "example_dropped_multi": "1007_s_at -> MIR4640///DDR1",
+      "path": "GPL96.probe2symbol.tsv"
+    },
+    "GPL570": {
+      "source": "GPL570.annot.gz",
+      "annotation_date": "Aug 09 2016",
+      "annotation_platform": "GPL570",
+      "probe_rows": 54675,
+      "dropped_affx": 62,
+      "dropped_empty": 9505,
+      "dropped_multi": 2214,
+      "kept_probes": 42894,
+      "unique_symbols": 20848,
+      "example_dropped_multi": "1007_s_at -> MIR4640///DDR1",
+      "path": "GPL570.probe2symbol.tsv"
+    }
+  },
+  "cohorts": {
+    "tcga-ov-hiseqv2": {
+      "cohort": "tcga-ov-hiseqv2",
+      "n_samples": 302,
+      "n_input_rows": 20530,
+      "n_empty_symbols": 0,
+      "n_multi_symbols": 0,
+      "n_duplicate_symbol_rows": 0,
+      "n_mean_ties": 0,
+      "n_rows_no_mean": 0,
+      "n_symbols_collapsed": 20530,
+      "dims": [
+        20530,
+        302
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression/tcga-ov-hiseqv2.csv",
+      "bytes": 44865053
+    },
+    "gse26712": {
+      "cohort": "gse26712",
+      "n_samples": 185,
+      "n_input_rows": 22283,
+      "n_unmapped_probes": 2360,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 12502,
+      "dims": [
+        12502,
+        185
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression/gse26712.csv",
+      "bytes": 27579015
+    },
+    "gse63885": {
+      "cohort": "gse63885",
+      "n_samples": 70,
+      "n_input_rows": 54675,
+      "n_unmapped_probes": 11781,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 20848,
+      "dims": [
+        20848,
+        70
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression/gse63885.csv",
+      "bytes": 17500369
+    },
+    "gse26193": {
+      "cohort": "gse26193",
+      "n_samples": 79,
+      "n_input_rows": 54675,
+      "n_unmapped_probes": 11781,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 20848,
+      "dims": [
+        20848,
+        79
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression/gse26193.csv",
+      "bytes": 13142340
+    },
+    "gse30161": {
+      "cohort": "gse30161",
+      "n_samples": 47,
+      "n_input_rows": 54675,
+      "n_unmapped_probes": 11781,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 20848,
+      "dims": [
+        20848,
+        47
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression/gse30161.csv",
+      "bytes": 7010774
+    },
+    "gse14764": {
+      "cohort": "gse14764",
+      "n_samples": 68,
+      "n_input_rows": 22283,
+      "n_unmapped_probes": 2360,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 12502,
+      "dims": [
+        12502,
+        68
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression/gse14764.csv",
+      "bytes": 10186918
+    }
+  },
+  "platform_families": {
+    "rnaseq_hiseqv2": {
+      "cohorts": [
+        "tcga-ov-hiseqv2"
+      ],
+      "n_symbols_union": 20530,
+      "n_symbols_intersection": 20530,
+      "within_family_only_in_some_cohorts": [],
+      "n_only_in_some_cohorts": 0,
+      "n_symbols": 20530
+    },
+    "GPL96": {
+      "cohorts": [
+        "gse26712",
+        "gse14764"
+      ],
+      "n_symbols_union": 12502,
+      "n_symbols_intersection": 12502,
+      "within_family_only_in_some_cohorts": [],
+      "n_only_in_some_cohorts": 0,
+      "n_symbols": 12502
+    },
+    "GPL570": {
+      "cohorts": [
+        "gse63885",
+        "gse26193",
+        "gse30161"
+      ],
+      "n_symbols_union": 20848,
+      "n_symbols_intersection": 20848,
+      "within_family_only_in_some_cohorts": [],
+      "n_only_in_some_cohorts": 0,
+      "n_symbols": 20848
+    }
+  },
+  "intersection_size": 11474,
+  "pool": {
+    "n_symbols": 11474,
+    "n_samples": 751,
+    "dims": [
+      11474,
+      751
+    ],
+    "path": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression_pool.csv",
+    "symbols_path": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression_pool.symbols.txt",
+    "bytes": 80375625,
+    "column_order": "labels.csv row order (sample_id)"
+  },
+  "expected_column_counts": {
+    "tcga-ov-hiseqv2": 302,
+    "gse26712": 185,
+    "gse63885": 70,
+    "gse26193": 79,
+    "gse30161": 47,
+    "gse14764": 68
+  },
+  "packed": false,
+  "pack_report": null,
+  "anomalies": []
+}

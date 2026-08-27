@@ -1,0 +1,752 @@
+cohort,sample_id,geo_accession,platform,histology,os_time_days,os_event,os_time_original,os_time_unit,event_definition,age_years,figo_stage,grade,residual_disease,notes
+tcga-ov-hiseqv2,TCGA-04-1348-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1483,1,1483,days,all_cause,44,Stage IIIB,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-04-1362-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1348,1,1348,days,all_cause,59,Stage IIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-04-1364-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1024,1,1024,days,all_cause,61,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-04-1365-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2329,0,2329,days,all_cause,87,Stage IIIB,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-04-1514-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1720,1,1720,days,all_cause,45,Stage IIIA,G2,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-04-1519-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,24,0,24,days,all_cause,48,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-0364-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,887,1,887,days,all_cause,80,Stage IIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-0366-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1757,1,1757,days,all_cause,55,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-0367-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,547,1,547,days,all_cause,67,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-0369-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1082,1,1082,days,all_cause,56,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1659-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,304,1,304,days,all_cause,51,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1662-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2717,1,2717,days,all_cause,58,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1666-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1752,0,1752,days,all_cause,57,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1667-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1882,0,1882,days,all_cause,61,Stage IIC,G2,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1668-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1684,0,1684,days,all_cause,57,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1669-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,928,0,928,days,all_cause,54,Stage IIIA,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1670-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,547,0,547,days,all_cause,57,Stage IIIA,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1673-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,92,0,92,days,all_cause,50,Stage IV,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-1674-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,260,0,260,days,all_cause,79,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-2044-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,186,0,186,days,all_cause,77,Stage IIB,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-2045-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1069,1,1069,days,all_cause,50,Stage IV,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-2048-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,138,1,138,days,all_cause,63,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-2051-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1919,0,1919,days,all_cause,42,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-2054-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,637,1,637,days,all_cause,58,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-09-2056-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,379,0,379,days,all_cause,62,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-10-0928-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,563,1,563,days,all_cause,71,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-10-0936-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1123,1,1123,days,all_cause,69,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0730-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,542,1,542,days,all_cause,71,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0799-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2535,0,2535,days,all_cause,44,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0800-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2661,0,2661,days,all_cause,52,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0801-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1399,1,1399,days,all_cause,46,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0890-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,4424,0,4424,days,all_cause,56,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0893-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1319,1,1319,days,all_cause,48,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0897-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2182,1,2182,days,all_cause,54,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0899-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2012,1,2012,days,all_cause,60,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0913-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,3325,0,3325,days,all_cause,53,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0916-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1785,0,1785,days,all_cause,49,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0920-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1484,1,1484,days,all_cause,65,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-0924-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2614,0,2614,days,all_cause,45,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1403-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2345,1,2345,days,all_cause,48,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1405-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,868,1,868,days,all_cause,49,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1410-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2464,0,2464,days,all_cause,57,Stage IV,GX,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1411-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,531,1,531,days,all_cause,81,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1481-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2648,1,2648,days,all_cause,76,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1497-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,3871,0,3871,days,all_cause,47,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1498-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2012,1,2012,days,all_cause,73,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1505-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1998,0,1998,days,all_cause,63,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1506-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1039,1,1039,days,all_cause,45,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1507-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1993,1,1993,days,all_cause,77,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1511-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1650,1,1650,days,all_cause,52,Stage IV,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-1512-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,442,0,442,days,all_cause,49,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-2060-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2369,0,2369,days,all_cause,51,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-13-A5FT-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2143,0,2143,days,all_cause,67,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-20-1682-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,837,0,837,days,all_cause,56,Stage IIIC,GX,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-20-1683-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,772,0,772,days,all_cause,65,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-20-1684-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,581,0,581,days,all_cause,51,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-20-1685-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,508,0,508,days,all_cause,45,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-20-1687-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,81,0,81,days,all_cause,46,Stage IV,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1026-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,816,0,816,days,all_cause,45,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1027-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,976,1,976,days,all_cause,48,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1029-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,268,0,268,days,all_cause,46,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1109-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1562,1,1562,days,all_cause,62,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1111-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,98,0,98,days,all_cause,63,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1114-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2089,1,2089,days,all_cause,55,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1120-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,130,0,130,days,all_cause,60,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1122-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1189,1,1189,days,all_cause,53,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1123-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1018,1,1018,days,all_cause,59,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-1809-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,16,0,16,days,all_cause,63,Stage IIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-2077-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,3525,0,3525,days,all_cause,45,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-2078-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2661,0,2661,days,all_cause,66,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-2081-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2342,1,2342,days,all_cause,49,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-23-2084-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1516,1,1516,days,all_cause,45,Stage IV,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-0975-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,663,1,663,days,all_cause,58,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1103-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1646,1,1646,days,all_cause,50,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1413-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,192,0,192,days,all_cause,51,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1416-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,194,0,194,days,all_cause,34,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1417-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,238,0,238,days,all_cause,54,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1418-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,243,0,243,days,all_cause,68,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1419-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,239,0,239,days,all_cause,62,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1423-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,190,0,190,days,all_cause,61,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1424-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,183,0,183,days,all_cause,67,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1425-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,181,0,181,days,all_cause,45,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1427-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,147,0,147,days,all_cause,58,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1428-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,529,0,529,days,all_cause,50,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1430-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,863,1,863,days,all_cause,68,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1434-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,568,1,568,days,all_cause,59,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1435-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1324,1,1324,days,all_cause,57,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1436-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,260,1,260,days,all_cause,57,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1463-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2218,1,2218,days,all_cause,70,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1467-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,3224,1,3224,days,all_cause,51,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1469-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,277,0,277,days,all_cause,71,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1474-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,676,1,676,days,all_cause,57,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1544-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,820,1,820,days,all_cause,71,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1545-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1746,1,1746,days,all_cause,69,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1546-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1955,1,1955,days,all_cause,46,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1548-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,493,1,493,days,all_cause,57,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1549-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1721,1,1721,days,all_cause,58,Stage IIIB,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1550-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1249,1,1249,days,all_cause,49,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1551-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1579,1,1579,days,all_cause,53,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1552-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1259,1,1259,days,all_cause,77,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1553-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1767,1,1767,days,all_cause,53,Stage IIIB,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1555-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2692,1,2692,days,all_cause,50,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1556-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2148,1,2148,days,all_cause,50,Stage IIB,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1557-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1213,1,1213,days,all_cause,49,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1558-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,594,1,594,days,all_cause,73,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1560-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1341,1,1341,days,all_cause,51,Stage IIIC,G4,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1562-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1384,1,1384,days,all_cause,67,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1563-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1451,1,1451,days,all_cause,66,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1564-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,787,1,787,days,all_cause,67,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1567-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,524,1,524,days,all_cause,54,Stage IIIB,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1603-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2742,1,2742,days,all_cause,53,Stage IIIB,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1604-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2688,1,2688,days,all_cause,66,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1616-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1163,1,1163,days,all_cause,56,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1842-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,253,0,253,days,all_cause,49,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1843-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,106,0,106,days,all_cause,66,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1844-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,113,0,113,days,all_cause,64,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1846-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,133,0,133,days,all_cause,45,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1847-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,343,0,343,days,all_cause,45,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1849-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,176,0,176,days,all_cause,80,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1850-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,168,0,168,days,all_cause,72,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1924-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,919,1,919,days,all_cause,65,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1928-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,336,1,336,days,all_cause,77,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-1930-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2467,1,2467,days,all_cause,53,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2019-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,148,0,148,days,all_cause,46,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2020-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,4624,1,4624,days,all_cause,67,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2023-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1364,1,1364,days,all_cause,54,Stage IIIA,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2024-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1769,1,1769,days,all_cause,72,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2026-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1059,1,1059,days,all_cause,79,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2027-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,3337,1,3337,days,all_cause,51,Stage IV,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2033-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,562,1,562,days,all_cause,87,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2035-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,857,1,857,days,all_cause,65,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2036-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1947,1,1947,days,all_cause,50,Stage IIIA,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2038-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1354,1,1354,days,all_cause,68,Stage IIIA,GB,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2254-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1736,1,1736,days,all_cause,66,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2261-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,24,1,24,days,all_cause,76,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2262-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,11,1,11,days,all_cause,57,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2267-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1446,1,1446,days,all_cause,58,Stage IIB,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2271-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,962,1,962,days,all_cause,55,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2281-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1357,0,1357,days,all_cause,68,Stage IIA,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2288-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,25,1,25,days,all_cause,70,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2289-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2049,1,2049,days,all_cause,68,Stage IV,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2290-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1102,1,1102,days,all_cause,56,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2293-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,506,1,506,days,all_cause,47,,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2297-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1699,1,1699,days,all_cause,56,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-24-2298-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1620,1,1620,days,all_cause,55,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1312-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,31,1,31,days,all_cause,69,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1313-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,820,1,820,days,all_cause,62,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1314-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1004,1,1004,days,all_cause,42,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1315-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1583,1,1583,days,all_cause,50,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1316-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1279,1,1279,days,all_cause,55,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1317-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,61,1,61,days,all_cause,66,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1318-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1064,1,1064,days,all_cause,54,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1319-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1977,1,1977,days,all_cause,73,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1320-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1155,1,1155,days,all_cause,65,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1321-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1033,1,1033,days,all_cause,65,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1322-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,91,1,91,days,all_cause,62,Stage IV,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1323-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,395,1,395,days,all_cause,72,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1324-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1035,1,1035,days,all_cause,74,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1326-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1249,1,1249,days,all_cause,61,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1328-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2009,1,2009,days,all_cause,38,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1329-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,457,1,457,days,all_cause,76,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1623-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,565,1,565,days,all_cause,71,Stage IV,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1625-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,840,1,840,days,all_cause,66,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1626-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,518,1,518,days,all_cause,65,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1627-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,394,1,394,days,all_cause,73,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1628-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,627,1,627,days,all_cause,67,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1630-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1162,1,1162,days,all_cause,73,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1631-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,9,1,9,days,all_cause,73,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1632-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1799,1,1799,days,all_cause,68,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1633-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1891,1,1891,days,all_cause,64,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1634-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1091,1,1091,days,all_cause,75,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1635-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1583,1,1583,days,all_cause,71,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1870-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,455,1,455,days,all_cause,59,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-1871-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,760,1,760,days,all_cause,70,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2042-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,396,1,396,days,all_cause,60,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2391-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1492,1,1492,days,all_cause,57,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2392-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,31,1,31,days,all_cause,75,Stage IV,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2393-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1157,1,1157,days,all_cause,81,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2396-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,92,1,92,days,all_cause,71,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2397-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,365,1,365,days,all_cause,59,Stage IV,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2398-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1369,1,1369,days,all_cause,71,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2399-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,608,1,608,days,all_cause,80,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2400-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1278,1,1278,days,all_cause,76,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2401-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,90,1,90,days,all_cause,64,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2404-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,883,1,883,days,all_cause,38,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-25-2409-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,821,1,821,days,all_cause,71,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1688-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2400,1,2400,days,all_cause,39,Stage IIIC,G2,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1690-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1448,1,1448,days,all_cause,66,Stage IIIC,G2,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1691-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1470,1,1470,days,all_cause,51,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1693-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,3096,0,3096,days,all_cause,72,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1694-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1187,1,1187,days,all_cause,45,Stage IIIC,GX,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1695-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1229,1,1229,days,all_cause,62,Stage IIIC,G2,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1696-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1032,1,1032,days,all_cause,43,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1697-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,949,1,949,days,all_cause,62,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1698-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2078,0,2078,days,all_cause,53,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1699-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1106,1,1106,days,all_cause,57,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1701-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,515,1,515,days,all_cause,56,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1702-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,728,1,728,days,all_cause,84,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1703-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1815,1,1815,days,all_cause,56,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1705-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,555,1,555,days,all_cause,47,Stage IIIC,G2,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1710-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,951,1,951,days,all_cause,54,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1711-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1053,0,1053,days,all_cause,45,Stage IIIC,G2,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1761-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,528,1,528,days,all_cause,80,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1762-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2634,1,2634,days,all_cause,59,Stage IV,G2,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1763-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2032,0,2032,days,all_cause,43,Stage IIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1770-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,741,0,741,days,all_cause,54,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1776-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,360,0,360,days,all_cause,63,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1778-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,454,0,454,days,all_cause,77,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1781-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,255,0,255,days,all_cause,69,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1783-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,220,0,220,days,all_cause,58,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1784-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,163,0,163,days,all_cause,55,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-1785-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1104,1,1104,days,all_cause,55,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-2414-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2621,1,2621,days,all_cause,75,Stage IIIC,G2,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-2425-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1977,0,1977,days,all_cause,60,Stage IIIC,G2,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-2427-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1900,0,1900,days,all_cause,60,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-2428-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1372,0,1372,days,all_cause,58,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-29-A5NZ-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,984,0,984,days,all_cause,66,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-30-1718-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1579,1,1579,days,all_cause,44,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-30-1855-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,75,1,75,days,all_cause,61,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-30-1857-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,8,1,8,days,all_cause,64,Stage IV,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-30-1860-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1366,1,1366,days,all_cause,58,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-30-1861-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1058,1,1058,days,all_cause,74,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-30-1862-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,186,1,186,days,all_cause,65,Stage IV,G2,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-30-1891-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,914,1,914,days,all_cause,61,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-31-1944-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1386,0,1386,days,all_cause,47,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-31-1946-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,918,0,918,days,all_cause,30,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-31-1950-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,571,0,571,days,all_cause,76,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-31-1951-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,684,0,684,days,all_cause,58,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-31-1953-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,204,0,204,days,all_cause,52,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-31-1956-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1342,0,1342,days,all_cause,60,Stage IIIB,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-31-1959-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,67,0,67,days,all_cause,49,Stage IV,G2,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1568-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,875,0,875,days,all_cause,52,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1569-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,885,0,885,days,all_cause,52,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1570-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,655,0,655,days,all_cause,49,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1571-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,695,1,695,days,all_cause,53,Stage IIIB,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1574-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,686,0,686,days,all_cause,48,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1575-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,260,0,260,days,all_cause,83,Stage IIIB,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1576-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,915,0,915,days,all_cause,76,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1577-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,783,0,783,days,all_cause,43,Stage IIC,G2,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1578-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,847,0,847,days,all_cause,63,Stage IV,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1580-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,737,1,737,days,all_cause,82,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-36-1581-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,751,0,751,days,all_cause,63,Stage IIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-3P-A9WA-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,420,0,420,days,all_cause,55,Stage IIB,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-57-1582-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,731,1,731,days,all_cause,50,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-57-1583-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,346,1,346,days,all_cause,57,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-57-1584-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,643,0,643,days,all_cause,47,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-57-1585-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,53,1,53,days,all_cause,57,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-57-1993-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,763,0,763,days,all_cause,56,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-57-1994-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,761,0,761,days,all_cause,63,,,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-59-2348-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,5481,0,5481,days,all_cause,59,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-59-2350-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,679,1,679,days,all_cause,44,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-59-2351-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,3532,0,3532,days,all_cause,51,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-59-2352-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,286,1,286,days,all_cause,78,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-59-2354-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1046,1,1046,days,all_cause,63,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-59-2355-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,65,1,65,days,all_cause,58,Stage IV,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-59-2363-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,165,0,165,days,all_cause,40,Stage IIIA,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-59-A5PD-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,624,1,624,days,all_cause,55,Stage IC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-5X-AA5U-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,361,0,361,days,all_cause,61,Stage IIC,GX,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1721-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,338,0,338,days,all_cause,38,Stage IV,G1,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1724-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,637,1,637,days,all_cause,47,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1725-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,956,0,956,days,all_cause,40,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1728-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,848,0,848,days,all_cause,59,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1733-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,967,0,967,days,all_cause,71,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1736-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1484,1,1484,days,all_cause,45,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1737-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1364,0,1364,days,all_cause,42,Stage IV,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1738-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1089,1,1089,days,all_cause,60,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1740-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,74,1,74,days,all_cause,71,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1741-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1024,1,1024,days,all_cause,76,Stage IIIB,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1743-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1329,1,1329,days,all_cause,53,Stage IIC,G2,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1900-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,176,0,176,days,all_cause,51,Stage IIIB,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1907-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,952,0,952,days,all_cause,63,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1910-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1127,0,1127,days,all_cause,56,Stage IIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1914-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1722,0,1722,days,all_cause,65,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1917-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1321,1,1321,days,all_cause,60,Stage IIIB,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1918-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,479,1,479,days,all_cause,45,Stage IV,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1919-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1161,1,1161,days,all_cause,58,Stage IIIC,G2,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1995-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,61,0,61,days,all_cause,43,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-1998-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,168,0,168,days,all_cause,48,Stage IIIC,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2000-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,441,0,441,days,all_cause,67,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2002-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,547,0,547,days,all_cause,46,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2003-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,122,0,122,days,all_cause,53,Stage IIIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2008-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,932,0,932,days,all_cause,40,Stage IIC,G2,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2009-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1212,0,1212,days,all_cause,65,Stage IIIC,G3,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2012-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,932,0,932,days,all_cause,81,Stage IIC,G2,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2016-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,36,1,36,days,all_cause,51,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2088-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,145,0,145,days,all_cause,51,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2092-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1573,0,1573,days,all_cause,57,Stage IIIC,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2094-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2182,0,2182,days,all_cause,63,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2095-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1875,1,1875,days,all_cause,54,Stage IIIC,G2,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2097-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1844,0,1844,days,all_cause,71,Stage IIC,G2,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2098-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1993,0,1993,days,all_cause,62,Stage IIIC,G2,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2101-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1688,1,1688,days,all_cause,55,Stage IIIC,G2,11-20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2102-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,197,1,197,days,all_cause,74,Stage IIIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2104-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,2338,0,2338,days,all_cause,53,Stage IIC,G2,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2109-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,629,1,629,days,all_cause,40,Stage IIIC,G3,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2110-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1354,1,1354,days,all_cause,56,Stage IIIC,,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2111-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,3825,0,3825,days,all_cause,61,Stage IV,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-61-2113-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,676,1,676,days,all_cause,53,Stage IIC,G3,,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-OY-A56P-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,1207,0,1207,days,all_cause,48,Stage IIIB,G3,1-10 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-OY-A56Q-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,576,0,576,days,all_cause,78,Stage IIA,G3,No Macroscopic disease,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-VG-A8LO-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,24,1,24,days,all_cause,55,Stage IV,GB,>20 mm,xena_os; primary_tumor
+tcga-ov-hiseqv2,TCGA-WR-A838-01,,rnaseq_hiseqv2,Serous Cystadenocarcinoma,304,1,304,days,all_cause,72,Stage IIIC,G3,,xena_os; primary_tumor
+gse26712,GSM657529,GSM657529,GPL96,Late-stage high-grade ovarian cancer,2732.07,0,7.48,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657530,GSM657530,GPL96,Late-stage high-grade ovarian cancer,1647.2775,0,4.51,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657531,GSM657531,GPL96,Late-stage high-grade ovarian cancer,1599.795,0,4.38,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657532,GSM657532,GPL96,Late-stage high-grade ovarian cancer,628.23,1,1.72,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657533,GSM657533,GPL96,Late-stage high-grade ovarian cancer,1457.3475,0,3.99,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657534,GSM657534,GPL96,Late-stage high-grade ovarian cancer,916.7775,1,2.51,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657535,GSM657535,GPL96,Late-stage high-grade ovarian cancer,1376.9925,0,3.77,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657536,GSM657536,GPL96,Late-stage high-grade ovarian cancer,894.8625,1,2.45,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657537,GSM657537,GPL96,Late-stage high-grade ovarian cancer,1307.595,0,3.58,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657538,GSM657538,GPL96,Late-stage high-grade ovarian cancer,1289.3325,0,3.53,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657539,GSM657539,GPL96,Late-stage high-grade ovarian cancer,1274.7225,0,3.49,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657540,GSM657540,GPL96,Late-stage high-grade ovarian cancer,259.3275,1,0.71,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657541,GSM657541,GPL96,Late-stage high-grade ovarian cancer,1205.325,0,3.3,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657542,GSM657542,GPL96,Late-stage high-grade ovarian cancer,840.075,1,2.3,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657543,GSM657543,GPL96,Late-stage high-grade ovarian cancer,1190.715,0,3.26,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657544,GSM657544,GPL96,Late-stage high-grade ovarian cancer,1030.005,0,2.82,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657545,GSM657545,GPL96,Late-stage high-grade ovarian cancer,2677.2825,0,7.33,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657546,GSM657546,GPL96,Late-stage high-grade ovarian cancer,1073.835,0,2.94,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657547,GSM657547,GPL96,Late-stage high-grade ovarian cancer,376.2075,1,1.03,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657548,GSM657548,GPL96,Late-stage high-grade ovarian cancer,1296.6375,1,3.55,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657549,GSM657549,GPL96,Late-stage high-grade ovarian cancer,62.0925,1,0.17,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657550,GSM657550,GPL96,Late-stage high-grade ovarian cancer,536.9175,1,1.47,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657551,GSM657551,GPL96,Late-stage high-grade ovarian cancer,2505.615,0,6.86,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657552,GSM657552,GPL96,Late-stage high-grade ovarian cancer,865.6425,1,2.37,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657553,GSM657553,GPL96,Late-stage high-grade ovarian cancer,1351.425,0,3.7,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657554,GSM657554,GPL96,Late-stage high-grade ovarian cancer,2297.4225,1,6.29,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657555,GSM657555,GPL96,Late-stage high-grade ovarian cancer,1070.1825,0,2.93,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657556,GSM657556,GPL96,Late-stage high-grade ovarian cancer,1398.9075,1,3.83,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657557,GSM657557,GPL96,Late-stage high-grade ovarian cancer,989.8275,0,2.71,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657558,GSM657558,GPL96,Late-stage high-grade ovarian cancer,1037.31,1,2.84,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657559,GSM657559,GPL96,Late-stage high-grade ovarian cancer,2301.075,1,6.3,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657560,GSM657560,GPL96,Late-stage high-grade ovarian cancer,767.025,0,2.1,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657561,GSM657561,GPL96,Late-stage high-grade ovarian cancer,887.5575,0,2.43,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657562,GSM657562,GPL96,Late-stage high-grade ovarian cancer,865.6425,0,2.37,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657563,GSM657563,GPL96,Late-stage high-grade ovarian cancer,905.82,0,2.48,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657564,GSM657564,GPL96,Late-stage high-grade ovarian cancer,840.075,0,2.3,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657565,GSM657565,GPL96,Late-stage high-grade ovarian cancer,788.94,1,2.16,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657566,GSM657566,GPL96,Late-stage high-grade ovarian cancer,829.1175,0,2.27,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657567,GSM657567,GPL96,Late-stage high-grade ovarian cancer,814.5075,0,2.23,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657568,GSM657568,GPL96,Late-stage high-grade ovarian cancer,467.52,1,1.28,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657569,GSM657569,GPL96,Late-stage high-grade ovarian cancer,788.94,0,2.16,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657570,GSM657570,GPL96,Late-stage high-grade ovarian cancer,1033.6575,1,2.83,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657571,GSM657571,GPL96,Late-stage high-grade ovarian cancer,785.2875,0,2.15,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657572,GSM657572,GPL96,Late-stage high-grade ovarian cancer,752.415,0,2.06,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657573,GSM657573,GPL96,Late-stage high-grade ovarian cancer,580.7475,1,1.59,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657574,GSM657574,GPL96,Late-stage high-grade ovarian cancer,690.3225,0,1.89,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657575,GSM657575,GPL96,Late-stage high-grade ovarian cancer,204.54,1,0.56,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657576,GSM657576,GPL96,Late-stage high-grade ovarian cancer,1804.335,1,4.94,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657577,GSM657577,GPL96,Late-stage high-grade ovarian cancer,1081.14,1,2.96,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657578,GSM657578,GPL96,Late-stage high-grade ovarian cancer,639.1875,1,1.75,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657579,GSM657579,GPL96,Late-stage high-grade ovarian cancer,697.6275,1,1.91,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657580,GSM657580,GPL96,Late-stage high-grade ovarian cancer,1680.15,1,4.6,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657581,GSM657581,GPL96,Late-stage high-grade ovarian cancer,1161.495,1,3.18,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657582,GSM657582,GPL96,Late-stage high-grade ovarian cancer,3214.2,1,8.8,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657583,GSM657583,GPL96,Late-stage high-grade ovarian cancer,2074.62,1,5.68,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657584,GSM657584,GPL96,Late-stage high-grade ovarian cancer,2465.4375,1,6.75,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657585,GSM657585,GPL96,Late-stage high-grade ovarian cancer,314.115,1,0.86,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657586,GSM657586,GPL96,Late-stage high-grade ovarian cancer,2523.8775,0,6.91,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657587,GSM657587,GPL96,Late-stage high-grade ovarian cancer,1329.51,1,3.64,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657588,GSM657588,GPL96,Late-stage high-grade ovarian cancer,1881.0375,1,5.15,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657589,GSM657589,GPL96,Late-stage high-grade ovarian cancer,226.455,1,0.62,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657590,GSM657590,GPL96,Late-stage high-grade ovarian cancer,4930.875,0,13.5,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657591,GSM657591,GPL96,Late-stage high-grade ovarian cancer,215.4975,1,0.59,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657592,GSM657592,GPL96,Late-stage high-grade ovarian cancer,1139.58,1,3.12,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657593,GSM657593,GPL96,Late-stage high-grade ovarian cancer,76.7025,1,0.21,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657594,GSM657594,GPL96,Late-stage high-grade ovarian cancer,4784.775,0,13.1,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657595,GSM657595,GPL96,Late-stage high-grade ovarian cancer,361.5975,1,0.99,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657596,GSM657596,GPL96,Late-stage high-grade ovarian cancer,1442.7375,1,3.95,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657597,GSM657597,GPL96,Late-stage high-grade ovarian cancer,1950.435,1,5.34,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657598,GSM657598,GPL96,Late-stage high-grade ovarian cancer,2494.6575,1,6.83,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657599,GSM657599,GPL96,Late-stage high-grade ovarian cancer,1278.375,1,3.5,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657600,GSM657600,GPL96,Late-stage high-grade ovarian cancer,3155.76,1,8.64,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657601,GSM657601,GPL96,Late-stage high-grade ovarian cancer,708.585,1,1.94,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657602,GSM657602,GPL96,Late-stage high-grade ovarian cancer,803.55,1,2.2,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657603,GSM657603,GPL96,Late-stage high-grade ovarian cancer,628.23,1,1.72,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657604,GSM657604,GPL96,Late-stage high-grade ovarian cancer,357.945,1,0.98,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657605,GSM657605,GPL96,Late-stage high-grade ovarian cancer,2878.17,1,7.88,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657606,GSM657606,GPL96,Late-stage high-grade ovarian cancer,1435.4325,1,3.93,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657607,GSM657607,GPL96,Late-stage high-grade ovarian cancer,120.5325,1,0.33,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657608,GSM657608,GPL96,Late-stage high-grade ovarian cancer,474.825,1,1.3,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657609,GSM657609,GPL96,Late-stage high-grade ovarian cancer,3367.605,1,9.22,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657610,GSM657610,GPL96,Late-stage high-grade ovarian cancer,1369.6875,1,3.75,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657611,GSM657611,GPL96,Late-stage high-grade ovarian cancer,920.43,1,2.52,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657612,GSM657612,GPL96,Late-stage high-grade ovarian cancer,1654.5825,1,4.53,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657613,GSM657613,GPL96,Late-stage high-grade ovarian cancer,336.03,1,0.92,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657614,GSM657614,GPL96,Late-stage high-grade ovarian cancer,876.6,1,2.4,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657615,GSM657615,GPL96,Late-stage high-grade ovarian cancer,241.065,1,0.66,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657616,GSM657616,GPL96,Late-stage high-grade ovarian cancer,847.38,1,2.32,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657617,GSM657617,GPL96,Late-stage high-grade ovarian cancer,1278.375,1,3.5,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657618,GSM657618,GPL96,Late-stage high-grade ovarian cancer,1183.41,1,3.24,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657619,GSM657619,GPL96,Late-stage high-grade ovarian cancer,21.915,1,0.06,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657620,GSM657620,GPL96,Late-stage high-grade ovarian cancer,131.49,0,0.36,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657621,GSM657621,GPL96,Late-stage high-grade ovarian cancer,1092.0975,1,2.99,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657622,GSM657622,GPL96,Late-stage high-grade ovarian cancer,566.1375,1,1.55,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657623,GSM657623,GPL96,Late-stage high-grade ovarian cancer,1764.1575,1,4.83,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657624,GSM657624,GPL96,Late-stage high-grade ovarian cancer,1504.83,1,4.12,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657625,GSM657625,GPL96,Late-stage high-grade ovarian cancer,569.79,1,1.56,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657626,GSM657626,GPL96,Late-stage high-grade ovarian cancer,1457.3475,1,3.99,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657627,GSM657627,GPL96,Late-stage high-grade ovarian cancer,113.2275,1,0.31,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657628,GSM657628,GPL96,Late-stage high-grade ovarian cancer,127.8375,1,0.35,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657629,GSM657629,GPL96,Late-stage high-grade ovarian cancer,1055.5725,1,2.89,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657630,GSM657630,GPL96,Late-stage high-grade ovarian cancer,2867.2125,1,7.85,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657631,GSM657631,GPL96,Late-stage high-grade ovarian cancer,1603.4475,0,4.39,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657632,GSM657632,GPL96,Late-stage high-grade ovarian cancer,1296.6375,1,3.55,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657633,GSM657633,GPL96,Late-stage high-grade ovarian cancer,2377.7775,1,6.51,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657634,GSM657634,GPL96,Late-stage high-grade ovarian cancer,2965.83,0,8.12,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657635,GSM657635,GPL96,Late-stage high-grade ovarian cancer,1000.785,1,2.74,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657636,GSM657636,GPL96,Late-stage high-grade ovarian cancer,536.9175,1,1.47,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657637,GSM657637,GPL96,Late-stage high-grade ovarian cancer,354.2925,1,0.97,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657638,GSM657638,GPL96,Late-stage high-grade ovarian cancer,1442.7375,1,3.95,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657639,GSM657639,GPL96,Late-stage high-grade ovarian cancer,1450.0425,1,3.97,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657640,GSM657640,GPL96,Late-stage high-grade ovarian cancer,617.2725,1,1.69,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657641,GSM657641,GPL96,Late-stage high-grade ovarian cancer,299.505,1,0.82,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657642,GSM657642,GPL96,Late-stage high-grade ovarian cancer,3685.3725,0,10.09,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657643,GSM657643,GPL96,Late-stage high-grade ovarian cancer,540.57,1,1.48,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657644,GSM657644,GPL96,Late-stage high-grade ovarian cancer,3667.11,0,10.04,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657645,GSM657645,GPL96,Late-stage high-grade ovarian cancer,215.4975,1,0.59,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657646,GSM657646,GPL96,Late-stage high-grade ovarian cancer,1344.12,1,3.68,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657647,GSM657647,GPL96,Late-stage high-grade ovarian cancer,489.435,1,1.34,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657648,GSM657648,GPL96,Late-stage high-grade ovarian cancer,3294.555,1,9.02,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657649,GSM657649,GPL96,Late-stage high-grade ovarian cancer,401.775,1,1.1,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657650,GSM657650,GPL96,Late-stage high-grade ovarian cancer,938.6925,1,2.57,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657651,GSM657651,GPL96,Late-stage high-grade ovarian cancer,719.5425,1,1.97,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657652,GSM657652,GPL96,Late-stage high-grade ovarian cancer,4985.6625,0,13.65,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657653,GSM657653,GPL96,Late-stage high-grade ovarian cancer,4916.265,0,13.46,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657654,GSM657654,GPL96,Late-stage high-grade ovarian cancer,4930.875,0,13.5,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657655,GSM657655,GPL96,Late-stage high-grade ovarian cancer,956.955,1,2.62,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657656,GSM657656,GPL96,Late-stage high-grade ovarian cancer,1366.035,1,3.74,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657657,GSM657657,GPL96,Late-stage high-grade ovarian cancer,924.0825,1,2.53,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657658,GSM657658,GPL96,Late-stage high-grade ovarian cancer,723.195,1,1.98,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657659,GSM657659,GPL96,Late-stage high-grade ovarian cancer,2308.38,0,6.32,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657660,GSM657660,GPL96,Late-stage high-grade ovarian cancer,299.505,1,0.82,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657661,GSM657661,GPL96,Late-stage high-grade ovarian cancer,1165.1475,1,3.19,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657662,GSM657662,GPL96,Late-stage high-grade ovarian cancer,2154.975,1,5.9,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657663,GSM657663,GPL96,Late-stage high-grade ovarian cancer,1782.42,1,4.88,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657664,GSM657664,GPL96,Late-stage high-grade ovarian cancer,146.1,1,0.4,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657665,GSM657665,GPL96,Late-stage high-grade ovarian cancer,2637.105,1,7.22,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657666,GSM657666,GPL96,Late-stage high-grade ovarian cancer,1976.0025,1,5.41,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657667,GSM657667,GPL96,Late-stage high-grade ovarian cancer,3919.1325,0,10.73,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657668,GSM657668,GPL96,Late-stage high-grade ovarian cancer,2713.8075,1,7.43,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657669,GSM657669,GPL96,Late-stage high-grade ovarian cancer,851.0325,1,2.33,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657670,GSM657670,GPL96,Late-stage high-grade ovarian cancer,3970.2675,1,10.87,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657671,GSM657671,GPL96,Late-stage high-grade ovarian cancer,3090.015,1,8.46,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657672,GSM657672,GPL96,Late-stage high-grade ovarian cancer,4302.645,0,11.78,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657673,GSM657673,GPL96,Late-stage high-grade ovarian cancer,4233.2475,0,11.59,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657674,GSM657674,GPL96,Late-stage high-grade ovarian cancer,500.3925,1,1.37,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657675,GSM657675,GPL96,Late-stage high-grade ovarian cancer,2487.3525,1,6.81,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657676,GSM657676,GPL96,Late-stage high-grade ovarian cancer,672.06,1,1.84,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657677,GSM657677,GPL96,Late-stage high-grade ovarian cancer,606.315,1,1.66,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657678,GSM657678,GPL96,Late-stage high-grade ovarian cancer,321.42,1,0.88,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657679,GSM657679,GPL96,Late-stage high-grade ovarian cancer,292.2,1,0.8,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657680,GSM657680,GPL96,Late-stage high-grade ovarian cancer,741.4575,1,2.03,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657681,GSM657681,GPL96,Late-stage high-grade ovarian cancer,796.245,1,2.18,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657682,GSM657682,GPL96,Late-stage high-grade ovarian cancer,3221.505,1,8.82,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657683,GSM657683,GPL96,Late-stage high-grade ovarian cancer,821.8125,1,2.25,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657684,GSM657684,GPL96,Late-stage high-grade ovarian cancer,204.54,1,0.56,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657685,GSM657685,GPL96,Late-stage high-grade ovarian cancer,2512.92,1,6.88,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657686,GSM657686,GPL96,Late-stage high-grade ovarian cancer,2056.3575,1,5.63,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657687,GSM657687,GPL96,Late-stage high-grade ovarian cancer,2118.45,0,5.8,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657688,GSM657688,GPL96,Late-stage high-grade ovarian cancer,2370.4725,1,6.49,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657689,GSM657689,GPL96,Late-stage high-grade ovarian cancer,2388.735,1,6.54,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657690,GSM657690,GPL96,Late-stage high-grade ovarian cancer,288.5475,1,0.79,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657691,GSM657691,GPL96,Late-stage high-grade ovarian cancer,1983.3075,0,5.43,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657692,GSM657692,GPL96,Late-stage high-grade ovarian cancer,1661.8875,1,4.55,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657693,GSM657693,GPL96,Late-stage high-grade ovarian cancer,1972.35,1,5.4,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657694,GSM657694,GPL96,Late-stage high-grade ovarian cancer,927.735,1,2.54,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657695,GSM657695,GPL96,Late-stage high-grade ovarian cancer,1705.7175,1,4.67,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657696,GSM657696,GPL96,Late-stage high-grade ovarian cancer,1924.8675,0,5.27,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657697,GSM657697,GPL96,Late-stage high-grade ovarian cancer,189.93,1,0.52,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657698,GSM657698,GPL96,Late-stage high-grade ovarian cancer,1782.42,0,4.88,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657699,GSM657699,GPL96,Late-stage high-grade ovarian cancer,259.3275,1,0.71,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657700,GSM657700,GPL96,Late-stage high-grade ovarian cancer,1439.085,1,3.94,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657701,GSM657701,GPL96,Late-stage high-grade ovarian cancer,1786.0725,0,4.89,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657702,GSM657702,GPL96,Late-stage high-grade ovarian cancer,2911.0425,0,7.97,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657703,GSM657703,GPL96,Late-stage high-grade ovarian cancer,1629.015,0,4.46,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657704,GSM657704,GPL96,Late-stage high-grade ovarian cancer,661.1025,1,1.81,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657705,GSM657705,GPL96,Late-stage high-grade ovarian cancer,1789.725,0,4.9,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657706,GSM657706,GPL96,Late-stage high-grade ovarian cancer,409.08,1,1.12,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657707,GSM657707,GPL96,Late-stage high-grade ovarian cancer,270.285,1,0.74,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657708,GSM657708,GPL96,Late-stage high-grade ovarian cancer,1811.64,0,4.96,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657709,GSM657709,GPL96,Late-stage high-grade ovarian cancer,1731.285,0,4.74,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657710,GSM657710,GPL96,Late-stage high-grade ovarian cancer,1738.59,0,4.76,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657711,GSM657711,GPL96,Late-stage high-grade ovarian cancer,1702.065,0,4.66,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657712,GSM657712,GPL96,Late-stage high-grade ovarian cancer,1691.1075,0,4.63,years,dod_dss_flavored,,,,Optimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse26712,GSM657713,GSM657713,GPL96,Late-stage high-grade ovarian cancer,1362.3825,1,3.73,years,dod_dss_flavored,,,,Suboptimal,ignored status_2 (GEO public-on date); DOD is DSS-flavored
+gse63885,GSM1559299,GSM1559299,GPL570,serous ovarian ca.,104,1,104,days,dod_dss_flavored,,IIIC,G4,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559300,GSM1559300,GPL570,serous ovarian ca.,286,1,286,days,dod_dss_flavored,,IIIC,G4,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559301,GSM1559301,GPL570,serous ovarian ca.,357,1,357,days,dod_dss_flavored,,IV,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559302,GSM1559302,GPL570,serous ovarian ca.,385,1,385,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559303,GSM1559303,GPL570,serous ovarian ca.,414,1,414,days,dod_dss_flavored,,IIIC,G2,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559304,GSM1559304,GPL570,serous ovarian ca.,416,1,416,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559305,GSM1559305,GPL570,serous ovarian ca.,434,1,434,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559306,GSM1559306,GPL570,serous ovarian ca.,479,1,479,days,dod_dss_flavored,,IV,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559307,GSM1559307,GPL570,serous ovarian ca.,498,1,498,days,dod_dss_flavored,,IIIA,G3,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559308,GSM1559308,GPL570,serous ovarian ca.,505,1,505,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559309,GSM1559309,GPL570,serous ovarian ca.,508,1,508,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559311,GSM1559311,GPL570,serous ovarian ca.,632,1,632,days,dod_dss_flavored,,IIIC,G4,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559312,GSM1559312,GPL570,serous ovarian ca.,735,1,735,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559313,GSM1559313,GPL570,serous ovarian ca.,761,1,761,days,dod_dss_flavored,,IIIC,G4,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559314,GSM1559314,GPL570,serous ovarian ca.,786,1,786,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559315,GSM1559315,GPL570,serous ovarian ca.,790,1,790,days,dod_dss_flavored,,IIIC,G4,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559316,GSM1559316,GPL570,serous ovarian ca.,930,0,930,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559317,GSM1559317,GPL570,serous ovarian ca.,1105,1,1105,days,dod_dss_flavored,,IV,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559318,GSM1559318,GPL570,serous ovarian ca.,1111,1,1111,days,dod_dss_flavored,,IIIC,G4,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559320,GSM1559320,GPL570,serous ovarian ca.,1138,1,1138,days,dod_dss_flavored,,IV,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559321,GSM1559321,GPL570,serous ovarian ca.,1548,1,1548,days,dod_dss_flavored,,IIIB,G4,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559322,GSM1559322,GPL570,serous ovarian ca.,1751,1,1751,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559323,GSM1559323,GPL570,serous ovarian ca.,1874,1,1874,days,dod_dss_flavored,,IIIC,G2,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559324,GSM1559324,GPL570,serous ovarian ca.,877,1,877,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559325,GSM1559325,GPL570,serous ovarian ca.,443,1,443,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559326,GSM1559326,GPL570,serous ovarian ca.,701,1,701,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559327,GSM1559327,GPL570,serous ovarian ca.,1318,1,1318,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559328,GSM1559328,GPL570,serous ovarian ca.,1573,1,1573,days,dod_dss_flavored,,IIIC,G4,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559329,GSM1559329,GPL570,serous ovarian ca.,785,1,785,days,dod_dss_flavored,,IIIC,G4,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559330,GSM1559330,GPL570,serous ovarian ca.,1203,1,1203,days,dod_dss_flavored,,IIIB,G3,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559331,GSM1559331,GPL570,serous ovarian ca.,687,1,687,days,dod_dss_flavored,,IV,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559332,GSM1559332,GPL570,serous ovarian ca.,778,1,778,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559333,GSM1559333,GPL570,serous ovarian ca.,905,1,905,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559334,GSM1559334,GPL570,serous ovarian ca.,1014,1,1014,days,dod_dss_flavored,,IV,G4,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559335,GSM1559335,GPL570,serous ovarian ca.,373,1,373,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559336,GSM1559336,GPL570,serous ovarian ca.,652,1,652,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559337,GSM1559337,GPL570,serous ovarian ca.,467,1,467,days,dod_dss_flavored,,IV,G2,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559338,GSM1559338,GPL570,serous ovarian ca.,1168,1,1168,days,dod_dss_flavored,,IV,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559339,GSM1559339,GPL570,serous ovarian ca.,1196,1,1196,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559341,GSM1559341,GPL570,serous ovarian ca.,1357,1,1357,days,dod_dss_flavored,,IV,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559342,GSM1559342,GPL570,serous ovarian ca.,860,1,860,days,dod_dss_flavored,,IIIC,G4,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559343,GSM1559343,GPL570,serous ovarian ca.,1005,1,1005,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559344,GSM1559344,GPL570,serous ovarian ca.,1256,1,1256,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559345,GSM1559345,GPL570,serous ovarian ca.,897,1,897,days,dod_dss_flavored,,IIIC,G4,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559346,GSM1559346,GPL570,serous ovarian ca.,1193,1,1193,days,dod_dss_flavored,,IIIA,G4,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559347,GSM1559347,GPL570,serous ovarian ca.,1066,1,1066,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559348,GSM1559348,GPL570,serous ovarian ca.,677,1,677,days,dod_dss_flavored,,IIIB,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559349,GSM1559349,GPL570,serous ovarian ca.,1373,1,1373,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559350,GSM1559350,GPL570,serous ovarian ca.,1299,0,1299,days,dod_dss_flavored,,IIIC,G4,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559351,GSM1559351,GPL570,serous ovarian ca.,1780,1,1780,days,dod_dss_flavored,,IIC,G2,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559353,GSM1559353,GPL570,serous ovarian ca.,652,0,652,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559354,GSM1559354,GPL570,serous ovarian ca.,1955,1,1955,days,dod_dss_flavored,,IIIB,G2,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559355,GSM1559355,GPL570,serous ovarian ca.,1092,1,1092,days,dod_dss_flavored,,IIIA,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559356,GSM1559356,GPL570,serous ovarian ca.,2351,1,2351,days,dod_dss_flavored,,IIIB,G3,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559357,GSM1559357,GPL570,serous ovarian ca.,1600,1,1600,days,dod_dss_flavored,,IIIB,G3,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559358,GSM1559358,GPL570,serous ovarian ca.,4080,0,4080,days,dod_dss_flavored,,IIIC,G2,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559359,GSM1559359,GPL570,serous ovarian ca.,1583,1,1583,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559360,GSM1559360,GPL570,serous ovarian ca.,2079,1,2079,days,dod_dss_flavored,,IIIC,G4,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559361,GSM1559361,GPL570,serous ovarian ca.,1255,1,1255,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559362,GSM1559362,GPL570,serous ovarian ca.,2592,0,2592,days,dod_dss_flavored,,IIIA,G3,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559364,GSM1559364,GPL570,serous ovarian ca.,2320,1,2320,days,dod_dss_flavored,,IIIC,G2,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559365,GSM1559365,GPL570,serous ovarian ca.,1997,1,1997,days,dod_dss_flavored,,IIIC,G2,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559366,GSM1559366,GPL570,serous ovarian ca.,1849,1,1849,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559367,GSM1559367,GPL570,serous ovarian ca.,1847,1,1847,days,dod_dss_flavored,,IIIC,G3,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559368,GSM1559368,GPL570,serous ovarian ca.,2346,1,2346,days,dod_dss_flavored,,IIIC,G3,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559369,GSM1559369,GPL570,serous ovarian ca.,3750,1,3750,days,dod_dss_flavored,,IIIB,G3,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559370,GSM1559370,GPL570,serous ovarian ca.,2797,1,2797,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559371,GSM1559371,GPL570,serous ovarian ca.,3145,0,3145,days,dod_dss_flavored,,IIB,G3,R0,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559372,GSM1559372,GPL570,serous ovarian ca.,2801,0,2801,days,dod_dss_flavored,,IIIC,G3,R2,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse63885,GSM1559373,GSM1559373,GPL570,serous ovarian ca.,4013,0,4013,days,dod_dss_flavored,,IIIC,G2,R1,DOD/AWD/NED last-status (DSS-flavored); platinum header is comma-split
+gse26193,GSM642933,GSM642933,GPL570,Serous,7386.01245,0,20.2218,years,all_cause,,Ib,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642935,GSM642935,GPL570,Serous,2207.998343,1,6.04517,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642936,GSM642936,GPL570,Serous,904.001055,1,2.47502,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642937,GSM642937,GPL570,Serous,1542.998625,1,4.2245,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642938,GSM642938,GPL570,Serous,859.999388,1,2.35455,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642939,GSM642939,GPL570,Serous,776.999977,1,2.12731,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642940,GSM642940,GPL570,Serous,1737.998295,1,4.75838,years,all_cause,,Ib,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642941,GSM642941,GPL570,Serous,3319.998315,0,9.08966,years,all_cause,,Ib,1,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642943,GSM642943,GPL570,Serous,992.000737,1,2.71595,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642944,GSM642944,GPL570,Serous,1687.999222,1,4.62149,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642945,GSM642945,GPL570,Serous,1496.99904,0,4.09856,years,all_cause,,IIb,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642946,GSM642946,GPL570,Serous,540.00021,1,1.47844,years,all_cause,,Ia,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642947,GSM642947,GPL570,Serous,1689.000008,0,4.62423,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642948,GSM642948,GPL570,Serous,1835.00139,1,5.02396,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642949,GSM642949,GPL570,Serous,271.999849,0,0.744695,years,all_cause,,IV,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642951,GSM642951,GPL570,Serous,616.00143,1,1.68652,years,all_cause,,IV,1,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642953,GSM642953,GPL570,Serous,885.00075,1,2.423,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642955,GSM642955,GPL570,Serous,662.001015,1,1.81246,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642956,GSM642956,GPL570,Serous,4070.017275,0,11.1431,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642957,GSM642957,GPL570,Serous,251.999855,1,0.689938,years,all_cause,,Ic,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642958,GSM642958,GPL570,Serous,675.000262,1,1.84805,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642959,GSM642959,GPL570,Serous,1087.999395,1,2.97878,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642960,GSM642960,GPL570,Serous,694.000567,1,1.90007,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642961,GSM642961,GPL570,Serous,2993.000948,0,8.19439,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642964,GSM642964,GPL570,Serous,2286.001133,1,6.25873,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642966,GSM642966,GPL570,Serous,522.00069,1,1.42916,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642967,GSM642967,GPL570,Serous,1945.00008,1,5.32512,years,all_cause,,Ia,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642968,GSM642968,GPL570,Serous,3674.9994,0,10.0616,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642969,GSM642969,GPL570,Serous,797.001067,1,2.18207,years,all_cause,,IV,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642972,GSM642972,GPL570,Serous,2482.001587,1,6.79535,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642973,GSM642973,GPL570,Serous,1663.998645,1,4.55578,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642974,GSM642974,GPL570,Serous,305.999876,1,0.837782,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642976,GSM642976,GPL570,Serous,905.998973,1,2.48049,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642978,GSM642978,GPL570,Serous,1714.00137,0,4.69268,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642979,GSM642979,GPL570,Serous,566.99949,1,1.55236,years,all_cause,,IIb,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642980,GSM642980,GPL570,Serous,1388.998267,1,3.80287,years,all_cause,,Ib,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642981,GSM642981,GPL570,Serous,1416.0012,1,3.8768,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642983,GSM642983,GPL570,Serous,736.000665,1,2.01506,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642984,GSM642984,GPL570,Serous,3759.0069,0,10.2916,years,all_cause,,Ib,1,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642985,GSM642985,GPL570,Serous,3133.001273,0,8.57769,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642987,GSM642987,GPL570,Serous,3045.00159,0,8.33676,years,all_cause,,1Ia,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642988,GSM642988,GPL570,Serous,2785.999163,1,7.62765,years,all_cause,,IIIb,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642989,GSM642989,GPL570,Serous,1234.000777,1,3.37851,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642991,GSM642991,GPL570,Serous,1834.000605,0,5.02122,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642992,GSM642992,GPL570,Serous,1035.00162,1,2.83368,years,all_cause,,IIIb,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642994,GSM642994,GPL570,Serous,3394.001618,1,9.29227,years,all_cause,,IIb,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642996,GSM642996,GPL570,Serous,579.001605,1,1.58522,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642997,GSM642997,GPL570,Serous,285.999881,1,0.783025,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642998,GSM642998,GPL570,Serous,788.001308,1,2.15743,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM642999,GSM642999,GPL570,Serous,2687.001802,1,7.35661,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643000,GSM643000,GPL570,Serous,1275.00009,1,3.49076,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643002,GSM643002,GPL570,Serous,839.998297,1,2.29979,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643006,GSM643006,GPL570,Serous,571.999762,1,1.56605,years,all_cause,,IV,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643007,GSM643007,GPL570,Serous,283.000083,1,0.774812,years,all_cause,,IIIa,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643008,GSM643008,GPL570,Serous,2232.999705,1,6.11362,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643009,GSM643009,GPL570,Serous,686.001593,1,1.87817,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643010,GSM643010,GPL570,Serous,193.999981,1,0.531143,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643011,GSM643011,GPL570,Serous,2.999999,1,0.00821355,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643012,GSM643012,GPL570,Serous,3510.001365,0,9.60986,years,all_cause,,Ic,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643014,GSM643014,GPL570,Serous,910.999245,1,2.49418,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643015,GSM643015,GPL570,Serous,1392.000622,1,3.81109,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643016,GSM643016,GPL570,Serous,1095.99837,1,3.00068,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643017,GSM643017,GPL570,Serous,2834.000318,0,7.75907,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643019,GSM643019,GPL570,Serous,1025.001075,1,2.8063,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643020,GSM643020,GPL570,Serous,2357.999212,0,6.45585,years,all_cause,,IIIa,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643022,GSM643022,GPL570,Serous,2139.99975,0,5.859,years,all_cause,,IIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643024,GSM643024,GPL570,Serous,1113.000757,1,3.04723,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643026,GSM643026,GPL570,Serous,1136.00055,1,3.1102,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643027,GSM643027,GPL570,Serous,937.998525,1,2.5681,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643028,GSM643028,GPL570,Serous,988.998383,1,2.70773,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643029,GSM643029,GPL570,Serous,481.001377,1,1.31691,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643030,GSM643030,GPL570,Serous,844.001438,1,2.31075,years,all_cause,,IIIc,2,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643031,GSM643031,GPL570,Serous,1454.998942,1,3.98357,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643032,GSM643032,GPL570,Serous,19.000013,1,0.0520192,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643033,GSM643033,GPL570,Serous,2048.00058,0,5.60712,years,all_cause,,Ia,1,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643035,GSM643035,GPL570,Serous,970.998863,1,2.65845,years,all_cause,,IV,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643036,GSM643036,GPL570,Serous,793.00158,1,2.17112,years,all_cause,,IIa,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643037,GSM643037,GPL570,Serous,2128.001288,0,5.82615,years,all_cause,,Ic,3,,"os event coding: 1=death, 0=censored"
+gse26193,GSM643038,GSM643038,GPL570,Serous,1393.001407,1,3.81383,years,all_cause,,IIIc,3,,"os event coding: 1=death, 0=censored"
+gse30161,GSM746861,GSM746861,GPL570,Serous,686,1,686,days,all_cause,68,IVA,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746862,GSM746862,GPL570,Serous,2582,0,2582,days,all_cause,75,IIIC,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746863,GSM746863,GPL570,Serous,595,1,595,days,all_cause,52,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746864,GSM746864,GPL570,Serous,377,1,377,days,all_cause,47,IIIC,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746866,GSM746866,GPL570,Serous,3511,0,3511,days,all_cause,48,IIIA,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746867,GSM746867,GPL570,Serous,965,1,965,days,all_cause,52,IIIC,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746868,GSM746868,GPL570,Serous,749,1,749,days,all_cause,55,IIIC,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746869,GSM746869,GPL570,Serous,476,1,476,days,all_cause,48,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746871,GSM746871,GPL570,Serous,470,1,470,days,all_cause,75,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746872,GSM746872,GPL570,Serous,2923,1,2923,days,all_cause,78,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746873,GSM746873,GPL570,Serous,1993,0,1993,days,all_cause,58,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746875,GSM746875,GPL570,Serous,195,0,195,days,all_cause,61,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746876,GSM746876,GPL570,Serous,1212,1,1212,days,all_cause,53,IIIC,Mod,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746877,GSM746877,GPL570,Serous,242,1,242,days,all_cause,73,IVA,Mod,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746878,GSM746878,GPL570,Serous,2195,1,2195,days,all_cause,85,IIIC,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted)
+gse30161,GSM746879,GSM746879,GPL570,Serous,2282,0,2282,days,all_cause,68,IIIA,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746880,GSM746880,GPL570,Serous,818,1,818,days,all_cause,56,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746882,GSM746882,GPL570,Serous,387,1,387,days,all_cause,71,IIIB,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted)
+gse30161,GSM746884,GSM746884,GPL570,Serous,1579,1,1579,days,all_cause,55,IIIC,Well,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746885,GSM746885,GPL570,Serous,985,1,985,days,all_cause,74,IIIB,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746886,GSM746886,GPL570,Serous,237,1,237,days,all_cause,72,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746887,GSM746887,GPL570,Serous,137,1,137,days,all_cause,72,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PD (progress of disease)
+gse30161,GSM746889,GSM746889,GPL570,Serous,697,0,697,days,all_cause,66,IIIC,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746890,GSM746890,GPL570,Serous,2143,0,2143,days,all_cause,56,IIIA,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746891,GSM746891,GPL570,Serous,704,1,704,days,all_cause,64,IIIB,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746892,GSM746892,GPL570,Serous,1561,1,1561,days,all_cause,53,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746893,GSM746893,GPL570,Serous,1043,1,1043,days,all_cause,76,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746895,GSM746895,GPL570,Serous,1152,1,1152,days,all_cause,73,IVA,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746897,GSM746897,GPL570,Serous,4208,0,4208,days,all_cause,51,IIIB,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746898,GSM746898,GPL570,Serous,434,1,434,days,all_cause,38,IIIC,Mod,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746899,GSM746899,GPL570,Serous,2710,0,2710,days,all_cause,49,IIIC,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746900,GSM746900,GPL570,Serous,2095,1,2095,days,all_cause,55,IIIC,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746902,GSM746902,GPL570,Serous,988,0,988,days,all_cause,66,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746903,GSM746903,GPL570,Serous,3644,0,3644,days,all_cause,53,IIIA,Well,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746904,GSM746904,GPL570,Serous,2513,0,2513,days,all_cause,61,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746905,GSM746905,GPL570,Serous,3889,0,3889,days,all_cause,62,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746906,GSM746906,GPL570,Serous,2251,1,2251,days,all_cause,69,IIIC,Mod,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746907,GSM746907,GPL570,Serous,2795,1,2795,days,all_cause,70,IIIB,Mod,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746908,GSM746908,GPL570,Serous,742,1,742,days,all_cause,64,IVA,Poor,,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746910,GSM746910,GPL570,Serous,627,1,627,days,all_cause,60,IIIB,Unk,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746911,GSM746911,GPL570,Serous,318,1,318,days,all_cause,59,IIIC,Mod,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746912,GSM746912,GPL570,Serous,973,0,973,days,all_cause,72,IIIC,Mod,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse30161,GSM746913,GSM746913,GPL570,Serous,1031,1,1031,days,all_cause,52,IIIB,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746914,GSM746914,GPL570,Serous,1501,1,1501,days,all_cause,51,IIIC,Poor,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746915,GSM746915,GPL570,Serous,1846,1,1846,days,all_cause,56,IIIC,Mod,Optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746916,GSM746916,GPL570,Serous,582,1,582,days,all_cause,44,IIIC,Poor,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=CR (completely response)
+gse30161,GSM746918,GSM746918,GPL570,Serous,1662,1,1662,days,all_cause,74,IIIC,Mod,Sub-optimal,reparsed from series matrix (CSV characteristics are shifted); chemoresponse=PR (partial response)
+gse14764,GSM368661,GSM368661,GPL96,serous ovca,1187.0625,0,39,months,all_cause,,4,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368662,GSM368662,GPL96,serous ovca,1065.3125,0,35,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368664,GSM368664,GPL96,serous ovca,426.125,0,14,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368665,GSM368665,GPL96,serous ovca,1400.125,0,46,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368666,GSM368666,GPL96,serous ovca,1126.1875,0,37,months,all_cause,,3c,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368667,GSM368667,GPL96,serous ovca,1095.75,0,36,months,all_cause,,1a,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368668,GSM368668,GPL96,serous ovca,365.25,0,12,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368670,GSM368670,GPL96,serous ovca,1065.3125,0,35,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368671,GSM368671,GPL96,serous ovca,1643.625,0,54,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368673,GSM368673,GPL96,serous ovca,1217.5,0,40,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368674,GSM368674,GPL96,serous ovca,547.875,1,18,months,all_cause,,3c,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368675,GSM368675,GPL96,serous ovca,913.125,1,30,months,all_cause,,3c,III,,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368677,GSM368677,GPL96,serous ovca,1217.5,0,40,months,all_cause,,2b,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368678,GSM368678,GPL96,serous ovca,2039.3125,0,67,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368679,GSM368679,GPL96,serous ovca,943.5625,1,31,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368680,GSM368680,GPL96,serous ovca,1156.625,0,38,months,all_cause,,3c,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368681,GSM368681,GPL96,serous ovca,1308.8125,0,43,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368682,GSM368682,GPL96,serous ovca,882.6875,0,29,months,all_cause,,1c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368683,GSM368683,GPL96,serous ovca,365.25,1,12,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368685,GSM368685,GPL96,serous ovca,1217.5,0,40,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368689,GSM368689,GPL96,serous ovca,1491.4375,0,49,months,all_cause,,3c,III,,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368690,GSM368690,GPL96,serous ovca,1400.125,1,46,months,all_cause,,3c,II,,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368691,GSM368691,GPL96,serous ovca,608.75,0,20,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368692,GSM368692,GPL96,serous ovca,1126.1875,0,37,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368693,GSM368693,GPL96,serous ovca,1126.1875,0,37,months,all_cause,,3b,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368694,GSM368694,GPL96,serous ovca,1217.5,1,40,months,all_cause,,3b,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368695,GSM368695,GPL96,serous ovca,1430.5625,0,47,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368696,GSM368696,GPL96,serous ovca,1278.375,0,42,months,all_cause,,3b,II,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368697,GSM368697,GPL96,serous ovca,1582.75,0,52,months,all_cause,,3c,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368698,GSM368698,GPL96,serous ovca,669.625,0,22,months,all_cause,,3c,III,,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368699,GSM368699,GPL96,serous ovca,1369.6875,1,45,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368700,GSM368700,GPL96,serous ovca,608.75,1,20,months,all_cause,,3c,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368701,GSM368701,GPL96,serous ovca,1369.6875,0,45,months,all_cause,,3c,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368703,GSM368703,GPL96,serous ovca,1491.4375,0,49,months,all_cause,,3c,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368704,GSM368704,GPL96,serous ovca,456.5625,0,15,months,all_cause,,3c,II,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368705,GSM368705,GPL96,serous ovca,1308.8125,1,43,months,all_cause,,3,II,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368706,GSM368706,GPL96,serous ovca,2221.9375,0,73,months,all_cause,,3,I,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368707,GSM368707,GPL96,serous ovca,1613.1875,1,53,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368708,GSM368708,GPL96,serous ovca,1156.625,1,38,months,all_cause,,3,I,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368709,GSM368709,GPL96,serous ovca,1552.3125,0,51,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368710,GSM368710,GPL96,serous ovca,1674.0625,1,55,months,all_cause,,3,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368711,GSM368711,GPL96,serous ovca,821.8125,1,27,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368713,GSM368713,GPL96,serous ovca,1339.25,0,44,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368714,GSM368714,GPL96,serous ovca,669.625,0,22,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368715,GSM368715,GPL96,serous ovca,1095.75,0,36,months,all_cause,,3,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368716,GSM368716,GPL96,serous ovca,1065.3125,0,35,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368717,GSM368717,GPL96,serous ovca,1034.875,0,34,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368719,GSM368719,GPL96,serous ovca,700.0625,0,23,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368720,GSM368720,GPL96,serous ovca,730.5,0,24,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368721,GSM368721,GPL96,serous ovca,760.9375,0,25,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368722,GSM368722,GPL96,serous ovca,760.9375,0,25,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368723,GSM368723,GPL96,serous ovca,639.1875,0,21,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368724,GSM368724,GPL96,serous ovca,365.25,1,12,months,all_cause,,3,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368725,GSM368725,GPL96,serous ovca,395.6875,1,13,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368726,GSM368726,GPL96,serous ovca,213.0625,0,7,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368727,GSM368727,GPL96,serous ovca,304.375,0,10,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368728,GSM368728,GPL96,serous ovca,608.75,1,20,months,all_cause,,3,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368729,GSM368729,GPL96,serous ovca,1765.375,0,58,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368730,GSM368730,GPL96,serous ovca,395.6875,1,13,months,all_cause,,3,II,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368731,GSM368731,GPL96,serous ovca,243.5,1,8,months,all_cause,,3,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368732,GSM368732,GPL96,serous ovca,456.5625,1,15,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368734,GSM368734,GPL96,serous ovca,700.0625,0,23,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368735,GSM368735,GPL96,serous ovca,882.6875,0,29,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368736,GSM368736,GPL96,serous ovca,760.9375,0,25,months,all_cause,,3,III,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368737,GSM368737,GPL96,serous ovca,608.75,0,20,months,all_cause,,3,III,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368738,GSM368738,GPL96,serous ovca,700.0625,0,23,months,all_cause,,3,II,1,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368739,GSM368739,GPL96,serous ovca,730.5,0,24,months,all_cause,,3,II,0,"os event coding: 1=death, 0=censored; time in months"
+gse14764,GSM368740,GSM368740,GPL96,serous ovca,639.1875,0,21,months,all_cause,,3,II,1,"os event coding: 1=death, 0=censored; time in months"

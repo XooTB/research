@@ -1,0 +1,195 @@
+{
+  "collapse_rule": "Per symbol, among probes that map 1:1 onto that symbol (annotation drops empty/--- symbols, /// multi-mappers, and AFFX- controls), keep the probe with the highest mean expression across the cohort's os-validation/labels.csv analysis samples. Ties break on lexicographically smaller probe ID. Source numeric strings are copied unchanged — the mean is a selector, not a transform. Identical rule to the training pool (docs/os-training-expression.md).",
+  "feature_space": "Rows are exactly the training pool's common symbols (os-training-pool/expression_pool.symbols.txt). A symbol missing on a validation platform is an empty cell, not a dropped row.",
+  "annotation": {
+    "GPL6480": {
+      "source": "GPL6480.annot.gz",
+      "symbol_column": "Gene symbol",
+      "probe_rows": 41108,
+      "dropped_control": 15,
+      "dropped_empty": 10370,
+      "dropped_multi": 44,
+      "kept_probes": 30679,
+      "unique_symbols": 19529,
+      "path": "GPL6480.probe2symbol.tsv"
+    },
+    "GPL14951": {
+      "source": "GPL14951.platform_table.soft.gz",
+      "symbol_column": "Symbol",
+      "probe_rows": 29377,
+      "dropped_control": 0,
+      "dropped_empty": 0,
+      "dropped_multi": 0,
+      "kept_probes": 29377,
+      "unique_symbols": 20819,
+      "path": "GPL14951.probe2symbol.tsv"
+    },
+    "GPL2986": {
+      "source": "GPL2986.annot.gz",
+      "symbol_column": "Gene symbol",
+      "probe_rows": 32878,
+      "dropped_control": 0,
+      "dropped_empty": 14962,
+      "dropped_multi": 144,
+      "kept_probes": 17772,
+      "unique_symbols": 16072,
+      "path": "GPL2986.probe2symbol.tsv"
+    }
+  },
+  "cohorts": {
+    "gse32062": {
+      "cohort": "gse32062",
+      "n_samples": 260,
+      "n_input_rows": 41093,
+      "n_unmapped_probes": 10414,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 19529,
+      "dims": [
+        19529,
+        260
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-validation/expression/gse32062.csv",
+      "bytes": 53426009
+    },
+    "gse53963": {
+      "cohort": "gse53963",
+      "n_samples": 160,
+      "n_input_rows": 41000,
+      "n_unmapped_probes": 10321,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 19529,
+      "dims": [
+        19529,
+        160
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-validation/expression/gse53963.csv",
+      "bytes": 26039851
+    },
+    "gse17260": {
+      "cohort": "gse17260",
+      "n_samples": 110,
+      "n_input_rows": 41000,
+      "n_unmapped_probes": 10321,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 19529,
+      "dims": [
+        19529,
+        110
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-validation/expression/gse17260.csv",
+      "bytes": 23951330
+    },
+    "gse140082": {
+      "cohort": "gse140082",
+      "n_samples": 191,
+      "n_input_rows": 29377,
+      "n_unmapped_probes": 0,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 20819,
+      "dims": [
+        20819,
+        191
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-validation/expression/gse140082.csv",
+      "bytes": 47339774
+    },
+    "gse49997": {
+      "cohort": "gse49997",
+      "n_samples": 171,
+      "n_input_rows": 32878,
+      "n_unmapped_probes": 15106,
+      "n_probes_no_mean": 0,
+      "n_mean_ties": 0,
+      "n_winners_missing_on_pass2": 0,
+      "n_symbols_collapsed": 16072,
+      "dims": [
+        16072,
+        171
+      ],
+      "path": "datasets/ovarian-cancer-prognosis-ml/os-validation/expression/gse49997.csv",
+      "bytes": 29068260
+    }
+  },
+  "coverage": {
+    "gse32062": {
+      "platform": "GPL6480",
+      "n_training_symbols": 11474,
+      "n_present": 11328,
+      "n_missing": 146,
+      "pct_present": 98.73
+    },
+    "gse53963": {
+      "platform": "GPL6480",
+      "n_training_symbols": 11474,
+      "n_present": 11328,
+      "n_missing": 146,
+      "pct_present": 98.73
+    },
+    "gse17260": {
+      "platform": "GPL6480",
+      "n_training_symbols": 11474,
+      "n_present": 11328,
+      "n_missing": 146,
+      "pct_present": 98.73
+    },
+    "gse140082": {
+      "platform": "GPL14951",
+      "n_training_symbols": 11474,
+      "n_present": 11165,
+      "n_missing": 309,
+      "pct_present": 97.31
+    },
+    "gse49997": {
+      "platform": "GPL2986",
+      "n_training_symbols": 11474,
+      "n_present": 10682,
+      "n_missing": 792,
+      "pct_present": 93.1
+    }
+  },
+  "pool_symbols_source": "datasets/ovarian-cancer-prognosis-ml/os-training-pool/expression_pool.symbols.txt",
+  "validation": {
+    "n_symbols": 11474,
+    "n_samples": 892,
+    "dims": [
+      11474,
+      892
+    ],
+    "path": "datasets/ovarian-cancer-prognosis-ml/os-validation/expression_validation.csv",
+    "symbols_path": "datasets/ovarian-cancer-prognosis-ml/os-validation/expression_validation.symbols.txt",
+    "bytes": 104610719,
+    "empty_cells": 284536,
+    "per_cohort_empty_cells": {
+      "gse32062": 37960,
+      "gse53963": 32211,
+      "gse17260": 16060,
+      "gse140082": 62873,
+      "gse49997": 135432
+    },
+    "column_order": "os-validation/labels.csv row order (sample_id)"
+  },
+  "expected_column_counts": {
+    "gse32062": 260,
+    "gse53963": 160,
+    "gse17260": 110,
+    "gse140082": 191,
+    "gse49997": 171
+  },
+  "packed": false,
+  "pack_report": null,
+  "anomalies": [
+    "gse32062: 37960 empty cells in merged matrix (platform lacks the symbol or source value empty)",
+    "gse53963: 32211 empty cells in merged matrix (platform lacks the symbol or source value empty)",
+    "gse17260: 16060 empty cells in merged matrix (platform lacks the symbol or source value empty)",
+    "gse140082: 62873 empty cells in merged matrix (platform lacks the symbol or source value empty)",
+    "gse49997: 135432 empty cells in merged matrix (platform lacks the symbol or source value empty)"
+  ]
+}
