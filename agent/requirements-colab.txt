@@ -4,8 +4,8 @@
 # torch (CUDA build), requests and tqdm — do not pin those here, reinstalling
 # them is slow and risks breaking the preinstalled CUDA wheels.
 #
-# Install on the runtime with:
-#   colab_env.install_requirements()
+# colab_sync.py installs this on the runtime automatically whenever the file
+# changes (and on the first push to a new session).
 
 lifelines>=0.28      # Cox / Kaplan-Meier for the survival endpoints in datasets/
 scikit-survival>=0.23.1  # RandomSurvivalForest; Python 3.13 wheels from 0.23.1

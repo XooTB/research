@@ -6,6 +6,9 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 .claude/settings.local.json
+# Colab: executed notebook copies and CLI session histories (run records are tracked)
+*_output.ipynb
+.research/colab/sessions/
 
 # BEGIN github-pack (generated — do not edit)
 # Unpacked originals stay on disk for work; git tracks the zip/parts.

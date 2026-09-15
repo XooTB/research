@@ -1,20 +1,21 @@
 """Runtime-side helpers for working in a Google Colab kernel.
 
-Imported *on the Colab VM*, after the bootstrap cell has put this repo on the
-runtime's disk (see `.cursor/skills/colab-compute/SKILL.md`). It reuses the
-same `common.cfg` config and the same `datasets/<topic>/<slug>/` layout as the
-local scripts, so notebook code and local code address data identically.
+Imported *on the Colab VM*, from the workspace copy that `colab_sync.py`
+uploads to `colab.runtime_dir` (see `.cursor/skills/colab-compute/SKILL.md`).
+It reuses the same `common.cfg` config and the same `datasets/<topic>/<slug>/`
+layout as the local scripts, so experiment code and local code address data
+identically.
 
 The module is import-safe off-Colab: every helper degrades to the local
 workspace, which makes it usable for dry runs before spending runtime minutes.
 
-Typical notebook use:
+Typical experiment-script use:
 
     import colab_env as ce
     print(ce.summary())
     ce.require("torch", "scikit-learn")
-    X, y, meta = ce.geo_xy("gse14764-ovarian-expression-series-matrix",
-                           label="overall survival event")
+    X, y, meta = ce.memo("gse14764", lambda: ce.geo_xy(
+        "gse14764-ovarian-expression-series-matrix", label="overall survival event"))
 """
 from __future__ import annotations
 
@@ -127,7 +128,7 @@ def summary() -> str:
         if gpu["torch_cuda"] is False:
             accel += "  [WARNING: torch cannot see it — CPU-only build?]"
     elif r["colab"]:
-        accel = "none (CPU only) — pick a GPU runtime in the kernel selector"
+        accel = "none (CPU only) — session has no GPU (colab_sync.py start --gpu T4)"
     else:
         accel = "none (CPU only)"
 
@@ -137,7 +138,7 @@ def summary() -> str:
         f"CPU / RAM   : {r['cpu_count']} cores, {r['ram_gb']} GB",
         f"Disk free   : {r['disk_free_gb']} GB",
         f"Workspace   : {r['workspace']}"
-        + ("" if r["workspace_present"] else "  [MISSING — run the bootstrap cell]"),
+        + ("" if r["workspace_present"] else "  [MISSING — run colab_sync.py start]"),
     ]
     return "\n".join(lines)
 
@@ -204,39 +205,43 @@ def install_requirements(path: str | None = None) -> dict:
     return {"installed_from": str(req)}
 
 
+def memo(key: str, build):
+    """Compute `build()` once per session kernel and reuse it across runs.
+
+    `colab_sync.py run` executes scripts in the same long-lived kernel but
+    re-imports workspace modules each time so edits take effect. The cache
+    therefore lives on `sys`, which survives those re-imports: repeated runs
+    skip reloading large matrices. Change the key when the loading code changes.
+    """
+    store = sys.__dict__.setdefault("_research_memo", {})
+    if key not in store:
+        store[key] = build()
+    return store[key]
+
+
 # ---------------------------------------------------------------------------
 # Data on demand
 # ---------------------------------------------------------------------------
 def ensure_dataset(slug: str, topic: str | None = None, *, csv_only: bool = True) -> Path:
-    """Make a tracked dataset present on the runtime, fetching it if needed.
+    """Return a dataset folder, failing clearly when it isn't on this machine.
 
-    The bootstrap clone is sparse and blobless, so `datasets/` starts empty.
-    This widens the sparse-checkout to one dataset and lets git fetch just
-    those blobs — tens of MB instead of the whole tree. Off-Colab (or in a
-    normal full checkout) it simply validates that the folder exists.
+    On a Colab session a dataset exists only if `colab_sync.py start|push
+    --dataset <slug>` uploaded it from the local working tree. Locally it is
+    the working tree itself; packed (>100 MB) originals are restored from
+    their archives when only the zip is present.
     """
     target = dataset_dir(slug, topic)
-    pattern = f"{Path(cfg('paths.datasets_dir', 'datasets'))}/" \
-              f"{topic or cfg('colab.default_topic', '')}/{slug}"
-    if csv_only:
-        pattern += "/csv"
-
-    ws = workspace()
-    if not target.exists() and (ws / ".git").exists():
-        subprocess.run(["git", "-C", str(ws), "sparse-checkout", "add", pattern],
-                       check=True, capture_output=True, text=True)
-        # blobless clones only materialize the path after a checkout
-        subprocess.run(["git", "-C", str(ws), "checkout", "HEAD", "--", pattern],
-                       check=False, capture_output=True, text=True)
-
     if not target.exists():
         raise FileNotFoundError(
             f"dataset not found: {target}\n"
-            "If the repo is private, set the GitHub token secret (see the "
-            "colab-compute skill). If it was never converted, run "
-            "datasets_to_csv.py locally and push."
+            f"On Colab, upload it from the local machine: colab_sync.py push --dataset {slug}"
         )
     restore_packed()
+    if csv_only and not (target / "csv").is_dir():
+        raise FileNotFoundError(
+            f"{target} has no csv/ folder. Convert it locally with datasets_to_csv.py, "
+            f"then colab_sync.py push --dataset {slug}"
+        )
     return target
 
 
@@ -257,7 +262,7 @@ def ensure_os_tables() -> dict:
         if missing:
             raise FileNotFoundError(
                 f"{slug} is missing {missing} under {root}. "
-                "Commit and push the compiled tables, then re-run the bootstrap."
+                f"Compile the tables locally, then colab_sync.py push --dataset {slug}"
             )
     return {"train": train, "val": val}
 
@@ -490,9 +495,9 @@ def _download_gpl_annot(acc: str, dest: Path) -> None:
 def save_run(name: str, payload: dict, *, files: list[str] | None = None) -> Path:
     """Write a run record under .research/colab/runs/<utc>-<name>/.
 
-    The runtime disk is wiped when the session ends, so anything worth keeping
-    has to leave: commit and push from the runtime, or copy to a mounted
-    Drive. Both are one-liners documented in the colab-compute skill.
+    The runtime disk is wiped when the session ends; `colab_sync.py run`,
+    `logs` and `stop` copy new record folders (run.json plus `files`) back to
+    the local workspace, where `colab_runs.py` reads them.
     """
     from datetime import datetime, timezone
     from json import dumps
@@ -512,47 +517,3 @@ def save_run(name: str, payload: dict, *, files: list[str] | None = None) -> Pat
         else:
             eprint(f"save_run: skipping missing file {src}")
     return out
-
-
-def push_runs(token: str | None = None, branch: str | None = None) -> dict:
-    """Commit and push run records from the runtime.
-
-    Needs a GitHub PAT in the runtime environment: the Colab VS Code extension
-    cannot read Colab Secrets (`userdata.get` is unsupported there), so there
-    is no way to pick one up implicitly. Without a token this is a no-op, and
-    the notebook-output import path is used instead — see colab_runs.py
-    --import-notebook, which needs no credentials at all.
-    """
-    token = token or os.environ.get(cfg("colab.token_secret", "GITHUB_TOKEN"), "")
-    if not token:
-        return {"pushed": False, "reason": "no token in the runtime environment"}
-
-    ws, repo = str(workspace()), cfg("colab.repo_url", "")
-    branch = branch or cfg("colab.branch", "main")
-    ident = ["-c", "user.name=colab", "-c", "user.email=colab@local"]
-    steps = [
-        ("add", ["git", "-C", ws, "add", ".research/colab/runs"]),
-        ("commit", ["git", "-C", ws, *ident, "commit", "-m", "colab: run records"]),
-        ("push", ["git", "-C", ws, "push", f"https://{token}@{repo}", f"HEAD:{branch}"]),
-    ]
-
-    log = []
-    for label, cmd in steps:
-        proc = subprocess.run(cmd, capture_output=True, text=True, check=False)
-        log.append({
-            "step": label,
-            "ok": proc.returncode == 0,
-            "out": (proc.stdout or proc.stderr).strip().replace(token, "***"),
-        })
-        if proc.returncode != 0:
-            break
-    return {"pushed": all(s["ok"] for s in log) and len(log) == len(steps), "steps": log}
-
-
-def mount_drive(path: str = "/content/drive"):
-    """Mount Google Drive. Colab-only; raises a clear error elsewhere."""
-    if not in_colab():
-        raise RuntimeError("mount_drive() only works inside a Colab runtime")
-    from google.colab import drive  # type: ignore[import-not-found]
-    drive.mount(path)
-    return Path(path) / cfg("colab.drive_dir", "MyDrive/research-colab")

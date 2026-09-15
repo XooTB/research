@@ -1,22 +1,24 @@
 # Research Agent
 
-A Cursor-driven assistant for working with research **papers** and **datasets**.
-Python scripts fetch, download, and profile; the Cursor agent does the reasoning
-(relevance ranking, criteria screening, usability verdicts). Everything is
-stored locally in this workspace.
+An agent-driven assistant (Cursor or Claude Code) for working with research
+**papers** and **datasets**. Python scripts fetch, download, profile, and run
+experiments on Colab; the agent does the reasoning (relevance ranking, criteria
+screening, usability verdicts, modelling decisions). Everything is stored
+locally in this workspace.
 
 ## Layout
 
 ```
 papers/<topic>/<year>-<author>-<title>/paper.pdf   # organized PDFs
 datasets/<topic>/<slug>/ + REPORT.md               # datasets + verification
-notebooks/                                          # notebooks run on Colab GPUs
+notebooks/                                          # notebooks run on Colab
 .research/library.db                               # SQLite: papers, datasets, notes
 .research/references.bib                            # auto-exported BibTeX
 .research/config.yaml                               # sources, paths, credentials, colab
-.research/colab/runs/                               # run records from Colab sessions
+.research/colab/runs/                               # run records pulled back from Colab
 agent/scripts/                                      # the tools (below)
-.cursor/skills/research-papers|research-datasets|colab-compute   # how the agent uses them
+agent/experiments/                                  # experiment scripts run on Colab
+.cursor/skills/<name>/SKILL.md  (= .claude/skills)  # how the agent uses them
 ```
 
 ## Setup
@@ -44,8 +46,8 @@ All scripts print JSON to stdout and progress/errors to stderr.
 | `datasets_verify.py --id N \| --path DIR` | Profile schema/rows/dtypes/missing, write `REPORT.md` |
 | `ingest_csv.py --csv FILE` | Import an existing dataset shortlist CSV as candidates |
 | `library.py [--papers\|--datasets] [--topic ...] [--status ...]` | List / summarize the library |
-| `colab_check.py [--dataset <slug>]` | Pre-flight before a Colab session: config sanity, unpushed commits, dataset reachable from the remote |
-| `colab_runs.py [--last\|--compare] [--name ...]` | Read back results pushed by Colab notebooks; `--compare` shows metric deltas across runs |
+| `colab_sync.py start\|run\|job\|logs\|pull\|status\|stop` | Drive a Colab session: upload code + datasets incrementally, run scripts/notebooks, pull run records back |
+| `colab_runs.py [--last\|--compare] [--name ...]` | Read Colab run records; `--compare` shows metric deltas across runs |
 
 ## Sources & credentials
 
@@ -56,32 +58,28 @@ All scripts print JSON to stdout and progress/errors to stderr.
 
 ## GPU work (Google Colab)
 
-There is no local GPU, so model training happens on a free Colab runtime
-attached to a local notebook via Google's Colab extension for Cursor.
+There is no local GPU. The agent drives a Colab runtime from the terminal with
+Google's [`colab` CLI](https://github.com/googlecolab/google-colab-cli)
+(`uv tool install google-colab-cli --with 'jupyter-kernel-client<1'`, then a one-time login described in the
+`colab-compute` skill) through `colab_sync.py`:
 
 ```bash
-.venv/bin/python agent/scripts/colab_check.py --dataset <slug>   # push whatever it flags
+.venv/bin/python agent/scripts/colab_sync.py start --dataset <slug>          # session + code + data + deps
+.venv/bin/python agent/scripts/colab_sync.py run <script.py|notebook.ipynb>  # repeat freely
+.venv/bin/python agent/scripts/colab_sync.py stop                            # pull records, release the VM
 ```
 
-Then open `notebooks/colab-smoke-test.ipynb`, pick *Select Kernel → Colab →
-GPU*, and run it. The bootstrap cell sparse-clones this repo onto the runtime
-and `agent/scripts/colab_env.py` provides the runtime helpers — same config,
-same `datasets/<topic>/<slug>/` paths as the local scripts. Settings live under
-`colab:` in `.research/config.yaml`; the full workflow and its failure modes are
-in the `colab-compute` skill.
-
-The runtime clones the **GitHub remote**, so anything not pushed does not exist
-as far as a notebook is concerned. Datasets over 100 MB arrive as the zips that
-`github_pack.py` tracks; `ensure_dataset` unpacks them on the runtime.
-
-Running cells is the one manual step — no tool can drive a Colab kernel. The
-notebook's last cell pushes its run record, so afterwards `git pull` plus
-`colab_runs.py --last` (or `--compare`) gives the agent the actual numbers to
-verify against and iterate on.
+The local working tree is uploaded straight into the session — only changed
+files after the first push — so nothing has to be committed, pushed, or
+cloned. On the runtime, `agent/scripts/colab_env.py` provides the helpers (same
+config, same `datasets/<topic>/<slug>/` paths as locally). Records written with
+`colab_env.save_run()` come back to `.research/colab/runs/` automatically, and
+`colab_runs.py --last` / `--compare` reads them. Settings live under `colab:` in
+`.research/config.yaml`; the full workflow is in the `colab-compute` skill.
 
 ## Usage
 
-Just talk to the Cursor agent, e.g. *"find recent papers on chemotherapy
-response prediction that use gene expression"*, *"verify the GDSC dataset"*, or
-*"train a survival model on GSE14764 using a GPU"*. The `research-papers`,
+Just talk to the agent (Cursor or Claude Code), e.g. *"find recent papers on
+chemotherapy response prediction that use gene expression"*, *"verify the GDSC
+dataset"*, or *"train a survival model on GSE14764 using a GPU"*. The `research-papers`,
 `research-datasets`, and `colab-compute` skills drive the scripts above.

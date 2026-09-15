@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python agent/scripts/colab_sync.py *)",
+      "Bash(.venv/bin/python agent/scripts/colab_runs.py *)",
+      "Bash(colab sessions *)",
+      "Bash(colab status *)",
+      "Bash(colab log *)",
+      "Bash(colab skill *)",
+      "Bash(colab restart-kernel *)",
+      "Bash(colab --auth=oauth2 sessions *)",
+      "Bash(colab --auth=adc sessions *)",
+      "Bash(colab --auth=oauth2 status *)",
+      "Bash(colab --auth=adc status *)",
+      "Bash(colab --auth=oauth2 log *)",
+      "Bash(colab --auth=adc log *)",
+      "Bash(colab --auth=oauth2 restart-kernel *)",
+      "Bash(colab --auth=adc restart-kernel *)"
+    ]
+  }
+}

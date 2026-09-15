@@ -1,230 +1,205 @@
 ---
 name: colab-compute
 description: >-
-  Run machine learning on a free Google Colab GPU/TPU from Cursor, VS Code, or Claude Code, using
-  this workspace's datasets and scripts. Use whenever work needs an accelerator
-  or more RAM than the local machine has — training models, CUDA/torch code,
-  large matrix or survival modelling, "I don't have a GPU", jobs that are too
-  slow or run out of memory locally — and whenever creating, running, or
-  debugging a notebook that executes on a Colab runtime.
+  Run machine learning on a Google Colab runtime that the agent drives itself
+  from the terminal (Google's colab CLI via agent/scripts/colab_sync.py), using
+  this workspace's code and datasets. Use whenever work needs the ML stack, an
+  accelerator, or more RAM than the local machine has — training or evaluating
+  models, survival modelling, torch/CUDA code, "I don't have a GPU", jobs too
+  slow locally — and whenever writing, running, or debugging experiment scripts
+  or notebooks that execute on Colab.
 ---
 
 # Colab compute
 
-The Google Colab extension attaches a **remote kernel** to a local notebook: the
-`.ipynb` stays in this repo, the cells execute on a Google VM with a GPU. That
-split drives every rule below.
+The agent runs code on Colab itself. Google's `colab` CLI rents a runtime;
+`agent/scripts/colab_sync.py` uploads the local working tree into it, runs
+scripts or notebooks there, and pulls run records back. Edit → run → read →
+decide → repeat, as often as the task needs. No human runs cells, and nothing
+is committed, pushed, or cloned to make a run happen.
 
-## Hard constraints — read before writing any cell
+## Hard constraints
 
 | Constraint | Consequence |
 |---|---|
-| No terminal on the runtime (editor Remote Tunnels / SSH don't apply) | Everything shell-shaped goes in a cell: `!cmd` or `subprocess.run` |
-| Runtime filesystem is empty and ephemeral | The repo must be cloned in every session; results must be pushed or copied out before it dies |
-| The runtime clones the **GitHub remote**, not the local disk | Uncommitted or unpushed work is invisible to the runtime. Always push first |
-| Free-tier sessions get reclaimed (idle in minutes, ~12h ceiling) and usually give a T4 | Checkpoint long runs to Drive; don't plan multi-hour uninterrupted training |
-| Local Python is 3.14 with almost nothing installed; the runtime is 3.13 with the full ML stack (torch 2.11+cu128, pandas, sklearn) | Don't try to reproduce the runtime env locally — use the notebook for anything needing pandas/torch |
-| Several `google.colab` helpers don't work in the extension (see below) | No Colab Secrets, so no implicit credentials on the runtime |
-| Files over 100 MB are gitignored; git tracks a zip instead, split into `.zip.partNN` if the zip is also over the limit (github-file-size rule) | A fresh runtime clone has the archive, not the CSV. `ensure_dataset` unpacks automatically; anything reading paths directly must call `ce.restore_packed()` first |
+| No local GPU; local `.venv` is Python 3.14 with almost nothing installed | All ML code runs on the session. Don't reproduce the runtime env locally |
+| A session is a live kernel on a rented VM (torch/pandas/sklearn preinstalled) | It persists between commands until `stop` (keep-alive daemon, ~24 h cap). Always `stop` when done |
+| The VM disk is ephemeral | Keep results with `colab_env.save_run()`; `run`, `logs` and `stop` pull those records back |
+| Accelerators are tier-gated and not guaranteed | `start` requests `colab.gpu` (T4) and falls back to CPU. The OS survival models run fine on CPU |
+| Long websocket executions are fragile | `run` uses `colab.exec_timeout` (3600 s); anything longer goes through `job` |
+| Datasets upload from the **local working tree** | Packed >100 MB originals must exist unzipped locally (`github_pack.py unpack`); zips are never uploaded |
+| `colab repl`, `console`, `auth`, `drivemount` need a TTY or a human | Never call them from the agent |
 
-Notebook-kernel use is within Colab's terms. SSH/tunnel workarounds are not, on
-the free tier — don't suggest them.
-
-## Configuration
-
-`.research/config.yaml` → `colab:` block: `repo_url`, `branch`, `token_secret`,
-`runtime_dir`, `sparse_paths`, `drive_dir`, `requirements`, `default_topic`.
-Read it with `common.cfg("colab.<key>")`; never hardcode paths in scripts.
-
-One-time user setup, in this order:
+## One-time setup (user)
 
 ```
-- [ ] Google Colab extension installed in Cursor or VS Code (publisher: Google).
-      Claude Code agents edit and read notebooks from the terminal; the user
-      runs cells in the editor
-- [ ] Private repo only: GitHub PAT saved as a Colab secret named GITHUB_TOKEN
-      (key icon in Colab's sidebar) with "Notebook access" enabled
-- [ ] Kernel selected: Select Kernel -> Colab -> New Colab Server -> GPU
+- [ ] Install the CLI (Python ≥3.12; Linux/macOS):
+        uv tool install google-colab-cli --with 'jupyter-kernel-client<1'
+      The pin matters: v0.6.0 breaks with jupyter-kernel-client 1.x
+      ("no attribute 'KernelClient'", upstream PR #125)
+- [ ] Authenticate, and make colab.auth in .research/config.yaml match:
+      oauth2 (default): run `colab --auth=oauth2 sessions` in a terminal (in Claude Code:
+        `! colab --auth=oauth2 sessions`) and finish the copy-paste consent.
+        Known issue: may ask to log in again roughly hourly.
+      adc (steadier for long unattended loops): install gcloud (yay -S google-cloud-cli), run
+        gcloud auth application-default login --scopes=openid,https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/userinfo.email,https://www.googleapis.com/auth/colaboratory
+        then set colab.auth: adc
+- [ ] Check: `colab --auth=<method> sessions` exits 0
 ```
 
-## Workflow
+If a `colab_sync.py` command reports an auth, 401 or 403 error, stop and ask
+the user to redo the step above. Do not retry in a loop, and never start the
+interactive login yourself.
 
-Agents cannot execute cells on a Colab kernel — there is no tool for it. Running
-the notebook is the user's single manual step; everything either side of it is
-automatable, so drive it like this:
-
-```
-- [ ] 1. Write / edit the notebook and any module it imports
-- [ ] 2. Pre-flight: colab_check.py exits 0
-- [ ] 3. Commit and push (the runtime clones the remote, not the disk)
-- [ ] 4. Hand off: name the notebook, say "Run All", say what to expect
-- [ ] 5. git pull, then colab_runs.py --last to read the actual results
-- [ ] 6. Verify against expectations; if optimizing, change one thing and loop to 2
-```
-
-Never report a notebook's results as verified without step 5 — that record is
-the only evidence an agent has. Do not idle waiting for the user to run cells;
-finish the turn at step 4 with a clear handoff.
-
-### Reading results back — `colab_runs.py`
+## The loop
 
 ```bash
-.venv/bin/python agent/scripts/colab_runs.py --import-notebook notebooks/<nb>.ipynb
-.venv/bin/python agent/scripts/colab_runs.py             # list, newest first
-.venv/bin/python agent/scripts/colab_runs.py --last      # full newest record
-.venv/bin/python agent/scripts/colab_runs.py --compare   # metric deltas across runs
+PY=.venv/bin/python; S=agent/scripts/colab_sync.py
+$PY $S start --dataset os-training-pool --dataset os-validation   # session + code + data + requirements
+$PY $S run agent/experiments/colab_smoke.py --dataset os-training-pool   # first run in a new setup
+$PY $S run agent/experiments/<experiment>.py --penalizer 0.05     # sync changes, run, pull records
+$PY agent/scripts/colab_runs.py --compare --name <experiment>      # did the change help?
+# edit and run again, as many iterations as the task needs
+$PY $S stop                                                        # pull, save session log, release VM
 ```
 
-`--compare` flattens every numeric metric to a dotted key with `first`, `last`
-and `delta`, which is what answers "did that change help". Each record also
-carries the environment snapshot, so a suspicious speedup can be checked against
-which GPU the run actually got.
+1. **start** once per work session. It is idempotent: a live session of the same
+   name is reused, and only what changed is uploaded.
+2. **run** after every edit. Script output streams to stderr; stdout is a JSON
+   summary `{script, exit_code, sync, new_runs}`; the command exits with the
+   script's exit code. Read the output, then decide.
+3. Change one thing per iteration and compare records, not memory.
+4. **stop** when finished, when blocked, or before handing back to the user.
 
-### 1. Pre-flight (always do this first)
+## `colab_sync.py` reference
 
-```bash
-.venv/bin/python agent/scripts/colab_check.py --dataset <slug> [--topic <topic>]
-```
+| Command | Does |
+|---|---|
+| `start [--dataset S ...] [--gpu T4 \| --cpu]` | Create or reuse the session, upload `colab.sync_paths` + datasets, install `agent/requirements-colab.txt`, report the runtime |
+| `push [--dataset S ...]` | Upload changed files only. Datasets pushed once stay synced for the session |
+| `run [--timeout SEC] <file.py \| file.ipynb> [args...]` | Push, run on the session, pull new run records |
+| `job <name> <file.py> [args...]` | Push, then start the script detached on the VM |
+| `logs <name> [-n 40]` | Tail a job; report running or exit code; pull records once it has finished |
+| `pull` | Copy new `.research/colab/runs/*` from the session |
+| `status` | CLI session status plus what is synced |
+| `stop` | Pull, save the CLI session history to `.research/colab/sessions/` (gitignored), release the VM |
 
-Exit 0 = ready. Otherwise read `next_steps`: it catches the failure that wastes
-the most runtime minutes — a dataset that exists locally but was never pushed,
-so the runtime's clone can't see it. Commit and push, then re-run.
+Every command takes `-s NAME` (default `colab.session`), placed after the
+subcommand. `--dataset` takes a slug (`os-validation`), `topic/slug`, or a
+sub-path (`os-validation/labels.csv`) to upload just part of a dataset. Settings
+live in the `colab:` block of `.research/config.yaml`.
 
-### 3. Bootstrap cell
+How it works: changed files are tarred, gzipped, split into
+`colab.upload_chunk_mb` parts, sent with `colab upload`, and extracted into
+`colab.runtime_dir` (`/content/research`) through `colab exec`. A manifest on the
+runtime (size + mtime per file) makes later pushes incremental; a recreated
+session simply gets everything again.
 
-Every Colab notebook in this repo starts with the same cell. Copy it verbatim
-from `notebooks/colab-smoke-test.ipynb` rather than rewriting it — it handles
-private-repo tokens, re-runs idempotently, and falls back to the local checkout
-so the notebook is still runnable against a local kernel.
+## Writing experiment code
 
-It does a shallow, blobless, sparse clone into `/content/research` (a few MB of
-code, not the 1.4 GB `datasets/` tree), then puts `agent/scripts` on `sys.path`
-so `colab_env`, `common`, `db`, and `datasets_to_csv` all import unchanged.
-
-### 4. Helpers — `agent/scripts/colab_env.py`
+**Prefer scripts over notebooks** for anything you will iterate on: they diff
+cleanly, take arguments, and give `run` a real exit code. Put them in
+`agent/experiments/` (synced with `agent/`). A script runs like `python file.py
+args` from the workspace root on the runtime, with `agent/scripts` on `sys.path`.
 
 ```python
 import colab_env as ce
+
+ce.require("lifelines", "scikit-survival")                 # no-op when present
+tables = ce.ensure_os_tables()                              # paths to the compiled OS tables
+labels = ce.memo("os-train-labels-v1", lambda: load_labels(tables["train"]))  # reused across runs
+...
+ce.save_run("os-lasso", {"params": {...}, "train_cv": {...}})  # pulled back automatically
 ```
+
+- `ce.memo(key, fn)` caches a value in the session kernel, so repeated `run`s
+  skip reloading large matrices. Workspace modules are re-imported on every
+  `run`, so code edits always take effect while the memo survives. Bump the key
+  when the loading code changes.
+- Put every number you will judge in the `save_run` payload: `colab_runs.py
+  --compare` diffs numeric leaves across runs.
+- Figures: save to a file and pass it in `save_run(files=[...])`.
+
+### Notebooks
+
+`run notebook.ipynb` executes every code cell on the session and writes the
+executed copy next to the input as `<name>_output.ipynb` (gitignored). Record
+blocks printed between `===RUN-RECORD-BEGIN===` and `===RUN-RECORD-END===` are
+imported, and `save_run` folders are pulled. Notebooks start with the bootstrap
+cell from `notebooks/ovarian-os-first-pass.ipynb`, which finds `/content/research`
+on Colab or the local checkout otherwise.
+
+### `colab_env.py` helpers
 
 | Call | Does |
 |---|---|
-| `ce.summary()` | Human-readable runtime report: GPU, RAM, disk, workspace |
-| `ce.report()` | Same as dict, for logging into a run record |
-| `ce.gpu_info()` | nvidia-smi view plus whether torch can actually reach the GPU |
-| `ce.require("torch", "lifelines")` | pip-installs only what's missing (usually a no-op) |
-| `ce.install_requirements()` | Installs `agent/requirements-colab.txt` |
-| `ce.workspace()` | Repo root, correct on runtime and locally |
-| `ce.dataset_dir(slug[, topic])` · `ce.dataset_csv(slug, "expression.csv")` | Paths using the normal `datasets/<topic>/<slug>/` layout |
-| `ce.ensure_dataset(slug)` | Widens sparse-checkout, fetches just that dataset, unpacks >100 MB archives |
-| `ce.restore_packed()` | Rebuilds >100 MB originals from their committed zips |
-| `ce.load_geo(slug)` | `(expression, phenotype)` DataFrames; phenotype indexed by `geo_accession` |
-| `ce.geo_xy(slug, label="...")` | `(X, y, meta)` — X is samples x probes, y aligned and 0/1 |
-| `ce.load_xena(slug, "HiSeqV2.csv")` | Xena/TSV matrix from `csv/` |
-| `ce.tcga_os()` | `(X, time, event, clin, meta)` — TCGA-OV HiSeqV2 joined to overall survival (days) |
-| `ce.gpl_gene_map("GPL96")` | Affymetrix probe → gene symbol (cached under `.research/cache/`) |
-| `ce.collapse_to_genes(X, probe_to_gene)` | Average probes to gene symbols; `X` is samples × probes |
-| `ce.save_run(name, payload, files=[...])` | Writes `.research/colab/runs/<utc>-<name>/run.json` with an env snapshot |
-| `ce.mount_drive()` | Mounts Drive, returns the `colab.drive_dir` path |
+| `ce.summary()` · `ce.report()` | Runtime report: GPU, RAM, disk, workspace |
+| `ce.gpu_info()` | nvidia-smi view plus whether torch can reach the GPU |
+| `ce.require(...)` · `ce.install_requirements()` | Install only what is missing · `agent/requirements-colab.txt` |
+| `ce.memo(key, fn)` | Compute once per session kernel |
+| `ce.workspace()` · `ce.dataset_dir(slug)` · `ce.dataset_csv(slug, name)` | Paths in the normal `datasets/<topic>/<slug>/` layout |
+| `ce.ensure_dataset(slug)` · `ce.ensure_os_tables()` | Fail clearly if a dataset was not pushed |
+| `ce.load_geo(slug)` · `ce.geo_xy(slug, label=...)` · `ce.load_xena(slug, name)` · `ce.tcga_os()` | Loaders |
+| `ce.gpl_gene_map("GPL96")` · `ce.collapse_to_genes(X, map)` | Probe → gene symbol |
+| `ce.save_run(name, payload, files=[...])` | `.research/colab/runs/<utc>-<name>/run.json` with an env snapshot |
 
-`topic` defaults to `colab.default_topic`. For a non-0/1 label pass
-`positive="..."`, e.g. `ce.geo_xy(slug, "status", positive="DOD (dead of disease)")`.
+## Long jobs
 
-### Adding a dataset the runtime doesn't have yet
-
-The runtime can only fetch what is committed. If `csv/` is missing for a
-dataset, do the conversion **locally** and push, rather than converting on the
-runtime where the output would be thrown away:
+`run` holds a connection for the whole execution. For anything that may exceed
+`colab.exec_timeout`, or that you want to poll while doing other work:
 
 ```bash
-.venv/bin/python agent/scripts/datasets_to_csv.py --path datasets/<topic>/<slug>
-.venv/bin/python agent/scripts/github_pack.py pack --path datasets/<topic>/<slug>
-git add datasets/<topic>/<slug> && git commit -m "convert <slug> to csv" && git push
+$PY $S job rsf-grid agent/experiments/<experiment>.py --trees 1000
+$PY $S logs rsf-grid        # repeat until exit_code is set; records are pulled then
 ```
 
-The pack step matters: several expression matrices exceed 100 MB, and GitHub
-rejects those blobs outright. `colab_check.py` flags any that are still
-pushable at that size.
-
-### Packed data on the runtime
-
-Large files reach the runtime as archives, so the raw CSV does not exist until
-something unpacks it:
-
-| Local disk | What git tracks | On the runtime after `ensure_dataset` |
-|---|---|---|
-| `csv/expression.csv` (< 100 MB) | the CSV | the CSV |
-| `csv/expression.csv` (> 100 MB) | `csv/expression.csv.zip` | unpacked back to `csv/expression.csv` |
-| zip also > 100 MB | `csv/expression.csv.zip.part01`, `.part02`, … | parts reassembled, then unpacked |
-
-`ce.geo_xy` and `ce.load_geo` handle this for you. Two things to know:
-
-- `.research` must stay in `colab.sparse_paths` — `.research/github-pack.json`
-  is the manifest that tells the runtime what to unpack, and it is committed.
-- A split archive is all-or-nothing. If some `.part` files never reached the
-  remote, unpack refuses and leaves nothing behind rather than writing a
-  truncated CSV. `colab_check.py --dataset <slug>` verifies every part of every
-  packed file for that dataset is on the remote branch.
-
-Reading a path directly, without going through the dataset helpers:
-
-```python
-ce.restore_packed()          # or, in a shell cell:
-# !python /content/research/agent/scripts/github_pack.py unpack
-```
-
-### 5. Getting results out
-
-The extension does not implement every `google.colab` helper, which rules out
-the obvious routes — verified against Google's known-issues wiki:
-
-| Helper | State in the extension |
-|---|---|
-| `userdata.get()` (Colab Secrets) | **Unsupported**, raises a timeout. There are no implicit credentials on the runtime, so an unattended `git push` cannot authenticate |
-| `files.download()` | **Unsupported**; needs an ipywidget |
-| `drive.mount()` | Works (extension v0.2.1+), via `ce.mount_drive()` |
-
-So the default channel is **saved cell output**. The notebook file is local, so
-anything printed and then saved lands on your disk with no credentials
-involved. The final cell prints its record between `===RUN-RECORD-BEGIN===`
-and `===RUN-RECORD-END===`, and this harvests it:
+## Reading results back
 
 ```bash
-.venv/bin/python agent/scripts/colab_runs.py --import-notebook notebooks/<nb>.ipynb
+.venv/bin/python agent/scripts/colab_runs.py --last       # newest record in full
+.venv/bin/python agent/scripts/colab_runs.py --compare    # metric deltas across runs
 ```
 
-Records land in `.research/colab/runs/`, after which `--last` and `--compare`
-behave normally. The notebook must be **saved** first — unsaved output exists
-only in the editor, not in the file. Re-importing is idempotent.
+Never report a result as verified unless you read it from a pulled record or
+from `run`'s own output.
 
-Two alternatives when that isn't enough:
+## Iterating without overfitting (OS workstream)
 
-- `ce.push_runs()` commits and pushes the records, but only if a PAT is already
-  in the runtime environment as `GITHUB_TOKEN`. Set it with the ipywidget
-  recipe from Google's wiki; do not put a token in a cell, it would be
-  committed. Returns `{"pushed": False, ...}` rather than failing when absent.
-- `ce.mount_drive()` plus `shutil.copytree` for model weights and anything
-  large. Long training runs should checkpoint to Drive *during* training.
+A loop that watches external-validation scores will overfit to them. So:
+
+- Make every tuning and model-selection decision on **training-pool
+  cross-validation** only.
+- Score `os-validation` cohorts only for a **frozen** candidate, record it with
+  `save_run`, and do not iterate on those numbers. If a validation result sends
+  you back to change the model, say so in the write-up.
+- Always report the clinical-only baseline beside every model
+  (`docs/current-focus-overall-survival.md` §2).
+
+## Raw `colab` CLI
+
+`colab_sync.py` covers the loop; use the CLI directly for anything else, with
+`--auth=<colab.auth>` before the subcommand. `colab skill` prints Google's full
+agent guide for the installed version. Useful: `colab sessions`, `colab status
+-s S`, `colab restart-kernel -s S` (wedged kernel, keeps the VM), `colab log -s S
+-n 20` (structured events when something fails), `colab install -s S pkg`.
 
 ## Troubleshooting
 
 | Symptom | Cause and fix |
 |---|---|
-| `summary()` says "none (CPU only)" | Kernel is a CPU runtime. Reconnect via Select Kernel → Colab → GPU |
-| nvidia-smi sees a GPU but `torch_cuda: false` | Something reinstalled a CPU-only torch. Never pin torch/numpy in `requirements-colab.txt`; restart the runtime |
-| `clone failed` / auth error in bootstrap | Private repo without a token. Add the `GITHUB_TOKEN` Colab secret and enable notebook access for it |
-| `ModuleNotFoundError: colab_env` | Bootstrap cell not run this session, or `agent` missing from `colab.sparse_paths` |
-| `AttributeError: module 'colab_env' has no attribute '...'` | Runtime clone is stale and Python cached the old import. Re-run the bootstrap cell — it fetches `origin`, hard-resets, and `importlib.reload`s |
-| `FileNotFoundError: dataset not found` | The dataset isn't on the remote branch. Run `colab_check.py --dataset <slug>` locally |
-| Dataset folder has `expression.csv.zip` but no `expression.csv` | Over the 100 MB limit, so only the zip is tracked. `ce.restore_packed()`, or `!python agent/scripts/github_pack.py unpack` |
-| `missing parts: [...]` when unpacking | A split archive is incomplete on the remote. Push every `.zip.partNN`; re-run `colab_check.py --dataset <slug>` |
-| Unpack does nothing and the CSV stays missing | `.research/github-pack.json` wasn't fetched (check `colab.sparse_paths`) or wasn't committed |
-| Everything vanished mid-session | Session was reclaimed. Re-run from the bootstrap cell; results not pushed are gone |
-| Kernel dies loading a big matrix | Runtime RAM (~13 GB on free tier). Load with `usecols`/`chunksize`, or subset probes before transposing |
+| 401 / 403, "could not authenticate", keep-alive `consecutive_4xx_errors` | Login expired or missing the `colaboratory` scope. Stop; ask the user to redo the one-time setup |
+| `start` warns the GPU was not granted | Quota or tier. Continue on CPU, or `stop` and retry later |
+| `no result from session ...` | Session reclaimed or wedged. `colab sessions`, then `colab_sync.py start` (re-uploads) or `colab restart-kernel -s S` |
+| `packed originals missing locally` | `.venv/bin/python agent/scripts/github_pack.py unpack` |
+| `FileNotFoundError: dataset not found` on the runtime | Not pushed this session: `colab_sync.py push --dataset <slug>` |
+| `is not under colab.sync_paths` | Move the script under `agent/` or `notebooks/`, or add its folder to `colab.sync_paths` |
+| `run` times out | Raise `--timeout`, or use `job` + `logs` |
+| `torch_cuda: false` with a GPU present | Something reinstalled CPU-only torch. Never pin torch/numpy in `requirements-colab.txt`; `stop` and `start` fresh |
+| Kernel dies loading a big matrix | ~13 GB RAM on the free tier. Load with `usecols`/`chunksize`, or `memo` a reduced matrix |
 
 ## Related
 
-- Training notebook: `notebooks/ovarian-os-lasso-cox.ipynb`
-- Bootstrap cell template: `notebooks/colab-smoke-test.ipynb`
+- Session driver `agent/scripts/colab_sync.py` · runtime helpers `agent/scripts/colab_env.py` · records `agent/scripts/colab_runs.py`
+- Smoke test: `agent/experiments/colab_smoke.py`
 - Convert datasets so the runtime can load them: [datasets-to-csv](../datasets-to-csv/SKILL.md)
 - Find and download datasets: [research-datasets](../research-datasets/SKILL.md)

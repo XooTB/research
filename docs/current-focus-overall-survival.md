@@ -2,7 +2,7 @@
 
 **Status:** active workstream — this is the project's single focus until the milestones below are done.
 **Source decision:** `docs/ovarian-cancer-prognosis-opportunities.md` §7.1 (selected 27 Aug 2026).
-**Now:** first-pass Colab notebook ready (`notebooks/ovarian-os-first-pass.ipynb`) covering M3 clinical Cox + M4 LASSO-Cox / RSF / DeepSurv on the compiled tables. **Next: commit + push, then Run All on Colab.** Results are not in yet — do not treat this as a completed M3/M4.
+**Now:** first-pass Colab notebook ready (`notebooks/ovarian-os-first-pass.ipynb`) covering M3 clinical Cox + M4 LASSO-Cox / RSF / DeepSurv on the compiled tables. **Next: the agent runs it on Colab itself** — `colab_sync.py start --dataset os-training-pool --dataset os-validation`, `run notebooks/ovarian-os-first-pass.ipynb`, `stop` (colab-compute skill). Results are not in yet — do not treat this as a completed M3/M4.
 **Note from the audit:** §7.3 (PFS/PFI) was rated the higher-value endpoint and §7.1 the "secondary, literature-comparable" one. We are deliberately running OS anyway; treat PFS as the follow-on, not a distraction.
 
 ---
@@ -79,6 +79,7 @@ M2 tables exist; M3 clinical baselines can run on `os-training-pool/` + `os-vali
 - **27 Aug 2026** — Training pool compiled: `datasets/ovarian-cancer-prognosis-ml/os-training-pool/` (`labels.csv` 751/485 exact match to split doc; `expression_pool.csv` 11,474 symbols × 751 samples). Tooling: `agent/scripts/os_pool_labels.py`, `agent/scripts/os_pool_expression.py` (both with `verify` subcommands). Docs: `docs/os-training-dataset.md` (+ labels/expression detail docs). GSE63885 CSVs converted; GSE30161 reparsed from raw matrix; GPL96/GPL570 GEO annotations in `platform-annotations/`. Covariate strategy: cohort-available, no imputation. M2 training side done; validation-side conversions + GSE53963 dedupe still open.
 - **27 Aug 2026** — Validation set compiled: `datasets/ovarian-cancer-prognosis-ml/os-validation/` (`labels.csv` 892/410 — GSE53963 disk-verified at 160/139 after dropping 14 TCGA duplicates via ch2 `tcga_sampleid`; `expression_validation.csv` 11,474 training symbols × 892 samples, platform coverage 93–99%). Tooling: `agent/scripts/os_validation_labels.py` (ch2 series-matrix reparse for GSE53963; leakage check vs training pool in `verify`), `agent/scripts/os_validation_expression.py`. Docs: `docs/os-validation-dataset.md` (+ detail docs). GSE53963/GSE140082 CSVs converted; GPL6480/GPL14951/GPL2986 annotations in `platform-annotations/`. **M2 done both sides.** Next: M3 clinical baselines on all cohorts.
 - **27 Aug 2026** — First-pass modelling notebook: `notebooks/ovarian-os-first-pass.ipynb`. Recoding in `agent/scripts/os_clinical.py` (GOG residual; FIGO 1–4; `verify` covers every source string). Preprocess: within-sample ranks, top 500 train-variance genes, z-score on the pool, validation coverage gaps → mid-rank. Classes: per-cohort clinical Cox + transported residual+stage Cox, LASSO-Cox, RSF, one DeepSurv net. Metrics: bootstrap C-index, KM log-rank, ΔC vs clinical, all five validators. **Not run yet.** Next: commit/push compiled tables + notebook, then Colab Run All.
+- **15 Sep 2026** — Colab workflow is now agent-driven through Google's `colab` CLI: `agent/scripts/colab_sync.py` uploads code + datasets from the working tree into a persistent session (incremental; no GitHub clone or push), runs scripts/notebooks, and pulls run records back. `colab_check.py`, the clone bootstrap and `colab_env.push_runs` removed; first-pass notebook bootstrap updated; `agent/experiments/colab_smoke.py` added. Next action unchanged: run the first-pass notebook (now the agent's step).
 
 ## 8. Pointers
 
@@ -89,4 +90,4 @@ M2 tables exist; M3 clinical baselines can run on `os-training-pool/` + `os-vali
 - First-pass M3+M4 notebook: `notebooks/ovarian-os-first-pass.ipynb`; recoding `agent/scripts/os_clinical.py`
 - Existing notebooks: `notebooks/ovarian-os-lasso-cox.ipynb`, `notebooks/ovarian-3yr-mortality-classifier.ipynb`
 - Run records: `.research/colab/runs/`
-- Colab workflow rules: `.cursor/skills/colab-compute/SKILL.md` (commit + push + `colab_check.py` before handing off any notebook)
+- Colab workflow: `.cursor/skills/colab-compute/SKILL.md` (agent-driven `colab_sync.py start` → `run` → `stop`; no push needed)

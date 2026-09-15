@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 """Read back results from Colab sessions. Emits JSON.
 
-Closes the loop for an agent that cannot execute notebook cells itself: the
-notebook pushes a run record, and this reads it, so "verify the result" and
-"did the change help" are answerable from the terminal instead of by asking the
-user what the output said.
-
-Records are written by colab_env.save_run() into
-.research/colab/runs/<utc>-<name>/run.json.
+Records are written on the runtime by colab_env.save_run() into
+.research/colab/runs/<utc>-<name>/run.json and copied back by colab_sync.py
+(run / logs / pull / stop), so "verify the result" and "did the change help"
+are answerable from the terminal.
 
 Usage:
     colab_runs.py                       # list runs, newest first
@@ -15,7 +12,7 @@ Usage:
     colab_runs.py --name <substr>       # filter by run name
     colab_runs.py --compare             # metric table across runs
     colab_runs.py --compare --name <s>  # ... restricted to matching runs
-    colab_runs.py --import-notebook <f> # harvest records from saved cell output
+    colab_runs.py --import-notebook <f> # harvest records from an executed notebook
 """
 from __future__ import annotations
 
@@ -26,9 +23,9 @@ from pathlib import Path
 
 from common import WORKSPACE, emit, eprint, slugify, ws_path
 
-# The notebook prints its record between these markers. Cell output is saved
-# into the local .ipynb, which makes it the one channel off an ephemeral
-# runtime that needs no auth, no Drive and no working google.colab helpers.
+# Notebooks print their record between these markers, so an executed notebook
+# (e.g. the <name>_output.ipynb that `colab_sync.py run` writes) carries its
+# results even without the runs/ folder.
 RECORD_BEGIN = "===RUN-RECORD-BEGIN==="
 RECORD_END = "===RUN-RECORD-END==="
 RECORD_BLOCK = re.compile(
@@ -74,11 +71,7 @@ def _output_text(cell: dict) -> str:
 
 
 def import_notebook(path: Path) -> dict:
-    """Write run records found in a notebook's saved output into runs/.
-
-    Requires the notebook to have been *saved* after running — unsaved output
-    lives only in the editor, not in the file.
-    """
+    """Write run records found in an executed notebook's output into runs/."""
     try:
         nb = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
@@ -113,8 +106,8 @@ def import_notebook(path: Path) -> dict:
         "skipped": skipped,
         "errors": errors,
         "hint": None if blocks else
-                "no record blocks in saved output — run the notebook's final "
-                "cells on a Colab kernel, then save the notebook before importing",
+                "no record blocks in the output — run the notebook with "
+                "colab_sync.py run, then import the <name>_output.ipynb it writes",
     }
 
 
@@ -180,8 +173,8 @@ def main() -> None:
         emit({
             "count": 0,
             "runs_dir": str(runs_dir()),
-            "hint": "no run records. Run a notebook in notebooks/ on a Colab "
-                    "kernel, let its last cell push, then git pull.",
+            "hint": "no run records. Run an experiment with colab_sync.py run; "
+                    "records are pulled back automatically.",
         })
         return
 

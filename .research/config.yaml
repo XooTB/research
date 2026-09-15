@@ -20,22 +20,19 @@ datasets:
   verify_sample_rows: 1000     # rows to sample when profiling large files
 
 colab:
-  # How a Google Colab runtime gets this workspace. git | drive
-  mode: git
-  repo_url: github.com/XooTB/research.git
-  branch: main
-  # Name of the Colab Secret holding a GitHub PAT (needed only if repo is
-  # private). Set it in Colab: key icon in the left sidebar -> Add new secret.
-  token_secret: GITHUB_TOKEN
-  # Where the workspace is materialized on the runtime (ephemeral disk).
+  # Colab sessions are driven from the terminal by agent/scripts/colab_sync.py,
+  # which wraps Google's colab CLI (uv tool install google-colab-cli). Code and
+  # datasets upload from the local working tree; nothing is cloned or pushed.
+  auth: oauth2                 # oauth2 | adc — must match how the CLI was authenticated
+  session: research            # default session name
+  gpu: T4                      # requested by `start`; falls back to CPU if not granted
+  # Where the workspace lives on the runtime (ephemeral disk).
   runtime_dir: /content/research
-  # Cloned up front via sparse-checkout; datasets are added on demand so the
-  # runtime never pulls the full 1.4 GB datasets/ tree.
-  sparse_paths: [agent, .research, docs, notebooks]
-  # Drive mode only: workspace bundle unpacked from here, relative to the
-  # Drive mount root (/content/drive).
-  drive_dir: MyDrive/research-colab
-  requirements: agent/requirements-colab.txt
+  # Always synced (incrementally). Datasets are added per session with --dataset.
+  sync_paths: [agent, notebooks, .research/config.yaml]
+  requirements: agent/requirements-colab.txt   # pip-installed on the runtime when it changes
+  exec_timeout: 3600           # seconds for `run`; longer work goes through `job`
+  upload_chunk_mb: 40
   default_topic: ovarian-cancer-prognosis-ml
 
 credentials:

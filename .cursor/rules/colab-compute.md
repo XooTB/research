@@ -1,40 +1,39 @@
 ---
-description: Route GPU/ML work to Google Colab; this machine has no GPU
+description: Route GPU/ML work to Google Colab, driven by the agent via colab_sync.py; this machine has no GPU
 alwaysApply: true
 ---
 
-# GPU work goes to Colab
+# ML work runs on Colab, and the agent runs it
 
 This machine has **no GPU**, and the local `.venv` is Python 3.14 with only
 `requests` and `pymupdf`. Do not try to fix that.
 
 - Never `pip install` torch / pandas / scikit-learn into `.venv`. Most have no
   3.14 wheels, and the local env is deliberately minimal.
-- Anything needing an accelerator, the ML stack, or more RAM than ~14 GB runs on
-  a Colab runtime attached to a notebook in `notebooks/`.
-- Read `.cursor/skills/colab-compute/SKILL.md` before writing or changing any
-  notebook, `agent/scripts/colab_env.py`, or `colab_check.py`.
+- Anything needing the ML stack, an accelerator, or more than ~14 GB RAM runs on
+  a Colab session through `agent/scripts/colab_sync.py` (wraps Google's `colab` CLI).
+- Read `.cursor/skills/colab-compute/SKILL.md` before writing experiment code or
+  notebooks, or changing `colab_sync.py` / `colab_env.py`.
 
-## The one thing that always breaks
+## Run it yourself, iterate as much as the task needs
 
-The runtime clones the **GitHub remote**. Uncommitted or unpushed work does not
-exist as far as a notebook is concerned. Before handing a notebook to the user
-to run: commit, push, then `colab_check.py --dataset <slug>` must exit 0.
+```bash
+.venv/bin/python agent/scripts/colab_sync.py start --dataset <slug>        # once per work session
+.venv/bin/python agent/scripts/colab_sync.py run <script.py|nb.ipynb> [args] # edit → run → read → decide → repeat
+.venv/bin/python agent/scripts/colab_sync.py stop                           # always, when done
+```
 
-## Executing cells is the user's step
+- The local working tree is what runs. No commit, push, or clone is needed;
+  `run` uploads only changed files and pulls run records back.
+- Decide from what you read back — `run`'s output and exit code,
+  `colab_runs.py --last` / `--compare`. Never report a result you did not read.
+- `stop` the session when finished, when blocked, or before handing back to the
+  user. Idle sessions burn quota.
+- If the CLI reports an auth error, stop and ask the user to re-authenticate
+  (skill: one-time setup). Never retry in a loop.
 
-Agents cannot run cells on a Colab kernel — there is no tool for it and no
-terminal on the runtime. So the loop is:
+## Iterate without overfitting the validators
 
-1. Agent edits code/notebook, runs the pre-flight, commits and pushes
-2. Agent tells the user exactly which notebook to run and what to expect,
-   and to **save it** afterwards so cell output is written to disk
-3. Agent reads results back with
-   `colab_runs.py --import-notebook <nb>` then `--last` / `--compare`
-4. Agent verifies against expectations and iterates
-
-Saved cell output is the reliable channel: the extension does not support
-Colab Secrets, so the runtime has no credentials and cannot push on its own.
-
-Never claim a notebook's results were verified unless you read them back from a
-`run.json` via step 4. Do not silently wait for cells to be run.
+Tune and select models on **training-pool cross-validation only**. Score
+external validation cohorts once per frozen candidate and record it; never loop
+on their numbers (docs/current-focus-overall-survival.md §2).
