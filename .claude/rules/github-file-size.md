@@ -1,0 +1,1 @@
+../../.cursor/rules/github-file-size.md

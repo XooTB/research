@@ -1,7 +1,7 @@
 ---
 name: colab-compute
 description: >-
-  Run machine learning on a free Google Colab GPU/TPU from inside Cursor, using
+  Run machine learning on a free Google Colab GPU/TPU from Cursor, VS Code, or Claude Code, using
   this workspace's datasets and scripts. Use whenever work needs an accelerator
   or more RAM than the local machine has — training models, CUDA/torch code,
   large matrix or survival modelling, "I don't have a GPU", jobs that are too
@@ -19,7 +19,7 @@ split drives every rule below.
 
 | Constraint | Consequence |
 |---|---|
-| No terminal on the runtime (Cursor's Remote Tunnels / SSH don't apply) | Everything shell-shaped goes in a cell: `!cmd` or `subprocess.run` |
+| No terminal on the runtime (editor Remote Tunnels / SSH don't apply) | Everything shell-shaped goes in a cell: `!cmd` or `subprocess.run` |
 | Runtime filesystem is empty and ephemeral | The repo must be cloned in every session; results must be pushed or copied out before it dies |
 | The runtime clones the **GitHub remote**, not the local disk | Uncommitted or unpushed work is invisible to the runtime. Always push first |
 | Free-tier sessions get reclaimed (idle in minutes, ~12h ceiling) and usually give a T4 | Checkpoint long runs to Drive; don't plan multi-hour uninterrupted training |
@@ -39,7 +39,9 @@ Read it with `common.cfg("colab.<key>")`; never hardcode paths in scripts.
 One-time user setup, in this order:
 
 ```
-- [ ] Google Colab extension installed in Cursor (publisher: Google)
+- [ ] Google Colab extension installed in Cursor or VS Code (publisher: Google).
+      Claude Code agents edit and read notebooks from the terminal; the user
+      runs cells in the editor
 - [ ] Private repo only: GitHub PAT saved as a Colab secret named GITHUB_TOKEN
       (key icon in Colab's sidebar) with "Notebook access" enabled
 - [ ] Kernel selected: Select Kernel -> Colab -> New Colab Server -> GPU

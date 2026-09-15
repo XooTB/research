@@ -1,0 +1,1 @@
+../../.cursor/rules/colab-compute.md

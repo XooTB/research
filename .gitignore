@@ -5,6 +5,7 @@ __pycache__/
 *.egg-info/
 .DS_Store
 .ipynb_checkpoints/
+.claude/settings.local.json
 
 # BEGIN github-pack (generated — do not edit)
 # Unpacked originals stay on disk for work; git tracks the zip/parts.

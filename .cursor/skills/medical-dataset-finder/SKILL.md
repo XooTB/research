@@ -34,7 +34,7 @@ A single `.xlsx` file with one worksheet ("Datasets"), 5 data rows, and these co
 
 ### Step 1 — Search every source
 
-Run `web_search` (the conversation-level tool) once per source. Do **not** use bash `curl` / `wget` for this — the bash environment usually can't reach kaggle.com, huggingface.co, physionet.org, etc. directly.
+Run the agent's web search tool (`web_search` in Cursor, `WebSearch` in Claude Code) once per source. Do **not** use bash `curl` / `wget` for this — the bash environment usually can't reach kaggle.com, huggingface.co, physionet.org, etc. directly.
 
 Use these query templates as a starting point (substitute the topic):
 
