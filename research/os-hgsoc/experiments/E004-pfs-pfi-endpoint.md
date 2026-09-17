@@ -2,14 +2,14 @@
 id = "E004"
 title = "PFS/PFI endpoint follow-on"
 status = "planned"
-priority = 3
+priority = 1
 depends_on = ["E003", "T003"]
 summary = "Repeat the platform-disjoint design for progression-free survival / PFI once OS first pass is in and CDR labels exist."
 hypothesis = "Expression carries more signal for early progression than for overall survival."
 runs = []
 tags = ["pfs", "pfi", "endpoint"]
 created = "2026-09-17"
-updated = "2026-09-17"
+updated = "2026-09-18"
 +++
 ## Plan
 Scope after E003: which cohorts carry PFS/PFI (CDR PFI for TCGA), whether the success rule

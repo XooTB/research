@@ -13,7 +13,7 @@ created = "2026-08-27"
 updated = "2026-09-18"
 
 criterion_hash = "08dd934a4a64"
-outcome = "Verdict supported: expr_clin_cox beat transported clinical by ΔC ≥ 0.03 on 3/5 validators (GSE17260 +0.091, GSE32062 +0.047, GSE49997 +0.044; pooled +0.036 [0.010, 0.061]). Gene-only models did not beat clinical (pooled ≤ 0). Caveat F010: two passing cohorts may share patients (T006)."
+outcome = "Verdict supported: expr_clin_cox beat transported clinical by ΔC ≥ 0.03 on 3/5 validators (GSE17260 +0.091, GSE32062 +0.047, GSE49997 +0.044); gene-only models did not. GSE17260 is 37% redundant with GSE32062 (F012); pooled ΔC +0.036, or +0.030 [0.007, 0.052] without it (D010)."
 verdict = "supported"
 verdict_basis = "need 2 cohorts >= 0.03: expr_clin_cox: 3/5 (gse17260,gse32062,gse49997)"
 [criterion]
@@ -68,10 +68,16 @@ What it means, with the caveats that belong next to it:
   replacement (F009).
 - The expression score is consistent in direction: HR per SD adjusted for residual + stage
   1.13–1.52 on all five validators, LR p < 0.05 on four.
-- **Independence is unverified.** Two of the three passing cohorts (GSE32062, GSE17260) are
-  Yoshihara GPL6480 series that may share patients (F010); GSE49997's CI crosses 0 and its
-  follow-up is immature (F008). T006 must settle the overlap before this is called a
-  replicated result.
+- **Independence: settled, and it costs one of the three.** T006 confirmed that 26-41 of
+  GSE17260's 110 patients are also in GSE32062 (F012), so those two are not independent
+  replications of each other. This is not train/test leakage - the training pool holds no
+  Agilent data - but by D010 the independent validators are GSE32062, GSE53963, GSE140082 and
+  GSE49997, and GSE17260 is a redundant sensitivity result. Re-aggregating the recorded rows
+  without it gives pooled dC +0.030 [+0.007, +0.052] (I2 = 0.27) versus +0.036 [+0.010, +0.061]
+  with it: the direction survives, the independent replication count does not. On independent
+  cohorts the rule is cleared by GSE32062 (+0.047 [0.021, 0.071]) and GSE49997
+  (+0.044 [-0.022, 0.108], immature follow-up, CI crosses 0). GSE53963 is independent of both
+  Japanese series and showed nothing (+0.004).
 - The effect sizes sit inside the workstream's expected ceiling (external C 0.62–0.69 for the
   combined model vs 0.58–0.62 clinical). Nothing here supports "accurate" prediction of death.
 - Internal pool CV (cohort-stratified OOF) was 0.525 clinical vs 0.539 combined on the 445

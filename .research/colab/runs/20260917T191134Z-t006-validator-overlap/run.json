@@ -1,0 +1,653 @@
+{
+  "name": "t006-validator-overlap",
+  "saved_at": "20260917T191134Z",
+  "provenance": {
+    "via": "colab_sync",
+    "experiment": null,
+    "command": "run",
+    "session": "research",
+    "script": "agent/experiments/t006_validator_overlap.py",
+    "args": [],
+    "invoked_at": "20260917T191124Z",
+    "git": {
+      "head": "2240b9f059e7d4d57b4be90f3c71c936b9aa0d31",
+      "branch": "main",
+      "dirty": true,
+      "code_commit": "d233a152916b82c8e11941a3384f5fcfcd0ac546",
+      "code_ref": "refs/runs/20260917T191124Z-t006-validator-overlap"
+    },
+    "datasets": {
+      "datasets/ovarian-cancer-prognosis-ml/os-validation": {
+        "files": 9,
+        "bytes": 284682798,
+        "sha256": "d778eac57406d8ca"
+      }
+    }
+  },
+  "env": {
+    "colab": true,
+    "python": "3.13.15",
+    "workspace": "/content/research",
+    "workspace_present": true,
+    "cpu_count": 2,
+    "ram_gb": 13.6,
+    "disk_free_gb": 69.6,
+    "gpu": {
+      "available": true,
+      "name": "Tesla T4",
+      "memory_mb": 15360,
+      "driver": "580.82.07",
+      "torch_cuda": true,
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "validation": [],
+  "metrics": [
+    {
+      "model": "profile_correlation",
+      "cohort": "gse32062-vs-gse53963",
+      "split": "external",
+      "metric": "max_cross_cohort_r",
+      "value": 0.13742369861817244,
+      "n": 41600
+    },
+    {
+      "model": "profile_correlation",
+      "cohort": "gse32062-vs-gse53963",
+      "split": "external",
+      "metric": "n_samples_flagged",
+      "value": 0.0,
+      "n": 260
+    },
+    {
+      "model": "profile_correlation",
+      "cohort": "gse32062-vs-gse17260",
+      "split": "external",
+      "metric": "max_cross_cohort_r",
+      "value": 0.48600049796737327,
+      "n": 28600
+    },
+    {
+      "model": "profile_correlation",
+      "cohort": "gse32062-vs-gse17260",
+      "split": "external",
+      "metric": "n_samples_flagged",
+      "value": 0.0,
+      "n": 260
+    },
+    {
+      "model": "profile_correlation",
+      "cohort": "gse53963-vs-gse17260",
+      "split": "external",
+      "metric": "max_cross_cohort_r",
+      "value": 0.4573377591194071,
+      "n": 17600
+    },
+    {
+      "model": "profile_correlation",
+      "cohort": "gse53963-vs-gse17260",
+      "split": "external",
+      "metric": "n_samples_flagged",
+      "value": 0.0,
+      "n": 160
+    },
+    {
+      "model": "clinical_fingerprint",
+      "cohort": "gse32062-vs-gse53963",
+      "split": "external",
+      "metric": "n_candidate_matches",
+      "value": 0.0
+    },
+    {
+      "model": "clinical_fingerprint",
+      "cohort": "gse32062-vs-gse17260",
+      "split": "external",
+      "metric": "n_candidate_matches",
+      "value": 29.0
+    },
+    {
+      "model": "clinical_fingerprint",
+      "cohort": "gse53963-vs-gse17260",
+      "split": "external",
+      "metric": "n_candidate_matches",
+      "value": 0.0
+    }
+  ],
+  "result": {
+    "task": "T006 patient overlap between GPL6480 validators",
+    "threshold": 0.95,
+    "n_genes": 3000,
+    "cohort_sizes": {
+      "gse32062": 260,
+      "gse53963": 160,
+      "gse17260": 110
+    },
+    "cross_cohort": [
+      {
+        "pair": "gse32062|gse53963",
+        "n_a": 260,
+        "n_b": 160,
+        "max": 0.13742369861817244,
+        "p99": 0.016843695865349506,
+        "median": -0.15248565819613302,
+        "n_flagged": 0
+      },
+      {
+        "pair": "gse32062|gse17260",
+        "n_a": 260,
+        "n_b": 110,
+        "max": 0.48600049796737327,
+        "p99": 0.26940113281314626,
+        "median": 0.008523349767806662,
+        "n_flagged": 0
+      },
+      {
+        "pair": "gse53963|gse17260",
+        "n_a": 160,
+        "n_b": 110,
+        "max": 0.4573377591194071,
+        "p99": 0.27167656376992844,
+        "median": -0.0029702330009759026,
+        "n_flagged": 0
+      }
+    ],
+    "within_cohort": {
+      "gse32062": {
+        "max": 0.9910159927902016,
+        "p99": 0.9595104905576307,
+        "median": 0.9210454759458894
+      },
+      "gse53963": {
+        "max": 0.9389087920071589,
+        "p99": 0.5515269400014057,
+        "median": 0.2573865974480941
+      },
+      "gse17260": {
+        "max": 0.7142699269997121,
+        "p99": 0.3545149206201259,
+        "median": -0.012867119868094046
+      }
+    },
+    "flagged_pairs": [],
+    "fingerprint_pair_correlations": {
+      "n_pairs": 28,
+      "median_r": 0.16590720293197025,
+      "max_r": 0.38562197299447076,
+      "background_median_r": 0.008523349767806662,
+      "background_p99_r": 0.26940113281314626,
+      "pct_above_background_p99": 0.2857142857142857,
+      "median_rank_of_partner_in_260": 1.0,
+      "n_partner_is_top1": 21,
+      "n_partner_in_top10": 23
+    },
+    "mutual_best_matches": {
+      "n_gse17260": 110,
+      "n_gse32062": 260,
+      "n_mutual_best": 22,
+      "expected_by_chance": 0.42,
+      "n_mutual_also_fingerprint_confirmed": 7,
+      "n_fingerprint_confirmed": 28,
+      "median_r_mutual": 0.3278194713231594
+    },
+    "mutual_pairs": [
+      {
+        "gse17260": "GSM432226",
+        "gse32062": "GSM795082"
+      },
+      {
+        "gse17260": "GSM432229",
+        "gse32062": "GSM795062"
+      },
+      {
+        "gse17260": "GSM432234",
+        "gse32062": "GSM794868"
+      },
+      {
+        "gse17260": "GSM432237",
+        "gse32062": "GSM794870"
+      },
+      {
+        "gse17260": "GSM432238",
+        "gse32062": "GSM794871"
+      },
+      {
+        "gse17260": "GSM432254",
+        "gse32062": "GSM794883"
+      },
+      {
+        "gse17260": "GSM432257",
+        "gse32062": "GSM794886"
+      },
+      {
+        "gse17260": "GSM432261",
+        "gse32062": "GSM794910"
+      },
+      {
+        "gse17260": "GSM432263",
+        "gse32062": "GSM794890"
+      },
+      {
+        "gse17260": "GSM432270",
+        "gse32062": "GSM794895"
+      },
+      {
+        "gse17260": "GSM432276",
+        "gse32062": "GSM794899"
+      },
+      {
+        "gse17260": "GSM432280",
+        "gse32062": "GSM794903"
+      },
+      {
+        "gse17260": "GSM432290",
+        "gse32062": "GSM794959"
+      },
+      {
+        "gse17260": "GSM432305",
+        "gse32062": "GSM795050"
+      },
+      {
+        "gse17260": "GSM432308",
+        "gse32062": "GSM795086"
+      },
+      {
+        "gse17260": "GSM432314",
+        "gse32062": "GSM795109"
+      },
+      {
+        "gse17260": "GSM432316",
+        "gse32062": "GSM795111"
+      },
+      {
+        "gse17260": "GSM432319",
+        "gse32062": "GSM795114"
+      },
+      {
+        "gse17260": "GSM432323",
+        "gse32062": "GSM795118"
+      },
+      {
+        "gse17260": "GSM432324",
+        "gse32062": "GSM795119"
+      },
+      {
+        "gse17260": "GSM432326",
+        "gse32062": "GSM795120"
+      },
+      {
+        "gse17260": "GSM432330",
+        "gse32062": "GSM795124"
+      }
+    ],
+    "top_pairs": [
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse53963",
+        "sample_a": "GSM795086",
+        "sample_b": "GSM1304363",
+        "r": 0.13742369861817244
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse53963",
+        "sample_a": "GSM795002",
+        "sample_b": "GSM1304363",
+        "r": 0.12516563636019876
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse53963",
+        "sample_a": "GSM794890",
+        "sample_b": "GSM1304363",
+        "r": 0.11760526310736379
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse53963",
+        "sample_a": "GSM794914",
+        "sample_b": "GSM1304363",
+        "r": 0.116802282580189
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse53963",
+        "sample_a": "GSM794924",
+        "sample_b": "GSM1304363",
+        "r": 0.11477226031908493
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794959",
+        "sample_b": "GSM432290",
+        "r": 0.48600049796737327
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794903",
+        "sample_b": "GSM432280",
+        "r": 0.38562197299447076
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795086",
+        "sample_b": "GSM432308",
+        "r": 0.3747113303671732
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794870",
+        "sample_b": "GSM432237",
+        "r": 0.36822380544865835
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795119",
+        "sample_b": "GSM432324",
+        "r": 0.36586949371334304
+      },
+      {
+        "cohort_a": "gse53963",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM1304369",
+        "sample_b": "GSM432258",
+        "r": 0.4573377591194071
+      },
+      {
+        "cohort_a": "gse53963",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM1304346",
+        "sample_b": "GSM432307",
+        "r": 0.4540158345024485
+      },
+      {
+        "cohort_a": "gse53963",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM1304252",
+        "sample_b": "GSM432271",
+        "r": 0.4514926480394771
+      },
+      {
+        "cohort_a": "gse53963",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM1304374",
+        "sample_b": "GSM432258",
+        "r": 0.4395770653832382
+      },
+      {
+        "cohort_a": "gse53963",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM1304374",
+        "sample_b": "GSM432271",
+        "r": 0.43819057008404283
+      }
+    ],
+    "clinical_fingerprint_matches": [
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794871",
+        "sample_b": "GSM432238",
+        "os_time_days": 730.5,
+        "os_event": 1,
+        "r": 0.28314857002602856
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794876",
+        "sample_b": "GSM432244",
+        "os_time_days": 395.6875,
+        "os_event": 1,
+        "r": 0.11407913697499987
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794879",
+        "sample_b": "GSM432248",
+        "os_time_days": 1887.125,
+        "os_event": 1,
+        "r": 0.19900978852634246
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794880",
+        "sample_b": "GSM432277",
+        "os_time_days": 1978.4375,
+        "os_event": 0,
+        "r": 0.07205528830652924
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794896",
+        "sample_b": "GSM432271",
+        "os_time_days": 1247.9375,
+        "os_event": 1,
+        "r": -0.22754346519344393
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794897",
+        "sample_b": "GSM432273",
+        "os_time_days": 1430.5625,
+        "os_event": 1,
+        "r": -0.12381940249505966
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794900",
+        "sample_b": "GSM432277",
+        "os_time_days": 1978.4375,
+        "os_event": 0,
+        "r": 0.21515396439983817
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794901",
+        "sample_b": "GSM432278",
+        "os_time_days": 1004.4375,
+        "os_event": 0,
+        "r": 0.11121793676535446
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794902",
+        "sample_b": "GSM432263",
+        "os_time_days": 882.6875,
+        "os_event": 0,
+        "r": 0.09978169324376035
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794902",
+        "sample_b": "GSM432279",
+        "os_time_days": 882.6875,
+        "os_event": 0,
+        "r": 0.1404410939721483
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794907",
+        "sample_b": "GSM432278",
+        "os_time_days": 1004.4375,
+        "os_event": 0,
+        "r": -0.10392771177395906
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794908",
+        "sample_b": "GSM432284",
+        "os_time_days": 2435.0,
+        "os_event": 1,
+        "r": 0.17929994806674207
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794915",
+        "sample_b": "GSM432225",
+        "os_time_days": 1126.1875,
+        "os_event": 0,
+        "r": 0.07865543084702031
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794935",
+        "sample_b": "GSM432263",
+        "os_time_days": 882.6875,
+        "os_event": 0,
+        "r": 0.1699974597342912
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794935",
+        "sample_b": "GSM432279",
+        "os_time_days": 882.6875,
+        "os_event": 0,
+        "r": -0.018506756677412143
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794939",
+        "sample_b": "GSM432251",
+        "os_time_days": 1339.25,
+        "os_event": 0,
+        "r": 0.04753624241341387
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794942",
+        "sample_b": "GSM432274",
+        "os_time_days": 1521.875,
+        "os_event": 0,
+        "r": -0.13308982986973195
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794950",
+        "sample_b": "GSM432287",
+        "os_time_days": 852.25,
+        "os_event": 1,
+        "r": 0.2759763701497901
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM794958",
+        "sample_b": "GSM432289",
+        "os_time_days": 1948.0,
+        "os_event": 1,
+        "r": 0.2593196095615634
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795040",
+        "sample_b": "GSM432220",
+        "os_time_days": 1674.0625,
+        "os_event": 0,
+        "r": -0.08643105427418125
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795058",
+        "sample_b": "GSM432265",
+        "os_time_days": 1491.4375,
+        "os_event": 0,
+        "r": 0.018723132420604915
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795066",
+        "sample_b": "GSM432250",
+        "os_time_days": 1400.125,
+        "os_event": 0,
+        "r": -0.17948999321822054
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795080",
+        "sample_b": "GSM432306",
+        "os_time_days": 974.0,
+        "os_event": 1,
+        "r": 0.07985331258380633
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795094",
+        "sample_b": "GSM432302",
+        "os_time_days": 913.125,
+        "os_event": 0,
+        "r": 0.03588167317087991
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795102",
+        "sample_b": "GSM432274",
+        "os_time_days": 1521.875,
+        "os_event": 0,
+        "r": -0.1398760887666027
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795105",
+        "sample_b": "GSM432314",
+        "os_time_days": 639.1875,
+        "os_event": 0,
+        "r": 0.10191909268119874
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795110",
+        "sample_b": "GSM432315",
+        "os_time_days": 1278.375,
+        "os_event": 1,
+        "r": 0.2569135572064171
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795111",
+        "sample_b": "GSM432316",
+        "os_time_days": 791.375,
+        "os_event": 1,
+        "r": 0.2987334319254104
+      },
+      {
+        "cohort_a": "gse32062",
+        "cohort_b": "gse17260",
+        "sample_a": "GSM795113",
+        "sample_b": "GSM432318",
+        "os_time_days": 821.8125,
+        "os_event": 1,
+        "r": 0.2247779404391578
+      }
+    ]
+  }
+}

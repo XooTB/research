@@ -6,41 +6,39 @@
 Rank high-grade serous ovarian cancer patients by hazard of death from primary-tumour expression + age, FIGO stage, residual disease; must beat a clinical-only baseline on external cohorts.
 
 **Success rule:** `delta_c_vs_clinical_transported` >= 0.03 on ≥ 2 external cohorts (same model)
-**Milestones:** M1 ☐ (T002, T003, T004) · M2 ✓ · M3 ✓ · M4 ✓ · M5 ☐ (T005)
+**Milestones:** M1 ☐ (T002, T004) · M2 ✓ · M3 ✓ · M4 ✓ · M5 ☐ (T005)
 
 ### In flight
 - (nothing running)
 
 ### Next up (ready, by priority)
-- **T006** p1: Cross-correlate GPL6480 expression profiles between the three Yoshihara validators; duplicates show near-1 correlation. Decide whether E003's replication is on independent patients.
+- **E004** p1: Repeat the platform-disjoint design for progression-free survival / PFI once OS first pass is in and CDR labels exist.
 - **T002** p2: Get OS labels for GSE9891 (285 samples, Affy GPL570); drop 18 LMP samples; decide its role (same-platform external control).
-- **T003** p2: Download TCGA-CDR-SupplementalTableS1.xlsx; standardized TCGA OS/DSS/PFI to replace Xena OS and unlock PFI.
 - **T004** p3: Raise TCGA OS n from 302 to ~550 and put more of the pool on GPL96; large file, pack with github_pack.py.
 - **T005** p4: Internal vs external performance, honest ceiling discussion, comparison to Riester/Waldron-era signatures.
 
-### Blocked
-- E004 ← waiting on T003
-
 ### Latest outcomes
-- E003 (done [supported]): Verdict supported: expr_clin_cox beat transported clinical by ΔC ≥ 0.03 on 3/5 validators (GSE17260 +0.091, GSE32062 +0.047, GSE49997 +0.044; pooled +0.036 [0.010, 0.061]). Gene-only models did not beat clinical (pooled ≤ 0). Caveat F010: two passing cohorts may share patients (T006).
+- T006 (done): Confirmed: 26/110 GSE17260 patients match GSE32062 on all 7 clinical fields (p=0.005), 21/28 are each other's best expression match, union of criteria 41/110 (37%). GSE53963 independent. Not train/test leakage; GSE17260 is a redundant replication (F012, D010).
+- T003 (done): PanCanAtlas CDR downloaded and converted (587 OV patients). All 302 pool patients matched; 1 OS event disagreement, median OS time difference 0 days; PFI now available for all 302 plus 285 more OV patients (F011).
+- E003 (done [supported]): Verdict supported: expr_clin_cox beat transported clinical by ΔC ≥ 0.03 on 3/5 validators (GSE17260 +0.091, GSE32062 +0.047, GSE49997 +0.044); gene-only models did not. GSE17260 is 37% redundant with GSE32062 (F012); pooled ΔC +0.036, or +0.030 [0.007, 0.052] without it (D010).
 - T001 (done): Pool 751 patients / 485 deaths, validation 892 / 410, 11,474 symbols; all verify commands pass.
 - E002 (done): CV AUC 0.695 (expr+clin ENET) vs clinical 0.646 on TCGA, but external AUC 0.615 (GSE26712) / 0.505 (GSE14764).
-- E001 (done): Transfers poorly: external C 0.560 (GSE26712) / 0.530 (GSE14764), log-rank n.s.; TCGA CV C 0.605 vs clinical 0.615.
 
 ### Recent findings
-- F010 (2026-09-18): Two of the three validators that passed are Yoshihara GPL6480 series that may share patients
+- F012 (2026-09-18): GSE17260 shares at least a quarter of its patients with GSE32062; GSE53963 is independent
+- F011 (2026-09-18): PanCanAtlas CDR agrees with Xena TCGA-OV OS labels and adds PFI
 - F009 (2026-09-18): Expression adds replicated prognostic value over clinical only when combined with it; gene-only models do not transfer
 - F008 (2026-08-27): Two validators have immature follow-up
 - F007 (2026-08-27): Event definitions are heterogeneous across cohorts
-- F006 (2026-08-27): GSE9891 has no survival data on disk
 
 ### Recent decisions
+- D010 (2026-09-18): Treat GSE17260 as redundant with GSE32062 when counting independent replications
 - D009 (2026-09-17): E003 primary model is two-stage expression + clinical Cox; verdict on it alone
 - D008 (2026-09-17): Remove legacy notebooks and abandoned dataset topics
-- D007 (2026-09-17): Track research in markdown + TOML with a computed index (research.py)
 
-### Last handoff (2026-09-18 00:11 · E003 first pass: expr+clinical beats clinical on 3/5)
-Did: added the primary expression+clinical model to E003 before running it (D009: two-stage LASSO score + residual + stage, pool-fit, cohort-stratified; E003 criterion restricted to expr_clin_cox to avoid best-of-four multiplicity); switched LASSO stage 1 from lifelines L1 (did not finish in 1 h on 500 genes) to sksurv Coxnet; added paired-bootstrap ΔC CIs, DL pooled ΔC, adjusted HR/SD + LR test per validator, KM figure saved with the run, and a dry-run mode (a run not linked to E003 uses synthetic validation outcomes and registers nothing). Ran E003 once on Colab T4: verdict supported, 3/5 va …
+### Last handoff (2026-09-18 01:14 · T006 independence + T003 CDR labels)
+Did: closed T006 (GSE17260 shares 26-41 of 110 patients with GSE32062: 7-field clinical fingerprint p=0.005, 21/28 pairs mutual top-1 expression match; GSE53963 independent — F012 supersedes F010, D010 sets how we count independent replications). Closed T003 via sub-agent (PanCanAtlas CDR: 587 OV patients, all 302 pool patients matched, 1 event disagreement, median OS diff 0 d, PFI now available — F011; stdlib xlsx converter added as agent/scripts/xlsx_to_csv.py). Updated E003's outcome and interpretation with the independence result.
+State: E003 done (verdict supported, unchanged — the rule w …
 
 ---
 Query, don't read files: `research.py next` · `show E003` · `find <words>` · `refs <cohort|dataset|id>` · `results --metric <m> --split external` · `verdict E003`. Guide: `.cursor/skills/research-tracker/SKILL.md`.
