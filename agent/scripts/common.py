@@ -90,6 +90,31 @@ def ws_path(config_key: str, fallback: str) -> Path:
     return p if p.is_absolute() else (WORKSPACE / p)
 
 
+def ws_rel(path: str | Path | None) -> str | None:
+    """Workspace-relative POSIX string for a path inside the workspace.
+
+    The library DB stores paths this way so it stays valid in any clone and on
+    the Colab runtime. Paths outside the workspace are returned unchanged.
+    """
+    if path is None or str(path) == "":
+        return None
+    p = Path(path)
+    if not p.is_absolute():
+        return p.as_posix()
+    try:
+        return p.resolve().relative_to(WORKSPACE).as_posix()
+    except ValueError:
+        return p.as_posix()
+
+
+def ws_abs(path: str | Path | None) -> Path | None:
+    """Absolute path for a stored (usually workspace-relative) path."""
+    if path is None or str(path) == "":
+        return None
+    p = Path(path)
+    return p if p.is_absolute() else WORKSPACE / p
+
+
 # ---------------------------------------------------------------------------
 # Slugs / filesystem-safe names
 # ---------------------------------------------------------------------------

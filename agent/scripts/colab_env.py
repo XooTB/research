@@ -490,14 +490,156 @@ def _download_gpl_annot(acc: str, dest: Path) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Provenance: which code and data produced a record
+# ---------------------------------------------------------------------------
+RUN_CONTEXT_ENV = "RESEARCH_RUN_CONTEXT"
+
+
+def run_context() -> dict:
+    """Provenance for the current execution.
+
+    `colab_sync.py run|job` snapshots the local working tree (a git commit under
+    refs/runs/ when it has uncommitted changes), fingerprints the pushed
+    datasets, and hands that to the runtime in $RESEARCH_RUN_CONTEXT. Local
+    executions fall back to the checkout's git state; anything else is marked
+    unknown so it can't pass for a traceable result.
+    """
+    from json import loads
+
+    raw = os.environ.get(RUN_CONTEXT_ENV)
+    if raw:
+        try:
+            return loads(raw)
+        except ValueError:
+            eprint(f"! unparseable ${RUN_CONTEXT_ENV}; provenance unknown")
+            return {"via": "unknown", "error": f"unparseable ${RUN_CONTEXT_ENV}"}
+    if (WORKSPACE / ".git").exists() and shutil.which("git"):
+        def git(*args: str) -> str:
+            return subprocess.run(["git", "-C", str(WORKSPACE), *args], capture_output=True,
+                                  text=True, check=False).stdout.strip()
+        return {"via": "local", "script": sys.argv[0] or None, "args": sys.argv[1:],
+                "git": {"head": git("rev-parse", "HEAD") or None,
+                        "branch": git("rev-parse", "--abbrev-ref", "HEAD") or None,
+                        "dirty": bool(git("status", "--porcelain", "--untracked-files=no"))}}
+    return {"via": "unknown"}
+
+
+# ---------------------------------------------------------------------------
+# Validation ledger: external cohorts are scored once per frozen candidate
+# ---------------------------------------------------------------------------
+LEDGER_REL = ".research/validation-ledger.jsonl"
+_pending_validation: list[dict] = []
+
+
+class ValidationAlreadyScored(RuntimeError):
+    pass
+
+
+def ledger_path() -> Path:
+    return workspace() / LEDGER_REL
+
+
+def read_ledger(path: Path | None = None) -> list[dict]:
+    from json import loads
+
+    path = path or ledger_path()
+    if not path.is_file():
+        return []
+    entries = []
+    for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        if line.strip():
+            try:
+                entries.append(loads(line))
+            except ValueError:
+                eprint(f"! {path}:{n}: unparseable ledger line")
+    return entries
+
+
+def upsert_ledger(entries: list[dict], path: Path | None = None) -> int:
+    """Add entries by `id`; fill in `run` on entries already present. Returns changes."""
+    from json import dumps
+
+    path = path or ledger_path()
+    current = read_ledger(path)
+    by_id = {e.get("id"): e for e in current}
+    changed = 0
+    for entry in entries:
+        have = by_id.get(entry.get("id"))
+        if have is None:
+            current.append(entry)
+            by_id[entry.get("id")] = entry
+            changed += 1
+        elif entry.get("run") and not have.get("run"):
+            have["run"] = entry["run"]
+            changed += 1
+    if changed:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("".join(dumps(e, sort_keys=True) + "\n" for e in current),
+                        encoding="utf-8")
+    return changed
+
+
+def config_hash(config: dict) -> str:
+    from hashlib import sha256
+    from json import dumps
+
+    return sha256(dumps(config, sort_keys=True, default=str).encode()).hexdigest()[:16]
+
+
+def register_validation(candidate: str, cohorts: list[str], *, config: dict | None = None,
+                        reason: str | None = None) -> dict:
+    """Call once, *before* scoring external validation cohorts.
+
+    Tuning and model selection happen on training-pool CV only; a candidate is
+    frozen when it reaches the validators. This refuses to score a candidate
+    (same name, or same `config`) that the ledger says was already scored,
+    unless `reason` says why a re-score is legitimate — and that reason goes in
+    the write-up. The entry is attached to the next `save_run` record and lands
+    in .research/validation-ledger.jsonl when the record is pulled back.
+    """
+    from datetime import datetime, timezone
+    from uuid import uuid4
+
+    chash = config_hash(config) if config is not None else None
+    prior = [e for e in read_ledger() + _pending_validation
+             if e.get("candidate") == candidate or (chash and e.get("config_hash") == chash)]
+    if prior and not reason:
+        seen = ", ".join(f"{e.get('candidate')} @ {e.get('run') or e.get('registered_at')}"
+                         for e in prior)
+        raise ValidationAlreadyScored(
+            f"candidate {candidate!r} was already scored on external validation ({seen}). "
+            "Do not iterate on validation numbers: tune on training-pool CV. If a re-score "
+            "is legitimate (bug fix in scoring, new cohort), pass reason=... and disclose it.")
+
+    ctx = run_context()
+    entry = {
+        "id": uuid4().hex,
+        "candidate": candidate,
+        "config_hash": chash,
+        "cohorts": sorted(cohorts),
+        "reason": reason,
+        "rescore_of": [e.get("id") for e in prior],
+        "registered_at": datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),
+        "code_commit": (ctx.get("git") or {}).get("code_commit") or (ctx.get("git") or {}).get("head"),
+        "run": None,
+    }
+    _pending_validation.append(entry)
+    upsert_ledger([entry])  # visible to later scorings in this session straight away
+    eprint(f"validation registered: {candidate} on {', '.join(entry['cohorts'])}")
+    return entry
+
+
+# ---------------------------------------------------------------------------
 # Getting results back off the runtime
 # ---------------------------------------------------------------------------
 def save_run(name: str, payload: dict, *, files: list[str] | None = None) -> Path:
     """Write a run record under .research/colab/runs/<utc>-<name>/.
 
-    The runtime disk is wiped when the session ends; `colab_sync.py run`,
-    `logs` and `stop` copy new record folders (run.json plus `files`) back to
-    the local workspace, where `colab_runs.py` reads them.
+    The record carries `provenance` (run_context) and any `validation` entries
+    registered since the last save. The runtime disk is wiped when the session
+    ends; `colab_sync.py run`, `logs` and `stop` copy new record folders
+    (run.json plus `files`) back to the local workspace, where `colab_runs.py`
+    reads them.
     """
     from datetime import datetime, timezone
     from json import dumps
@@ -507,8 +649,16 @@ def save_run(name: str, payload: dict, *, files: list[str] | None = None) -> Pat
     out = workspace() / ".research" / "colab" / "runs" / f"{stamp}-{slugify(name)}"
     out.mkdir(parents=True, exist_ok=True)
 
-    record = {"name": name, "saved_at": stamp, "env": report(), "result": payload}
+    validation = [dict(e, run=out.name) for e in _pending_validation]
+    _pending_validation.clear()
+    record = {"name": name, "saved_at": stamp, "provenance": run_context(), "env": report(),
+              "validation": validation, "result": payload}
     (out / "run.json").write_text(dumps(record, indent=2, default=str), encoding="utf-8")
+    if validation:
+        upsert_ledger(validation)
+    if record["provenance"].get("via") == "unknown":
+        eprint("! save_run: provenance unknown — run through colab_sync.py so the record "
+               "can be traced to its code and data")
 
     for f in files or []:
         src = Path(f)

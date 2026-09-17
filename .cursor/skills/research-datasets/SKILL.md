@@ -86,7 +86,11 @@ Profiles every file (columns, rows, dtypes, missing %, formats, size), writes
 `REPORT.md`, and marks the dataset `verified` in the DB. Then **you** write the
 usability verdict: does it have the needed columns/labels? enough rows? clean
 enough? any red flags? Fill the "Usability verdict" section of `REPORT.md` and
-summarize in chat.
+summarize in chat. Re-running verify regenerates the profile but keeps a filled-in
+verdict section. Before verifying something compiled locally rather than
+downloaded, register it with `db.upsert_dataset` (e.g. `source: derived`), or
+`--path` will profile it without recording anything. `workspace_check.py
+--only library` lists datasets on disk that the DB doesn't know about.
 
 ## Inspecting the library
 

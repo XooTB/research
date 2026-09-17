@@ -141,7 +141,9 @@ on Colab or the local checkout otherwise.
 | `ce.ensure_dataset(slug)` · `ce.ensure_os_tables()` | Fail clearly if a dataset was not pushed |
 | `ce.load_geo(slug)` · `ce.geo_xy(slug, label=...)` · `ce.load_xena(slug, name)` · `ce.tcga_os()` | Loaders |
 | `ce.gpl_gene_map("GPL96")` · `ce.collapse_to_genes(X, map)` | Probe → gene symbol |
-| `ce.save_run(name, payload, files=[...])` | `.research/colab/runs/<utc>-<name>/run.json` with an env snapshot |
+| `ce.save_run(name, payload, files=[...])` | `.research/colab/runs/<utc>-<name>/run.json` with provenance, env snapshot, and pending validation entries |
+| `ce.register_validation(candidate, cohorts, config=..., reason=None)` | Record a frozen candidate in the validation ledger **before** scoring external cohorts; refuses a repeat |
+| `ce.run_context()` | The provenance `save_run` stores (from `colab_sync.py`, else local git state) |
 
 ## Long jobs
 
@@ -158,10 +160,33 @@ $PY $S logs rsf-grid        # repeat until exit_code is set; records are pulled 
 ```bash
 .venv/bin/python agent/scripts/colab_runs.py --last       # newest record in full
 .venv/bin/python agent/scripts/colab_runs.py --compare    # metric deltas across runs
+.venv/bin/python agent/scripts/colab_runs.py --ledger     # validation scorings per candidate
 ```
 
 Never report a result as verified unless you read it from a pulled record or
 from `run`'s own output.
+
+## Provenance
+
+Because the uncommitted working tree is what runs, a git commit on its own does
+not identify a result. `run` and `job` therefore record, in every
+`save_run` record's `provenance` block:
+
+- `git.code_commit`: HEAD when the synced code roots (`colab.sync_paths`) are
+  clean, otherwise a snapshot commit of the working tree kept under
+  `refs/runs/<stamp>-<script>`. The branch, index, and working tree are not
+  touched. Reproduce a run with `git checkout <code_commit>` or
+  `git show <code_commit>:path`. Run refs are local; `git push origin 'refs/runs/*'`
+  shares them.
+- `datasets`: per pushed dataset root, file count, bytes, and a sha256 over the
+  files (hashes cached in `.research/colab/hash-cache.json`, gitignored).
+- `script`, `args`, `session`, `command`, `invoked_at`.
+
+The runtime gets this through `$RESEARCH_RUN_CONTEXT`. Records pulled without it
+(e.g. a notebook kernel that didn't see the variable) are stamped locally from
+the same invocation, marked `stamped_locally`. Run things through
+`colab_sync.py`: a record with `provenance.via = "unknown"` can't be traced, and
+`workspace_check.py` flags it.
 
 ## Iterating without overfitting (OS workstream)
 
@@ -169,9 +194,16 @@ A loop that watches external-validation scores will overfit to them. So:
 
 - Make every tuning and model-selection decision on **training-pool
   cross-validation** only.
-- Score `os-validation` cohorts only for a **frozen** candidate, record it with
-  `save_run`, and do not iterate on those numbers. If a validation result sends
-  you back to change the model, say so in the write-up.
+- Score `os-validation` cohorts only for a **frozen** candidate. Call
+  `ce.register_validation(candidate, cohorts, config={...})` before the first
+  line that touches validation outcomes, then `save_run`. The call checks
+  `.research/validation-ledger.jsonl` (synced to the runtime, merged back on
+  every pull) and raises `ValidationAlreadyScored` when the candidate name or
+  its config hash was already scored. Don't work around it by renaming the
+  candidate. If a re-score is legitimate (a scoring bug, a newly attached
+  cohort), pass `reason=` and say so in the write-up.
+- Tuning experiments should push `os-training-pool` only. Push `os-validation`
+  when a candidate is frozen.
 - Always report the clinical-only baseline beside every model
   (`docs/current-focus-overall-survival.md` §2).
 
@@ -200,6 +232,7 @@ agent guide for the installed version. Useful: `colab sessions`, `colab status
 ## Related
 
 - Session driver `agent/scripts/colab_sync.py` · runtime helpers `agent/scripts/colab_env.py` · records `agent/scripts/colab_runs.py`
+- Workspace health (DB/disk, packed files, OS tables, run provenance, ledger): `agent/scripts/workspace_check.py`
 - Smoke test: `agent/experiments/colab_smoke.py`
 - Convert datasets so the runtime can load them: [datasets-to-csv](../datasets-to-csv/SKILL.md)
 - Find and download datasets: [research-datasets](../research-datasets/SKILL.md)

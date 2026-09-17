@@ -29,7 +29,8 @@ colab:
   # Where the workspace lives on the runtime (ephemeral disk).
   runtime_dir: /content/research
   # Always synced (incrementally). Datasets are added per session with --dataset.
-  sync_paths: [agent, notebooks, .research/config.yaml]
+  # The validation ledger rides along so the runtime refuses to re-score a candidate.
+  sync_paths: [agent, notebooks, .research/config.yaml, .research/validation-ledger.jsonl]
   requirements: agent/requirements-colab.txt   # pip-installed on the runtime when it changes
   exec_timeout: 3600           # seconds for `run`; longer work goes through `job`
   upload_chunk_mb: 40

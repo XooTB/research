@@ -47,7 +47,8 @@ All scripts print JSON to stdout and progress/errors to stderr.
 | `ingest_csv.py --csv FILE` | Import an existing dataset shortlist CSV as candidates |
 | `library.py [--papers\|--datasets] [--topic ...] [--status ...]` | List / summarize the library |
 | `colab_sync.py start\|run\|job\|logs\|pull\|status\|stop` | Drive a Colab session: upload code + datasets incrementally, run scripts/notebooks, pull run records back |
-| `colab_runs.py [--last\|--compare] [--name ...]` | Read Colab run records; `--compare` shows metric deltas across runs |
+| `colab_runs.py [--last\|--compare\|--ledger] [--name ...]` | Read Colab run records (with code/data provenance); `--compare` shows metric deltas; `--ledger` lists external-validation scorings |
+| `workspace_check.py [--quick] [--only ...] [--fix]` | Reconcile library DB ↔ disk, packed files, OS table verifies, doc numbers, run provenance, validation ledger, agent symlinks; exits 1 on errors |
 
 ## Sources & credentials
 

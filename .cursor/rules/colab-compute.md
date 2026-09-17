@@ -36,4 +36,12 @@ This machine has **no GPU**, and the local `.venv` is Python 3.14 with only
 
 Tune and select models on **training-pool cross-validation only**. Score
 external validation cohorts once per frozen candidate and record it; never loop
-on their numbers (docs/current-focus-overall-survival.md §2).
+on their numbers (docs/current-focus-overall-survival.md §2). This is enforced:
+call `colab_env.register_validation(...)` before scoring validators, which
+refuses a candidate the ledger (`.research/validation-ledger.jsonl`) already
+holds. Don't rename a candidate to get past it; a legitimate re-score needs
+`reason=` and a mention in the write-up.
+
+Run results carry provenance (code snapshot commit + dataset hashes) only when
+run through `colab_sync.py`. Before committing or reporting, run
+`.venv/bin/python agent/scripts/workspace_check.py --quick` and resolve errors.

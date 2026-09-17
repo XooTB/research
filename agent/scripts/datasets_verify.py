@@ -19,7 +19,8 @@ import json
 from pathlib import Path
 
 import db
-from common import cfg, emit, eprint
+from common import cfg, emit, eprint, ws_abs, ws_rel
+from github_pack import is_pack_artifact
 
 TABULAR = {".csv", ".tsv", ".parquet", ".json", ".jsonl", ".ndjson"}
 
@@ -112,9 +113,31 @@ def profile_file(path: Path, pd, sample_rows: int) -> dict:
     return info
 
 
-def build_report(root: Path, profiles: list[dict]) -> str:
+VERDICT_HEADING = "## Usability verdict"
+VERDICT_PLACEHOLDER = "_(Filled in by the agent based on the profile above and your criteria.)_"
+
+
+def existing_verdict(report_path: Path) -> str | None:
+    """The agent-written verdict section of an existing REPORT.md, if any.
+
+    Re-verifying regenerates the profile, but the verdict below it is written
+    by hand and must survive.
+    """
+    if not report_path.is_file():
+        return None
+    text = report_path.read_text(encoding="utf-8")
+    at = text.find(VERDICT_HEADING)
+    if at < 0:
+        return None
+    body = text[at + len(VERDICT_HEADING):].strip()
+    if not body or body == VERDICT_PLACEHOLDER:
+        return None
+    return text[at:].rstrip() + "\n"
+
+
+def build_report(root: Path, profiles: list[dict], verdict: str | None = None) -> str:
     lines = [f"# Dataset verification report", "",
-             f"**Location:** `{root}`", ""]
+             f"**Location:** `{ws_rel(root)}`", ""]
     total = sum(p.get("size", 0) for p in profiles)
     tabular = [p for p in profiles if "columns" in p]
     lines += [
@@ -140,8 +163,9 @@ def build_report(root: Path, profiles: list[dict]) -> str:
                 lines.append("- Missing values: " + ", ".join(
                     f"{c} {v}%" for c, v in list(flagged.items())[:20]))
         lines.append("")
-    lines += ["## Usability verdict", "",
-              "_(Filled in by the agent based on the profile above and your criteria.)_", ""]
+    if verdict:
+        return "\n".join(lines) + "\n" + verdict
+    lines += [VERDICT_HEADING, "", VERDICT_PLACEHOLDER, ""]
     return "\n".join(lines)
 
 
@@ -159,9 +183,11 @@ def main() -> None:
             eprint(f"No dataset with id {args.id}")
             emit({"error": f"no dataset id {args.id}"})
             return
-        root = Path(row["local_path"]) if row["local_path"] else None
+        root = ws_abs(row["local_path"])
     else:
         root = Path(args.path).resolve()
+        row = conn.execute("SELECT * FROM datasets WHERE local_path=?",
+                           (ws_rel(root),)).fetchone()
 
     if not root or not root.exists():
         emit({"error": f"path not found: {root}"})
@@ -170,13 +196,14 @@ def main() -> None:
     pd = _try_pandas()
     sample_rows = cfg("datasets.verify_sample_rows", 1000)
     profiles = []
+    report_path = root / "REPORT.md"
     for f in sorted(root.rglob("*")):
-        if f.is_file():
+        # Skip our own report and github_pack archives (their originals are profiled).
+        if f.is_file() and f != report_path and not is_pack_artifact(f):
             profiles.append(profile_file(f, pd, sample_rows))
 
-    report = build_report(root, profiles)
-    report_path = root / "REPORT.md"
-    report_path.write_text(report, encoding="utf-8")
+    verdict = existing_verdict(report_path)
+    report_path.write_text(build_report(root, profiles, verdict), encoding="utf-8")
 
     total = sum(p.get("size", 0) for p in profiles)
     tabular = [p for p in profiles if "columns" in p]
@@ -185,7 +212,7 @@ def main() -> None:
 
     if row is not None:
         db.upsert_dataset(conn, {
-            "source": row["source"], "source_id": row["source_id"],
+            "id": row["id"],
             "file_format": "/".join(fmts), "size_bytes": total,
             "n_cols": len(all_cols), "columns": all_cols,
             "verified": True, "status": "verified",
@@ -193,7 +220,9 @@ def main() -> None:
     conn.close()
 
     emit({
-        "path": str(root),
+        "dataset_id": row["id"] if row is not None else None,
+        "verdict_preserved": verdict is not None,
+        "path": ws_rel(root),
         "report": str(report_path),
         "pandas_available": pd is not None,
         "total_size": _human(total),

@@ -26,12 +26,22 @@ Long jobs (beyond colab.exec_timeout) run detached on the VM:
 
 Also: push [--dataset ...], pull, status. Every command takes -s NAME.
 
+Provenance: before `run` / `job` executes, the synced code roots are
+snapshotted into git without touching the branch (HEAD when they are clean,
+otherwise a commit kept under refs/runs/<stamp>) and each pushed dataset is
+fingerprinted (sha256, cached by size+mtime). The runtime receives this in
+$RESEARCH_RUN_CONTEXT and colab_env.save_run() stores it in the record, so any
+result can be traced to `git checkout <code_commit>` plus exact data hashes.
+Validation-ledger entries registered on the runtime are merged into
+.research/validation-ledger.jsonl on every pull.
+
 Environment overrides, for testing against a fake CLI: COLAB_BIN,
 COLAB_SYNC_RUNTIME_DIR, COLAB_SYNC_STAGING, COLAB_SYNC_NO_INSTALL=1.
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -43,7 +53,7 @@ import tempfile
 import time
 from pathlib import Path
 
-from common import WORKSPACE, cfg, emit, eprint
+from common import WORKSPACE, cfg, emit, eprint, slugify
 
 MARK = "===COLAB-SYNC-RESULT==="
 REMOTE = os.environ.get("COLAB_SYNC_RUNTIME_DIR") or cfg("colab.runtime_dir", "/content/research")
@@ -51,6 +61,8 @@ STAGING = os.environ.get("COLAB_SYNC_STAGING") or "/content/.colab-sync"
 MANIFEST = f"{REMOTE}/.colab-sync.json"
 RUNS_REL = ".research/colab/runs"
 JOBS_REL = ".research/colab/jobs"
+LEDGER_REL = ".research/validation-ledger.jsonl"
+HASH_CACHE = WORKSPACE / ".research" / "colab" / "hash-cache.json"
 SESSIONS_DIR = WORKSPACE / ".research" / "colab" / "sessions"
 PACK_MANIFEST = WORKSPACE / ".research" / "github-pack.json"
 SKIP_DIRS = {".git", ".venv", "__pycache__", ".ipynb_checkpoints", "node_modules"}
@@ -197,6 +209,122 @@ def inventory(roots: list[str]) -> dict[str, list[int]]:
 
 
 # ---------------------------------------------------------------------------
+# Provenance (local side)
+# ---------------------------------------------------------------------------
+def _git(*args: str, env: dict | None = None) -> str:
+    proc = subprocess.run(["git", "-C", str(WORKSPACE), *args], capture_output=True,
+                          text=True, env=env, check=False)
+    if proc.returncode != 0:
+        raise ColabError(f"git {' '.join(args)} failed: {proc.stderr.strip()[-500:]}")
+    return proc.stdout.strip()
+
+
+def code_snapshot(code_roots: list[str], label: str) -> dict:
+    """Commit the working-tree state of `code_roots` without touching the branch.
+
+    Uses a throwaway index on top of HEAD, so nothing is staged and no branch
+    moves. Clean roots resolve to HEAD itself; otherwise the commit is kept
+    alive by refs/runs/<stamp>-<label> (local refs, not pushed by default),
+    reusing an existing run ref when the tree is identical.
+    """
+    if not (WORKSPACE / ".git").exists() or not shutil.which("git"):
+        return {"error": "not a git checkout"}
+    try:
+        head = _git("rev-parse", "HEAD")
+        branch = _git("rev-parse", "--abbrev-ref", "HEAD")
+        with tempfile.TemporaryDirectory() as tmp:
+            env = {**os.environ, "GIT_INDEX_FILE": str(Path(tmp) / "index")}
+            _git("read-tree", head, env=env)
+            present = [r for r in code_roots if (WORKSPACE / r).exists()]
+            if present:
+                _git("add", "-A", "--", *present, env=env)
+            tree = _git("write-tree", env=env)
+        out = {"head": head, "branch": branch, "dirty": tree != _git("rev-parse", f"{head}^{{tree}}"),
+               "code_commit": head, "code_ref": None}
+        if not out["dirty"]:
+            return out
+        for line in _git("for-each-ref", "refs/runs", "--format=%(objectname) %(tree) %(refname)").splitlines():
+            commit, ref_tree, ref = line.split(" ", 2)
+            if ref_tree == tree:
+                return {**out, "code_commit": commit, "code_ref": ref}
+        commit = _git("commit-tree", tree, "-p", head, "-m", f"run snapshot: {label}")
+        ref = f"refs/runs/{time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())}-{slugify(label, 40)}"
+        _git("update-ref", ref, commit)
+        return {**out, "code_commit": commit, "code_ref": ref}
+    except ColabError as exc:
+        return {"error": str(exc)}
+
+
+def data_fingerprints(roots: list[str]) -> dict:
+    """{root: {files, bytes, sha256}} over every synced file, hashes cached by size+mtime."""
+    try:
+        cache = json.loads(HASH_CACHE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        cache = {}
+    files = inventory(roots)
+    out = {}
+    for root in roots:
+        digest, total, n = hashlib.sha256(), 0, 0
+        for rel in sorted(r for r in files if _in_roots(r, [root])):
+            size, mtime = files[rel]
+            hit = cache.get(rel)
+            if not hit or hit[:2] != [size, mtime]:
+                h = hashlib.sha256()
+                with (WORKSPACE / rel).open("rb") as fh:
+                    while block := fh.read(1 << 20):
+                        h.update(block)
+                cache[rel] = hit = [size, mtime, h.hexdigest()]
+            digest.update(f"{rel}\t{hit[2]}\n".encode())
+            total, n = total + size, n + 1
+        out[root] = {"files": n, "bytes": total, "sha256": digest.hexdigest()[:16]}
+    HASH_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    HASH_CACHE.write_text(json.dumps(cache), encoding="utf-8")
+    return out
+
+
+def run_context(command: str, session: str, script: str, args: list[str], roots: list[str]) -> dict:
+    # The ledger is bookkeeping, not code or data: keeping it out stops every pull
+    # from producing a new snapshot.
+    code_roots = [r for r in cfg("colab.sync_paths", ["agent"]) if r in roots and r != LEDGER_REL]
+    data_roots = [r for r in roots if r not in code_roots and r != LEDGER_REL]
+    try:
+        rel = Path(script).resolve().relative_to(WORKSPACE).as_posix()
+    except ValueError:
+        rel = script
+    return {
+        "via": "colab_sync",
+        "command": command,
+        "session": session,
+        "script": rel,
+        "args": list(args),
+        "invoked_at": time.strftime("%Y%m%dT%H%M%SZ", time.gmtime()),
+        "git": code_snapshot(code_roots, Path(rel).stem),
+        "datasets": data_fingerprints(data_roots),
+    }
+
+
+def stamp_provenance(run_names: list[str], ctx: dict) -> list[str]:
+    """Fill in provenance on pulled records that arrived without it."""
+    stamped = []
+    for name in run_names:
+        path = WORKSPACE / RUNS_REL / name / "run.json"
+        try:
+            record = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if (record.get("provenance") or {}).get("via") in (None, "unknown"):
+            record["provenance"] = {**ctx, "stamped_locally": True}
+            path.write_text(json.dumps(record, indent=2, default=str), encoding="utf-8")
+            stamped.append(name)
+    return stamped
+
+
+def merge_ledger(entries: list[dict]) -> int:
+    from colab_env import upsert_ledger
+    return upsert_ledger(entries, WORKSPACE / LEDGER_REL) if entries else 0
+
+
+# ---------------------------------------------------------------------------
 # Remote steps
 # ---------------------------------------------------------------------------
 READ_MANIFEST = """
@@ -264,6 +392,7 @@ for name, mod in list(sys.modules.items()):
 os.chdir(ws)
 saved_argv, code = sys.argv, 0
 sys.argv = [@@PATH@@, *@@ARGS@@]
+os.environ["RESEARCH_RUN_CONTEXT"] = @@CTX@@
 try:
     runpy.run_path(@@PATH@@, run_name="__main__")
 except SystemExit as exc:
@@ -273,13 +402,23 @@ except BaseException:
     code = 1
 finally:
     sys.argv = saved_argv
+    os.environ.pop("RESEARCH_RUN_CONTEXT", None)
     sys.stdout.flush()
     sys.stderr.flush()
 _result = {"exit_code": code}
 """
 
+SET_CTX = """
+import os
+if @@CTX@@ is None:
+    os.environ.pop("RESEARCH_RUN_CONTEXT", None)
+else:
+    os.environ["RESEARCH_RUN_CONTEXT"] = @@CTX@@
+_result = {}
+"""
+
 PULL = """
-import os, tarfile
+import json, os, tarfile
 root = os.path.join(@@REMOTE@@, @@RUNS@@)
 have = set(@@HAVE@@)
 new = sorted(d for d in (os.listdir(root) if os.path.isdir(root) else [])
@@ -290,7 +429,12 @@ if new:
     with tarfile.open(archive, "w:gz") as tar:
         for d in new:
             tar.add(os.path.join(root, d), arcname=@@RUNS@@ + "/" + d)
-_result = {"new": new, "archive": archive if new else None}
+ledger = []
+ledger_file = os.path.join(@@REMOTE@@, @@LEDGER@@)
+if os.path.isfile(ledger_file):
+    with open(ledger_file) as fh:
+        ledger = [json.loads(line) for line in fh if line.strip()]
+_result = {"new": new, "archive": archive if new else None, "ledger": ledger}
 """
 
 JOB = """
@@ -310,7 +454,8 @@ cmd = "cd {ws} && PYTHONPATH={scripts} {py} -u {script} {args} > {log} 2>&1; ech
     args=" ".join(shlex.quote(a) for a in @@ARGS@@),
     log=shlex.quote(base + ".log"), status=shlex.quote(base + ".exit"))
 proc = subprocess.Popen(["bash", "-c", cmd], start_new_session=True, stdin=subprocess.DEVNULL,
-                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                        env=dict(os.environ, RESEARCH_RUN_CONTEXT=@@CTX@@))
 with open(base + ".pid", "w") as fh:
     fh.write(str(proc.pid))
 _result = {"pid": proc.pid, "log": base + ".log"}
@@ -380,7 +525,9 @@ def pull(session: str) -> list[str]:
     """Copy run records the local runs/ folder doesn't have yet."""
     runs_local = WORKSPACE / RUNS_REL
     have = sorted(p.name for p in runs_local.iterdir()) if runs_local.is_dir() else []
-    res = remote_py(session, snippet(PULL, REMOTE=REMOTE, RUNS=RUNS_REL, HAVE=have, STAGING=STAGING))
+    res = remote_py(session, snippet(PULL, REMOTE=REMOTE, RUNS=RUNS_REL, HAVE=have,
+                                     STAGING=STAGING, LEDGER=LEDGER_REL))
+    merge_ledger(res.get("ledger") or [])
     if not res["new"]:
         return []
     with tempfile.TemporaryDirectory() as tmp:
@@ -389,6 +536,12 @@ def pull(session: str) -> list[str]:
         with tarfile.open(archive) as tar:
             members = [m for m in tar.getmembers() if m.name.startswith(RUNS_REL + "/")]
             tar.extractall(WORKSPACE, members=members, filter="data")
+    for name in res["new"]:  # entries saved with a run id, in case the ledger file lagged
+        try:
+            record = json.loads((WORKSPACE / RUNS_REL / name / "run.json").read_text(encoding="utf-8"))
+            merge_ledger(record.get("validation") or [])
+        except (OSError, ValueError):
+            pass
     return res["new"]
 
 
@@ -437,8 +590,13 @@ def cmd_start(session: str, datasets: list[str], gpu: str) -> None:
 
 def cmd_run(session: str, script: str, args: list[str], timeout: float) -> int:
     sync = push(session)
+    ctx = run_context("run", session, script, args, sync["roots"])
+    if "error" in ctx["git"]:
+        eprint(f"! code snapshot failed, provenance incomplete: {ctx['git']['error']}")
+    ctx_json = json.dumps(ctx)
     if script.endswith(".ipynb"):
         nb = Path(script).resolve()
+        remote_py(session, snippet(SET_CTX, CTX=ctx_json))
         proc = subprocess.run(colab_cmd("exec", "-s", session, "--timeout", str(timeout),
                                         "-f", str(nb)),
                               stdout=sys.stderr, stderr=sys.stderr, check=False)
@@ -448,25 +606,34 @@ def cmd_run(session: str, script: str, args: list[str], timeout: float) -> int:
         if executed:
             from colab_runs import import_notebook
             imported = import_notebook(executed)
+        remote_py(session, snippet(SET_CTX, CTX=None))
+        new_runs = pull(session)
+        names = new_runs + [Path(i["dir"]).name for i in (imported or {}).get("imported", [])]
         emit({"notebook": str(nb), "exit_code": proc.returncode, "sync": sync,
+              "code_commit": ctx["git"].get("code_commit"),
               "executed_copy": str(executed) if executed else None,
-              "imported": imported, "new_runs": pull(session)})
+              "imported": imported, "new_runs": new_runs,
+              "provenance_stamped_locally": stamp_provenance(names, ctx)})
         return proc.returncode
 
     remote_path = _remote_script(script, sync["roots"])
-    res = remote_py(session, snippet(RUN, REMOTE=REMOTE, PATH=remote_path, ARGS=list(args)),
-                    timeout=timeout, echo=True)
+    res = remote_py(session, snippet(RUN, REMOTE=REMOTE, PATH=remote_path, ARGS=list(args),
+                                     CTX=ctx_json), timeout=timeout, echo=True)
+    new_runs = pull(session)
     emit({"script": remote_path, "exit_code": res["exit_code"], "sync": sync,
-          "new_runs": pull(session)})
+          "code_commit": ctx["git"].get("code_commit"), "new_runs": new_runs,
+          "provenance_stamped_locally": stamp_provenance(new_runs, ctx)})
     return res["exit_code"]
 
 
 def cmd_job(session: str, name: str, script: str, args: list[str]) -> None:
     sync = push(session)
     remote_path = _remote_script(script, sync["roots"])
+    ctx = run_context("job", session, script, args, sync["roots"])
     res = remote_py(session, snippet(JOB, REMOTE=REMOTE, JOBS=JOBS_REL, NAME=name,
-                                     PATH=remote_path, ARGS=list(args)))
+                                     PATH=remote_path, ARGS=list(args), CTX=json.dumps(ctx)))
     emit({"job": name, "script": remote_path, "sync": sync, **res,
+          "code_commit": ctx["git"].get("code_commit"),
           "next": f"colab_sync.py logs {name}"})
 
 
