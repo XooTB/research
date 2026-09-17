@@ -99,6 +99,14 @@ downloaded, register it with `db.upsert_dataset` (e.g. `source: derived`), or
 .venv/bin/python agent/scripts/library.py --datasets [--topic <slug>] [--status candidate|downloaded|verified]
 ```
 
+## Research tracking
+
+Dataset work for the active workstream is a tracked task (`research.py new task`, research-tracker
+skill): mark it running, close it with an outcome line (rows, events, usability). Record data
+quirks (missing outcomes, duplicated samples, coding traps) as findings with the dataset slug in
+`--refs`, and include/exclude choices as decisions. `research.py refs <slug>` then answers
+"what do we know about this dataset" without rereading REPORT.md files.
+
 ## Ingesting an existing shortlist CSV
 
 ```bash

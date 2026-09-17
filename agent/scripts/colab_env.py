@@ -621,6 +621,7 @@ def register_validation(candidate: str, cohorts: list[str], *, config: dict | No
         "rescore_of": [e.get("id") for e in prior],
         "registered_at": datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),
         "code_commit": (ctx.get("git") or {}).get("code_commit") or (ctx.get("git") or {}).get("head"),
+        "experiment": ctx.get("experiment"),
         "run": None,
     }
     _pending_validation.append(entry)
@@ -632,9 +633,60 @@ def register_validation(candidate: str, cohorts: list[str], *, config: dict | No
 # ---------------------------------------------------------------------------
 # Getting results back off the runtime
 # ---------------------------------------------------------------------------
-def save_run(name: str, payload: dict, *, files: list[str] | None = None) -> Path:
+METRIC_SPLITS = ("train", "cv", "external")
+
+
+def metric_row(model: str, cohort: str, split: str, metric: str, value, **extra) -> dict | None:
+    """One result row for save_run(metrics=[...]); None when value isn't a finite number.
+
+    model/cohort/metric are lowercase ids (e.g. "lasso_cox", "gse32062",
+    "cindex"); split is train | cv | external. Optional extras: ci_lo, ci_hi,
+    baseline, n. research.py queries these rows and computes verdicts from them.
+    """
+    import math
+
+    try:
+        value = float(value)
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(value):
+        return None
+    row = {"model": model.lower(), "cohort": cohort.lower(), "split": split, "metric": metric.lower(),
+           "value": value}
+    for key, val in extra.items():  # drop None/NaN; unwrap numpy scalars so JSON stays valid
+        if hasattr(val, "item"):
+            val = val.item()
+        if val is None or (isinstance(val, float) and not math.isfinite(val)):
+            continue
+        row[key] = val
+    return row
+
+
+def _check_metric_rows(rows: list) -> list[str]:
+    problems = []
+    for n, row in enumerate(rows):
+        if not isinstance(row, dict):
+            problems.append(f"metrics[{n}] is not a dict")
+            continue
+        missing = [k for k in ("model", "cohort", "split", "metric", "value") if k not in row]
+        if missing:
+            problems.append(f"metrics[{n}] missing {missing}")
+        elif row["split"] not in METRIC_SPLITS:
+            problems.append(f"metrics[{n}] split {row['split']!r} not in {METRIC_SPLITS}")
+        elif isinstance(row["value"], bool) or not isinstance(row["value"], (int, float)):
+            problems.append(f"metrics[{n}] value is not a number")
+        elif any(isinstance(row[k], str) and row[k] != row[k].lower() for k in ("model", "cohort", "metric")):
+            problems.append(f"metrics[{n}] model/cohort/metric must be lowercase")
+    return problems
+
+
+def save_run(name: str, payload: dict, *, metrics: list[dict] | None = None,
+             files: list[str] | None = None) -> Path:
     """Write a run record under .research/colab/runs/<utc>-<name>/.
 
+    `metrics` are flat result rows (build them with `metric_row`); pass them
+    whenever the run produces numbers anyone will judge — research.py computes
+    verdicts only from these. Invalid rows raise before anything is written.
     The record carries `provenance` (run_context) and any `validation` entries
     registered since the last save. The runtime disk is wiped when the session
     ends; `colab_sync.py run`, `logs` and `stop` copy new record folders
@@ -645,6 +697,11 @@ def save_run(name: str, payload: dict, *, files: list[str] | None = None) -> Pat
     from json import dumps
     from common import slugify
 
+    metrics = [r for r in (metrics or []) if r is not None]
+    problems = _check_metric_rows(metrics)
+    if problems:
+        raise ValueError("save_run: invalid metric rows: " + "; ".join(problems[:5]))
+
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     out = workspace() / ".research" / "colab" / "runs" / f"{stamp}-{slugify(name)}"
     out.mkdir(parents=True, exist_ok=True)
@@ -652,7 +709,10 @@ def save_run(name: str, payload: dict, *, files: list[str] | None = None) -> Pat
     validation = [dict(e, run=out.name) for e in _pending_validation]
     _pending_validation.clear()
     record = {"name": name, "saved_at": stamp, "provenance": run_context(), "env": report(),
-              "validation": validation, "result": payload}
+              "validation": validation, "metrics": metrics, "result": payload}
+    if not metrics:
+        eprint("save_run: no metric rows — fine for smoke tests and data tasks, but results without "
+               "rows can't be queried or turned into a verdict")
     (out / "run.json").write_text(dumps(record, indent=2, default=str), encoding="utf-8")
     if validation:
         upsert_ledger(validation)

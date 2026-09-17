@@ -74,5 +74,5 @@ Split doc estimated ~12k common symbols; actual is 11,474. **GPL96 is the bottle
 - Labels detail (schema, per-cohort rules, covariate completeness): `docs/os-training-labels.md`
 - Expression detail (annotation provenance, drop counts, collapse rationale, per-stage counts): `docs/os-training-expression.md`
 - Split rationale + compiled validation roster: `docs/os-train-validation-split.md`, `docs/os-validation-dataset.md`
-- Workstream + milestones: `docs/current-focus-overall-survival.md`
+- Workstream + milestones: `research/os-hgsoc/workstream.md`
 - Messy-field traps (source of most rules above): `docs/ovarian-cancer-prognosis-opportunities.md` Appendix B

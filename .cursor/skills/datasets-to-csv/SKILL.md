@@ -116,6 +116,10 @@ Read the JSON summary (`converted` / `skipped` / `errors`). For a quick check:
 If the user still needs ML-ready joins (expression ↔ survival labels), do that
 as a separate step — this skill only normalizes formats to CSV.
 
+If the conversion was for a tracked task, note quirks you hit (column shifts,
+channel layouts, unit problems) as findings with the dataset slug in `--refs`
+(`research.py new finding`), and close the task with an outcome.
+
 ## Related
 
 - Download / verify datasets: [research-datasets](../research-datasets/SKILL.md)

@@ -1,6 +1,6 @@
 # OS workstream: train/validation split (decided 27 Aug 2026)
 
-**Parent doc:** `docs/current-focus-overall-survival.md`
+**Parent doc:** `research/os-hgsoc/workstream.md`
 **Basis:** data audit `docs/ovarian-cancer-prognosis-opportunities.md` §5–6 + Appendix B, verified against files on disk (phenotype CSVs and gzipped series matrices), 27 Aug 2026.
 
 ---

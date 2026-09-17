@@ -96,4 +96,4 @@ Scoring notebooks must tolerate empty cells (or restrict to each cohort's covere
 - Labels: `docs/os-validation-labels.md`
 - Training-side mirror: `docs/os-training-expression.md`
 - Annotation downloads: `datasets/ovarian-cancer-prognosis-ml/platform-annotations/REPORT.md`
-- Workstream: `docs/current-focus-overall-survival.md`
+- Workstream: `research/os-hgsoc/workstream.md`

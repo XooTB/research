@@ -94,5 +94,5 @@ Times converted to days with 365.25 / 12; originals preserved. Cox-usable filter
 - Expression detail (annotation, coverage, empty-cell policy): `docs/os-validation-expression.md`
 - Training pool (the feature space this matrix is aligned to): `docs/os-training-dataset.md`
 - Split rationale: `docs/os-train-validation-split.md`
-- Workstream + milestones: `docs/current-focus-overall-survival.md`
+- Workstream + milestones: `research/os-hgsoc/workstream.md`
 - Messy-field traps: `docs/ovarian-cancer-prognosis-opportunities.md` Appendix B

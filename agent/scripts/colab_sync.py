@@ -9,7 +9,7 @@ Nothing is committed, pushed, or cloned to make a run happen.
 The loop (session name defaults to colab.session in .research/config.yaml):
 
     colab_sync.py start --dataset os-training-pool --dataset os-validation
-    colab_sync.py run agent/experiments/colab_smoke.py      # edit, run, read, repeat
+    colab_sync.py run --experiment E003 agent/experiments/<script>.py   # edit, run, read, repeat
     colab_sync.py stop
 
 `run` syncs changed files, executes the script in the session kernel as if it
@@ -282,7 +282,39 @@ def data_fingerprints(roots: list[str]) -> dict:
     return out
 
 
-def run_context(command: str, session: str, script: str, args: list[str], roots: list[str]) -> dict:
+def check_experiment(experiment: str | None) -> None:
+    """Fail before renting compute if --experiment names nothing runnable."""
+    if not experiment:
+        eprint("! no --experiment: this run won't be linked to the research tracker "
+               "(fine for smoke tests; results that matter need colab_sync.py run --experiment E###)")
+        return
+    from research import CLOSED, Index
+    rec = Index().items.get(experiment)
+    if not rec or rec["kind"] != "experiment":
+        raise ColabError(f"--experiment {experiment}: no such experiment in research/ (research.py list --kind experiment)")
+    if rec["status"] in CLOSED:
+        raise ColabError(f"--experiment {experiment} is {rec['status']}; plan a new experiment instead of adding runs")
+
+
+def link_pulled(run_names: list[str]) -> list[dict]:
+    """Attach pulled runs to the experiment named in their provenance, then refresh NOW.md."""
+    if not run_names:
+        return []
+    from research import Index, TrackerError, link_run, write_now
+    linked = []
+    for name in run_names:
+        try:
+            res = link_run(name)
+        except TrackerError as exc:
+            res = {"run": name, "error": str(exc)}
+        if res.get("linked") or res.get("error"):
+            linked.append(res)
+    write_now(Index())
+    return linked
+
+
+def run_context(command: str, session: str, script: str, args: list[str], roots: list[str],
+                experiment: str | None = None) -> dict:
     # The ledger is bookkeeping, not code or data: keeping it out stops every pull
     # from producing a new snapshot.
     code_roots = [r for r in cfg("colab.sync_paths", ["agent"]) if r in roots and r != LEDGER_REL]
@@ -293,6 +325,7 @@ def run_context(command: str, session: str, script: str, args: list[str], roots:
         rel = script
     return {
         "via": "colab_sync",
+        "experiment": experiment,
         "command": command,
         "session": session,
         "script": rel,
@@ -588,9 +621,10 @@ def cmd_start(session: str, datasets: list[str], gpu: str) -> None:
           "gpu_granted": gpu_granted, "sync": sync, "env": env})
 
 
-def cmd_run(session: str, script: str, args: list[str], timeout: float) -> int:
+def cmd_run(session: str, script: str, args: list[str], timeout: float, experiment: str | None) -> int:
+    check_experiment(experiment)
     sync = push(session)
-    ctx = run_context("run", session, script, args, sync["roots"])
+    ctx = run_context("run", session, script, args, sync["roots"], experiment)
     if "error" in ctx["git"]:
         eprint(f"! code snapshot failed, provenance incomplete: {ctx['git']['error']}")
     ctx_json = json.dumps(ctx)
@@ -613,7 +647,8 @@ def cmd_run(session: str, script: str, args: list[str], timeout: float) -> int:
               "code_commit": ctx["git"].get("code_commit"),
               "executed_copy": str(executed) if executed else None,
               "imported": imported, "new_runs": new_runs,
-              "provenance_stamped_locally": stamp_provenance(names, ctx)})
+              "provenance_stamped_locally": stamp_provenance(names, ctx),
+              "tracker": link_pulled(names)})
         return proc.returncode
 
     remote_path = _remote_script(script, sync["roots"])
@@ -622,14 +657,16 @@ def cmd_run(session: str, script: str, args: list[str], timeout: float) -> int:
     new_runs = pull(session)
     emit({"script": remote_path, "exit_code": res["exit_code"], "sync": sync,
           "code_commit": ctx["git"].get("code_commit"), "new_runs": new_runs,
-          "provenance_stamped_locally": stamp_provenance(new_runs, ctx)})
+          "provenance_stamped_locally": stamp_provenance(new_runs, ctx),
+          "tracker": link_pulled(new_runs)})
     return res["exit_code"]
 
 
-def cmd_job(session: str, name: str, script: str, args: list[str]) -> None:
+def cmd_job(session: str, name: str, script: str, args: list[str], experiment: str | None) -> None:
+    check_experiment(experiment)
     sync = push(session)
     remote_path = _remote_script(script, sync["roots"])
-    ctx = run_context("job", session, script, args, sync["roots"])
+    ctx = run_context("job", session, script, args, sync["roots"], experiment)
     res = remote_py(session, snippet(JOB, REMOTE=REMOTE, JOBS=JOBS_REL, NAME=name,
                                      PATH=remote_path, ARGS=list(args), CTX=json.dumps(ctx)))
     emit({"job": name, "script": remote_path, "sync": sync, **res,
@@ -642,6 +679,7 @@ def cmd_logs(session: str, name: str, n: int) -> None:
     if not res["found"]:
         raise ColabError(f"no job named {name!r} on session {session!r}")
     res["new_runs"] = pull(session) if res["exit_code"] is not None else []
+    res["tracker"] = link_pulled(res["new_runs"])
     emit({"job": name, **res})
 
 
@@ -649,6 +687,7 @@ def cmd_stop(session: str) -> None:
     out: dict = {"session": session}
     try:
         out["new_runs"] = pull(session)
+        out["tracker"] = link_pulled(out["new_runs"])
     except ColabError as exc:
         out["pull_error"] = str(exc)
     SESSIONS_DIR.mkdir(parents=True, exist_ok=True)
@@ -688,10 +727,12 @@ def main() -> None:
 
     p = sub.add_parser("run", parents=[common], help="push, run a script/notebook, pull records")
     p.add_argument("--timeout", type=float, default=float(cfg("colab.exec_timeout", 3600)))
+    p.add_argument("--experiment", help="research tracker experiment id (E###) this run belongs to")
     p.add_argument("script")
     p.add_argument("args", nargs=argparse.REMAINDER)
 
     p = sub.add_parser("job", parents=[common], help="push, start a detached script")
+    p.add_argument("--experiment", help="research tracker experiment id (E###) this job belongs to")
     p.add_argument("name")
     p.add_argument("script")
     p.add_argument("args", nargs=argparse.REMAINDER)
@@ -712,13 +753,14 @@ def main() -> None:
         elif args.cmd == "push":
             emit({"session": args.session, **push(args.session, args.dataset)})
         elif args.cmd == "run":
-            code = cmd_run(args.session, args.script, args.args, args.timeout)
+            code = cmd_run(args.session, args.script, args.args, args.timeout, args.experiment)
         elif args.cmd == "job":
-            cmd_job(args.session, args.name, args.script, args.args)
+            cmd_job(args.session, args.name, args.script, args.args, args.experiment)
         elif args.cmd == "logs":
             cmd_logs(args.session, args.name, args.n)
         elif args.cmd == "pull":
-            emit({"session": args.session, "new_runs": pull(args.session)})
+            new_runs = pull(args.session)
+            emit({"session": args.session, "new_runs": new_runs, "tracker": link_pulled(new_runs)})
         elif args.cmd == "status":
             cmd_status(args.session)
         elif args.cmd == "stop":

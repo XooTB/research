@@ -29,9 +29,11 @@ Always pass an explicit `model` when launching sub-agents for big tasks — do n
 Sub-agents do NOT see the user's message or prior context, so every prompt must be self-contained:
 
 1. **Goal**: what to accomplish and why, in concrete terms
-2. **Context**: relevant file paths, topic names, DB locations (`.research/library.db`), script locations (`agent/scripts/`), and any decisions already made
+2. **Context**: relevant file paths, topic names, DB locations (`.research/library.db`), script locations (`agent/scripts/`), and any decisions already made. Name the research-tracker IDs involved (`E###`/`T###`, relevant `F###`/`D###`); the sub-agent can run `research.py show <ID>` instead of you pasting history
 3. **Constraints**: what not to do (e.g. don't modify unrelated files, don't install new dependencies without asking)
 4. **Output contract**: exactly what to return (e.g. "return a JSON summary of downloaded datasets with paths and row counts"), kept short
 5. **Tooling hints**: which scripts/skills to use (see `.cursor/skills/research-papers`, `research-datasets`, `datasets-to-csv`, `paper-dataset-extractor`; pack files over 100 MB with `agent/scripts/github_pack.py`)
+
+Tracker ownership: sub-agents may add findings/decisions (`research.py new finding|decision`, evidence refs required), plan new items, and run with `colab_sync.py run --experiment <ID>`. The main agent closes items, changes priorities and success rules, reviews what sub-agents recorded, and writes the session handoff (`.cursor/skills/research-tracker/SKILL.md`).
 
 Launch independent sub-agents in parallel (single message, multiple `Task` calls). Prefer `run_in_background: true` for long-running work so the main agent can keep orchestrating.

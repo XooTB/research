@@ -57,17 +57,22 @@ interactive login yourself.
 PY=.venv/bin/python; S=agent/scripts/colab_sync.py
 $PY $S start --dataset os-training-pool --dataset os-validation   # session + code + data + requirements
 $PY $S run agent/experiments/colab_smoke.py --dataset os-training-pool   # first run in a new setup
-$PY $S run agent/experiments/<experiment>.py --penalizer 0.05     # sync changes, run, pull records
-$PY agent/scripts/colab_runs.py --compare --name <experiment>      # did the change help?
+$PY $S run --experiment E005 agent/experiments/<experiment>.py --penalizer 0.05   # sync, run, pull, link to E005
+$PY agent/scripts/research.py results --experiment E005            # did the change help? (metric rows)
+$PY agent/scripts/colab_runs.py --compare --name <experiment>      # full payload diff when rows aren't enough
 # edit and run again, as many iterations as the task needs
 $PY $S stop                                                        # pull, save session log, release VM
 ```
 
+0. **Know which tracked experiment this is** (`research.py next` / `show E###`, research-tracker
+   skill). Work whose numbers matter always runs with `--experiment E###`; runs without it are
+   for smoke tests only.
 1. **start** once per work session. It is idempotent: a live session of the same
    name is reused, and only what changed is uploaded.
 2. **run** after every edit. Script output streams to stderr; stdout is a JSON
-   summary `{script, exit_code, sync, new_runs}`; the command exits with the
-   script's exit code. Read the output, then decide.
+   summary `{script, exit_code, sync, new_runs, tracker}`; the command exits with the
+   script's exit code. `tracker` shows which experiment each pulled run was linked to.
+   Read the output, then decide.
 3. Change one thing per iteration and compare records, not memory.
 4. **stop** when finished, when blocked, or before handing back to the user.
 
@@ -77,8 +82,8 @@ $PY $S stop                                                        # pull, save 
 |---|---|
 | `start [--dataset S ...] [--gpu T4 \| --cpu]` | Create or reuse the session, upload `colab.sync_paths` + datasets, install `agent/requirements-colab.txt`, report the runtime |
 | `push [--dataset S ...]` | Upload changed files only. Datasets pushed once stay synced for the session |
-| `run [--timeout SEC] <file.py \| file.ipynb> [args...]` | Push, run on the session, pull new run records |
-| `job <name> <file.py> [args...]` | Push, then start the script detached on the VM |
+| `run [--timeout SEC] [--experiment E###] <file.py \| file.ipynb> [args...]` | Push, run on the session, pull new run records, link them to the experiment. Options go before the script |
+| `job [--experiment E###] <name> <file.py> [args...]` | Push, then start the script detached on the VM (records link when `logs` pulls them) |
 | `logs <name> [-n 40]` | Tail a job; report running or exit code; pull records once it has finished |
 | `pull` | Copy new `.research/colab/runs/*` from the session |
 | `status` | CLI session status plus what is synced |
@@ -109,15 +114,19 @@ ce.require("lifelines", "scikit-survival")                 # no-op when present
 tables = ce.ensure_os_tables()                              # paths to the compiled OS tables
 labels = ce.memo("os-train-labels-v1", lambda: load_labels(tables["train"]))  # reused across runs
 ...
-ce.save_run("os-lasso", {"params": {...}, "train_cv": {...}})  # pulled back automatically
+rows = [ce.metric_row("lasso_cox", "os-training-pool", "cv", "cindex", cv_c, n=751)]  # queryable results
+ce.save_run("os-lasso", {"params": {...}, "train_cv": {...}}, metrics=rows)  # pulled back automatically
 ```
 
 - `ce.memo(key, fn)` caches a value in the session kernel, so repeated `run`s
   skip reloading large matrices. Workspace modules are re-imported on every
   `run`, so code edits always take effect while the memo survives. Bump the key
   when the loading code changes.
-- Put every number you will judge in the `save_run` payload: `colab_runs.py
-  --compare` diffs numeric leaves across runs.
+- Every number you will judge goes in `metrics=` rows (`ce.metric_row(model, cohort, split,
+  metric, value, ci_lo=, ci_hi=, n=, baseline=)`; naming conventions in the research-tracker
+  skill). Rows are what `research.py results` queries and what verdicts are computed from;
+  invalid rows raise, and None/NaN values are dropped. The free-form payload is for everything
+  else (params, signatures, diagnostics).
 - Figures: save to a file and pass it in `save_run(files=[...])`.
 
 ### Notebooks
@@ -141,7 +150,8 @@ on Colab or the local checkout otherwise.
 | `ce.ensure_dataset(slug)` · `ce.ensure_os_tables()` | Fail clearly if a dataset was not pushed |
 | `ce.load_geo(slug)` · `ce.geo_xy(slug, label=...)` · `ce.load_xena(slug, name)` · `ce.tcga_os()` | Loaders |
 | `ce.gpl_gene_map("GPL96")` · `ce.collapse_to_genes(X, map)` | Probe → gene symbol |
-| `ce.save_run(name, payload, files=[...])` | `.research/colab/runs/<utc>-<name>/run.json` with provenance, env snapshot, and pending validation entries |
+| `ce.metric_row(model, cohort, split, metric, value, **extras)` | One result row (lowercased, finite, numpy-safe); None when the value isn't a number |
+| `ce.save_run(name, payload, metrics=[...], files=[...])` | `.research/colab/runs/<utc>-<name>/run.json` with metric rows, provenance (incl. experiment), env snapshot, and pending validation entries |
 | `ce.register_validation(candidate, cohorts, config=..., reason=None)` | Record a frozen candidate in the validation ledger **before** scoring external cohorts; refuses a repeat |
 | `ce.run_context()` | The provenance `save_run` stores (from `colab_sync.py`, else local git state) |
 
@@ -151,7 +161,7 @@ on Colab or the local checkout otherwise.
 `colab.exec_timeout`, or that you want to poll while doing other work:
 
 ```bash
-$PY $S job rsf-grid agent/experiments/<experiment>.py --trees 1000
+$PY $S job --experiment E005 rsf-grid agent/experiments/<experiment>.py --trees 1000
 $PY $S logs rsf-grid        # repeat until exit_code is set; records are pulled then
 ```
 
@@ -204,8 +214,10 @@ A loop that watches external-validation scores will overfit to them. So:
   cohort), pass `reason=` and say so in the write-up.
 - Tuning experiments should push `os-training-pool` only. Push `os-validation`
   when a candidate is frozen.
-- Always report the clinical-only baseline beside every model
-  (`docs/current-focus-overall-survival.md` §2).
+- Always report the clinical-only baseline beside every model, as metric rows
+  (`research/os-hgsoc/workstream.md`, Non-negotiables).
+- Set the experiment's `validation_candidate` to the candidate name
+  (`research.py set E### validation_candidate <name>`), so ledger, runs, and tracker line up.
 
 ## Raw `colab` CLI
 

@@ -150,4 +150,4 @@ None of these changed counts vs the split-doc roles; they are recorded so a late
 - Split decision: `docs/os-train-validation-split.md`
 - Annotation download: `datasets/ovarian-cancer-prognosis-ml/platform-annotations/REPORT.md`
 - Validation-side mirror: `docs/os-validation-expression.md`
-- Workstream: `docs/current-focus-overall-survival.md`
+- Workstream: `research/os-hgsoc/workstream.md`

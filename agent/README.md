@@ -9,6 +9,8 @@ locally in this workspace.
 ## Layout
 
 ```
+research/NOW.md                                    # generated: focus, in flight, next up, outcomes, handoff
+research/<ws>/workstream.md, experiments/, tasks/  # research tracker (+ findings/decisions/journal .md)
 papers/<topic>/<year>-<author>-<title>/paper.pdf   # organized PDFs
 datasets/<topic>/<slug>/ + REPORT.md               # datasets + verification
 notebooks/                                          # notebooks run on Colab
@@ -39,6 +41,7 @@ All scripts print JSON to stdout and progress/errors to stderr.
 
 | Script | Purpose |
 |--------|---------|
+| `research.py status\|next\|list\|show\|find\|refs\|results\|verdict\|new\|set\|log\|link-run\|check` | Research tracker: what's next, what was tried, computed verdicts from metric rows, findings, decisions, handoffs (skill `research-tracker`) |
 | `papers_search.py --query ... [--author ...] [--sources ...] [--limit N]` | Search PubMed / Semantic Scholar / arXiv / OpenAlex, merged + deduped |
 | `papers_add.py --input picks.json --topic ...` | Download PDFs, record in DB, export BibTeX |
 | `datasets_search.py --query ... [--sources ...]` | Search Hugging Face / Kaggle / Zenodo (free only) |
@@ -46,7 +49,7 @@ All scripts print JSON to stdout and progress/errors to stderr.
 | `datasets_verify.py --id N \| --path DIR` | Profile schema/rows/dtypes/missing, write `REPORT.md` |
 | `ingest_csv.py --csv FILE` | Import an existing dataset shortlist CSV as candidates |
 | `library.py [--papers\|--datasets] [--topic ...] [--status ...]` | List / summarize the library |
-| `colab_sync.py start\|run\|job\|logs\|pull\|status\|stop` | Drive a Colab session: upload code + datasets incrementally, run scripts/notebooks, pull run records back |
+| `colab_sync.py start\|run\|job\|logs\|pull\|status\|stop` | Drive a Colab session: upload code + datasets incrementally, run scripts/notebooks (`--experiment E###` links runs to the tracker), pull run records back |
 | `colab_runs.py [--last\|--compare\|--ledger] [--name ...]` | Read Colab run records (with code/data provenance); `--compare` shows metric deltas; `--ledger` lists external-validation scorings |
 | `workspace_check.py [--quick] [--only ...] [--fix]` | Reconcile library DB ↔ disk, packed files, OS table verifies, doc numbers, run provenance, validation ledger, agent symlinks; exits 1 on errors |
 
@@ -79,6 +82,12 @@ config, same `datasets/<topic>/<slug>/` paths as locally). Records written with
 `.research/config.yaml`; the full workflow is in the `colab-compute` skill.
 
 ## Usage
+
+Every session starts from `research/NOW.md` and ends with a handoff
+(`research.py log`); the `research-tracking` rule makes agents do both. Ask
+*"what's next?"*, *"what have we tried and did anything beat the clinical
+baseline?"*, or *"what do we know about GSE53963?"* and the agent answers from
+`research.py` queries.
 
 Just talk to the agent (Cursor or Claude Code), e.g. *"find recent papers on
 chemotherapy response prediction that use gene expression"*, *"verify the GDSC

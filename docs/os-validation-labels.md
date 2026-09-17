@@ -106,4 +106,4 @@ M3 clinical baselines consume this file as-is. Recode stage/residual at modellin
 - Split decision: `docs/os-train-validation-split.md`
 - Training-side mirror: `docs/os-training-labels.md`
 - Expression: `docs/os-validation-expression.md`
-- Workstream: `docs/current-focus-overall-survival.md`
+- Workstream: `research/os-hgsoc/workstream.md`

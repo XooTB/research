@@ -19,14 +19,18 @@ This machine has **no GPU**, and the local `.venv` is Python 3.14 with only
 
 ```bash
 .venv/bin/python agent/scripts/colab_sync.py start --dataset <slug>        # once per work session
-.venv/bin/python agent/scripts/colab_sync.py run <script.py|nb.ipynb> [args] # edit → run → read → decide → repeat
+.venv/bin/python agent/scripts/colab_sync.py run --experiment E### <script.py|nb.ipynb> [args] # edit → run → read → decide → repeat
 .venv/bin/python agent/scripts/colab_sync.py stop                           # always, when done
 ```
 
 - The local working tree is what runs. No commit, push, or clone is needed;
   `run` uploads only changed files and pulls run records back.
-- Decide from what you read back — `run`'s output and exit code,
-  `colab_runs.py --last` / `--compare`. Never report a result you did not read.
+- Decide from what you read back: `run`'s output and exit code,
+  `research.py results --experiment E###`, `colab_runs.py --last` / `--compare`.
+  Never report a result you did not read.
+- Runs whose numbers matter carry `--experiment E###` (a tracked experiment; see
+  research-tracking rule) and save metric rows (`colab_env.metric_row` →
+  `save_run(metrics=…)`). Runs without `--experiment` are smoke tests.
 - `stop` the session when finished, when blocked, or before handing back to the
   user. Idle sessions burn quota.
 - If the CLI reports an auth error, stop and ask the user to re-authenticate
@@ -36,7 +40,7 @@ This machine has **no GPU**, and the local `.venv` is Python 3.14 with only
 
 Tune and select models on **training-pool cross-validation only**. Score
 external validation cohorts once per frozen candidate and record it; never loop
-on their numbers (docs/current-focus-overall-survival.md §2). This is enforced:
+on their numbers (research/os-hgsoc/workstream.md, Non-negotiables). This is enforced:
 call `colab_env.register_validation(...)` before scoring validators, which
 refuses a candidate the ledger (`.research/validation-ledger.jsonl`) already
 holds. Don't rename a candidate to get past it; a legitimate re-score needs

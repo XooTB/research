@@ -10,15 +10,16 @@ in the local .venv.
 Usage:
     workspace_check.py                    # everything (OS table verifies take ~15 s)
     workspace_check.py --quick            # skip the expression-matrix verifies
-    workspace_check.py --only library,runs
+    workspace_check.py --only library,runs,research
     workspace_check.py --fix              # apply safe fixes, then report what is left
 
-Sections: library, pack, tables, docs, runs, agent, git.
+Sections: library, pack, tables, docs, runs, research, agent, git.
 
 --fix only does mechanical, reversible repairs: make DB paths workspace-relative,
 remove empty paper folders, unpack missing packed originals, pack files over
-the GitHub limit, and merge validation entries from run records into the
-ledger. Everything else is reported for a human or the agent to decide.
+the GitHub limit, merge validation entries from run records into the ledger,
+link runs to the experiment their provenance names, and regenerate
+research/NOW.md. Everything else is reported for a human or the agent to decide.
 
 Prints JSON to stdout, one line per finding to stderr; exits 1 when any error
 remains.
@@ -35,11 +36,11 @@ from pathlib import Path
 import db
 from common import WORKSPACE, cfg, emit, eprint, ws_path, ws_rel
 
-SECTIONS = ("library", "pack", "tables", "docs", "runs", "agent", "git")
+SECTIONS = ("library", "pack", "tables", "docs", "runs", "research", "agent", "git")
 TOPIC_OS = "ovarian-cancer-prognosis-ml"
 POOL = WORKSPACE / "datasets" / TOPIC_OS / "os-training-pool"
 VALIDATION = WORKSPACE / "datasets" / TOPIC_OS / "os-validation"
-FOCUS_DOC = WORKSPACE / "docs" / "current-focus-overall-survival.md"
+FOCUS_DOC = WORKSPACE / "research" / "os-hgsoc" / "workstream.md"
 LEDGER = WORKSPACE / ".research" / "validation-ledger.jsonl"
 # Records saved before provenance existed are reported as info, not warnings.
 PROVENANCE_SINCE = "20260917T000000Z"
@@ -355,6 +356,18 @@ def check_runs(rep: Report, fix: bool) -> None:
 
 
 # ---------------------------------------------------------------------------
+# research: the tracker under research/ (research.py check)
+# ---------------------------------------------------------------------------
+def check_research(rep: Report, fix: bool) -> None:
+    import research
+
+    res = research.check(fix=fix)
+    rep.fixed.extend(res["fixed"])
+    for prob in res["problems"]:
+        rep.add("research", prob["level"], prob["code"], f"{prob['ref']}: {prob['message']}")
+
+
+# ---------------------------------------------------------------------------
 # agent: shared Cursor / Claude Code config, colab sync paths
 # ---------------------------------------------------------------------------
 def check_agent(rep: Report) -> None:
@@ -422,6 +435,7 @@ def main() -> None:
         "tables": lambda: check_tables(rep, args.quick),
         "docs": lambda: check_docs(rep),
         "runs": lambda: check_runs(rep, args.fix),
+        "research": lambda: check_research(rep, args.fix),
         "agent": lambda: check_agent(rep),
         "git": lambda: check_git(rep),
     }

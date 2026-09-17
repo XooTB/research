@@ -136,6 +136,7 @@ def provenance_summary(run: dict) -> dict | None:
     git = prov.get("git") or {}
     return {
         "via": prov.get("via"),
+        "experiment": prov.get("experiment"),
         "script": prov.get("script"),
         "args": prov.get("args"),
         "code_commit": git.get("code_commit") or git.get("head"),

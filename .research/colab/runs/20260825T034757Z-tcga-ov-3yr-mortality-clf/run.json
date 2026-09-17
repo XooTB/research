@@ -105,5 +105,56 @@
         "auc_3y": 0.5054945054945055
       }
     }
-  }
+  },
+  "metrics": [
+    {
+      "model": "clinical_lr",
+      "cohort": "tcga-ov",
+      "split": "cv",
+      "metric": "auc_3y",
+      "value": 0.6460937499999999,
+      "n": 223
+    },
+    {
+      "model": "expr_enet",
+      "cohort": "tcga-ov",
+      "split": "cv",
+      "metric": "auc_3y",
+      "value": 0.6814967105263157,
+      "n": 223
+    },
+    {
+      "model": "expr_clin_enet",
+      "cohort": "tcga-ov",
+      "split": "cv",
+      "metric": "auc_3y",
+      "value": 0.6949013157894737,
+      "n": 223
+    },
+    {
+      "model": "expr_clin_hgb",
+      "cohort": "tcga-ov",
+      "split": "cv",
+      "metric": "auc_3y",
+      "value": 0.6378289473684211,
+      "n": 223
+    },
+    {
+      "model": "expr_clin_enet",
+      "cohort": "gse26712",
+      "split": "external",
+      "metric": "auc_3y",
+      "value": 0.614651493598862,
+      "n": 169
+    },
+    {
+      "model": "expr_clin_enet",
+      "cohort": "gse14764",
+      "split": "external",
+      "metric": "auc_3y",
+      "value": 0.5054945054945055,
+      "n": 48
+    }
+  ],
+  "metrics_note": "backfilled 2026-09-17 from result (pre-tracker run)"
 }

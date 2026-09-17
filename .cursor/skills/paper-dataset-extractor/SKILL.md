@@ -110,7 +110,10 @@ files.
 ### 4. Record
 
 Update `docs/<topic>-datasets.md` (or equivalent inventory doc): mark each
-dataset downloaded (local path) / skipped (reason), with links.
+dataset downloaded (local path) / skipped (reason), with links. If this served
+the active workstream, record why a dataset was skipped or excluded as a
+decision (`research.py new decision --refs <dataset-slug>`), and planned
+follow-ups (e.g. "attach survival labels for GSEnnnnn") as tasks.
 
 ## Tuning
 

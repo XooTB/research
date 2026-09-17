@@ -78,5 +78,63 @@
         "logrank_p": 0.8811430216036636
       }
     }
-  }
+  },
+  "metrics": [
+    {
+      "model": "clinical_cox",
+      "cohort": "tcga-ov",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.6147105948327659,
+      "n": 266
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "tcga-ov",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.6053060274610194,
+      "n": 303
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "tcga-ov",
+      "split": "cv",
+      "metric": "auc_3y",
+      "value": 0.6286184210526317
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse26712",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5597882809005517,
+      "n": 185
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse26712",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.6772810253238479,
+      "n": 185
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse14764",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5298885511651469,
+      "n": 80
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse14764",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.8811430216036636,
+      "n": 80
+    }
+  ],
+  "metrics_note": "backfilled 2026-09-17 from result (pre-tracker run)"
 }
