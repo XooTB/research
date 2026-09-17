@@ -48,3 +48,13 @@ refs: docs/os-train-validation-split.md, gse140082, gse49997
 tags: follow-up, validation
 GSE140082 max OS ~3.6 years; GSE49997 max 49 months. Treat as secondary/supportive, not
 deciding, cohorts.
+
+## F009 · 2026-09-18 · Expression adds replicated prognostic value over clinical only when combined with it; gene-only models do not transfer
+refs: E003, run:20260917T180930Z-os-first-pass, gse32062, gse17260, gse53963, gse140082, gse49997
+tags: transfer, primary-result, expr-clin
+E003, candidate os-first-pass-v1, scored once. expr_clin_cox (LASSO score + residual + stage) beat the transported residual+stage Cox by ΔC ≥ 0.03 on 3/5 validators: GSE17260 +0.091 [0.024, 0.149], GSE32062 +0.047 [0.021, 0.071], GSE49997 +0.044 [-0.022, 0.108]; GSE140082 +0.020, GSE53963 +0.004. Pooled (DL random effects) +0.036 [0.010, 0.061], I2=0.41. Absolute external C 0.62-0.69 vs clinical 0.58-0.62. The gene-only models were all at or below the clinical baseline pooled: lasso_cox -0.010, deepsurv -0.011, rsf -0.041 [-0.080, -0.003], i.e. RSF was worse than clinical everywhere. The LASSO score's HR per SD adjusted for residual + stage was above 1 in all five (1.13-1.52), LR p < 0.05 in 4/5 (GSE49997 p=0.094). So the expression signal is real but small, and only visible when clinical factors carry the baseline ranking.
+
+## F010 · 2026-09-18 · Two of the three validators that passed are Yoshihara GPL6480 series that may share patients
+refs: E003, gse32062, gse17260, docs/os-train-validation-split.md, docs/os-validation-labels.md
+tags: validation, independence, leakage-risk
+GSE32062 (Yoshihara 2012, 260), GSE17260 (Yoshihara 2010, 110) and GSE53963 (Yoshihara) are all from the same group on GPL6480. The leakage checks so far (docs/os-validation-labels.md, verify) only tested sample_id collisions with the TRAINING pool; GSM ids differ between series even for a re-hybridised patient, so they cannot rule out patient overlap between GSE17260 and GSE32062. E003's verdict rests on those two plus GSE49997 (short follow-up, F008, CI crosses 0). If GSE17260 is a subset of GSE32062, the replication is effectively one cohort plus one immature one. Must be checked (T006) before the result is presented as replicated.

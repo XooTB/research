@@ -1,0 +1,1 @@
+{"candidate": "os-first-pass-v1", "code_commit": "ff000333bc857437d55d26b9a43ae0544a44f3e7", "cohorts": ["gse140082", "gse17260", "gse32062", "gse49997", "gse53963"], "config_hash": "099571b6ed3d6855", "experiment": "E003", "id": "17f3db165acb4def83225ddb2402d7a2", "reason": null, "registered_at": "20260917T180742Z", "rescore_of": [], "run": "20260917T180930Z-os-first-pass"}

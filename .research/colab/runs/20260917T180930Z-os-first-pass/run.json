@@ -1,0 +1,2031 @@
+{
+  "name": "os-first-pass",
+  "saved_at": "20260917T180930Z",
+  "provenance": {
+    "via": "colab_sync",
+    "experiment": "E003",
+    "command": "run",
+    "session": "research",
+    "script": "notebooks/ovarian-os-first-pass.ipynb",
+    "args": [],
+    "invoked_at": "20260917T180720Z",
+    "git": {
+      "head": "50aceecbf8ce011a5ab3153c5dea7174b05808b8",
+      "branch": "main",
+      "dirty": true,
+      "code_commit": "ff000333bc857437d55d26b9a43ae0544a44f3e7",
+      "code_ref": "refs/runs/20260917T180442Z-ovarian-os-first-pass"
+    },
+    "datasets": {
+      "datasets/ovarian-cancer-prognosis-ml/os-training-pool": {
+        "files": 10,
+        "bytes": 200857067,
+        "sha256": "29fcceac984ff83a"
+      },
+      "datasets/ovarian-cancer-prognosis-ml/os-validation": {
+        "files": 9,
+        "bytes": 284682798,
+        "sha256": "d778eac57406d8ca"
+      }
+    }
+  },
+  "env": {
+    "colab": true,
+    "python": "3.13.15",
+    "workspace": "/content/research",
+    "workspace_present": true,
+    "cpu_count": 2,
+    "ram_gb": 13.6,
+    "disk_free_gb": 69.3,
+    "gpu": {
+      "available": true,
+      "name": "Tesla T4",
+      "memory_mb": 15360,
+      "driver": "580.82.07",
+      "torch_cuda": true,
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "validation": [
+    {
+      "id": "17f3db165acb4def83225ddb2402d7a2",
+      "candidate": "os-first-pass-v1",
+      "config_hash": "099571b6ed3d6855",
+      "cohorts": [
+        "gse140082",
+        "gse17260",
+        "gse32062",
+        "gse49997",
+        "gse53963"
+      ],
+      "reason": null,
+      "rescore_of": [],
+      "registered_at": "20260917T180742Z",
+      "code_commit": "ff000333bc857437d55d26b9a43ae0544a44f3e7",
+      "experiment": "E003",
+      "run": "20260917T180930Z-os-first-pass"
+    }
+  ],
+  "metrics": [
+    {
+      "model": "clinical_oof",
+      "cohort": "gse14764",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5193798449612403,
+      "ci_lo": 0.372944089456869,
+      "ci_hi": 0.684125189281717,
+      "n": 64
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse26193",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.6241912293314162,
+      "ci_lo": 0.5368478183143781,
+      "ci_hi": 0.6984528472761914,
+      "n": 79
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse26712",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.594528104964962,
+      "ci_lo": 0.5467846686928642,
+      "ci_hi": 0.6487701546103031,
+      "n": 185
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse30161",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.4882075471698113,
+      "ci_lo": 0.38006835876395556,
+      "ci_hi": 0.5748048287552776,
+      "n": 46
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse63885",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5761821366024519,
+      "ci_lo": 0.4825575905307772,
+      "ci_hi": 0.645698224431989,
+      "n": 70
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "tcga-ov-hiseqv2",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5584654088050315,
+      "ci_lo": 0.5113737260409438,
+      "ci_hi": 0.6143339788366959,
+      "n": 265
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse140082",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.6513377926421404,
+      "ci_lo": 0.5815505779087089,
+      "ci_hi": 0.7314371470709768,
+      "n": 191
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse17260",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.6200646087580761,
+      "ci_lo": 0.5335170212087291,
+      "ci_hi": 0.7030539421847816,
+      "n": 110
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse32062",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5679021761236527,
+      "ci_lo": 0.5050070549174204,
+      "ci_hi": 0.6315820481103576,
+      "n": 260
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse49997",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5832399103139013,
+      "ci_lo": 0.501826431883477,
+      "ci_hi": 0.6658106881251835,
+      "n": 171
+    },
+    {
+      "model": "clinical_oof",
+      "cohort": "gse53963",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.6413755458515283,
+      "ci_lo": 0.5852470484673263,
+      "ci_hi": 0.6882610222266741,
+      "n": 157
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "os-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5798841800473808,
+      "n": 751
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "os-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5251386546358686,
+      "n": 445
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "os-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5388992827714174,
+      "n": 445
+    },
+    {
+      "model": "rsf",
+      "cohort": "os-training-pool",
+      "split": "train",
+      "metric": "cindex",
+      "value": 0.9175941037115031
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "os-training-pool",
+      "split": "train",
+      "metric": "cindex",
+      "value": 0.8158568044222164
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5892566605653854,
+      "ci_lo": 0.539758122138429,
+      "ci_hi": 0.6392343588580423,
+      "n": 260
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 4.311308318162656e-05,
+      "n": 260
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.635956884279032,
+      "ci_lo": 0.5854696371428001,
+      "ci_hi": 0.6877234317729448,
+      "n": 260
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 1.9465238959992463e-06,
+      "n": 260
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.04670022371364657,
+      "ci_lo": 0.020716312970713077,
+      "ci_hi": 0.0705634102512674,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.06805470815537928,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6058063860077283,
+      "ci_lo": 0.555008072353889,
+      "ci_hi": 0.6577265589114374,
+      "n": 260
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.01110562144797618,
+      "n": 260
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.0165497254423429,
+      "ci_lo": -0.04572916284514753,
+      "ci_hi": 0.08767735177377096,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.03790420988407561,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5239983729916616,
+      "ci_lo": 0.4658606269100386,
+      "ci_hi": 0.5794496638226573,
+      "n": 260
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.4719749962873764,
+      "n": 260
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.06525828757372376,
+      "ci_lo": -0.1298400113480463,
+      "ci_hi": 0.011114796829026923,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.04390380313199105,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5989932885906041,
+      "ci_lo": 0.5474942498090442,
+      "ci_hi": 0.6536418983497801,
+      "n": 260
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.007596462830209221,
+      "n": 260
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.009736628025218685,
+      "ci_lo": -0.05495166338255112,
+      "ci_hi": 0.07762361714895037,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.0310911124669514,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "hr_per_sd_adj_rd_stage",
+      "value": 1.4062027283254235,
+      "ci_lo": 1.1225384155330547,
+      "ci_hi": 1.7615487236673883,
+      "n": 260
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "lr_p_added_to_rd_stage",
+      "value": 0.0028931781498808544,
+      "n": 260
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6240762512596574,
+      "ci_lo": 0.5734705110670641,
+      "ci_hi": 0.6672748019513508,
+      "n": 157
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.04620174660984736,
+      "n": 157
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6279811891165603,
+      "ci_lo": 0.5755516434243274,
+      "ci_hi": 0.6741056776116869,
+      "n": 157
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 1.0230037956776574e-05,
+      "n": 157
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.0039049378569029347,
+      "ci_lo": -0.029944578115615895,
+      "ci_hi": 0.04196837833522715,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.013394356734968027,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5425686591276252,
+      "ci_lo": 0.49037913398560684,
+      "ci_hi": 0.594910503899857,
+      "n": 160
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.03316625949880312,
+      "n": 160
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.08359926100100779,
+      "ci_lo": -0.1496315986578985,
+      "ci_hi": -0.007774423326745591,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.10089855559287875,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5564620355411954,
+      "ci_lo": 0.5089513828164741,
+      "ci_hi": 0.6049089282397668,
+      "n": 160
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.1894066756242612,
+      "n": 160
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.06789553241518309,
+      "ci_lo": -0.1309913573709367,
+      "ci_hi": 0.005275918400948983,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.08519482700705405,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5618739903069467,
+      "ci_lo": 0.5121391131506646,
+      "ci_hi": 0.6124196883352665,
+      "n": 160
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.011067318865401897,
+      "n": 160
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.06260497144776622,
+      "ci_lo": -0.13229981983600325,
+      "ci_hi": 0.010098559963427286,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.07990426603963718,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "hr_per_sd_adj_rd_stage",
+      "value": 1.1336501860447479,
+      "ci_lo": 1.013272398038316,
+      "ci_hi": 1.2683289772891795,
+      "n": 157
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse53963",
+      "split": "external",
+      "metric": "lr_p_added_to_rd_stage",
+      "value": 0.029053455153036492,
+      "n": 157
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5990667623833453,
+      "ci_lo": 0.5153941802122846,
+      "ci_hi": 0.6742765433550548,
+      "n": 110
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.0098644174206051,
+      "n": 110
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6898779612347452,
+      "ci_lo": 0.6155868329877237,
+      "ci_hi": 0.7625075261098117,
+      "n": 110
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.018112266739458708,
+      "n": 110
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.09081119885139988,
+      "ci_lo": 0.02443827657616196,
+      "ci_hi": 0.14884963768115939,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.06981335247666909,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6683417085427136,
+      "ci_lo": 0.5756977572004663,
+      "ci_hi": 0.7389505470585965,
+      "n": 110
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.12038904052489588,
+      "n": 110
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.06927494615936824,
+      "ci_lo": -0.0416616430856942,
+      "ci_hi": 0.18223006872617303,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.048277099784637456,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6173725771715721,
+      "ci_lo": 0.5136403129687546,
+      "ci_hi": 0.6899109863672814,
+      "n": 110
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.24131506467360692,
+      "n": 110
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.018305814788226793,
+      "ci_lo": -0.09941129374022871,
+      "ci_hi": 0.1129043581394663,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.0026920315865039957,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6410624551328069,
+      "ci_lo": 0.5670365058276465,
+      "ci_hi": 0.7160566608141653,
+      "n": 110
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.057541789206133995,
+      "n": 110
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.04199569274946158,
+      "ci_lo": -0.07858651395472178,
+      "ci_hi": 0.16208019131406223,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.02099784637473079,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "hr_per_sd_adj_rd_stage",
+      "value": 1.2972783661775085,
+      "ci_lo": 1.0930711889989893,
+      "ci_hi": 1.5396354567659747,
+      "n": 110
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "lr_p_added_to_rd_stage",
+      "value": 0.0028018386486782423,
+      "n": 110
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6158723522853957,
+      "ci_lo": 0.5419926256522933,
+      "ci_hi": 0.6843012621135944,
+      "n": 191
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6362876254180602,
+      "ci_lo": 0.5514562886834219,
+      "ci_hi": 0.7159642319153813,
+      "n": 191
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.00010220817293519245,
+      "n": 191
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.020415273132664447,
+      "ci_lo": -0.024318445779070018,
+      "ci_hi": 0.06223278774420891,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.015050167224080258,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5857023411371237,
+      "ci_lo": 0.4914019407917184,
+      "ci_hi": 0.6684423713494644,
+      "n": 191
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.028322335162576574,
+      "n": 191
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.030170011148272002,
+      "ci_lo": -0.1318518866163598,
+      "ci_hi": 0.06942772355648023,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.0656354515050167,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5769230769230769,
+      "ci_lo": 0.4962430138407233,
+      "ci_hi": 0.6615254932239838,
+      "n": 191
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.03546160161770222,
+      "n": 191
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.03894927536231885,
+      "ci_lo": -0.13806517652566366,
+      "ci_hi": 0.05832493334700578,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.07441471571906355,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6020066889632107,
+      "ci_lo": 0.5161457231082275,
+      "ci_hi": 0.6779197760465148,
+      "n": 191
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.0030432182212510143,
+      "n": 191
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.013865663322184973,
+      "ci_lo": -0.12453097909214278,
+      "ci_hi": 0.08135496910902139,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": -0.04933110367892968,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "hr_per_sd_adj_rd_stage",
+      "value": 1.5230833541033397,
+      "ci_lo": 1.0548800130856144,
+      "ci_hi": 2.199096460990967,
+      "n": 191
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "lr_p_added_to_rd_stage",
+      "value": 0.02441923098105336,
+      "n": 191
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5751121076233184,
+      "ci_lo": 0.4829661197276783,
+      "ci_hi": 0.6761677480740838,
+      "n": 171
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.633728909398668,
+      "n": 171
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6195814648729447,
+      "ci_lo": 0.5363660977295677,
+      "ci_hi": 0.7188632719053394,
+      "n": 171
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.030181746103481948,
+      "n": 171
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.04446935724962631,
+      "ci_lo": -0.021573927154706136,
+      "ci_hi": 0.10789957713459998,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.03634155455904342,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5951046337817638,
+      "ci_lo": 0.507456713336647,
+      "ci_hi": 0.6911131805699129,
+      "n": 171
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.09489475099302679,
+      "n": 171
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.01999252615844538,
+      "ci_lo": -0.1110280499309306,
+      "ci_hi": 0.1394414763639594,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.011864723467862492,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5840807174887892,
+      "ci_lo": 0.4967322195417511,
+      "ci_hi": 0.6775888809960251,
+      "n": 171
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.14624686829500844,
+      "n": 171
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.008968609865470767,
+      "ci_lo": -0.080803696178419,
+      "ci_hi": 0.11184506850677306,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "rsf",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.0008408071748878809,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6098654708520179,
+      "ci_lo": 0.5370485093664575,
+      "ci_hi": 0.699501016573121,
+      "n": 171
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "logrank_p",
+      "value": 0.0493997544032325,
+      "n": 171
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.034753363228699485,
+      "ci_lo": -0.08912672707036304,
+      "ci_hi": 0.15347652652829905,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_oof",
+      "value": 0.0266255605381166,
+      "baseline": "clinical_oof"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "hr_per_sd_adj_rd_stage",
+      "value": 1.1846840928396707,
+      "ci_lo": 0.9704443108773825,
+      "ci_hi": 1.4462204416021205,
+      "n": 171
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "lr_p_added_to_rd_stage",
+      "value": 0.09394250176142938,
+      "n": 171
+    },
+    {
+      "model": "expr_clin_cox",
+      "cohort": "os-validation",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported_pooled",
+      "value": 0.03555161021434417,
+      "ci_lo": 0.01015024331758449,
+      "ci_hi": 0.060952977111103854,
+      "n": 5,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "lasso_cox",
+      "cohort": "os-validation",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported_pooled",
+      "value": -0.00994001805300691,
+      "ci_lo": -0.0641294960981286,
+      "ci_hi": 0.04424945999211477,
+      "n": 5,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "rsf",
+      "cohort": "os-validation",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported_pooled",
+      "value": -0.04117807791566739,
+      "ci_lo": -0.0797474227492051,
+      "ci_hi": -0.002608733082129673,
+      "n": 5,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "deepsurv",
+      "cohort": "os-validation",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported_pooled",
+      "value": -0.01107649327370455,
+      "ci_lo": -0.05004690178112481,
+      "ci_hi": 0.027893915233715705,
+      "n": 5,
+      "baseline": "clinical_transported"
+    }
+  ],
+  "result": {
+    "task": "os first-pass M3 clinical + M4 expression classes",
+    "preprocess": {
+      "expression": "within-sample rank percentile; top 500 by train variance; z-score on train; val NA -> 0.5",
+      "residual": "GOG optimal vs suboptimal (os_clinical.recode_residual)",
+      "stage": "FIGO 1-4 (os_clinical.recode_stage)",
+      "imputation": "none for clinical; rank mid-fill on validation coverage gaps",
+      "n_genes": 500
+    },
+    "train": {
+      "n": 751,
+      "events": 485,
+      "n_features_total": 11474,
+      "n_features_model": 500,
+      "n_clinical_rd_stage": 445
+    },
+    "clinical_per_cohort": [
+      {
+        "split": "train",
+        "cohort": "gse14764",
+        "n_lab": 68,
+        "n_model": 64,
+        "events": 17,
+        "covars": "residual_subopt+stage_ord",
+        "how": "4-fold",
+        "cindex": 0.5193798449612403,
+        "ci_lo": 0.372944089456869,
+        "ci_hi": 0.684125189281717,
+        "logrank_p": 0.7237170285308994
+      },
+      {
+        "split": "train",
+        "cohort": "gse26193",
+        "n_lab": 79,
+        "n_model": 79,
+        "events": 60,
+        "covars": "stage_ord",
+        "how": "5-fold",
+        "cindex": 0.6241912293314162,
+        "ci_lo": 0.5368478183143781,
+        "ci_hi": 0.6984528472761914,
+        "logrank_p": 0.010646908584265138
+      },
+      {
+        "split": "train",
+        "cohort": "gse26712",
+        "n_lab": 185,
+        "n_model": 185,
+        "events": 129,
+        "covars": "residual_subopt",
+        "how": "5-fold",
+        "cindex": 0.594528104964962,
+        "ci_lo": 0.5467846686928642,
+        "ci_hi": 0.6487701546103031,
+        "logrank_p": 0.00327432041945045
+      },
+      {
+        "split": "train",
+        "cohort": "gse30161",
+        "n_lab": 47,
+        "n_model": 46,
+        "events": 32,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "3-fold",
+        "cindex": 0.4882075471698113,
+        "ci_lo": 0.38006835876395556,
+        "ci_hi": 0.5748048287552776,
+        "logrank_p": 0.679273690106279
+      },
+      {
+        "split": "train",
+        "cohort": "gse63885",
+        "n_lab": 70,
+        "n_model": 70,
+        "events": 62,
+        "covars": "residual_subopt+stage_ord",
+        "how": "4-fold",
+        "cindex": 0.5761821366024519,
+        "ci_lo": 0.4825575905307772,
+        "ci_hi": 0.645698224431989,
+        "logrank_p": 0.062239312063247273
+      },
+      {
+        "split": "train",
+        "cohort": "tcga-ov-hiseqv2",
+        "n_lab": 302,
+        "n_model": 265,
+        "events": 163,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "5-fold",
+        "cindex": 0.5584654088050315,
+        "ci_lo": 0.5113737260409438,
+        "ci_hi": 0.6143339788366959,
+        "logrank_p": 0.041708200998935845
+      },
+      {
+        "split": "val",
+        "cohort": "gse140082",
+        "n_lab": 191,
+        "n_model": 191,
+        "events": 56,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "5-fold",
+        "cindex": 0.6513377926421404,
+        "ci_lo": 0.5815505779087089,
+        "ci_hi": 0.7314371470709768,
+        "logrank_p": 0.0001511793610580901
+      },
+      {
+        "split": "val",
+        "cohort": "gse17260",
+        "n_lab": 110,
+        "n_model": 110,
+        "events": 46,
+        "covars": "residual_subopt+stage_ord",
+        "how": "5-fold",
+        "cindex": 0.6200646087580761,
+        "ci_lo": 0.5335170212087291,
+        "ci_hi": 0.7030539421847816,
+        "logrank_p": 0.005396627272597121
+      },
+      {
+        "split": "val",
+        "cohort": "gse32062",
+        "n_lab": 260,
+        "n_model": 260,
+        "events": 121,
+        "covars": "residual_subopt+stage_ord",
+        "how": "5-fold",
+        "cindex": 0.5679021761236527,
+        "ci_lo": 0.5050070549174204,
+        "ci_hi": 0.6315820481103576,
+        "logrank_p": 0.009451680850053148
+      },
+      {
+        "split": "val",
+        "cohort": "gse49997",
+        "n_lab": 171,
+        "n_model": 171,
+        "events": 48,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "5-fold",
+        "cindex": 0.5832399103139013,
+        "ci_lo": 0.501826431883477,
+        "ci_hi": 0.6658106881251835,
+        "logrank_p": 0.16315014726944133
+      },
+      {
+        "split": "val",
+        "cohort": "gse53963",
+        "n_lab": 160,
+        "n_model": 157,
+        "events": 136,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "5-fold",
+        "cindex": 0.6413755458515283,
+        "ci_lo": 0.5852470484673263,
+        "ci_hi": 0.6882610222266741,
+        "logrank_p": 3.4058870339852954e-05
+      }
+    ],
+    "models": {
+      "lasso_cox": {
+        "train_oof_cindex": 0.5798841800473808,
+        "alpha": 0.015874856889685447,
+        "alpha_path": [
+          0.10681641498593408,
+          0.08135093405182729,
+          0.061956530482475264,
+          0.04718583399399413,
+          0.03593653344321064,
+          0.027369113282587572,
+          0.02084420198901044,
+          0.015874856889685447,
+          0.012090224485488086,
+          0.009207864305502538,
+          0.007012670870612453,
+          0.0053408207492967015
+        ],
+        "alpha_grid_oof_cindex": {
+          "0.10682": 0.5249723611476704,
+          "0.08135": 0.5403053435114504,
+          "0.06196": 0.5502132140036852,
+          "0.04719": 0.5602842853382469,
+          "0.03594": 0.5681495130297447,
+          "0.02737": 0.5749460384311661,
+          "0.02084": 0.5775888391682021,
+          "0.01587": 0.5798841800473808,
+          "0.01209": 0.57503027112398,
+          "0.00921": 0.5682284811792577,
+          "0.00701": 0.5670439589365622,
+          "0.00534": 0.5669649907870492
+        },
+        "signature_size": 69,
+        "signature_top": {
+          "CXCL11": -0.17003335261030672,
+          "HOXD1": 0.14520658888113064,
+          "MFAP4": 0.1395957557829335,
+          "RPS28": -0.1308729050228809,
+          "SAMD4B": 0.12310011203274153,
+          "ICK": -0.11974404860475577,
+          "SLC25A23": -0.1172554343813585,
+          "SLC39A7": -0.11654125991190471,
+          "S100A8": 0.1126269255203746,
+          "BAG4": 0.11081108367844418,
+          "HLA-DRB6": -0.10478082713538632,
+          "TBL1XR1": 0.09988123704236547,
+          "MRPL19": 0.093830090777066,
+          "SST": -0.09227596057340352,
+          "SCD5": 0.09076613042209658,
+          "AQP5": -0.09042487617518508,
+          "LPAR3": -0.08690555310621989,
+          "ATP6V1B1": 0.08550318603490697,
+          "FBLN2": 0.08368754248892722,
+          "PTX3": -0.08362355476963121
+        }
+      },
+      "rsf": {
+        "train_insample_cindex": 0.9175941037115031,
+        "n_estimators": 200
+      },
+      "deepsurv": {
+        "train_insample_cindex": 0.8158568044222164,
+        "hidden": 32,
+        "epochs": 80,
+        "device": "cuda"
+      },
+      "expr_clin_cox": {
+        "primary": true,
+        "stage2_coef": {
+          "residual_subopt": 0.35770857345808027,
+          "stage_ord": 0.31438169244524317,
+          "expr_score": 0.13346145984054078
+        },
+        "stage2_hr_ci": {
+          "residual_subopt": {
+            "exp(coef)": 1.43,
+            "exp(coef) lower 95%": 1.1206,
+            "exp(coef) upper 95%": 1.8249,
+            "p": 0.004
+          },
+          "stage_ord": {
+            "exp(coef)": 1.3694,
+            "exp(coef) lower 95%": 1.0286,
+            "exp(coef) upper 95%": 1.8231,
+            "p": 0.0313
+          },
+          "expr_score": {
+            "exp(coef)": 1.1428,
+            "exp(coef) lower 95%": 1.0174,
+            "exp(coef) upper 95%": 1.2836,
+            "p": 0.0244
+          }
+        },
+        "lasso_score_mu_sd": [
+          1.3544950336663158e-10,
+          0.45612876490299287
+        ],
+        "pool_internal": {
+          "n": 445,
+          "events": 274,
+          "clinical_transported_oof_cindex": 0.5251386546358686,
+          "expr_clin_cox_oof_cindex": 0.5388992827714174,
+          "lasso_cox_oof_cindex_same_patients": 0.5659795241586789
+        }
+      }
+    },
+    "primary_model": "expr_clin_cox",
+    "validation_config": {
+      "n_genes": 500,
+      "seed": 0,
+      "n_boot": 300,
+      "clinical_covars": [
+        "residual_subopt",
+        "stage_ord",
+        "age"
+      ],
+      "expression": "within-sample rank pct; top-var genes on pool; z-score on pool; val NA -> 0.5",
+      "clinical": {
+        "per_cohort_penalizer": 0.05,
+        "transported": [
+          "residual_subopt",
+          "stage_ord"
+        ]
+      },
+      "lasso_cox": {
+        "engine": "sksurv Coxnet l1_ratio=1",
+        "alpha_path": "alpha_min_ratio=0.05, n_alphas=12",
+        "selection": "train OOF C-index"
+      },
+      "rsf": {
+        "n_estimators": 200,
+        "min_samples_split": 10,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt"
+      },
+      "deepsurv": {
+        "hidden": 32,
+        "dropout": 0.3,
+        "epochs": 80,
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      },
+      "pool_cox_strata": "training cohort",
+      "expr_clin_cox": {
+        "primary": true,
+        "stage1": "lasso_cox linear predictor, OOF on pool, z-scored on pool",
+        "stage2": [
+          "residual_subopt",
+          "stage_ord",
+          "expr_score"
+        ],
+        "penalizer": 0.05
+      },
+      "delta_ci": "paired bootstrap",
+      "pooled": "DerSimonian-Laird over validators"
+    },
+    "pooled_delta_c_vs_clinical_transported": {
+      "expr_clin_cox": {
+        "estimate": 0.03555161021434417,
+        "ci_lo": 0.01015024331758449,
+        "ci_hi": 0.060952977111103854,
+        "se": 0.012959881069775348,
+        "tau2": 0.00033414418974929357,
+        "i2": 0.41423092910939113,
+        "k": 5
+      },
+      "lasso_cox": {
+        "estimate": -0.00994001805300691,
+        "ci_lo": -0.0641294960981286,
+        "ci_hi": 0.04424945999211477,
+        "se": 0.027647692880164124,
+        "tau2": 0.0015667522026173504,
+        "i2": 0.4215009321568401,
+        "k": 5
+      },
+      "rsf": {
+        "estimate": -0.04117807791566739,
+        "ci_lo": -0.0797474227492051,
+        "ci_hi": -0.002608733082129673,
+        "se": 0.019678237159968224,
+        "tau2": 0.0,
+        "i2": 0.0,
+        "k": 5
+      },
+      "deepsurv": {
+        "estimate": -0.01107649327370455,
+        "ci_lo": -0.05004690178112481,
+        "ci_hi": 0.027893915233715705,
+        "se": 0.019882861483377683,
+        "tau2": 0.0,
+        "i2": 0.0,
+        "k": 5
+      }
+    },
+    "external": {
+      "gse32062": {
+        "n": 260,
+        "events": 121,
+        "platform": "GPL6480",
+        "clinical_oof": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.5679021761236527,
+          "cindex_ci_lo": 0.5050070549174204,
+          "cindex_ci_hi": 0.6315820481103576,
+          "logrank_p": 0.009451680850053148,
+          "covars": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.5892566605653854,
+          "cindex_ci_lo": 0.539758122138429,
+          "cindex_ci_hi": 0.6392343588580423,
+          "logrank_p": 4.311308318162656e-05
+        },
+        "expr_clin_cox": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.635956884279032,
+          "cindex_ci_lo": 0.5854696371428001,
+          "cindex_ci_hi": 0.6877234317729448,
+          "logrank_p": 1.9465238959992463e-06,
+          "cindex_on_clinical_subset": 0.635956884279032,
+          "delta_c_vs_clinical_oof": 0.06805470815537928,
+          "delta_c_vs_clinical_transported": 0.04670022371364657,
+          "delta_c_vs_clinical_transported_ci": [
+            0.020716312970713077,
+            0.0705634102512674
+          ],
+          "delta_c_vs_clinical_transported_se": 0.013728844734187973
+        },
+        "lasso_cox": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.6058063860077283,
+          "cindex_ci_lo": 0.555008072353889,
+          "cindex_ci_hi": 0.6577265589114374,
+          "logrank_p": 0.01110562144797618,
+          "cindex_on_clinical_subset": 0.6058063860077283,
+          "delta_c_vs_clinical_oof": 0.03790420988407561,
+          "delta_c_vs_clinical_transported": 0.0165497254423429,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.04572916284514753,
+            0.08767735177377096
+          ],
+          "delta_c_vs_clinical_transported_se": 0.03415985448272709
+        },
+        "rsf": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.5239983729916616,
+          "cindex_ci_lo": 0.4658606269100386,
+          "cindex_ci_hi": 0.5794496638226573,
+          "logrank_p": 0.4719749962873764,
+          "cindex_on_clinical_subset": 0.5239983729916616,
+          "delta_c_vs_clinical_oof": -0.04390380313199105,
+          "delta_c_vs_clinical_transported": -0.06525828757372376,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.1298400113480463,
+            0.011114796829026923
+          ],
+          "delta_c_vs_clinical_transported_se": 0.03624585491316745
+        },
+        "deepsurv": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.5989932885906041,
+          "cindex_ci_lo": 0.5474942498090442,
+          "cindex_ci_hi": 0.6536418983497801,
+          "logrank_p": 0.007596462830209221,
+          "cindex_on_clinical_subset": 0.5989932885906041,
+          "delta_c_vs_clinical_oof": 0.0310911124669514,
+          "delta_c_vs_clinical_transported": 0.009736628025218685,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.05495166338255112,
+            0.07762361714895037
+          ],
+          "delta_c_vs_clinical_transported_se": 0.03493222010192219
+        },
+        "expr_score_added_value": {
+          "n": 260,
+          "adjusted_for": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "hr_per_sd": 1.4062027283254235,
+          "hr_lo": 1.1225384155330547,
+          "hr_hi": 1.7615487236673883,
+          "wald_p": 0.003021495451565374,
+          "lr_stat": 8.87363922380655,
+          "lr_p": 0.0028931781498808544
+        }
+      },
+      "gse53963": {
+        "n": 160,
+        "events": 139,
+        "platform": "GPL6480",
+        "clinical_oof": {
+          "n": 157,
+          "events": 136,
+          "cindex": 0.6413755458515283,
+          "cindex_ci_lo": 0.5852470484673263,
+          "cindex_ci_hi": 0.6882610222266741,
+          "logrank_p": 3.4058870339852954e-05,
+          "covars": [
+            "residual_subopt",
+            "stage_ord",
+            "age"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 157,
+          "events": 136,
+          "cindex": 0.6240762512596574,
+          "cindex_ci_lo": 0.5734705110670641,
+          "cindex_ci_hi": 0.6672748019513508,
+          "logrank_p": 0.04620174660984736
+        },
+        "expr_clin_cox": {
+          "n": 157,
+          "events": 136,
+          "cindex": 0.6279811891165603,
+          "cindex_ci_lo": 0.5755516434243274,
+          "cindex_ci_hi": 0.6741056776116869,
+          "logrank_p": 1.0230037956776574e-05,
+          "cindex_on_clinical_subset": 0.6279811891165603,
+          "delta_c_vs_clinical_oof": -0.013394356734968027,
+          "delta_c_vs_clinical_transported": 0.0039049378569029347,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.029944578115615895,
+            0.04196837833522715
+          ],
+          "delta_c_vs_clinical_transported_se": 0.018222450837562035
+        },
+        "lasso_cox": {
+          "n": 160,
+          "events": 139,
+          "cindex": 0.5425686591276252,
+          "cindex_ci_lo": 0.49037913398560684,
+          "cindex_ci_hi": 0.594910503899857,
+          "logrank_p": 0.03316625949880312,
+          "cindex_on_clinical_subset": 0.5404769902586496,
+          "delta_c_vs_clinical_oof": -0.10089855559287875,
+          "delta_c_vs_clinical_transported": -0.08359926100100779,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.1496315986578985,
+            -0.007774423326745591
+          ],
+          "delta_c_vs_clinical_transported_se": 0.03570111599403874
+        },
+        "rsf": {
+          "n": 160,
+          "events": 139,
+          "cindex": 0.5564620355411954,
+          "cindex_ci_lo": 0.5089513828164741,
+          "cindex_ci_hi": 0.6049089282397668,
+          "logrank_p": 0.1894066756242612,
+          "cindex_on_clinical_subset": 0.5561807188444743,
+          "delta_c_vs_clinical_oof": -0.08519482700705405,
+          "delta_c_vs_clinical_transported": -0.06789553241518309,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.1309913573709367,
+            0.005275918400948983
+          ],
+          "delta_c_vs_clinical_transported_se": 0.03587203678591794
+        },
+        "deepsurv": {
+          "n": 160,
+          "events": 139,
+          "cindex": 0.5618739903069467,
+          "cindex_ci_lo": 0.5121391131506646,
+          "cindex_ci_hi": 0.6124196883352665,
+          "logrank_p": 0.011067318865401897,
+          "cindex_on_clinical_subset": 0.5614712798118912,
+          "delta_c_vs_clinical_oof": -0.07990426603963718,
+          "delta_c_vs_clinical_transported": -0.06260497144776622,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.13229981983600325,
+            0.010098559963427286
+          ],
+          "delta_c_vs_clinical_transported_se": 0.034757627319059514
+        },
+        "expr_score_added_value": {
+          "n": 157,
+          "adjusted_for": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "hr_per_sd": 1.1336501860447479,
+          "hr_lo": 1.013272398038316,
+          "hr_hi": 1.2683289772891795,
+          "wald_p": 0.028511953863171173,
+          "lr_stat": 4.76444321078111,
+          "lr_p": 0.029053455153036492
+        }
+      },
+      "gse17260": {
+        "n": 110,
+        "events": 46,
+        "platform": "GPL6480",
+        "clinical_oof": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.6200646087580761,
+          "cindex_ci_lo": 0.5335170212087291,
+          "cindex_ci_hi": 0.7030539421847816,
+          "logrank_p": 0.005396627272597121,
+          "covars": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.5990667623833453,
+          "cindex_ci_lo": 0.5153941802122846,
+          "cindex_ci_hi": 0.6742765433550548,
+          "logrank_p": 0.0098644174206051
+        },
+        "expr_clin_cox": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.6898779612347452,
+          "cindex_ci_lo": 0.6155868329877237,
+          "cindex_ci_hi": 0.7625075261098117,
+          "logrank_p": 0.018112266739458708,
+          "cindex_on_clinical_subset": 0.6898779612347452,
+          "delta_c_vs_clinical_oof": 0.06981335247666909,
+          "delta_c_vs_clinical_transported": 0.09081119885139988,
+          "delta_c_vs_clinical_transported_ci": [
+            0.02443827657616196,
+            0.14884963768115939
+          ],
+          "delta_c_vs_clinical_transported_se": 0.033912725318584004
+        },
+        "lasso_cox": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.6683417085427136,
+          "cindex_ci_lo": 0.5756977572004663,
+          "cindex_ci_hi": 0.7389505470585965,
+          "logrank_p": 0.12038904052489588,
+          "cindex_on_clinical_subset": 0.6683417085427136,
+          "delta_c_vs_clinical_oof": 0.048277099784637456,
+          "delta_c_vs_clinical_transported": 0.06927494615936824,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.0416616430856942,
+            0.18223006872617303
+          ],
+          "delta_c_vs_clinical_transported_se": 0.05963510489374109
+        },
+        "rsf": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.6173725771715721,
+          "cindex_ci_lo": 0.5136403129687546,
+          "cindex_ci_hi": 0.6899109863672814,
+          "logrank_p": 0.24131506467360692,
+          "cindex_on_clinical_subset": 0.6173725771715721,
+          "delta_c_vs_clinical_oof": -0.0026920315865039957,
+          "delta_c_vs_clinical_transported": 0.018305814788226793,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.09941129374022871,
+            0.1129043581394663
+          ],
+          "delta_c_vs_clinical_transported_se": 0.05600950195324608
+        },
+        "deepsurv": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.6410624551328069,
+          "cindex_ci_lo": 0.5670365058276465,
+          "cindex_ci_hi": 0.7160566608141653,
+          "logrank_p": 0.057541789206133995,
+          "cindex_on_clinical_subset": 0.6410624551328069,
+          "delta_c_vs_clinical_oof": 0.02099784637473079,
+          "delta_c_vs_clinical_transported": 0.04199569274946158,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.07858651395472178,
+            0.16208019131406223
+          ],
+          "delta_c_vs_clinical_transported_se": 0.060194584599079046
+        },
+        "expr_score_added_value": {
+          "n": 110,
+          "adjusted_for": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "hr_per_sd": 1.2972783661775085,
+          "hr_lo": 1.0930711889989893,
+          "hr_hi": 1.5396354567659747,
+          "wald_p": 0.0028984046708056526,
+          "lr_stat": 8.93221820662825,
+          "lr_p": 0.0028018386486782423
+        }
+      },
+      "gse140082": {
+        "n": 191,
+        "events": 56,
+        "platform": "GPL14951",
+        "clinical_oof": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.6513377926421404,
+          "cindex_ci_lo": 0.5815505779087089,
+          "cindex_ci_hi": 0.7314371470709768,
+          "logrank_p": 0.0001511793610580901,
+          "covars": [
+            "residual_subopt",
+            "stage_ord",
+            "age"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.6158723522853957,
+          "cindex_ci_lo": 0.5419926256522933,
+          "cindex_ci_hi": 0.6843012621135944,
+          "logrank_p": null
+        },
+        "expr_clin_cox": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.6362876254180602,
+          "cindex_ci_lo": 0.5514562886834219,
+          "cindex_ci_hi": 0.7159642319153813,
+          "logrank_p": 0.00010220817293519245,
+          "cindex_on_clinical_subset": 0.6362876254180602,
+          "delta_c_vs_clinical_oof": -0.015050167224080258,
+          "delta_c_vs_clinical_transported": 0.020415273132664447,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.024318445779070018,
+            0.06223278774420891
+          ],
+          "delta_c_vs_clinical_transported_se": 0.023115187723674685
+        },
+        "lasso_cox": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.5857023411371237,
+          "cindex_ci_lo": 0.4914019407917184,
+          "cindex_ci_hi": 0.6684423713494644,
+          "logrank_p": 0.028322335162576574,
+          "cindex_on_clinical_subset": 0.5857023411371237,
+          "delta_c_vs_clinical_oof": -0.0656354515050167,
+          "delta_c_vs_clinical_transported": -0.030170011148272002,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.1318518866163598,
+            0.06942772355648023
+          ],
+          "delta_c_vs_clinical_transported_se": 0.054487247461509666
+        },
+        "rsf": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.5769230769230769,
+          "cindex_ci_lo": 0.4962430138407233,
+          "cindex_ci_hi": 0.6615254932239838,
+          "logrank_p": 0.03546160161770222,
+          "cindex_on_clinical_subset": 0.5769230769230769,
+          "delta_c_vs_clinical_oof": -0.07441471571906355,
+          "delta_c_vs_clinical_transported": -0.03894927536231885,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.13806517652566366,
+            0.05832493334700578
+          ],
+          "delta_c_vs_clinical_transported_se": 0.054312308521994285
+        },
+        "deepsurv": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.6020066889632107,
+          "cindex_ci_lo": 0.5161457231082275,
+          "cindex_ci_hi": 0.6779197760465148,
+          "logrank_p": 0.0030432182212510143,
+          "cindex_on_clinical_subset": 0.6020066889632107,
+          "delta_c_vs_clinical_oof": -0.04933110367892968,
+          "delta_c_vs_clinical_transported": -0.013865663322184973,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.12453097909214278,
+            0.08135496910902139
+          ],
+          "delta_c_vs_clinical_transported_se": 0.05373541217474367
+        },
+        "expr_score_added_value": {
+          "n": 191,
+          "adjusted_for": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "hr_per_sd": 1.5230833541033397,
+          "hr_lo": 1.0548800130856144,
+          "hr_hi": 2.199096460990967,
+          "wald_p": 0.02476489278906706,
+          "lr_stat": 5.064607755851284,
+          "lr_p": 0.02441923098105336
+        }
+      },
+      "gse49997": {
+        "n": 171,
+        "events": 48,
+        "platform": "GPL2986",
+        "clinical_oof": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.5832399103139013,
+          "cindex_ci_lo": 0.501826431883477,
+          "cindex_ci_hi": 0.6658106881251835,
+          "logrank_p": 0.16315014726944133,
+          "covars": [
+            "residual_subopt",
+            "stage_ord",
+            "age"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.5751121076233184,
+          "cindex_ci_lo": 0.4829661197276783,
+          "cindex_ci_hi": 0.6761677480740838,
+          "logrank_p": 0.633728909398668
+        },
+        "expr_clin_cox": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.6195814648729447,
+          "cindex_ci_lo": 0.5363660977295677,
+          "cindex_ci_hi": 0.7188632719053394,
+          "logrank_p": 0.030181746103481948,
+          "cindex_on_clinical_subset": 0.6195814648729447,
+          "delta_c_vs_clinical_oof": 0.03634155455904342,
+          "delta_c_vs_clinical_transported": 0.04446935724962631,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.021573927154706136,
+            0.10789957713459998
+          ],
+          "delta_c_vs_clinical_transported_se": 0.03265111381976532
+        },
+        "lasso_cox": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.5951046337817638,
+          "cindex_ci_lo": 0.507456713336647,
+          "cindex_ci_hi": 0.6911131805699129,
+          "logrank_p": 0.09489475099302679,
+          "cindex_on_clinical_subset": 0.5951046337817638,
+          "delta_c_vs_clinical_oof": 0.011864723467862492,
+          "delta_c_vs_clinical_transported": 0.01999252615844538,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.1110280499309306,
+            0.1394414763639594
+          ],
+          "delta_c_vs_clinical_transported_se": 0.06445410112962961
+        },
+        "rsf": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.5840807174887892,
+          "cindex_ci_lo": 0.4967322195417511,
+          "cindex_ci_hi": 0.6775888809960251,
+          "logrank_p": 0.14624686829500844,
+          "cindex_on_clinical_subset": 0.5840807174887892,
+          "delta_c_vs_clinical_oof": 0.0008408071748878809,
+          "delta_c_vs_clinical_transported": 0.008968609865470767,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.080803696178419,
+            0.11184506850677306
+          ],
+          "delta_c_vs_clinical_transported_se": 0.05087497355835216
+        },
+        "deepsurv": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.6098654708520179,
+          "cindex_ci_lo": 0.5370485093664575,
+          "cindex_ci_hi": 0.699501016573121,
+          "logrank_p": 0.0493997544032325,
+          "cindex_on_clinical_subset": 0.6098654708520179,
+          "delta_c_vs_clinical_oof": 0.0266255605381166,
+          "delta_c_vs_clinical_transported": 0.034753363228699485,
+          "delta_c_vs_clinical_transported_ci": [
+            -0.08912672707036304,
+            0.15347652652829905
+          ],
+          "delta_c_vs_clinical_transported_se": 0.062018611369692465
+        },
+        "expr_score_added_value": {
+          "n": 171,
+          "adjusted_for": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "hr_per_sd": 1.1846840928396707,
+          "hr_lo": 0.9704443108773825,
+          "hr_hi": 1.4462204416021205,
+          "wald_p": 0.09587549305717824,
+          "lr_stat": 2.8054838020353827,
+          "lr_p": 0.09394250176142938
+        }
+      }
+    }
+  }
+}
