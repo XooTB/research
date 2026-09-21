@@ -560,6 +560,307 @@
     "context": "Rahman et al. Environmental Systems Research (2024) 13:44 https://doi.org/10.1186/s40068-024-00378-zRESEARCHOpen Access © The Author(s) 2024. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License,…"
   },
   {
+    "paper": "2024-uddin-a-comparative-study-on-machine",
+    "kind": "DOI",
+    "value": "10.4108/eetiot.6223",
+    "url": "https://doi.org/10.4108/eetiot.6223",
+    "context": "…permits copying, redistributing, remixing, transformation, and building upon the material in any medium so long as the original work is properly cited. doi: 10.4108/eetiot.6223 * Corresponding author. Email: jilanicsejnu@gmail.com EAI Endorsed Transactions on Internet of Things | | Volume 11 | 2025 | K. M. M. Uddin et al. 2…"
+  },
+  {
+    "paper": "2024-uddin-a-comparative-study-on-machine",
+    "kind": "DOI",
+    "value": "10.5121/jmlr.2011.2103",
+    "url": "https://doi.org/10.5121/jmlr.2011.2103",
+    "context": "…1). Evaluation: From Precision, Recall and F-Measure to ROC, Informedness, Markedness& Correlation. Journal of Machine Learning Technologies, 2(1), 37-63. doi: 10.5121/jmlr.2011.2103 [32] Polo, Tatiana Cristina Figueira, and Hélio Amante Miot. \"Use of ROC curves in clinical and experimental studies.\" Jornal vascular brasileiro 19 (2020): e2…"
+  },
+  {
+    "paper": "2024-uddin-a-comparative-study-on-machine",
+    "kind": "url",
+    "value": "https://www.kaggle.com/datasets/ranzeet013/cervical-cancer-dataset",
+    "url": "https://www.kaggle.com/datasets/ranzeet013/cervical-cancer-dataset",
+    "context": "…ommunication and automation (ICCCA). IEEE, 2018. [7] Cervical Cancer Dataset. https://www.kaggle.com/datasets/ranzeet013/cervical-cancer-dataset. Accessed March 24, 2024. [8] Ratul, Ishrak Jahan, et al. \"Early risk prediction…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862October",
+    "url": "https://doi.org/10.1371/journal.pone.0308862October",
+    "context": "…ate is 99.33%, and F1 score is 99.34% on multi-label class. For the binary classification model, we got 99.41% of accuracy. PLOS ONE PLOS ONE | https://doi.org/10.1371/journal.pone.0308862October 3, 2024 1 / 35 a1111111111 a1111111111 a1111111111 a1111111111 a1111111111 OPEN ACCESS Citation: Mohi Uddin KM, Hamim H, Mim M.NT, Akhter A, Uddin MA (2024) Ma…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862Editor:",
+    "url": "https://doi.org/10.1371/journal.pone.0308862Editor:",
+    "context": "…ine learning and deep learning-based approach to categorize Bengali comments on social networks using fused dataset. PLoS ONE 19(10): e0308862. https://doi.org/10.1371/journal.pone.0308862Editor: Muhammad Bilal, University of Florida, UNITED STATES OF AMERICA Received: January 26, 2024 Accepted: July 31, 2024 Published: October 3, 2024 Peer Review Histo…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862Copyright:",
+    "url": "https://doi.org/10.1371/journal.pone.0308862Copyright:",
+    "context": "…f the content of peer review and author responses alongside final, published articles. The editorial history of this article is available here: https://doi.org/10.1371/journal.pone.0308862Copyright: © 2024 Mohi Uddin et al. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g001PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g001PLOS",
+    "context": "…thoroughly several algorithms for ML and DL and implement them all via a comparable Fig 1. Social media user distribution in Bangladesh (2023). https://doi.org/10.1371/journal.pone.0308862.g001PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t001PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t001PLOS",
+    "context": "…acy and dataset coverage. Akhter et al. 2023 [21] DT, RF, LR, and MLP 44,001 MLP: 98.82% No DL models are used. Models’ execution time is high. https://doi.org/10.1371/journal.pone.0308862.t001PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g002PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g002PLOS",
+    "context": "…mments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.0308862October 3, 2024 6 / 35 Fig 2. Workflow of our proposed model. https://doi.org/10.1371/journal.pone.0308862.g002PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t002PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t002PLOS",
+    "context": "…omments 33,579 23,193 18,026 15,424 3,778 Total Words 3,90,688 3,17,191 3,45,339 3,92,196 60,269 Unique Words 37,667 33,533 33,820 32,257 9,047 https://doi.org/10.1371/journal.pone.0308862.t002PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g003PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g003PLOS",
+    "context": "…elps to reduce input depth, preserve important details, and prepare knowledge for building models Fig 3. Percentage of comments for each class. https://doi.org/10.1371/journal.pone.0308862.g003PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g004PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g004PLOS",
+    "context": "…rms must be trans- formed to vector style, enabling text sentences to be symbolized using vector representations. Fig 4. Word cloud of dataset. https://doi.org/10.1371/journal.pone.0308862.g004PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g005Fig",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g005Fig",
+    "context": "…a high visual of text data, combining both term frequencies Fig 5. Density plot of comments length before and after preprocessing the dataset. https://doi.org/10.1371/journal.pone.0308862.g005Fig 6. Original and processed text of Bengali text dataset. https://doi.org/10.1371/journal.pone.0308862.g006PLOS ONE Machine learning and deep learning-based hybr…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g006PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g006PLOS",
+    "context": "…d after preprocessing the dataset. https://doi.org/10.1371/journal.pone.0308862.g005Fig 6. Original and processed text of Bengali text dataset. https://doi.org/10.1371/journal.pone.0308862.g006PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g007PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g007PLOS",
+    "context": "…ment, and the translated version of the comment is in brackets below. Fig 7. Example of CV & TF-IDF transformation representation of a comment. https://doi.org/10.1371/journal.pone.0308862.g007PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g008PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g008PLOS",
+    "context": "…ch is frequently predicted using description models is provided by hard Fig 8. Example of tokenization and padding representation of a comment. https://doi.org/10.1371/journal.pone.0308862.g008PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g009PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g009PLOS",
+    "context": "…s. When used on new data, it performs admirably [37]. Its formula in numbers is: Kb0þb1k1þb2k2 ð3Þ Fig 9. Arrangement of the stacking ensemble. https://doi.org/10.1371/journal.pone.0308862.g009PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g010PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g010PLOS",
+    "context": "…ees based on which classification garnered the most votes, should that class receive any votes. The Fig 10. Arrangement of the voting ensemble. https://doi.org/10.1371/journal.pone.0308862.g010PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t003PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t003PLOS",
+    "context": "…n ¼ TP TP þ FP x 100% ð15Þ Table 3. ANOVA and chi2 tests results. Test Name P-Value F-Value Chi2-Value ANOVA 0.0 20.99 -- Chi2 1.0 -- 825999.76 https://doi.org/10.1371/journal.pone.0308862.t003PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t004PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t004PLOS",
+    "context": "…), 5 units (Softmax), learning_rate: 0.0005, epsilon: 1e-07, optimizer: Adam, epochs: 10, batch_size: 32, use_multiprocessing: True, workers: 8 https://doi.org/10.1371/journal.pone.0308862.t004PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g011PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g011PLOS",
+    "context": "…ix of confusion of all ML models. (a) Stacking, (b) AdaBoost, (c) Bagging, (d) K-NN, (e) LR, (f) MLP, (g) RF, (h) SGD, (i) Voting, (j) XGBoost. https://doi.org/10.1371/journal.pone.0308862.g011PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g012PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g012PLOS",
+    "context": "…t attacks. We Fig 12. Confusion matrix and ROC curve of hybrid stacking model with binary classifications. (a) Confusion Matrix, (b) ROC curve. https://doi.org/10.1371/journal.pone.0308862.g012PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g013PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g013PLOS",
+    "context": "…odels ROC curve over every class. (a) Adaboost, (b) Bagging, (c) K-NN, (d) LR, (e) MLP, (f) RF, (g) SGD, (h) Voting, (i) XGBoost, (j) Stacking. https://doi.org/10.1371/journal.pone.0308862.g013PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t005Table",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t005Table",
+    "context": "…0.78 0.82 0.98 0.83 MLP 1.00 1.00 1.00 1.00 1.00 SGD 1.00 1.00 1.00 1.00 1.00 Stacking 1.00 1.00 1.00 1.00 1.00 Voting 1.00 1.00 1.00 1.00 1.00 https://doi.org/10.1371/journal.pone.0308862.t005Table 6. All ML models classification reports of precision, recall, F1 score, and accuracy. Classifiers Accuracy Precision Recall F1 Score Stacking 99.34% 99.34% 99.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t006Fig",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t006Fig",
+    "context": "…27% RF 98.68% 98.68% 98.68% 98.68% Bagging 64.24% 84.93% 64.24% 64.74% XGBoost 97.91% 98.01% 97.92% 97.95% AdaBoost 31.63% 39.75% 31.63% 21.49% https://doi.org/10.1371/journal.pone.0308862.t006Fig 14. The collection of data assessment’s accuracy, precision, recall, and F1 score of all ML models. https://doi.org/10.1371/journal.pone.0308862.g014PLOS ONE M…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g014PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g014PLOS",
+    "context": "…oi.org/10.1371/journal.pone.0308862.t006Fig 14. The collection of data assessment’s accuracy, precision, recall, and F1 score of all ML models. https://doi.org/10.1371/journal.pone.0308862.g014PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g015PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g015PLOS",
+    "context": "…Fig 15. Results of training as well as validation: The matrix of confusion of all ML models. (a) BiGRU, (b) CLSTM, (c) CNN, (d) DNN, (e) RNN. https://doi.org/10.1371/journal.pone.0308862.g015PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g016PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g016PLOS",
+    "context": "…classifications, including sexually explicit Fig 16. All DL models ROC curve over every class. (a) BiGRU, (b) CLSTM, (c) CNN, (d) RNN, (e) DNN. https://doi.org/10.1371/journal.pone.0308862.g016PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t007Table",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t007Table",
+    "context": "…0.99 0.97 0.99 1.00 0.98 CNN 0.98 0.98 0.99 1.00 0.98 CLSTM 0.98 0.97 0.99 0.99 0.98 DNN 0.98 0.97 0.99 0.99 0.98 RNN 0.98 0.97 0.99 0.99 0.98 https://doi.org/10.1371/journal.pone.0308862.t007Table 8. All DL models classification report of precision, recall, F1 score and accuracy. Classifiers Accuracy Precision Recall F1 Score BiGRU 90.63% 90.73% 90.63% 9…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t008Fig",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t008Fig",
+    "context": "…90.63% 90.64% CNN 90.02% 90.03% 90.02% 89.98% CLSTM 89.36% 89.59% 89.36% 89.38% DNN 89.20% 89.57% 89.20% 89.24% RNN 88.41% 88.37% 88.41% 88.36% https://doi.org/10.1371/journal.pone.0308862.t008Fig 17. The collection of data assessment’s accuracy, precision, recall, and F1 score. https://doi.org/10.1371/journal.pone.0308862.g017PLOS ONE Machine learning a…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g017PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g017PLOS",
+    "context": "…88.36% https://doi.org/10.1371/journal.pone.0308862.t008Fig 17. The collection of data assessment’s accuracy, precision, recall, and F1 score. https://doi.org/10.1371/journal.pone.0308862.g017PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g018PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g018PLOS",
+    "context": "…ced challenges with lower detection accuracy and limited dataset coverage. Eshan et al. Fig 18. Classification report of proposed hybrid model. https://doi.org/10.1371/journal.pone.0308862.g018PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.t009PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.t009PLOS",
+    "context": "…98.57 98.58 98.56 98.56 0.997 Our Work TF-IDF Count Vectorizer Tokenization 94,000 5 99.34 99.34 99.34 99.34 -- 2 99.41 99.41 99.41 99.41 1.00 https://doi.org/10.1371/journal.pone.0308862.t009PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1371/journal.pone.0308862.g019PLOS",
+    "url": "https://doi.org/10.1371/journal.pone.0308862.g019PLOS",
+    "context": "…arching video and pic- ture filtration because both serve as targets for harassment on social networking sites. Fig 19. Web view of our system. https://doi.org/10.1371/journal.pone.0308862.g019PLOS ONE Machine learning and deep learning-based hybrid strategy to categorize Bengali comments on social networks PLOS ONE | https://doi.org/10.1371/journal.pone.…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1186/s41043-023-00469-0",
+    "url": "https://doi.org/10.1186/s41043-023-00469-0",
+    "context": "…and other factors on depression and anxiety among university students in Bangladesh. Jour- nal of Health, Population and Nutrition, 42(1), 119. https://doi.org/10.1186/s41043-023-00469-0 PMID: 37932869 11. Das A. K., Al Asif A., Paul A., & Hossain M. N. (2021). Bangla hate speech detection on social media using attention-based recurrent neural…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.3390/s20071884",
+    "url": "https://doi.org/10.3390/s20071884",
+    "context": "…Kim J. M. (2020). Bearing fault diagnosis of induction motors using a genetic algorithm and machine learning classifiers. Sensors, 20(7), 1884. https://doi.org/10.3390/s20071884 PMID: 32231167 27. Hu J., Li S., Yao Y., Yu L., Yang G., & Hu J. (2018). Patent keyword extraction algorithm based on dis- tributed representation for patent c…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.3390/e20020104",
+    "url": "https://doi.org/10.3390/e20020104",
+    "context": "…g G., & Hu J. (2018). Patent keyword extraction algorithm based on dis- tributed representation for patent classification. Entropy, 20(2), 104. https://doi.org/10.3390/e20020104 PMID: 33265195 28. Kumar P., & Dhinesh Babu L. D. (2021). Fuzzy based feature engineering architecture for sentiment analysis of medical discussion over online…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1007/s00354-020-00119-7",
+    "url": "https://doi.org/10.1007/s00354-020-00119-7",
+    "context": "…wa V. M., Mohanty S. N., & Kakkar D. (2021). A heterogeneous ensemble forecasting model for disease prediction. New Generation Computing, 1–15. https://doi.org/10.1007/s00354-020-00119-7 PMID: 33424081 33. Zhang Y., Zhang H., Cai J., & Yang B. (2014). A weighted voting classifier based on differential evolu- tion. In Abstract and applied analys…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1016/j.xkme.2020.09.005",
+    "url": "https://doi.org/10.1016/j.xkme.2020.09.005",
+    "context": "…K., et al. (2021). Medical nutrition therapy access in CKD: a cross-sectional survey of patients and providers. Kidney Medicine, 3 (1), 31–41. https://doi.org/10.1016/j.xkme.2020.09.005 PMID: 33604538 41. Breiman L. (1996). Bagging predictors. Machine learning, 24, 123–140. 42. Friedman J. H. (2001). Greedy function approximation: a gradient b…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "DOI",
+    "value": "10.1038/nature14539",
+    "url": "https://doi.org/10.1038/nature14539",
+    "context": "…learning: A comparative study. Electronics, 9(3), 483. 47. LeCun Y., Bengio Y., & Hinton G. (2015). Deep learning. nature, 521(7553), 436–444. https://doi.org/10.1038/nature14539 PMID: 26017442 48. Alharbi, A., & Lee, M. (2019, July). Crisis detection from Arabic tweets. In Proceedings of the 3rd work- shop on Arabic corpus linguistics…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "url",
+    "value": "https://www.kaggle.com/datasets/cypher1337/dataset-for-IntroductionSocial",
+    "url": "https://www.kaggle.com/datasets/cypher1337/dataset-for-IntroductionSocial",
+    "context": "…n reinforced through data previously released, and these are accessible online. https://www.kaggle.com/datasets/cypher1337/dataset-for-IntroductionSocial media platforms are vibrant platforms for communicating potential, inspiring id…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "url",
+    "value": "https://www.kaggle.com/datasets/smnuruzzaman/facebook-sentiment-analysis-bangla-language",
+    "url": "https://www.kaggle.com/datasets/smnuruzzaman/facebook-sentiment-analysis-bangla-language",
+    "context": "…li-comments. {Accessed-Date: 4:23 PM Thursday, November 17, 2023 (GMT+6) Dhaka} https://www.kaggle.com/datasets/smnuruzzaman/facebook-sentiment-analysis-bangla-language. {Accessed-Date: 1:09 AM Thursday, November 20, 2023 (GMT+6) Dhaka} The followin…"
+  },
+  {
+    "paper": "2024-uddin-machine-learning-and-deep-learning-based",
+    "kind": "url",
+    "value": "https://www.kaggle.com/datasets/cypher1337/dataset-for-cyberbully-detection-bengali-comments",
+    "url": "https://www.kaggle.com/datasets/cypher1337/dataset-for-cyberbully-detection-bengali-comments",
+    "context": "…22. Ahmed, F. (2023) Dataset for cyberbully detection bengali comments, Kaggle. https://www.kaggle.com/datasets/cypher1337/dataset-for-cyberbully-detection-bengali-comments (Accessed: 17 November 2023). 23. Nobel, S.N. (2023) Facebook sentiment analysi…"
+  },
+  {
     "paper": "2025-masum-an-explainable-ai-based-deep",
     "kind": "DOI",
     "value": "10.4108/airo.9795",
