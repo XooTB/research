@@ -69,3 +69,39 @@ refs: T006, E003, gse17260, gse32062, gse53963, run:20260917T191134Z-t006-valida
 tags: validation, independence, cohort-quality
 supersedes: F010
 Both Japanese series record stage, residual, grade, PFS months, recurrence, OS months and death. 26 of 110 GSE17260 patients match a GSE32062 patient on all seven fields; permutation null (fields shuffled within GSE32062, 200 draws) gives median 0, max 3, p=0.005. Expression confirms them: for 21 of 28 such pairs the GSE32062 partner is the single best-correlating sample out of 260 (median rank 1; chance 1/260). Mutual-best-match analysis independently flags 22 of 110 (0.4 expected by chance). Union of both criteria: 41 of 110 (37%). The 7-field key misses any patient whose follow-up was updated between the 2010 and 2012 papers, so 26 is a lower bound and the true overlap is plausibly 25-50%. This is NOT train/test leakage — the pool contains no Agilent data — but GSE17260 and GSE32062 are not independent replications of each other. GSE53963 shows no duplicate signal against either (max cross-cohort r 0.137 and 0.457, no fingerprint matches; different collection with fractional follow-up months and TCGA ids, F005) and stays an independent validator.
+
+## F013 · 2026-09-21 · PFS/PFI event definitions are heterogeneous across cohorts
+refs: docs/pfs-labels.md, pfs-training-pool, pfs-validation, gse63885, gse30161, tcga-cdr-pancanatlas, F007
+tags: pfs, pfi, endpoint, labels
+Mirrors F007 (OS event heterogeneity) for the PFS/PFI endpoint built for E004.
+
+- **tcga-ov-hiseqv2**: PFI from the PanCanAtlas CDR counts a new tumour event
+  (progression/recurrence/metastasis/new primary) OR death with tumour present as an
+  event -- the broadest definition here, since it can register an event from death alone
+  with no documented progression.
+- **gse26193, gse32062, gse49997, gse17260**: source-coded binary recurrence/progression
+  flags (`pfs event`, `rec (1)`, `pfs event`, `recurrence (1)`) with no further clinical
+  definition published by GEO beyond the field name.
+- **gse140082 (ICON7 trial)**: trial-defined PFS (RECIST progression or death, whichever
+  first) -- closer to TCGA's CDR PFI than to the other GEO cohorts, not re-verified against
+  the trial protocol here.
+- **gse63885**: has no recurrence-flag field at all. Its PFS-analog is *derived* --
+  `clinical status at last follow-up` in {AWD, DOD} -> event, NED -> censored -- paired with
+  the source's own `dfs - disease-free survival [days]` field, which is defined only from
+  the point of remission (0 for all 23 patients whose 1st-line response was not CR; those
+  23 fail the >=1 day Cox-usable floor and are excluded, not harmonised).
+- **gse26712, gse14764** (pool) and **gse53963** (validation) have no progression field at
+  all and drop out of the PFS tables entirely (confirmed by header inspection).
+
+Any model or verdict that pools PFS/PFI across cohorts, or compares a PFI-trained model's
+external transfer, must account for this the same way E003 accounted for F007: TCGA's
+event is not the same clinical event as most of the GEO cohorts'.
+
+Full per-cohort text: docs/pfs-labels.md. Tables:
+datasets/ovarian-cancer-prognosis-ml/pfs-training-pool/labels.csv,
+datasets/ovarian-cancer-prognosis-ml/pfs-validation/labels.csv.
+
+## F014 · 2026-09-21 · Expression adds less to clinical factors for progression than for death; E004 not supported
+refs: E004, E003, run:20260921T163531Z-e004-pfs-first-pass, gse32062, gse140082, gse49997, F013
+tags: pfs, transfer, negative-result
+E004 scored pfs-first-pass-v1 once on the three independent PFS validators. No cohort cleared ΔC ≥ 0.03: GSE32062 +0.020, GSE140082 +0.018, GSE49997 −0.051; pooled +0.001 [−0.034, +0.037], I²=0.73. The redundant GSE17260 gave −0.009. Verdict not-supported, against a rule requiring ≥2 cohorts and a pooled CI above zero. The signal is not absent: the expression score kept an adjusted HR of 1.175 per SD (p=0.008) on the pool, and the combined model beat clinical in 2 of 3 validators, just below the bar. What differs from E003 is consistency: I² rose from 0.27 (OS) to 0.73 (PFS), driven by GSE49997 reversing. Pool CV was also weaker for genes alone (0.552 at best vs 0.580 for OS) even though the pool has a higher event fraction (356/472 = 75%). Plausible causes, not tested here: progression is recorded with heterogeneous definitions (F013) and depends on treatment response and imaging schedules rather than tumour biology alone; residual disease barely predicts progression at all (p=0.23 on the pool, vs p=0.004 for OS), so the endpoint itself may be noisier. This contradicts E004's hypothesis (D001 rated PFS the higher-value endpoint) and means the workstream's positive result stays confined to overall survival.

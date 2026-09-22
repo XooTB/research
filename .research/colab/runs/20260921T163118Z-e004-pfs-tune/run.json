@@ -1,0 +1,151 @@
+{
+  "name": "e004-pfs-tune",
+  "saved_at": "20260921T163118Z",
+  "provenance": {
+    "via": "colab_sync",
+    "experiment": "E004",
+    "command": "run",
+    "session": "research",
+    "script": "agent/experiments/e004_pfs_first_pass.py",
+    "args": [
+      "--phase",
+      "tune"
+    ],
+    "invoked_at": "20260921T163103Z",
+    "git": {
+      "head": "6b80c559156054a94db48870aef04af4fa2ae620",
+      "branch": "main",
+      "dirty": true,
+      "code_commit": "55b5634888ee9a815d10758890398bb8fba499e2",
+      "code_ref": "refs/runs/20260921T163103Z-e004-pfs-first-pass"
+    },
+    "datasets": {
+      "datasets/ovarian-cancer-prognosis-ml/pfs-training-pool": {
+        "files": 1,
+        "bytes": 220108,
+        "sha256": "0a37529d33309052"
+      },
+      "datasets/ovarian-cancer-prognosis-ml/os-training-pool": {
+        "files": 10,
+        "bytes": 200857067,
+        "sha256": "29fcceac984ff83a"
+      }
+    }
+  },
+  "env": {
+    "colab": true,
+    "python": "3.13.15",
+    "workspace": "/content/research",
+    "workspace_present": true,
+    "cpu_count": 2,
+    "ram_gb": 13.6,
+    "disk_free_gb": 69.7,
+    "gpu": {
+      "available": true,
+      "name": "Tesla T4",
+      "memory_mb": 15360,
+      "driver": "580.82.07",
+      "torch_cuda": true,
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "validation": [],
+  "metrics": [
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5358412973782758,
+      "n": 472
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5352819029147385,
+      "n": 472
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5493880138060303,
+      "n": 472
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5518631113975373,
+      "n": 472
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5484813197184468,
+      "n": 472
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5480767107071811,
+      "n": 472
+    }
+  ],
+  "result": {
+    "phase": "tune",
+    "grid": [
+      {
+        "alpha": 0.03430906220312886,
+        "l1_ratio": 1.0,
+        "oof_cindex": 0.5358412973782758,
+        "n_genes": 250
+      },
+      {
+        "alpha": 0.06861812440625772,
+        "l1_ratio": 0.5,
+        "oof_cindex": 0.5352819029147385,
+        "n_genes": 250
+      },
+      {
+        "alpha": 0.020515360255777642,
+        "l1_ratio": 1.0,
+        "oof_cindex": 0.5493880138060303,
+        "n_genes": 500
+      },
+      {
+        "alpha": 0.041030720511555284,
+        "l1_ratio": 0.5,
+        "oof_cindex": 0.5518631113975373,
+        "n_genes": 500
+      },
+      {
+        "alpha": 0.022569158943920045,
+        "l1_ratio": 1.0,
+        "oof_cindex": 0.5484813197184468,
+        "n_genes": 1000
+      },
+      {
+        "alpha": 0.04513831788784009,
+        "l1_ratio": 0.5,
+        "oof_cindex": 0.5480767107071811,
+        "n_genes": 1000
+      }
+    ],
+    "chosen": {
+      "alpha": 0.041030720511555284,
+      "l1_ratio": 0.5,
+      "oof_cindex": 0.5518631113975373,
+      "n_genes": 500
+    },
+    "pool_n": 472
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "name": "e004-pfs-first-pass",
+  "saved_at": "20260921T163531Z",
+  "provenance": {
+    "via": "colab_sync",
+    "experiment": "E004",
+    "command": "run",
+    "session": "research",
+    "script": "agent/experiments/e004_pfs_first_pass.py",
+    "args": [
+      "--phase",
+      "final",
+      "--n-genes",
+      "500",
+      "--l1-ratio",
+      "0.5"
+    ],
+    "invoked_at": "20260921T163508Z",
+    "git": {
+      "head": "6b80c559156054a94db48870aef04af4fa2ae620",
+      "branch": "main",
+      "dirty": true,
+      "code_commit": "aedbf42daae9948a3b298e400a1cbbebf0adfad5",
+      "code_ref": "refs/runs/20260921T163213Z-e004-pfs-first-pass"
+    },
+    "datasets": {
+      "datasets/ovarian-cancer-prognosis-ml/pfs-training-pool": {
+        "files": 1,
+        "bytes": 220108,
+        "sha256": "0a37529d33309052"
+      },
+      "datasets/ovarian-cancer-prognosis-ml/os-training-pool": {
+        "files": 10,
+        "bytes": 200857067,
+        "sha256": "29fcceac984ff83a"
+      },
+      "datasets/ovarian-cancer-prognosis-ml/pfs-validation": {
+        "files": 1,
+        "bytes": 209232,
+        "sha256": "11490562c363d02e"
+      },
+      "datasets/ovarian-cancer-prognosis-ml/os-validation": {
+        "files": 9,
+        "bytes": 284682798,
+        "sha256": "d778eac57406d8ca"
+      }
+    }
+  },
+  "env": {
+    "colab": true,
+    "python": "3.13.15",
+    "workspace": "/content/research",
+    "workspace_present": true,
+    "cpu_count": 2,
+    "ram_gb": 13.6,
+    "disk_free_gb": 69.4,
+    "gpu": {
+      "available": true,
+      "name": "Tesla T4",
+      "memory_mb": 15360,
+      "driver": "580.82.07",
+      "torch_cuda": true,
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "validation": [
+    {
+      "id": "1bce4e927b5140eeba902a249495ed27",
+      "candidate": "pfs-first-pass-v1",
+      "config_hash": "b78d134d92ccf756",
+      "cohorts": [
+        "gse140082",
+        "gse17260",
+        "gse32062",
+        "gse49997"
+      ],
+      "reason": null,
+      "rescore_of": [],
+      "registered_at": "20260921T163520Z",
+      "code_commit": "aedbf42daae9948a3b298e400a1cbbebf0adfad5",
+      "experiment": "E004",
+      "run": "20260921T163531Z-e004-pfs-first-pass"
+    }
+  ],
+  "metrics": [
+    {
+      "model": "clinical_transported",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5944224710062345,
+      "ci_lo": 0.5545205581212915,
+      "ci_hi": 0.6342649950436249,
+      "n": 260
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6141650465911376,
+      "ci_lo": 0.5703222871860315,
+      "ci_hi": 0.6499106029927971,
+      "n": 260
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.01974257558490311,
+      "ci_lo": -0.0036995135194525957,
+      "ci_hi": 0.04216595243095172,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5611047797814575,
+      "ci_lo": 0.5196486089602117,
+      "ci_hi": 0.5969534796684887,
+      "n": 260
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "gse32062",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.03331769122477701,
+      "ci_lo": -0.09193548502311957,
+      "ci_hi": 0.021692703618179682,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5818757837766484,
+      "ci_lo": 0.531000587206678,
+      "ci_hi": 0.6227338839046104,
+      "n": 191
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.600356412118012,
+      "ci_lo": 0.5409365253069451,
+      "ci_hi": 0.648969381029678,
+      "n": 191
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.01848062834136366,
+      "ci_lo": -0.014123910476498882,
+      "ci_hi": 0.04794378597481361,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5692693551580754,
+      "ci_lo": 0.5193644408781675,
+      "ci_hi": 0.6161179400576254,
+      "n": 191
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "gse140082",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.012606428618572973,
+      "ci_lo": -0.07886134660233642,
+      "ci_hi": 0.04872079647994268,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.610879218472469,
+      "ci_lo": 0.5566904071925485,
+      "ci_hi": 0.677777248987058,
+      "n": 171
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5595026642984015,
+      "ci_lo": 0.4918846450287405,
+      "ci_hi": 0.6265712171327208,
+      "n": 171
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.0513765541740675,
+      "ci_lo": -0.09792501123555593,
+      "ci_hi": -0.004846848477693697,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.4968028419182948,
+      "ci_lo": 0.4418214177822997,
+      "ci_hi": 0.5598364829335712,
+      "n": 171
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "gse49997",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.11407637655417413,
+      "ci_lo": -0.1962797936387477,
+      "ci_hi": -0.040108907203902026,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6379518072289156,
+      "ci_lo": 0.5800970828354556,
+      "ci_hi": 0.6968083328159422,
+      "n": 110
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.6285140562248996,
+      "ci_lo": 0.558615712906455,
+      "ci_hi": 0.6933506062703004,
+      "n": 110
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.009437751004016004,
+      "ci_lo": -0.06580612320475124,
+      "ci_hi": 0.045505284213040384,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "cindex",
+      "value": 0.5917670682730923,
+      "ci_lo": 0.5211264439409489,
+      "ci_hi": 0.6632165943321742,
+      "n": 110
+    },
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "gse17260",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": -0.04618473895582331,
+      "ci_lo": -0.12411139178320615,
+      "ci_hi": 0.02683914428826419,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "pfs-validation",
+      "split": "external",
+      "metric": "delta_c_vs_clinical_transported_pooled",
+      "value": 0.0014043423517618168,
+      "ci_lo": -0.03387743001905913,
+      "ci_hi": 0.03668611472258276,
+      "n": 3,
+      "baseline": "clinical_transported"
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "pfs-validation",
+      "split": "external",
+      "metric": "e004_success_indicator",
+      "value": 0.0,
+      "n": 3
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5240363674803631,
+      "n": 355
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5435592963252648,
+      "n": 355
+    }
+  ],
+  "result": {
+    "phase": "final",
+    "endpoint": "pfs",
+    "n_genes": 500,
+    "l1_ratio": 0.5,
+    "alpha": 0.041030720511555284,
+    "signature_size": 101,
+    "signature_top": {
+      "MMP9": 0.20908472334317338,
+      "SNRPG": 0.1896602484745364,
+      "HPN": 0.17571684303651278,
+      "VSIG4": 0.1506059480219941,
+      "CXCL9": 0.1490548931280742,
+      "SOX11": 0.1420926311757017,
+      "BMP7": 0.13756570260782144,
+      "RPS27": 0.13693220640161044,
+      "KLK6": 0.12594554306106043,
+      "CXCL11": 0.12173036226521476,
+      "FOSB": 0.11381633243892712,
+      "NMNAT2": 0.11160307401509752,
+      "HOPX": 0.11076131031523796,
+      "AMIGO2": 0.10674479319552228,
+      "C1D": 0.10536138679604684,
+      "CALM1": 0.0957437608046283,
+      "HLA-DQA1": 0.0939929176716341,
+      "RPS28": 0.09240161544971416,
+      "TSPAN1": 0.09147355451126778,
+      "OBSCN": 0.08918100372774708
+    },
+    "stage2_coef": {
+      "residual_subopt": 0.1515494368385247,
+      "stage_ord": 0.3640141134247686,
+      "expr_score": 0.16127960028736357
+    },
+    "pool_internal": {
+      "clinical_oof_cindex": 0.5240363674803631,
+      "combined_oof_cindex": 0.5435592963252648,
+      "n": 355,
+      "events": 269
+    },
+    "external": {
+      "gse32062": {
+        "n": 260,
+        "events": 193,
+        "clinical_transported": {
+          "cindex": 0.5944224710062345,
+          "ci_lo": 0.5545205581212915,
+          "ci_hi": 0.6342649950436249
+        },
+        "expr_clin_pfs_cox": {
+          "cindex": 0.6141650465911376,
+          "ci_lo": 0.5703222871860315,
+          "ci_hi": 0.6499106029927971,
+          "delta": 0.01974257558490311,
+          "delta_ci": [
+            -0.0036995135194525957,
+            0.04216595243095172
+          ],
+          "delta_se": 0.011343447899935737
+        },
+        "expr_pfs_coxnet": {
+          "cindex": 0.5611047797814575,
+          "ci_lo": 0.5196486089602117,
+          "ci_hi": 0.5969534796684887,
+          "delta": -0.03331769122477701,
+          "delta_ci": [
+            -0.09193548502311957,
+            0.021692703618179682
+          ],
+          "delta_se": 0.02896873717213519
+        }
+      },
+      "gse140082": {
+        "n": 191,
+        "events": 135,
+        "clinical_transported": {
+          "cindex": 0.5818757837766484,
+          "ci_lo": 0.531000587206678,
+          "ci_hi": 0.6227338839046104
+        },
+        "expr_clin_pfs_cox": {
+          "cindex": 0.600356412118012,
+          "ci_lo": 0.5409365253069451,
+          "ci_hi": 0.648969381029678,
+          "delta": 0.01848062834136366,
+          "delta_ci": [
+            -0.014123910476498882,
+            0.04794378597481361
+          ],
+          "delta_se": 0.015404978779368765
+        },
+        "expr_pfs_coxnet": {
+          "cindex": 0.5692693551580754,
+          "ci_lo": 0.5193644408781675,
+          "ci_hi": 0.6161179400576254,
+          "delta": -0.012606428618572973,
+          "delta_ci": [
+            -0.07886134660233642,
+            0.04872079647994268
+          ],
+          "delta_se": 0.03219718028107159
+        }
+      },
+      "gse49997": {
+        "n": 171,
+        "events": 108,
+        "clinical_transported": {
+          "cindex": 0.610879218472469,
+          "ci_lo": 0.5566904071925485,
+          "ci_hi": 0.677777248987058
+        },
+        "expr_clin_pfs_cox": {
+          "cindex": 0.5595026642984015,
+          "ci_lo": 0.4918846450287405,
+          "ci_hi": 0.6265712171327208,
+          "delta": -0.0513765541740675,
+          "delta_ci": [
+            -0.09792501123555593,
+            -0.004846848477693697
+          ],
+          "delta_se": 0.024523052214501028
+        },
+        "expr_pfs_coxnet": {
+          "cindex": 0.4968028419182948,
+          "ci_lo": 0.4418214177822997,
+          "ci_hi": 0.5598364829335712,
+          "delta": -0.11407637655417413,
+          "delta_ci": [
+            -0.1962797936387477,
+            -0.040108907203902026
+          ],
+          "delta_se": 0.039619404613755106
+        }
+      },
+      "gse17260": {
+        "n": 110,
+        "events": 76,
+        "clinical_transported": {
+          "cindex": 0.6379518072289156,
+          "ci_lo": 0.5800970828354556,
+          "ci_hi": 0.6968083328159422
+        },
+        "expr_clin_pfs_cox": {
+          "cindex": 0.6285140562248996,
+          "ci_lo": 0.558615712906455,
+          "ci_hi": 0.6933506062703004,
+          "delta": -0.009437751004016004,
+          "delta_ci": [
+            -0.06580612320475124,
+            0.045505284213040384
+          ],
+          "delta_se": 0.027547374732688184
+        },
+        "expr_pfs_coxnet": {
+          "cindex": 0.5917670682730923,
+          "ci_lo": 0.5211264439409489,
+          "ci_hi": 0.6632165943321742,
+          "delta": -0.04618473895582331,
+          "delta_ci": [
+            -0.12411139178320615,
+            0.02683914428826419
+          ],
+          "delta_se": 0.039693481899698846
+        }
+      }
+    },
+    "pooled": {
+      "estimate": 0.0014043423517618168,
+      "ci_lo": -0.03387743001905913,
+      "ci_hi": 0.03668611472258276,
+      "se": 0.018000904270827015,
+      "tau2": 0.000686366493475267,
+      "i2": 0.7259644668244248,
+      "k": 3
+    },
+    "cohorts_passing": 0,
+    "e004_success_indicator": 0,
+    "rule_cohorts": [
+      "gse32062",
+      "gse140082",
+      "gse49997"
+    ],
+    "redundant_scored": [
+      "gse17260"
+    ]
+  }
+}

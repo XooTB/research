@@ -1,0 +1,128 @@
+{
+  "name": "e004-pfs-tune",
+  "saved_at": "20260921T163220Z",
+  "provenance": {
+    "via": "colab_sync",
+    "experiment": "E004",
+    "command": "run",
+    "session": "research",
+    "script": "agent/experiments/e004_pfs_first_pass.py",
+    "args": [
+      "--phase",
+      "tune",
+      "--gene-grid",
+      "500",
+      "--l1-grid",
+      "0.5"
+    ],
+    "invoked_at": "20260921T163213Z",
+    "git": {
+      "head": "6b80c559156054a94db48870aef04af4fa2ae620",
+      "branch": "main",
+      "dirty": true,
+      "code_commit": "aedbf42daae9948a3b298e400a1cbbebf0adfad5",
+      "code_ref": "refs/runs/20260921T163213Z-e004-pfs-first-pass"
+    },
+    "datasets": {
+      "datasets/ovarian-cancer-prognosis-ml/pfs-training-pool": {
+        "files": 1,
+        "bytes": 220108,
+        "sha256": "0a37529d33309052"
+      },
+      "datasets/ovarian-cancer-prognosis-ml/os-training-pool": {
+        "files": 10,
+        "bytes": 200857067,
+        "sha256": "29fcceac984ff83a"
+      }
+    }
+  },
+  "env": {
+    "colab": true,
+    "python": "3.13.15",
+    "workspace": "/content/research",
+    "workspace_present": true,
+    "cpu_count": 2,
+    "ram_gb": 13.6,
+    "disk_free_gb": 69.7,
+    "gpu": {
+      "available": true,
+      "name": "Tesla T4",
+      "memory_mb": 15360,
+      "driver": "580.82.07",
+      "torch_cuda": true,
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "validation": [],
+  "metrics": [
+    {
+      "model": "expr_pfs_coxnet",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5518631113975373,
+      "n": 472
+    },
+    {
+      "model": "clinical_transported",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5240363674803631,
+      "n": 355
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "cindex",
+      "value": 0.5435592963252648,
+      "n": 355
+    },
+    {
+      "model": "expr_clin_pfs_cox",
+      "cohort": "pfs-training-pool",
+      "split": "cv",
+      "metric": "delta_c_vs_clinical_transported",
+      "value": 0.0195229288449017,
+      "baseline": "clinical_transported",
+      "n": 355
+    }
+  ],
+  "result": {
+    "phase": "tune",
+    "grid": [
+      {
+        "alpha": 0.041030720511555284,
+        "l1_ratio": 0.5,
+        "oof_cindex": 0.5518631113975373,
+        "n_genes": 500
+      }
+    ],
+    "chosen": {
+      "alpha": 0.041030720511555284,
+      "l1_ratio": 0.5,
+      "oof_cindex": 0.5518631113975373,
+      "n_genes": 500
+    },
+    "pool_n": 472,
+    "pool_internal": {
+      "n": 355,
+      "events": 269,
+      "clinical_oof_cindex": 0.5240363674803631,
+      "combined_oof_cindex": 0.5435592963252648,
+      "expr_only_oof_cindex": 0.5625841389067084,
+      "delta_c_pool_cv": 0.0195229288449017
+    },
+    "stage2_coef": {
+      "residual_subopt": 0.1515494368385247,
+      "stage_ord": 0.3640141134247686,
+      "expr_score": 0.16127960028736357
+    },
+    "stage2_p": {
+      "residual_subopt": 0.2323373915786368,
+      "stage_ord": 0.015338965025054621,
+      "expr_score": 0.007991190246574175
+    }
+  }
+}
