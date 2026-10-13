@@ -451,8 +451,10 @@ def capped(rows: list, limit: int) -> dict:
 
 def ready_and_blocked(ix: Index, ws: str | None) -> tuple[list[dict], list[dict], list[dict]]:
     ready, blocked, running = [], [], []
+    # Without --ws, only active workstreams: paused/done ones keep their items but leave the queue.
+    scope = [ws] if ws else [w for w, m in ix.workstreams.items() if m.get("status") == "active"]
     for it in sorted(ix.items.values(), key=lambda r: (r.get("priority") or 99, r["id"])):
-        if it["kind"] not in ("experiment", "task") or (ws and it["ws"] != ws):
+        if it["kind"] not in ("experiment", "task") or it["ws"] not in scope:
             continue
         line = {"id": it["id"], "p": it.get("priority"), "summary": it.get("summary")}
         if it["status"] == "running":
@@ -829,7 +831,7 @@ def main() -> None:
 
     p = sub.add_parser("status", help="regenerate research/NOW.md")
     p.add_argument("--print", action="store_true", help="print NOW.md instead of a summary")
-    p = sub.add_parser("next", help="running, ready (by priority) and blocked work")
+    p = sub.add_parser("next", help="running, ready (by priority) and blocked work in active workstreams (--ws: any)")
     p.add_argument("--ws")
     p = sub.add_parser("list", help="one line per item")
     p.add_argument("--kind", choices=["experiment", "task", "finding", "decision", "workstream"])

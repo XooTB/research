@@ -47,6 +47,8 @@ def dedupe(papers: list[dict]) -> list[dict]:
                 merged["pdf_url"] = p["pdf_url"]
             if not merged.get("doi") and p.get("doi"):
                 merged["doi"] = p["doi"]
+            if (p.get("citations") or 0) > (merged.get("citations") or 0):
+                merged["citations"] = p["citations"]
     return [by_key[k] for k in order]
 
 

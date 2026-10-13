@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from common import http_get, cfg  # noqa: E402
 
 API = "https://api.semanticscholar.org/graph/v1/paper/search"
-FIELDS = "title,abstract,year,venue,authors,externalIds,openAccessPdf,url"
+FIELDS = "title,abstract,year,venue,authors,externalIds,openAccessPdf,url,citationCount"
 
 
 def search(query: str, limit: int = 15, **kw) -> list[dict]:
@@ -34,5 +34,6 @@ def search(query: str, limit: int = 15, **kw) -> list[dict]:
             "source_id": p.get("paperId"),
             "url": p.get("url"),
             "pdf_url": oa.get("url"),
+            "citations": p.get("citationCount"),
         })
     return out

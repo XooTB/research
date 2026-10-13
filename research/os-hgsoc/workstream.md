@@ -1,11 +1,11 @@
 +++
 id = "os-hgsoc"
 title = "Overall survival from tumour gene expression (HGSOC)"
-status = "active"
+status = "paused"
 summary = "Rank high-grade serous ovarian cancer patients by hazard of death from primary-tumour expression + age, FIGO stage, residual disease; must beat a clinical-only baseline on external cohorts."
 question = "Does bulk tumour expression add replicated, cross-platform prognostic value for OS over residual disease + stage + age?"
 created = "2026-08-27"
-updated = "2026-09-17"
+updated = "2026-10-13"
 
 # Pre-registered success rule (D006). An experiment inherits it unless it declares its own
 # [criterion] or criterion = "none". Verdicts are computed from metric rows, never judged.

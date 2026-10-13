@@ -36,3 +36,9 @@ Did: ran E004 end to end. Pre-registered the stricter compound rule (≥2 of 3 i
 State: E004 done, not-supported (F014). 0/3 validators cleared 0.03: GSE32062 +0.020, GSE140082 +0.018, GSE49997 −0.051; pooled +0.001 [−0.034, +0.037], I²=0.73. The score still carries pool signal (HR 1.175/SD, p=0.008) and won in 2 of 3 cohorts, so this is a null, not a reversal. Candidate pfs-first-pass-v1 is spent. Colab session stopped.
 Next: T002 (GSE9891) matters more now — the OS result rests on 2 independent cohorts and PFS did not corroborate it, so a fresh independent OS cohort is the highest-value evidence left. Then T005, which must report E004's null beside E003's positive. T004 (bigger TCGA pool) would help both.
 Watch: residual disease barely predicts progression (p=0.23 vs 0.004 for death) — the endpoint may be noisier, not the signal weaker. I²=0.73 means one cohort (GSE49997, n=171) decides the pooled PFS result; a 3-cohort rule is fragile. D001's premise that PFS was the higher-value endpoint is now contradicted.
+
+## 2026-10-13 12:03 · Paused os-hgsoc
+Did: paused os-hgsoc at the user's request (workstream status active -> paused) to start a new line of research. No items closed or changed; research.py next now skips non-active workstreams (next --ws os-hgsoc still lists them).
+State: nothing running, no Colab session. Last result: E004 (PFS) not supported; E003 (OS) supported, with GSE17260 counted as redundant (D010).
+Next (on resume): set status back to active in research/os-hgsoc/workstream.md, then T002 (GSE9891 OS labels, p2), T004 (TCGA OS n 302 -> ~550, p3), T005 (write-up, p4).
+Watch: the local .venv was missing on 2026-10-13; the tracker ran on system python3.

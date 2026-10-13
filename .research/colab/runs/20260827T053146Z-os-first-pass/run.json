@@ -1,0 +1,522 @@
+{
+  "name": "os-first-pass",
+  "saved_at": "20260827T053146Z",
+  "env": {
+    "colab": true,
+    "python": "3.13.15",
+    "workspace": "/content/research",
+    "workspace_present": true,
+    "cpu_count": 2,
+    "ram_gb": 13.6,
+    "disk_free_gb": 69.5,
+    "gpu": {
+      "available": true,
+      "name": "Tesla T4",
+      "memory_mb": 15360,
+      "driver": "580.82.07",
+      "torch_cuda": true,
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "result": {
+    "task": "os first-pass M3 clinical + M4 expression classes",
+    "preprocess": {
+      "expression": "within-sample rank percentile; top 500 by train variance; z-score on train; val NA -> 0.5",
+      "residual": "GOG optimal vs suboptimal (os_clinical.recode_residual)",
+      "stage": "FIGO 1-4 (os_clinical.recode_stage)",
+      "imputation": "none for clinical; rank mid-fill on validation coverage gaps",
+      "n_genes": 500
+    },
+    "train": {
+      "n": 751,
+      "events": 485,
+      "n_features_total": 11474,
+      "n_features_model": 500,
+      "n_clinical_rd_stage": 445
+    },
+    "clinical_per_cohort": [
+      {
+        "split": "train",
+        "cohort": "gse14764",
+        "n_lab": 68,
+        "n_model": 64,
+        "events": 17,
+        "covars": "residual_subopt+stage_ord",
+        "how": "4-fold",
+        "cindex": 0.5519379844961241,
+        "ci_lo": 0.38128367518750955,
+        "ci_hi": 0.7111944444444442,
+        "logrank_p": 0.9236268162899508
+      },
+      {
+        "split": "train",
+        "cohort": "gse26193",
+        "n_lab": 79,
+        "n_model": 79,
+        "events": 60,
+        "covars": "stage_ord",
+        "how": "5-fold",
+        "cindex": 0.5983105679367362,
+        "ci_lo": 0.5034416502092657,
+        "ci_hi": 0.6787794093019961,
+        "logrank_p": 0.05981856230463303
+      },
+      {
+        "split": "train",
+        "cohort": "gse26712",
+        "n_lab": 185,
+        "n_model": 185,
+        "events": 129,
+        "covars": "residual_subopt",
+        "how": "5-fold",
+        "cindex": 0.5744744297003131,
+        "ci_lo": 0.5177319984059294,
+        "ci_hi": 0.6319846529677073,
+        "logrank_p": 0.00327432041945045
+      },
+      {
+        "split": "train",
+        "cohort": "gse30161",
+        "n_lab": 47,
+        "n_model": 46,
+        "events": 32,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "3-fold",
+        "cindex": 0.5625,
+        "ci_lo": 0.4746577018340347,
+        "ci_hi": 0.6583385832202883,
+        "logrank_p": 0.5291727662589973
+      },
+      {
+        "split": "train",
+        "cohort": "gse63885",
+        "n_lab": 70,
+        "n_model": 70,
+        "events": 62,
+        "covars": "residual_subopt+stage_ord",
+        "how": "4-fold",
+        "cindex": 0.5617338003502627,
+        "ci_lo": 0.4879729393043143,
+        "ci_hi": 0.6367750229459699,
+        "logrank_p": 0.32449214632793966
+      },
+      {
+        "split": "train",
+        "cohort": "tcga-ov-hiseqv2",
+        "n_lab": 302,
+        "n_model": 265,
+        "events": 163,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "5-fold",
+        "cindex": 0.6113207547169811,
+        "ci_lo": 0.5708123733582106,
+        "ci_hi": 0.6615775578826438,
+        "logrank_p": 0.015246214354459992
+      },
+      {
+        "split": "val",
+        "cohort": "gse140082",
+        "n_lab": 191,
+        "n_model": 191,
+        "events": 56,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "5-fold",
+        "cindex": 0.6751672240802675,
+        "ci_lo": 0.6070454011182133,
+        "ci_hi": 0.7402306019792056,
+        "logrank_p": 3.8186027547626666e-05
+      },
+      {
+        "split": "val",
+        "cohort": "gse17260",
+        "n_lab": 110,
+        "n_model": 110,
+        "events": 46,
+        "covars": "residual_subopt+stage_ord",
+        "how": "5-fold",
+        "cindex": 0.5942211055276382,
+        "ci_lo": 0.5081977931318437,
+        "ci_hi": 0.68318457892008,
+        "logrank_p": 0.10787364311821764
+      },
+      {
+        "split": "val",
+        "cohort": "gse32062",
+        "n_lab": 260,
+        "n_model": 260,
+        "events": 121,
+        "covars": "residual_subopt+stage_ord",
+        "how": "5-fold",
+        "cindex": 0.5751220256253813,
+        "ci_lo": 0.5157150601807339,
+        "ci_hi": 0.6257014449423489,
+        "logrank_p": 0.019632555809892184
+      },
+      {
+        "split": "val",
+        "cohort": "gse49997",
+        "n_lab": 171,
+        "n_model": 171,
+        "events": 48,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "5-fold",
+        "cindex": 0.6118273542600897,
+        "ci_lo": 0.532009790092002,
+        "ci_hi": 0.703092723392548,
+        "logrank_p": 0.0020863032173659125
+      },
+      {
+        "split": "val",
+        "cohort": "gse53963",
+        "n_lab": 160,
+        "n_model": 157,
+        "events": 136,
+        "covars": "residual_subopt+stage_ord+age",
+        "how": "5-fold",
+        "cindex": 0.6514528048370843,
+        "ci_lo": 0.5945010251106293,
+        "ci_hi": 0.6924224626068137,
+        "logrank_p": 8.004008029613887e-07
+      }
+    ],
+    "models": {
+      "lasso_cox": {
+        "train_oof_cindex": 0.5781889971045012,
+        "penalizer": 0.02,
+        "signature_size": 144,
+        "signature_top": {
+          "CXCL11": -0.1445026679662909,
+          "MFAP4": 0.14092886377536407,
+          "BAG4": 0.11481643816052862,
+          "RPS28": -0.10293234274038862,
+          "HOXD1": 0.10220412184721946,
+          "S100A8": 0.0977982958721584,
+          "SAMD4B": 0.09600476891837695,
+          "SCD5": 0.08847852337565473,
+          "SST": -0.08687152904344576,
+          "SLC39A7": -0.0867323179708807,
+          "TBL1XR1": 0.07914082574168935,
+          "HLA-DRB6": -0.07162203191718193,
+          "PAX2": -0.06710147346391392,
+          "HP": -0.06411189925619597,
+          "ICK": -0.06235889725878291,
+          "LPAR3": -0.061981466890220785,
+          "LGR5": -0.06014200044433971,
+          "AQP5": -0.059823139864686584,
+          "PTX3": -0.05829995864571596,
+          "GSTT1": -0.05463692324853449
+        }
+      },
+      "rsf": {
+        "train_insample_cindex": 0.9175941037115031,
+        "n_estimators": 200
+      },
+      "deepsurv": {
+        "train_insample_cindex": 0.8158568044222164,
+        "hidden": 32,
+        "epochs": 80,
+        "device": "cuda"
+      }
+    },
+    "external": {
+      "gse32062": {
+        "n": 260,
+        "events": 121,
+        "platform": "GPL6480",
+        "clinical_oof": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.5751220256253813,
+          "cindex_ci_lo": 0.5157150601807339,
+          "cindex_ci_hi": 0.6257014449423489,
+          "logrank_p": 0.019632555809892184,
+          "covars": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.5892566605653854,
+          "cindex_ci_lo": 0.539758122138429,
+          "cindex_ci_hi": 0.6392343588580423,
+          "logrank_p": 4.311308318162656e-05
+        },
+        "lasso_cox": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.6086536505999594,
+          "cindex_ci_lo": 0.5548015867798394,
+          "cindex_ci_hi": 0.6593492186794384,
+          "logrank_p": 0.00440965228621124,
+          "cindex_on_clinical_subset": 0.6086536505999594,
+          "delta_c_vs_clinical_oof": 0.03353162497457807,
+          "delta_c_vs_clinical_transported": 0.019396990034573958
+        },
+        "rsf": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.5239983729916616,
+          "cindex_ci_lo": 0.4658606269100386,
+          "cindex_ci_hi": 0.5794496638226573,
+          "logrank_p": 0.4719749962873764,
+          "cindex_on_clinical_subset": 0.5239983729916616,
+          "delta_c_vs_clinical_oof": -0.05112365263371965,
+          "delta_c_vs_clinical_transported": -0.06525828757372376
+        },
+        "deepsurv": {
+          "n": 260,
+          "events": 121,
+          "cindex": 0.5989932885906041,
+          "cindex_ci_lo": 0.5474942498090442,
+          "cindex_ci_hi": 0.6536418983497801,
+          "logrank_p": 0.007596462830209221,
+          "cindex_on_clinical_subset": 0.5989932885906041,
+          "delta_c_vs_clinical_oof": 0.023871262965222795,
+          "delta_c_vs_clinical_transported": 0.009736628025218685
+        }
+      },
+      "gse53963": {
+        "n": 160,
+        "events": 139,
+        "platform": "GPL6480",
+        "clinical_oof": {
+          "n": 157,
+          "events": 136,
+          "cindex": 0.6514528048370843,
+          "cindex_ci_lo": 0.5945010251106293,
+          "cindex_ci_hi": 0.6924224626068137,
+          "logrank_p": 8.004008029613887e-07,
+          "covars": [
+            "residual_subopt",
+            "stage_ord",
+            "age"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 157,
+          "events": 136,
+          "cindex": 0.6240762512596574,
+          "cindex_ci_lo": 0.5734705110670641,
+          "cindex_ci_hi": 0.6672748019513508,
+          "logrank_p": 0.04620174660984736
+        },
+        "lasso_cox": {
+          "n": 160,
+          "events": 139,
+          "cindex": 0.5467689822294023,
+          "cindex_ci_lo": 0.4907715877031206,
+          "cindex_ci_hi": 0.602409317052153,
+          "logrank_p": 0.28887449994751335,
+          "cindex_on_clinical_subset": 0.5461874370171313,
+          "delta_c_vs_clinical_oof": -0.10526536781995299,
+          "delta_c_vs_clinical_transported": -0.07788881424252603
+        },
+        "rsf": {
+          "n": 160,
+          "events": 139,
+          "cindex": 0.5564620355411954,
+          "cindex_ci_lo": 0.5089513828164741,
+          "cindex_ci_hi": 0.6049089282397668,
+          "logrank_p": 0.1894066756242612,
+          "cindex_on_clinical_subset": 0.5561807188444743,
+          "delta_c_vs_clinical_oof": -0.09527208599261006,
+          "delta_c_vs_clinical_transported": -0.06789553241518309
+        },
+        "deepsurv": {
+          "n": 160,
+          "events": 139,
+          "cindex": 0.5618739903069467,
+          "cindex_ci_lo": 0.5121391131506646,
+          "cindex_ci_hi": 0.6124196883352665,
+          "logrank_p": 0.011067318865401897,
+          "cindex_on_clinical_subset": 0.5614712798118912,
+          "delta_c_vs_clinical_oof": -0.08998152502519319,
+          "delta_c_vs_clinical_transported": -0.06260497144776622
+        }
+      },
+      "gse17260": {
+        "n": 110,
+        "events": 46,
+        "platform": "GPL6480",
+        "clinical_oof": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.5942211055276382,
+          "cindex_ci_lo": 0.5081977931318437,
+          "cindex_ci_hi": 0.68318457892008,
+          "logrank_p": 0.10787364311821764,
+          "covars": [
+            "residual_subopt",
+            "stage_ord"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.5990667623833453,
+          "cindex_ci_lo": 0.5153941802122846,
+          "cindex_ci_hi": 0.6742765433550548,
+          "logrank_p": 0.0098644174206051
+        },
+        "lasso_cox": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.6812634601579325,
+          "cindex_ci_lo": 0.5896056930837,
+          "cindex_ci_hi": 0.7488378405177174,
+          "logrank_p": 0.03028559749863298,
+          "cindex_on_clinical_subset": 0.6812634601579325,
+          "delta_c_vs_clinical_oof": 0.0870423546302943,
+          "delta_c_vs_clinical_transported": 0.08219669777458716
+        },
+        "rsf": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.6173725771715721,
+          "cindex_ci_lo": 0.5136403129687546,
+          "cindex_ci_hi": 0.6899109863672814,
+          "logrank_p": 0.24131506467360692,
+          "cindex_on_clinical_subset": 0.6173725771715721,
+          "delta_c_vs_clinical_oof": 0.02315147164393394,
+          "delta_c_vs_clinical_transported": 0.018305814788226793
+        },
+        "deepsurv": {
+          "n": 110,
+          "events": 46,
+          "cindex": 0.6410624551328069,
+          "cindex_ci_lo": 0.5670365058276465,
+          "cindex_ci_hi": 0.7160566608141653,
+          "logrank_p": 0.057541789206133995,
+          "cindex_on_clinical_subset": 0.6410624551328069,
+          "delta_c_vs_clinical_oof": 0.046841349605168725,
+          "delta_c_vs_clinical_transported": 0.04199569274946158
+        }
+      },
+      "gse140082": {
+        "n": 191,
+        "events": 56,
+        "platform": "GPL14951",
+        "clinical_oof": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.6751672240802675,
+          "cindex_ci_lo": 0.6070454011182133,
+          "cindex_ci_hi": 0.7402306019792056,
+          "logrank_p": 3.8186027547626666e-05,
+          "covars": [
+            "residual_subopt",
+            "stage_ord",
+            "age"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.6158723522853957,
+          "cindex_ci_lo": 0.5419926256522933,
+          "cindex_ci_hi": 0.6843012621135944,
+          "logrank_p": null
+        },
+        "lasso_cox": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.5900222965440357,
+          "cindex_ci_lo": 0.4962023759602295,
+          "cindex_ci_hi": 0.6746236314127444,
+          "logrank_p": 0.16774015175132748,
+          "cindex_on_clinical_subset": 0.5900222965440357,
+          "delta_c_vs_clinical_oof": -0.08514492753623182,
+          "delta_c_vs_clinical_transported": -0.025850055741360012
+        },
+        "rsf": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.5769230769230769,
+          "cindex_ci_lo": 0.4962430138407233,
+          "cindex_ci_hi": 0.6615254932239838,
+          "logrank_p": 0.03546160161770222,
+          "cindex_on_clinical_subset": 0.5769230769230769,
+          "delta_c_vs_clinical_oof": -0.09824414715719065,
+          "delta_c_vs_clinical_transported": -0.03894927536231885
+        },
+        "deepsurv": {
+          "n": 191,
+          "events": 56,
+          "cindex": 0.6020066889632107,
+          "cindex_ci_lo": 0.5161457231082275,
+          "cindex_ci_hi": 0.6779197760465148,
+          "logrank_p": 0.0030432182212510143,
+          "cindex_on_clinical_subset": 0.6020066889632107,
+          "delta_c_vs_clinical_oof": -0.07316053511705678,
+          "delta_c_vs_clinical_transported": -0.013865663322184973
+        }
+      },
+      "gse49997": {
+        "n": 171,
+        "events": 48,
+        "platform": "GPL2986",
+        "clinical_oof": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.6118273542600897,
+          "cindex_ci_lo": 0.532009790092002,
+          "cindex_ci_hi": 0.703092723392548,
+          "logrank_p": 0.0020863032173659125,
+          "covars": [
+            "residual_subopt",
+            "stage_ord",
+            "age"
+          ],
+          "how": "5-fold"
+        },
+        "clinical_transported": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.5751121076233184,
+          "cindex_ci_lo": 0.4829661197276783,
+          "cindex_ci_hi": 0.6761677480740838,
+          "logrank_p": 0.633728909398668
+        },
+        "lasso_cox": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.5979073243647235,
+          "cindex_ci_lo": 0.5061478152740704,
+          "cindex_ci_hi": 0.6870697560619409,
+          "logrank_p": 0.12391640975483637,
+          "cindex_on_clinical_subset": 0.5979073243647235,
+          "delta_c_vs_clinical_oof": -0.013920029895366226,
+          "delta_c_vs_clinical_transported": 0.022795216741405055
+        },
+        "rsf": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.5840807174887892,
+          "cindex_ci_lo": 0.4967322195417511,
+          "cindex_ci_hi": 0.6775888809960251,
+          "logrank_p": 0.14624686829500844,
+          "cindex_on_clinical_subset": 0.5840807174887892,
+          "delta_c_vs_clinical_oof": -0.027746636771300515,
+          "delta_c_vs_clinical_transported": 0.008968609865470767
+        },
+        "deepsurv": {
+          "n": 171,
+          "events": 48,
+          "cindex": 0.6098654708520179,
+          "cindex_ci_lo": 0.5370485093664575,
+          "cindex_ci_hi": 0.699501016573121,
+          "logrank_p": 0.0493997544032325,
+          "cindex_on_clinical_subset": 0.6098654708520179,
+          "delta_c_vs_clinical_oof": -0.001961883408071796,
+          "delta_c_vs_clinical_transported": 0.034753363228699485
+        }
+      }
+    }
+  }
+}

@@ -49,5 +49,6 @@ def search(query: str, limit: int = 15, author: str | None = None, **kw) -> list
             "source_id": (w.get("id") or "").rsplit("/", 1)[-1],
             "url": w.get("doi") or ids.get("openalex"),
             "pdf_url": pdf_url or oa.get("oa_url"),
+            "citations": w.get("cited_by_count"),
         })
     return out
