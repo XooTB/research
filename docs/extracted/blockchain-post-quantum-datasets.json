@@ -1,0 +1,730 @@
+[
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.5195/LEDGER.2018.127",
+    "url": "https://doi.org/10.5195/LEDGER.2018.127",
+    "context": "ISSN 2379-5980 (online) DOI 10.5195/LEDGER.2018.127 RESEARCH ARTICLE Quantum Attacks on Bitcoin, and How to Protect Against Them Divesh Aggarwal,∗† Gavin Brennen,‡ Troy Lee,§ Miklos Santha,¶ Marco Tomamichel†† A…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1137/S0036144598347011.4",
+    "url": "https://doi.org/10.1137/S0036144598347011.4",
+    "context": "…Shor, P. W. “Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer.” SIAM Review 41.2 303–332 (1999) https://doi.org/10.1137/S0036144598347011.4 Larimer, D. “Momentum–A Memory-Hard Proof-of-Work via Finding Birthday Collisions.” (2014) (ac- cessed 2 October 2018) http://www.hashcash.org/papers/momentum.…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1145/237814.237866.9",
+    "url": "https://doi.org/10.1145/237814.237866.9",
+    "context": "…’96 Proceedings of the Twenty-Eighth Annual ACM Symposium on Theory of Computing. New York: Association for Computing Machinery 212–219 (1996) https://doi.org/10.1145/237814.237866.9 Bellare, M., Rogaway, P. “Random Oracles are Practical: A Paradigm for Designing Efﬁcient Protocols.” In CCS ’93 Proceedings of the 1st ACM Conference on Compu…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1145/168588.168596.10",
+    "url": "https://doi.org/10.1145/168588.168596.10",
+    "context": "…CS ’93 Proceedings of the 1st ACM Conference on Computer and Communications Security. New York: Association for Comuting Machinery 62–73 (1993) https://doi.org/10.1145/168588.168596.10 According to blockchain.info, on August 8, 2017, the hashing difﬁculty was D = 860 · 109 and target was t = 2184.4. 11 Boyer, M., Brassard, G., Høyer, P., Tapp…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1002/(SICI)1521-3978(199806)46:4/5",
+    "url": "https://doi.org/10.1002/(SICI)1521-3978(199806)46:4/5",
+    "context": "…t = 2184.4. 11 Boyer, M., Brassard, G., Høyer, P., Tapp, A. “Tight Bounds on Quantum Searching.” Fortschritte der Physik 46.4-5 493–505 (1998) https://doi.org/10.1002/(SICI)1521-3978(199806)46:4/5<493::AID-PROP493>3.0.CO;2-P.12 Parent, A., R¨otteler, M., Svore, K. M. “Reversible Circuit Compilation with Space Constraints.” CoRR (arXiv) (2015) (accessed 2…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevA.61.052313.15",
+    "url": "https://doi.org/10.1103/PhysRevA.61.052313.15",
+    "context": "…l.14 Gingrich, R. M., Williams, C. P., Cerf, N. J. “Generalized Quantum Search with Parallelism.” Physical Review A 61.5 052313 (2000) https://link.aps.org/doi/10.1103/PhysRevA.61.052313.15 Kirchhoff, S., et al. “Optimized Cross-Resonance Gate for Coupled Transmon Systems.” arXiv (2017) (accessed 2 October 2018) https://arxiv.org/abs/1701.01841.16…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevA.87.042302.20",
+    "url": "https://doi.org/10.1103/PhysRevA.87.042302.20",
+    "context": "…tober 2018) https://arxiv.org/abs/1706.06752.19 Selinger, P. “Quantum Circuits of $T$-Depth One.” Physical Review A 87.4 042302 (2013) https://link.aps.org/doi/10.1103/PhysRevA.87.042302.20 Paetznick, A., Reichardt, B. W. “Universal Fault-Tolerant Quantum Computation with Only Transversal Gates and Error Correction.” Physical Review Letters 111.9…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevLett.111.090505.21",
+    "url": "https://doi.org/10.1103/PhysRevLett.111.090505.21",
+    "context": "…rsal Fault-Tolerant Quantum Computation with Only Transversal Gates and Error Correction.” Physical Review Letters 111.9 090505 (2013) https://link.aps.org/doi/10.1103/PhysRevLett.111.090505.21 Paz-Silva, G. A., Brennen, G. K., Twamley, J. “Fault Tolerance with Noisy and Slow Measurements and Preparation.” Physical Review Letters 105.10 100501 (2010)…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevLett.105.100501.22",
+    "url": "https://doi.org/10.1103/PhysRevLett.105.100501.22",
+    "context": "…n, G. K., Twamley, J. “Fault Tolerance with Noisy and Slow Measurements and Preparation.” Physical Review Letters 105.10 100501 (2010) https://link.aps.org/doi/10.1103/PhysRevLett.105.100501.22 Ekmel Ercan, H., et al. “Measurement-Free Implementations of Small-Scale Surface Codes for Quantum Dot Qubits.” arXiv (2017) (accessed 2 October 2018) https://…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/s11128-016-1495-5.24",
+    "url": "https://doi.org/10.1007/s11128-016-1495-5.24",
+    "context": "…ar-System Algorithm Used to Compute the Electromagnetic Scattering Cross Section of a 2D Target.” Quantum Information Processing 16.3 60 (2017) https://doi.org/10.1007/s11128-016-1495-5.24 Harrow, A. W., Hassidim, A., Lloyd, S. “Quantum Algorithm for Linear Systems of Equations.” Phys- ical Review Letters 103.15 150502 (2009) https://link.aps.org…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevLett.103.150502.25",
+    "url": "https://doi.org/10.1103/PhysRevLett.103.150502.25",
+    "context": "…ow, A. W., Hassidim, A., Lloyd, S. “Quantum Algorithm for Linear Systems of Equations.” Phys- ical Review Letters 103.15 150502 (2009) https://link.aps.org/doi/10.1103/PhysRevLett.103.150502.25 Childs, A. M., Kothari, R., Somma, R. “Quantum Linear Systems Algorithm with Exponentially Improved Dependence on Precision.” arXiv (2015) (accessed 2 October…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-662-48051-9_4.29",
+    "url": "https://doi.org/10.1007/978-3-662-48051-9_4.29",
+    "context": "…ational Workshops, BITCOIN, WAHC, and Wearable, San Juan Puerto Rico, January 30, 2015 Revised Selected Papers. New York: Springer 49–62 (2015) https://doi.org/10.1007/978-3-662-48051-9_4.29 Biryukov, A., Khovratovich, D. “Equihash: Asymmetric Proof-of-Work Based on the Generalized Birthday Problem.” Ledger 2 1–30 (2017) https://doi.org/10.5195/led…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.5195/ledger.2017.48.30",
+    "url": "https://doi.org/10.5195/ledger.2017.48.30",
+    "context": "…8051-9_4.29 Biryukov, A., Khovratovich, D. “Equihash: Asymmetric Proof-of-Work Based on the Generalized Birthday Problem.” Ledger 2 1–30 (2017) https://doi.org/10.5195/ledger.2017.48.30 Aaronson, S., Shi, Y. “Quantum Lower Bounds for the Collision and the Element Distinctness Problems.” Journal of the ACM 51.4 595–605 (2004) https://doi.org/10…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1145/1008731.1008735.31",
+    "url": "https://doi.org/10.1145/1008731.1008735.31",
+    "context": "…30 Aaronson, S., Shi, Y. “Quantum Lower Bounds for the Collision and the Element Distinctness Problems.” Journal of the ACM 51.4 595–605 (2004) https://doi.org/10.1145/1008731.1008735.31 Ambainis, A. “Quantum Walk Algorithm for Element Distinctness.” SIAM Journal on Computing 37.1 210–239 (2007) https://doi.org/10.1137/S0097539705447311.32 Benn…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1137/S0097539705447311.32",
+    "url": "https://doi.org/10.1137/S0097539705447311.32",
+    "context": "…oi.org/10.1145/1008731.1008735.31 Ambainis, A. “Quantum Walk Algorithm for Element Distinctness.” SIAM Journal on Computing 37.1 210–239 (2007) https://doi.org/10.1137/S0097539705447311.32 Bennett, C., Bernstein, E., Brassard, G., Vazirani, U. “Strengths and Weaknesses of Quantum Computing.” SIAM Journal on Computing 26.5 1510–1523 (1997) https:/…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1137/S0097539796300933.33",
+    "url": "https://doi.org/10.1137/S0097539796300933.33",
+    "context": "…C., Bernstein, E., Brassard, G., Vazirani, U. “Strengths and Weaknesses of Quantum Computing.” SIAM Journal on Computing 26.5 1510–1523 (1997) https://doi.org/10.1137/S0097539796300933.33 Leighton, F. T., Micali, S. “Large Provably Fast and Secure Digital Signature Schemes Based on Se- cure Hash Functions.” Google Patents (accessed 2 October 201…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-642-25405-5_8",
+    "url": "https://doi.org/10.1007/978-3-642-25405-5_8",
+    "context": "…Quantum Cryptography, 4th International Workshop, PQCrypto 2011, Taipei, Taiwan, November 29–December 2, 2011. Berlin: Springer 117–129 (2011) https: //doi.org/10.1007/978-3-642-25405-5_8. 83 ISSN 2379-5980 (online) DOI 10.5195/LEDGER.2018.127 LEDGER VOL 3 (2018) 68-90 35 Bernstein, D. J., et al. “SPHINCS: Practical Stateless Hash-Based Signatur…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-662-46800-5_15.36",
+    "url": "https://doi.org/10.1007/978-3-662-46800-5_15.36",
+    "context": "…ional Conference on the Theory and Applications of Cryptographic Techniques, Soﬁa, Bulgaria, April 26-30, 2015. Berlin: Springer 368–397 (2015) https://doi.org/10.1007/978-3-662-46800-5_15.36 Naor, D., Shenhav, A., Wool, A. “One-Time Signatures Revisited: Have They Become Practical?” IACR Cryptology ePrint Archive (2005) (accessed 2 October 2018) ht…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/3-540-45682-1_10",
+    "url": "https://doi.org/10.1007/3-540-45682-1_10",
+    "context": "…o Achieve a McEliece-Based Digital Signature Scheme.” In C. Boyd (Ed.), Advances in Cryptology—ASIACRYPT 2001. Berlin: Springer 157–174 (2001) https: //doi.org/10.1007/3-540-45682-1_10. 38 Patarin, J., Courtois, N., Goubin, L. “Quartz, 128-Bit Long Digital Signatures.” In D. Naccache (Ed.), Topics in Cryptology–CT-RSA 2001, The Cryptographers’…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/3-540-45353-9_21.39",
+    "url": "https://doi.org/10.1007/3-540-45353-9_21.39",
+    "context": "…ptology–CT-RSA 2001, The Cryptographers’ Track at RSA Conference 2001 San Francisco, CA, USA, April 8–12, 2001. Berlin: Springer 282–297 (2001) https://doi.org/10.1007/3-540-45353-9_21.39 Ding, J., Schmidt, D. “Rainbow, A New Multivariable Polynomial Signature Scheme.” In J. Ioannidis, A. Keromytis, M. Yung (Eds.), Applied Cryptography and Netwo…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/11496137_12.40",
+    "url": "https://doi.org/10.1007/11496137_12.40",
+    "context": "…yptography and Network Security, Third International Conference, ACNS 2005, New York, NY, USA, June 7-10, 2005. Berlin: Springer 164–175 (2005) https://doi.org/10.1007/11496137_12.40 Gentry, C., Peikert, C., Vaikuntanathan, V. “Trapdoors for Hard Lattices and New Cryptographic Construc- tions.” In STOC ’08 Proceedings of the Fortieth Annual…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1145/1374376.1374407.41",
+    "url": "https://doi.org/10.1145/1374376.1374407.41",
+    "context": "…STOC ’08 Proceedings of the Fortieth Annual ACM Symposium on Theory of Computing. New York: Association for Computing Machinery 197–206 (2008) https://doi.org/10.1145/1374376.1374407.41 Lyubashevsky, V. “Lattice Signatures Without Trapdoors.” In D. Pointcheval, T. Johansson (Eds.), Advances in Cryptology–EUROCRYPT 2012, 31st Annual Internation…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-642-29011-4_43",
+    "url": "https://doi.org/10.1007/978-3-642-29011-4_43",
+    "context": "…ional Conference on the Theory and Applications of Cryptographic Techniques, Cambridge, UK, April 15-19, 2012. Berlin: Springer 738–755 (2012) https: //doi.org/10.1007/978-3-642-29011-4_43. 42 Ducas, L., Durmus, A., Lepoint, T., Lyubashevsky, V. “Lattice Signatures and Bimodal Gaussians.” In R. Canetti, J. A. Garay (Eds.), Advances in Cryptology–C…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-642-40041-4_3.43",
+    "url": "https://doi.org/10.1007/978-3-642-40041-4_3.43",
+    "context": "…dvances in Cryptology–CRYPTO 2013, 33rd Annual Cryptology Conference, Santa Barbara, CA, USA, August 18-22, 2013. Berlin: Springer 40–56 (2013) https://doi.org/10.1007/978-3-642-40041-4_3.43 Akleylek, S., Bindel, N., Buchmann, J., Kr¨amer, J., Marson, G. “An Efﬁcient Lattice-Based Signature Scheme with Provably Secure Instantiation.” In D. Pointche…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-319-31517-1_3.44",
+    "url": "https://doi.org/10.1007/978-3-319-31517-1_3.44",
+    "context": "…T. Rachidi (Eds.), Progress in Cryptology–AFRICACRYPT 2016, 8th International Conference on Cryptology in Africa. Berlin: Springer 44–60 (2016) https://doi.org/10.1007/978-3-319-31517-1_3.44 Ducas, L., Lepoint, T., Lyubashevsky, V., Schwabe, P., Seiler, G., Stehl´e, D. “CRYSTALS–Dilithium: Digital Signatures from Module Lattices.” IACR Cryptology e…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-319-11659-4_1.46",
+    "url": "https://doi.org/10.1007/978-3-319-11659-4_1.46",
+    "context": "….), Post-Quantum Cryptography, 6th International Workshop, PQCrypto 2014, Waterloo, ON, Canada, October 1-3, 2014. Berlin: Springer 1–21 (2014) https://doi.org/10.1007/978-3-319-11659-4_1.46 Kirchner, P., Fouque, P. “Revisiting Lattice Attacks on Overstretched NTRU Parameters.” In J.-S. Coron, J. B. Nielsen (Eds.), Advances in Cryptology–EUROCRYPT…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-319-56620-7_1.47",
+    "url": "https://doi.org/10.1007/978-3-319-56620-7_1.47",
+    "context": "…onal Conference on the Theory and Applications of Cryptographic Techniques, Paris, France, April 30 – May 4, 2017. Berlin: Springer 3–26 (2017) https://doi.org/10.1007/978-3-319-56620-7_1.47 Nguyen, P. Q., Regev, O. “Learning a Parallelepiped: Cryptanalysis of GGH and NTRU Signatures.” In S. Vaudenay (Ed.), Advances in Cryptology–EUROCRYPT 2006, 24…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/11761679_17.48",
+    "url": "https://doi.org/10.1007/11761679_17.48",
+    "context": "…ence on the Theory and Applications of Cryptographic Techniques, St. Petersburg, Russia, May 28 - June 1, 2006. Berlin: Springer 271–288 (2006) https://doi.org/10.1007/11761679_17.48 Ducas, L., Nguyen, P. Q. “Learning a Zonotope and More: Cryptanalysis of NTRUSign Countermeasures.” In X. Wang, K. Sako (Eds.), Advances in Cryptology–ASIACRYP…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-642-34961-4_27.84ISSN",
+    "url": "https://doi.org/10.1007/978-3-642-34961-4_27.84ISSN",
+    "context": "…rence on the Theory and Application of Cryptology and Information Security, Beijing, China, December 2-6, 2012. Berlin: Springer 433–450 (2012) https://doi.org/10.1007/978-3-642-34961-4_27.84ISSN 2379-5980 (online) DOI 10.5195/LEDGER.2018.127 LEDGER VOL 3 (2018) 68-90 49 Pessl, P., Bruinderink, L., Yarom, Y. “To BLISS-B or Not to Be—Attacking strongSwa…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1145/3133956.3134023",
+    "url": "https://doi.org/10.1145/3133956.3134023",
+    "context": "…ngs of the 2017 ACM SIGSAC Conference on Computer and Communications Security. New York: Association from Computing Machinery 1843–1855 (2017) https: //doi.org/10.1145/3133956.3134023. 50 Howe, J., Poppelmann, T., O’Neill, M., O’Sullivan, E., Guneysu, T. “Practical Lattice-Based Digital Signature Schemes.” ACM Transactions on Embedded Computi…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1145/2724713",
+    "url": "https://doi.org/10.1145/2724713",
+    "context": "…E., Guneysu, T. “Practical Lattice-Based Digital Signature Schemes.” ACM Transactions on Embedded Computing Systems 14.3 41:1–41:24 (2015) https: //doi.acm.org/10.1145/2724713. 51 Fouque, P.-A., et al. “FALCON: Fast-Fourier Lattice-Based Compact Signatures over NTRU.” (2018) (ac- cessed 2 October 2018) https://falcon-sign.info/.52 Bin…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1007/978-3-642-12929-2_16.54",
+    "url": "https://doi.org/10.1007/978-3-642-12929-2_16.54",
+    "context": "…Post-Quantum Cryptography, Third International Workshop, PQCrypto 2010, Darm- stadt, Germany, May 25-28, 2010. Berlin: Springer 218–240 (2010) https://doi.org/10.1007/978-3-642-12929-2_16.54 de Oliveira, A. K. D., L´opez, J., Cabral, R. “High Performance of Hash-Based Signature Schemes.” Interna- tional Journal of Advanced Computer Science and Appl…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.14569/IJACSA.2017.080358.55",
+    "url": "https://doi.org/10.14569/IJACSA.2017.080358.55",
+    "context": "…“High Performance of Hash-Based Signature Schemes.” Interna- tional Journal of Advanced Computer Science and Applications 8.3 421–432 (2017) http://dx.doi.org/10.14569/IJACSA.2017.080358.55 Fowler, A. G., Mariantoni, M., Martinis, J. M., Cleland, A. N. “Surface Codes: Towards Practical Large-Scale Quantum Computation.” Phys. Rev. A 86 032324 (2012…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevA.86.032324.56",
+    "url": "https://doi.org/10.1103/PhysRevA.86.032324.56",
+    "context": "…toni, M., Martinis, J. M., Cleland, A. N. “Surface Codes: Towards Practical Large-Scale Quantum Computation.” Phys. Rev. A 86 032324 (2012) https://www.doi.org/10.1103/PhysRevA.86.032324.56 Matthew, A., Di Matteo, O., Gheorghiu, V., Mosca, M., Parent, A., Schanck, J. “Estimating the Cost of Generic Quantum Pre-Image Attacks on SHA-2 and SHA-3.” IA…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevLett.108.120501.59",
+    "url": "https://doi.org/10.1103/PhysRevLett.108.120501.59",
+    "context": "…Ballester, D., Wang, Y. M., Scarani, V., Solano, E. “Ultrafast Quantum Gates in Circuit QED.” Physical Review Letters 108.12 120501 (2012) https://www.doi.org/10.1103/PhysRevLett.108.120501.59 C´orcoles, A. D., et al. “Process Veriﬁcation of Two-Qubit Quantum Gates by Randomized Benchmarking.” Physical Review A 87.3 030301 (2013) https://www.doi.org/…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevA.87.030301.60",
+    "url": "https://doi.org/10.1103/PhysRevA.87.030301.60",
+    "context": "…C´orcoles, A. D., et al. “Process Veriﬁcation of Two-Qubit Quantum Gates by Randomized Benchmarking.” Physical Review A 87.3 030301 (2013) https://www.doi.org/10.1103/PhysRevA.87.030301.60 Barends, R., et al. “Superconducting Quantum Circuits at the Surface Code Threshold for Fault Tolerance.” Nature 508.7497 500–503 (2014) https://doi.org/10.103…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1038/nature13171.61",
+    "url": "https://doi.org/10.1038/nature13171.61",
+    "context": "…301.60 Barends, R., et al. “Superconducting Quantum Circuits at the Surface Code Threshold for Fault Tolerance.” Nature 508.7497 500–503 (2014) https://doi.org/10.1038/nature13171.61 Chow, J. M., et al. “Implementing a Atrand of a Scalable Fault-Tolerant Quantum Computing Fabric.” Nature Communications 5 https://doi.org/10.1038/ncomms5015.6…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1038/ncomms5015.62",
+    "url": "https://doi.org/10.1038/ncomms5015.62",
+    "context": "….1038/nature13171.61 Chow, J. M., et al. “Implementing a Atrand of a Scalable Fault-Tolerant Quantum Computing Fabric.” Nature Communications 5 https://doi.org/10.1038/ncomms5015.62 IBM. “IBM Makes Quantum Computing Available on IBM Cloud to Accelerate Innovation.” (Accessed 2 October 2018) https://www-03.ibm.com/press/us/en/pressrelease/4…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1063/1.3585849.85ISSN",
+    "url": "https://doi.org/10.1063/1.3585849.85ISSN",
+    "context": "…, Q. P., Herr, A. Y., Oberg, O. T., Ioannidis, A. G. “Ultra-Low-Power Superconductor Logic.” Journal of Applied Physics 109.10 103903 (2011) http://www.doi.org/10.1063/1.3585849.85ISSN 2379-5980 (online) DOI 10.5195/LEDGER.2018.127 LEDGER VOL 3 (2018) 68-90 66 C´orcoles, A., et al. “Demonstration of a Quantum Error Detection Code Using a Squ…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1038/ncomms7979.67",
+    "url": "https://doi.org/10.1038/ncomms7979.67",
+    "context": "…Demonstration of a Quantum Error Detection Code Using a Square Lattice of Four Superconducting Qubits.” Nature Communications 6 6979 (2015) https://www.doi.org/10.1038/ncomms7979.67 Sheldon, S., Magesan, E., Chow, J. M., Gambetta, J. M. “Procedure for Systematically Tuning Up Cross- Talk in the Cross-Resonance Gate.” Physical Review A 93.6…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevA.93.060302.68",
+    "url": "https://doi.org/10.1103/PhysRevA.93.060302.68",
+    "context": "…M., Gambetta, J. M. “Procedure for Systematically Tuning Up Cross- Talk in the Cross-Resonance Gate.” Physical Review A 93.6 060302 (2016) https://www.doi.org/10.1103/PhysRevA.93.060302.68 Deng, X.-H., Barnes, E., Economou, S. E. “Robustness of Error-Suppressing Entangling Gates in Cavity- Coupled Transmon Qubits.” Physical Review B 96.3 035441 (…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "DOI",
+    "value": "10.1103/PhysRevB.96.035441.Appendix",
+    "url": "https://doi.org/10.1103/PhysRevB.96.035441.Appendix",
+    "context": "…Economou, S. E. “Robustness of Error-Suppressing Entangling Gates in Cavity- Coupled Transmon Qubits.” Physical Review B 96.3 035441 (2017) https://www.doi.org/10.1103/PhysRevB.96.035441.Appendix A: Estimating Error Correction Resource Overheads for Quantum Attacks Here we describe how the overhead factors for quantum error correction are calculated in…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "https://doi.org/10.1002/",
+    "url": "https://doi.org/10.1002/",
+    "context": "…ght Bounds on Quantum Searching.” Fortschritte der Physik 46.4-5 493–505 (1998) https://doi.org/10.1002/(SICI)1521-3978(199806)46:4/5<493::AID-PROP493>3.0.CO;2-P.12 Parent, A., R¨ottel…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "http://dx.doi.org/10.14569/IJACSA.2017.080358.55",
+    "url": "http://dx.doi.org/10.14569/IJACSA.2017.080358.55",
+    "context": "…tional Journal of Advanced Computer Science and Applications 8.3 421–432 (2017) http://dx.doi.org/10.14569/IJACSA.2017.080358.55 Fowler, A. G., Mariantoni, M., Martinis, J. M., Cleland, A. N. “Surface Codes:…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "https://www.doi.org/10.1103/PhysRevA.86.032324.56",
+    "url": "https://www.doi.org/10.1103/PhysRevA.86.032324.56",
+    "context": "…wards Practical Large-Scale Quantum Computation.” Phys. Rev. A 86 032324 (2012) https://www.doi.org/10.1103/PhysRevA.86.032324.56 Matthew, A., Di Matteo, O., Gheorghiu, V., Mosca, M., Parent, A., Schanck, J. “…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "https://www.doi.org/10.1103/PhysRevLett.108.120501.59",
+    "url": "https://www.doi.org/10.1103/PhysRevLett.108.120501.59",
+    "context": "…ast Quantum Gates in Circuit QED.” Physical Review Letters 108.12 120501 (2012) https://www.doi.org/10.1103/PhysRevLett.108.120501.59 C´orcoles, A. D., et al. “Process Veriﬁcation of Two-Qubit Quantum Gates by Ran…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "https://www.doi.org/10.1103/PhysRevA.87.030301.60",
+    "url": "https://www.doi.org/10.1103/PhysRevA.87.030301.60",
+    "context": "…Quantum Gates by Randomized Benchmarking.” Physical Review A 87.3 030301 (2013) https://www.doi.org/10.1103/PhysRevA.87.030301.60 Barends, R., et al. “Superconducting Quantum Circuits at the Surface Code Thres…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "http://www.doi.org/10.1063/1.3585849.85ISSN",
+    "url": "http://www.doi.org/10.1063/1.3585849.85ISSN",
+    "context": "…ow-Power Superconductor Logic.” Journal of Applied Physics 109.10 103903 (2011) http://www.doi.org/10.1063/1.3585849.85ISSN 2379-5980 (online) DOI 10.5195/LEDGER.2018.127 LEDGER VOL 3 (2018) 68-90 66 C´…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "https://www.doi.org/10.1038/ncomms7979.67",
+    "url": "https://www.doi.org/10.1038/ncomms7979.67",
+    "context": "…re Lattice of Four Superconducting Qubits.” Nature Communications 6 6979 (2015) https://www.doi.org/10.1038/ncomms7979.67 Sheldon, S., Magesan, E., Chow, J. M., Gambetta, J. M. “Procedure for Systemati…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "https://www.doi.org/10.1103/PhysRevA.93.060302.68",
+    "url": "https://www.doi.org/10.1103/PhysRevA.93.060302.68",
+    "context": "…Cross- Talk in the Cross-Resonance Gate.” Physical Review A 93.6 060302 (2016) https://www.doi.org/10.1103/PhysRevA.93.060302.68 Deng, X.-H., Barnes, E., Economou, S. E. “Robustness of Error-Suppressing Entan…"
+  },
+  {
+    "paper": "2018-aggarwal-quantum-attacks-on-bitcoin-and",
+    "kind": "url",
+    "value": "https://www.doi.org/10.1103/PhysRevB.96.035441.Appendix",
+    "url": "https://www.doi.org/10.1103/PhysRevB.96.035441.Appendix",
+    "context": "…Gates in Cavity- Coupled Transmon Qubits.” Physical Review B 96.3 035441 (2017) https://www.doi.org/10.1103/PhysRevB.96.035441.Appendix A: Estimating Error Correction Resource Overheads for Quantum Attacks Here we d…"
+  },
+  {
+    "paper": "2019-campbell-evaluation-of-post-quantum-distributed-ledger",
+    "kind": "DOI",
+    "value": "10.31585/jbba-2-1-(4)2019Evaluation",
+    "url": "https://doi.org/10.31585/jbba-2-1-(4)2019Evaluation",
+    "context": "…ISSN Print: 2516-3949 https://doi.org/10.31585/jbba-2-1-(4)2019Evaluation of Post-Quantum Distributed Ledger Cryptography Robert E. Campbell Sr. Capitol Technology University, USA Correspondence: rc@medcybersecurity.com Re…"
+  },
+  {
+    "paper": "2019-campbell-evaluation-of-post-quantum-distributed-ledger",
+    "kind": "url",
+    "value": "https://doi.org/10.31585/jbba-2-1-",
+    "url": "https://doi.org/10.31585/jbba-2-1-",
+    "context": "…https://doi.org/10.31585/jbba-2-1-(4)2019Evaluation of Post-Quantum Distributed Ledger Cryptography Robert E. C…"
+  },
+  {
+    "paper": "2021-holcomb-pqfabric-a-permissioned-blockchain-secure",
+    "kind": "DOI",
+    "value": "10.1002/nem.2099",
+    "url": "https://doi.org/10.1002/nem.2099",
+    "context": "…0 000 trans- actions per second,” International Journal of Network Management, vol. 30, no. 5, p. e2099, 2020, _eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/nem.2099.[On-line].Available: https://onlinelibrary.wiley.com/doi/abs/10.1002/nem.2099[6] M. Kapritsos, Y. Wang, V. Quema, A. Clement, L. Alvisi, and M. Dahlin, “All abo…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1145/3572771License:https://creativecommons.org/licenses/by/4.0/Link",
+    "url": "https://doi.org/10.1145/3572771License:https://creativecommons.org/licenses/by/4.0/Link",
+    "context": "…n details: ACM Computing Surveys v. 55 Chapter No. 12 pp. 1 - 32 0360-0300 (ISSN); 1557-7341 (ISSN) Publication Date: 2023-12-31 Publisher DOI: https://doi.org/10.1145/3572771License:https://creativecommons.org/licenses/by/4.0/Link to license to see what you are allowed to do with this resource. Downloaded from http://hdl.handle.net/1959.4/unsworks_84448 in https://unsworks.unsw.edu.au on…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1145/3572771ACM",
+    "url": "https://doi.org/10.1145/3572771ACM",
+    "context": "…mission and/or a fee. Request permissions from permissions@acm.org. © 2023 Association for Computing Machinery. 0360-0300/2023/03-ART251 $15.00 https://doi.org/10.1145/3572771ACM Computing Surveys, Vol. 55, No. 12, Article 251. Publication date: March 2023. 251:2 M. Buser et al. ACM Reference format: Maxime Buser, Rafael Dowsley, Muham…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1145/35727711INTRODUCTIONCryptographic",
+    "url": "https://doi.org/10.1145/35727711INTRODUCTIONCryptographic",
+    "context": "…xotic Signatures for Post-quantum Blockchain: Challenges and Research Directions. ACM Comput. Surv. 55, 12, Article 251 (March 2023), 32 pages. https://doi.org/10.1145/35727711INTRODUCTIONCryptographic algorithms play a key role in blockchain systems to guarantee security, preserve privacy, and improve system performance. Digital signatures, in particular, ar…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1145/237814.237838",
+    "url": "https://doi.org/10.1145/237814.237838",
+    "context": "…). In Proceedings of the 28th Annual ACM Symposium on Theory of Computing (STOC’96). Association for Computing Machinery, New York, NY, 99–108. https://doi.org/10.1145/237814.237838[2] Martin R. Albrecht, Christian Rechberger, Thomas Schneider, Tyge Tiessen, and Michael Zohner. 2015. Ciphers for MPC and FHE. In Advances in Cryptology (EURO…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1109/TIT.1978.1055873",
+    "url": "https://doi.org/10.1109/TIT.1978.1055873",
+    "context": "…k C. A. van Tilborg. 1978. On the inherent intractability of certain coding problems (corresp.). IEEE Trans. Inf. Theory 24, 3 (1978), 384–386. https://doi.org/10.1109/TIT.1978.1055873[18] Ward Beullens. 2022. Breaking rainbow takes a weekend on a laptop. IACR Cryptol. ePrint Arch. (2022), 214 (to appear at CRYPTO’22). [19] Ward Beullens, Shu…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1109/AFIPS.1979.98",
+    "url": "https://doi.org/10.1109/AFIPS.1979.98",
+    "context": "…. Safeguarding cryptographic keys. In Managing Requirements Knowledge, International Workshop on. IEEE Computer Society, Los Alamitos, CA, 313. https://doi.org/10.1109/AFIPS.1979.98[25] Olivier Blazy, Philippe Gaborit, Julien Schrek, and Nicolas Sendrier. 2017. A code-based blind signature. In 2017 IEEE International Symposium on Informati…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1006/inco.2000.2881",
+    "url": "https://doi.org/10.1006/inco.2000.2881",
+    "context": "…ro, Stanisław Jarecki, Hugo Krawczyk, and Tal Rabin. 2001. Robust threshold DSS signatures. Infor- mation and Computation 164, 1 (2001), 54–84. https://doi.org/10.1006/inco.2000.2881[76] Irene Giacomelli, Jesper Madsen, and Claudio Orlandi. 2016. Zkboo: Faster zero-knowledge for boolean circuits. In 25th {Usenix} Security Symposium ({Usenix…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1109/DSC47296.2019.8937613",
+    "url": "https://doi.org/10.1109/DSC47296.2019.8937613",
+    "context": "…K. Bui, and D. H. Duong. 2019. A blind signature from module latices. In 2019 IEEE Conference on Dependable and Secure Computing (DSC’19). 1–8. https://doi.org/10.1109/DSC47296.2019.8937613[97] A. K. Lenstra, H. W. Lenstra, and L. Lovász. [n.d.]. Factoring polynomials with rational coefficients. Math. Ann. 261 ([n.d.]), 515–534. https://doi.org/10…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1007/BF014",
+    "url": "https://doi.org/10.1007/BF014",
+    "context": "…13[97] A. K. Lenstra, H. W. Lenstra, and L. Lovász. [n.d.]. Factoring polynomials with rational coefficients. Math. Ann. 261 ([n.d.]), 515–534. https://doi.org/10.1007/BF014[98] C. Liang, C. Yongquan, T. Xueming, H. Dongping, and W. Xin. 2011. Hierarchical ID-based blind signature from lattices. In 2011 7th International Conference…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1109/CIS.2011.182",
+    "url": "https://doi.org/10.1109/CIS.2011.182",
+    "context": "…Hierarchical ID-based blind signature from lattices. In 2011 7th International Conference on Computational Intelligence and Security. 803–807. https://doi.org/10.1109/CIS.2011.182[99] Yehuda Lindell. 2017. Fast secure two-party ECDSA signing. In Advances in Cryptology (CRYPTO’17), Proceedings, Part II (LNCS). Springer, 613–644. [100] Jos…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.6633/IJNS.201801.20(1).02",
+    "url": "https://doi.org/10.6633/IJNS.201801.20(1).02",
+    "context": "…asekaran. 2018. Isogeny-based quantum-resistant undeniable blind signa- ture scheme. International Journal of Network Security 20 (2018), 9–18. https://doi.org/10.6633/IJNS.201801.20(1).02[108] Changshe Ma and Mei Jiang. 2019. Practical lattice-based multisignature schemes for blockchains. IEEE Access 7 (2019), 179765–179778. ACM Computing Survey…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1007/0-387-34805-0_21",
+    "url": "https://doi.org/10.1007/0-387-34805-0_21",
+    "context": "…nual International Cryptology Conference, Proceedings (Lecture Notes in Computer Science), Gilles Brassard (Ed.), Vol. 435. Springer, 218– 238. https://doi.org/10.1007/0-387-34805-0_21[115] Simon-Philipp Merz, Romy Minko, and Christophe Petit. 2020. Another look at some isogeny hardness assumptions. In Topics in Cryptology (CT-RSA’20), Stanis…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1007/s00037-007-0234-9",
+    "url": "https://doi.org/10.1007/s00037-007-0234-9",
+    "context": "…iele Micciancio. 2007. Generalized compact knapsacks, cyclic lattices, and efficient one-way functions. Comput. Complex. 16, 4 (2007), 365–411. https://doi.org/10.1007/s00037-007-0234-9[117] Arash Mirzaei, Amin Sakzad, Jiangshan Yu, and Ron Steinfeld. 2021. FPPW: A fair and privacy preserving watchtower for bitcoin. In FC. [118] Mohamed Saied…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1145/1060590.1060603",
+    "url": "https://doi.org/10.1145/1060590.1060603",
+    "context": "…and cryptography. In Proceedings of the 37th Annual ACM Symposium on Theory of Computing, Harold N. Gabow and Ronald Fagin (Eds.). ACM, 84–93. https://doi.org/10.1145/1060590.1060603[135] Ronald L. Rivest, Adi Shamir, and Yael Tauman. 2001. How to leak a secret. In Advances in Cryptology (ASIACRYPT’01), Colin Boyd (Ed.). Springer, Berlin, 5…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1145/359168.359176",
+    "url": "https://doi.org/10.1145/359168.359176",
+    "context": "…Gilles Brassard (Ed.). Springer, New York, NY, 239–252. [141] Adi Shamir. 1979. How to share a secret. Commun. ACM 22, 11 (Nov. 1979), 612–613. https://doi.org/10.1145/359168.359176[142] Peter W. Shor. 1994. Algorithms for quantum computation: Discrete logarithms and factoring. In FOCS’94. IEEE Computer Society, 124–134. [143] Damien Stehl…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1007/978-3-662-46803-6_25",
+    "url": "https://doi.org/10.1007/978-3-662-46803-6_25",
+    "context": "…nique Unruh. 2015. Non-interactive zero-knowledge proofs in the quantum random oracle model. In Advances in Cryptology (EUROCRYPT’15). 755–784. https://doi.org/10.1007/978-3-662-46803-6_25[147] Luke Valenta and Brendan Rowan. 2015. Blindcoin: Blinded, accountable mixes for bitcoin. In Financial Cryptography and Data Security (FC’15) International…"
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "DOI",
+    "value": "10.1016/j.future.2017.01.031Received",
+    "url": "https://doi.org/10.1016/j.future.2017.01.031Received",
+    "context": "…un Zheng. 2017. A round-optimal lattice-based blind signature scheme for cloud services. Future Generation Computer Systems 73 (2017), 106–114. https://doi.org/10.1016/j.future.2017.01.031Received 6 February 2022; revised 4 November 2022; accepted 8 November 2022 ACM Computing Surveys, Vol. 55, No. 12, Article 251. Publication date: March 2023."
+  },
+  {
+    "paper": "2022-buser-a-survey-on-exotic-signatures",
+    "kind": "url",
+    "value": "https://doi.org/10.6633/IJNS.201801.20",
+    "url": "https://doi.org/10.6633/IJNS.201801.20",
+    "context": "…signa- ture scheme. International Journal of Network Security 20 (2018), 9–18. https://doi.org/10.6633/IJNS.201801.20(1).02[108] Changshe Ma and Mei Jiang. 2019. Practical lattice-based multisignat…"
+  },
+  {
+    "paper": "2024-pont-downtime-required-for-bitcoin-quantum-safety",
+    "kind": "DOI",
+    "value": "10.1016/j.array.2022.10022511",
+    "url": "https://doi.org/10.1016/j.array.2022.10022511",
+    "context": "…“O’Reilly Media, Inc.” (2017) [5] Bard, D.A., Kearney, J.J., P´erez-Delgado, C.A.: Quantum advantage on proof of work. Array 15, 100225 (2022). https://doi.org/10.1016/j.array.2022.10022511[6] Bernstein, D.J., H¨ulsing, A., K¨olbl, S., Niederhagen, R., Rijneveld, P., Schwabe, P.: Sphincs+: Submission to the nist post-quantum project. In: NIST 3rd…"
+  },
+  {
+    "paper": "2024-pont-downtime-required-for-bitcoin-quantum-safety",
+    "kind": "DOI",
+    "value": "10.1109/EuroSP.2018.00020",
+    "url": "https://doi.org/10.1109/EuroSP.2018.00020",
+    "context": "…ithium: A lattice-based digital signature scheme. In: 2018 IEEE European Symposium on Security and Privacy (EuroS&P). pp. 353–367. IEEE (2018). https://doi.org/10.1109/EuroSP.2018.00020[15] Fouque, P.A., Hoffstein, J., Kirchner, P., Lagarias, J.C., Langlois, A., Nguyen, P.Q., Prest, T., Yu, Y., Zhang, Z.: Falcon: Fast-fourier lattice- based co…"
+  },
+  {
+    "paper": "2024-pont-downtime-required-for-bitcoin-quantum-safety",
+    "kind": "DOI",
+    "value": "10.1109/EuroSP.2018.00060",
+    "url": "https://doi.org/10.1109/EuroSP.2018.00060",
+    "context": "…er lattice- based compact signatures over ntru. In: 2018 IEEE European Sympo- sium on Security and Privacy (EuroS&P). pp. 720–734. IEEE (2018). https://doi.org/10.1109/EuroSP.2018.00060[16] Gartner, I.: The cost of downtime (2016), https://www.gartner.com/, re- trieved from Gartner [17] (IDC), I.D.C.: The business value of disaster recovery so…"
+  },
+  {
+    "paper": "2024-pont-downtime-required-for-bitcoin-quantum-safety",
+    "kind": "DOI",
+    "value": "10.1145/3132259",
+    "url": "https://doi.org/10.1145/3132259",
+    "context": "…cations/quantum-threat-timeline-2023[25] Narayanan, A., Clark, J.: Bitcoin’s academic pedigree. Communications of the ACM 60(12), 36–45 (2017), https://doi.org/10.1145/3132259, discusses the divisive nature of the SegWit upgrade [26] National Institute of Standards and Technology: Post- quantum cryptography: Nist’s plan for the futur…"
+  },
+  {
+    "paper": "2024-pont-downtime-required-for-bitcoin-quantum-safety",
+    "kind": "DOI",
+    "value": "10.6028/NIST.IR.8413",
+    "url": "https://doi.org/10.6028/NIST.IR.8413",
+    "context": "…l Institute of Standards and Technology: Status report on the third round of the nist post-quantum cryptography standardization process (2022), https://doi.org/10.6028/NIST.IR.8413, nIST IR 8413 [28] National Institute of Standards and Technology: Post-quantum cryptography: Digital signature schemes. https://csrc.nist.gov (2023), nIST iss…"
+  },
+  {
+    "paper": "2024-pont-downtime-required-for-bitcoin-quantum-safety",
+    "kind": "DOI",
+    "value": "10.6028/NIST.FIPS.203",
+    "url": "https://doi.org/10.6028/NIST.FIPS.203",
+    "context": "…logy: FIPS 203 – module-lattice-based key-encapsulation mechanism standard. Tech. rep., U.S. Department of Com- merce, Washington, D.C. (2024). https://doi.org/10.6028/NIST.FIPS.203[30] National Institute of Standards and Technology: FIPS 204 – module-lattice-based digital signature standard. Tech. rep., U.S. Department of Commerce, Washin…"
+  },
+  {
+    "paper": "2024-pont-downtime-required-for-bitcoin-quantum-safety",
+    "kind": "DOI",
+    "value": "10.6028/NIST.FIPS.204",
+    "url": "https://doi.org/10.6028/NIST.FIPS.204",
+    "context": "…and Technology: FIPS 204 – module-lattice-based digital signature standard. Tech. rep., U.S. Department of Commerce, Washing- ton, D.C. (2024). https://doi.org/10.6028/NIST.FIPS.204[31] National Institute of Standards and Technology: FIPS 205 – stateless hash-based digital signature standard. Tech. rep., U.S. Department of Commerce, Washin…"
+  },
+  {
+    "paper": "2024-pont-downtime-required-for-bitcoin-quantum-safety",
+    "kind": "DOI",
+    "value": "10.6028/NIST.FIPS.20513",
+    "url": "https://doi.org/10.6028/NIST.FIPS.20513",
+    "context": "…and Technology: FIPS 205 – stateless hash-based digital signature standard. Tech. rep., U.S. Department of Commerce, Washing- ton, D.C. (2024). https://doi.org/10.6028/NIST.FIPS.20513[32] Posch, A.: Understanding the different bitcoin address formats (2023), https://anitaposch.com/bitcoin-address-formats, accessed: 2024- 10-11 [33] Stewart,…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.62056/ak5wom2hdCheck",
+    "url": "https://doi.org/10.62056/ak5wom2hdCheck",
+    "context": "IACR Communications in Cryptology ISSN 3006-5496, Vol. 2, No. 3, 30 pages. https://doi.org/10.62056/ak5wom2hdCheck for updates Towards Post-Quantum Bitcoin Blockchain using Dilithium Signature Michel Seck1 and Adeline Roux-Langlois2 1 LTISI, CRISIN’2D, Ecole Polytechnique d…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1145/3372297.3423361",
+    "url": "https://doi.org/10.1145/3372297.3423361",
+    "context": "…Deterministic wallets in a quantum world. In Proceedings of the 2020 ACM SIGSAC Conference On Computer And Communications Security, pages 1017–1031, 2020. doi: 10.1145/3372297.3423361. [ABB+20] Erdem Alkim, Paulo SLM Barreto, Nina Bindel, Juliane Krämer, Patrick Longa, and Jefferson E Ricardini. The lattice-based digital signature scheme qtes…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-030-57808-4",
+    "url": "https://doi.org/10.1007/978-3-030-57808-4",
+    "context": "…The lattice-based digital signature scheme qtesla. In International Conference on Applied Cryptography and Network Security, pages 441–460. Springer, 2020. doi:10.1007/978-3-030-57808-4 _22. [BBD+23] Manuel Barbosa, Gilles Barthe, Christian Doczkal, Jelle Don, Serge Fehr, Benjamin Grégoire, Yu-Hsuan Huang, Andreas Hülsing, Yi Lee, and Xiaodi W…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-031-38554-4_12",
+    "url": "https://doi.org/10.1007/978-3-031-38554-4_12",
+    "context": "…editors, Advances in Cryptology – CRYPTO 2023, volume 14083 of Lecture Notes in Computer Science, pages 358–389, Cham, 2023. Springer Nature Switzerland. doi: 10.1007/978-3-031-38554-4_12. [BDK+21] Shi Bai, Léo Ducas, Eike Kiltz, Tancrède Lepoint, Vadim Lyubashevsky, Peter Schwabe, Gregor Seiler, and Damien Stehlé. CRYSTALS–dilithium: Algorithm s…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/s00145-022-09441-3",
+    "url": "https://doi.org/10.1007/s00145-022-09441-3",
+    "context": "…rentin Jeudy, Adeline Roux-Langlois, and Weiqiang Wen. On the hardness of module learning with errors with short distributions. J. Cryptol., 36(1):1, 2023. doi:10.1007/s00145-022-09441-3. [DEF+21] Poulami Das, Andreas Erwig, Sebastian Faust, Julian Loss, and Siavash Riahi. The exact security of bip32 wallets. In Proceedings of the 2021 ACM SIGSA…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1145/3460120.3484807",
+    "url": "https://doi.org/10.1145/3460120.3484807",
+    "context": "…ACM SIGSAC 28 Towards Post-Quantum Bitcoin Blockchain using Dilithium Signature conference on computer and communications security, pages 1020–1042, 2021. doi:10.1145/3460120.3484807. [DEF+25] Poulami Das, Andreas Erwig, Sebastian Faust, Philipp-Florens Lehwalder, Julian Loss, Ziyan Qu, and Siavash Riahi. Bip32-compatible threshold wallets.…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1145/3708821.3710830",
+    "url": "https://doi.org/10.1145/3708821.3710830",
+    "context": "…ings of the 20th ACM Asia Conference on Computer and Commu- nications Security (AsiaCCS ’25), New York, NY, USA, 2025. Association for Computing Machinery. doi:10.1145/3708821.3710830. [DEMS24] Poulami Das, Andreas Erwig, Michael Meyer, and Patrick Struck. Efficient post-quantum secure deterministic threshold wallets from isogenies. In Pro- c…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1145/3634737.3657008",
+    "url": "https://doi.org/10.1145/3634737.3657008",
+    "context": "…erministic threshold wallets from isogenies. In Pro- ceedings of the 19th ACM Asia Conference on Computer and Communications Security, pages 522–532, 2024. doi:10.1145/3634737.3657008. [Dev] Bitcoin Develepers. Bitcoin transactions. URL: https://developer.bitcoin.org/reference/transactions.html.[DFL19]Poulami Das, Sebastian Faust, and Julian…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3",
+    "url": "https://doi.org/10.1007/978-3",
+    "context": "…asselègue, and Damien Stehlé. A detailed analysis of fiat-shamir with aborts. In Annual International Cryptology Conference, pages 327–357. Springer, 2023. doi:10.1007/978-3 -031-38554-4_11. [DKL+18] Léo Ducas, Eike Kiltz, Tancrede Lepoint, Vadim Lyubashevsky, Peter Schwabe, Gregor Seiler, and Damien Stehlé. Crystals-dilithium: A l…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.13154/tches.v",
+    "url": "https://doi.org/10.13154/tches.v",
+    "context": "…lé. Crystals-dilithium: A lattice- based digital signature scheme. IACR Transactions on Cryptographic Hard- ware and Embedded Systems, pages 238–268, 2018. doi:10.13154/tches.v 2018.i1.238-268. [ELW23] Edward Eaton, Tancrède Lepoint, and Christopher A. Wood. Security analysis of signature schemes with key blinding. Cryptology ePrint A…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-031-17146-8_24",
+    "url": "https://doi.org/10.1007/978-3-031-17146-8_24",
+    "context": "…wig and Siavash Riahi. Deterministic wallets for adaptor signatures. In European Symposium on Research in Computer Security, pages 487–506. Springer, 2022. doi:10.1007/978-3-031-17146-8_24. [ESS21] Edward Eaton, Douglas Stebila, and Roy Stracovsky. Post-quantum key- blinding for authentication in anonymity networks. In Progress in Cryptology– LATI…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-030-88238",
+    "url": "https://doi.org/10.1007/978-3-030-88238",
+    "context": "…onal Conference on Cryptology and In- formation Security in Latin America, Bogotá, Colombia, October 6–8, 2021, Proceedings 7, pages 67–87. Springer, 2021. doi:10.1007/978-3-030-88238 -9_4. [FHK+18] Pierre-Alain Fouque, Jeffrey Hoffstein, Paul Kirchner, Vadim Lyubashevsky, Thomas Pornin, Thomas Prest, Thomas Ricosset, Gregor Seiler, William…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-662-49384-7_12",
+    "url": "https://doi.org/10.1007/978-3-662-49384-7_12",
+    "context": "…ational Conference on Practice and Theory in Public- Key Cryptography, Taipei, Taiwan, March 6-9, 2016, Proceedings, Part I, pages 301–330. Springer, 2016. doi:10.1007/978-3-662-49384-7_12. [GS15] Gus Gutoski and Douglas Stebila. Hierarchical deterministic bitcoin wal- lets that tolerate key leakage. In International Conference on Financial Crypto…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-662-47854-7_31",
+    "url": "https://doi.org/10.1007/978-3-662-47854-7_31",
+    "context": "…istic bitcoin wal- lets that tolerate key leakage. In International Conference on Financial Cryptography and Data Security, pages 497–504. Springer, 2015. doi: 10.1007/978-3-662-47854-7_31. [GS22] Jens Groth and Victor Shoup. On the security of ecdsa with additive key derivation and presignatures. In Annual International Conference on the Theory a…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-031-06944-4_13",
+    "url": "https://doi.org/10.1007/978-3-031-06944-4_13",
+    "context": "…derivation and presignatures. In Annual International Conference on the Theory and Applications of Cryptographic Techniques, pages 365–396. Springer, 2022. doi:10.1007/978-3-031-06944-4_13. [HLZ24] Mingxing Hu, Zhen Liu, and Yunhong Zhou. Efficient post-quantum secure deterministic wallet scheme. Cybersecurity, 7(1):24, 2024. doi:10.1186/s4 2400-0…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1186/s4",
+    "url": "https://doi.org/10.1186/s4",
+    "context": "…3-031-06944-4_13. [HLZ24] Mingxing Hu, Zhen Liu, and Yunhong Zhou. Efficient post-quantum secure deterministic wallet scheme. Cybersecurity, 7(1):24, 2024. doi:10.1186/s4 2400-024-00216-w. [Hop13] Nicholas Hopper. Proving security of tor’s hidden service identity blinding protocol. Tech report 2013-12-001, Tor Project, 2013. URL…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1109/COMST.2018.2818623",
+    "url": "https://doi.org/10.1109/COMST.2018.2818623",
+    "context": "…ov and Albert Levi. A survey on anonymity and privacy in bitcoin-like digital cash systems. IEEE Communications Surveys & Tutorials, 20(3):2543–2585, 2018. doi:10.1109/COMST.2018.2818623. [KLS18] Eike Kiltz, Vadim Lyubashevsky, and Christian Schaffner. A concrete treat- ment of fiat-shamir signatures in the quantum random-oracle model. In Advanc…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-319-78372-7_18",
+    "url": "https://doi.org/10.1007/978-3-319-78372-7_18",
+    "context": "…on the Theory and Applications of Cryptographic Techniques, Tel Aviv, Israel, April 29-May 3, 2018 Proceedings, Part III 37, pages 552–586. Springer, 2018. doi:10.1007/978-3-319-78372-7_18. [LS15] Adeline Langlois and Damien Stehlé. Worst-case to average-case reductions for module lattices. Des. Codes Cryptogr., 75(3):565–599, 2015. doi:10.100 7/s…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1109/TDSC.2021.3078463",
+    "url": "https://doi.org/10.1109/TDSC.2021.3078463",
+    "context": "…ated and privacy-preserving signature scheme with publicly derived public key. IEEE Transactions on Dependable and Secure Computing, 19(5):2934–2951, 2021. doi:10.1109/TDSC.2021.3078463. [Nak08] Satoshi Nakamoto. Bitcoin: A peer-to-peer electronic cash system. Decen- tralized business review, 2008. doi:10.2139/ssrn.3440802. [Nat13] National Ins…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.2139/ssrn.3440802",
+    "url": "https://doi.org/10.2139/ssrn.3440802",
+    "context": "…2951, 2021. doi:10.1109/TDSC.2021.3078463. [Nak08] Satoshi Nakamoto. Bitcoin: A peer-to-peer electronic cash system. Decen- tralized business review, 2008. doi:10.2139/ssrn.3440802. [Nat13] National Institute of Standards and Technology (NIST). Digital signature standard (dss), federal information processing standard publication 186-4. Fip…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.6028/NIST.FIPS.186-4",
+    "url": "https://doi.org/10.6028/NIST.FIPS.186-4",
+    "context": "…rds and Technology (NIST). Digital signature standard (dss), federal information processing standard publication 186-4. Fips publication 186-4, NIST, 2013. doi:10.6028/NIST.FIPS.186-4. 30 Towards Post-Quantum Bitcoin Blockchain using Dilithium Signature [Nat24] National Institute of Standards and Technology (NIST). Module-Lattice- Based Digi…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-981-99-7563-1_18",
+    "url": "https://doi.org/10.1007/978-981-99-7563-1_18",
+    "context": "…sed signature featuring uniquely rerandomizable public keys. In International Conference on Cryptology and Network Security, pages 392–413. Springer, 2023. doi:10.1007/978-981-99-7563-1_18. [SD25] Surbhi Shaw and Ratna Dutta. Post-quantum secure compact deterministic wallets from isogeny-based signatures with rerandomized keys. Theoretical Compute…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1016/j.tcs.2025.115127",
+    "url": "https://doi.org/10.1016/j.tcs.2025.115127",
+    "context": "…a. Post-quantum secure compact deterministic wallets from isogeny-based signatures with rerandomized keys. Theoretical Computer Science, 1035:115127, 2025. doi:10.1016/j.tcs.2025.115127. [Tor] Tor. Tor directory protocol, version 3. URL: https://gitweb.torproject.org/torspec.git/tree/rend-spec-v3.txt.[Wik18]Bitcoin Wiki. Bip32 proposal, 2018. U…"
+  },
+  {
+    "paper": "2025-seck-towards-post-quantum-bitcoin-blockchain-using",
+    "kind": "DOI",
+    "value": "10.1007/978-3-031-17140-6_5",
+    "url": "https://doi.org/10.1007/978-3-031-17140-6_5",
+    "context": "…Secure hierarchical deterministic wallet supporting stealth address. In European Symposium on Research in Computer Security, pages 89–109. Springer, 2022. doi:10.1007/978-3-031-17140-6_5."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "paper": "2018-jiang-contractfuzzer-fuzzing-smart-contracts-for",
+    "kind": "DOI",
+    "value": "10.1145/3238147.32381771",
+    "url": "https://doi.org/10.1145/3238147.32381771",
+    "context": "…eedings of the 33rd IEEE/ACM International Conference on Automated Software Engineering (ASE’18), September 3–7, Montpellier, France, 10 pages. https://doi.org/10.1145/3238147.32381771 Introduction Cryptocurrencies and blockchain technologies have gained huge popularity and attentions in industry and academia in recent years. By the end of 20…"
+  },
+  {
+    "paper": "2018-kalra-zeus-analyzing-safety-of-smart",
+    "kind": "DOI",
+    "value": "10.14722/ndss.2018.23082www.ndss-symposium.orgtheir",
+    "url": "https://doi.org/10.14722/ndss.2018.23082www.ndss-symposium.orgtheir",
+    "context": "…the false alarms. Network and Distributed Systems Security (NDSS) Symposium 2018 18-21 February 2018, San Diego, CA, USA ISBN 1-891562-49-5 http://dx.doi.org/10.14722/ndss.2018.23082www.ndss-symposium.orgtheir results; they could evaluate only 46 out of 396 contracts. While use of F⋆may enable reasoning about most correctness and fairness properties, the authors sugg…"
+  },
+  {
+    "paper": "2018-kalra-zeus-analyzing-safety-of-smart",
+    "kind": "url",
+    "value": "http://dx.doi.org/10.14722/ndss.2018.23082www.ndss-symposium.orgtheir",
+    "url": "http://dx.doi.org/10.14722/ndss.2018.23082www.ndss-symposium.orgtheir",
+    "context": "…DSS) Symposium 2018 18-21 February 2018, San Diego, CA, USA ISBN 1-891562-49-5 http://dx.doi.org/10.14722/ndss.2018.23082www.ndss-symposium.orgtheir results; they could evaluate only 46 out of 396 contracts. While use of F⋆may e…"
+  },
+  {
+    "paper": "2024-sun-gptscan-detecting-logic-vulnerabilities-in",
+    "kind": "DOI",
+    "value": "10.1145/3597926.3598067",
+    "url": "https://doi.org/10.1145/3597926.3598067",
+    "context": "…Language Models. In Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis. ACM, Seattle WA USA, 423–435. https://doi.org/10.1145/3597926.3598067[36] Yuzhou Fang, Daoyuan Wu, Xiao Yi, Shuai Wang, Yufan Chen, Mengjie Chen, Yang Liu, and Lingxiao Jiang. 2023. Beyond “Protected” and “Private”: An Empir- ica…"
+  },
+  {
+    "paper": "2024-sun-gptscan-detecting-logic-vulnerabilities-in",
+    "kind": "DOI",
+    "value": "10.48550/arXiv.2203.02155",
+    "url": "https://doi.org/10.48550/arXiv.2203.02155",
+    "context": "…skell, Peter Welinder, Paul Christiano, Jan Leike, and Ryan Lowe. 2022. Train- ing language models to follow instructions with human feedback. https: //doi.org/10.48550/arXiv.2203.02155 arXiv:2203.02155 [cs]. [50] Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama…"
+  },
+  {
+    "paper": "2024-sun-gptscan-detecting-logic-vulnerabilities-in",
+    "kind": "DOI",
+    "value": "10.48550/ARXIV.2203.02155",
+    "url": "https://doi.org/10.48550/ARXIV.2203.02155",
+    "context": "…Peter Welinder, Paul Christiano, Jan Leike, and Ryan Lowe. 2022. Train- ing language models to follow instructions with human feedback. (2022). https://doi.org/10.48550/ARXIV.2203.02155[51] Anton Permenev, Dimitar Dimitrov, Petar Tsankov, Dana Drachsler-Cohen, and Martin Vechev. 2020. Verx: Safety verification of smart contracts. In 2020 IEEE…"
+  }
+]

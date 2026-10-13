@@ -1,0 +1,30 @@
+[
+  {
+    "paper": "2021-danezis-narwhal-and-tusk-a-dag-based",
+    "kind": "DOI",
+    "value": "10.1145/3492321.3519594ACM",
+    "url": "https://doi.org/10.1145/3492321.3519594ACM",
+    "context": "…022, RENNES, France © 2022 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM ISBN 978-1-4503-9162-7/22/04...$15.00 https://doi.org/10.1145/3492321.3519594ACM Reference Format: George Danezis, Lefteris Kokoris-Kogias, Alberto Sonnino, and Alexan- der Spiegelman. 2022. Narwhal and Tusk: A DAG-based Mempool and Efficie…"
+  },
+  {
+    "paper": "2021-danezis-narwhal-and-tusk-a-dag-based",
+    "kind": "DOI",
+    "value": "10.1145/3492321.35195941Introduction",
+    "url": "https://doi.org/10.1145/3492321.35195941Introduction",
+    "context": "…nsus . In Seventeenth European Conference on Computer Systems (EuroSys ’22), April 5–8, 2022, RENNES, France. ACM, New York, NY, USA, 17 pages. https://doi.org/10.1145/3492321.35195941Introduction Byzantine consensus protocols [15, 19, 21] and the state machine replication paradigm [13] for building reliable dis- tributed systems have been studied for ov…"
+  },
+  {
+    "paper": "2021-danezis-narwhal-and-tusk-a-dag-based",
+    "kind": "DOI",
+    "value": "10.1145/571637.571640",
+    "url": "https://doi.org/10.1145/571637.571640",
+    "context": "…el Castro and Barbara Liskov. 2002. Practical byzantine fault tolerance and proactive recovery. ACM Trans. Comput. Syst. 20, 4 (2002), 398–461. https://doi.org/10.1145/571637.571640[20] George Danezis and David Hrycyszyn. 2018. Blockmania: from block DAGs to consensus. arXiv preprint arXiv:1809.01620 (2018). [21] Danny Dolev, Michael J Fis…"
+  },
+  {
+    "paper": "2021-danezis-narwhal-and-tusk-a-dag-based",
+    "kind": "DOI",
+    "value": "10.1007/978-3-662-46803-6_10",
+    "url": "https://doi.org/10.1007/978-3-662-46803-6_10",
+    "context": "…26-30, 2015, Proceedings, Part II (Lecture Notes in Computer Science, Vol. 9057), Elisabeth Oswald and Marc Fischlin (Eds.). Springer, 281–310. https://doi.org/10.1007/978-3-662-46803-6_10[26] Bingyong Guo, Zhenliang Lu, Qiang Tang, Jing Xu, and Zhenfeng Zhang. 2020. Dumbo: Faster Asynchronous BFT Protocols. In CCS ’20: 2020 ACM SIGSAC Conference…"
+  }
+]

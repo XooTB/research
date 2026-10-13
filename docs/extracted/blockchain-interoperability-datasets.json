@@ -1,0 +1,219 @@
+[
+  {
+    "paper": "2018-herlihy-atomic-cross-chain-swaps",
+    "kind": "DOI",
+    "value": "10.1145/3212734.3212736",
+    "url": "https://doi.org/10.1145/3212734.3212736",
+    "context": "…all other uses, contact the owner/author(s). PODC’18, Egham, United Kingdom © 2018 Copyright held by the owner/author(s). 978-1-4503-5795-1/18/07...$15.00 DOI: 10.1145/3212734.3212736 from Alice to Bob. Timelock t means that if Bob fails to produce that secret before time t elapses, then the escrowed alt-coins are refunded to Alice. Here is…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1145/nnnnnnn.nnnnnnn1INTRODUCTIONBlockchain",
+    "url": "https://doi.org/10.1145/nnnnnnn.nnnnnnn1INTRODUCTIONBlockchain",
+    "context": "…io Guerreiro, and Miguel Correia. 2021. A Survey on Blockchain Interoperability: Past, Present, and Future Trends. 1, 1 (March 2021), 63 pages. https://doi.org/10.1145/nnnnnnn.nnnnnnn1INTRODUCTIONBlockchain technology is maturing at a fast pace. The development of real-world applications shows real interest from both industry and academia [213, 240]. For instance,…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.36227/TECHRXIV.14120291.V1",
+    "url": "https://doi.org/10.36227/TECHRXIV.14120291.V1",
+    "context": "…, Miguel Correia, and Thomas Hardjono. 2021. HERMES: Fault-Tolerant Middleware for Blockchain Interoper- ability. TechrXiv 14120291/1 (3 2021). https://doi.org/10.36227/TECHRXIV.14120291.V1[26] Marianna Belotti, Stefano Moretti, Maria Potop-Butucaru, and Stefano Secci. 2020. Game Theoretical Analysis of Atomic Cross-Chain Swaps. Technical Report.…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1016/j.jss.2006.07.009",
+    "url": "https://doi.org/10.1016/j.jss.2006.07.009",
+    "context": "…lying the systematic literature review process within the software engineering domain. Journal of Systems and Software 80, 4 (4 2007), 571–583. https://doi.org/10.1016/j.jss.2006.07.009[47] Richard Brown. 2018. The Corda Platform: An Introduction White Paper. https://www.r3.com/reports/the-corda-platform-an-introduction-whitepaper/[48] Gewu Bu…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1145/3410699.3413796",
+    "url": "https://doi.org/10.1145/3410699.3413796",
+    "context": "…the 3rd Workshop on Cryptocurrencies and Blockchains for Distributed Systems, Part of MobiCom 2020. Association for Computing Machinery, 35–40. https://doi.org/10.1145/3410699.3413796[49] Jeff Burdges, Alfonso Cevallos, Peter Czaban, Rob Habermeier, Syed Hosseini, Fabio Lama, Handan Kılınç Alper, Ximin Luo, Fatemeh Shirazi, Alistair Stewart,…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1007/978-981-15-9213-3",
+    "url": "https://doi.org/10.1007/978-981-15-9213-3",
+    "context": "…Hash-Locking. In Communications in Computer and Information Science, Vol. 1267. Springer Science and Business Media Deutschland GmbH, 218–230. https://doi.org/10.1007/978-981-15-9213-3{_}17[67] Ratul Antik Das, Md Muhaimin Shah Pahalovi, and Muhammad Nur Yanhaona. 2019. Transaction finality through ledger checkpoints. In Proceedings of the In…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1007/978-3-030-54455-3",
+    "url": "https://doi.org/10.1007/978-3-030-54455-3",
+    "context": "…Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics), Vol. 12063 LNCS. Springer, 540–549. https://doi.org/10.1007/978-3-030-54455-3{_}38[71] Advait Deshpande, Katherine Stewart, Louise Lepetit, and Salil Gunashekar. 2017. Distributed Ledger Technologies/Blockchain: Challenges, opportu- niti…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1109/MS.2020.2994040",
+    "url": "https://doi.org/10.1109/MS.2020.2994040",
+    "context": "…echer, Florian Daniel, and Frank Leymann. 2020. Unified Integration of Smart Contracts through Service Orientation. IEEE Software 37, 5 (2020). https://doi.org/10.1109/MS.2020.2994040[85] Wanchain Foundation. 2019. Wanchain Roadmap. https://www.wanchain.org/learn/[86] Philipp Frauenthaler, Michael Borkowski, and Stefan Schulte. 2019. A Frame…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1109/Blockchain50366.2020.00032",
+    "url": "https://doi.org/10.1109/Blockchain50366.2020.00032",
+    "context": "…Relay: A Cost-efficient Relay for Ethereum- based Blockchains. In 2020 IEEE International Conference on Blockchain (Blockchain). IEEE, 204–213. https://doi.org/10.1109/Blockchain50366.2020.00032[91] Fusion Foundation. 2017. An Inclusive Cryptofinance Platform Based on Blockchain. Technical Report. Fusion Foundation. [92] Enrique Fynn, Pedone, Fernando,…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1145/3212734.3212736",
+    "url": "https://doi.org/10.1145/3212734.3212736",
+    "context": "…omputing. Association for Computing Machinery, New York, New York, USA, 245–254. [108] Maurice Herlihy. 2018. Atomic Cross-Chain Swaps. (2018). https://doi.org/10.1145/3212734.3212736[109] Garrick Hileman and Michel Rauchs. 2017. Global Blockchain Benchmarking Study. SSRN Electronic Journal (4 2017). [110] David Hyland-Wood and Shahan Khatch…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1109/MC.2018.2876184",
+    "url": "https://doi.org/10.1109/MC.2018.2876184",
+    "context": "…tePaper_en_US.pdf[141] Claudio Lima. 2018. Developing open and interoperable DLT/Blockchain Standards [Standards]. IEEE Computer 51, 11 (2018). https://doi.org/10.1109/MC.2018.2876184[142] Zhuotao Liu, Yangxi Xiang, Jian Shi, Peng Gao, Haoyu Wang, Xusheng Xiao, Bihan Wen, and Yih-Chun Hu. 2019. HyperService. Association for Computing Machine…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1145/3319535.3355503",
+    "url": "https://doi.org/10.1145/3319535.3355503",
+    "context": "…an Shi, Peng Gao, Haoyu Wang, Xusheng Xiao, Bihan Wen, and Yih-Chun Hu. 2019. HyperService. Association for Computing Machinery (ACM), 549–566. https://doi.org/10.1145/3319535.3355503[143] Zhuotao Liu, Yangxi Xiang, Jian Shi, Peng Gao, Haoyu Wang, Xusheng Xiao, Bihan Wen, and Yih-Chun Hu. 2019. Hyperservice: Interoperability and programmabil…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1007/978-3-030-58779-6",
+    "url": "https://doi.org/10.1007/978-3-030-58779-6",
+    "context": "…-Chain World. In Lecture Notes in Business Information Processing, Vol. 393 LNBIP. Springer Science and Business Media Deutschland GmbH, 35–51. https://doi.org/10.1007/978-3-030-58779-6{_}3[157] Glenford Myers, Tom Badgett, and Corey Sandler. 2012. Test-Case Design. In The Art of Software Testing. John Wiley \\& Sons, Ltd, Chapter 4, 41–84. htt…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1002/9781119202486.ch4",
+    "url": "https://doi.org/10.1002/9781119202486.ch4",
+    "context": "…nford Myers, Tom Badgett, and Corey Sandler. 2012. Test-Case Design. In The Art of Software Testing. John Wiley \\& Sons, Ltd, Chapter 4, 41–84. https://doi.org/10.1002/9781119202486.ch4[158] Satoshi Nakamoto. 2008. Bitcoin: A peer-to-peer electronic cash system. http://bitcoin.org/bitcoin.pdf[159] National Interoperability Framework Observator…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1109/ACCESS.2020.3017549",
+    "url": "https://doi.org/10.1109/ACCESS.2020.3017549",
+    "context": "…-cd-03-en.html[164] Yan Pang. 2020. A New Consensus Protocol for Blockchain Interoperability Architecture. IEEE Access 8 (2020), 153719–153730. https://doi.org/10.1109/ACCESS.2020.3017549[165] Pantos Team. 2020. Pantos Vision Paper. Technical Report. Pantos. [166] Joe Petrowski. 2020. Polkadot and Ethereum 2.0. https://wiki.polkadot.network/docs…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1007/978-3-030-23404-1_6",
+    "url": "https://doi.org/10.1007/978-3-030-23404-1_6",
+    "context": "…-2[167] Babu Pillai and Kamanashis Biswas. 2019. Blockchain Interoperable Digital Objects. In ICBC2019 International Conference on Blockchain. https: //doi.org/10.1007/978-3-030-23404-1_6 [168] Babu Pillai, Kamanashis Biswas, and Vallipuram Muthukkumarasamy. 2020. Cross-chain interoperability among blockchain-based systems using transactions. Kn…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1017/S0269888920000314",
+    "url": "https://doi.org/10.1017/S0269888920000314",
+    "context": "…kumarasamy. 2020. Cross-chain interoperability among blockchain-based systems using transactions. Knowledge Engineering Review 35 (2020), 1–18. https://doi.org/10.1017/S0269888920000314[169] Andrew Poelstra, Adam Back, Mark Friedenbach, Gregory Maxwell, and Pieter Wuille Blockstream. 2017. Blockstream: Confidential Assets. Technical Report. ht…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1007/978-3-030-59638-5",
+    "url": "https://doi.org/10.1007/978-3-030-59638-5",
+    "context": "…n Artificial Intelligence and Lecture Notes in Bioinformatics), Vol. 12404 LNCS. Springer Science and Business Media Deutschland GmbH, 154–168. https://doi.org/10.1007/978-3-030-59638-5{_}11[177] Quant Foundation. 2019. Overledger Network Whitepaper v0.3. Technical Report. Quant. [178] Mayank Raikwar, Danilo Gligoroski, and Katina Kralevska. 2…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1109/ICBC48266.2020.9169408",
+    "url": "https://doi.org/10.1109/ICBC48266.2020.9169408",
+    "context": "…ain Swaps. In IEEE International Conference on Blockchain and Cryptocurrency, ICBC 2020. Institute of Electrical and Electronics Engineers Inc. https://doi.org/10.1109/ICBC48266.2020.9169408[187] Kuheli Sai and David Tipper. 2019. Disincentivizing Double Spend Attacks Across Interoperable Blockchains. In First IEEE International Conference on Trust…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1007/978-3-030-30429-4",
+    "url": "https://doi.org/10.1007/978-3-030-30429-4",
+    "context": "…ss Process Management: BPM 2019: Business Process Management: Blockchain and Central and Eastern Europe Forum, Vol. 361. Springer Verlag, 3–10. https://doi.org/10.1007/978-3-030-30429-4{_}1[192] Security Token Standard. 2019. Security Token Standard - ERC 1400. https://thesecuritytokenstandard.org/[193] Security Token Standard. 2019. SecurityT…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1109/PDCAT.2017.00066",
+    "url": "https://doi.org/10.1109/PDCAT.2017.00066",
+    "context": "…ency. In Parallel and Distributed Computing, Applications and Technologies, PDCAT Proceedings, Vol. 2017-Decem. IEEE Computer Society, 360–367. https://doi.org/10.1109/PDCAT.2017.00066[203] Swiss Financial Market Supervisory Authority. 2018. FINMA publishes ICO guidelines. https://www.finma.ch/en/news/2018/02/20180216-mm-ico-wegleitung/[204]…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1088/1742-6596/1631/1/012189",
+    "url": "https://doi.org/10.1088/1742-6596/1631/1/012189",
+    "context": "…. An Electricity Cross-Chain Platform Based on Sidechain Relay. In Journal of Physics: Conference Series, Vol. 1631. IOP Publishing Ltd, 12189. https://doi.org/10.1088/1742-6596/1631/1/012189[221] Xinying Wang, Timothy Tawose, Feng Yan, and Dongfang Zhao. 2020. Distributed Nonblocking Commit Protocols for Many-Party Cross-Blockchain Transactions. Te…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1007/978-981-15-8086-4",
+    "url": "https://doi.org/10.1007/978-981-15-8086-4",
+    "context": "…nication. In Communications in Computer and Information Science, Vol. 1253 CCIS. Springer Science and Business Media Deutschland GmbH, 592–603. https://doi.org/10.1007/978-981-15-8086-4{_}56[230] Xiwei Xu, Ingo Weber, Mark Staples, Liming Zhu, Jan Bosch, Len Bass, Cesare Pautasso, and Paul Rimba. 2017. A Taxonomy of Blockchain-Based Systems fo…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "DOI",
+    "value": "10.1109/ACCESS.2020.2965147",
+    "url": "https://doi.org/10.1109/ACCESS.2020.2965147",
+    "context": "…sheng Yu, Xu Wang, Kan Yu, Wei Ni, J. Andrew Zhang, and Ren Ping Liu. 2020. Survey: Sharding in Blockchains. IEEE Access 8 (2020), 14155–14181. https://doi.org/10.1109/ACCESS.2020.2965147[233] Alexei Zamyatin, Mustafa Al-Bassam, Dionysis Zindros, Eleftherios Kokoris-Kogias, Pedro Moreno-Sanchez, Aggelos Kiayias, and William J Knottenbelt. 2019.…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "url",
+    "value": "https://doi.org/10.1007/978-981-15-9213-3{_}17",
+    "url": "https://doi.org/10.1007/978-981-15-9213-3{_}17",
+    "context": "…ence, Vol. 1267. Springer Science and Business Media Deutschland GmbH, 218–230. https://doi.org/10.1007/978-981-15-9213-3{_}17[67] Ratul Antik Das, Md Muhaimin Shah Pahalovi, and Muhammad Nur Yanhaona. 2019…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "url",
+    "value": "https://doi.org/10.1007/978-3-030-54455-3{_}38",
+    "url": "https://doi.org/10.1007/978-3-030-54455-3{_}38",
+    "context": "…gence and Lecture Notes in Bioinformatics), Vol. 12063 LNCS. Springer, 540–549. https://doi.org/10.1007/978-3-030-54455-3{_}38[71] Advait Deshpande, Katherine Stewart, Louise Lepetit, and Salil Gunashekar.…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "url",
+    "value": "https://doi.org/10.1007/978-3-030-58779-6{_}3",
+    "url": "https://doi.org/10.1007/978-3-030-58779-6{_}3",
+    "context": "…g, Vol. 393 LNBIP. Springer Science and Business Media Deutschland GmbH, 35–51. https://doi.org/10.1007/978-3-030-58779-6{_}3[157] Glenford Myers, Tom Badgett, and Corey Sandler. 2012. Test-Case Design. In…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "url",
+    "value": "https://doi.org/10.1007/978-3-030-59638-5{_}11",
+    "url": "https://doi.org/10.1007/978-3-030-59638-5{_}11",
+    "context": "…Vol. 12404 LNCS. Springer Science and Business Media Deutschland GmbH, 154–168. https://doi.org/10.1007/978-3-030-59638-5{_}11[177] Quant Foundation. 2019. Overledger Network Whitepaper v0.3. Technical Repo…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "url",
+    "value": "https://doi.org/10.1007/978-3-030-30429-4{_}1",
+    "url": "https://doi.org/10.1007/978-3-030-30429-4{_}1",
+    "context": "…ockchain and Central and Eastern Europe Forum, Vol. 361. Springer Verlag, 3–10. https://doi.org/10.1007/978-3-030-30429-4{_}1[192] Security Token Standard. 2019. Security Token Standard - ERC 1400. https:/…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "url",
+    "value": "https://doi.org/10.1007/978-981-15-8086-4{_}56",
+    "url": "https://doi.org/10.1007/978-981-15-8086-4{_}56",
+    "context": "…Vol. 1253 CCIS. Springer Science and Business Media Deutschland GmbH, 592–603. https://doi.org/10.1007/978-981-15-8086-4{_}56[230] Xiwei Xu, Ingo Weber, Mark Staples, Liming Zhu, Jan Bosch, Len Bass, Cesar…"
+  },
+  {
+    "paper": "2021-belchior-a-survey-on-blockchain-interoperability",
+    "kind": "url",
+    "value": "https://doi.org/02",
+    "url": "https://doi.org/02",
+    "context": "…Karen Scarfone. 2018. Blockchain Technology Overview. Technical Report. NISTIR. https://doi.org/02[232] Guangsheng Yu, Xu Wang, Kan Yu, Wei Ni, J. Andrew Zhang, and Ren Ping Liu.…"
+  }
+]

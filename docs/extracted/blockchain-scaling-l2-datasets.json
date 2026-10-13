@@ -1,0 +1,72 @@
+[
+  {
+    "paper": "2018-al-bassam-fraud-and-data-availability-proofs",
+    "kind": "DOI",
+    "value": "10.1145/358549.358563",
+    "url": "https://doi.org/10.1145/358549.358563",
+    "context": "…m?id=1884265.18842819. Chaum, D.L.: Untraceable electronic mail, return addresses, and digital pseudonyms. Commun. ACM 24(2), 84–90 (Feb 1981). https://doi.org/10.1145/358549.358563,http://doi.acm.org/10.1145/358549.35856310. Croman, K., Decker, C., Eyal, I., Gencer, A.E., Juels, A., Kosba, A., Miller, A., Saxena, P., Shi, E., G¨un Sirer,…"
+  },
+  {
+    "paper": "2018-al-bassam-fraud-and-data-availability-proofs",
+    "kind": "DOI",
+    "value": "10.1145/358549.35856310",
+    "url": "https://doi.org/10.1145/358549.35856310",
+    "context": "…ceable electronic mail, return addresses, and digital pseudonyms. Commun. ACM 24(2), 84–90 (Feb 1981). https://doi.org/10.1145/358549.358563,http://doi.acm.org/10.1145/358549.35856310. Croman, K., Decker, C., Eyal, I., Gencer, A.E., Juels, A., Kosba, A., Miller, A., Saxena, P., Shi, E., G¨un Sirer, E., Song, D., Wattenhofer, R.: On scaling de…"
+  },
+  {
+    "paper": "2018-al-bassam-fraud-and-data-availability-proofs",
+    "kind": "DOI",
+    "value": "10.1109/FOCS.2014.41",
+    "url": "https://doi.org/10.1109/FOCS.2014.41",
+    "context": "…Science. pp. 316–325. FOCS ’14, IEEE Computer Society, Washington, DC, USA 32 Mustafa Al-Bassam, Alberto Sonnino, and Vitalik Buterin (2014). https://doi.org/10.1109/FOCS.2014.41,http://dx.doi.org/10.1109/FOCS.2014.4123. Marshall, A.: Bitcoin scaling problem, explained (2017), https://cointelegraph.com/explained/Bitcoin-scaling-problem-…"
+  },
+  {
+    "paper": "2018-al-bassam-fraud-and-data-availability-proofs",
+    "kind": "DOI",
+    "value": "10.1109/FOCS.2014.4123",
+    "url": "https://doi.org/10.1109/FOCS.2014.4123",
+    "context": "…omputer Society, Washington, DC, USA 32 Mustafa Al-Bassam, Alberto Sonnino, and Vitalik Buterin (2014). https://doi.org/10.1109/FOCS.2014.41,http://dx.doi.org/10.1109/FOCS.2014.4123. Marshall, A.: Bitcoin scaling problem, explained (2017), https://cointelegraph.com/explained/Bitcoin-scaling-problem-explained24. Merkle, R.C.: A digital signa…"
+  },
+  {
+    "paper": "2018-al-bassam-fraud-and-data-availability-proofs",
+    "kind": "DOI",
+    "value": "10.1109/TIT.1978.105581634",
+    "url": "https://doi.org/10.1109/TIT.1978.105581634",
+    "context": "…Solomon codes using Fermat theoretic transforms and continued fractions. IEEE Transactions on Information Theory 24(1), 100–106 (January 1978). https://doi.org/10.1109/TIT.1978.105581634. Saints, K., Heegard, C.: Algebraic-geometric codes and multidimensional cyclic codes: a uniﬁed theory and algorithms for decoding using Grobner bases. IEEE Tra…"
+  },
+  {
+    "paper": "2018-al-bassam-fraud-and-data-availability-proofs",
+    "kind": "url",
+    "value": "http://dx.doi.org/10.1109/FOCS.2014.4123",
+    "url": "http://dx.doi.org/10.1109/FOCS.2014.4123",
+    "context": "…berto Sonnino, and Vitalik Buterin (2014). https://doi.org/10.1109/FOCS.2014.41,http://dx.doi.org/10.1109/FOCS.2014.4123. Marshall, A.: Bitcoin scaling problem, explained (2017), https://cointelegraph.…"
+  },
+  {
+    "paper": "2020-gudgeon-sok-layer-two-blockchain-protocols",
+    "kind": "DOI",
+    "value": "10.1145/3133956.313409679",
+    "url": "https://doi.org/10.1145/3133956.313409679",
+    "context": "…with payment-channel networks. In: Conference on Computer and Communications Security. pp. 455–471. CCS ’17, ACM, New York, NY, USA (2017), http://doi.acm.org/10.1145/3133956.313409679. Malavolta, G., Moreno-Sanchez, P., Schneidewind, C., Kate, A., Maﬀei, M.: Anonymous multi-hop locks for blockchain scalability and interoperability. In: Networ…"
+  },
+  {
+    "paper": "2020-gudgeon-sok-layer-two-blockchain-protocols",
+    "kind": "DOI",
+    "value": "10.1515/popets-2016-0049112",
+    "url": "https://doi.org/10.1515/popets-2016-0049112",
+    "context": "…ate, A.: Listening to whispers of ripple: Linking wallets and deanonymizing transactions in the ripple network. PoPETs 2016(4), 436–453 (2016), https://doi.org/10.1515/popets-2016-0049112. Moreno-Sanchez, P., Modi, N., Songhela, R., Kate, A., Fahmy, S.: Mind your credit: Assessing the health of the ripple credit network. In: WWW 2018. pp. 329–338…"
+  },
+  {
+    "paper": "2020-gudgeon-sok-layer-two-blockchain-protocols",
+    "kind": "DOI",
+    "value": "10.1145/2699026.2699100121",
+    "url": "https://doi.org/10.1145/2699026.2699100121",
+    "context": "…of the 5th ACM Conference on Data and Application Security and Privacy, CODASPY 2015, San Antonio, TX, USA, March 2-4, 2015. pp. 75–86 (2015), https://doi.org/10.1145/2699026.2699100121. Danezis, G., Serjantov, A.: Statistical disclosure or intersection attacks on anonymity systems. In: International Workshop on Information Hiding (2004) 122. Z…"
+  },
+  {
+    "paper": "2020-gudgeon-sok-layer-two-blockchain-protocols",
+    "kind": "DOI",
+    "value": "10.1145/2976749.2978424128",
+    "url": "https://doi.org/10.1145/2976749.2978424128",
+    "context": "…SIGSAC Conference on Computer and Communi- cations Security. p. 418429. CCS 16, Association for Computing Machinery, New York, NY, USA (2016), https://doi.org/10.1145/2976749.2978424128. Kiayias, A., Litos, O.S.T.: A composable security treatment of the lightning network. Cryptology ePrint Archive, Report 2019/778 (2019), https://eprint.iacr.or…"
+  }
+]

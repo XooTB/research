@@ -1,0 +1,65 @@
+[
+  {
+    "paper": "2020-wu-who-are-the-phishers-phishing",
+    "kind": "DOI",
+    "value": "10.1109/TSMC.2020.3016821",
+    "url": "https://doi.org/10.1109/TSMC.2020.3016821",
+    "context": "…huan@mail.sysu.edu.cn). Color versions of one or more of the ﬁgures in this article are available online at http://ieeexplore.ieee.org.Digital Object Identiﬁer 10.1109/TSMC.2020.3016821 application of blockchain and the ﬁrst practical implementa- tion of cryptocurrency. Ethereum is currently the largest blockchain platform that supports smart…"
+  },
+  {
+    "paper": "2020-wu-who-are-the-phishers-phishing",
+    "kind": "DOI",
+    "value": "10.1109/TSMC.2019.2895123",
+    "url": "https://doi.org/10.1109/TSMC.2019.2895123",
+    "context": "…nabled smart contracts: Architecture, applications, and future trends,” IEEE Trans. Syst., Man, Cybern., Syst., vol. 49, no. 11, pp. 2266–2277, Nov. 2019, doi: 10.1109/TSMC.2019.2895123. [4] A. Holub and J. O’Connor, “CoinHoarder: Tracking a ukrainian bitcoin phishing ring DNS style,” in Proc. IEEE APWG Symp. Elect. Crit. Res., San Diego, CA, U…"
+  },
+  {
+    "paper": "2020-wu-who-are-the-phishers-phishing",
+    "kind": "DOI",
+    "value": "10.1109/TCSII.2020.2968376",
+    "url": "https://doi.org/10.1109/TCSII.2020.2968376",
+    "context": "…and understand- ing Ethereum transaction records via a complex network approach,” IEEE Trans. Circuits Syst. II, Exp. Briefs, early access, Jan. 21, 2020, doi: 10.1109/TCSII.2020.2968376. [10] P. Zheng, Z. Zheng, J. Wu, and H. N. Dai, “XBlock-ETH: Extracting and exploring blockchain data from Ethereum,” IEEE Open J. Comput. Soc., vol. 1, pp. 95–…"
+  },
+  {
+    "paper": "2020-wu-who-are-the-phishers-phishing",
+    "kind": "DOI",
+    "value": "10.1109/TSMC.2018.2883678",
+    "url": "https://doi.org/10.1109/TSMC.2018.2883678",
+    "context": "…tinovic, “The anti-social system properties: Bitcoin network data analysis,” IEEE Trans. Syst., Man, Cybern., Syst., vol. 50, no. 1, pp. 21–31, Jan. 2020, doi: 10.1109/TSMC.2018.2883678. [12] P. Monamo, V. Marivate, and B. Twala, “Unsupervised learning for robust bitcoin fraud detection,” in Proc. IEEE Inf. Security SA, 2016, pp. 129–134. [13]…"
+  },
+  {
+    "paper": "2022-li-ttagn-temporal-transaction-aggregation-graph",
+    "kind": "DOI",
+    "value": "10.1145/3485447.3512226Lyon",
+    "url": "https://doi.org/10.1145/3485447.3512226Lyon",
+    "context": "…hor(s). WWW ’22, April 25–29, 2022, Virtual Event, Lyon, France © 2022 Copyright held by the owner/author(s). ACM ISBN 978-1-4503-9096-5/22/04. https://doi.org/10.1145/3485447.3512226Lyon, France. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3485447.35122261INTRODUCTION Ethereum[29] is one of the most popular and scalable blockchain…"
+  },
+  {
+    "paper": "2022-li-ttagn-temporal-transaction-aggregation-graph",
+    "kind": "DOI",
+    "value": "10.1145/3485447.35122261INTRODUCTION",
+    "url": "https://doi.org/10.1145/3485447.35122261INTRODUCTION",
+    "context": "…by the owner/author(s). ACM ISBN 978-1-4503-9096-5/22/04. https://doi.org/10.1145/3485447.3512226Lyon, France. ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/3485447.35122261INTRODUCTION Ethereum[29] is one of the most popular and scalable blockchain platforms with 14.8 transactions per second and 700,000 daily active addresses on it[7]. Howeve…"
+  },
+  {
+    "paper": "2024-jiang-blockchained-federated-learning-for-internet",
+    "kind": "DOI",
+    "value": "10.1109/LWC.2022.3151873",
+    "url": "https://doi.org/10.1109/LWC.2022.3151873",
+    "context": "…d Blockchain-Embedded Data Accumulation Scheme Using Drones for Internet of Things. IEEE Wireless Communications Letters 11, 5 (2022), 972–976. https://doi.org/10.1109/LWC.2022.3151873[29] Abdul Rehman Javed, Muhammad Abul Hassan, Faisal Shahzad, Waqas Ahmed, Saurabh Singh, Thar Baker, and Thippa Reddy Gadekallu. 2022. Integration of Blockcha…"
+  },
+  {
+    "paper": "2024-jiang-blockchained-federated-learning-for-internet",
+    "kind": "DOI",
+    "value": "10.1109/ACCESS.2022.3161132",
+    "url": "https://doi.org/10.1109/ACCESS.2022.3161132",
+    "context": "…Blockchain- Based Federated Learning in UAVs Beyond 5G Networks: A Solution Taxonomy and Future Directions. IEEE Access 10 (2022), 33154–33182. https://doi.org/10.1109/ACCESS.2022.3161132[75] Jayasree Sengupta, Sushmita Ruj, and Sipra Das Bit. 2020. A Comprehensive Survey on Attacks, Security Issues and Blockchain Solutions for IoT and IIoT. Jou…"
+  },
+  {
+    "paper": "2024-jiang-blockchained-federated-learning-for-internet",
+    "kind": "url",
+    "value": "https://doi.org/XXXXXXX.XXXXXXX∗Principal",
+    "url": "https://doi.org/XXXXXXX.XXXXXXX∗Principal",
+    "context": "…ning for Internet of Things: A Comprehensive Survey. 1, 1 (May 2023), 30 pages. https://doi.org/XXXXXXX.XXXXXXX∗Principal corresponding author Authors’ addresses: Yanna Jiang, Yanna.Jiang@student.uts.e…"
+  }
+]
