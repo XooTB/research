@@ -229,13 +229,14 @@ class Index:
             return
         for ws_dir in sorted(p for p in ROOT.iterdir() if p.is_dir()):
             self._build_workstream(ws_dir)
+        superseded = {old for r in self.items.values() for old in r.get("supersedes") or []}
         for rec in self.items.values():
             if rec["kind"] in ("experiment", "task"):
                 for dep in rec.get("depends_on") or []:
                     if dep not in self.items:
                         self.problem("error", "unknown-dependency", rec["id"], f"{rec['id']} depends on unknown {dep}")
             for ref in rec.get("refs") or []:
-                self._check_ref(rec["id"], ref)
+                self._check_ref(rec["id"], ref, historical=rec["id"] in superseded)
             for old in rec.get("supersedes") or []:
                 if old in self.items:
                     self.db.execute("UPDATE item SET superseded_by=? WHERE id=?", (rec["id"], old))
@@ -248,7 +249,7 @@ class Index:
                         self.problem("error", "unknown-ref", ws, f"milestone {ms.get('id')} lists unknown {it}")
         self._check_cycles()
 
-    def _check_ref(self, src: str, ref: str) -> None:
+    def _check_ref(self, src: str, ref: str, historical: bool = False) -> None:
         if re.fullmatch(r"[EFDT]\d{3}", ref):
             if ref not in self.items:
                 self.problem("error", "unknown-ref", src, f"{src} refers to unknown {ref}")
@@ -256,7 +257,9 @@ class Index:
             if not (RUNS_DIR / ref[4:] / "run.json").is_file():
                 self.problem("error", "unknown-ref", src, f"{src} refers to missing run {ref[4:]}")
         elif "/" in ref and not (WORKSPACE / ref.split("#")[0]).exists():
-            self.problem("error", "unknown-ref", src, f"{src} refers to missing path {ref}")
+            # A superseded finding/decision is history: its evidence may since have been removed.
+            self.problem("warning" if historical else "error", "unknown-ref", src,
+                         f"{src} refers to missing path {ref}")
 
     def _build_workstream(self, ws_dir: Path) -> None:
         ws = ws_dir.name

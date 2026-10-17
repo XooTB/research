@@ -1,0 +1,1197 @@
+[
+ {
+  "title": "The rise of blockchain technology in agriculture and food supply chains",
+  "authors": [
+   "A. Kamilaris",
+   "Agusti Fonts",
+   "F. Prenafeta-Bold\u00fa"
+  ],
+  "year": 2019,
+  "venue": "Trends in Food Science & Technology",
+  "doi": "https://doi.org/10.1016/j.tifs.2019.07.034",
+  "url": "https://doi.org/10.1016/j.tifs.2019.07.034",
+  "pdf_url": "https://doi.org/10.1016/j.tifs.2019.07.034",
+  "abstract": "Abstract Blockchain is an emerging digital technology allowing ubiquitous financial transactions among distributed untrusted parties, without the need of intermediaries such as banks. This article examines the impact of blockchain technology in agriculture and food supply chain, presents existing ongoing projects and initiatives, and discusses overall implications, challenges and potential, with a critical view over the maturity of these projects. Our findings indicate that blockchain is a promising technology towards a transparent supply chain of food, with many ongoing initiatives in various food products and food-related issues, but many barriers and challenges still exist, which hinder its wider popularity among farmers and systems. These challenges involve technical aspects, education, policies and regulatory frameworks.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Agri-food traceability and food safety",
+  "openalex_id": "W2965761488"
+ },
+ {
+  "title": "Modeling the blockchain enabled traceability in agriculture supply chain",
+  "authors": [
+   "S. Kamble",
+   "A. Gunasekaran",
+   "Rohit Sharma"
+  ],
+  "year": 2019,
+  "venue": "International Journal of Information Management",
+  "doi": "https://doi.org/10.1016/j.ijinfomgt.2019.05.023",
+  "url": "https://doi.org/10.1016/j.ijinfomgt.2019.05.023",
+  "pdf_url": null,
+  "abstract": "Abstract Blockchain Technology (BT) has led to a disruption in the supply chain by removing the trust related issues. Studies are being conducted worldwide to leverage the benefits provided by BT in improving the performance of the supply chains. The literature reveals BT to offer various benefits leading to improvements in the sustainable performance of the agriculture supply chains (ASC). It is expected that BT will bring a paradigm shift in the way the transactions are carried in the ASC by reducing the high number of intermediaries, delayed payments and high transaction lead times. India, a developing economy, caters to the food security needs of an ever-growing population and faces many challenges affecting ASC sustainability. It is therefore essential to adopt BT in the ASC to leverage the various benefits. In this study, we identify and establish the relationships between the enablers of BT adoption in ASC. Thirteen enablers were identified from the literature and validated by the experts before applying a combined Interpretive Structural Modelling (ISM) and Decision-Making Trial and Evaluation Laboratory (DEMATEL) methodology to envision the complex causal relationships between the identified BT enablers. The findings from the study suggest that, among the identified enablers, traceability was the most significant reason for BT implementation in ASC followed by auditability, immutability, and provenance. The findings of the study will help the practitioners to design the strategies for BT implementation in agriculture, creating a real-time data-driven ASC. The results will also help the policymakers in developing policies for faster implementation of BT ensuring food safety and sustainable ASCs.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Agri-food traceability and food safety",
+  "openalex_id": "W2952858199"
+ },
+ {
+  "title": "Applying blockchain technology to improve agri-food traceability: A review of development methods, benefits and challenges",
+  "authors": [
+   "Huan-Huan Feng",
+   "Xiang Wang",
+   "Y. Duan",
+   "Jian Zhang",
+   "Xiao-Shuan Zhang"
+  ],
+  "year": 2020,
+  "venue": "Journal of Cleaner Production",
+  "doi": "https://doi.org/10.1016/j.jclepro.2020.121031",
+  "url": "https://doi.org/10.1016/j.jclepro.2020.121031",
+  "pdf_url": "https://uobrep.openrepository.com/bitstream/10547/623900/2/Applying%20blockchain%20technology%20to%20improve%20agri-food%20traceability%20-%20final%20accepted%20version.pdf",
+  "abstract": "Abstract Traceability plays a vital role in food quality and safety management. Traditional Internet of Things (IoT) traceability systems provide the feasible solutions for the quality monitoring and traceability of food supply chains. However, most of the IoT solutions rely on the centralized server-client paradigm that makes it difficult for consumers to acquire all transaction information and to track the origins of products. Blockchain is a cutting-edge technology that has great potential for improving traceability performance by providing security and full transparency. However, the benefits, challenges and development methods of blockchain-based food traceability systems are not yet fully explored in the current literature. Therefore, the main aim of this paper is to review the blockchain technology characteristics and functionalities, identify blockchain-based solutions for addressing food traceability concerns, highlight the benefits and challenges of blockchain-based traceability systems implementation, and help researchers and practitioners to apply blockchain technology based food traceability systems by proposing an architecture design framework and suitability application analysis flowchart of blockchain based food traceability systems. The results of this study contribute to better understanding and knowledge on how to improve the food traceability by developing and implementing blockchain-based traceability systems. The paper provides valuable information for researchers and practitioners on the use of blockchain-based food traceability management and has a positive effect on the improvement of food sustainability.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Agri-food traceability and food safety",
+  "openalex_id": "W3011748039"
+ },
+ {
+  "title": "Blockchain implementation for food safety in supply chain: A review",
+  "authors": [
+   "V. Hema",
+   "A. Manickavasagan"
+  ],
+  "year": 2024,
+  "venue": "Comprehensive Reviews in Food Science and Food Safety",
+  "doi": "https://doi.org/10.1111/1541-4337.70002",
+  "url": "https://doi.org/10.1111/1541-4337.70002",
+  "pdf_url": "https://doi.org/10.1111/1541-4337.70002",
+  "abstract": "Food safety has emerged as the topmost priority in the current fast-paced food industry era. According to the World Health Organization, around 600 million people, approximately 1 in 10 individuals worldwide, experience illness due to contaminated food consumption, resulting in nearly 0.42 million fatalities annually. The recent development in software and hardware sectors has created opportunities to improve the safety concerns in the food supply chain. The objective of this review is to explain the fundamentals of blockchain and its integration into the supply chain of various food commodities to enhance food safety. This paper presents the analysis of 31 conceptual works, 10 implementation works, 39 case studies, and other investigations in blockchain-based food supply chain from a total of 80 published papers. In this paper, the significance of adapting conceptual ideas into practical applications for effectively tracing food commodities throughout the supply chain has been discussed. This paper also describes the transformative role of blockchain platforms in the food industry, providing a decentralized and transparent ledger to access real-time and immutable records of a product's journey. In addition, both the positive impacts and challenges associated with implementing blockchain technology in the food supply chain have been evaluated. In summary, the blockchain-based food supply chains offer greater transparency, traceability, and trust, ultimately resulting in higher standards of food safety and quality.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Agri-food traceability and food safety",
+  "openalex_id": "W4402102240"
+ },
+ {
+  "title": "Should live streaming be adopted for agricultural supply chain considering platform\u2019s quality improvement and blockchain support?",
+  "authors": [
+   "Xiaoping Xu",
+   "Xinru Chen",
+   "Jinyan Hou",
+   "T. Cheng",
+   "Yugang Yu",
+   "Li Zhou"
+  ],
+  "year": 2025,
+  "venue": "Transportation Research Part E Logistics and Transportation Review",
+  "doi": "https://doi.org/10.1016/j.tre.2024.103950",
+  "url": "https://doi.org/10.1016/j.tre.2024.103950",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Agri-food traceability and food safety",
+  "openalex_id": "W4406938035"
+ },
+ {
+  "title": "Understanding the Blockchain technology adoption in supply chains-Indian context",
+  "authors": [
+   "S. Kamble",
+   "A. Gunasekaran",
+   "Himanshu Arha"
+  ],
+  "year": 2018,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2018.1518610",
+  "url": "https://doi.org/10.1080/00207543.2018.1518610",
+  "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2018.1518610?needAccess=true",
+  "abstract": "Blockchain technology (BT) is expected to bring a revolutionary paradigm shift in the manner the transactions are carried in the supply chains. BT provides better visibility and transparency by removing the disadvantages of trust related issues in a supply chain. In this paper, we advance the literature on BT and its adoption in the supply chain by developing, and statistically validating a model for understanding the user perceptions on BT adoption. The model is based on the integration of three adoption theories- technology acceptance model (TAM), technology readiness index (TRI) and the theory of planned behaviour (TPB). Based on a survey of 181 supply chain practitioners in India the proposed model was tested using structural equation modelling. The study found that the TRI constructs- Insecurity and discomfort have an insignificant effect on the perceived ease of use and usefulness. Perceived usefulness, attitude, and perceived behavioural control affect the behavioural intention. Subjective norm has a negligible impact on behavioural intention. This is one of the preliminary studies on BT adoption in supply chain and the findings imply that the supply chain practitioners perceive BT adoption free of efforts and would help them to derive maximum benefits for improving the supply chain effectiveness.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Adoption, barriers, performance impact and conceptual foundations (incl. reviews)",
+  "openalex_id": "W2890784719"
+ },
+ {
+  "title": "Blockchain technology: implications for operations and supply chain management",
+  "authors": [
+   "R. Cole",
+   "M. Stevenson",
+   "J. Aitken"
+  ],
+  "year": 2019,
+  "venue": "Supply Chain Management An International Journal",
+  "doi": "https://doi.org/10.1108/scm-09-2018-0309",
+  "url": "https://doi.org/10.1108/scm-09-2018-0309",
+  "pdf_url": "https://eprints.lancs.ac.uk/id/eprint/131605/1/PDF_Proof.pdf",
+  "abstract": "PurposeThis paper aims to encourage the study of blockchain technology from an operations and supply chain management (OSCM) perspective, identifying potential areas of application, and to provide an agenda for future research.Design/methodology/approachAn explanation and analysis of blockchain technology is provided to identify implications for the field of OSCM.FindingsThe hype around the opportunities that digital ledger technologies offer is high. For OSCM, a myriad of ways in which blockchain could transform practice are identified, including enhancing product safety and security; improving quality management; reducing illegal counterfeiting; improving sustainable supply chain management; advancing inventory management and replenishment; reducing the need for intermediaries; impacting new product design and development; and reducing the cost of supply chain transactions. The immature state of practice and research surrounding blockchain means there is an opportunity for OSCM researchers to study the technology in its early stages and shape its adoption.Research limitations/implicationsThe paper provides a platform for new research that addresses gaps in knowledge and advances the field of OSCM. A research agenda is developed around six key themes.Practical implicationsThere are many opportunities for organisations to obtain an advantage by making use of blockchain technology ahead of the competition, enabling them to enhance their market position. But it is important that managers examine the characteristics of their products, services and supply chains to determine whether they need or would benefit sufficiently from the adoption of blockchain. Moreover, it is important that organisations build human capital expertise that allows them to develop, implement and exploit applications of this technology to maximum reward.Originality/valueThis is one of the first papers in a leading international OSCM journal to analyse blockchain technology, thereby complementing a recent article on digital supply chains that omitted blockchain.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Adoption, barriers, performance impact and conceptual foundations (incl. reviews)",
+  "openalex_id": "W2923916638"
+ },
+ {
+  "title": "Blockchain technology in supply chain operations: Applications, challenges and research opportunities",
+  "authors": [
+   "Pankaj Dutta",
+   "T. Choi",
+   "S. Somani",
+   "R. Butala"
+  ],
+  "year": 2020,
+  "venue": "Transportation Research Part E Logistics and Transportation Review",
+  "doi": "https://doi.org/10.1016/j.tre.2020.102067",
+  "url": "https://doi.org/10.1016/j.tre.2020.102067",
+  "pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7522652",
+  "abstract": "Highlights \u2022 Evaluate 178 research articles in the field of blockchain implementation in supply chains.\u2022 Identify the current trends of research on blockchain in different domains of supply chain operations.\u2022 Examine various supply chain functions that can be enhanced through blockchain technology.\u2022 Present strong excerpts of blockchain applications in supply chains across various industrial sectors.\u2022 Suggest managerial implications, highlight challenges and build a future research agenda.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Adoption, barriers, performance impact and conceptual foundations (incl. reviews)",
+  "openalex_id": "W3091614728"
+ },
+ {
+  "title": "Blockchain technology and supply chain performance: The role of trust and relational capabilities",
+  "authors": [
+   "Sirsha Pattanayak",
+   "M. Ramkumar",
+   "Mohit Goswami",
+   "Nirpendra P. Rana"
+  ],
+  "year": 2024,
+  "venue": "International Journal of Production Economics",
+  "doi": "https://doi.org/10.1016/j.ijpe.2024.109198",
+  "url": "https://doi.org/10.1016/j.ijpe.2024.109198",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Adoption, barriers, performance impact and conceptual foundations (incl. reviews)",
+  "openalex_id": "W4392343808"
+ },
+ {
+  "title": "Impact of Consumers Traceability Awareness on Blockchain Adoption in Supply Chains",
+  "authors": [
+   "Xiaopo Zhuo",
+   "Yajie Sun",
+   "Shao-Rui Zhou"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Engineering Management",
+  "doi": "https://doi.org/10.1109/tem.2025.3552437",
+  "url": "https://doi.org/10.1109/tem.2025.3552437",
+  "pdf_url": null,
+  "abstract": "Blockchain technology (BCT) has emerged as a promising solution for ensuring supply chain traceability. However, not all consumers have a comprehensive understanding of the benefits associated with BCT-enabled traceability. In this article, we investigate the impacts of consumer awareness on the adoption of BCT within a supply chain comprising a manufacturer and a retailer. We develop two distinct scenarios: Scenario B, where the supply chain traceability is managed via traditional digital systems, and Scenario E, where the supply chain traceability is managed via BCT-enabled systems. We introduce the concept of consumer traceability awareness level, representing the proportion of the consumer population that is knowledgeable about the advantages of these traceability technologies. The findings reveal that the adoption of BCT enhances the overall performance of the supply chain and makes it more sensitive to the consumer traceability awareness level. Nonetheless, the manufacturer consistently experiences advantages from BCT adoption, whereas the retailer's situation may deteriorate. In both scenarios, a low traceability awareness level prompts the retailer to target all consumers, whereas a high-traceability awareness level shifts its focus solely to the knowledgeable consumers. Intriguingly, the adoption of BCT shifts the retailer's inclination toward targeting the knowledgeable consumers rather than all consumers.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Adoption, barriers, performance impact and conceptual foundations (incl. reviews)",
+  "openalex_id": "W4408565122"
+ },
+ {
+  "title": "Blockchain technology and its relationships to sustainable supply chain management",
+  "authors": [
+   "S. Saberi",
+   "Mahtab Kouhizadeh",
+   "Joseph Sarkis",
+   "Lejia Shen"
+  ],
+  "year": 2018,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2018.1533261",
+  "url": "https://doi.org/10.1080/00207543.2018.1533261",
+  "pdf_url": null,
+  "abstract": "Globalisation of supply chains makes their management and control more difficult. Blockchain technology, as a distributed digital ledger technology which ensures transparency, traceability, and security, is showing promise for easing some global supply chain management problems. In this paper, blockchain technology and smart contracts are critically examined with potential application to supply chain management. Local and global government, community, and consumer pressures to meet sustainability goals prompt us to further investigate how blockchain can address and aid supply chain sustainability. Part of this critical examination is how blockchains, a potentially disruptive technology that is early in its evolution, can overcome many potential barriers. Four blockchain technology adoption barriers categories are introduced; inter-organisational, intra-organisational, technical, and external barriers. True blockchain-led transformation of business and supply chain is still in progress and in its early stages; we propose future research propositions and directions that can provide insights into overcoming barriers and adoption of blockchain technology for supply chain management.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Sustainability, circular economy and ethical sourcing",
+  "openalex_id": "W2898069736"
+ },
+ {
+  "title": "Blockchain technology and the sustainable supply chain: Theoretically exploring adoption barriers",
+  "authors": [
+   "Mahtab Kouhizadeh",
+   "S. Saberi",
+   "J. Sarkis"
+  ],
+  "year": 2020,
+  "venue": "International Journal of Production Economics",
+  "doi": "https://doi.org/10.1016/j.ijpe.2020.107831",
+  "url": "https://doi.org/10.1016/j.ijpe.2020.107831",
+  "pdf_url": null,
+  "abstract": "Abstract Blockchain technology has gained global attention with potential to revolutionize supply chain management and sustainability achievements. The few applied ongoing use cases include blockchain for food, healthcare, and logistics supply chains have emphasized blockchain's untapped potential. Potential support for supply chain and sustainability issues include improving efficiency, transparency, and traceability in addition to billions of dollars in corporate financial savings. Given its promise, the adoption of blockchain technology, although hyped for years, has not seen rapid acceptance. In this study, the technology-organization-environment framework and force field theories are utilized to investigate blockchain adoption barriers. Using various literature streams on technology, organizational practices, and sustainability, a comprehensive overview of barriers for adopting blockchain technology to manage sustainable supply chains is provided. The barriers are explored using technology, organizational, and environmental \u2013 supply chain and external \u2013 framework followed by inputs from academics and industry experts and then analyzed using the Decision-Making Trial and Evaluation Laboratory (DEMATEL) tool. The results show that supply chain and technological barriers are the most critical barriers among both academics and industry experts. We further determine the similarities and differences among academics and practitioners in perceiving the barriers. This exploratory study reveals interesting relative importance and interrelationships of barriers which are necessary, theoretically and practically for further adoption and dissemination of blockchain technology in a sustainable supply chain environment. It also sets the stage for theoretical observations for understanding blockchain technology implementation in sustainable supply chains. A series of research propositions and research directions culminate from this exploratory study.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Sustainability, circular economy and ethical sourcing",
+  "openalex_id": "W3036448166"
+ },
+ {
+  "title": "Blockchain technology for bridging trust, traceability and transparency in circular supply chain",
+  "authors": [
+   "P. Centobelli",
+   "R. Cerchione",
+   "P. del Vecchio",
+   "Eugenio Oropallo",
+   "G. Secundo"
+  ],
+  "year": 2021,
+  "venue": "Information & Management",
+  "doi": "https://doi.org/10.1016/j.im.2021.103508",
+  "url": "https://doi.org/10.1016/j.im.2021.103508",
+  "pdf_url": null,
+  "abstract": "Abstract Trust, traceability, and transparency emerge as critical factors in designing circular blockchain platforms in supply chains. To bridge the three circular supply chain reverse processes (i.e., recycle, redistribute, remanufacture) and the three factors affecting blockchain technologies (i.e., trust, traceability, transparency), this paper proposes the integrated Triple Retry framework for designing circular blockchain platforms. A circular blockchain platform was designed in a supply chain, including manufacturer, reverse logistics service provider, selection center, recycling center, and landfill. The results highlight blockchain's role as a technological capability for improving control in the movement of wastes and product return management activities.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Sustainability, circular economy and ethical sourcing",
+  "openalex_id": "W3185716662"
+ },
+ {
+  "title": "Blockchain adoption in supply chains: implications for sustainability",
+  "authors": [
+   "Tianyu Zhang",
+   "Fu Jia",
+   "Lu-Jie Chen"
+  ],
+  "year": 2024,
+  "venue": "Production Planning & Control",
+  "doi": "https://doi.org/10.1080/09537287.2023.2296669",
+  "url": "https://doi.org/10.1080/09537287.2023.2296669",
+  "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/09537287.2023.2296669?needAccess=true",
+  "abstract": "Abstract This study aims to systematically review the current academic literature on blockchain and supply chain management (SCM) to explore the antecedents and sustainable outcomes of blockchain adoption and identify factors that influence blockchain adoption at different stages of implementation in supply chains (SC). This review follows the 6 steps and 14 decisions of conducting a systematic literature review (SLR) to comprehensively review 69 papers published in Academic Journal Guide (AJG) 3 and above journals between 2008 and 2023. Based on the content analysis of the selected papers, this study identifies antecedents and outcomes for blockchain adoption. This study further identifies influential factors in each blockchain implementation stage. A conceptual framework is developed to facilitate the conceptual development of blockchain adoption for sustainability in SCs. This study extends the prior studies of blockchain adoption in SCM with the consideration of how blockchain affects the SCM from the aspects of economic, social, and environmental. This review identifies four major themes in the topic of blockchain implementation and SCM, thus assisting researchers in avoiding focusing on the investigation of mature and saturated topics. The research gaps are identified, and future research directions are recommended for scholars, thereby enabling the comprehensive development of blockchain adoption in SCs.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Sustainability, circular economy and ethical sourcing",
+  "openalex_id": "W4390538964"
+ },
+ {
+  "title": "Optimizing Blockchain-Enabled Sustainable Supply Chains",
+  "authors": [
+   "Jing-Wen Wu",
+   "Yuting Yan",
+   "Shuai-An Wang",
+   "Lu Zhen"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Engineering Management",
+  "doi": "https://doi.org/10.1109/tem.2024.3525105",
+  "url": "https://doi.org/10.1109/tem.2024.3525105",
+  "pdf_url": null,
+  "abstract": "The increasing pressure on global supply chains to reduce carbon emissions has driven the need for sustainable supply chain network design (SSCND). This article proposes an innovative framework for SSCND that optimizes facility location and scale decisions under uncertainty using blockchain technology. By incorporating cap-and-trade regulations and carbon trading into a mixed-integer linear programming model, the article addresses both the economic and environmental objectives of supply chains. A two-stage stochastic programming approach is employed to optimize the SSCND. The first stage focuses on facility location decisions and the second stage on production adjustment, transportation, and carbon trading under demand uncertainty. The carbon trading decisions are integrated into the model by assigning a monetary value to carbon dioxide emissions and allowing for dynamic adjustments to real-time environmental impacts. A primal decomposition algorithm is introduced to address the computational challenges involved in solving the two-stage stochastic programming model. Numerical experiments based on data derived from SAIC Motor Corporation's supply chain demonstrate the effectiveness of the model and algorithm. This article provides an efficient approach for integrating environmental sustainability into supply chain management, offering valuable insights for industries aiming to achieve carbon neutrality",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Sustainability, circular economy and ethical sourcing",
+  "openalex_id": "W4406138338"
+ },
+ {
+  "title": "Artificial intelligence and blockchain implementation in supply chains: a pathway to sustainability and data monetisation?",
+  "authors": [
+   "N. Tsolakis",
+   "R. Schumacher",
+   "M. Dora",
+   "Mukesh Kumar"
+  ],
+  "year": 2022,
+  "venue": "Annals of Operations Research",
+  "doi": "https://doi.org/10.1007/s10479-022-04785-2",
+  "url": "https://doi.org/10.1007/s10479-022-04785-2",
+  "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10479-022-04785-2.pdf",
+  "abstract": "Digitalisation is expected to transform end-to-end supply chain operations by leveraging the technical capabilities of advanced technology applications. Notwithstanding the operations-wise merits associated with the implementation of digital technologies, individually, their combined effect has been overlooked owing to limited real-world evidence. In this regard, this research explores the joint implementation of Artificial Intelligence (AI) and Blockchain Technology (BCT) in supply chains for extending operations performance boundaries and fostering sustainable development and data monetisation. Specifically, this study empirically studied the tuna fish supply chain in Thailand to identify respective end-to-end operations, observe material and data-handling processes, and envision the implementation of AI and BCT. Therefore, we first mapped the business processes and the system-level interactions to understand the governing material, data, and information flows that could be facilitated through the combined implementation of AI and BCT in the respective supply chain. The mapping results illustrate the central role of AI and BCT in digital supply chains\u2019 management, while the associated sustainability and data monetisation impact depends on the parameters and objectives set by the involved system stakeholders. Afterwards, we proposed a unified framework that captures the key data elements that need to be digitally handled in AI and BCT enabled food supply chains for driving value delivery. Overall, the empirically-driven modelling approach is anticipated to support academics and practitioners\u2019 decision-making in studying and introducing digital interventions toward sustainability and data monetisation.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "AI, big data and digital twins combined with blockchain",
+  "openalex_id": "W4283275376"
+ },
+ {
+  "title": "A critical analysis of the integration of blockchain and artificial intelligence for supply chain",
+  "authors": [
+   "V. Charles",
+   "A. Emrouznejad",
+   "Tatiana Gherman"
+  ],
+  "year": 2023,
+  "venue": "Annals of Operations Research",
+  "doi": "https://doi.org/10.1007/s10479-023-05169-w",
+  "url": "https://doi.org/10.1007/s10479-023-05169-w",
+  "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10479-023-05169-w.pdf",
+  "abstract": "The integration between blockchain and artificial intelligence (AI) has gained a lot of attention in recent years, especially since such integration can improve security, efficiency, and productivity of applications in business environments characterised by volatility, uncertainty, complexity, and ambiguity. In particular, supply chain is one of the areas that have been shown to benefit tremendously from blockchain and AI, by enhancing information and process resilience, enabling faster and more cost-efficient delivery of products, and augmenting products\u2019 traceability, among others. This paper performs a state-of-the-art review of blockchain and AI in the field of supply chains. More specifically, we sought to answer the following three principal questions: Q1\u2014What are the current studies on the integration of blockchain and AI in supply chain?, Q2\u2014What are the current blockchain and AI use cases in supply chain?, and Q3\u2014What are the potential research directions for future studies involving the integration of blockchain and AI? The analysis performed in this paper has identified relevant research studies that have contributed both conceptually and empirically to the expansion and accumulation of intellectual wealth in the supply chain discipline through the integration of blockchain and AI.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "AI, big data and digital twins combined with blockchain",
+  "openalex_id": "W4317989635"
+ },
+ {
+  "title": "Integrating AI with detection methods, IoT, and blockchain to achieve food authenticity and traceability from farm-to-table",
+  "authors": [
+   "Zhaolong Liu",
+   "Xinlei Yu",
+   "Nan Liu",
+   "Cui-Ling Liu",
+   "Ao Jiang",
+   "Lanzhen Chen"
+  ],
+  "year": 2025,
+  "venue": "Trends in Food Science & Technology",
+  "doi": "https://doi.org/10.1016/j.tifs.2025.104925",
+  "url": "https://doi.org/10.1016/j.tifs.2025.104925",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "AI, big data and digital twins combined with blockchain",
+  "openalex_id": "W4407678868"
+ },
+ {
+  "title": "Risk Management and Macroeconomic Disruptions in Supply Chains: The Role of Blockchain, Digital Twins, Generative AI, and Quantum Computing",
+  "authors": [
+   "Jiho Yoon",
+   "R. Alkhudary",
+   "S. Talluri",
+   "Pierre F\u00e9ni\u00e8s"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Engineering Management",
+  "doi": "https://doi.org/10.1109/tem.2025.3585433",
+  "url": "https://doi.org/10.1109/tem.2025.3585433",
+  "pdf_url": null,
+  "abstract": "The global economy faces increasing vulnerabilities from macroeconomic disruptions, such as regulatory changes, trade tensions, geopolitical conflicts, currency volatility, pandemics, and energy crises that undermine the resilience of operations and supply chain management (OSCM) systems. These disruptions exacerbate risks, including supply chain breakdowns, operational inefficiencies, and systemic weaknesses, with energy challenges emerging as a key concern due to their effects on production costs, inflation, and sustainability goals. Advanced technologies, such as blockchain, digital twins, generative artificial intelligence (AI), and quantum computing, offer transformative potential to enhance transparency, predictive accuracy, and decision-making agility. However, their adoption introduces inherent tradeoffs, as they can lead to energy-intensive operations, cybersecurity risks, and economic burdens. To make sense of these dynamics, this article develops a conceptual framework based on a multilayered information system architecture that links specific disruptions to corresponding digital responses. This framework is grounded in a thorough review of both conceptual and empirical literature, along with extensive discussions among the authors. It explores how these technologies can address the risks stemming from macroeconomic disruptions while also considering their broader economic implications and challenges. It argues that simplistic solutions fail to account for the duality of these technologies\u2019 impacts and highlights the need for a systemic approach to integrate these technologies within OSCM. This article concludes by proposing actionable research directions for OSCM scholars and managers to navigate these complexities.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "AI, big data and digital twins combined with blockchain",
+  "openalex_id": "W4411950016"
+ },
+ {
+  "title": "A Blockchain-based Digital Twin for IoT deployments in logistics and transportation",
+  "authors": [
+   "Salvador Cu\u00f1at Negueroles",
+   "Ra\u00fal Reinosa Sim\u00f3n",
+   "Matilde Juli\u00e1n",
+   "Andreu Belsa",
+   "Ignacio Lacalle",
+   "Ra\u00fal S-Juli\u00e1n",
+   "C. Palau"
+  ],
+  "year": 2024,
+  "venue": "Future Generation Computer Systems",
+  "doi": "https://doi.org/10.1016/j.future.2024.04.011",
+  "url": "https://doi.org/10.1016/j.future.2024.04.011",
+  "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0167739X24001407/pdf",
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "AI, big data and digital twins combined with blockchain",
+  "openalex_id": "W4394876802"
+ },
+ {
+  "title": "Blockchain and supply chain relations: A transaction cost theory perspective",
+  "authors": [
+   "C. Schmidt",
+   "Stephan M. Wagner"
+  ],
+  "year": 2019,
+  "venue": "Journal of Purchasing and Supply Management",
+  "doi": "https://doi.org/10.1016/j.pursup.2019.100552",
+  "url": "https://doi.org/10.1016/j.pursup.2019.100552",
+  "pdf_url": null,
+  "abstract": "Blockchain is projected to be the latest revolutionary technology and is gaining increasing attention from academics and practitioners. Blockchain is essentially a distributed and immutable database that enables more efficient and transparent transactions. The consensus-based record validation can eliminate the need for a trusted intermediary. We utilize the transaction cost theory to create a better understanding of how blockchain might influence supply chain relations, specifically in terms of transaction costs and governance decisions. Conceptually developing a set of six propositions, we argue that blockchain limits opportunistic behavior, the impact of environmental and behavioral uncertainty. Blockchain reduces transaction costs, as it allows for transparent and valid transactions. We explore several areas for future research on how blockchain might shape supply chain management in the future.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Economic and game-theoretic models of blockchain value",
+  "openalex_id": "W2957216593"
+ },
+ {
+  "title": "Value and Design of Traceability-Driven Blockchains",
+  "authors": [
+   "Yao Cui",
+   "Ming Hu",
+   "Jingchen Liu"
+  ],
+  "year": 2023,
+  "venue": "Manufacturing & Service Operations Management",
+  "doi": "https://doi.org/10.1287/msom.2022.1161",
+  "url": "https://doi.org/10.1287/msom.2022.1161",
+  "pdf_url": null,
+  "abstract": "Problem definition: This paper provides a theoretical investigation into the value and design of a traceability-driven blockchain under different supply chain structures. Methodology/results: We use game theory to study the quality contracting equilibrium between one buyer and two suppliers and identify two fundamental functionalities of a traceability-driven blockchain. In serial supply chains, the ability to trace the sequential production process creates value by mitigating double moral hazard. In this case, traceability always improves product quality and all firms\u2019 profits and naturally creates a win-win. In parallel supply chains, the ability to trace the product origin enables flexible product recall, which can reduce product quality. In this case, traceability can benefit the buyer while hurting the suppliers, creating an incentive conflict. Managerial implications: Firms operating in different kinds of supply chains could face unique challenges when they adopt and design a traceability-driven blockchain. First, in serial supply chains, any firm can be the initiator of the blockchain, whereas in parallel supply chains, it may be critical for the buyer to take the lead in initiating the blockchain and properly compensate the suppliers. Second, in serial supply chains, a restricted data permission policy where each supplier shares their own traceability data with the buyer but not with each other can improve the supply chain profit, whereas in parallel supply chains, it is never optimal to restrict a firm\u2019s access to the traceability data. Third, the suppliers\u2019 incentive to enhance the governance of data quality is more aligned with the supply chain optimum in serial supply chains compared with parallel supply chains. Funding: M. Hu was supported by the Natural Sciences and Engineering Research Council of Canada [Grants RGPIN-2015-06757 and RGPIN-2021-04295]. J. Liu was supported by the National Natural Science Foundation of China [Grant 72101110] and The MOE (Ministry of Education in China) Project of Humanities and Social Sciences [Grant 20YJC630084]. Supplemental Material: The online appendices are available at https://doi.org/10.1287/msom.2022.1161 .",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Economic and game-theoretic models of blockchain value",
+  "openalex_id": "W4317746726"
+ },
+ {
+  "title": "Blockchain\u2010Enabled Data Sharing in Supply Chains: Model, Operationalization, and Tutorial",
+  "authors": [
+   "Zhiyuan Wang",
+   "Z. Zheng",
+   "Wei Jiang",
+   "Shaojie Tang"
+  ],
+  "year": 2021,
+  "venue": "Production and Operations Management",
+  "doi": "https://doi.org/10.1111/poms.13356",
+  "url": "https://doi.org/10.1111/poms.13356",
+  "pdf_url": null,
+  "abstract": "Data sharing between upstream and downstream entities is vital for the success of a supply chain. However, distrust, privacy concerns, data misuse, and the asymmetric valuation of shared data between entities often hinder data sharing. This problem calls for a secure, efficient, fair, and trustworthy data\u2010sharing mechanism. The key to such a successful system hinges on how to trace the data usage, determine the value of the seller\u2019s data to the buyer and then compensate the seller accordingly. To this end, we design and implement a blockchain\u2010enabled data\u2010sharing marketplace for a stylized supply chain. We demonstrate how a blockchain can be used to overcome these impediments in supply\u2010chain data sharing and provide a detailed tutorial with a step\u2010by\u2010step implementation for how to set up such a data exchange prototype using Hashgraph.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Economic and game-theoretic models of blockchain value",
+  "openalex_id": "W3118393407"
+ },
+ {
+  "title": "Blockchain adoption and coordination strategies for green supply chains considering consumer privacy concern",
+  "authors": [
+   "Changhua Liao",
+   "Qihui Lu",
+   "Salar Ghamat",
+   "Helen Cai"
+  ],
+  "year": 2024,
+  "venue": "European Journal of Operational Research",
+  "doi": "https://doi.org/10.1016/j.ejor.2024.12.022",
+  "url": "https://doi.org/10.1016/j.ejor.2024.12.022",
+  "pdf_url": "https://doi.org/10.1016/j.ejor.2024.12.022",
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Economic and game-theoretic models of blockchain value",
+  "openalex_id": "W4405801393"
+ },
+ {
+  "title": "Eliminating information asymmetry in supply chains: Blockchain-driven or not",
+  "authors": [
+   "Samuel Shuai Liu",
+   "B. Ma",
+   "Wei-Jian Zhang",
+   "Edwin T. C. Cheng",
+   "Xiaowei Li",
+   "Chi-To Ng"
+  ],
+  "year": 2025,
+  "venue": "Transportation Research Part E Logistics and Transportation Review",
+  "doi": "https://doi.org/10.1016/j.tre.2025.104208",
+  "url": "https://doi.org/10.1016/j.tre.2025.104208",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Economic and game-theoretic models of blockchain value",
+  "openalex_id": "W4411534999"
+ },
+ {
+  "title": "Blockchain in global supply chains and cross border trade: a critical synthesis of the state-of-the-art, challenges and opportunities",
+  "authors": [
+   "Yanling Chang",
+   "E. Iakovou",
+   "Wei-Dong Shi"
+  ],
+  "year": 2019,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2019.1651946",
+  "url": "https://doi.org/10.1080/00207543.2019.1651946",
+  "pdf_url": "https://arxiv.org/pdf/1901.02715",
+  "abstract": "Blockchain possesses the potential of transforming global supply chain management. Gartner predicts that blockchain could be able to track $2\u2009T of goods and services in their movement across the globe by 2023, and blockchain will be a more than $3 trillion business by 2030. Nowadays, a growing number of blockchain initiatives are disrupting traditional business models in each sector. In this paper, we provide a timely and holistic overview of the state-of-the-art, challenges, gaps and opportunities in global supply chain and trade operations for both the private sector and governmental agencies, by synthesising a wide range of resources from business leaders, global international organisations, leading supply chain consulting firms, research articles, trade magazines and conferences. We then identify collaborative schema and future research directions for industry, government, and academia to jointly work together in ensuring that the full potential of blockchain is unleashed amidst the socioeconomic, geopolitical and technological disruptions that global supply chains and trade are facing.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Logistics, shipping, cross-border trade and e-commerce",
+  "openalex_id": "W2910491371"
+ },
+ {
+  "title": "Evaluating the factors that influence blockchain adoption in the freight logistics industry",
+  "authors": [
+   "I. J. Orji",
+   "Simonov Kusi-Sarpong",
+   "Shuangfa Huang",
+   "D. Vazquez-Brust"
+  ],
+  "year": 2020,
+  "venue": "Transportation Research Part E Logistics and Transportation Review",
+  "doi": "https://doi.org/10.1016/j.tre.2020.102025",
+  "url": "https://doi.org/10.1016/j.tre.2020.102025",
+  "pdf_url": null,
+  "abstract": "Abstract This study proposes a technology- organization- environment (TOE) theoretical framework of critical factors that influence the successful adoption of blockchain technologies in the freight logistics industry and prioritize them using the analytic network process (ANP). The research findings indicate that \u2018availability of specific blockchain tools\u2019, \u2018infrastructural facility\u2019, and \u2018government policy and support\u2019 are the three topmost ranked significant factors that influence the adoption of blockchains in the freight logistics industry. These findings will aid government agencies, freight logistics firms and blockchain service providers in strategizing for the advancement and successful adoption of blockchain and improvement of overall organizational competitiveness.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Logistics, shipping, cross-border trade and e-commerce",
+  "openalex_id": "W3043700398"
+ },
+ {
+  "title": "Blockchain in transport and logistics \u2013 paradigms and transitions",
+  "authors": [
+   "L. Koh",
+   "A. Dolgui",
+   "J. Sarkis"
+  ],
+  "year": 2020,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2020.1736428",
+  "url": "https://doi.org/10.1080/00207543.2020.1736428",
+  "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2020.1736428?needAccess=true&role=button",
+  "abstract": "Blockchain \u2013 also known as distributed ledger \u2013 technology is set to revolutionise data and business process management and transactions. Blockchain adoption, pioneered initially as a financial tec...",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Logistics, shipping, cross-border trade and e-commerce",
+  "openalex_id": "W3014326303"
+ },
+ {
+  "title": "Blockchain adoption in cross-border cold supply chains: Cost, Efficiency and Trust",
+  "authors": [
+   "Abhinay Mishra",
+   "Tanmoy Kundu",
+   "Rohit Kapoor",
+   "M. Goh"
+  ],
+  "year": 2025,
+  "venue": "Transportation Research Part E Logistics and Transportation Review",
+  "doi": "https://doi.org/10.1016/j.tre.2025.104236",
+  "url": "https://doi.org/10.1016/j.tre.2025.104236",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Logistics, shipping, cross-border trade and e-commerce",
+  "openalex_id": "W4411260582"
+ },
+ {
+  "title": "Blockchain-based solution to enhance carbon footprint traceability, accounting, and offsetting in the passenger aviation industry",
+  "authors": [
+   "P. K. Patro",
+   "R. Jayaraman",
+   "A. Acquaye",
+   "K. Salah",
+   "A. Musamih"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2024.2441450",
+  "url": "https://doi.org/10.1080/00207543.2024.2441450",
+  "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2024.2441450?needAccess=true",
+  "abstract": "The aviation industry's carbon emissions are forecast to rise to 22% by 2050, posing a significant challenge to the goal of achieving Net Zero Emissions by the same year. Regardless of the structural or agentic strategies implemented to reduce these emissions, ensuring effective traceability of emissions in airline operations is crucial, as it enables the development of effective mitigation measures. Existing systems fall short of effectively providing end-to-end traceability of emissions within an effective carbon accounting framework. Indirect emissions and the complexities associated with emissions tracking throughout the extended aviation sector also exacerbate carbon accounting and offsetting difficulties. In this paper, we present a blockchain-based framework to address these plausible challenges. The proposed work categorises both direct and indirect emissions under Scope 1, 2, and 3 classifications. A blockchain-based collaborative platform, also provides data transparency across all stakeholders, ensuring traceability and security in a decentralised and reliable manner. A prototype model of a blockchain-based system is therefore developed using Ethereum smart contracts. The paper presents a cost and security analysis of the system, while highlighting the challenges and opportunities for the development of sustainable aviation operations. The smart contract is made publicly available on Github for verification.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Logistics, shipping, cross-border trade and e-commerce",
+  "openalex_id": "W4406047759"
+ },
+ {
+  "title": "A Novel Medical Blockchain Model for Drug Supply Chain Integrity Management in a Smart Hospital",
+  "authors": [
+   "Faisal Jamil",
+   "Lei Hang",
+   "Kyuhyung Kim",
+   "Do-Hyeun Kim"
+  ],
+  "year": 2019,
+  "venue": "Electronics",
+  "doi": "https://doi.org/10.3390/electronics8050505",
+  "url": "https://doi.org/10.3390/electronics8050505",
+  "pdf_url": "https://doi.org/10.3390/electronics8050505",
+  "abstract": "At present, in pharmacology one of the most serious problems is counterfeit drugs. The Health Research Funding organization reported that in developing countries, nearly 10\u201330% of the drugs are fake. Counterfeiting is not the main issue itself, but, rather, the fact that, as compared to traditional drugs, these counterfeit drugs produce different side effects to human health. According to WHO, around 30% of the total medicine sold in Africa, Asia, and Latin America is counterfeit. This is the major worldwide problem, and the situation is worse in developing countries, where one out of every 10 medicines are either fake or do not follow drug regulations. The rise of Internet pharmacies has made it more difficult to standardize drug safety. It is difficult to detect counterfeits because these drugs pass through different complex distributed networks, thus forming opportunities for counterfeits to enter the authentic supply chain. The safety of the pharmaceutical supply chain has become a major concern for public health, which is a collective process. In this paper, we propose a novel drug supply chain management using Hyperledger Fabric based on blockchain technology to handle secure drug supply chain records. The proposed system solves this problem by conducting drug record transactions on a blockchain to create a smart healthcare ecosystem with a drug supply chain. A smart contract is launched to give time-limited access to electronic drug records and also patient electronic health records. We also carried out a number of experiments in order to demonstrate the usability and efficiency of the designed platform. Finally, we used Hyperledger Caliper as a benchmarking tool to conduct the performance of the designed system in terms of transactions per second, transaction latency, and resource utilization.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Pharmaceutical, healthcare and vaccine supply chains",
+  "openalex_id": "W2946228717"
+ },
+ {
+  "title": "Blockchain implementation in pharmaceutical supply chains: A review and conceptual framework",
+  "authors": [
+   "Abhijeet Ghadge",
+   "M. Bourlakis",
+   "S. Kamble",
+   "S. Seuring"
+  ],
+  "year": 2022,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2022.2125595",
+  "url": "https://doi.org/10.1080/00207543.2022.2125595",
+  "pdf_url": "https://www.tandfonline.com/doi/epdf/10.1080/00207543.2022.2125595?needAccess=true&role=button",
+  "abstract": "Research on Blockchain implementation in the Pharmaceutical Supply Chains (PSC) is lacking despite its strong potential to overcome conventional supply chain challenges. Thus, this study aims to provide critical insight into the nexus between Blockchain and PSC and further build a conceptual framework for implementation within the pharmaceutical industry. Following a systematic literature review and text mining approach, 65 interdisciplinary articles published between 2010 and 2021 were studied to capture the decade long developments. Descriptive and thematic analysis showcases nascent developments of Blockchain in PSC. The drivers and barriers to adoption, implementation stages, and applications identified through the thematic analysis guide in setting the agenda for future research, primarily focussing on the use of Blockchain for drug counterfeiting, recall issues, along with other sector-specific challenges such as patient privacy, regulations and clinical trials. Research on Blockchain for PSC has been slow compared to other sectors, but has accelerated since the Covid-19 pandemic. Identified influential factors, implementation process and apparent applications are expected to influence researchers and practitioners in developing a roadmap for adopting Blockchain in the pharmaceutical industry. The proposed conceptual framework is novel and provides valuable directions to producers, regulators and governments to implement Blockchain in the pharmaceutical industry.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Pharmaceutical, healthcare and vaccine supply chains",
+  "openalex_id": "W4302009621"
+ },
+ {
+  "title": "Vaccine supply chain management: An intelligent system utilizing blockchain, IoT and machine learning",
+  "authors": [
+   "Hui Hu",
+   "Jiajun Xu",
+   "Meng-Qi Liu",
+   "M. Lim"
+  ],
+  "year": 2022,
+  "venue": "Journal of Business Research",
+  "doi": "https://doi.org/10.1016/j.jbusres.2022.113480",
+  "url": "https://doi.org/10.1016/j.jbusres.2022.113480",
+  "pdf_url": "https://eprints.gla.ac.uk/286151/2/286151.pdf",
+  "abstract": "Vaccination offers health, economic, and social benefits. However, three major issues\u2014vaccine quality, demand forecasting, and trust among stakeholders\u2014persist in the vaccine supply chain (VSC), leading to inefficiencies. The COVID-19 pandemic has exacerbated weaknesses in the VSC, while presenting opportunities to apply digital technologies to manage it. For the first time, this study establishes an intelligent VSC management system that provides decision support for VSC management during the COVID-19 pandemic. The system combines blockchain, internet of things (IoT), and machine learning that effectively address the three issues in the VSC. The transparency of blockchain ensures trust among stakeholders. The real-time monitoring of vaccine status by the IoT ensures vaccine quality. Machine learning predicts vaccine demand and conducts sentiment analysis on vaccine reviews to help companies improve vaccine quality. The present study also reveals the implications for the management of supply chains, businesses, and government.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Pharmaceutical, healthcare and vaccine supply chains",
+  "openalex_id": "W4311285712"
+ },
+ {
+  "title": "Blockchain technology: A potential tool for the management of pharma supply chain",
+  "authors": [
+   "W. Akram",
+   "Ramakant Joshi",
+   "T. Haider",
+   "Pankaj Sharma",
+   "Vinay Jain",
+   "N. Garud",
+   "Nitin Singh"
+  ],
+  "year": 2024,
+  "venue": "Research in Social and Administrative Pharmacy",
+  "doi": "https://doi.org/10.1016/j.sapharm.2024.02.014",
+  "url": "https://doi.org/10.1016/j.sapharm.2024.02.014",
+  "pdf_url": null,
+  "abstract": "BACKGROUND\nThe pharma supply chain comprises various parties including distributors, manufacturers, raw material suppliers, regulators, pharmacies, hospitals, and patients. Due to the product's complexity and transaction flows, an efficient traceability system is needed in the pharma supply chain to identify the current and all previous product owners. Digitizing the track and trace process significantly improves regulatory oversight and guarantees product quality. A distributed platform for shared data that is immutable, trustworthy, accountable, and transparent in the pharmaceutical supply chain could be built using blockchain-based drug traceability.\n\n\nOBJECTIVE\nThis review aims to shed light on blockchain technology's significance and necessity for pharmaceutical supply chain management systems.\n\n\nMETHOD\nA comprehensive literature review was performed between January 2017 and September 2023. The search was conducted to elaborate on blockchain technology. Blockchain is a software-based technology that logs and records transactions using a block structure arranged chronologically. Cryptography technology links and secures these blocks on a peer-to-peer network. Blockchain is anticipated to transform the pharmaceutical supply chain by giving all participants access to a single, straightforward system that provides transparency, security, and oversight of the end-to-end delivery of goods.\n\n\nRESULT\nIn all, various literature data were included in this review. Using a supply chain powered by blockchain has many benefits. To begin with, it gives a thorough account of the entire procedure from start to finish. A single piece of software can manage the entire supply chain. Additionally, it increases communication between parties with permission. The enhanced security and traceability that blockchain offers is another important benefit. A blockchain system can track, trace, and recall products.\n\n\nCONCLUSION\nBlockchain-based pharmaceutical supply chain management enables the tracking of medicinal drug transactions from raw materials suppliers to end consumers. The pharma blockchain has the potential to enhance the security, integrity, data provenance, and functionality of the supply chain due to its transparency, immutability, and auditability.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Pharmaceutical, healthcare and vaccine supply chains",
+  "openalex_id": "W4392095203"
+ },
+ {
+  "title": "Blockchain Technology Applications in Healthcare Supply Chains\u2014A Review",
+  "authors": [
+   "Sarthak Dhingra",
+   "Rakesh D. Raut",
+   "Koteswararao Naik",
+   "Kamalakanta Muduli"
+  ],
+  "year": 2024,
+  "venue": "IEEE Access",
+  "doi": "https://doi.org/10.1109/access.2023.3348813",
+  "url": "https://doi.org/10.1109/access.2023.3348813",
+  "pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10379101.pdf",
+  "abstract": "Understanding the prospective of blockchain technology and its uses in the healthcare sector is essential so that its considerable implementation can support the industry\u2019s much-needed digitization. Furthermore, blockchain can provide answers to the issues in the healthcare industry today. Blockchain\u2019s features like security, traceability, transparency, cost efficiency etc. can help bring supply chain transparency, health record management and prevent drug counterfeiting. Blockchain has emerged as a promising technology with great ability to bring changes to the healthcare sector. Therefore, this study aims to comprehend the current state of blockchain technology research in the healthcare supply chains. Further, it presents potential repercussions and the potential routes it may open for future research initiatives in this area. A systematic literature (SLR) process has been used and conducted in two stages. In the first stage, articles were identified through literature search and were subjected to keyword selection, database search and screening process. Finally, 124 papers were categorized through bibliographic coupling. A detailed investigation of these included papers was performed in the second stage with descriptive and content analysis. The results reveal that research related to blockchain applications or implementation is at a nascent stage. The publications in this area have been rising steadily over the past few years. When it comes to publishing in this field, India is the most productive nation while IEEE Access is the most productive journal. Applications for blockchain technology in healthcare include medical insurance, remote patient monitoring, medication supply chain management, electronic health records (EHRs), and more. The most popular use case is EHR management. The analysis further conveys that findings are less generalizable due to more theoretical or less empirically designed studies published in this domain. This study will help stakeholders, policymakers, researchers, and managers in taking strategic decisions regarding the adoption of the technology in the healthcare industry. This study is done concerning the blockchain\u2019s use in the healthcare sector context, so other emerging technologies and sectors not taken must be considered while generalizing the results. This study is among the few up-to-date consolidated attempts to present a systematic literature review and bibliometric analysis for assessing blockchain technology\u2019s potential in the healthcare sector. It provides an overview of the published work with implications and proposed cluster-wise future research directions.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Pharmaceutical, healthcare and vaccine supply chains",
+  "openalex_id": "W4390489104"
+ },
+ {
+  "title": "On the Financing Benefits of Supply Chain Transparency and Blockchain Adoption",
+  "authors": [
+   "J. Chod",
+   "N. Trichakis",
+   "Gerry Tsoukalas",
+   "Henry As-pegren",
+   "M. Weber"
+  ],
+  "year": 2020,
+  "venue": "Management Science",
+  "doi": "https://doi.org/10.1287/mnsc.2019.3434",
+  "url": "https://doi.org/10.1287/mnsc.2019.3434",
+  "pdf_url": "https://dspace.mit.edu/bitstream/1721.1/130455/2/SSRN-id3078945.pdf",
+  "abstract": "We develop a theory that shows signaling a firm\u2019s fundamental quality (e.g., its operational capabilities) to lenders through inventory transactions to be more efficient\u2014it leads to less costly operational distortions\u2014than signaling through loan requests, and we characterize how the efficiency gains depend on firm operational characteristics, such as operating costs, market size, and inventory salvage value. Signaling through inventory being only tenable when inventory transactions are verifiable at low enough cost, we then turn our attention to how this verifiability can be achieved in practice and argue that blockchain technology could enable it more efficiently than traditional monitoring mechanisms. To demonstrate, we develop b_verify, an open-source blockchain protocol that leverages Bitcoin to provide supply chain transparency at scale and in a cost-effective way. The paper identifies an important benefit of blockchain adoption\u2014by opening a window of transparency into a firm\u2019s supply chain, blockchain technology furnishes the ability to secure favorable financing terms at lower signaling costs. Furthermore, the analysis of the preferred signaling mode sheds light on what types of firms or supply chains would stand to benefit the most from this use of blockchain technology. This paper was accepted by Victor Mart\u00ednez-de-Alb\u00e9niz, operations management.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply chain finance, payments and tokenisation",
+  "openalex_id": "W2789981453"
+ },
+ {
+  "title": "Supply Chain Finance Innovation Using Blockchain",
+  "authors": [
+   "Mingxiao Du",
+   "Qijun Chen",
+   "Jie Xiao",
+   "Houping Yang",
+   "Xiaofeng Ma"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Engineering Management",
+  "doi": "https://doi.org/10.1109/tem.2020.2971858",
+  "url": "https://doi.org/10.1109/tem.2020.2971858",
+  "pdf_url": null,
+  "abstract": "Blockchain, the underlying technology of digital currency, such as Bitcoin, has the characteristics of decentralization, stability, security, anonymity, and nontampering. Blockchain is being applied in an increasing number of fields. Supply chain finance is a financing model in which banks connect core enterprises with upstream and downstream enterprises to provide flexible financial products and services. In the traditional supply chain finance, the core enterprises with strong competitiveness and a large scale play an irreplaceable role in managing the supply chain information flow, logistics, and capital flow, which results in inequality and information asymmetry. Fraud in supply chain finance is also very serious. To solve the problems of the traditional supply chain finance, in this article, we build a new type of supply chain financial platform that uses blockchain technology to manage the whole process. This supply chain financial platform solves the problem of nontrust among the participants in the supply chain, improves the efficiency of the capital flow and information flow, reduces costs, and provides better financial services to the relevant parties in the supply chain. To protect users' privacy, we propose a new method of using homomorphic encryption in the blockchain to meet the needs of sensitive data privacy protection in supply chain financial scenarios.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply chain finance, payments and tokenisation",
+  "openalex_id": "W3008505042"
+ },
+ {
+  "title": "Blockchain-Enabled Deep-Tier Supply Chain Finance",
+  "authors": [
+   "Lingxiu Dong"
+  ],
+  "year": 2022,
+  "venue": "Manufacturing & Service Operations Management",
+  "doi": "https://doi.org/10.1287/msom.2022.1123",
+  "url": "https://doi.org/10.1287/msom.2022.1123",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply chain finance, payments and tokenisation",
+  "openalex_id": "W4283219346"
+ },
+ {
+  "title": "Integrating digital twin and blockchain for responsive working capital management in supply chains facing financial disruptions",
+  "authors": [
+   "Ehsan Badakhshan",
+   "Dmitry A. Ivanov"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2025.2507112",
+  "url": "https://doi.org/10.1080/00207543.2025.2507112",
+  "pdf_url": "https://shura.shu.ac.uk/35760/1/Integrating%20Digital%20Twins%20and%20Blockchain%20Author%20Accepted.pdf",
+  "abstract": "Financial disruptions, such as extended trade credit periods and reduced down payments, pose significant challenges to effective working capital management in supply chains. While the benefits of blockchain and digital twin technologies have been studied independently in supply chain finance, their combined potential to optimise working capital performance during disruptions remains underexplored. Our study addresses this research gap by proposing an integrated blockchain and digital twin framework to enhance financial resilience in disrupted supply chains. Blockchain facilitates secure, decentralised data sharing, providing visibility into product, order, and cash flows across supply chain stages. The digital twin complements blockchain by offering predictive capabilities and enabling dynamic adjustments to working capital policies in response to disruptions. Within this framework, discrete-event simulation assesses the impact of financial disruptions on working capital performance, while machine learning models generate decision rules for adaptive working capital management. The study highlights the critical role of inventory adjustments in mitigating financial disruptions and reducing working capital variability relative to demand fluctuations. This research provides actionable insights for supply chain managers seeking to improve working capital stability amid disruptions and offers a data-driven approach to financial resilience in supply chains.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply chain finance, payments and tokenisation",
+  "openalex_id": "W4410582388"
+ },
+ {
+  "title": "Financing decisions in capital-constrained supply chains considering uncertain emission reduction outputs and blockchain technology applications",
+  "authors": [
+   "Juan-Juan Qin",
+   "Huiping Fu",
+   "Ziping Wang",
+   "Xiaochen Lyu"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2025.2483432",
+  "url": "https://doi.org/10.1080/00207543.2025.2483432",
+  "pdf_url": null,
+  "abstract": "This paper explores a low-carbon supply chain comprising a capital-constrained manufacturer and a retailer under cap-and-trade regulation. The manufacturer can obtain financing support for both production and carbon emission reduction through either Bank Financing (BF) mode or Mixed Financing (MF) modes. The incorporation of blockchain technology is posited to enhance the transparency of uncertain emission reduction data within the supply chain, allowing banks to adjust interest rates accordingly via smart contracts. Four modes are analyzed: BF without blockchain technology, BF with blockchain technology, MF without blockchain technology, and MF with blockchain technology. Under MF, the retailer provides financing support for production cost and the bank provides financing support for carbon emission reduction. The findings indicate that the utilization of blockchain technology improves supply chain profits when its cost is moderate. Without blockchain, BF mode will be chosen when faced with intermediate bank interest rate. Conversely, when the manufacturer employs blockchain technology, the strategic choices of both the manufacturer and retailer regarding the BF and MF modes are independent of the associated cost. Additionally, BF mode becomes more attractive when the trigger point for emission reduction output is moderate and the cost of adopting blockchain technology is minimal.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply chain finance, payments and tokenisation",
+  "openalex_id": "W4409178850"
+ },
+ {
+  "title": "Blockchain-oriented dynamic modelling of smart contract design and execution in the supply chain",
+  "authors": [
+   "A. Dolgui",
+   "D. Ivanov",
+   "S. Potryasaev",
+   "B. Sokolov",
+   "Marina Ivanova",
+   "Frank Werner"
+  ],
+  "year": 2019,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2019.1627439",
+  "url": "https://doi.org/10.1080/00207543.2019.1627439",
+  "pdf_url": null,
+  "abstract": "Recently, the applications of Blockchain technology have begun to revolutionise different aspects of supply chain (SC) management. Among others, Blockchain is a platform to execute the smart contracts in the SC as transactions. We develop and test a new model for smart contract design in the SC with multiple logistics service providers and show that this problem can be presented as a multi-processor flexible flow shop scheduling. A distinctive feature of our approach is that the execution of physical operations is modelled inside the start and completion of cyber information services. We name this modelling concept \u2018virtual operation\u2019. The constructed model and the developed experimental environment constitute an event-driven dynamic approach to task and service composition when designing the smart contract. Our approach is also of value when considering the contract execution stage. The use of state control variables in our model allows for operations status updates in the Blockchain that in turn, feeds automated information feedbacks, disruption detection and control of contract execution. The latter launches the re-scheduling procedure, comprehensively combining planning and adaptation decisions within a unified methodological framework of dynamic control theory. The modelling complex developed can be used to design and control smart contracts in the SC.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "IoT / Industry 4.0 integration architectures, smart-contract and security design",
+  "openalex_id": "W2951343982"
+ },
+ {
+  "title": "Blockchain-Enhanced Data Sharing With Traceable and Direct Revocation in IIoT",
+  "authors": [
+   "Ke-Ping Yu",
+   "Liang Tan",
+   "Moayad Aloqaily",
+   "He Yang",
+   "Y. Jararweh"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "doi": "https://doi.org/10.1109/tii.2021.3049141",
+  "url": "https://doi.org/10.1109/tii.2021.3049141",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "IoT / Industry 4.0 integration architectures, smart-contract and security design",
+  "openalex_id": "W3119569744"
+ },
+ {
+  "title": "Real-time supply chain\u2014A blockchain architecture for project deliveries",
+  "authors": [
+   "P. Helo",
+   "A. Shamsuzzoha"
+  ],
+  "year": 2019,
+  "venue": "Robotics and Computer-Integrated Manufacturing",
+  "doi": "https://doi.org/10.1016/j.rcim.2019.101909",
+  "url": "https://doi.org/10.1016/j.rcim.2019.101909",
+  "pdf_url": "https://osuva.uwasa.fi/bitstreams/3ee92b83-2177-4b41-ba80-3a89aa794a86/download",
+  "abstract": "Abstract Real-time tracking and tracing are important in providing a unified view of global supply chains consisting of several parties. This paper illustrates the needs and requirements for managing supply chains in multi-company project environments by adopting various tracking and tracing technologies. This kind of tracking and tracing is especially needed within distributed architectures engaged in project-based businesses, where several vendors are involved in a single project. Such tracking and tracing data can be used extensively to generate key performance indicators, which can be used to measure and control supply chain processes. This paper also proposes a pilot system of a cloud-based portal for real-time tracking and tracing of logistics and supply chains. This portal is formed by the combination of RFID, IoT and blockchain technology into an integrated real-time view. RFID (Radio Frequency Identification) and IoT (Internet of Things) provides real-time information or data, while blockchain technology is used to provide a chain of immutable transactions. The architecture of the proposed portal system is connected to transport companies, tracking devices, consolidation points and suppliers. The pilot study also illustrates the benefits and advantages of such a portal system.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "IoT / Industry 4.0 integration architectures, smart-contract and security design",
+  "openalex_id": "W2993810765"
+ },
+ {
+  "title": "IoT-BIM and blockchain integration for enhanced data traceability in offsite manufacturing",
+  "authors": [
+   "Roberto Brand\u00edn",
+   "Sepehr Abrishami"
+  ],
+  "year": 2024,
+  "venue": "Automation in Construction",
+  "doi": "https://doi.org/10.1016/j.autcon.2024.105266",
+  "url": "https://doi.org/10.1016/j.autcon.2024.105266",
+  "pdf_url": "https://doi.org/10.1016/j.autcon.2024.105266",
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "IoT / Industry 4.0 integration architectures, smart-contract and security design",
+  "openalex_id": "W4391074396"
+ },
+ {
+  "title": "Blockchain applications in the construction supply chain",
+  "authors": [
+   "M. Heydari",
+   "Alireza Shojaei"
+  ],
+  "year": 2025,
+  "venue": "Automation in Construction",
+  "doi": "https://doi.org/10.1016/j.autcon.2025.105998",
+  "url": "https://doi.org/10.1016/j.autcon.2025.105998",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "IoT / Industry 4.0 integration architectures, smart-contract and security design",
+  "openalex_id": "W4406884498"
+ },
+ {
+  "title": "Toward an ontology\u2010driven blockchain design for supply\u2010chain provenance",
+  "authors": [
+   "Henry M. Kim",
+   "M. Laskowski"
+  ],
+  "year": 2018,
+  "venue": "Intelligent systems in accounting, finance and management/Intelligent systems in accounting, finance & management",
+  "doi": "https://doi.org/10.1002/isaf.1424",
+  "url": "https://doi.org/10.1002/isaf.1424",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Provenance, authenticity and anti-counterfeiting (luxury, minerals, textiles)",
+  "openalex_id": "W3123722958"
+ },
+ {
+  "title": "Blockchain-technology-supported platforms for diamond authentication and certification in luxury supply chains",
+  "authors": [
+   "T. Choi"
+  ],
+  "year": 2019,
+  "venue": "Transportation Research Part E Logistics and Transportation Review",
+  "doi": "https://doi.org/10.1016/j.tre.2019.05.011",
+  "url": "https://doi.org/10.1016/j.tre.2019.05.011",
+  "pdf_url": null,
+  "abstract": "The blockchain technology is very useful in many industries. One current application is on diamond authentication and certification, which is important in many luxury supply chains. In this paper, we explore different consumer utility driven operations models and highlight the values of blockchain technology supported (BTS) platforms for diamond authentication and certification. We build models and analytically examine both the traditional retail network operations (Model R) and the BTS selling platform (Model PL). We further extend the analysis to study the case with the BTS certification platform (Model BCR). We reveal the conditions under which one model outperforms the others. In particular, we note that the shopping convenience utility offered by the traditional retailers is a critical factor determining which model is the best. Finally, for the BTS platform operations, we study the blockchain-technology-based diamond authentication and certification (BDAC) cost and reveal that reducing it is beneficial to all parties in the luxury supply chain.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Provenance, authenticity and anti-counterfeiting (luxury, minerals, textiles)",
+  "openalex_id": "W2948823049"
+ },
+ {
+  "title": "Combating Copycats in the Supply Chain with Permissioned Blockchain Technology",
+  "authors": [
+   "Bin Shen",
+   "C. Dong",
+   "S. Minner"
+  ],
+  "year": 2021,
+  "venue": "Production and Operations Management",
+  "doi": "https://doi.org/10.1111/poms.13456",
+  "url": "https://doi.org/10.1111/poms.13456",
+  "pdf_url": null,
+  "abstract": "The phenomenon of copycats is common in a wide range of industries. Recently, to indicate product authenticity and combat copycats, many brand name companies (BNCs) have started selling products through retailers. These BNCs deploy a scalable protocol that is integrated into a permissioned blockchain technology (PBT) platform. We examine how PBT combats copycats in the supply chain and how it benefits BNCs. Although PBT implementation helps novice customers identify product authenticity and the real quality of products, that is, to take advantage of a quality disclosure effect, we show that, if and only if the number of novice customers is large enough, then selling through a PBT retailer can effectively combat copycats. Thus, PBT increases the profit of the BNC, consumer surplus, social welfare, and reduces the profit of a copycat. Moreover, conventional wisdom tells us that PBT ensures supply chain transparency and motivates a firm to improve its product quality. However, the BNC reduces the quality of its products when using PBT, because an improvement in product quality is not profitable if consumers can distinguish between genuine and imitation products. Furthermore, we extend the model by considering the case where the BNC itself implements PBT. Without the double marginalization effect, even if the number of novice customers is small, blockchain technology may exist in the market (the BNC self\u2010implements). In addition, if the unit production cost of a genuine product is large enough, social welfare increases when production cost increases.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Provenance, authenticity and anti-counterfeiting (luxury, minerals, textiles)",
+  "openalex_id": "W3160847767"
+ },
+ {
+  "title": "Blockchain technology for supply chain provenance: increasing supply chain efficiency and consumer trust",
+  "authors": [
+   "Elena Isabel Vazquez Melendez",
+   "P. Bergey",
+   "Brett Smith"
+  ],
+  "year": 2024,
+  "venue": "Supply Chain Management An International Journal",
+  "doi": "https://doi.org/10.1108/scm-08-2023-0383",
+  "url": "https://doi.org/10.1108/scm-08-2023-0383",
+  "pdf_url": null,
+  "abstract": "\nPurpose\nThis study aims to examine the blockchain landscape in supply chain management by drawing insights from academic and industry literature. It identifies the key drivers, categorizes the products involved and highlights the business values achieved by early adopters of blockchain technology within the supply chain domain. Additionally, it explores fingerprinting techniques to establish a robust connection between physical products and the blockchain ledger.\n\n\nDesign/methodology/approach\nThe authors combined the interpretive sensemaking systematic literature review to offer insights into how organizations interpreted their business challenges and adopted blockchain technology in their specific supply chain context; content analysis (using Leximancer automated text mining software) for concept mapping visualization, facilitating the identification of key themes, trends and relationships, and qualitative thematic analysis (NVivo) for data organization, coding and enhancing the depth and efficiency of analysis.\n\n\nFindings\nThe findings highlight the transformative potential of blockchain technology and offer valuable insights into its implementation in optimizing supply chain operations. Furthermore, it emphasizes the importance of product provenance information to consumers, with blockchain technology offering certainty and increasing customer loyalty toward brands that prioritize transparency.\n\n\nResearch limitations/implications\nThis research has several limitations that should be acknowledged. First, there is a possibility that some relevant investigations may have been missed or omitted, which could impact the findings. In addition, the limited availability of literature on blockchain adoption in supply chains may restrict the scope of the conclusions. The evolving nature of blockchain adoption in supply chains also poses a limitation. As the technology is in its infancy, the authors expect that a rapidly emerging body of literature will provide more extensive evidence-based general conclusions in the future. Another limitation is the lack of information contrasting academic and industry research, which could have provided more balanced insights into the technology\u2019s advancement. The authors attributed this limitation to the narrow collaborations between academia and industry in the field of blockchain for supply chain management.\n\n\nPractical implications\nPractitioners recognize the potential of blockchain in addressing industry-specific challenges, such as ensuring transparency and data provenance. Understanding the benefits achieved by early adopters can serve as a starting point for companies considering blockchain adoption. Blockchain technology can verify product origin, enable truthful certifications and comply with established standards, reinforcing trust among stakeholders and customers. Thus, implementing blockchain solutions can enhance brand reputation and consumer confidence by ensuring product authenticity and quality. Based on the results, companies can align their strategies and initiatives with their needs and expectations.\n\n\nSocial implications\nIn essence, the integration of blockchain technology within supply chain provenance initiatives not only influences economic aspects but also brings substantial social impacts by reinforcing consumer trust, encouraging sustainable and ethical practices, combating product counterfeiting, empowering stakeholders and contributing to a more responsible, transparent and progressive socioeconomic environment.\n\n\nOriginality/value\nThis study consolidates current knowledge on blockchain\u2019s capacity and identifies the specific drivers and business values associated with early blockchain adoption in supply chain provenance. Furthermore, it underscores the critical role of product fingerprinting techniques in supporting blockchain for supply chain provenance, facilitating more robust and efficient supply chain operations.\n",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Provenance, authenticity and anti-counterfeiting (luxury, minerals, textiles)",
+  "openalex_id": "W4392626248"
+ },
+ {
+  "title": "Blockchain for compliance: an information processing case study of mandatory supply chain transparency in conflict minerals sourcing",
+  "authors": [
+   "A. Tuladhar",
+   "Michael Rogerson",
+   "Juliette Engelhart",
+   "Glenn C. Parry",
+   "Birgit Altrichter"
+  ],
+  "year": 2024,
+  "venue": "Supply Chain Management An International Journal",
+  "doi": "https://doi.org/10.1108/scm-11-2023-0585",
+  "url": "https://doi.org/10.1108/scm-11-2023-0585",
+  "pdf_url": "https://figshare.com/articles/journal_contribution/Blockchain_for_compliance_an_information_processing_case_study_of_mandatory_supply_chain_transparency_in_conflict_minerals_sourcing/25265323",
+  "abstract": "\nPurpose\nFirms are increasingly pressured to comply with mandatory supply chain transparency (SCT) regulations. Drawing on information processing theory (IPT), this study aims to show how blockchain technology can address information uncertainty and equivocality in assuring regulatory compliance in an interorganizational network (ION).\n\n\nDesign/methodology/approach\nIPT is applied in a single case study of an ION in the mining industry that aimed to implement blockchain to address mandatory SCT regulations. The authors build on a rich proprietary data set consisting of interviews and substantial secondary material from actors along the supply chain.\n\n\nFindings\nThe case shows that blockchain creates equality between actors, enables compliance and enhances efficiency in an ION, reducing information uncertainty and equivocality arising from conflict minerals regulation. The system promotes engagement and data sharing between parties while protecting commercial sensitive information. The lack of central authority prevents larger partners from taking control. The system provides mineral provenance and a regulation-compliant record. System cost analysis shows that the system is efficient as it is inexpensive relative to volumes and values of metals transacted. Issues were identified related to collecting richer human rights data for assurance and compliance with due diligence regulations.\n\n\nOriginality/value\nThe authors provide some of the first evidence in the operations and supply chain management literature of the specific architecture, costs and limitations of using blockchain for SCT. Using an IPT lens in an ION setting, the authors demonstrate how blockchain-based systems can address two key IPT challenges: environmental uncertainty and equivocality.\n",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Provenance, authenticity and anti-counterfeiting (luxury, minerals, textiles)",
+  "openalex_id": "W4392806624"
+ },
+ {
+  "title": "Blockchain technology for enhancing supply chain resilience",
+  "authors": [
+   "Hokey Min"
+  ],
+  "year": 2018,
+  "venue": "Business Horizons",
+  "doi": "https://doi.org/10.1016/j.bushor.2018.08.012",
+  "url": "https://doi.org/10.1016/j.bushor.2018.08.012",
+  "pdf_url": null,
+  "abstract": "With the soaring value of bitcoin and frenzy over cryptocurrency, the blockchain technology that sparked the bitcoin revolution has received heightened attention from both practitioners and academics. Blockchain technology often causes controversies surrounding its application potential and business ramifications. The blockchain is a peer-to-peer network of information technology that keeps records of digital asset transactions using distributed ledgers that are free from control by intermediaries such as banks and governments. Thus, it can mitigate risks associated with intermediaries\u2019 interventions, including hacking, compromised privacy, vulnerability to political turmoil, costly compliance with government rules and regulation, instability of financial institutions, and contractual disputes. This article unlocks the mystique of blockchain technology and discusses ways to leverage blockchain technology to enhance supply chain resilience in times of increased risks and uncertainty.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Resilience, risk, visibility and disruption (runner-up)",
+  "openalex_id": "W2898238616"
+ },
+ {
+  "title": "Blockchain technology for enhancing swift-trust, collaboration and resilience within a humanitarian supply chain setting",
+  "authors": [
+   "Rameshwar Dubey",
+   "A. Gunasekaran",
+   "D. Bryde",
+   "Yogesh Kumar Dwivedi",
+   "T. Papadopoulos"
+  ],
+  "year": 2020,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2020.1722860",
+  "url": "https://doi.org/10.1080/00207543.2020.1722860",
+  "pdf_url": "https://kar.kent.ac.uk/79867/1/Blockchain%20technology%20for%20enhancing%20swift.pdf",
+  "abstract": "There has been tremendous interest in blockchain technology (BT) (also known as distributed ledger technology) around the globe and across sectors. Following significant success in the financial sector, other sectors, such as humanitarian sector, have started deploying BT at various levels. Although the use of BT in the humanitarian sector is in its infancy, donors and government agencies are increasingly calling for building BT-enabled swift-trust (ST) and more collaborative relationships among various humanitarian actors in order to improve the transparency and traceability of disaster relief materials, information exchanges and flow of funds in disaster relief supply chains. Our study, which is informed by organisational information processing theory and relational view, proposes a theoretical model to understand how BT can influence operational supply chain transparency (OSTC) and ST among actors engaged in disaster relief operations. Our model also shows how BT-enabled ST can further improve collaboration (CO) among actors engaged in disaster relief operations and enhance supply chain resilience (SCR). We formulated and tested six research hypotheses, using data gathered from international non-governmental organisations with the help of the Coordinator for Humanitarian Affairs (OCHA) database. We received 256 usable responses using a pre-tested survey-based instrument designed for key informants. Our results confirm that our six hypotheses were supported. Our study offers significant and valid contributions to the literature on ST, CO and SCR and BT/distributed ledger technology. We have also noted the limitations of our study and have offered future research directions.",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Resilience, risk, visibility and disruption (runner-up)",
+  "openalex_id": "W3003422654"
+ },
+ {
+  "title": "Blockchain-supported business model design, supply chain resilience, and firm performance",
+  "authors": [
+   "Guo Li",
+   "Jing Xue",
+   "Na Li",
+   "D. Ivanov"
+  ],
+  "year": 2022,
+  "venue": "Transportation Research Part E Logistics and Transportation Review",
+  "doi": "https://doi.org/10.1016/j.tre.2022.102773",
+  "url": "https://doi.org/10.1016/j.tre.2022.102773",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Resilience, risk, visibility and disruption (runner-up)",
+  "openalex_id": "W4281876280"
+ },
+ {
+  "title": "Blockchain technology adoption and supply chain resilience: exploring the role of transformational supply chain leadership",
+  "authors": [
+   "Yang Liu",
+   "Wei Fang",
+   "Taiwen Feng",
+   "Mengjie Xi"
+  ],
+  "year": 2024,
+  "venue": "Supply Chain Management An International Journal",
+  "doi": "https://doi.org/10.1108/scm-08-2023-0390",
+  "url": "https://doi.org/10.1108/scm-08-2023-0390",
+  "pdf_url": null,
+  "abstract": "\nPurpose\nAlthough blockchain technology holds significant promise in influencing supply chain resilience (SCR), its effectiveness depends on a variety of factors. However, given that blockchain adoption in SCR is still in its infancy, there is a lack of empirical research to reveal the critical success factors maximizing its efficacy. This study aims to apply an organizational information processing theory (OIPT) perspective to explore how transformational supply chain leadership (TSCL) can facilitate the deployment and connection of blockchain technology to meet the imperatives of enhancing SCR.\n\n\nDesign/methodology/approach\nThis study used a two-wave survey method to gather data from 317 Chinese manufacturers to empirically examine the hypothesized relationships.\n\n\nFindings\nThe findings suggest that the adoption of blockchain technology enhances both the proactive and reactive dimensions of SCR, and these effects can be realized through the mediating role of TSCL. Furthermore, the positive effect of blockchain technology on TSCL is strengthened in the context of dysfunctional competition.\n\n\nPractical implications\nThese findings suggest that companies can only enhance the benefits of disruptive technologies, such as blockchain, by fully integrating them into the operational and supply chain processes.\n\n\nOriginality/value\nThis research offers novel insights into the specific processes of how blockchain technology can be used to enhance SCR. It also deepens our comprehension of how digital technology can be optimally harnessed within the framework of OIPT, thus providing a contribution to the literature on emerging technologies and SCR.\n",
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Resilience, risk, visibility and disruption (runner-up)",
+  "openalex_id": "W4390941382"
+ },
+ {
+  "title": "Balancing stability and flexibility: The effects of blockchain adoption on supply chain resilience",
+  "authors": [
+   "Haidi Zhou",
+   "Qiang Wang",
+   "Xiande Zhao"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Production Economics",
+  "doi": "https://doi.org/10.1016/j.ijpe.2025.109671",
+  "url": "https://doi.org/10.1016/j.ijpe.2025.109671",
+  "pdf_url": "https://dx.doi.org/10.1016/j.ijpe.2025.109671",
+  "abstract": null,
+  "topic": "blockchain-supply-chain",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Resilience, risk, visibility and disruption (runner-up)",
+  "openalex_id": "W4410234031"
+ }
+]

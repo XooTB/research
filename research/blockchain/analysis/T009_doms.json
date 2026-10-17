@@ -1,0 +1,8 @@
+{"AI/ML integration":"(\"artificial intelligence\" OR \"machine learning\" OR \"large language model\" OR \"federated learning\")",
+"LLM/AI agents":"(\"large language model\" OR LLM OR \"AI agent\" OR \"autonomous agents\")",
+"carbon/sustainability/ESG":"(\"carbon credit\" OR \"carbon trading\" OR \"carbon emission\" OR ESG OR sustainability)",
+"supply chain":"(\"supply chain\" OR logistics OR traceability)",
+"healthcare":"(healthcare OR medical OR \"health records\" OR hospital)",
+"energy":"(energy OR \"smart grid\" OR \"peer-to-peer trading\" OR microgrid)",
+"digital twin":"(\"digital twin\")",
+"NFT/metaverse":"(NFT OR \"non-fungible\" OR metaverse)"}

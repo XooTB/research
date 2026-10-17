@@ -1,0 +1,1216 @@
+[
+ {
+  "title": "Decentralized Privacy Using Blockchain-Enabled Federated Learning in Fog Computing",
+  "authors": [
+   "You-Yang Qu",
+   "Long-Xiang Gao",
+   "Tom H. Luan",
+   "Yong Xiang",
+   "Shui Yu",
+   "Bai Li",
+   "Gavin Zheng"
+  ],
+  "year": 2020,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2020.2977383",
+  "url": "https://doi.org/10.1109/jiot.2020.2977383",
+  "pdf_url": "https://figshare.com/articles/journal_contribution/Decentralized_privacy_using_blockchain-enabled_federated_learning_in_fog_computing/20701090",
+  "abstract": "As the extension of cloud computing and a foundation of IoT, fog computing is experiencing fast prosperity because of its potential to mitigate some troublesome issues, such as network congestion, latency, and local autonomy. However, privacy issues and the subsequent inefficiency are dragging down the performances of fog computing. The majority of existing works hardly consider a reasonable balance between them while suffering from poisoning attacks. To address the aforementioned issues, we propose a novel blockchain-enabled federated learning (FL-Block) scheme to close the gap. FL-Block allows local learning updates of end devices exchanges with a blockchain-based global learning model, which is verified by miners. Built upon this, FL-Block enables the autonomous machine learning without any centralized authority to maintain the global model and coordinates by using a Proof-of-Work consensus mechanism of the blockchain. Furthermore, we analyze the latency performance of FL-Block and further derive the optimal block generation rate by taking communication, consensus delays, and computation cost into consideration. Extensive evaluation results show the superior performances of FL-Block from the aspects of privacy protection, efficiency, and resistance to the poisoning attack.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Poisoning, Byzantine robustness & trust",
+  "openalex_id": "W3009627224"
+ },
+ {
+  "title": "Privacy-Preserving Byzantine-Robust Federated Learning via Blockchain Systems",
+  "authors": [
+   "Yin-Bin Miao",
+   "Ziteng Liu",
+   "Hong-Wei Li",
+   "K. Choo",
+   "R. Deng"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Information Forensics and Security",
+  "doi": "https://doi.org/10.1109/tifs.2022.3196274",
+  "url": "https://doi.org/10.1109/tifs.2022.3196274",
+  "pdf_url": null,
+  "abstract": "Federated learning enables clients to train a machine learning model jointly without sharing their local data. However, due to the centrality of federated learning framework and the untrustworthiness of clients, traditional federated learning solutions are vulnerable to poisoning attacks from malicious clients and servers. In this paper, we aim to mitigate the impact of the central server and malicious clients by designing a Privacy-preserving Byzantine-robust Federated Learning (PBFL) scheme based on blockchain. Specifically, we use cosine similarity to judge the malicious gradients uploaded by malicious clients. Then, we adopt fully homomorphic encryption to provide secure aggregation. Finally, we use blockchain system to facilitate transparent processes and implementation of regulations. Our formal analysis proves that our scheme achieves convergence and provides privacy protection. Our extensive experiments on different datasets demonstrate that our scheme is robust and efficient. Even if the root dataset is small, our scheme can achieve the same efficiency as FedSGD.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Poisoning, Byzantine robustness & trust",
+  "openalex_id": "W4289656845"
+ },
+ {
+  "title": "A Blockchain-Enabled Cold Start Aggregation Scheme for Federated Reinforcement Learning-Based Task Offloading in Zero Trust LEO Satellite Networks",
+  "authors": [
+   "Bomin Mao",
+   "Yangbo Liu",
+   "Zi-Xiang Wei",
+   "Hongzhi Guo",
+   "Yi-Jie Xun",
+   "Jia-Dai Wang",
+   "Jia-Jia Liu",
+   "Nei Kato"
+  ],
+  "year": 2025,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "https://doi.org/10.1109/jsac.2025.3560003",
+  "url": "https://doi.org/10.1109/jsac.2025.3560003",
+  "pdf_url": null,
+  "abstract": "The development of 6G enable users in remote and harsh areas to enjoy computation-intensive services including metaverse entertainment, intelligent transportation, and immersive communications. Low Earth Orbit (LEO) satellite constellations widely constructed in recent years have been recognized as an efficient solution to complement the terrestrial infrastructure with seamless coverage and decreasing expenses for both communication and computation services. However, the widely studied Federated Reinforcement Learning (FRL) based task offloading strategies neglect the potential trust concerns like malicious satellites and buffer pollution, while 6G service providers may rent the LEO satellites belonging to different companies to minimize the expense. To address these issues, blockchain has been considered in the Zero Trust (ZT) scenario, with the group consensus mechanism through the smart contract. Moreover, we propose a Constrained Correction Voting Mechanism (CCVM) to give punishing correction to the aggregation weight of malicious voting satellites. Furthermore, a Cold Start Reputation Aggregation (CSRA) scheme is adopted to first severely degrade and then gradually recover the weight of Federated Learning (FL) sub-models trained by malicious satellites. Thus, the Blockchain-enabled Cold Start Aggregation FRL (BCSA-FRL) scheme is proposed to make effective and secure offloading decisions in the ZT LEO satellite Networks. The numerical results illustrate the advantages of our proposal.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Poisoning, Byzantine robustness & trust",
+  "openalex_id": "W4409356441"
+ },
+ {
+  "title": "Entropy-guided meta-learning defense against data poisoning attacks in blockchain-assisted federated learning",
+  "authors": [
+   "Waheeb Algethami",
+   "Guo-Wei Wu",
+   "Faisal Alshami",
+   "Muhanna Ahmed Ali"
+  ],
+  "year": 2026,
+  "venue": "Information Sciences",
+  "doi": "https://doi.org/10.1016/j.ins.2026.123389",
+  "url": "https://doi.org/10.1016/j.ins.2026.123389",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Poisoning, Byzantine robustness & trust",
+  "openalex_id": "W7139991675"
+ },
+ {
+  "title": "Blockchain-enabled defenses in federated learning: A comprehensive survey",
+  "authors": [
+   "O. Dib"
+  ],
+  "year": 2026,
+  "venue": "Computer Science Review",
+  "doi": "https://doi.org/10.1016/j.cosrev.2026.100932",
+  "url": "https://doi.org/10.1016/j.cosrev.2026.100932",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Poisoning, Byzantine robustness & trust",
+  "openalex_id": "W7130519383"
+ },
+ {
+  "title": "Blockchain and Federated Learning for Collaborative Intrusion Detection in Vehicular Edge Computing",
+  "authors": [
+   "Hong Liu",
+   "Shuai-Peng Zhang",
+   "Pengfei Zhang",
+   "Xin-Qiang Zhou",
+   "Xuebin Shao",
+   "G. Pu",
+   "Yan Zhang"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Vehicular Technology",
+  "doi": "https://doi.org/10.1109/tvt.2021.3076780",
+  "url": "https://doi.org/10.1109/tvt.2021.3076780",
+  "pdf_url": null,
+  "abstract": "The vehicular networks constructed by interconnected vehicles and transportation infrastructure are vulnerable to cyber-intrusions due to the expanded use of software and the introduction of wireless interfaces. Intrusion detection systems (IDSs) can be customized efficiently in response to this increased attack surface. There has been significant progress in detecting malicious attack traffic using machine learning approaches. However, existing IDSs require network devices with powerful computing capabilities to continuously train and update complex network models, which reduces the efficiency and defense capability of intrusion detection systems due to limited resources and untimely model updates. This work proposes a cooperative intrusion detection mechanism that offloads the training model to distributed edge devices (e.g., connected vehicles and roadside units (RSUs). Distributed federated-based approach reduces resource utilization of the central server while assuring security and privacy. To ensure the security of the aggregation model, blockchain is used for the storage and sharing of the training models. This work analyzes common attacks and shows that the proposed scheme achieves cooperative privacy-preservation for vehicles while reducing communication overhead and computation cost.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Intrusion detection & cybersecurity",
+  "openalex_id": "W3158350046"
+ },
+ {
+  "title": "Block Hunter: Federated Learning for Cyber Threat Hunting in Blockchain-Based IIoT Networks",
+  "authors": [
+   "Abbas Yazdinejad",
+   "A. Dehghantanha",
+   "R. Parizi",
+   "Mohammad Hammoudeh",
+   "H. Karimipour",
+   "Gautam Srivastava"
+  ],
+  "year": 2022,
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "doi": "https://doi.org/10.1109/tii.2022.3168011",
+  "url": "https://doi.org/10.1109/tii.2022.3168011",
+  "pdf_url": "https://arxiv.org/pdf/2204.09829",
+  "abstract": "Nowadays, blockchain-based technologies are being developed in various industries to improve data security. In the context of the Industrial Internet of Things (IIoT), a chain-based network is one of the most notable applications of blockchain technology. IIoT devices have become increasingly prevalent in our digital world, especially in support of developing smart factories. Although blockchain is a powerful tool, it is vulnerable to cyberattacks. Detecting anomalies in blockchain-based IIoT networks in smart factories is crucial in protecting networks and systems from unexpected attacks. In this article, we use federated learning to build a threat hunting framework called block hunter to automatically hunt for attacks in blockchain-based IIoT networks. Block hunter utilizes a cluster-based architecture for anomaly detection combined with several machine learning models in a federated environment. To the best of our knowledge, block hunter is the first federated threat hunting model in IIoT networks that identifies anomalous behavior while preserving privacy. Our results prove the efficiency of the block hunter in detecting anomalous activities with high accuracy and minimum required bandwidth.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Intrusion detection & cybersecurity",
+  "openalex_id": "W4224231904"
+ },
+ {
+  "title": "Blockchain and federated learning-based intrusion detection approaches for edge-enabled industrial IoT networks: a survey",
+  "authors": [
+   "Saqib Ali",
+   "Qianmu Li",
+   "Abdullah Yousafzai"
+  ],
+  "year": 2023,
+  "venue": "Ad Hoc Networks",
+  "doi": "https://doi.org/10.1016/j.adhoc.2023.103320",
+  "url": "https://doi.org/10.1016/j.adhoc.2023.103320",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Intrusion detection & cybersecurity",
+  "openalex_id": "W4387496767"
+ },
+ {
+  "title": "Blockchain-Enabled Federated Learning for Enhanced Collaborative Intrusion Detection in Vehicular Edge Computing",
+  "authors": [
+   "Zakaria Abou El Houda",
+   "Hajar Moudoud",
+   "Bouziane Brik",
+   "L. Khoukhi"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Intelligent Transportation Systems",
+  "doi": "https://doi.org/10.1109/tits.2024.3351699",
+  "url": "https://doi.org/10.1109/tits.2024.3351699",
+  "pdf_url": null,
+  "abstract": "Intelligent Transportation Systems (ITSs) are transforming the global monitoring of road safety. These systems, including vehicular networks and transportation infrastructure, are vulnerable to several security issues, which could disrupt services and potentially cause harm to the users. It is crucial to establish robust security measures to protect against evolving attacks and ensure the safe and reliable operation of ITS. Artificial Intelligence (AI)-based Intrusion Detection Systems (IDS) are mainly used to enhance the security of ITS. The adoption of AI-based techniques to secure ITS against new emerging threats has been limited due to a lack of realistic and recent data on these types of attacks ( $i.e.$ , zero-day attacks). In this context, we introduce a novel Edge-based Framework that uses Federated Learning (FL) and blockchain to secure ITS against new emerging threats. In particular, our proposed framework consists of (1) a novel distributed Edge-based architecture that allows multiple Edge nodes to securely collaborate while preserving their privacy; and (2) a decentralized and secure reputation system based on blockchain technology to maintain the reliability and trustworthiness of the FL process within the ITS; This system manages reputation data for individual nodes (such as vehicles), guaranteeing the integrity of the FL training process. Experiment results using the UNSW-NB15 dataset show that our proposed framework achieves high accuracy and F1 score (99%) in detecting new threats while ensuring the privacy and reliability of the whole ITS. These results demonstrate the effectiveness of our proposed framework in securing ITS.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Intrusion detection & cybersecurity",
+  "openalex_id": "W4391216281"
+ },
+ {
+  "title": "Cybersecurity in smart microgrids using blockchain-federated learning and quantum-safe approaches: A comprehensive review",
+  "authors": [
+   "Jameel Ahmad",
+   "Muhammad Rizwan",
+   "Syed Farooq Ali",
+   "Usman Inayat",
+   "Hafiz Abdul Muqeet",
+   "Muhammad Imran",
+   "T. Awotwe"
+  ],
+  "year": 2025,
+  "venue": "Applied Energy",
+  "doi": "https://doi.org/10.1016/j.apenergy.2025.126118",
+  "url": "https://doi.org/10.1016/j.apenergy.2025.126118",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Intrusion detection & cybersecurity",
+  "openalex_id": "W4410539248"
+ },
+ {
+  "title": "Communication-Efficient Federated Learning and Permissioned Blockchain for Digital Twin Edge Networks",
+  "authors": [
+   "Yun-Long Lu",
+   "Xiaohong Huang",
+   "Ke Zhang",
+   "S. Maharjan",
+   "Yan Zhang"
+  ],
+  "year": 2020,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2020.3015772",
+  "url": "https://doi.org/10.1109/jiot.2020.3015772",
+  "pdf_url": null,
+  "abstract": "Emerging technologies, such as mobile-edge computing (MEC) and next-generation communications are crucial for enabling rapid development and deployment of the Internet of Things (IoT). With the increasing scale of IoT networks, how to optimize the network and allocate the limited resources to provide high-quality services remains a major concern. The existing work in this direction mainly relies on models that are of less practical value for resource-limited IoT networks, and can hardly simulate the dynamic systems in real time. In this article, we integrate digital twins with edge networks and propose the digital twin edge networks (DITENs) to fill the gap between physical edge networks and digital systems. Then, we propose a blockchain-empowered federated learning scheme to strengthen communication security and data privacy protection in DITEN. Furthermore, to improve the efficiency of the integrated scheme, we propose an asynchronous aggregation scheme and use digital twin empowered reinforcement learning to schedule relaying users and allocate spectrum resources. Theoretical analysis and numerical results confirm that the proposed scheme can considerably enhance both communication efficiency and data security for IoT applications.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Efficiency, scalability & resource allocation",
+  "openalex_id": "W3048448986"
+ },
+ {
+  "title": "Blockchain Assisted Decentralized Federated Learning (BLADE-FL): Performance Analysis and Resource Allocation",
+  "authors": [
+   "Jun Li",
+   "Yumeng Shao",
+   "Kang Wei",
+   "Ming Ding",
+   "Chuan Ma",
+   "Long Shi",
+   "Zhu Han",
+   "Vincent Poor"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Parallel and Distributed Systems",
+  "doi": "https://doi.org/10.1109/tpds.2021.3138848",
+  "url": "https://doi.org/10.1109/tpds.2021.3138848",
+  "pdf_url": "https://arxiv.org/pdf/2101.06905",
+  "abstract": "Federated learning (FL), as a distributed machine learning paradigm, promotes personal privacy by local data processing at each client. However, relying on a centralized server for model aggregation, standard FL is vulnerable to server malfunctions, untrustworthy server, and external attacks. To address this issue, we propose a decentralized FL framework by integrating blockchain into FL, namely, blockchain assisted decentralized federated learning (BLADE-FL). In a round of the proposed BLADE-FL, each client broadcasts the trained model to other clients, aggregates its own model with received ones, and then competes to generate a block before its local training of the next round. We evaluate the learning performance of BLADE-FL, and develop an upper bound on the global loss function. Then we verify that this bound is convex with respect to the number of overall aggregation rounds K, and optimize the computing resource allocation for minimizing the upper bound. We also note that there is a critical problem of training deficiency, caused by lazy clients who plagiarize others trained models and add artificial noises to disguise their cheating behaviors. Focusing on this problem, we explore the impact of lazy clients on the learning performance of BLADE-FL, and characterize the relationship among the optimal K, the learning parameters, and the proportion of lazy clients. Based on MNIST and Fashion-MNIST datasets, we show that the experimental results are consistent with the analytical ones. To be specific, the gap between the developed upper bound and experimental results is lower than 5%, and the optimized K based on the upper bound can effectively minimize the loss function.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Efficiency, scalability & resource allocation",
+  "openalex_id": "W3122294042"
+ },
+ {
+  "title": "DRL-Based Adaptive Sharding for Blockchain-Based Federated Learning",
+  "authors": [
+   "Yi-Jing Lin",
+   "Zhipeng Gao",
+   "Hongyang Du",
+   "Jiawen Kang",
+   "D. Niyato",
+   "Qian Wang",
+   "Jingqing Ruan",
+   "Shaohua Wan"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "https://doi.org/10.1109/tcomm.2023.3288591",
+  "url": "https://doi.org/10.1109/tcomm.2023.3288591",
+  "pdf_url": null,
+  "abstract": "Blockchain-based Federated Learning (FL) technology enables vehicles to make smart decisions, improving vehicular services and enhancing the driving experience through a secure and privacy-preserving manner in Intelligent Transportation Systems (ITS). Many existing works exploit two-layer blockchain-based FL frameworks consisting of a mainchain and subchains for data interactions among intelligent vehicles, which resolve the limited throughput issue of single blockchain-based vehicular networks. However, the existing two-layer frameworks still suffer from a) strong dependency on predetermined and fixed parameters of vehicular blockchains which limit blockchain throughput and reliability; and b) high communication costs incurred by interactions among intelligent vehicles between the mainchain and subchains. To address the above challenges, we first design an adaptive blockchain-enabled FL framework for ITS based on blockchain sharding to facilitate decentralized vehicular data flows among intelligent vehicles. A streamline-based shard transmission mechanism is proposed to ensure communication efficiency almost without compromising the FL accuracy. We further formulate the proposed framework and propose an adaptive sharding mechanism using Deep Reinforcement Learning to automate the selection of parameters of vehicular shards. Numerical results clearly show that the proposed framework and mechanisms achieve adaptive, communication-efficient, credible, and scalable data interactions among intelligent vehicles.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Efficiency, scalability & resource allocation",
+  "openalex_id": "W4381785392"
+ },
+ {
+  "title": "Secure and Efficient Federated Learning Through Layering and Sharding Blockchain",
+  "authors": [
+   "Shuo Yuan",
+   "Bin Cao",
+   "Yaohua Sun",
+   "Zhiguo Wan",
+   "M. Peng"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Network Science and Engineering",
+  "doi": "https://doi.org/10.1109/tnse.2024.3361458",
+  "url": "https://doi.org/10.1109/tnse.2024.3361458",
+  "pdf_url": "https://arxiv.org/pdf/2104.13130",
+  "abstract": "Introducing blockchain into Federated Learning (FL) to build a trusted edge computing environment for transmission and learning has attracted widespread attention as a new decentralized learning pattern. However, traditional consensus mechanisms and architectures of blockchain systems face significant challenges in handling large-scale FL tasks, especially on Internet of Things (IoT) devices, due to their substantial resource consumption, limited transaction throughput, and complex communication requirements. To address these challenges, this paper proposes ChainFL, a novel two-layer blockchain-driven FL system. It splits the IoT network into multiple shards within the subchain layer, effectively reducing the scale of information exchange, and employs a Direct Acyclic Graph (DAG)-based mainchain as the mainchain layer, enabling parallel and asynchronous cross-shard validation. Furthermore, the FL procedure is customized to integrate deeply with blockchain technology, and a modified DAG consensus mechanism is designed to mitigate distortion caused by abnormal models. To provide a proof-of-concept implementation and evaluation, multiple subchains based on Hyperledger Fabric and a self-developed DAG-based mainchain are deployed. Extensive experiments demonstrate that ChainFL significantly surpasses conventional FL systems, showing up to a 14% improvement in training efficiency and a threefold increase in robustness.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Efficiency, scalability & resource allocation",
+  "openalex_id": "W4391468023"
+ },
+ {
+  "title": "Resource-Efficient Federated Learning and DAG Blockchain With Sharding in Digital-Twin-Driven Industrial IoT",
+  "authors": [
+   "Li Jiang",
+   "Yi Liu",
+   "Hui Tian",
+   "Lun Tang",
+   "Sheng-Li Xie"
+  ],
+  "year": 2024,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2024.3357827",
+  "url": "https://doi.org/10.1109/jiot.2024.3357827",
+  "pdf_url": null,
+  "abstract": "The development of Industry 4.0 relies on emerging technologies of digital twin, machine learning, blockchain, and Internet of Things (IoT) to build autonomous self-configuring systems that maximize manufactory efficiency, precision, and accuracy. In this article, we propose a new distributed and secure digital twin-driven IIoT framework that integrates federated learning and directed acyclic graph (DAG) blockchain with sharding. The proposed framework includes three planes: 1) the data plane; 2) the blockchain plane; and 3) the digital twin plane. Specifically, the data plane performs federated learning through a set of cluster heads to train models at network edges for twin model construction. The blockchain plane, which supports sharding, utilizes a hierarchical consensus scheme based on DAG blockchain to verify both local model updates and global model updates. The digital twin plane is responsible for constructing and maintaining twin model. Then, an efficient resource scheduling scheme is designed by considering performance of both federated learning and DAG blockchain with sharding. Accordingly, an optimization problem is formulated to maximize long-term utility of the digital twin-driven IIoT. To cope with mapping error in the digital twin plane, a multiagent proximal policy optimization (MAPPO) approach is developed to solve the optimization problem. Numerical results illustrate that comparing with traditional approach, the proposed MAPPO improves utility by about 37 %, and reduces time latency by about 14%. Moreover, it also can well adapt to the mapping error.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Efficiency, scalability & resource allocation",
+  "openalex_id": "W4391164288"
+ },
+ {
+  "title": "Blockchain-Federated-Learning and Deep Learning Models for COVID-19 Detection Using CT Imaging",
+  "authors": [
+   "Rajesh Kumar",
+   "A. Khan",
+   "Jay Kumar",
+   "Zakria",
+   "Noorbakhsh Amiri Golilarz",
+   "Si-Min Zhang",
+   "Yang Ting",
+   "Cheng-Yu Zheng",
+   "Wen-Yong Wang"
+  ],
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "doi": "https://doi.org/10.1109/jsen.2021.3076767",
+  "url": "https://doi.org/10.1109/jsen.2021.3076767",
+  "pdf_url": "http://export.arxiv.org/pdf/2007.06537",
+  "abstract": "With the increase of COVID-19 cases worldwide, an effective way is required to diagnose COVID-19 patients. The primary problem in diagnosing COVID-19 patients is the shortage and reliability of testing kits, due to the quick spread of the virus, medical practitioners are facing difficulty in identifying the positive cases. The second real-world problem is to share the data among the hospitals globally while keeping in view the privacy concerns of the organizations. Building a collaborative model and preserving privacy are the major concerns for training a global deep learning model. This paper proposes a framework that collects a small amount of data from different sources (various hospitals) and trains a global deep learning model using blockchain-based federated learning. Blockchain technology authenticates the data and federated learning trains the model globally while preserving the privacy of the organization. First, we propose a data normalization technique that deals with the heterogeneity of data as the data is gathered from different hospitals having different kinds of Computed Tomography (CT) scanners. Secondly, we use Capsule Network-based segmentation and classification to detect COVID-19 patients. Thirdly, we design a method that can collaboratively train a global model using blockchain technology with federated learning while preserving privacy. Additionally, we collected real-life COVID-19 patients\u2019 data open to the research community. The proposed framework can utilize up-to-date data which improves the recognition of CT images. Finally, we conducted comprehensive experiments to validate the proposed method. Our results demonstrate better performance for detecting COVID-19 patients.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Healthcare & medical",
+  "openalex_id": "W3163893137"
+ },
+ {
+  "title": "IoMT: A COVID-19 Healthcare System Driven by Federated Learning and Blockchain",
+  "authors": [
+   "O. Samuel",
+   "A. B. Omojo",
+   "Abdulkarim Musa Onuja",
+   "Y. Sunday",
+   "P. Tiwari",
+   "Deepak Gupta",
+   "G. Hafeez",
+   "Adamu Sani Yahaya",
+   "Oluwaseun Fatoba",
+   "Shahabuddin Shamshirband"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal of Biomedical and Health Informatics",
+  "doi": "https://doi.org/10.1109/jbhi.2022.3143576",
+  "url": "https://doi.org/10.1109/jbhi.2022.3143576",
+  "pdf_url": "https://research.aalto.fi/en/publications/8f084ac3-fbd2-42b5-b88f-7320ded1fe24",
+  "abstract": "Internet of medical things (IoMT) has made it possible to collect applications and medical devices to improve healthcare information technology. Since the advent of the pandemic of coronavirus (COVID-19) in 2019, public health information has become more sensitive than ever. Moreover, different news items incorporated have resulted in differing public perceptions of COVID-19, especially on the social media platform and infrastructure. In addition, the unprecedented virality and changing nature of COVID-19 makes call centres to be likely overstressed, which is due to a lack of authentic and unregulated public media information. Furthermore, the lack of data privacy has restricted the sharing of COVID-19 information among health institutions. To resolve the above-mentioned limitations, this paper is proposing a privacy infrastructure based on federated learning and blockchain. The proposed infrastructure has the potentials to enhance the trust and authenticity of public media to disseminate COVID-19 information. Also, the proposed infrastructure can effectively provide a shared model while preserving the privacy of data owners. Furthermore, information security and privacy analyses show that the proposed infrastructure is robust against information security-related attacks.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Healthcare & medical",
+  "openalex_id": "W4205302645"
+ },
+ {
+  "title": "A secure healthcare 5.0 system based on blockchain technology entangled with federated learning technique",
+  "authors": [
+   "Abdur Rehman",
+   "Sagheer Abbas",
+   "M. A. Khan",
+   "Taher M. Ghazal",
+   "K. M. Adnan",
+   "Amir Mosavi"
+  ],
+  "year": 2022,
+  "venue": "Computers in Biology and Medicine",
+  "doi": "https://doi.org/10.1016/j.compbiomed.2022.106019",
+  "url": "https://doi.org/10.1016/j.compbiomed.2022.106019",
+  "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0010482522007417/pdf",
+  "abstract": "In recent years, the global Internet of Medical Things (IoMT) industry has evolved at a tremendous speed. Security and privacy are key concerns on the IoMT, owing to the huge scale and deployment of IoMT networks. Machine learning (ML) and blockchain (BC) technologies have significantly enhanced the capabilities and facilities of healthcare 5.0, spawning a new area known as \"Smart Healthcare.\" By identifying concerns early, a smart healthcare system can help avoid long-term damage. This will enhance the quality of life for patients while reducing their stress and healthcare costs. The IoMT enables a range of functionalities in the field of information technology, one of which is smart and interactive health care. However, combining medical data into a single storage location to train a powerful machine learning model raises concerns about privacy, ownership, and compliance with greater concentration. Federated learning (FL) overcomes the preceding difficulties by utilizing a centralized aggregate server to disseminate a global learning model. Simultaneously, the local participant keeps control of patient information, assuring data confidentiality and security. This article conducts a comprehensive analysis of the findings on blockchain technology entangled with federated learning in healthcare. 5.0. The purpose of this study is to construct a secure health monitoring system in healthcare 5.0 by utilizing a blockchain technology and Intrusion Detection System (IDS) to detect any malicious activity in a healthcare network and enables physicians to monitor patients through medical sensors and take necessary measures periodically by predicting diseases. The proposed system demonstrates that the approach is optimized effectively for healthcare monitoring. In contrast, the proposed healthcare 5.0 system entangled with FL Approach achieves 93.22% accuracy for disease prediction, and the proposed RTS-DELM-based secure healthcare 5.0 system achieves 96.18% accuracy for the estimation of intrusion detection.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Healthcare & medical",
+  "openalex_id": "W4296552403"
+ },
+ {
+  "title": "Federated Learning Meets Blockchain in Decentralized Data Sharing: Healthcare Use Case",
+  "authors": [
+   "S. Alsamhi",
+   "Raushan Rose Myrzashova",
+   "Ammar Hawbani",
+   "Santosh Kumar",
+   "S. Srivastava",
+   "Liang Zhao",
+   "Xi Wei",
+   "Mohsen Guizan",
+   "Edward Curry"
+  ],
+  "year": 2024,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2024.3367249",
+  "url": "https://doi.org/10.1109/jiot.2024.3367249",
+  "pdf_url": "https://ieeexplore.ieee.org/ielx7/6488907/6702522/10439977.pdf",
+  "abstract": "In the era of data-driven healthcare, the amalgamation of blockchain and federated learning (FL) introduces a paradigm shift toward secure, collaborative, and patient-centric data sharing. This article pioneers the exploration of the conceptual framework and technical synergy of FL and blockchain for decentralized data sharing, aiming to strike a balance between data utility and privacy. FL, a decentralized machine learning paradigm, enables collaborative AI model training across multiple healthcare institutions without sharing raw patient data. Combined with blockchain, a transparent and immutable ledger, it establishes an ecosystem fostering trust, security, and data integrity. This article elucidates the technical foundations of FL and blockchain, unravelling their roles in reshaping healthcare data sharing. This article vividly illustrates the potential impact of this fusion on patient care. The proposed approach preserves patient privacy while granting healthcare providers and researchers access to diversified data sets, ultimately leading to more accurate models and improved diagnoses. The findings underscore the potential acceleration of medical research, improved treatment outcomes, and patient empowerment through data ownership. The synergy of FL and blockchain envisions a healthcare ecosystem that prioritizes individual privacy and propels advancements in medical science.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Healthcare & medical",
+  "openalex_id": "W4391948475"
+ },
+ {
+  "title": "Blockchain-Enabled Federated Learning in Healthcare: Survey and State-of-the-Art",
+  "authors": [
+   "Nasim Nezhadsistani",
+   "N. Moayedian",
+   "Burkhard Stiller"
+  ],
+  "year": 2025,
+  "venue": "IEEE Access",
+  "doi": "https://doi.org/10.1109/access.2025.3587345",
+  "url": "https://doi.org/10.1109/access.2025.3587345",
+  "pdf_url": "https://doi.org/10.1109/access.2025.3587345",
+  "abstract": "Advances in Internet of Medical Things technology, information and communication technologies, and machine learning have initiated the shift in healthcare towards smart healthcare. Centralization of health data to train ML models does pose privacy, ownership, and regulatory problems. Federated learning solves such problems by distributing the learning process to several devices, but it also encounters problems like encouraging participants and model aggregation correctness. Combining blockchain and FL can solve such problems through a decentralized approach that provides greater security and privacy for intelligent healthcare. This survey provides a systematic review of blockchain-based federated learning (BCFL) systems in healthcare. Key design features of BCFLs are analyzed, such as consensus protocols, crypto protocols, storage topology, and integration processes relevant to healthcare use cases. Characteristics such as convergence delay, computation overhead, accuracy loss when privacy is an issue, and ledger scalability for different implementations are compared among common implementations. The works of recent FL-based healthcare frameworks have been discussed, along with determining the challenges and research directions for healthcare use cases.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Healthcare & medical",
+  "openalex_id": "W4412164389"
+ },
+ {
+  "title": "A Blockchain-Based Decentralized Federated Learning Framework with Committee Consensus",
+  "authors": [
+   "Yuzheng Li",
+   "Chuan Chen",
+   "Nan Liu",
+   "Hua-Wei Huang",
+   "Zi-Bin Zheng",
+   "Qiang Yan"
+  ],
+  "year": 2020,
+  "venue": "IEEE Network",
+  "doi": "https://doi.org/10.1109/mnet.011.2000263",
+  "url": "https://doi.org/10.1109/mnet.011.2000263",
+  "pdf_url": "https://arxiv.org/pdf/2004.00773",
+  "abstract": "Federated learning has been widely studied and applied to various scenarios, such as financial credit, medical identification, and so on. Under these settings, federated learning protects users from exposing their private data, while cooperatively training a shared machine learning algorithm model (i.e., the global model) for a variety of realworld applications. The only data exchanged is the gradient of the model or the updated model (i.e., the local model update). However, the security of federated learning is increasingly being questioned, due to the malicious clients or central servers' constant attack on the global model or user privacy data. To address these security issues, we propose a decentralized federated learning framework based on blockchain, that is, a Block-chain-based Federated Learning framework with Committee consensus (BFLC). Without a centralized server, the framework uses blockchain for the global model storage and the local model update exchange. To enable the proposed BFLC, we also devise an innovative committee consensus mechanism, which can effectively reduce the amount of consensus computing and reduce malicious attacks. We then discuss the scalability of BFLC, including theoretical security, storage optimization, and incentives. Finally, based on a FISCO blockchain system, we perform experiments using an AlexNet model on several frameworks with a real-world dataset FEMNIST. The experimental results demonstrate the effectiveness and security of the BFLC framework.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Decentralized FL architectures & consensus",
+  "openalex_id": "W3014517104"
+ },
+ {
+  "title": "Biscotti: A Blockchain System for Private and Secure Federated Learning",
+  "authors": [
+   "Muhammad Shayan",
+   "Clement Fung",
+   "Chris J. M. Yoon",
+   "I. Beschastnikh"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Parallel and Distributed Systems",
+  "doi": "https://doi.org/10.1109/tpds.2020.3044223",
+  "url": "https://doi.org/10.1109/tpds.2020.3044223",
+  "pdf_url": null,
+  "abstract": "Federated Learning is the current state-of-the-art in supporting secure multi-party machine learning (ML): data is maintained on the owner's device and the updates to the model are aggregated through a secure protocol. However, this process assumes a trusted centralized infrastructure for coordination, and clients must trust that the central service does not use the byproducts of client data. In addition to this, a group of malicious clients could also harm the performance of the model by carrying out a poisoning attack. As a response, we propose Biscotti: a fully decentralized peer to peer (P2P) approach to multi-party ML, which uses blockchain and cryptographic primitives to coordinate a privacy-preserving ML process between peering clients. Our evaluation demonstrates that Biscotti is scalable, fault tolerant, and defends against known attacks. For example, Biscotti is able to both protect the privacy of an individual client's update and maintain the performance of the global model at scale when 30 percent adversaries are present in the system.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Decentralized FL architectures & consensus",
+  "openalex_id": "W3111419317"
+ },
+ {
+  "title": "A Platform-Free Proof of Federated Learning Consensus Mechanism for Sustainable Blockchains",
+  "authors": [
+   "Yuntao Wang",
+   "Hai-Xia Peng",
+   "Zhou Su",
+   "T. Luan",
+   "A. Benslimane",
+   "Yuan Wu"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "https://doi.org/10.1109/jsac.2022.3213347",
+  "url": "https://doi.org/10.1109/jsac.2022.3213347",
+  "pdf_url": "https://arxiv.org/pdf/2208.12046",
+  "abstract": "Proof of work (PoW), as the representative consensus protocol for blockchain, consumes enormous amounts of computation and energy to determine bookkeeping rights among miners but does not achieve any practical purposes. To address the drawback of PoW, we propose a novel energy-recycling consensus mechanism named platform-free proof of federated learning (PF-PoFL), which leverages the computing power originally wasted in solving hard but meaningless PoW puzzles to conduct practical federated learning (FL) tasks. Nevertheless, potential security threats and efficiency concerns may occur due to the untrusted environment and miners\u2019 self-interested features. In this paper, by devising a novel block structure, new transaction types, and credit-based incentives, PF-PoFL allows efficient artificial intelligence (AI) task outsourcing, federated mining, model evaluation, and reward distribution in a fully decentralized manner, while resisting spoofing and Sybil attacks. Besides, PF-PoFL equips with a user-level differential privacy mechanism for miners to prevent implicit privacy leakage in training FL models. Furthermore, by considering dynamic miner characteristics (e.g., training samples, non-IID degree, and network delay) under diverse FL tasks, a federation formation game-based mechanism is presented to distributively form the optimized disjoint miner partition structure with Nash-stable convergence. Extensive simulations validate the efficiency and effectiveness of PF-PoFL.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Decentralized FL architectures & consensus",
+  "openalex_id": "W4307926598"
+ },
+ {
+  "title": "Blockchain-enabled Federated Learning: A Survey",
+  "authors": [
+   "You-Yang Qu",
+   "M. P. Uddin",
+   "Chenquan Gan",
+   "Yong Xiang",
+   "Long-Xiang Gao",
+   "John Yearwood"
+  ],
+  "year": 2022,
+  "venue": "ACM Computing Surveys",
+  "doi": "https://doi.org/10.1145/3524104",
+  "url": "https://doi.org/10.1145/3524104",
+  "pdf_url": "https://figshare.com/articles/journal_contribution/Blockchain-Enabled_Federated_Learning_A_Survey/20602605",
+  "abstract": "Federated learning (FL) has experienced a boom in recent years, which is jointly promoted by the prosperity of machine learning and Artificial Intelligence along with emerging privacy issues. In the FL paradigm, a central server and local end devices maintain the same model by exchanging model updates instead of raw data, with which the privacy of data stored on end devices is not directly revealed. In this way, the privacy violation caused by the growing collection of sensitive data can be mitigated. However, the performance of FL with a central server is reaching a bottleneck, while new threats are emerging simultaneously. There are various reasons, among which the most significant ones are centralized processing, data falsification, and lack of incentives. To accelerate the proliferation of FL, blockchain-enabled FL has attracted substantial attention from both academia and industry. A considerable number of novel solutions are devised to meet the emerging demands of diverse scenarios. Blockchain-enabled FL provides both theories and techniques to improve the performance of FL from various perspectives. In this survey, we will comprehensively summarize and evaluate existing variants of blockchain-enabled FL, identify the emerging challenges, and propose potentially promising research directions in this under-explored domain.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Decentralized FL architectures & consensus",
+  "openalex_id": "W4220883012"
+ },
+ {
+  "title": "A multi-center federated learning mechanism based on consortium blockchain for data secure sharing",
+  "authors": [
+   "Bin Wang",
+   "Zhao Tian",
+   "Xinrui Liu",
+   "Yu Xia",
+   "Wei She",
+   "Wei Liu"
+  ],
+  "year": 2025,
+  "venue": "Knowledge-Based Systems",
+  "doi": "https://doi.org/10.1016/j.knosys.2025.112962",
+  "url": "https://doi.org/10.1016/j.knosys.2025.112962",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Decentralized FL architectures & consensus",
+  "openalex_id": "W4406236610"
+ },
+ {
+  "title": "Privacy-preserving in Blockchain-based Federated Learning systems",
+  "authors": [
+   "K. M. Sameera",
+   "S. Nicolazzo",
+   "Marco Arazzi",
+   "Antonino Nocera",
+   "A. RafidhaRehimanK",
+   "P. Vinod",
+   "Mauro Conti"
+  ],
+  "year": 2024,
+  "venue": "Computer Communications",
+  "doi": "https://doi.org/10.1016/j.comcom.2024.04.024",
+  "url": "https://doi.org/10.1016/j.comcom.2024.04.024",
+  "pdf_url": "https://arxiv.org/pdf/2401.03552",
+  "abstract": "Federated Learning (FL) has recently arisen as a revolutionary approach to collaborative training Machine Learning models. According to this novel framework, multiple participants train a global model collaboratively, coordinating with a central aggregator without sharing their local data. As FL gains popularity in diverse domains, security, and privacy concerns arise due to the distributed nature of this solution. Therefore, integrating this strategy with Blockchain technology has been consolidated as a preferred choice to ensure the privacy and security of participants. This paper explores the research efforts carried out by the scientific community to define privacy solutions in scenarios adopting Blockchain-Enabled FL. It comprehensively summarizes the background related to FL and Blockchain, evaluates existing architectures for their integration, and the primary attacks and possible countermeasures to guarantee privacy in this setting. Finally, it reviews the main application scenarios where Blockchain-Enabled FL approaches have been proficiently applied. This survey can help academia and industry practitioners understand which theories and techniques exist to improve the performance of FL through Blockchain to preserve privacy and which are the main challenges and future directions in this novel and still under-explored context. We believe this work provides a novel contribution respect to the previous surveys and is a valuable tool to explore the current landscape, understand perspectives, and pave the way for advancements or improvements in this amalgamation of Blockchain and Federated Learning.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Decentralized FL architectures & consensus",
+  "openalex_id": "W4394981859"
+ },
+ {
+  "title": "Blockchain-Enabled Federated Learning Data Protection Aggregation Scheme With Differential Privacy and Homomorphic Encryption in IIoT",
+  "authors": [
+   "Bin Jia",
+   "Xiaosong Zhang",
+   "Jiewen Liu",
+   "Y. Zhang",
+   "Kejia Huang",
+   "Yong-Quan Liang"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "doi": "https://doi.org/10.1109/tii.2021.3085960",
+  "url": "https://doi.org/10.1109/tii.2021.3085960",
+  "pdf_url": null,
+  "abstract": "With rapid growth in data volume generated from different industrial devices in IoT, the protection for sensitive and private data in data sharing has become crucial. At present, federated learning for data security has arisen, and it can solve the security concerns on data sharing by model sharing on Internet of mutual distrust. However, the hackers still launch attack aiming at the security vulnerabilities (e.g., model extraction attack and model reverse attack) in federated learning. In this article, to address the above problems, we first design an application model of blockchain-enabled federated learning in Industrial Internet of Things (IIoT), and formulate our data protection aggregation scheme based on the above model. Then, we give the distributed K-means clustering based on differential privacy and homomorphic encryption, and the distributed random forest with differential privacy and the distributed AdaBoost with homomorphic encryption methods, which enable multiple data protection in data sharing and model sharing. Finally, we integrate the methods with blockchain and federated learning, and provide the complete security analysis. Extensive experimental results show that our aggregation scheme and working mechanism have the better performance in the selected indicators.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Privacy-preserving FL on chain (DP/HE/ZK/SMPC)",
+  "openalex_id": "W3172555720"
+ },
+ {
+  "title": "Blockchain-Based Decentralized and Lightweight Anonymous Authentication for Federated Learning",
+  "authors": [
+   "M. Fan",
+   "Zhipeng Zhang",
+   "Zonghang Li",
+   "Gang Sun",
+   "Hong-Fang Yu",
+   "Mohsen Guizani"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Vehicular Technology",
+  "doi": "https://doi.org/10.1109/tvt.2023.3265366",
+  "url": "https://doi.org/10.1109/tvt.2023.3265366",
+  "pdf_url": null,
+  "abstract": "Federated learning (FL) is a promising technology for achieving privacy-preserving edge intelligence and has attracted extensive attention from industry and academia. However, in the FL training process, the server directly aggregates local models from mobile devices, which poses serious privacy and security threats. The identity authentication mechanism can provide FL with local model integrity and source authentication. However, the existing schemes are centralized, and most of them are computationally expensive, resulting in limited performance. To address these issues, this paper proposes a decentralized and lightweight anonymous FL identity authentication scheme, namely DAFL. In our scheme, we first design a decentralized and simplified storage FL authentication framework by combining the directed acyclic graph (DAG) blockchain and accumulator. Then, we propose a lightweight digital signature algorithm that supports batch verification for authentication. Finally, nodes interact through pseudonyms to achieve anonymous communication, and the trusted authority (TA) can track and recover the real identities of nodes when malicious behavior occurs. We theoretically prove the security of the proposed DAFL. The extensive experiments demonstrate that DAFL achieves lower authentication overhead and better convergence performance compared to existing authentication schemes and vanilla FL systems.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Privacy-preserving FL on chain (DP/HE/ZK/SMPC)",
+  "openalex_id": "W4362714522"
+ },
+ {
+  "title": "BFL-SA: Blockchain-based federated learning via enhanced secure aggregation",
+  "authors": [
+   "Yi-Zhong Liu",
+   "Zixiao Jia",
+   "Zixu Jiang",
+   "Xun Lin",
+   "Jianwei Liu",
+   "Qian-Hong Wu",
+   "Willy Susilo"
+  ],
+  "year": 2024,
+  "venue": "Journal of Systems Architecture",
+  "doi": "https://doi.org/10.1016/j.sysarc.2024.103163",
+  "url": "https://doi.org/10.1016/j.sysarc.2024.103163",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Privacy-preserving FL on chain (DP/HE/ZK/SMPC)",
+  "openalex_id": "W4396621158"
+ },
+ {
+  "title": "PBFL: A Privacy-Preserving Blockchain-Based Federated Learning Framework With Homomorphic Encryption and Single Masking",
+  "authors": [
+   "Bao-Fu Han",
+   "Bing Li",
+   "Raja Jurdak",
+   "Peiyun Zhang",
+   "Hao Zhang",
+   "Pan Feng",
+   "Chau Yuen"
+  ],
+  "year": 2025,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2024.3524632",
+  "url": "https://doi.org/10.1109/jiot.2024.3524632",
+  "pdf_url": "https://eprints.qut.edu.au/254784/1/PBFL_A_Privacy-Preserving_Blockchain-Based_Federated_AAM.pdf",
+  "abstract": "Federated learning (FL) has emerged as a promising paradigm for secure data sharing in Industrial Internet of Things (IIoT), enabling collaborative model training without direct exchange of raw data. However, recent studies have shown that FL still suffers from privacy vulnerabilities, where adversaries can reconstruct sensitive information by analyzing shared model parameters. Although several privacy-preserving FL (PPFL) schemes have been proposed to address these challenges, they primarily focus on protecting local model privacy, with limited attention to protecting global model confidentiality during aggregation. Additionally, their reliance on centralized aggregation servers introduces risks of single points of failure. To address these challenges, we propose a novel privacy-preserving blockchain-based FL framework (PBFL) that integrates blockchain, homomorphic encryption (HE), and a single masking. Specifically, PBFL employs HE to enable secure model training within the ciphertext domain, ensuring global model confidentiality. The single masking technique allows clients to apply unique random masks to their encrypted local model updates, enabling secure aggregation while preserving local privacy. Additionally, PBFL leverages blockchain for decentralized aggregation and encrypted model storage, effectively mitigating the risks associated with centralized servers. Experimental results demonstrate that PBFL achieves comparable model accuracy to state-of-the-art solutions while providing enhanced privacy protection. Furthermore, even with a client dropout rate of up to 30%, PBFL outperforms other blockchain-based PPFL methods in terms of computational and communication efficiency.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Privacy-preserving FL on chain (DP/HE/ZK/SMPC)",
+  "openalex_id": "W4405974967"
+ },
+ {
+  "title": "PQS-BFL: A post-quantum secure blockchain-based federated learning framework",
+  "authors": [
+   "Daniel Commey",
+   "Garth V. Crosby"
+  ],
+  "year": 2026,
+  "venue": "Expert Systems with Applications",
+  "doi": "https://doi.org/10.1016/j.eswa.2026.131449",
+  "url": "https://doi.org/10.1016/j.eswa.2026.131449",
+  "pdf_url": "https://arxiv.org/pdf/2505.01866",
+  "abstract": "Federated Learning (FL) enables collaborative model training while preserving data privacy, but its classical cryptographic underpinnings are vulnerable to quantum attacks. This vulnerability is particularly critical in sensitive domains like healthcare. This paper introduces PQS-BFL (Post-Quantum Secure Blockchain-based Federated Learning), a framework integrating post-quantum cryptography (PQC) with blockchain verification to secure FL against quantum adversaries. We employ ML-DSA-65 (a FIPS 204 standard candidate, formerly Dilithium) signatures to authenticate model updates and leverage optimized smart contracts for decentralized validation. Extensive evaluations on diverse datasets (MNIST, SVHN, HAR) demonstrate that PQS-BFL achieves efficient cryptographic operations (average PQC sign time: 0.65 ms, verify time: 0.53 ms) with a fixed signature size of 3309 Bytes. Blockchain integration incurs a manageable overhead, with average transaction times around 4.8 s and gas usage per update averaging 1.72 x 10^6 units for PQC configurations. Crucially, the cryptographic overhead relative to transaction time remains minimal (around 0.01-0.02% for PQC with blockchain), confirming that PQC performance is not the bottleneck in blockchain-based FL. The system maintains competitive model accuracy (e.g., over 98.8% for MNIST with PQC) and scales effectively, with round times showing sublinear growth with increasing client numbers. Our open-source implementation and reproducible benchmarks validate the feasibility of deploying long-term, quantum-resistant security in practical FL systems.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Privacy-preserving FL on chain (DP/HE/ZK/SMPC)",
+  "openalex_id": "W4415029012"
+ },
+ {
+  "title": "Blockchain and Federated Learning for Privacy-Preserved Data Sharing in Industrial IoT",
+  "authors": [
+   "Yun-Long Lu",
+   "Xiaohong Huang",
+   "Yue-Yue Dai",
+   "S. Maharjan",
+   "Yan Zhang"
+  ],
+  "year": 2019,
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "doi": "https://doi.org/10.1109/tii.2019.2942190",
+  "url": "https://doi.org/10.1109/tii.2019.2942190",
+  "pdf_url": null,
+  "abstract": "The rapid increase in the volume of data generated from connected devices in industrial Internet of Things paradigm, opens up new possibilities for enhancing the quality of service for the emerging applications through data sharing. However, security and privacy concerns (e.g., data leakage) are major obstacles for data providers to share their data in wireless networks. The leakage of private data can lead to serious issues beyond financial loss for the providers. In this article, we first design a blockchain empowered secure data sharing architecture for distributed multiple parties. Then, we formulate the data sharing problem into a machine-learning problem by incorporating privacy-preserved federated learning. The privacy of data is well-maintained by sharing the data model instead of revealing the actual data. Finally, we integrate federated learning in the consensus process of permissioned blockchain, so that the computing work for consensus can also be used for federated training. Numerical results derived from real-world datasets show that the proposed data sharing scheme achieves good accuracy, high efficiency, and enhanced security.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Industrial IoT, smart grid & edge intelligence",
+  "openalex_id": "W2974429275"
+ },
+ {
+  "title": "Privacy-Preserving Blockchain-Based Federated Learning for IoT Devices",
+  "authors": [
+   "Yang Zhao",
+   "Jun Zhao",
+   "Linshan Jiang",
+   "Rui Tan",
+   "D. Niyato",
+   "Zeng-Xiang Li",
+   "L. Lyu",
+   "Yingbo Liu"
+  ],
+  "year": 2020,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2020.3017377",
+  "url": "https://doi.org/10.1109/jiot.2020.3017377",
+  "pdf_url": "https://arxiv.org/pdf/1906.10893",
+  "abstract": "Home appliance manufacturers strive to obtain feedback from users to improve their products and services to build a smart home system. To help manufacturers develop a smart home system, we design a federated learning (FL) system leveraging a reputation mechanism to assist home appliance manufacturers to train a machine learning model based on customers\u2019 data. Then, manufacturers can predict customers\u2019 requirements and consumption behaviors in the future. The working flow of the system includes two stages: in the first stage, customers train the initial model provided by the manufacturer using both the mobile phone and the mobile-edge computing (MEC) server. Customers collect data from various home appliances using phones, and then they download and train the initial model with their local data. After deriving local models, customers sign on their models and send them to the blockchain. In case customers or manufacturers are malicious, we use the blockchain to replace the centralized aggregator in the traditional FL system. Since records on the blockchain are untampered, malicious customers or manufacturers\u2019 activities are traceable. In the second stage, manufacturers select customers or organizations as miners for calculating the averaged model using received models from customers. By the end of the crowdsourcing task, one of the miners, who is selected as the temporary leader, uploads the model to the blockchain. To protect customers\u2019 privacy and improve the test accuracy, we enforce differential privacy (DP) on the extracted features and propose a new normalization technique. We experimentally demonstrate that our normalization technique outperforms batch normalization when features are under DP protection. In addition, to attract more customers to participate in the crowdsourcing FL task, we design an incentive mechanism to award participants.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Industrial IoT, smart grid & edge intelligence",
+  "openalex_id": "W3051272477"
+ },
+ {
+  "title": "Federated Learning Meets Blockchain in Edge Computing: Opportunities and Challenges",
+  "authors": [
+   "Dinh C. Nguyen",
+   "Ming Ding",
+   "Quoc-Viet Pham",
+   "P. Pathirana",
+   "Long-Bao Le",
+   "Aruna Seneviratne",
+   "Jun Li",
+   "D. Niyato",
+   "H. V. Poor"
+  ],
+  "year": 2021,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2021.3072611",
+  "url": "https://doi.org/10.1109/jiot.2021.3072611",
+  "pdf_url": "https://arxiv.org/pdf/2104.01776",
+  "abstract": "Mobile-edge computing (MEC) has been envisioned as a promising paradigm to handle the massive volume of data generated from ubiquitous mobile devices for enabling intelligent services with the help of artificial intelligence (AI). Traditionally, AI techniques often require centralized data collection and training in a single entity, e.g., an MEC server, which is now becoming a weak point due to data privacy concerns and high overhead of raw data communications. In this context, federated learning (FL) has been proposed to provide collaborative data training solutions, by coordinating multiple mobile devices to train a shared AI model without directly exposing their underlying data, which enjoys considerable privacy enhancement. To improve the security and scalability of FL implementation, blockchain as a ledger technology is attractive for realizing decentralized FL training without the need for any central server. Particularly, the integration of FL and blockchain leads to a new paradigm, called FLchain, which potentially transforms intelligent MEC networks into decentralized, secure, and privacy-enhancing systems. This article presents an overview of the fundamental concepts and explores the opportunities of FLchain in MEC networks. We identify several main issues in FLchain design, including communication cost, resource allocation, incentive mechanism, security and privacy protection. The key solutions and the lessons learned along with the outlooks are also discussed. Then, we investigate the applications of FLchain in popular MEC domains, such as edge data sharing, edge content caching and edge crowdsensing. Finally, important research challenges and future directions are also highlighted.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Industrial IoT, smart grid & edge intelligence",
+  "openalex_id": "W3144496954"
+ },
+ {
+  "title": "Blockchain and Federated Learning in P2P Energy Trading: Privacy Protection and Prosumer Incentives",
+  "authors": [
+   "Zi-Ming Liu",
+   "Bo-Nan Huang",
+   "Yu-Shuai Li",
+   "Cheng Zhang",
+   "Tian-Yi Li",
+   "Qiu-Ye Sun",
+   "David Wenzhong Gao"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "doi": "https://doi.org/10.1109/tii.2025.3598484",
+  "url": "https://doi.org/10.1109/tii.2025.3598484",
+  "pdf_url": "https://vbn.aau.dk/da/publications/bae0d4e8-c4c5-4846-a059-8a01312d1f2f",
+  "abstract": "Although the P2P power transactions using the multiagent deep deterministic policy gradient (MADDPG) algorithm has been extensively studied, there are still challenges in privacy protection and training incentives. Furthermore, the stability and efficiency of the strategy decreases when dealing with nonindependent identically distribution (Non-IID) data from heterogeneous prosumers. Therefore, this article proposes a blockchain-enabled asynchronous federated learning-MADDPG (BEAFL-MADDPG) framework designed to enhance the training efficiency of heterogeneous prosumers while safeguarding data privacy. The framework includes a novel P2P energy trading model that facilitates energy trading amidst incomplete information while ensuring privacy assurances. In addition, a BEAFL-MADDPG algorithm is proposed, which accelerates training processes and enables parallel computation among agents. This algorithm enhances the efficiency of algorithm and empowers the training of diverse prosumers. Furthermore, a blockchain-enabled training mechanism and prosumer incentive scheme are proposed that not only encourage prosumer engagement in training but also ensure traceable transactions without the need for trust among participants. These mechanisms promote transparency and integrity, fostering a collaborative and secure environment for energy trading. Simulation results demonstrate that the framework achieves peak load reduction through optimized P2P trading, maintains computation efficiency across discount rates, and ensures secure transactions via blockchain-based incentives. These practical benefits support scalable and sustainable community microgrid operations.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Industrial IoT, smart grid & edge intelligence",
+  "openalex_id": "W4414008068"
+ },
+ {
+  "title": "Adapting security and decentralized knowledge enhancement in federated learning using blockchain technology: literature review",
+  "authors": [
+   "Menna Mamdouh Orabi",
+   "O. Emam",
+   "Hanan Fahmy"
+  ],
+  "year": 2025,
+  "venue": "Journal Of Big Data",
+  "doi": "https://doi.org/10.1186/s40537-025-01099-5",
+  "url": "https://doi.org/10.1186/s40537-025-01099-5",
+  "pdf_url": "https://doi.org/10.1186/s40537-025-01099-5",
+  "abstract": "Federated Learning (FL) is a promising form of distributed machine learning that preserves privacy by training models locally without sharing raw data. While FL ensures data privacy through collaborative learning, it faces several critical challenges. These include vulnerabilities to reverse engineering, risks to model architecture privacy, susceptibility to model poisoning attacks, threats to data integrity, and the high costs associated with communication and connectivity. This paper presents a comprehensive review of FL, categorizing data partitioning formats into horizontal federated learning, vertical federated learning, and federated transfer learning. Furthermore, it explores the integration of FL with blockchain, leveraging blockchain\u2019s decentralized nature to enhance FL\u2019s security, reliability, and performance. The study reviews existing FL models, identifying key challenges such as privacy risks, communication overhead, model poisoning vulnerabilities, and ethical dilemmas. It evaluates privacy-preserving mechanisms and security strategies in FL, particularly those enabled by blockchain, such as cryptographic methods, decentralized consensus protocols, and tamper-proof data logging. Additionally, the research analyzes regulatory and ethical considerations for adopting blockchain-based FL solutions. Key findings highlight the effectiveness of blockchain in addressing FL challenges, particularly in mitigating model poisoning, ensuring data integrity, and reducing communication costs. The paper concludes with future directions for integrating blockchain and FL, emphasizing areas such as interoperability, lightweight consensus mechanisms, and regulatory compliance.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Industrial IoT, smart grid & edge intelligence",
+  "openalex_id": "W4408220446"
+ },
+ {
+  "title": "Hybrid Blockchain-Based Resource Trading System for Federated Learning in Edge Computing",
+  "authors": [
+   "Sizheng Fan",
+   "Hongbo Zhang",
+   "Yuchen Zeng",
+   "Wei Cai"
+  ],
+  "year": 2020,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2020.3028101",
+  "url": "https://doi.org/10.1109/jiot.2020.3028101",
+  "pdf_url": null,
+  "abstract": "By training a machine learning algorithm across multiple decentralized edge nodes, federated learning (FL) ensures the privacy of the data generated by the massive Internet-of-Things (IoT) devices. To economically encourage the participation of heterogeneous edge nodes, a transparent and decentralized trading platform is needed to establish a fair market among distinct edge companies. In this article, we propose a hybrid blockchain-based resource trading system that combines the advantages of both public and consortium blockchains. We design and implement a smart contract to facilitate an automatic, autonomous, and auditable rational reverse auction mechanism among edge nodes. Moreover, we leverage the payment channel technique to enable credible, fast, low-cost, and high-frequency payment transactions between requesters and edge nodes. Simulation results show that the proposed reverse auction mechanism can achieve the properties, including budget feasibility, truthfulness, and computational efficiency.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Incentive mechanisms & contribution evaluation",
+  "openalex_id": "W3128475867"
+ },
+ {
+  "title": "Incentive Mechanism Design for Joint Resource Allocation in Blockchain-Based Federated Learning",
+  "authors": [
+   "Zhilin Wang",
+   "Qin Hu",
+   "Rui-Nian Li",
+   "Minghui Xu",
+   "Zehui Xiong"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Parallel and Distributed Systems",
+  "doi": "https://doi.org/10.1109/tpds.2023.3253604",
+  "url": "https://doi.org/10.1109/tpds.2023.3253604",
+  "pdf_url": "https://arxiv.org/pdf/2202.10938",
+  "abstract": "Blockchain-based federated learning (BCFL) has recently gained tremendous attention because of its advantages, such as decentralization and privacy protection of raw data. However, there has been few studies focusing on the allocation of resources for the participated devices (i.e., clients) in the BCFL system. Especially, in the BCFL framework where the FL clients are also the blockchain miners, clients have to train the local models, broadcast the trained model updates to the blockchain network, and then perform mining to generate new blocks. Since each client has a limited amount of computing resources, the problem of allocating computing resources to training and mining needs to be carefully addressed. In this paper, we design an incentive mechanism to help the model owner (MO) (i.e., the BCFL task publisher) assign each client appropriate rewards for training and mining, and then the client will determine the amount of computing power to allocate for each subtask based on these rewards using the two-stage Stackelberg game. After analyzing the utilities of the MO and clients, we transform the game model into two optimization problems, which are sequentially solved to derive the optimal strategies for both the MO and clients. Further, considering the fact that local training related information of each client may not be known by others, we extend the game model with analytical solutions to the incomplete information scenario. Extensive experimental results demonstrate the validity of our proposed schemes.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Incentive mechanisms & contribution evaluation",
+  "openalex_id": "W4323519324"
+ },
+ {
+  "title": "InFEDge: A Blockchain-Based Incentive Mechanism in Hierarchical Federated Learning for End-Edge-Cloud Communications",
+  "authors": [
+   "Xiaofei Wang",
+   "Yun-Feng Zhao",
+   "Chao Qiu",
+   "Zhi-Cheng Liu",
+   "Jiang-Tian Nie",
+   "Victor C. M. Leung"
+  ],
+  "year": 2022,
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "doi": "https://doi.org/10.1109/jsac.2022.3213323",
+  "url": "https://doi.org/10.1109/jsac.2022.3213323",
+  "pdf_url": null,
+  "abstract": "Advances in communications and networking technologies are driving the computing paradigm toward the end-edge-cloud collaborative architecture to leverage ubiquitous data and resources. Opposite to centralized intelligence, Hierarchical Federated Learning (HFL) relieves overwhelmed communication overhead and enjoys the advantages of high bandwidth as well as abundant computing resources while retaining privacy-preserving benefits of Federated Learning (FL). It is difficult to balance system overhead and model performance in the HFL framework, while it could be solved by introducing an incentive mechanism. Although the incentive mechanism can alleviate the above anxiety by compensating relevant participants, some limitations (multi-dimensional properties, incomplete information and unreliable participants) will significantly degrade the performance and efficiency of the designed mechanism. To address the challenges caused by the above limitations, we propose InFEDge, a blockchain-based incentive mechanism in the HFL. The InFEDge considers 1) multi-dimensional individual properties to model system participants and proves the uniqueness of Nash equilibrium with the closed-form solution. Meanwhile, 2) we transform the problem under incomplete information into a contract game where we obtain the optimal solution. Moreover, 3) we also leverage the blockchain to provide economic incentives, prevent unreliable participants\u2019 disturbance and further ensure data privacy by implementing the mechanism in the smart contract to offer a credible, faster, and transparent resource trading system. Experimental evaluations on a proof-of-concept testbed along with real traces demonstrate the superiority of our mechanism. Further, our method solves a real-world user allocation problem for future communications and networking.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Incentive mechanisms & contribution evaluation",
+  "openalex_id": "W4310055702"
+ },
+ {
+  "title": "A Model Value Transfer Incentive Mechanism for Federated Learning With Smart Contracts in AIoT",
+  "authors": [
+   "Gang Xu",
+   "Dezheng Kong",
+   "Kejia Zhang",
+   "Shi-Yuan Xu",
+   "Yibo Cao",
+   "Yan-Hui Mao",
+   "Jianyong Duan",
+   "Jiawen Kang",
+   "Xiubo Chen"
+  ],
+  "year": 2024,
+  "venue": "IEEE Internet of Things Journal",
+  "doi": "https://doi.org/10.1109/jiot.2024.3468443",
+  "url": "https://doi.org/10.1109/jiot.2024.3468443",
+  "pdf_url": null,
+  "abstract": "Introduced by Google in 2016, federated learning (FL) is a distributed machine learning framework to ensure data privacy amid the surge in big data. FL enables secure data sharing without accessing local data. Despite its advantages, it faces challenges due to the limited participation of the data owner. To address this, this article proposes the model value transfer incentive (MVTI) to enhance FL incentives for Artificial Intelligence of Things (AIoT). MVTI allows active participation of data requesters in FL training, addressing limited data owner engagement, and facilitating personalized model construction. The integrated model bail and contribution assessment mechanism ensures fair benefit redistribution. Using smart contracts (SCs) and interplanetary file system (IPFS) enhances security and reliability, ensuring transparent and tamper-resistant execution for secure transactions and data integrity. Our experiments highlight MVTI\u2019s superiority in addressing FL incentive challenges for AIoT compared to state-of-the-art baselines on real-world datasets. We also demonstrate the compatibility of multiple gradient protections with incentive mechanisms, especially with gradient compression. The proposed SC-MVTI scheme is resilient and demonstrates the potential to significantly improve the overall efficacy of the FL system within incentive frameworks.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Incentive mechanisms & contribution evaluation",
+  "openalex_id": "W4402891976"
+ },
+ {
+  "title": "Game-Theoretic Incentive Mechanism for Blockchain-Based Federated Learning",
+  "authors": [
+   "Wenzheng Tang",
+   "Er-Wu Liu",
+   "Wei Ni",
+   "Xin-Yu Qu",
+   "Bu-Tian Huang",
+   "Kezhi Li",
+   "D. Niyato",
+   "Abbas Jamalipour"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "doi": "https://doi.org/10.1109/tmc.2025.3567355",
+  "url": "https://doi.org/10.1109/tmc.2025.3567355",
+  "pdf_url": null,
+  "abstract": "Blockchain-based federated learning (BFL) has gained attention for its potential to establish decentralized trust. While existing research primarily focuses on personalized frameworks for various applications, essential aspects including incentive mechanisms\u2014critical for ensuring stable system operation\u2014remain under-explored. To bridge this gap, we propose a game-theoretic incentive mechanism designed to foster active participation in BFL tasks. Specifically, we model a BFL system comprising a model owner (MO), i.e., task publisher, multiple miners, and training terminals, framing their interactions through two-tier Stackelberg games. In the first-tier game, the MO designs reward strategies to incentivize training terminals to contribute more data, enhancing model accuracy. The second-tier game introduces a multi-leader multi-follower Stackelberg game, enabling miners to set model packaging prices based on competitors\u2019 strategies and anticipated user behavior. By deriving the Stackelberg equilibrium, we identify optimal strategies for all participants, leading to an incentive mechanism balancing individual interests with overall performance. Compared to its benchmarks, our incentive mechanism offers 5.8% and 53.4% higher utilities in the two games compared to its alternatives, accelerating convergence and improving accuracy.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Incentive mechanisms & contribution evaluation",
+  "openalex_id": "W4410114788"
+ },
+ {
+  "title": "Blockchain Empowered Asynchronous Federated Learning for Secure Data Sharing in Internet of Vehicles",
+  "authors": [
+   "Yun-Long Lu",
+   "Xiaohong Huang",
+   "Kecheng Zhang",
+   "S. Maharjan",
+   "Yan Zhang"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Vehicular Technology",
+  "doi": "https://doi.org/10.1109/tvt.2020.2973651",
+  "url": "https://doi.org/10.1109/tvt.2020.2973651",
+  "pdf_url": null,
+  "abstract": "In Internet of Vehicles (IoV), data sharing among vehicles for collaborative analysis can improve the driving experience and service quality. However, the bandwidth, security and privacy issues hinder data providers from participating in the data sharing process. In addition, due to the intermittent and unreliable communications in IoV, the reliability and efficiency of data sharing need to be further enhanced. In this paper, we propose a new architecture based on federated learning to relieve transmission load and address privacy concerns of providers. To enhance the security and reliability of model parameters, we develop a hybrid blockchain architecture which consists of the permissioned blockchain and the local Directed Acyclic Graph (DAG). Moreover, we propose an asynchronous federated learning scheme by adopting Deep Reinforcement Learning (DRL) for node selection to improve the efficiency. The reliability of shared data is also guaranteed by integrating learned models into blockchain and executing a two-stage verification. Numerical results show that the proposed data sharing scheme provides both higher learning accuracy and faster convergence.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Vehicular, UAV & 6G networks",
+  "openalex_id": "W3006655855"
+ },
+ {
+  "title": "Federated Learning With Blockchain for Autonomous Vehicles: Analysis and Design Challenges",
+  "authors": [
+   "Shiva Raj Pokhrel",
+   "Jin-Ho Choi"
+  ],
+  "year": 2020,
+  "venue": "IEEE Transactions on Communications",
+  "doi": "https://doi.org/10.1109/tcomm.2020.2990686",
+  "url": "https://doi.org/10.1109/tcomm.2020.2990686",
+  "pdf_url": "https://figshare.com/articles/journal_contribution/Federated_Learning_With_Blockchain_for_Autonomous_Vehicles_Analysis_and_Design_Challenges/20693743",
+  "abstract": "We propose an autonomous blockchain-based federated learning (BFL) design for privacy-aware and efficient vehicular communication networking, where local on-vehicle machine learning (oVML) model updates are exchanged and verified in a distributed fashion. BFL enables oVML without any centralized training data or coordination by utilizing the consensus mechanism of the blockchain. Relying on a renewal reward approach, we develop a mathematical framework that features the controllable network and BFL parameters (e.g., the retransmission limit, block size, block arrival rate, and the frame sizes) so as to capture their impact on the system-level performance. More importantly, our rigorous analysis of oVML system dynamics quantifies the end-to-end delay with BFL, which provides important insights into deriving optimal block arrival rate by considering communication and consensus delays. We present a variety of numerical and simulation results highlighting various non-trivial findings and insights for adaptive BFL design. In particular, based on analytical results, we minimize the system delay by exploiting the channel dynamics and demonstrate that the proposed idea of tuning the block arrival rate is provably online and capable of driving the system dynamics to the desired operating point. It also identifies the improved dependency on other blockchain parameters for a given set of channel conditions, retransmission limits, and frame sizes.1 However, a number of challenges (gaps in knowledge) need to be resolved in order to realise these changes. In particular, we identify key bottleneck challenges requiring further investigations, and provide potential future reserach directions.1An early version of this work has been accepted for presentation in IEEE WCNC Wksps 2020 [1].",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Vehicular, UAV & 6G networks",
+  "openalex_id": "W3019945581"
+ },
+ {
+  "title": "Blockchain-Empowered Decentralized Horizontal Federated Learning for 5G-Enabled UAVs",
+  "authors": [
+   "Chaosheng Feng",
+   "B. Liu",
+   "K. Yu",
+   "Sotirios K Goudos",
+   "Shao-Hua Wan"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "doi": "https://doi.org/10.1109/tii.2021.3116132",
+  "url": "https://doi.org/10.1109/tii.2021.3116132",
+  "pdf_url": null,
+  "abstract": "Motivated by Industry 4.0, 5G-enabled unmanned aerial vehicles (UAVs; also known as drones) are widely applied in various industries. However, the open nature of 5G networks threatens the safe sharing of data. In particular, privacy leakage can lead to serious losses for users. As a new machine learning paradigm, federated learning (FL) avoids privacy leakage by allowing data models to be shared instead of raw data. Unfortunately, the traditional FL framework is strongly dependent on a centralized aggregation server, which will cause the system to crash if the server is compromised. Unauthorized participants may launch poisoning attacks, thereby reducing the usability of models. In addition, communication barriers hinder collaboration among a large number of cross-domain devices for learning. To address the abovementioned issues, a blockchain-empowered decentralized horizontal FL framework is proposed. The authentication of cross-domain UAVs is accomplished through multisignature smart contracts. Global model updates are computed by using these smart contracts instead of a centralized server. Extensive experimental results show that the proposed scheme achieves high efficiency of cross-domain authentication and good accuracy.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Vehicular, UAV & 6G networks",
+  "openalex_id": "W3202810279"
+ },
+ {
+  "title": "Industrial blockchain threshold signatures in federated learning for unified space-air-ground-sea model training",
+  "authors": [
+   "Jing-Xue Chen",
+   "Zengxiang Wang",
+   "Gautam Srivastava",
+   "T. Alghamdi",
+   "Fazlullah Khan",
+   "Saru Kumari",
+   "Hu Xiong"
+  ],
+  "year": 2024,
+  "venue": "Journal of Industrial Information Integration",
+  "doi": "https://doi.org/10.1016/j.jii.2024.100593",
+  "url": "https://doi.org/10.1016/j.jii.2024.100593",
+  "pdf_url": "https://doi.org/10.1016/j.jii.2024.100593",
+  "abstract": null,
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Vehicular, UAV & 6G networks",
+  "openalex_id": "W4392551035"
+ },
+ {
+  "title": "Privacy-aware electric vehicle load forecasting via blockchain-based federated transfer learning",
+  "authors": [
+   "Ruochen Jin",
+   "Hong Liu"
+  ],
+  "year": 2025,
+  "venue": "Complex & Intelligent Systems",
+  "doi": "https://doi.org/10.1007/s40747-025-02002-8",
+  "url": "https://doi.org/10.1007/s40747-025-02002-8",
+  "pdf_url": "https://link.springer.com/content/pdf/10.1007/s40747-025-02002-8.pdf",
+  "abstract": "Electric vehicle (EV) load forecasting has become critical with the rapid growth of EVs and fast-charging technologies. However, privacy concerns pose challenges to traditional forecasting methods. Our work proposes a novel blockchain-based federated transfer learning framework for privacy-aware probabilistic EV load forecasting. Our approach uses secure aggregation via blockchain to prevent gradient leakage, with smart contracts aggregating masked vectors to produce a global model without exposing individual data. Our work introduces transfer learning to adapt the global model to varying charging scenarios by transferring layer-wise weights. The framework integrates machine learning, pattern recognition, and big data analytics methodologies. Experimental results with datasets of varying client numbers demonstrate that our method outperforms baselines in prediction accuracy and communication efficiency, particularly for large-scale scenarios. By combining advanced techniques in data mining, machine learning, and blockchain, this framework provides a scalable solution for privacy-preserving EV load forecasting while ensuring robust performance in dynamic environments. Our innovations include secure parameter aggregation using homomorphic encryption, blockchain-based secure aggregation, and transfer learning for model adaptability, resulting in significant improvements in privacy protection, communication overhead, and prediction accuracy.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Vehicular, UAV & 6G networks",
+  "openalex_id": "W4412097053"
+ },
+ {
+  "title": "VFChain: Enabling Verifiable and Auditable Federated Learning via Blockchain Systems",
+  "authors": [
+   "Zhe Peng",
+   "Jian-Liang Xu",
+   "Xiao-Wen Chu",
+   "Shang Gao",
+   "Yuan Yao",
+   "Rong Gu",
+   "Y. Tang"
+  ],
+  "year": 2021,
+  "venue": "IEEE Transactions on Network Science and Engineering",
+  "doi": "https://doi.org/10.1109/tnse.2021.3050781",
+  "url": "https://doi.org/10.1109/tnse.2021.3050781",
+  "pdf_url": null,
+  "abstract": "Advanced artificial intelligence techniques, such as federated learning, has been applied to broad areas, e.g., image classification, speech recognition, smart city, and healthcare. Despite intensive research on federated learning, existing schemes are vulnerable to attacks and can hardly meet the security requirements for real-world applications. The problem of designing a secure federated learning framework to ensure the correctness of training procedure has not been sufficiently studied and remains open. In this paper, we propose VFChain, a verifiable and auditable federated learning framework based on the blockchain system. First, to provide the verifiability, a committee is selected through the blockchain to collectively aggregate models and record verifiable proofs in the blockchain. Then, to provide the auditability, a novel authenticated data structure is proposed for blockchain to improve the search efficiency of verifiable proofs and support a secure rotation of committee. Finally, to further improve the search efficiency, an optimization scheme is proposed to support multiple-model learning tasks. We implement VFChain and conduct extensive experiments by utilizing the popular deep learning models over the public real-world dataset. The evaluation results demonstrate the effectiveness of our proposed VFChain system.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Verifiable, auditable & unlearnable FL",
+  "openalex_id": "W3120721446"
+ },
+ {
+  "title": "Blockchain-Based Federated Learning With SMPC Model Verification Against Poisoning Attack for Healthcare Systems",
+  "authors": [
+   "Aditya Pribadi Kalapaaking",
+   "Ibrahim Khalil",
+   "X. Yi"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Emerging Topics in Computing",
+  "doi": "https://doi.org/10.1109/tetc.2023.3268186",
+  "url": "https://doi.org/10.1109/tetc.2023.3268186",
+  "pdf_url": "https://arxiv.org/pdf/2304.13360",
+  "abstract": "Due to the rising awareness of privacy and security in machine learning applications, federated learning (FL) has received widespread attention and applied to several areas, e.g., intelligence healthcare systems, IoT-based industries, and smart cities. FL enables clients to train a global model collaboratively without accessing their local training data. However, the current FL schemes are vulnerable to adversarial attacks. Its architecture makes detecting and defending against malicious model updates difficult. In addition, most recent studies to detect FL from malicious updates while maintaining the model's privacy have not been sufficiently explored. This article proposed blockchain-based federated learning with SMPC model verification against poisoning attacks for healthcare systems. First, we check the machine learning model from the FL participants through an encrypted inference process and remove the compromised model. Once the participants\u2019 local models have been verified, the models are sent to the blockchain node to be securely aggregated. We conducted several experiments with different medical datasets to evaluate our proposed framework.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Verifiable, auditable & unlearnable FL",
+  "openalex_id": "W4366678696"
+ },
+ {
+  "title": "Federated Learning With Blockchain-Enhanced Machine Unlearning: A Trustworthy Approach",
+  "authors": [
+   "Xuhan Zuo",
+   "Ming-Hao Wang",
+   "Tian-Qing Zhu",
+   "Le-Feng Zhang",
+   "Shui Yu",
+   "Wan-Lei Zhou"
+  ],
+  "year": 2025,
+  "venue": "IEEE Transactions on Services Computing",
+  "doi": "https://doi.org/10.1109/tsc.2025.3553709",
+  "url": "https://doi.org/10.1109/tsc.2025.3553709",
+  "pdf_url": "https://arxiv.org/pdf/2405.20776",
+  "abstract": "With the growing need to comply with privacy regulations and respond to user data deletion requests, integrating machine unlearning into IoT-based federated learning has become imperative. This article introduces an innovative framework that melds blockchain with federated learning, ensuring an immutable record of unlearning requests and actions. Our approach not only bolsters the trustworthiness and integrity of the federated learning model but also adeptly addresses efficiency and security challenges typical in IoT environments. Key contributions include a certification mechanism for the unlearning process, enhancement of data security and privacy, and optimization of data management. Experimental results on MNIST and CIFAR-10 datasets demonstrate the effectiveness of our approach, achieving 0% accuracy for unlearned classes while maintaining 77.74% and 42.65% overall model accuracy for MNIST and CIFAR-10, respectively. Our time complexity analysis shows that the blockchain integration introduces only 2 seconds of overhead per epoch, highlighting the practicality of our solution for IoT applications.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Verifiable, auditable & unlearnable FL",
+  "openalex_id": "W4408792051"
+ },
+ {
+  "title": "Federated TrustChain: Blockchain-Enhanced LLM Training and Unlearning",
+  "authors": [
+   "Xuhan Zuo",
+   "Ming-Hao Wang",
+   "Tian-Qing Zhu",
+   "Le-Feng Zhang",
+   "Dayong Ye",
+   "Shui Yu",
+   "Wan-Lei Zhou"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Dependable and Secure Computing",
+  "doi": "https://doi.org/10.1109/tdsc.2026.3665277",
+  "url": "https://doi.org/10.1109/tdsc.2026.3665277",
+  "pdf_url": "https://arxiv.org/pdf/2406.04076",
+  "abstract": "The development of Large Language Models (LLMs) faces a significant challenge: the exhaustion of publicly available fresh data. This is because training an LLM requires a large demand for new data. Federated learning emerges as a promising solution, enabling collaborative model to contribute their private data to LLM global model. However, integrating federated learning with LLMs introduces new challenges, including the lack of transparency and the need for effective unlearning mechanisms. Transparency is essential to ensuring trust and fairness among participants, while accountability is crucial for deterring malicious behaviour and enabling corrective actions when necessary. To address these challenges, we propose a novel blockchain-based federated learning framework for LLMs that enhances transparency, accountability, and unlearning capabilities. Our framework leverages blockchain technology to create a tamper-proof record of each model\u2019s contributions and introduces an innovative unlearning function that seamlessly integrates with the federated learning mechanism. We investigate the impact of Low-Rank Adaptation (LoRA) hyperparameters on unlearning performance and integrate Hyperledger Fabric to ensure the security, transparency, and verifiability of the unlearning process. Through comprehensive experiments and analysis, we showcase the effectiveness of our proposed framework in achieving highly effective unlearning in LLMs trained using federated learning. Our findings highlight the feasibility of integrating blockchain technology into federated learning frameworks for LLM.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Verifiable, auditable & unlearnable FL",
+  "openalex_id": "W7129141026"
+ },
+ {
+  "title": "Security and Verifiability in Federated Learning: A Zero-Knowledge Reputation-Based Blockchain Framework",
+  "authors": [
+   "Swetha Ghanta",
+   "Ashok Kumar Pradhan",
+   "Prasanthi Boyapati",
+   "Sujit K. Biswas",
+   "Saraju P. Mohanty"
+  ],
+  "year": 2026,
+  "venue": "IEEE Transactions on Network Science and Engineering",
+  "doi": "https://doi.org/10.1109/tnse.2026.3676154",
+  "url": "https://doi.org/10.1109/tnse.2026.3676154",
+  "pdf_url": "https://openaccess.city.ac.uk/id/eprint/37172/1/paper_Ashoke_PreAccepted.pdf",
+  "abstract": "Federated Learning (FL) enables collaborative training without centralizing sensitive data but faces challenges, including client authenticity, verifiable training participation, and secure aggregation. To overcome these challenges, we propose a novel framework, Zero-Knowledge Reputation-aware Blockchain Federated Learning (ZK-RBFL), which integrates blockchain, FL, Homomorphic Encryption (HE), and zero-knowledge proofs (ZKP). In the proposed ZK-RBFL framework, initially the clients undergo lightweight token-based authentication and then generate ZKP to provide cryptographic evidence of honest local training participation and reported inference accuracy before contributing their model updates. The model updates are encrypted using the CKKS HE mechanism to prevent any potential model inversion attacks. These encrypted model updates are stored on IPFS, with their corresponding CIDs recorded on the blockchain to ensure immutability. Further, ZK-RBFL enables mutual client verification of ZKPs to reduce server bottlenecks and enhance accountability. To ensure fairness and robustness in a distributed environment, we introduce a democratic blockchain consensus mechanism named Proof of Reputation-Weighted Voting (PoRWV) for block acceptance. Once consensus is reached, the encrypted model updates are aggregated using reputation-weighted averaging. We demonstrate the effectiveness of ZK-RBFL for brain tumor classification using a ZKP-compatible LeNet model for proof generation. Despite model simplicity, the global model achieves 94.22% accuracy. In addition, experiments with malicious clients and formal Scyther security analysis demonstrate that ZK-RBFL ensures both security and performance.",
+  "topic": "blockchain-fl",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Verifiable, auditable & unlearnable FL",
+  "openalex_id": "W7139926578"
+ }
+]

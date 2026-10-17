@@ -1,0 +1,1129 @@
+[
+ {
+  "title": "The influence of carbon emission reduction instruments on blockchain technology adoption in recycling batteries of the new energy vehicles",
+  "authors": [
+   "Zhangwei Feng",
+   "Na Luo",
+   "Timofey Shalpegin",
+   "Huan Cui"
+  ],
+  "year": 2023,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2023.2175173",
+  "url": "https://doi.org/10.1080/00207543.2023.2175173",
+  "pdf_url": null,
+  "abstract": "The new energy vehicle (NEV) is emerging as an important alternative in the automobile industry in its potential to alleviate environmental pollution and contribute to carbon neutrality. The rapid growth of NEVs has been reflected in the scaling up of electric vehicle battery production. The dramatic increase of retired batteries, however, exposes the technological limitations in current recycling operations, which will ultimately impede the sustainable development of the NEV supply chain. Blockchain technology (BT) adoption provides a solution by contributing to the construction of an efficient recycling network. Our research investigates the influence of carbon reduction instruments on the uptake of BT. The key findings are as follows. Under a carbon tax system, (1) carbon emission reduction encourages the battery supplier to adopt BT; (2) BT adoption increases the profits of NEV supply chain stakeholders. Under carbon cap-and-trade regulations, (1) the unit outsourcing fee and the performance of the BT impact the investment decision of the manufacturer; (2) the profit of the third-party enterprise is increased by introducing the BT. Under both policies, improving the efficiency of BT helps to upgrade the traceability level and contribute to carbon neutrality in the NEV supply chain.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Game-theoretic/operations models of blockchain adoption under carbon policy",
+  "openalex_id": "W4323049982"
+ },
+ {
+  "title": "Implications of information sharing on blockchain adoption in reducing carbon emissions: A mean\u2013variance analysis",
+  "authors": [
+   "Zhiwen Li",
+   "Xianhao Xu",
+   "Qing-Guo Bai",
+   "Cheng Chen",
+   "Hongwei Wang",
+   "Peng Xia"
+  ],
+  "year": 2023,
+  "venue": "Transportation Research Part E Logistics and Transportation Review",
+  "doi": "https://doi.org/10.1016/j.tre.2023.103254",
+  "url": "https://doi.org/10.1016/j.tre.2023.103254",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Game-theoretic/operations models of blockchain adoption under carbon policy",
+  "openalex_id": "W4386187758"
+ },
+ {
+  "title": "Using blockchain or not? A focal firm's blockchain strategy in the context of carbon emission reduction technology innovation",
+  "authors": [
+   "Jian-Hua Zhu",
+   "Taiwen Feng",
+   "Ying Lu",
+   "Wenbo Jiang"
+  ],
+  "year": 2024,
+  "venue": "Business Strategy and the Environment",
+  "doi": "https://doi.org/10.1002/bse.3664",
+  "url": "https://doi.org/10.1002/bse.3664",
+  "pdf_url": null,
+  "abstract": "Recently, blockchain has been increasingly applied to low\u2010carbon supply chains, enabling consumers to track production process of low\u2010carbon products, thereby improving brand awareness and expanding the market. However, do the operation and construction costs of blockchain come at the expense of squeezing resources originally allocated for research and development (R&D) of carbon emission reduction (CER) or reducing firms profits? Given the varying capacities of different types of firms to bear the costs of blockchain in the process of R&D of CER, this paper considers two categories of firms, superior brand firms and inferior brand firms, and studies the impact of blockchain usage on CER and profits. Research shows that the usage of blockchain is not necessarily beneficial to CER and profits enhancement. Consumers' trust and low\u2010carbon preference, brand awareness, blockchain operation and construction costs, and R&D difficulty of CER are key factors. Superior brand firms can improve CER level and profits through blockchain when R&D difficulty is low and consumers' trust is high or when R&D difficulty is high but consumers' low\u2010carbon preferences and brand awareness are high. Inferior brand firms can improve CER level and profits through blockchain when R&D difficulty is low and consumers' trust is high or when R&D difficulty is high but brand awareness is low. This study provides strategic insights for brand firms considering the usage of blockchain in their CER initiatives, highlighting the importance of aligning blockchain integration with firm\u2010specific characteristics and market conditions to achieve both environmental and profit objectives.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Game-theoretic/operations models of blockchain adoption under carbon policy",
+  "openalex_id": "W4390728260"
+ },
+ {
+  "title": "Should blockchain be used to eliminate greenwashing for green and live-streaming platform operations under carbon trading systems?",
+  "authors": [
+   "Xiaoping Xu",
+   "Xinru Chen",
+   "T. C. Edwin Cheng",
+   "Tsan-Ming Choi",
+   "Yuanyuan Yang"
+  ],
+  "year": 2025,
+  "venue": "European Journal of Operational Research",
+  "doi": "https://doi.org/10.1016/j.ejor.2025.02.017",
+  "url": "https://doi.org/10.1016/j.ejor.2025.02.017",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Game-theoretic/operations models of blockchain adoption under carbon policy",
+  "openalex_id": "W4407597411"
+ },
+ {
+  "title": "Differential game theoretic analysis of the blockchain technology investment and carbon reduction strategy in digital supply chain with government intervention",
+  "authors": [
+   "Yuwei Kang",
+   "Peiwu Dong",
+   "Yanbing Ju",
+   "Tianyu Zhang"
+  ],
+  "year": 2024,
+  "venue": "Computers & Industrial Engineering",
+  "doi": "https://doi.org/10.1016/j.cie.2024.109953",
+  "url": "https://doi.org/10.1016/j.cie.2024.109953",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Game-theoretic/operations models of blockchain adoption under carbon policy",
+  "openalex_id": "W4391579163"
+ },
+ {
+  "title": "A blockchain based peer-to-peer trading framework integrating energy and carbon markets",
+  "authors": [
+   "Weiqi Hua",
+   "Jing Jiang",
+   "Hong-Jian Sun",
+   "Jian-Zhong Wu"
+  ],
+  "year": 2020,
+  "venue": "Applied Energy",
+  "doi": "https://doi.org/10.1016/j.apenergy.2020.115539",
+  "url": "https://doi.org/10.1016/j.apenergy.2020.115539",
+  "pdf_url": "http://dro.dur.ac.uk/31662/",
+  "abstract": "Abstract Prosumers are active participants in future energy systems who produce and consume energy. However, the emerging role of prosumers brings challenges of tracing carbon emissions behaviours and formulating pricing scheme targeting on individual prosumption behaviours. This paper proposes a novel blockchain-based peer-to-peer trading framework to trade energy and carbon allowance. The bidding/selling prices of prosumers can directly incentivise the reshaping of prosumption behaviours to achieve regional energy balance and carbon emissions mitigation. A decentralised low carbon incentive mechanism is formulated targeting on specific prosumption behaviours. Case studies using the modified IEEE 37-bus test feeder show that the proposed trading framework can export 0.99 kWh of daily energy and save 1465.90\u00a0g daily carbon emissions, outperforming the existing centralised trading and aggregator-based trading.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "P2P and integrated electricity-carbon trading (microgrids, EVs, power systems)",
+  "openalex_id": "W3087526782"
+ },
+ {
+  "title": "A blockchain-centric P2P trading framework incorporating carbon and energy trades",
+  "authors": [
+   "A. Boumaiza"
+  ],
+  "year": 2024,
+  "venue": "Energy Strategy Reviews",
+  "doi": "https://doi.org/10.1016/j.esr.2024.101466",
+  "url": "https://doi.org/10.1016/j.esr.2024.101466",
+  "pdf_url": "https://doi.org/10.1016/j.esr.2024.101466",
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "P2P and integrated electricity-carbon trading (microgrids, EVs, power systems)",
+  "openalex_id": "W4400143871"
+ },
+ {
+  "title": "Blockchain-Enabled Carbon and Energy Trading for Network-Constrained Coal Mines With Uncertainties",
+  "authors": [
+   "Hong-Xu Huang",
+   "Zheng-Mao Li",
+   "L. P. M. I. Sampath",
+   "Jia-Wei Yang",
+   "H. D. Nguyen",
+   "H. B. Gooi",
+   "Rui Liang",
+   "Dun-Wei Gong"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Sustainable Energy",
+  "doi": "https://doi.org/10.1109/tste.2023.3240203",
+  "url": "https://doi.org/10.1109/tste.2023.3240203",
+  "pdf_url": "https://aaltodoc.aalto.fi/handle/123456789/124910",
+  "abstract": "In this paper, a blockchain-enabled distributed market framework is proposed for the bi-level carbon and energy trading between coal mine integrated energy systems (CMIESs) and a virtual power plant (VPP) with network constraints. To maximize the profits of these two entities and describe their complicated interactions in the market, the bi-level trading problem is formulated as a Stackelberg game considering integrating the energy market and the \u201ccap-and-trade\u201d carbon market mechanism. Meanwhile, in the CMIES, energy recovery units and belt conveyors can be flexibly scheduled and the pumped hydroelectric storage in the VPP is scheduled for energy management. To tackle uncertainties from PV outputs, the joint trading, and the energy management is solved by the distributionally robust optimization (DRO) method. In addition, for participants' privacy, the alternating direction method of multipliers (ADMM) - based DRO algorithm is applied to solve the trading problem in a distributed framework. Further, the Proof-of-Authority (PoA) blockchain is deployed to develop a safe and anonymous market platform. Finally, case studies along with numerous comparison cases are conducted to verify the effectiveness of the proposed method. Simulation results indicate that the proposed method can effectively reduce the system operation cost and regional carbon emission, reduce the conservativeness and protect the privacy of each participant.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "P2P and integrated electricity-carbon trading (microgrids, EVs, power systems)",
+  "openalex_id": "W4319990550"
+ },
+ {
+  "title": "Electricity\u2013carbon coupling markets: mechanisms, models and digital enablers for low-carbon power system",
+  "authors": [
+   "Pengcheng Du",
+   "Tianhao Liu",
+   "Dongdong Zhang",
+   "Yu Du",
+   "Fannie Kong",
+   "Chao Huang",
+   "Hai-Sen Zhao",
+   "Huih-Wang Goh"
+  ],
+  "year": 2026,
+  "venue": "Renewable and Sustainable Energy Reviews",
+  "doi": "https://doi.org/10.1016/j.rser.2025.116691",
+  "url": "https://doi.org/10.1016/j.rser.2025.116691",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "P2P and integrated electricity-carbon trading (microgrids, EVs, power systems)",
+  "openalex_id": "W7118066193"
+ },
+ {
+  "title": "P2P trading mode for real-time coupled electricity and carbon markets based on a new indicator green energy",
+  "authors": [
+   "Long-Ze Wang",
+   "Yan Zhang",
+   "Zhe-Han Li",
+   "Qiyu Huang",
+   "Yuxin Xiao",
+   "Xinxin Yi",
+   "Y. Ma",
+   "Mei-Cheng Li"
+  ],
+  "year": 2023,
+  "venue": "Energy",
+  "doi": "https://doi.org/10.1016/j.energy.2023.129179",
+  "url": "https://doi.org/10.1016/j.energy.2023.129179",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "P2P and integrated electricity-carbon trading (microgrids, EVs, power systems)",
+  "openalex_id": "W4386948182"
+ },
+ {
+  "title": "Blockchain Enhanced Emission Trading Framework in Fashion Apparel Manufacturing Industry",
+  "authors": [
+   "Bai-Lu Fu",
+   "Zhan Shu",
+   "Xiaogang Liu"
+  ],
+  "year": 2018,
+  "venue": "Sustainability",
+  "doi": "https://doi.org/10.3390/su10041105",
+  "url": "https://doi.org/10.3390/su10041105",
+  "pdf_url": "https://www.mdpi.com/2071-1050/10/4/1105/pdf?version=1525347494",
+  "abstract": "Motivated by the recent blockchain technology originally built for bitcoin transactions, various industries are exploring the opportunities to redefine their existing operational systems. In this study, an innovative environmentally sustainable solution is proposed for the fashion apparel manufacturing industry (FAMI), which is energized by blockchain. Incorporating the Emission Trading Scheme (ETS), and a novel \u201cemission link\u201d system, the proposed framework exposes carbon emission to the public and establishes a feature to reduce the emissions for all key steps of clothing making. Fully compatible with Industry 4.0, blockchain provides decentralization, transparency, automation, and immutability characteristics to the proposed framework. Specifically, the blockchain supported ETS framework, the carbon emissions of clothing manufacturing life cycle, and the emission link powered procedures are introduced in detail. A case study is provided to demonstrate the carbon emission evaluation procedure. Finally, a multi-criteria evaluation is performed to demonstrate the benefits and drawbacks of the proposed system.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Compliance carbon/emission-allowance trading platforms (ETS) on blockchain",
+  "openalex_id": "W2795806946"
+ },
+ {
+  "title": "A comprehensive hierarchical blockchain system for carbon emission trading utilizing blockchain of things and smart contract",
+  "authors": [
+   "Alia Al Sadawi",
+   "B. Madani",
+   "Sara Saboor",
+   "M. Ndiaye",
+   "G. Abu-Lebdeh"
+  ],
+  "year": 2021,
+  "venue": "Technological Forecasting and Social Change",
+  "doi": "https://doi.org/10.1016/j.techfore.2021.121124",
+  "url": "https://doi.org/10.1016/j.techfore.2021.121124",
+  "pdf_url": null,
+  "abstract": "Abstract Climate change is a major issue that has disastrous implications on the environment, which, if continued, will cause severe consequences. One of the leading causes of climate change is the emissions of harmful gases, particularly CO2. In 1997, the Kyoto protocol was signed by 192 countries, creating a system that monetizes CO2 emissions with an aim to control them. Most countries signed a carbon trading scheme, but the scheme fell short of its goals due to manipulation, lack of integrity, and multiple other challenges. This work presents an improved blockchain-based approach to achieve the objective of monitoring the reduction of carbon emissions. Blockchain's distinct features such as security, immutability, transparency, traceability, and trust, make it a robust and reliable solution for the carbon trading market. Previous Blockchain-based proposals were not comprehensive, practical, applicable, or efficient enough to form an effective solution. This research addresses the current gaps and proposes a comprehensive three-stage hierarchical blockchain framework that employs smart contracts in Blockchain of Things (BoT) to ensure integrity in the system and reach fair trade status that favors the environment over companies' cost reductions and profit-making. The result is an optimized carbon emission trading framework, fully transparent with automated trading and control mechanisms.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Compliance carbon/emission-allowance trading platforms (ETS) on blockchain",
+  "openalex_id": "W3197684247"
+ },
+ {
+  "title": "Smart contract design and process optimization of carbon trading based on blockchain: The case of China's electric power sector",
+  "authors": [
+   "Tian Y Zhang",
+   "Tian-tian Feng",
+   "Ming-Li Cui"
+  ],
+  "year": 2023,
+  "venue": "Journal of Cleaner Production",
+  "doi": "https://doi.org/10.1016/j.jclepro.2023.136509",
+  "url": "https://doi.org/10.1016/j.jclepro.2023.136509",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Compliance carbon/emission-allowance trading platforms (ETS) on blockchain",
+  "openalex_id": "W4321438921"
+ },
+ {
+  "title": "Leveraging blockchain technology to enhance transparency and efficiency in carbon trading markets",
+  "authors": [
+   "A. Boumaiza",
+   "Kenza Maher"
+  ],
+  "year": 2024,
+  "venue": "International Journal of Electrical Power & Energy Systems",
+  "doi": "https://doi.org/10.1016/j.ijepes.2024.110225",
+  "url": "https://doi.org/10.1016/j.ijepes.2024.110225",
+  "pdf_url": "https://doi.org/10.1016/j.ijepes.2024.110225",
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Compliance carbon/emission-allowance trading platforms (ETS) on blockchain",
+  "openalex_id": "W4402832636"
+ },
+ {
+  "title": "Blockchain-embedded carbon emission allowance pledge financing: Resolving maturity mismatch with machine trust and collateral flexibility",
+  "authors": [
+   "Ting Yang",
+   "Chaoqun Ma",
+   "Xianhua Mi",
+   "Hui Li",
+   "Dong-Qing Chen"
+  ],
+  "year": 2026,
+  "venue": "International Journal of Production Economics",
+  "doi": "https://doi.org/10.1016/j.ijpe.2026.109947",
+  "url": "https://doi.org/10.1016/j.ijpe.2026.109947",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Compliance carbon/emission-allowance trading platforms (ETS) on blockchain",
+  "openalex_id": "W7125980963"
+ },
+ {
+  "title": "Applying blockchain technology for building energy performance measurement, reporting, and verification (MRV) and the carbon credit market: A review of the literature",
+  "authors": [
+   "Jung-Woong Woo",
+   "Ridah Fatima",
+   "C. Kibert",
+   "R. Newman",
+   "Yifeng Tian",
+   "R. Srinivasan"
+  ],
+  "year": 2021,
+  "venue": "Building and Environment",
+  "doi": "https://doi.org/10.1016/j.buildenv.2021.108199",
+  "url": "https://doi.org/10.1016/j.buildenv.2021.108199",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Carbon accounting, MRV and footprint verification (buildings, construction, corporate)",
+  "openalex_id": "W3189078775"
+ },
+ {
+  "title": "Greening inventories: Blockchain to improve the GHG Protocol Program in scope 2",
+  "authors": [
+   "E. Diniz",
+   "Jo\u00e3o Akio Ribeiro Yamaguchi",
+   "Teresa Rachael dos Santos",
+   "Andr\u00e9 Pereira de Carvalho",
+   "Andr\u00e9 Salem Al\u00e9go",
+   "M. Carvalho"
+  ],
+  "year": 2021,
+  "venue": "Journal of Cleaner Production",
+  "doi": "https://doi.org/10.1016/j.jclepro.2021.125900",
+  "url": "https://doi.org/10.1016/j.jclepro.2021.125900",
+  "pdf_url": null,
+  "abstract": "Abstract The complexity of the supply chain, with a multiplicity of suppliers and organizations imposes challenges to its traceability, affecting the possibility of making it more sustainable. The declaration of Greenhouse Gas (GHG) by companies has been a response to pressures from stakeholders and regulations towards a sustainable supply chain management (SSCM). However, there are still some setbacks. The verification process of the inventories is a time-consuming task and the utilization of traditional renewable energy certificates can cause distortions in the perception of those who are consuming renewable energy but are not buying certificates. A blockchain-based application could address those problems by tracking transparent records of product history. Therefore, we propose a blockchain-based artifact in the form of a level 1 architecture diagram to improve the Brazil GHG Protocol Program inventory process on scope 2, which includes indirect carbon emissions from consumption of purchased electricity, heat or steam; main supply chain components. Using the Design Science Research (DSR) approach, we combine knowledge from business participants and environmental experts to understand the Program problems, propose and evaluate the artifact, and analyze its contributions. We find out that not all actors may want greater transparency in the supply chain and that traditional certificate issuers are expected to resist, while a new generation of blockchain-based certificates challenges the more traditional competitors. Additionally, the economic benefits observed in implementing blockchain points out that the organization and resistance of the actors, therefore, could be as important as costs in the implementation of new technologies in supply chains. There are two main contributions from this study. First, it introduces the discussion on blockchain adoption in the GHG Protocol Program. Second, it uses DSR as an instrument to both articulate a solution around a theoretical artifact and make its potential contribution understandable for actors not familiar with blockchain technologies. We propose that future studies could: (i) produce a proof-of-concept or a pilot implementation of this artifact; (ii) include other actors from the energy and trading certificates chain on the artifact, such as energy producers, regulators and the Brazilian Electricity Trading Chamber (CCEE); (iii) reproduce the same proposition focusing on GHG Protocol\u2019s scope 3.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Carbon accounting, MRV and footprint verification (buildings, construction, corporate)",
+  "openalex_id": "W3119962098"
+ },
+ {
+  "title": "Supporting building life cycle carbon monitoring, reporting and verification: A traceable and immutable blockchain-empowered information management system and application in Hong Kong",
+  "authors": [
+   "Ye Luo",
+   "Jie-Ling Shen",
+   "Hanwei Liang",
+   "Lu Sun",
+   "Liang Dong"
+  ],
+  "year": 2024,
+  "venue": "Resources Conservation and Recycling",
+  "doi": "https://doi.org/10.1016/j.resconrec.2024.107736",
+  "url": "https://doi.org/10.1016/j.resconrec.2024.107736",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Carbon accounting, MRV and footprint verification (buildings, construction, corporate)",
+  "openalex_id": "W4399164437"
+ },
+ {
+  "title": "Artificial intelligence- and blockchain-enabled carbon emissions ledger system (AB-CELS) for sustainable construction processes",
+  "authors": [
+   "I. Aurangzeb",
+   "Jong Han Yoon"
+  ],
+  "year": 2025,
+  "venue": "Automation in Construction",
+  "doi": "https://doi.org/10.1016/j.autcon.2025.106286",
+  "url": "https://doi.org/10.1016/j.autcon.2025.106286",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Carbon accounting, MRV and footprint verification (buildings, construction, corporate)",
+  "openalex_id": "W4410396703"
+ },
+ {
+  "title": "Blockchain-based solution to enhance carbon footprint traceability, accounting, and offsetting in the passenger aviation industry",
+  "authors": [
+   "P. K. Patro",
+   "R. Jayaraman",
+   "A. Acquaye",
+   "K. Salah",
+   "A. Musamih"
+  ],
+  "year": 2025,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2024.2441450",
+  "url": "https://doi.org/10.1080/00207543.2024.2441450",
+  "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2024.2441450?needAccess=true",
+  "abstract": "The aviation industry's carbon emissions are forecast to rise to 22% by 2050, posing a significant challenge to the goal of achieving Net Zero Emissions by the same year. Regardless of the structural or agentic strategies implemented to reduce these emissions, ensuring effective traceability of emissions in airline operations is crucial, as it enables the development of effective mitigation measures. Existing systems fall short of effectively providing end-to-end traceability of emissions within an effective carbon accounting framework. Indirect emissions and the complexities associated with emissions tracking throughout the extended aviation sector also exacerbate carbon accounting and offsetting difficulties. In this paper, we present a blockchain-based framework to address these plausible challenges. The proposed work categorises both direct and indirect emissions under Scope 1, 2, and 3 classifications. A blockchain-based collaborative platform, also provides data transparency across all stakeholders, ensuring traceability and security in a decentralised and reliable manner. A prototype model of a blockchain-based system is therefore developed using Ethereum smart contracts. The paper presents a cost and security analysis of the system, while highlighting the challenges and opportunities for the development of sustainable aviation operations. The smart contract is made publicly available on Github for verification.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Carbon accounting, MRV and footprint verification (buildings, construction, corporate)",
+  "openalex_id": "W4406047759"
+ },
+ {
+  "title": "Blockchain solutions for carbon markets are nearing maturity",
+  "authors": [
+   "Adam Sipthorpe",
+   "Sabine Brink",
+   "Tyler Van Leeuwen",
+   "I. Staffell"
+  ],
+  "year": 2022,
+  "venue": "One Earth",
+  "doi": "https://doi.org/10.1016/j.oneear.2022.06.004",
+  "url": "https://doi.org/10.1016/j.oneear.2022.06.004",
+  "pdf_url": "http://www.cell.com/article/S2590332222003256/pdf",
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Voluntary carbon markets, offsets and tokenized/nature-based credits",
+  "openalex_id": "W4284665862"
+ },
+ {
+  "title": "Trading carbon credit tokens on the blockchain",
+  "authors": [
+   "L. Swinkels"
+  ],
+  "year": 2024,
+  "venue": "International Review of Economics & Finance",
+  "doi": "https://doi.org/10.1016/j.iref.2024.01.012",
+  "url": "https://doi.org/10.1016/j.iref.2024.01.012",
+  "pdf_url": "https://doi.org/10.1016/j.iref.2024.01.012",
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Voluntary carbon markets, offsets and tokenized/nature-based credits",
+  "openalex_id": "W4391054313"
+ },
+ {
+  "title": "Unlocking the transformative potential of blockchain to enhance transparency and efficiency in voluntary carbon markets for a sustainable energy transition",
+  "authors": [
+   "C. Kan",
+   "Laurence L. Delina"
+  ],
+  "year": 2025,
+  "venue": "Energy Research & Social Science",
+  "doi": "https://doi.org/10.1016/j.erss.2025.104177",
+  "url": "https://doi.org/10.1016/j.erss.2025.104177",
+  "pdf_url": "https://doi.org/10.1016/j.erss.2025.104177",
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Voluntary carbon markets, offsets and tokenized/nature-based credits",
+  "openalex_id": "W4411186431"
+ },
+ {
+  "title": "The nexus between ReFi, carbon, fossil energy, and clean energy assets: Quantile time\u2013frequency connectedness and portfolio implications",
+  "authors": [
+   "Heng Lei",
+   "Minggao Xue",
+   "Jing Ye"
+  ],
+  "year": 2024,
+  "venue": "Energy Economics",
+  "doi": "https://doi.org/10.1016/j.eneco.2024.107456",
+  "url": "https://doi.org/10.1016/j.eneco.2024.107456",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Voluntary carbon markets, offsets and tokenized/nature-based credits",
+  "openalex_id": "W4392380957"
+ },
+ {
+  "title": "Blockchain and double auction for credible and efficient voluntary carbon market",
+  "authors": [
+   "Xin-Lai Liu",
+   "T. Bagchi",
+   "Arjun Rachana Harish",
+   "C. Sy",
+   "H. O. Gao"
+  ],
+  "year": 2026,
+  "venue": "Applied Energy",
+  "doi": "https://doi.org/10.1016/j.apenergy.2026.127719",
+  "url": "https://doi.org/10.1016/j.apenergy.2026.127719",
+  "pdf_url": "https://doi.org/10.2139/ssrn.5531640",
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Voluntary carbon markets, offsets and tokenized/nature-based credits",
+  "openalex_id": "W7138957969"
+ },
+ {
+  "title": "A blockchain-based approach for a multi-echelon sustainable supply chain",
+  "authors": [
+   "V. Manupati",
+   "T. Schoenherr",
+   "M. Ramkumar",
+   "Stephan M. Wagner",
+   "Sai Krishna Pabba",
+   "R. I. Singh"
+  ],
+  "year": 2019,
+  "venue": "International Journal of Production Research",
+  "doi": "https://doi.org/10.1080/00207543.2019.1683248",
+  "url": "https://doi.org/10.1080/00207543.2019.1683248",
+  "pdf_url": null,
+  "abstract": "Blockchain technology is destined to revolutionise supply chain processes. At the same time, governmental and regulatory policies are forcing firms to adjust their supply chains in response to environmental concerns. The objective of this study is therefore to develop a distributed ledger-based blockchain approach for monitoring supply chain performance and optimising both emission levels and operational costs in a synchronised fashion, producing a better outcome for the supply chain. We propose the blockchain approach for different production allocation problems within a multi-echelon supply chain (MESC) under a carbon taxation policy. As such, we couple recent advances in digitalisation of operations with increasingly stringent regulatory environmental policies. Specifically, with lead time considerations under emission rate constraints (imposed by a carbon taxation policy), we simultaneously consider the production, distribution and inventory control decisions in a production allocation-based MESC problem. The problem is then formulated as a Mixed Integer Non-Linear Programming (MINLP) model. We show that the distributed ledger-based blockchain approach minimises both total cost and carbon emissions. We then validate the feasibility of the proposed approach by comparing the results with a non-dominated sorting genetic algorithm (NSGA-II). The findings provide support for policymakers and supply chain executives alike.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply-chain carbon footprint tracing and traceability",
+  "openalex_id": "W2983296812"
+ },
+ {
+  "title": "Integrating smart Green Product Platforming for carbon footprint reduction: The role of blockchain technology and stakeholders influence within the agri-food supply chain",
+  "authors": [
+   "Afaf Camel",
+   "Amine Belhadi",
+   "S. Kamble",
+   "Sunil Tiwari",
+   "Fatima Ezahra Touriki"
+  ],
+  "year": 2024,
+  "venue": "International Journal of Production Economics",
+  "doi": "https://doi.org/10.1016/j.ijpe.2024.109251",
+  "url": "https://doi.org/10.1016/j.ijpe.2024.109251",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply-chain carbon footprint tracing and traceability",
+  "openalex_id": "W4394858647"
+ },
+ {
+  "title": "Achieving sustainable carbon-neutral supply chain: A perspective of integrating blockchain technology",
+  "authors": [
+   "Aditi Saha",
+   "Rakesh D. Raut",
+   "Mukesh Kumar",
+   "Sanjoy Kumar Paul",
+   "Yangyan Shi",
+   "Bhavin Shah",
+   "Sudishna Ghoshal"
+  ],
+  "year": 2025,
+  "venue": "Technological Forecasting and Social Change",
+  "doi": "https://doi.org/10.1016/j.techfore.2025.124262",
+  "url": "https://doi.org/10.1016/j.techfore.2025.124262",
+  "pdf_url": "https://doi.org/10.1016/j.techfore.2025.124262",
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply-chain carbon footprint tracing and traceability",
+  "openalex_id": "W4411987134"
+ },
+ {
+  "title": "Blockchain technology adoption for secured and carbon neutral logistics operations: barrier intensity index framework",
+  "authors": [
+   "Anchal Gupta",
+   "R. Singh",
+   "M. M. Kamal"
+  ],
+  "year": 2024,
+  "venue": "Annals of Operations Research",
+  "doi": "https://doi.org/10.1007/s10479-024-05824-w",
+  "url": "https://doi.org/10.1007/s10479-024-05824-w",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply-chain carbon footprint tracing and traceability",
+  "openalex_id": "W4392148009"
+ },
+ {
+  "title": "Blockchain-Driven Carbon Accountability in Supply Chains",
+  "authors": [
+   "E. Alotaibi",
+   "A. Khallaf",
+   "A. A. Abdallah",
+   "Taisier A. Zoubi",
+   "Awwad Alnesafi"
+  ],
+  "year": 2024,
+  "venue": "Sustainability",
+  "doi": "https://doi.org/10.3390/su162410872",
+  "url": "https://doi.org/10.3390/su162410872",
+  "pdf_url": "https://doi.org/10.3390/su162410872",
+  "abstract": "This study examines the use of blockchain technology in ESG reporting, with a focus on carbon emissions accounting within supply chains. Using a design science methodology, it develops a blockchain-based framework that integrates automated data collection, verification, and analysis. The framework enables precise tracking of carbon emissions, enhances compliance with ESG standards, and resolves key issues like data reliability and standardization. Results show improved reporting accuracy through immutable data records and automated verification processes. This advancement allows organizations to optimize decision-making, reduce carbon footprints, and achieve sustainability goals. The study contributes theoretically by introducing an innovative blockchain-integrated ESG reporting model and practically by offering a validated framework for companies to streamline carbon accountability and improve ESG compliance.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Supply-chain carbon footprint tracing and traceability",
+  "openalex_id": "W4405333723"
+ },
+ {
+  "title": "Do FinTech trigger renewable energy use? Evidence from OECD countries",
+  "authors": [
+   "Alexandre Croutzet",
+   "Amal Dabbous"
+  ],
+  "year": 2021,
+  "venue": "Renewable Energy",
+  "doi": "https://doi.org/10.1016/j.renene.2021.07.144",
+  "url": "https://doi.org/10.1016/j.renene.2021.07.144",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Green finance, ESG and fintech with blockchain",
+  "openalex_id": "W3190358310"
+ },
+ {
+  "title": "Sustainable finance research: Review and agenda",
+  "authors": [
+   "Monica Singhania",
+   "Gurmani Chadha",
+   "Renuka Prasad"
+  ],
+  "year": 2023,
+  "venue": "International Journal of Finance & Economics",
+  "doi": "https://doi.org/10.1002/ijfe.2854",
+  "url": "https://doi.org/10.1002/ijfe.2854",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Green finance, ESG and fintech with blockchain",
+  "openalex_id": "W4385233617"
+ },
+ {
+  "title": "Can Fintech Promote Sustainable Finance? Policy Lessons from the Case of Turkey",
+  "authors": [
+   "Orkun Bayram",
+   "Isilay Talay",
+   "M. Feridun"
+  ],
+  "year": 2022,
+  "venue": "Sustainability",
+  "doi": "https://doi.org/10.3390/su141912414",
+  "url": "https://doi.org/10.3390/su141912414",
+  "pdf_url": "https://www.mdpi.com/2071-1050/14/19/12414/pdf?version=1664453460",
+  "abstract": "This study contributes to sustainable finance literature by exemplifying promotion of sustainable finance through fintech solutions for emerging market economies by presenting the case of Turkey. Turkey is one of the largest emerging market economies in the world with a strong banking system and high adoption of technology, so it has great potential to benefit from fintech solutions to boost sustainable finance. For the case analysis, the data used came from a research platform for a Turkish start-up ecosystem, Turkish regulations, and documents released on Turkey\u2019s sustainable finance strategies by Turkish and international institutions. We found that Turkey has made remarkable progress in increasing financial inclusivity for underbanked individuals and SMEs via providing contactless payment and contract systems and microfinance by mobile carriers and other online platforms. Turkey was also able to promote the responsible consumption goal for sustainable development by improving fintech solutions on payment systems with educational content on this goal. With upcoming developments such as the sandbox environment in Istanbul Financial Center, fintech solutions using Big Data, AI, and blockchain could emerge much faster with collaboration between banking and fintech sectors and regulatory institutions to better assess climate-related financial risks and form a national carbon trading mechanism.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Green finance, ESG and fintech with blockchain",
+  "openalex_id": "W4298145896"
+ },
+ {
+  "title": "Blockchain-enabled green Loans: Mitigating greenwashing through inventory and emission signaling",
+  "authors": [
+   "Bing Xia",
+   "Jian Li",
+   "Qi-Lin Ma"
+  ],
+  "year": 2026,
+  "venue": "International Journal of Production Economics",
+  "doi": "https://doi.org/10.1016/j.ijpe.2026.109983",
+  "url": "https://doi.org/10.1016/j.ijpe.2026.109983",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Green finance, ESG and fintech with blockchain",
+  "openalex_id": "W7131128297"
+ },
+ {
+  "title": "A Detailed Comprehensive Role of Digital Technologies in Green Finance Initiative for Net\u2010Zero Energy Transition",
+  "authors": [
+   "F. Ahmad",
+   "A. Boumaiza",
+   "Antonio Sanfilippo",
+   "Luluwah Al-Fagih"
+  ],
+  "year": 2025,
+  "venue": "Advanced Energy and Sustainability Research",
+  "doi": "https://doi.org/10.1002/aesr.202500066",
+  "url": "https://doi.org/10.1002/aesr.202500066",
+  "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/aesr.202500066",
+  "abstract": "This review explores the transformative potential of digital technologies in advancing green finance initiatives to support net\u2010zero energy transitions. It examines how innovations in FinTech, blockchain, artificial intelligence, and the Internet of Things drive innovation in financing mechanisms, enhance transparency, and improve operational efficiencies across critical sectors, including renewable energy, carbon reduction, lower energy consumption, green industrial transformation, low\u2010carbon technologies, and sustainable infrastructure including electric vehicles and green buildings. Further, this review addresses challenges associated with implementing these technologies, such as data security risks, regulatory inconsistencies, and unequal access to digital tools. Additionally, this article provides several real\u2010life case studies and success stories, as well as actionable recommendations that can help develop scalable, equitable, and transparent green finance solutions. The results of this study further highlight the critical interplay between digital technologies and low\u2010carbon financing initiatives, which can play a critical role in driving a sustainable, low\u2010carbon future by reducing carbon emissions.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Green finance, ESG and fintech with blockchain",
+  "openalex_id": "W4409820341"
+ },
+ {
+  "title": "The Carbon Footprint of Bitcoin",
+  "authors": [
+   "Christian Stoll",
+   "Lena KlaaBen",
+   "Ulrich Gallersd\u00f6rfer"
+  ],
+  "year": 2019,
+  "venue": "Joule",
+  "doi": "https://doi.org/10.1016/j.joule.2019.05.012",
+  "url": "https://doi.org/10.1016/j.joule.2019.05.012",
+  "pdf_url": "https://doi.org/10.1016/j.joule.2019.05.012",
+  "abstract": "Summary Participation in the Bitcoin blockchain validation process requires specialized hardware and vast amounts of electricity, which translates into a significant carbon footprint. Here, we demonstrate a methodology for estimating the power consumption associated with Bitcoin\u2019s blockchain based on IPO filings of major hardware manufacturers, insights on mining facility operations, and mining pool compositions. We then translate our power consumption estimate into carbon emissions, using the localization of IP addresses. We determine the annual electricity consumption of Bitcoin, as of November 2018, to be 45.8 TWh and estimate that annual carbon emissions range from 22.0 to 22.9 MtCO2. This means that the emissions produced by Bitcoin sit between the levels produced by the nations of Jordan and Sri Lanka, which is comparable to the level of Kansas City. With this article, we aim to gauge the external costs of Bitcoin and inform the broader debate on the costs and benefits of cryptocurrencies.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Energy use and carbon footprint of blockchains/crypto-mining",
+  "openalex_id": "W2949656921"
+ },
+ {
+  "title": "Quantification of energy and carbon costs for mining cryptocurrencies",
+  "authors": [
+   "Max J. Krause",
+   "T. Tolaymat"
+  ],
+  "year": 2018,
+  "venue": "Nature Sustainability",
+  "doi": "https://doi.org/10.1038/s41893-018-0152-7",
+  "url": "https://doi.org/10.1038/s41893-018-0152-7",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Energy use and carbon footprint of blockchains/crypto-mining",
+  "openalex_id": "W2898441276"
+ },
+ {
+  "title": "Policy assessments for the carbon emission flows and sustainability of Bitcoin blockchain operation in China",
+  "authors": [
+   "Shang Jiang",
+   "Yuze Li",
+   "Quanying Lu",
+   "Yong-Miao Hong",
+   "D. Guan",
+   "Yu Xiong",
+   "Shouyang Wang"
+  ],
+  "year": 2021,
+  "venue": "Nature Communications",
+  "doi": "https://doi.org/10.1038/s41467-021-22256-3",
+  "url": "https://doi.org/10.1038/s41467-021-22256-3",
+  "pdf_url": "https://www.nature.com/articles/s41467-021-22256-3.pdf",
+  "abstract": "The growing energy consumption and associated carbon emission of Bitcoin mining could potentially undermine global sustainable efforts. By investigating carbon emission flows of Bitcoin blockchain operation in China with a simulation-based Bitcoin blockchain carbon emission model, we find that without any policy interventions, the annual energy consumption of the Bitcoin blockchain in China is expected to peak in 2024 at 296.59 Twh and generate 130.50 million metric tons of carbon emission correspondingly. Internationally, this emission output would exceed the total annualized greenhouse gas emission output of the Czech Republic and Qatar. Domestically, it ranks in the top 10 among 182 cities and 42 industrial sectors in China. In this work, we show that moving away from the current punitive carbon tax policy to a site regulation policy which induces changes in the energy consumption structure of the mining activities is more effective in limiting carbon emission of Bitcoin blockchain operation. The growing energy consumption and carbon emissions of Bitcoin mining could potentially undermine global sustainability efforts. Here, the authors show the annual energy consumption of the Bitcoin blockchain in China is expected to peak in 2024 at 296.59 Twh and generate 130.50 million metric tons of carbon emissions.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Energy use and carbon footprint of blockchains/crypto-mining",
+  "openalex_id": "W3113656055"
+ },
+ {
+  "title": "Revisiting Bitcoin\u2019s carbon footprint",
+  "authors": [
+   "A. D. de Vries",
+   "Ulrich Gallersd\u00f6rfer",
+   "Lena Klaa\u00dfen",
+   "Christian Stoll"
+  ],
+  "year": 2022,
+  "venue": "Joule",
+  "doi": "https://doi.org/10.1016/j.joule.2022.02.005",
+  "url": "https://doi.org/10.1016/j.joule.2022.02.005",
+  "pdf_url": "https://doi.org/10.1016/j.joule.2022.02.005",
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Energy use and carbon footprint of blockchains/crypto-mining",
+  "openalex_id": "W4214545884"
+ },
+ {
+  "title": "Toward a greener future: A survey on sustainable blockchain applications and impact",
+  "authors": [
+   "Pritam Rani",
+   "Pratima Sharma",
+   "Indrajeet Gupta"
+  ],
+  "year": 2024,
+  "venue": "Journal of Environmental Management",
+  "doi": "https://doi.org/10.1016/j.jenvman.2024.120273",
+  "url": "https://doi.org/10.1016/j.jenvman.2024.120273",
+  "pdf_url": null,
+  "abstract": "Blockchain Technology has garnered significant attention due to its immense potential to transform the way transactions are conducted and information is managed. Blockchain is a decentralized digital ledger that is spread across a network of computers, ensuring the secure, transparent, and unchangeable recording of transactions. However, the energy consumption of certain blockchain networks like Bitcoin, Litecoin, Monero, Zcash, and others has generated apprehensions regarding the sustainability of this technology. Bitcoin alone consumes approximately 100 terawatt-hours annually, contributing significantly to global carbon emissions. The substantial energy requirements not only contribute to carbon emissions but also pose a risk to the long-term viability of the blockchain industry. This study reviews articles from eight reputable databases between 2017 to August 2023, employing the systematic review and preferred reporting items for systematic reviews and meta-analyses approach for screening. Therefore, explore the applications of sustainable blockchain networks aimed at reducing environmental impact while ensuring efficiency and security. This survey also assesses the challenges and limitations posed by diverse blockchain applications regarding sustainability and provides valuable foresight into potential future advancements. Through this survey, the aim is to track and verify sustainable practices, facilitating the transition to a low-carbon economy, and promoting environmental stewardship, with a specific focus on highlighting the potential of sustainable blockchain networks in enabling secure and transparent tracking of these practices. Finally, the paper sheds light on pertinent research challenges and provides a roadmap of future directions, stimulating further research in this promising field.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Energy use and carbon footprint of blockchains/crypto-mining",
+  "openalex_id": "W4391796050"
+ },
+ {
+  "title": "Cryptocurrency blockchain and its carbon footprint: Anticipating future challenges",
+  "authors": [
+   "Ujkan Q. Bajra",
+   "Ermir Rogova",
+   "S. Avdiaj"
+  ],
+  "year": 2024,
+  "venue": "Technology in Society",
+  "doi": "https://doi.org/10.1016/j.techsoc.2024.102571",
+  "url": "https://doi.org/10.1016/j.techsoc.2024.102571",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Energy use and carbon footprint of blockchains/crypto-mining",
+  "openalex_id": "W4396887974"
+ },
+ {
+  "title": "Establishing a Secure, Transparent, and Autonomous Blockchain of Custody for Renewable Energy Credits and Carbon Credits",
+  "authors": [
+   "M. Ashley",
+   "Mark Johnson"
+  ],
+  "year": 2018,
+  "venue": "IEEE Engineering Management Review",
+  "doi": "https://doi.org/10.1109/emr.2018.2874967",
+  "url": "https://doi.org/10.1109/emr.2018.2874967",
+  "pdf_url": null,
+  "abstract": "To facilitate the widespread adoption of clean energy, we must devise practical economic incentives to deploy clean energy assets while reducing barriers to access that clean energy. While renewable energy credits and carbon offset credits successfully push these goals forward, the associated accounting and management systems still suffer from numerous flaws that drive costs up and slow the monetization of clean energy assets. Blockchain technology has emerged as a promising solution that can provide a secure and transparent distributed ledger, while autonomously executing transactions upon fulfillment of pre-defined criteria (\u201csmart contracts\u201d). As a result, credits can be easily tracked from generation through ownership trades to ultimate redemption. This leaves a simple audit trail, significantly reducing the associated time and cost, and enables producers to monetize their credits immediately after generation. Clean Energy Blockchain Network (CEBN) has recently announced a partnership with the Silicon valley power, where we will apply blockchain technology to simplify their participation in the low carbon fuel standard (LCFS) program. This real-world deployment will demonstrate how blockchain technology can dramatically simplify extremely complex trading environments and enable the practical implementation of valuable programs such as LCFS that financially incentivize clean energy production and use.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Renewable energy certificates and green certificates",
+  "openalex_id": "W2897410039"
+ },
+ {
+  "title": "Blockchain-enabled renewable energy certificate trading: A secure and privacy-preserving approach",
+  "authors": [
+   "Wei-Jen Liu",
+   "Wei-Yu Chiu",
+   "Weiqi Hua"
+  ],
+  "year": 2023,
+  "venue": "Energy",
+  "doi": "https://doi.org/10.1016/j.energy.2023.130110",
+  "url": "https://doi.org/10.1016/j.energy.2023.130110",
+  "pdf_url": "https://arxiv.org/pdf/2601.08339",
+  "abstract": "In the 21st century, transitioning to renewable energy sources is imperative, with fossil fuel reserves depleting rapidly and recognizing critical environmental issues such as climate change, air pollution, water pollution, and habitat destruction. Embracing renewable energy is not only an environmental necessity but also a strategic move with multiple benefits. By shifting to renewable energy sources and supporting their production through the acquisition of renewable energy certificates, we foster innovation and drive economic growth in the renewable energy sector. This, in turn, reduces greenhouse gas emissions, aligning with global efforts to mitigate climate change. Additionally, renewable energy certificates ensure compliance with regulations that mandate the use of renewable energy, enhancing legal adherence while promoting transparency and trust in energy sourcing. To monitor the uptake of renewable energy, governments have implemented Renewable Energy Certificates (RECs) as a tracking mechanism for the production and consumption of renewable energy. However, there are two main challenges to the existing REC schema: 1) The RECs have not been globally adopted due to inconsistent design; 2) The consumer privacy has not been well incorporated in the design of blockchain. In this study, we investigate the trading of RECs between suppliers and consumers using the directed acyclic graph (DAG) blockchain system and introduce a trading schema to help protect consumer information. Our results demonstrate lower transaction time by 41\\% and energy consumption by 65\\% compared to proof-of-stake.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Renewable energy certificates and green certificates",
+  "openalex_id": "W4390392665"
+ },
+ {
+  "title": "Blockchain-based smart trading mechanism for renewable energy power consumption vouchers and green certificates: Platform design and simulation",
+  "authors": [
+   "Shi-man Guo",
+   "Tian-tian Feng"
+  ],
+  "year": 2024,
+  "venue": "Applied Energy",
+  "doi": "https://doi.org/10.1016/j.apenergy.2024.123351",
+  "url": "https://doi.org/10.1016/j.apenergy.2024.123351",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Renewable energy certificates and green certificates",
+  "openalex_id": "W4399279867"
+ },
+ {
+  "title": "Blockchain and Green Certificates Based Market Structure and Transaction Mechanism of Direct Power-Purchase for Industrial Users",
+  "authors": [
+   "Xinxin Ge",
+   "Di Yang",
+   "Yuntong Lv",
+   "Fei Wang",
+   "Ji Yu",
+   "Jin-Ling Lu",
+   "Zifei Yang",
+   "Yuyang Tian",
+   "Hui Ren"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Industry Applications",
+  "doi": "https://doi.org/10.1109/tia.2023.3246966",
+  "url": "https://doi.org/10.1109/tia.2023.3246966",
+  "pdf_url": null,
+  "abstract": "Nowadays, Direct Power Purchase (DPP) for industrial users has become an important part of the electricity market. This type of transaction usually needs to rely on regulatory agencies to assist in the transaction, and the transaction algorithm is relatively simple. Blockchain technology based on encryption algorithm has the function of distributed ledger, which can make DPP more transparent and reliable. This paper proposes a DPP transaction method, which incorporates the peak shaving characteristics of industrial users and the green certificate system into transactions, and completes related transactions on the blockchain platform. First, establish a DPP market structure based on blockchain technology. Second, establish a DPP transaction mechanism based on green certificates and peak shaving characteristics. Simulation results for four cases show that the proposed method can respond to peak shaving capacity and bring more profit to renewable energy companies.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Renewable energy certificates and green certificates",
+  "openalex_id": "W4321380766"
+ },
+ {
+  "title": "Blockchain for Energy Credits and Certificates: A Comprehensive Review",
+  "authors": [
+   "S. Danish",
+   "Kai-Wen Zhang",
+   "F. Amara",
+   "J. Cepeda",
+   "Luis Fernando Rueda Vasquez",
+   "T. Marynowski"
+  ],
+  "year": 2024,
+  "venue": "IEEE Transactions on Sustainable Computing",
+  "doi": "https://doi.org/10.1109/tsusc.2024.3366502",
+  "url": "https://doi.org/10.1109/tsusc.2024.3366502",
+  "pdf_url": null,
+  "abstract": "Climate change is a major issue that has disastrous impacts on the environment through different causes like the greenhouse gas (GHG) emission. Many energy utilities around the world intend to reduce GHG emissions by promoting different systems including carbon emission trading (CET), renewable energy certificates (RECs), and tradable white certificates (TWCs). However, these systems are centralized, highly regulated, and operationally expensive and do not meet transparency, trust and security requirements. Accordingly, GHG emission reduction schemes are gradually moving towards blockchain-based solutions due to their underpinning characteristics including decentralization, transparency, anonymity, and trust (independent from third parties). This paper performs a comprehensive investigation into the blockchain technology, deployed for GHG emission reduction plans. It explores existing blockchain solutions along with their associated challenges to effectively uncover their potentials. As a result, this study suggests possible lines of research for future enhancements of blockchain systems particularly their incorporation in GHG emission reduction.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Renewable energy certificates and green certificates",
+  "openalex_id": "W4391892492"
+ },
+ {
+  "title": "Tackling climate change with blockchain",
+  "authors": [
+   "P. Howson"
+  ],
+  "year": 2019,
+  "venue": "Nature Climate Change",
+  "doi": "https://doi.org/10.1038/s41558-019-0567-9",
+  "url": "https://doi.org/10.1038/s41558-019-0567-9",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Blockchain adoption and sustainability/emission impact (econometrics, reviews, circular economy)",
+  "openalex_id": "W2969972354"
+ },
+ {
+  "title": "Blockchain technology and the circular economy: Implications for sustainability and social responsibility",
+  "authors": [
+   "A. Upadhyay",
+   "Sumona Mukhuty",
+   "Prof Vikas Kumar",
+   "Yi\u011fit Kazan\u00e7o\u011flu"
+  ],
+  "year": 2021,
+  "venue": "Journal of Cleaner Production",
+  "doi": "https://doi.org/10.1016/j.jclepro.2021.126130",
+  "url": "https://doi.org/10.1016/j.jclepro.2021.126130",
+  "pdf_url": "https://uwe-repository.worktribe.com/7040545/1/Blockchain%20Technology%20and%20the%20Circular%20Economy%3A%20Implications%20for%20Sustainability%20and%20Social%20Responsibility",
+  "abstract": "Abstract Blockchain technology is a revolutionary new protocol for sharing and updating information by linking ledgers or databases in a decentralised, peer-to-peer, open-access network. Blockchain is designed to ensure the data is stored and updated in a secure, tamper-proof and irreversible way. Despite being in its nascent stages, the blockchain research is developing rapidly in different fields, making it imperative to capture the ethical and sustainability implications of blockchain development and implementation. The circular economy also focuses on enhancing sustainability and social responsibility, alongside economic growth. In this article, we critically review blockchain technology\u2019s current and potential contribution to the circular economy through the lens of sustainability and social responsibility. This paper contributes to the Industry 4.0 literature by identifying, collating and organising the disparate research on blockchain, with a critical focus on its positive impact and potential repercussions for the ethics agenda. Within this narrative review, we argue and highlight the extant and potential alignment of blockchain with circular economy. Our findings show that blockchain technology can contribute to the circular economy by helping to reduce transaction costs, enhance performance and communication along the supply chain, ensure human rights protection, enhance healthcare patient confidentiality and welfare, and reduce carbon footprint. We also evaluate the challenges to blockchain implementation for circular economy, in terms of trust, illegal activities, potential for hacking and the need to address these through suitable legislation and policy development. Furthermore, we acknowledge the potential upfront costs involved in implementing blockchain technology, although we observe that the benefits are likely to exceed the challenges. We conclude this article with recommendations for future research in this field.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Blockchain adoption and sustainability/emission impact (econometrics, reviews, circular economy)",
+  "openalex_id": "W3124280593"
+ },
+ {
+  "title": "Blockchain market and green finance: The enablers of carbon neutrality in China",
+  "authors": [
+   "Meng Qin",
+   "Xiao-Jing Zhang",
+   "Yameng Li",
+   "R. Badarcea"
+  ],
+  "year": 2023,
+  "venue": "Energy Economics",
+  "doi": "https://doi.org/10.1016/j.eneco.2022.106501",
+  "url": "https://doi.org/10.1016/j.eneco.2022.106501",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Blockchain adoption and sustainability/emission impact (econometrics, reviews, circular economy)",
+  "openalex_id": "W4313705042"
+ },
+ {
+  "title": "The blockchain-enabled technology and carbon performance: Insights from early adopters",
+  "authors": [
+   "Yudi Fernando",
+   "Nor Hazwani Mohd Rozuar",
+   "Fineke Mergeresa"
+  ],
+  "year": 2021,
+  "venue": "Technology in Society",
+  "doi": "https://doi.org/10.1016/j.techsoc.2020.101507",
+  "url": "https://doi.org/10.1016/j.techsoc.2020.101507",
+  "pdf_url": null,
+  "abstract": "Abstract This paper examined the drivers of blockchain technology adoption and carbon performance using the theory of technology-organization-environment (TOE) as the basis for the development of a technology adoption framework. Blockchain technology has passed the proof testing phase and is attracting early adopters who can gain benefits from it. Manufacturing firms that had adopted the blockchain technology and voluntary reported the carbon emission were targeted as the sample and survey data were collected from manufacturing firms that were registered with the Association of Malaysian Manufacturers. Unfavourable support of top management and the lack of technology competence were the main barriers to the adoption of blockchain technology among manufacturing firms. The results indicate that firms did not achieve low carbon performance and that a lack of pressure from competitors and technical competency to undertake blockchain technology were factors. No evidence existed demonstrating a linkage of early adopters of blockchain technology with and low carbon performance. Recommendations of this study include that firms should take the initiative to record the energy consumption, engage in the transfer of carbon credits, and monitor carbon performance using reliable technology to improve business transparency and sustainability.",
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Blockchain adoption and sustainability/emission impact (econometrics, reviews, circular economy)",
+  "openalex_id": "W3120814281"
+ },
+ {
+  "title": "Promoting blockchain technology in low-carbon management to achieve firm performance from a socio-economic perspective: Empirical evidence from China",
+  "authors": [
+   "Nianqi Deng",
+   "Yu Gong",
+   "Jun-Bin Wang"
+  ],
+  "year": 2024,
+  "venue": "Journal of Cleaner Production",
+  "doi": "https://doi.org/10.1016/j.jclepro.2024.141686",
+  "url": "https://doi.org/10.1016/j.jclepro.2024.141686",
+  "pdf_url": null,
+  "abstract": null,
+  "topic": "blockchain-carbon",
+  "found_in": [
+   "openalex",
+   "semantic_scholar"
+  ],
+  "subtopic": "Blockchain adoption and sustainability/emission impact (econometrics, reviews, circular economy)",
+  "openalex_id": "W4392460981"
+ }
+]
