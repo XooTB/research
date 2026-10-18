@@ -20,3 +20,6 @@ Did: T011 arXiv pass: title-keyword search over 128 T010 papers lacking PDFs (st
 
 ## 2026-10-17 19:11
 Did: pruned blockchain library per user (D012): 5 T007 papers kept and moved into blockchain-fl/carbon/supply-chain (Cole 2019 PDF filled a T010 pick), 63 deleted from disk+DB (in git aa3f2f6), BibTeX re-exported; F019 re-files F015 (its evidence folder was deleted). State: papers/blockchain-topics now only blockchain-{fl,supply-chain,carbon}: 160 papers, 35 PDFs (fl 21, sc 10, carbon 4); nothing committed. Next: user picks sub-topic; T011 PDF gap (125 missing) needs OpenAlex key or library access. Watch: deletions show as git removals until committed.
+
+## 2026-10-18 11:11
+Did: verified IEEE Xplore institutional access on campus wifi (new finding) and downloaded all 81 library 10.1109 papers that had no PDF (blockchain fl 24, sc 5, carbon 4; kmmu-uddin 48), title-checked, DB pdf_path set, BibTeX re-exported. State: blockchain PDFs now fl 45/53, sc 15/54, carbon 8/53 (92 still missing, none IEEE); nothing committed. Next: T011 remaining non-IEEE gap (Elsevier/T&F/MDPI); check whether campus access also covers ScienceDirect/T&F. Watch: IEEE access only works on campus network.

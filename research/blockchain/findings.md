@@ -24,3 +24,7 @@ refs: T007, T011
 tags: tooling, downloads
 supersedes: F015
 Same content as F015; re-filed because F015's evidence folder (papers/blockchain-topics/blockchain-zk-proofs) was deleted when the library was pruned (D012). eprint.iacr.org returns a Cloudflare 403 HTML page to scripted requests (any UA). Working fallback: https://web.archive.org/web/2023id_/https://eprint.iacr.org/<yr>/<n>.pdf (id_ returns the raw PDF). Wayback refuses connections after ~10 rapid requests: space ~45 s apart. eprints.lancs.ac.uk returns 404 when the request sends 'Accept: application/pdf' (papers_add.py does), 200 without it. Publisher hosts (IEEE/ACM/Elsevier/MDPI/Springer/SSRN) block scripted PDF fetches; arXiv, usenix, ndss, bis.org, nber.org work.
+
+## F020 · 2026-10-18 · IEEE Xplore full text is accessible via Southeast University IP access
+refs: T011, papers/blockchain-topics/blockchain-fl
+On the university network, IEEE Xplore serves licensed full-text PDFs with no login: resolve the DOI to /document/<arnumber>, GET stamp.jsp?arnumber=N (sets cookies), then stampPDF/getPDF.jsp?tp=&arnumber=N returns application/pdf. Each PDF is stamped 'Authorized licensed use limited to: Southeast University'. On 2026-10-18, 81/81 library papers with 10.1109 DOIs that had no PDF downloaded, all title-verified on page 1 (33 blockchain, 48 kmmu-uddin). This works only from the campus network.
