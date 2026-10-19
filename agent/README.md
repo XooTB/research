@@ -11,7 +11,7 @@ locally in this workspace.
 ```
 research/NOW.md                                    # generated: focus, in flight, next up, outcomes, handoff
 research/<ws>/workstream.md, experiments/, tasks/  # research tracker (+ findings/decisions/journal .md)
-papers/<topic>/<year>-<author>-<title>/paper.pdf   # organized PDFs
+papers/<topic>/<year>-<author>-<title>.pdf        # organized PDFs (older: <title>/paper.pdf)
 datasets/<topic>/<slug>/ + REPORT.md               # datasets + verification
 notebooks/                                          # notebooks run on Colab
 .research/library.db                               # SQLite: papers, datasets, notes

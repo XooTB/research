@@ -12,7 +12,7 @@ description: >-
 
 # Paper Dataset Extractor
 
-Deterministically mines `papers/<collection>/*/paper.pdf` for dataset
+Deterministically mines `papers/<collection>/*.pdf` (and older `*/paper.pdf`) for dataset
 references and emits `docs/extracted/<collection>-datasets.{csv,json}` —
 **deterministic extraction first, LLM judgment second, download always**:
 the script finds candidates, you triage, then download every obtainable
@@ -22,7 +22,7 @@ dataset without asking for confirmation. Only skip gated/paywalled ones.
 
 - Python: `.venv/bin/python` with `pymupdf` installed
   (`.venv/bin/pip install pymupdf` if missing).
-- Papers without `paper.pdf` on disk are skipped — extraction only covers
+- Papers without a PDF on disk are skipped — extraction only covers
   downloaded PDFs; fall back to LLM-over-abstracts for the rest.
 
 ## Scope first — pick the right collection

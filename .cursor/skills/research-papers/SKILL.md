@@ -66,7 +66,8 @@ file, then:
 
 This downloads the PDF when a usable `pdf_url` exists (open-access only —
 report `pdf_ok:false` honestly when it doesn't), files it under
-`papers/<topic>/<year>-<author>-<title>/paper.pdf`, records it in the SQLite
+`papers/<topic>/<year>-<author>-<title>.pdf` (older topics use
+`<year>-<author>-<title>/paper.pdf`), records it in the SQLite
 DB, and refreshes `.research/references.bib`. Use `--no-pdf` to record metadata
 only.
 
@@ -93,10 +94,10 @@ table). Manual fallback if needed:
 - Downloads need real network egress; when running download steps request full
   network permission for that command.
 - PDFs over 100 MB are zipped for GitHub (`github_pack.py`); the unpacked
-  `paper.pdf` stays on disk. After a clone, run `github_pack.py unpack`.
+  PDF stays on disk. After a clone, run `github_pack.py unpack`.
 - Research tracking: literature work for the active workstream is a tracked item
   (`research.py new task`). A paper result that changes what we'd do (a
   baseline number to beat, a known failure mode, a cohort caveat) becomes a
   finding with the paper as evidence, e.g. `research.py new finding --refs
-  "papers/<topic>/<folder>/paper.pdf,E003" …`. A choice to follow or reject a
+  "papers/<topic>/<year>-<author>-<title>.pdf,E003" …`. A choice to follow or reject a
   paper's approach becomes a decision. See the research-tracker skill.

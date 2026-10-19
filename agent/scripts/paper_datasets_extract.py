@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Extract dataset references (accessions, URLs, named resources) from paper PDFs.
 
-Scans every papers/<collection>/*/paper.pdf, applies regex patterns for common
+Scans every papers/<collection>/<slug>.pdf (or older <slug>/paper.pdf), applies regex patterns for common
 biomedical data repositories, captures the surrounding sentence as context, and
 writes a per-collection CSV + JSON inventory that an LLM (or human) can then
 use to fetch the actual datasets.
@@ -145,11 +145,14 @@ def scan(text: str) -> list[dict]:
 def process_collection(papers_root: Path, collection: str) -> list[dict]:
     rows: list[dict] = []
     collection_dir = papers_root / collection
-    for paper_dir in sorted(collection_dir.iterdir()):
-        if not paper_dir.is_dir():
-            continue
-        pdf = paper_dir / "paper.pdf"
-        if not pdf.exists():
+    # Two layouts: flat <collection>/<slug>.pdf (current) and the older
+    # <collection>/<slug>/paper.pdf. The slug is what DB linking matches on.
+    for entry in sorted(collection_dir.iterdir()):
+        if entry.is_file() and entry.suffix.lower() == ".pdf":
+            pdf, slug = entry, entry.stem
+        elif entry.is_dir() and (entry / "paper.pdf").exists():
+            pdf, slug = entry / "paper.pdf", entry.name
+        else:
             continue
         try:
             text = extract_text(pdf)
@@ -157,8 +160,8 @@ def process_collection(papers_root: Path, collection: str) -> list[dict]:
             print(f"  ! failed to read {pdf}: {exc}", file=sys.stderr)
             continue
         for f in scan(text):
-            rows.append({"paper": paper_dir.name, **f})
-        print(f"  {paper_dir.name}: {sum(1 for f in rows if f['paper'] == paper_dir.name)} findings")
+            rows.append({"paper": slug, **f})
+        print(f"  {slug}: {sum(1 for f in rows if f['paper'] == slug)} findings")
     return rows
 
 

@@ -28,3 +28,28 @@ Same content as F015; re-filed because F015's evidence folder (papers/blockchain
 ## F020 · 2026-10-18 · IEEE Xplore full text is accessible via Southeast University IP access
 refs: T011, papers/blockchain-topics/blockchain-fl
 On the university network, IEEE Xplore serves licensed full-text PDFs with no login: resolve the DOI to /document/<arnumber>, GET stamp.jsp?arnumber=N (sets cookies), then stampPDF/getPDF.jsp?tp=&arnumber=N returns application/pdf. Each PDF is stamped 'Authorized licensed use limited to: Southeast University'. On 2026-10-18, 81/81 library papers with 10.1109 DOIs that had no PDF downloaded, all title-verified on page 1 (33 blockchain, 48 kmmu-uddin). This works only from the campus network.
+
+## F021 · 2026-10-19 · Pharma blockchain PDFs: IEEE/arXiv/repository copies download; MDPI, Nature, Europe PMC, PMC block scripted fetches
+refs: T013, F018, F020
+Of 15 new pharma-blockchain picks, PDFs came from IEEE (3, incl. stampPDF via campus IP), arXiv and a university repository. MDPI, Europe PMC render, PMC and Nature return 403 or an HTML interstitial to scripted requests even for OA papers; these stay metadata-only unless fetched manually.
+
+## F022 · 2026-10-19 · No prior work gives patients or prescribers a blockchain view of a drug's development history
+refs: T014, papers/blockchain-drug-development-provenance/README.md
+tags: drug-development, provenance, gap
+Across 19 searches (OpenAlex, arXiv, PubMed; 2018+), blockchain work on drug R&D splits into (a) clinical-trial data integrity and consent for sponsors/regulators (Benchoufi 2018, Maslove 2018, Wong 2019, Omar 2020), (b) lifecycle position papers without a system (Omidian 2022, 2023), and (c) post-approval supply-chain traceability. None exposes formulation history, protocol amendments, trial results and formulation changes to the end consumer or prescriber. Closest building blocks: BlockTrial's patient-facing interface, consent bound to protocol revisions, the digital product passport concept, and PrivChain/ZKP-style selective disclosure for confidential formulation data. Blockchain papers on pharmacovigilance and electronic product information are few and from low-tier venues.
+
+## F023 · 2026-10-19 · Paper tooling bugs: PubMed DOIs leaked from reference lists; empty downloads were kept as PDFs
+refs: agent/scripts/sources/pubmed.py, agent/scripts/papers_add.py, T014
+tags: tooling
+pubmed.py matched .//ArticleIdList, which includes ReferenceList entries, so a PubMed result carried the DOI of the last paper it cites (e.g. a JMIR paper tagged 10.1371/journal.pbio.1002106). Fixed to read PubmedData/ArticleIdList with an ELocationID fallback. The 6 older PubMed records in the library (ovarian, ids 148-156) were checked and have correct DOIs. papers_add.py kept a 0-byte paper.pdf and reported pdf_ok when a response body was empty; it now requires %PDF magic bytes. 4 pre-existing 0-byte files remain in papers/kmmu-uddin/ (untouched).
+
+## F024 · 2026-10-20 · Publisher PDFs need a real browser; ScienceDirect blocks even that, and no subscription access from current network
+refs: T015, F019, F020, F021, papers/blockchain-drug-development-provenance/README.md
+tags: pdf, access, tooling
+supersedes: F021
+Scripted requests (requests/curl, browser UA) get 403 or a bot challenge from JMIR, MDPI, Wiley, ACM, T&F, OUP, medRxiv, Oncotarget, PMC, Europe PMC, Cardiff/Copenhagen repositories and ScienceDirect. A Playwright browser passes the checks for JMIR (/PDF via the browser's request context), MDPI (/pdf), Wiley (pdfdirect), ACM, BMC/Springer OA, OUP, Oncotarget, medRxiv, TechRxiv (/doi/pdf/), Europe PMC (in-page fetch of ?pdf=render; PMC itself shows a reCAPTCHA) and institutional repositories: 20 of 33 recovered. ScienceDirect stays on Cloudflare 'Just a moment' even in the browser, including OA journals. Springer subscription, IEEE, T&F and AHA return paywall pages, so IEEE IP access (F020) was not active from this network on 2026-10-20. OpenAlex OA locations can be mislinked (one gave another journal's article) and loose .pdf links on landing pages are often references (Bitcoin whitepaper, a US statute), so every PDF must be checked against its title (plus first author for short titles).
+
+## F025 · 2026-10-20 · Papers are now filed flat: papers/<topic>/<year>-<author>-<title>.pdf
+refs: agent/scripts/papers_add.py, agent/scripts/paper_datasets_extract.py, T015
+tags: tooling, layout
+User request 2026-10-20: papers_add.py saves PDFs directly as papers/<topic>/<year>-<author>-<short-title>.pdf instead of a folder holding paper.pdf, and stores workspace-relative paths. paper_datasets_extract.py reads both layouts (slug = file stem or folder name, so DB linking via pdf_path LIKE still matches). Topic blockchain-drug-development-provenance was migrated (39 PDFs); older topics still use <slug>/paper.pdf. Skill docs and agent/README.md updated.

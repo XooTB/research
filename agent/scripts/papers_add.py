@@ -17,10 +17,10 @@ import sys
 from pathlib import Path
 
 import db
-from common import WORKSPACE, ws_path, slugify, short_title, http_get, emit, eprint
+from common import WORKSPACE, ws_path, ws_rel, slugify, short_title, http_get, emit, eprint
 
 
-def _download_pdf(paper: dict, dest_dir: Path) -> str | None:
+def _download_pdf(paper: dict, target: Path) -> str | None:
     url = paper.get("pdf_url")
     if not url:
         return None
@@ -28,21 +28,23 @@ def _download_pdf(paper: dict, dest_dir: Path) -> str | None:
         r = http_get(url, timeout=120, stream=True,
                      headers={"Accept": "application/pdf"})
         r.raise_for_status()
-        ctype = r.headers.get("Content-Type", "")
-        # Only keep it if it actually looks like a PDF.
-        dest_dir.mkdir(parents=True, exist_ok=True)
-        target = dest_dir / "paper.pdf"
-        first = True
+        # Only keep it if it actually is a PDF: a "pdf" Content-Type with an
+        # empty or HTML body used to leave a bogus PDF behind.
+        target.parent.mkdir(parents=True, exist_ok=True)
+        is_pdf = None
         with open(target, "wb") as fh:
             for chunk in r.iter_content(chunk_size=1 << 16):
-                if first:
-                    first = False
-                    if not chunk.startswith(b"%PDF") and "pdf" not in ctype.lower():
-                        fh.close()
-                        target.unlink(missing_ok=True)
-                        return None
+                if not chunk:
+                    continue
+                if is_pdf is None:
+                    is_pdf = chunk.lstrip()[:5].startswith(b"%PDF")
+                    if not is_pdf:
+                        break
                 fh.write(chunk)
-        return str(target)
+        if not is_pdf:
+            target.unlink(missing_ok=True)
+            return None
+        return ws_rel(target)
     except Exception as exc:  # noqa: BLE001
         eprint(f"  PDF download failed: {exc}")
         return None
@@ -66,13 +68,14 @@ def main() -> None:
     for p in papers:
         topic = p.get("topic") or args.topic
         topic_slug = slugify(topic)
-        folder = papers_dir / topic_slug / f"{p.get('year') or 'nd'}-" \
-            f"{slugify((p.get('authors') or ['unknown'])[0].split()[-1] if p.get('authors') else 'unknown', 20)}-" \
-            f"{short_title(p.get('title', ''))}"
+        # Flat layout: papers/<topic>/<year>-<author>-<short-title>.pdf
+        pdf_file = papers_dir / topic_slug / (f"{p.get('year') or 'nd'}-"
+            f"{slugify((p.get('authors') or ['unknown'])[0].split()[-1] if p.get('authors') else 'unknown', 20)}-"
+            f"{short_title(p.get('title', ''))}.pdf")
 
         pdf_path = None
         if not args.no_pdf:
-            pdf_path = _download_pdf(p, folder)
+            pdf_path = _download_pdf(p, pdf_file)
 
         p_rec = dict(p)
         p_rec["topic"] = topic_slug

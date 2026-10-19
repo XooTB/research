@@ -57,9 +57,17 @@ def search(query: str, limit: int = 15, **kw) -> list[dict]:
             if last:
                 authors.append(f"{fore} {last}".strip() if fore else last)
         doi = None
-        for aid in art.findall(".//ArticleIdList/ArticleId"):
+        # Only the article's own id list: ".//ArticleIdList" also matches the
+        # ReferenceList entries, which used to leak a cited paper's DOI.
+        for aid in art.findall("./PubmedData/ArticleIdList/ArticleId"):
             if aid.get("IdType") == "doi":
                 doi = (aid.text or "").strip()
+                break
+        if not doi:
+            for eid in art.findall(".//Article/ELocationID"):
+                if eid.get("EIdType") == "doi":
+                    doi = (eid.text or "").strip()
+                    break
         abstract = " ".join(
             (seg.text or "").strip() for seg in art.findall(".//Abstract/AbstractText")
         ).strip() or None
