@@ -22,3 +22,8 @@ Rejected alternatives: keeping carbon/sustainability as a third domain (dropped)
 refs: D011, T014, F022
 tags: scope, literature
 User request (2026-10-19). Blockchain clinical-trial transparency starts 2016 (Irving & Holden protocol timestamping, Nugent smart contracts, Benchoufi & Ravaud 2017), so the 2018 cutoff dropped the founding work of exactly this topic. Applies only to topic blockchain-drug-development-provenance. Rejected: moving the cutoff for all blockchain topics (not asked; the field-survey topics care about recent trends); keeping 2018 and citing precursors without collecting them.
+
+## D015 · 2026-10-20 · Main topic is the blockchain drug-development provenance framework; pharma supply chain is supporting context
+refs: D013, T013, T014, T017, F022, F026
+tags: scope, focus
+User statement (2026-10-20). The research centres on the drug-development provenance framework (formulation → trials → post-approval changes, visible to patients and prescribers; topic blockchain-drug-development-provenance). The pharma/vaccine supply-chain papers (T013, topic blockchain-pharma-supply-chain) are background and related work for it, not a separate research line. Refines D013, whose topic 1 was framed as supply-chain trust; the federated-learning topic of D013 is not changed by this. Rejected: treating supply chain and provenance as two equal threads (user corrected that framing).

@@ -29,9 +29,9 @@ New research line on blockchain. Map the currently popular research fields and b
 - F022 (2026-10-19): No prior work gives patients or prescribers a blockchain view of a drug's development history
 
 ### Recent decisions
+- D015 (2026-10-20): Main topic is the blockchain drug-development provenance framework; pharma supply chain is supporting context
 - D014 (2026-10-19): Drug-development provenance topic (T014) uses a 2014 cutoff; other blockchain topics keep 2018
 - D013 (2026-10-19): Narrow blockchain research to two topics: medicine/vaccine supply-chain trust, and federated learning for a medical model
-- D011 (2026-10-13): Blockchain literature base: papers from 2018 onward only
 
 ### Last handoff (2026-10-20 00:40)
 Did: T017 ran 20 non-blockchain searches (patient/prescriber info needs + trial transparency; standards eCTD/IDMP/FHIR-ePI/CDISC/PROV/structured CMC; pharmacovigilance and label changes), screened 596 results down to 51 papers (ids 465-515) in the drug-development topic, README section F. PDFs 45/51 via Playwright (Europe PMC in-page render, IOS Press form POST, publisher pages), all title-checked. F026 records framework implications. State: topic 104 papers, 87 PDFs; T016 now lists 17 missing. Next: user picks up T016 PDFs; older-topic layout migration and D013 scope still open. Nothing commi …
