@@ -41,3 +41,6 @@ Did: D014 sets the 2014 cutoff for topic blockchain-drug-development-provenance 
 
 ## 2026-10-20 00:18
 Did: filed 3 hand-downloaded PDFs from ~/Downloads (437 BlockDrugChain, 439 Wu recall, 438 Olsson SciTePress) into papers/blockchain-drug-development-provenance/ with flat names; each checked against title and first author; DB updated; extraction re-run. State: topic PDFs 42/53; 11 paywalled (Elsevier 414/431/432/436, Springer 429/433, IEEE 456/461/464, T&F 463, AHA 459). Next: IEEE three from campus network; older-topic layout migration and D013 scope still to ask. Nothing committed.
+
+## 2026-10-20 00:40
+Did: T017 ran 20 non-blockchain searches (patient/prescriber info needs + trial transparency; standards eCTD/IDMP/FHIR-ePI/CDISC/PROV/structured CMC; pharmacovigilance and label changes), screened 596 results down to 51 papers (ids 465-515) in the drug-development topic, README section F. PDFs 45/51 via Playwright (Europe PMC in-page render, IOS Press form POST, publisher pages), all title-checked. F026 records framework implications. State: topic 104 papers, 87 PDFs; T016 now lists 17 missing. Next: user picks up T016 PDFs; older-topic layout migration and D013 scope still open. Nothing committed.

@@ -12,29 +12,29 @@ New research line on blockchain. Map the currently popular research fields and b
 
 ### Next up (ready, by priority)
 - **T011** p2: Find legal OA copies (arXiv title search, publisher OA, author repos; OpenAlex/Unpaywall with key) for the 128 T010 papers lacking PDFs.
-- **T016** p2: Manual/campus download: IEEE 456,461,464 (SEU IP); Elsevier 414,431,432,436; Springer 429,433; T&F 463; AHA 459. Omidian 431/432 first. Links + filenames: topic README.
+- **T016** p2: Manual/campus download of 17 PDFs: IEEE 456,461,464; Elsevier 414,431,432,436,493; Springer 429,433,512; T&F 463,475; AHA 459; ASCO 511; OA-blocked 468,496. README lists all.
 
 ### Latest outcomes
+- T017 (done): 51 non-blockchain context papers (ids 465-515) in README section F (F1 needs/transparency 23, F2 standards 19, F3 post-approval 9); PDFs 45/51, title-verified; implications in finding.
 - T015 (done): 11 papers from 2016-2017 added (ids 454-464; Irving & Holden excluded as retracted); topic PDFs 39/53, all title-verified (14 paywalled or Cloudflare-blocked, listed in README); flat file layout in papers_add (F025); access routes F024.
 - T014 (done): 44 papers for the drug-development provenance framework (42 new, ids 412-453, topic blockchain-drug-development-provenance + ids 402, 407); 5 themes in folder README; PDFs 19/42; gap F022; tooling fixes F023.
 - T013 (done): Top 20 pharma/vaccine SC blockchain papers: 5 already in library + 15 new (topic blockchain-pharma-supply-chain, ids 397-411); 5 reviews/15 system or empirical; PDFs 7/20 (F021: MDPI/PMC/Nature block scripted fetch).
 - T012 (abandoned): Misread request: user wanted papers, not datasets. Stopped before any download; nothing was collected. Replaced by a papers task.
-- T010 (done): 10 sub-topics per domain + 157 key picks (fl/sc/carbon_subtopics.md in research/blockchain/analysis/T010); 156 papers in library, only 28 with PDF (F018); PDF gap -> T011.
 
 ### Recent findings
+- F026 (2026-10-20): Context lit gives the framework existing data sources and a patient channel; post-approval label changes are part of the history
 - F025 (2026-10-20): Papers are now filed flat: papers/<topic>/<year>-<author>-<title>.pdf
 - F024 (2026-10-20): Publisher PDFs need a real browser; ScienceDirect blocks even that, and no subscription access from current network
 - F023 (2026-10-19): Paper tooling bugs: PubMed DOIs leaked from reference lists; empty downloads were kept as PDFs
 - F022 (2026-10-19): No prior work gives patients or prescribers a blockchain view of a drug's development history
-- F020 (2026-10-18): IEEE Xplore full text is accessible via Southeast University IP access
 
 ### Recent decisions
 - D014 (2026-10-19): Drug-development provenance topic (T014) uses a 2014 cutoff; other blockchain topics keep 2018
 - D013 (2026-10-19): Narrow blockchain research to two topics: medicine/vaccine supply-chain trust, and federated learning for a medical model
 - D011 (2026-10-13): Blockchain literature base: papers from 2018 onward only
 
-### Last handoff (2026-10-20 00:18)
-Did: filed 3 hand-downloaded PDFs from ~/Downloads (437 BlockDrugChain, 439 Wu recall, 438 Olsson SciTePress) into papers/blockchain-drug-development-provenance/ with flat names; each checked against title and first author; DB updated; extraction re-run. State: topic PDFs 42/53; 11 paywalled (Elsevier 414/431/432/436, Springer 429/433, IEEE 456/461/464, T&F 463, AHA 459). Next: IEEE three from campus network; older-topic layout migration and D013 scope still to ask. Nothing committed.
+### Last handoff (2026-10-20 00:40)
+Did: T017 ran 20 non-blockchain searches (patient/prescriber info needs + trial transparency; standards eCTD/IDMP/FHIR-ePI/CDISC/PROV/structured CMC; pharmacovigilance and label changes), screened 596 results down to 51 papers (ids 465-515) in the drug-development topic, README section F. PDFs 45/51 via Playwright (Europe PMC in-page render, IOS Press form POST, publisher pages), all title-checked. F026 records framework implications. State: topic 104 papers, 87 PDFs; T016 now lists 17 missing. Next: user picks up T016 PDFs; older-topic layout migration and D013 scope still open. Nothing commi …
 
 Other workstreams: os-hgsoc (paused)
 

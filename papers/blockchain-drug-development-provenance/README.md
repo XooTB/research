@@ -6,8 +6,9 @@ amendments, results, formulation tweaks, manufacturing/batch data, approval,
 post-market safety) that a **patient or prescribing doctor** can inspect.
 
 Cutoff for this topic is **2014** (D014; other blockchain topics keep 2018, D011).
-55 papers: 53 in this folder (library ids 412-464) plus 2 already in the library
-under `blockchain-pharma-supply-chain` (402, 407). PDFs: **42/53** here, filed
+106 papers: 104 in this folder (blockchain ids 412-464, non-blockchain context
+ids 465-515, section F) plus 2 already in the library under
+`blockchain-pharma-supply-chain` (402, 407). PDFs: **87/104** here, filed
 flat as `<year>-<author>-<title>.pdf`; every one was checked against its title.
 "Y" means PDF on disk; "Y*" means a preprint or accepted manuscript, not the
 publisher version.
@@ -104,10 +105,83 @@ bound to protocol revisions (421), discovery-to-disposal lifecycle chains
 | 452 | 2024 | Zhang | Blockchain data governance for privacy-preserved sharing of confidential data | PeerJ Comput Sci | Y |
 | 453 | 2025 | Xia | Integrating blockchain with digital product passports | Transp Res Part E | Y* (Cardiff repository) |
 
-## Missing PDFs (11)
+## F. Non-blockchain context (T017): who needs what, in which standard, after approval
 
-Paywalled with no access from this network: Elsevier 414, 431, 432, 436;
+What the framework must show, to whom, in what standard data formats, and how a drug keeps changing after
+approval. Not about blockchain; it grounds requirements and the evaluation.
+
+**F1. Patient and prescriber information needs; trial and regulatory transparency**
+
+| id | year | first author | title | venue | PDF |
+|---|---|---|---|---|---|
+| 465 | 2014 | Jefferson | Oseltamivir: systematic review of clinical study reports and regulatory comments (the Tamiflu case) | BMJ | Y |
+| 482 | 2015 | Pires | Readability of medicinal package leaflets: systematic review | Rev Saúde Pública | Y |
+| 467 | 2015 | Sydes | Sharing data from clinical trials: rationale for controlled access | Trials | Y |
+| 475 | 2016 | Balog-Way | Medicines transparency at the EMA in the new information age | J Risk Research | |
+| 483 | 2016 | Hammar | Patients' views on electronic patient information leaflets | Pharmacy Practice | Y |
+| 481 | 2016 | Wieseler | Secrecy or transparency? The future of regulatory trial data | CMAJ | Y |
+| 466 | 2018 | Chan | Promoting public access to clinical trial protocols | Trials | Y |
+| 471 | 2018 | Hopkins | Data sharing from industry-sponsored studies: audit of availability | BMC Medicine | Y |
+| 476 | 2018 | Aldinger | Returning aggregate trial results: patient preferences | J Clin Transl Sci | Y |
+| 468 | 2019 | Kanter | Industry payment disclosure and public trust in physicians | JAMA Netw Open | |
+| 469 | 2019 | Barnes | Lay summaries of clinical study results: overview (EU CTR 536/2014) | Pharmaceutical Medicine | Y |
+| 474 | 2020 | Chan | What information do patients want about their medicines? | BMC Health Serv Res | Y |
+| 478 | 2020 | Ostropolets | Physicians' information needs where evidence is missing | JAMIA Open | Y |
+| 473 | 2021 | Egilman | Transparency of regulatory data across EMA, Health Canada and FDA | J Law Med Ethics | Y |
+| 472 | 2022 | Gudi | Regulatory frameworks for clinical trial data sharing: scoping review | JMIR | Y |
+| 470 | 2022 | Mitra-Majumdar | Reporting bias in clinical trials: progress toward transparency | PLoS Medicine | Y |
+| 485 | 2022 | Bamberger | Replacing vaccine paper package inserts with electronic ones (multi-country) | BMC Public Health | Y |
+| 477 | 2022 | Møllebæk | Are drug safety advisories compatible with physicians' information behaviour? | Eur J Health Commun | Y |
+| 479 | 2023 | Franzen | Institutional dashboards on clinical trial transparency | PLoS Medicine | Y |
+| 480 | 2024 | Hopkins | Accessibility of clinical study reports supporting medicine approvals | J Clin Epidemiol | Y |
+| 484 | 2024 | Loh | Patient acceptance of electronic labelling for medicinal products | JMIR | Y |
+| 486 | 2025 | Singh | QR codes for patient information leaflet delivery | Explor Res Clin Soc Pharm | Y |
+| 487 | 2026 | Choudhury | Guidance on sharing trial results with patients and the public: scoping review | J Clin Epidemiol | Y |
+
+**F2. Data standards the framework should speak** (structured CMC/quality data, IDMP, eCTD, FHIR/ePI, CDISC, W3C PROV)
+
+| id | year | first author | title | venue | PDF |
+|---|---|---|---|---|---|
+| 494 | 2018 | Hume | CDISC SHARE: machine-readable CDISC standards | (PMC) | Y |
+| 505 | 2018 | Kock-Schoppenhauer | Practical extension of provenance to healthcare data based on W3C PROV | Stud Health Technol Inform | Y |
+| 490 | 2019 | Yu | FDA KASA: knowledge-aided assessment and structured applications (lifecycle quality knowledge) | Int J Pharm X | Y |
+| 492 | 2020 | Algorri | Transitioning CMC content to structured data management | J Pharm Sci | Y |
+| 496 | 2020 | Koshechkin | Implementing IDMP standards for a unified drug information space | Procedia Comput Sci | |
+| 491 | 2021 | Ahluwalia | The future of CMC regulatory submissions: structured content and data | J Pharm Sci | Y |
+| 488 | 2022 | Vorisek | FHIR for interoperability in health research: systematic review | JMIR Med Inform | Y |
+| 489 | 2022 | Facile | CDISC standards for real-world data | JMIR Med Inform | Y |
+| 500 | 2022 | Moen | G-Lens: FHIR International Patient Summary to personalise medication leaflets (Gravitate-Health) | Stud Health Technol Inform | Y |
+| 501 | 2022 | Stojchevska | Electronic product information (ePI) in the EU | Maced Pharm Bull | Y |
+| 502 | 2022 | Chronaki | Agile development of electronic product information standards | Stud Health Technol Inform | Y |
+| 506 | 2022 | Frexia | The Common Provenance Model for distributed life-science processes | Stud Health Technol Inform | Y |
+| 493 | 2023 | Anderson | Real-time algorithmic exchange of pharmaceutical quality data | Int J Pharm | |
+| 499 | 2023 | Baker | HL7 FHIR to CDISC mapping implementation guide | J Soc Clin Data Manag | Y |
+| 495 | 2024 | Karanikas | UNICOM test lab: implementing ISO IDMP across the EU | Stud Health Technol Inform | Y |
+| 497 | 2024 | Jones | Adoption of IDMP standards in Europe | European Studies | Y |
+| 498 | 2025 | Nagar | Transition to eCTD 4.0 | Int J Drug Regul Aff | Y |
+| 503 | 2025 | Kirchsteiger | Medication leaflets via FHIR and an LLM question-answer app | Research Square | Y |
+| 504 | 2026 | Lee | Regulatory readiness for electronic labelling replacing paper | JMIR | Y |
+
+**F3. Post-approval: pharmacovigilance, label changes, real-world evidence** (the drug keeps changing after launch)
+
+| id | year | first author | title | venue | PDF |
+|---|---|---|---|---|---|
+| 509 | 2016 | Dweik | Factors affecting patient reporting of adverse drug reactions: systematic review | Br J Clin Pharmacol | Y |
+| 510 | 2017 | Mostaghim | Safety-related label changes after approval via expedited pathways (382 drugs) | BMJ | Y |
+| 508 | 2018 | Beninger | Pharmacovigilance: an overview | Clin Ther | Y |
+| 511 | 2018 | Shepshelovich | Post-marketing modifications of cancer drug labels | J Clin Oncol | |
+| 514 | 2018 | Dreyer | Framework for regulatory use of real-world evidence | Ther Innov Regul Sci | Y |
+| 513 | 2019 | Beaulieu-Jones | Use of real-world evidence in the regulatory process | Clin Pharmacol Ther | Y |
+| 507 | 2020 | Alomar | Post-marketing surveillance through spontaneous ADR reporting | Ther Adv Drug Saf | Y |
+| 515 | 2021 | Sienkiewicz | Direct patient reporting of ADRs in safety monitoring | IJERPH | Y |
+| 512 | 2022 | Croteau | Sources of evidence triggering safety-related labelling changes (10 years) | Drug Safety | |
+
+## Missing PDFs (17)
+
+Blockchain papers, paywalled with no access from this network: Elsevier 414, 431, 432, 436;
 Springer 429, 433; IEEE 456, 461, 464; Taylor & Francis 463; AHA 459.
+Context papers (F): paywalled T&F 475, Elsevier 493, ASCO 511, Springer 512; open access
+but blocked for automated download: JAMA Netw Open 468, Procedia Comput Sci 496 (ScienceDirect).
 (437, 439 and 438 were downloaded by hand on 2026-10-20.)
 
 ## Excluded

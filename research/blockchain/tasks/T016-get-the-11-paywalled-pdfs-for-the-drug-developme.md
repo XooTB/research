@@ -1,10 +1,10 @@
 +++
 id = "T016"
-title = "Get the 11 paywalled PDFs for the drug-development provenance topic"
+title = "Get the 17 missing PDFs for the drug-development provenance topic"
 status = "planned"
 priority = 2
 depends_on = []
-summary = "Manual/campus download: IEEE 456,461,464 (SEU IP); Elsevier 414,431,432,436; Springer 429,433; T&F 463; AHA 459. Omidian 431/432 first. Links + filenames: topic README."
+summary = "Manual/campus download of 17 PDFs: IEEE 456,461,464; Elsevier 414,431,432,436,493; Springer 429,433,512; T&F 463,475; AHA 459; ASCO 511; OA-blocked 468,496. README lists all."
 tags = []
 created = "2026-10-20"
 updated = "2026-10-20"
